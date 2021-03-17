@@ -29,11 +29,20 @@
 
 
  import {createApp} from 'vue'
- import App from './App.vue'
- 
- createApp(App).mount('#gbslevel-app')
+ import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
+ import Root from './Root.vue'
+ import FeedBackView from './components/FeedBackView'
+ import Home from './components/Home'
 
-// const app = new Vue({
-//     el: '#app',
-//     template:`<example-component />`
-// });
+ const router = createRouter({
+    history: createWebHistory(),
+    routes: [
+    //   { path: '/', component: Home, name:'Home' },
+    //   { path: '/contact-form', component: FeedBackView, name:'FeedBackView' },
+      { path: '/', component: FeedBackView, name:'FeedBackView' },
+    ],
+  })
+
+const app = createApp(Root)
+ app.use(router)
+ window.vm=app.mount('#gbslevel-app')
