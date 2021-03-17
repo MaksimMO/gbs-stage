@@ -14965,12 +14965,10 @@ __webpack_require__.r(__webpack_exports__);
 
 var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_4__.createRouter)({
   history: (0,vue_router__WEBPACK_IMPORTED_MODULE_4__.createWebHistory)(),
-  routes: [{
+  routes: [//   { path: '/', component: Home, name:'Home' },
+  //   { path: '/contact-form', component: FeedBackView, name:'FeedBackView' },
+  {
     path: '/',
-    component: _components_Home__WEBPACK_IMPORTED_MODULE_3__.default,
-    name: 'Home'
-  }, {
-    path: '/contact-form',
     component: _components_FeedBackView__WEBPACK_IMPORTED_MODULE_2__.default,
     name: 'FeedBackView'
   }]

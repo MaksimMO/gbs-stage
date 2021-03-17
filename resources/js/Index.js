@@ -37,8 +37,9 @@
  const router = createRouter({
     history: createWebHistory(),
     routes: [
-      { path: '/', component: Home, name:'Home' },
-      { path: '/contact-form', component: FeedBackView, name:'FeedBackView' },
+    //   { path: '/', component: Home, name:'Home' },
+    //   { path: '/contact-form', component: FeedBackView, name:'FeedBackView' },
+      { path: '/', component: FeedBackView, name:'FeedBackView' },
     ],
   })
 
