@@ -116,7 +116,7 @@ input[type=number] {
     line-height: 21px;
     color: #FFFFFF;
     opacity: 0.55;
-    transition:all .3s ease-out;
+    transition:all .2s ease-out;
 }
 
 .input-wrapper input:focus + label{

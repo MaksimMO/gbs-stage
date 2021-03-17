@@ -152,7 +152,7 @@ input[type=number][data-v-8048fca2] {
     line-height: 21px;
     color: #FFFFFF;
     opacity: 0.55;
-    transition:all .3s ease-out;
+    transition:all .2s ease-out;
 }
 .input-wrapper input:focus + label[data-v-8048fca2]{
     color: #916C58;
