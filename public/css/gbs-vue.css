@@ -1,4 +1,30 @@
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#gbslevel-app {
+    height: 100%;
+}
+
+/* body.is-popup-opened{
+    backdrop-filter: blur(10px);
+}
+
+body.is-popup-opened .feed_back_view{
+    filter: blur(10px);
+} */
+
+
+/* body.is-popup-opened > div.popup{
+    opacity: 1;
+} */
+
+/* body.popup > div.popup {
+    opacity: 1;
+} */
+
+
 .modal-overlay[data-v-a4c6995e]{
     position: absolute;
     height: 100%;
@@ -186,30 +212,4 @@ body {
 }
 
 
-
-
-html, body {
-    height: 100%;
-    margin: 0;
-}
-#gbslevel-app {
-    height: 100%;
-}
-
-/* body.is-popup-opened{
-    backdrop-filter: blur(10px);
-}
-
-body.is-popup-opened .feed_back_view{
-    filter: blur(10px);
-} */
-
-
-/* body.is-popup-opened > div.popup{
-    opacity: 1;
-} */
-
-/* body.popup > div.popup {
-    opacity: 1;
-} */
 
