@@ -29,9 +29,9 @@
 
 
  import {createApp} from 'vue'
- import ExampleComponent from './components/ExampleComponent.vue'
+ import App from './App.vue'
  
- createApp(ExampleComponent).mount('#app')
+ createApp(App).mount('#gbslevel-app')
 
 // const app = new Vue({
 //     el: '#app',
