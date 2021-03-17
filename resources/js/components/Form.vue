@@ -67,21 +67,12 @@ form{
 
 
 .input-wrapper{
-    display:flex;
-    flex-direction:column;
     width: 370px;
+    height: 69px;
+    position: relative;
 }
 
-.input-wrapper label {
-    order: -1;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFFFFF;
-    opacity: 0.55;
-    margin-bottom: 5px;
-}
+
 
 .input-wrapper + .input-wrapper {
     margin-top: 30px;
@@ -99,6 +90,10 @@ input[type=number] {
 
 
 .input-wrapper input{
+
+    position: absolute;
+    width: 100%;
+
     font-family: Raleway;
     font-weight: 500;
     font-size: 14px;
@@ -113,8 +108,22 @@ input[type=number] {
 
 
 
+.input-wrapper label {
+    position: absolute;
+     top: -26px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    opacity: 0.55;
+    transition:all .3s ease-out;
+}
+
 .input-wrapper input:focus + label{
-    background-color: red;
+    color: #916C58;
+    margin-bottom: 10px;
+    font-size: 15px;
+    opacity:1;
 
 }
 

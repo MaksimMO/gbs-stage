@@ -113,19 +113,9 @@ form[data-v-8048fca2]{
     flex-direction: column;
 }
 .input-wrapper[data-v-8048fca2]{
-    display:flex;
-    flex-direction:column;
     width: 370px;
-}
-.input-wrapper label[data-v-8048fca2] {
-    order: -1;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFFFFF;
-    opacity: 0.55;
-    margin-bottom: 5px;
+    height: 69px;
+    position: relative;
 }
 .input-wrapper + .input-wrapper[data-v-8048fca2] {
     margin-top: 30px;
@@ -139,6 +129,10 @@ input[type=number][data-v-8048fca2] {
     -moz-appearance: textfield;
 }
 .input-wrapper input[data-v-8048fca2]{
+
+    position: absolute;
+    width: 100%;
+
     font-family: Raleway;
     font-weight: 500;
     font-size: 14px;
@@ -150,8 +144,21 @@ input[type=number][data-v-8048fca2] {
     background-color: transparent;
     padding: unset;
 }
+.input-wrapper label[data-v-8048fca2] {
+    position: absolute;
+     top: -26px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    opacity: 0.55;
+    transition:all .3s ease-out;
+}
 .input-wrapper input:focus + label[data-v-8048fca2]{
-    background-color: red;
+    color: #916C58;
+    margin-bottom: 10px;
+    font-size: 15px;
+    opacity:1;
 }
 .input-wrapper .error-message[data-v-8048fca2]{
     color: #916C58;
