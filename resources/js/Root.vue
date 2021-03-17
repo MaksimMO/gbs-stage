@@ -29,6 +29,7 @@ html, body {
 
 #gbslevel-app {
     height: 100%;
+    font-family: 'Raleway';
 }
 
 /* body.is-popup-opened{

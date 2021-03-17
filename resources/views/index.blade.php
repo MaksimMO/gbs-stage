@@ -15,9 +15,10 @@
         <!-- Styles -->
         <!-- <link href="{{ mix('css/app.css') }}" rel="stylesheet"> -->
         <link href="{{ mix('css/gbs-vue.css') }}" rel="stylesheet">
+        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     </head>
     <body>
     <div id="gbslevel-app"></div>
-       
+
     </body>
 </html>

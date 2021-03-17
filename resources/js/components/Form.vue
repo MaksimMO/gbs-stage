@@ -3,12 +3,12 @@
     <div class="input-wrapper">
     <input autocomplete="off" v-model="name" type="text" id="name" name="name">
     <label for="name">Ім’я</label>
-        <div class="error-message">Дане поле заповнене не коректно</div>
+        <div  v-if="isValid" class="error-message">Дане поле заповнене не коректно</div>
     </div>
     <div class="input-wrapper">
     <input autocomplete="off" v-model="phone" type="number" id="phone" name="phone">
     <label for="phone">Телефон</label>
-        <div class="error-message">Дане поле заповнене не коректно</div>
+        <div v-if="isValid" class="error-message">Дане поле заповнене не коректно</div>
     </div>
         <button type="submit"><span>Залишити заявку</span></button>
     </form>
@@ -40,7 +40,10 @@ export default {
             });
 
         },
-        valid(){
+    },
+    computed:{
+        //todo
+        isValid(){
             return false;
         }
     },
@@ -50,43 +53,23 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 
 button{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 35px;
+    align-self: center;
 }
 
-
-button{
-    transform: skew(150deg);
-    border: none;
-    outline: none;
-    padding: 15px;
-    background: #916C58;
-    color: white;
-    cursor: pointer;
-
-
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+form{
+    display: flex;
+    flex-direction: column;
 }
 
-button span{
-    transform: skew(-150deg);
-    display: inline-block;
-}
 
 .input-wrapper{
     display:flex;
     flex-direction:column;
+    width: 370px;
 }
 
 .input-wrapper label {
@@ -97,10 +80,11 @@ button span{
     line-height: 21px;
     color: #FFFFFF;
     opacity: 0.55;
+    margin-bottom: 5px;
 }
 
 .input-wrapper + .input-wrapper {
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 input::-webkit-outer-spin-button,
@@ -116,10 +100,8 @@ input[type=number] {
 
 .input-wrapper input{
     font-family: Raleway;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
     color: #fff;
 
     border: none;
@@ -127,8 +109,6 @@ input[type=number] {
     border-bottom: 2px solid rgba(255,255,255, .25);
     background-color: transparent;
     padding: unset;
-    height: 25px;
-    width: 370px;
 }
 
 
@@ -141,6 +121,7 @@ input[type=number] {
 .input-wrapper .error-message{
     color: #916C58;
     align-self: flex-end;
+    margin-top: 5px;
 }
 </style>
 

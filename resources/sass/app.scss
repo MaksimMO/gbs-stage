@@ -1,9 +1,24 @@
-// Fonts
-// @import url('https://fonts.googleapis.com/css?family=Nunito');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;500;600&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Raleway:500,700,800';
 
-// Variables
-// @import 'variables';
+button{
+    transform: skew(150deg);
+    border: none;
+    outline: none;
+    padding: 0 55px;
+    background: #916C58;
+    color: white;
+    cursor: pointer;
 
-// Bootstrap
-// @import '~bootstrap/scss/bootstrap';
+
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 46px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+button span{
+    transform: skew(-150deg);
+    display: inline-block;
+}

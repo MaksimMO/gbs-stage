@@ -17,25 +17,20 @@ export default {
 }
 </script>
 
-<style>
-body {
-    background:url('../../assets/background-1.png') no-repeat center;
-    background-size: cover;
-    /* transition: backdrop-filter .3s ease-out; */
-}
-
-
-
+<style scoped>
 
 .feed_back_view{
-    /* transition: filter .3s ease-out; */
+    background:url('../../assets/background-1.png') no-repeat center;
+    background-size: cover;
     display:flex;
     flex-direction:column;
     /* todo */
-    justify-content: space-evenly;
+    justify-content: space-between;
     height:100%;
     align-items:center;
     color:#fff;
+    padding:60px 0 80px;
+    box-sizing:border-box;
 }
 
 .feed_back_view .address{
@@ -49,11 +44,27 @@ body {
 .feed_back_view .logo{
     width: 178px;
     height:84px;
-    background: url('../../assets/g-level.svg') no-repeat;
+    background: url('../../assets/g-level.svg') no-repeat center;
+    flex-grow: 1;
+}
+
+.phone{
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: 0.1em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .feed_back_view .text-1{
+    margin: 5vh 0;
     text-align:center;
+
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 
