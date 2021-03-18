@@ -22,16 +22,16 @@ export default {
 
 .feed_back_view{
     &.g{
-        background:url('../../assets/background-g.png') no-repeat center;
+        background:url('../../assets/feedBackFormView/background-g.png') no-repeat center;
          background-size: cover;
     }
 
     &.b{
-        background:url('../../assets/background-b.png') no-repeat center;
+        background:url('../../assets/feedBackFormView/background-b.png') no-repeat center;
          background-size: cover;
     }
     &.s{
-        background:url('../../assets/background-s.png') no-repeat center;
+        background:url('../../assets/feedBackFormView/background-s.png') no-repeat center;
          background-size: cover;
     }
 
@@ -59,13 +59,13 @@ export default {
     flex-grow: 1;
 
     &.g{
-        background: url('../../assets/g-level.svg') no-repeat center;
+        background: url('../../assets/feedBackFormView/g-level.svg') no-repeat center;
     }
     &.b{
-        background: url('../../assets/b-level.svg') no-repeat center;
+        background: url('../../assets/feedBackFormView/b-level.svg') no-repeat center;
     }
     &.s{
-        background: url('../../assets/s-level.svg') no-repeat center;
+        background: url('../../assets/feedBackFormView/s-level.svg') no-repeat center;
     }
 }
 
