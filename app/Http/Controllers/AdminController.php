@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Leads;
+use App\Models\Lead;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use Symfony\Component\Console\Input\Input;
 
 class AdminController extends BaseController
 {
@@ -27,28 +30,30 @@ class AdminController extends BaseController
      */
     public function index()
     {
-        $devices = Leads::all();
+        $leads = Lead::all();
 
-        return view('dashboard');
+        return view('dashboard',['leads' => $leads]);
     }
 
     /**
-     * Save Data Form
+     * View for update lead info
      */
-    public function storeLead()
+    public function checkLead($id)
     {
-        $device = new Leads();
+        $lead = Lead::find($id);
 
-        $device->name = request('name');
-        $device->phone_number = request('phone_number');
-        //todo accept null\empty
-        $device->description = 'description';
-        $device->called_success = 0;
+        return view('edit-lead', ['lead' => $lead]);
+    }
 
-        $device->save();
+    public function updateLead($id)
+    {
+        $lead = Lead::find($id);
+        $lead->name       = request('name');
+        $lead->phone      = request('phone_number');
+        $lead->called_success      = request('called');
+        $lead->description = request('description');
+        $lead->save();
 
-        return response()->json([
-            'code' => 'successfully',
-        ]);
+        return redirect('/admin');
     }
 }

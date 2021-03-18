@@ -17,6 +17,30 @@
                     {{ __('Welcome admin!') }}
                 </div>
             </div>
+            <div>
+                <table border="1">
+                    <thead>
+                    <tr>
+                        <th>Order</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Comment</th>
+                        <th>Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach ($leads as $lead)
+                    <tr>
+                        <td>{{ $lead['id'] }}</td>
+                        <td>{{ $lead['name'] }}</td>
+                        <td>{{ $lead['phone_number'] }}</td>
+                        <td>{{ isset($lead['description']) ? $lead['description'] : "" }}</td>
+                        <td><a href="{{ URL::to('update-data/'.$lead['id']) }}">Edit</a></td>
+                    </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
