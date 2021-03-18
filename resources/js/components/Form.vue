@@ -1,14 +1,14 @@
 <template>
   <form @submit.prevent="onSubmit">
-    <input type="hidden" name="_token" :value="csrf">
+    <!-- <input type="hidden" name="_token" :value="csrf"> -->
     <div class="input-wrapper">
-    <input autocomplete="off" v-model="name" type="text" id="name" name="name">
-    <label for="name">Ім’я</label>
+        <input autocomplete="off" v-model="name" type="text" id="name" name="name" placeholder=" ">
+        <label for="name">Ім’я</label>
         <div  v-if="isValid" class="error-message">Дане поле заповнене не коректно</div>
     </div>
     <div class="input-wrapper">
-    <input autocomplete="off" v-model="phone" type="number" id="phone" name="phone">
-    <label for="phone">Телефон</label>
+        <input autocomplete="off" v-model="phone" type="number" id="phone" name="phone" placeholder=" ">
+        <label for="phone">Телефон</label>
         <div v-if="isValid" class="error-message">Дане поле заповнене не коректно</div>
     </div>
         <button type="submit"><span>Залишити заявку</span></button>
@@ -24,7 +24,7 @@ import popup from './Popup.vue'
 export default {
     data(){
         return {
-            csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+            csrf_token: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
             name:'',
             phone:'',
             modalOpen:false
@@ -35,6 +35,7 @@ export default {
             let body = new FormData();
             body.append('name', this.name);
             body.append('phone', this.phone);
+            body.append('_token', this.csrf_token);
 
             fetch('/feedback-form', {method:'POST', body}).finally(()=>{
                 this.modalOpen=true;
@@ -55,7 +56,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 button{
     margin-top: 35px;
@@ -91,26 +92,41 @@ input[type=number] {
   }
 
 
-.input-wrapper input{
+@mixin activeLable{
+    color: #916C58;
+    margin-bottom: 10px;
+    font-size: 15px;
+    opacity:1;
+}
 
+input{
     position: absolute;
     width: 100%;
-
+    height:25px;
     font-family: Raleway;
     font-weight: 500;
     font-size: 14px;
     color: #fff;
-
     border: none;
     outline: none;
-    border-bottom: 2px solid rgba(255,255,255, .25);
     background-color: transparent;
     padding: unset;
+    border-bottom: 2px solid rgba(255,255,255, .25);
+    transition: border-bottom .2s ease-out;
+
+    &:focus {
+        border-bottom: 2px solid rgba(255,255,255, 1);
+    }
+
+    &:focus, &:not(:placeholder-shown){
+         & + label{
+             @include activeLable;
+         }
+    }
+
 }
 
-
-
-.input-wrapper label {
+ label {
     position: absolute;
      top: -26px;
     font-weight: 500;
@@ -121,15 +137,7 @@ input[type=number] {
     transition:all .2s ease-out;
 }
 
-.input-wrapper input:focus + label{
-    color: #916C58;
-    margin-bottom: 10px;
-    font-size: 15px;
-    opacity:1;
-
-}
-
-.input-wrapper .error-message{
+.error-message{
     color: #916C58;
     align-self: flex-end;
     margin-top: 5px;

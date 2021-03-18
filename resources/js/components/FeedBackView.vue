@@ -59,7 +59,7 @@ export default {
 .feed_back_view .text-1{
     margin: 5vh 0;
     text-align:center;
-
+    line-height: 27px;
     font-family: Raleway;
     font-weight: 500;
     font-size: 18px;
