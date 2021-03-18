@@ -18,9 +18,9 @@
                 </div>
             </div>
             <div>
-                <h1 data-d="{{ $lead->id }}">Edit {{ $lead['name'] }}</h1>
+                <h1>Edit {{ $lead['name'] }}</h1>
 
-                {{ Form::open(route('update-lead', ['lead' => $lead])) }}
+                {{ Form::open(['url' => "/update-data/".$lead['id'], 'method' => 'put']) }}
 
                 <div class="form-group">
                     {{ Form::label('name', 'Name') }}

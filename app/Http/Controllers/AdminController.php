@@ -48,11 +48,12 @@ class AdminController extends BaseController
      */
     public function updateLead(Request $request, $id)
     {
+        //dd($request);
         $lead = Lead::find($id);
         $lead->name = request('name');
         $lead->phone_number = request('phone_number');
         $lead->level = request('level');
-        $lead->called_success = request('called');
+        $lead->called_success = request('called_success');
         $lead->description = request('description');
         $lead->save();
 
