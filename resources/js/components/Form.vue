@@ -1,15 +1,15 @@
 <template>
   <form @submit.prevent="onSubmit">
-    <!-- <input type="hidden" name="_token" :value="csrf"> -->
+
     <div class="input-wrapper">
         <input autocomplete="off" v-model="name" type="text" id="name" name="name" placeholder=" ">
         <label for="name">Ім’я</label>
-        <div  v-if="isValid" class="error-message">Дане поле заповнене не коректно</div>
+        <div :style="{opacity: (name.length === 0 && isShowValidationMessage) ? 1 : 0}" class="error-message">Дане поле заповнене не коректно</div>
     </div>
     <div class="input-wrapper">
-        <input autocomplete="off" v-model="phone" type="number" id="phone" name="phone" placeholder=" ">
+        <input autocomplete="off" v-model="phone" id="phone" name="phone" placeholder=" ">
         <label for="phone">Телефон</label>
-        <div v-if="isValid" class="error-message">Дане поле заповнене не коректно</div>
+        <div :style="{opacity: (phone.length === 0 && isShowValidationMessage) ? 1 : 0}" class="error-message">Дане поле заповнене не коректно</div>
     </div>
         <button type="submit"><span>Залишити заявку</span></button>
     </form>
@@ -22,33 +22,41 @@
 <script>
 import popup from './Popup.vue'
 export default {
+    props:['area'],
     data(){
         return {
             csrf_token: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
             name:'',
             phone:'',
-            modalOpen:false
+            modalOpen:false,
+            isShowValidationMessage: false,
+            area:''
         }
     },
     methods:{
         onSubmit(e){
+            if (!this.isValid()){
+                return;
+            }
+
             let body = new FormData();
             body.append('name', this.name);
             body.append('phone_number', this.phone);
+            body.append('area', this.area);
             body.append('_token', this.csrf_token);
 
             fetch('/feedback-form', {method:'POST', body}).finally(()=>{
                 this.modalOpen=true;
-                // alert('ok');
             });
 
         },
+        isValid(){
+            this.isShowValidationMessage = this.name.length === 0 || this.phone.length === 0;
+            return !this.isShowValidationMessage;
+        }
     },
     computed:{
-        //todo
-        isValid(){
-            return false;
-        }
+
     },
     components:{
         popup
@@ -128,7 +136,7 @@ input{
 
  label {
     position: absolute;
-     top: -26px;
+    top: -26px;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
@@ -139,8 +147,10 @@ input{
 
 .error-message{
     color: #916C58;
-    align-self: flex-end;
-    margin-top: 5px;
+    position: absolute;
+    top: 30px;
+    right:0;
+    transition: opacity .2s ease-out;
 }
 </style>
 

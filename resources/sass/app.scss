@@ -1,7 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:500,700,800';
 
 button{
-    transform: skew(150deg);
+    transform: skew(160deg);
     border: none;
     outline: none;
     padding: 0 55px;
@@ -16,9 +16,13 @@ button{
     line-height: 46px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+
+    &:hover{
+        filter: brightness(110%);
+    }
 }
 
 button span{
-    transform: skew(-150deg);
+    transform: skew(-160deg);
     display: inline-block;
 }

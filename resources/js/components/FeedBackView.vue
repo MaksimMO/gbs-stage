@@ -1,30 +1,42 @@
 <template>
-<div class="feed_back_view">
+<div :class="`feed_back_view ${query}`">
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
-    <div class="logo"></div>
+    <div :class="`logo ${query}`"></div>
     <div class="phone">0800 35 55 55</div>
     <div class="text-1">або<br>залиште свій телефон і ми зателефонуємо Вам</div>
-    <FeedBackForm />
+    <FeedBackForm :area="query" />
 </div>
 </template>
 
 <script>
 import FeedBackForm from './Form.vue';
 export default {
+    props:['query'],
     components:{
         FeedBackForm
     }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .feed_back_view{
-    background:url('../../assets/background-1.png') no-repeat center;
-    background-size: cover;
+    &.g{
+        background:url('../../assets/background-g.png') no-repeat center;
+         background-size: cover;
+    }
+
+    &.b{
+        background:url('../../assets/background-b.png') no-repeat center;
+         background-size: cover;
+    }
+    &.s{
+        background:url('../../assets/background-s.png') no-repeat center;
+         background-size: cover;
+    }
+
     display:flex;
     flex-direction:column;
-    /* todo */
     justify-content: space-between;
     height:100%;
     align-items:center;
@@ -44,8 +56,17 @@ export default {
 .feed_back_view .logo{
     width: 178px;
     height:84px;
-    background: url('../../assets/g-level.svg') no-repeat center;
     flex-grow: 1;
+
+    &.g{
+        background: url('../../assets/g-level.svg') no-repeat center;
+    }
+    &.b{
+        background: url('../../assets/b-level.svg') no-repeat center;
+    }
+    &.s{
+        background: url('../../assets/s-level.svg') no-repeat center;
+    }
 }
 
 .phone{
