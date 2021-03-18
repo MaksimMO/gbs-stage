@@ -30,7 +30,6 @@ export default {
             phone:'',
             modalOpen:false,
             isShowValidationMessage: false,
-            area:''
         }
     },
     methods:{
