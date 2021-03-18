@@ -14612,7 +14612,7 @@ __webpack_require__.r(__webpack_exports__);
 
       var body = new FormData();
       body.append('name', this.name);
-      body.append('phone', this.phone);
+      body.append('phone_number', this.phone);
       body.append('_token', this.csrf_token);
       fetch('/feedback-form', {
         method: 'POST',

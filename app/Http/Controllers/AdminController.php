@@ -40,11 +40,15 @@ class AdminController extends BaseController
         $device = new Leads();
 
         $device->name = request('name');
-        $device->phone = request('phone_number');
+        $device->phone_number = request('phone_number');
+        //todo accept null\empty
+        $device->description = 'description';
         $device->called_success = 0;
 
         $device->save();
 
-        return redirect('/home');
+        return response()->json([
+            'code' => 'successfully',
+        ]);
     }
 }

@@ -34,7 +34,7 @@ export default {
         onSubmit(e){
             let body = new FormData();
             body.append('name', this.name);
-            body.append('phone', this.phone);
+            body.append('phone_number', this.phone);
             body.append('_token', this.csrf_token);
 
             fetch('/feedback-form', {method:'POST', body}).finally(()=>{
