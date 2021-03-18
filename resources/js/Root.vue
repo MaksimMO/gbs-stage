@@ -30,6 +30,7 @@ html, body {
 #gbslevel-app {
     height: 100%;
     font-family: 'Raleway';
+    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 /* body.is-popup-opened{
