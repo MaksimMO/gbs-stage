@@ -1,5 +1,6 @@
 <template>
   <form @submit.prevent="onSubmit">
+    <input type="hidden" name="_token" :value="csrf">
     <div class="input-wrapper">
     <input autocomplete="off" v-model="name" type="text" id="name" name="name">
     <label for="name">Ім’я</label>
@@ -23,6 +24,7 @@ import popup from './Popup.vue'
 export default {
     data(){
         return {
+            csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
             name:'',
             phone:'',
             modalOpen:false
