@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:500,700,800);
 button {
-  transform: skew(150deg);
+  transform: skew(160deg);
   border: none;
   outline: none;
   padding: 0 55px;
@@ -15,8 +15,12 @@ button {
   text-transform: uppercase;
 }
 
+button:hover {
+  filter: brightness(110%);
+}
+
 button span {
-  transform: skew(-150deg);
+  transform: skew(-160deg);
   display: inline-block;
 }
 

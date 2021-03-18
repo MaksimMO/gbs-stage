@@ -39,7 +39,9 @@
     routes: [
     //   { path: '/', component: Home, name:'Home' },
     //   { path: '/contact-form', component: FeedBackView, name:'FeedBackView' },
-      { path: '/', component: FeedBackView, name:'FeedBackView' },
+    //   { path: '/', component: FeedBackView, name:'FeedBackView', props:true },
+
+      { path: '/', component: FeedBackView, props: (route) => ({ query: route.query.area }) }
     ],
   })
 
