@@ -32,21 +32,4 @@ html, body {
     font-family: 'Raleway';
     font-feature-settings: 'pnum' on, 'lnum' on;
 }
-
-/* body.is-popup-opened{
-    backdrop-filter: blur(10px);
-}
-
-body.is-popup-opened .feed_back_view{
-    filter: blur(10px);
-} */
-
-
-/* body.is-popup-opened > div.popup{
-    opacity: 1;
-} */
-
-/* body.popup > div.popup {
-    opacity: 1;
-} */
 </style>

@@ -1,17 +1,17 @@
 <template>
-<div :class="`feed_back_view ${query}`">
+<div :class="`feed_back_view ${lavel}`">
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
-    <div :class="`logo ${query}`"></div>
+    <div :class="`logo ${lavel}`"></div>
     <div class="phone">0800 35 55 55</div>
     <div class="text-1">або<br>залиште свій телефон і ми зателефонуємо Вам</div>
-    <FeedBackForm :area="query" />
+    <FeedBackForm :lavel="lavel" />
 </div>
 </template>
 
 <script>
 import FeedBackForm from './Form.vue';
 export default {
-    props:['query'],
+    props:['lavel'],
     components:{
         FeedBackForm
     }

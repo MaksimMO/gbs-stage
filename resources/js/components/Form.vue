@@ -22,7 +22,7 @@
 <script>
 import popup from './Popup.vue'
 export default {
-    props:['area'],
+    props:['level'],
     data(){
         return {
             csrf_token: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
@@ -41,7 +41,7 @@ export default {
             let body = new FormData();
             body.append('name', this.name);
             body.append('phone_number', this.phone);
-            body.append('level', this.area);
+            body.append('level', this.level);
             body.append('_token', this.csrf_token);
 
             fetch('/feedback-form', {method:'POST', body}).finally(()=>{

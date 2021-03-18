@@ -9,31 +9,14 @@ html, body {
     font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
-/* body.is-popup-opened{
-    backdrop-filter: blur(10px);
-}
-
-body.is-popup-opened .feed_back_view{
-    filter: blur(10px);
-} */
-
-
-/* body.is-popup-opened > div.popup{
-    opacity: 1;
-} */
-
-/* body.popup > div.popup {
-    opacity: 1;
-} */
-
 
 .modal-overlay[data-v-a4c6995e]{
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
-    transition: backdrop-filter .5s ease-in-out, 
-        -webkit-backdrop-filter .5s ease-in-out, 
+    transition: backdrop-filter .5s ease-in-out,
+        -webkit-backdrop-filter .5s ease-in-out,
         background-color .5s ease-in-out;
 }
 .modal-overlay.is-opened[data-v-a4c6995e]{

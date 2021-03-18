@@ -18,7 +18,7 @@ export default {
     },
     methods:{
         action(){
-            location.assign('/');
+            this.$router.push({ name: 'home'});
         }
     },
     mounted(){
@@ -43,8 +43,8 @@ export default {
     height: 100%;
     width: 100%;
     top: 0;
-    transition: backdrop-filter .5s ease-in-out, 
-        -webkit-backdrop-filter .5s ease-in-out, 
+    transition: backdrop-filter .5s ease-in-out,
+        -webkit-backdrop-filter .5s ease-in-out,
         background-color .5s ease-in-out;
 }
 
@@ -73,7 +73,7 @@ export default {
     opacity: 0;
     transition: all .5s ease-in-out;
     filter: blur(10px);
-    
+
 }
 
 
