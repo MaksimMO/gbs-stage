@@ -18,7 +18,7 @@ class CreateLeadsTable extends Migration
             $table->string('name', 50);
             $table->string('phone_number', 20);
             $table->string('level', 20)->nullable();
-            $table->boolean('called_success')->default(0);
+            $table->boolean('called_success')->default(0)->nullable();
             $table->longText('description')->nullable();
             $table->timestamps();
         });

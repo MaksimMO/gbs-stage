@@ -26,4 +26,4 @@ Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->na
 Route::post('/feedback-form',[App\Http\Controllers\HomeController::class, 'storeLead']);
 
 Route::get('/update-data/{id}', [App\Http\Controllers\AdminController::class, 'checkLead'])->name('edit-lead');
-Route::put('/update-data/{id}', [App\Http\Controllers\AdminController::class, 'updateLead'])->name('edit-lead');
+Route::put('/update-data/{id}', [App\Http\Controllers\AdminController::class, 'updateLead'])->name('update-lead');

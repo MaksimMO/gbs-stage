@@ -18,5 +18,7 @@ class Lead extends Model
         'name',
         'phone_number',
         'level',
+        'called_success',
+        'description',
     ];
 }

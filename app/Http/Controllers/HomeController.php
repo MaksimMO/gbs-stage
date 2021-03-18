@@ -15,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**
@@ -36,6 +36,7 @@ class HomeController extends Controller
     public function storeLead(Request $request): \Illuminate\Http\JsonResponse
     {
         $validated = $request->validate([
+            'level' => 'required',
             'name' => 'required|min:3|max:50',
             'phone_number' => 'required|min:6|max:20',
         ]);

@@ -3,13 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Lead;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\Session;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
-use Symfony\Component\Console\Input\Input;
 
 class AdminController extends BaseController
 {
@@ -37,6 +32,8 @@ class AdminController extends BaseController
 
     /**
      * View for update lead info
+     * @param $id
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function checkLead($id)
     {
@@ -45,15 +42,20 @@ class AdminController extends BaseController
         return view('edit-lead', ['lead' => $lead]);
     }
 
-    public function updateLead($id)
+    /**
+     * @param $id
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function updateLead(Request $request, $id)
     {
         $lead = Lead::find($id);
-        $lead->name       = request('name');
-        $lead->phone      = request('phone_number');
-        $lead->called_success      = request('called');
+        $lead->name = request('name');
+        $lead->phone_number = request('phone_number');
+        $lead->level = request('level');
+        $lead->called_success = request('called');
         $lead->description = request('description');
         $lead->save();
 
-        return redirect('/admin');
+        return redirect('/admin')->with('success', 'Data Updated');
     }
 }

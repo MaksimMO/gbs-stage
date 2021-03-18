@@ -18,28 +18,33 @@
                 </div>
             </div>
             <div>
-                <h1>Edit {{ $lead['name'] }}</h1>
+                <h1 data-d="{{ $lead->id }}">Edit {{ $lead['name'] }}</h1>
 
-                {{ Form::open(['url' => '/update-data/{id}', 'method' => 'put']) }}
+                {{ Form::open(route('update-lead', ['lead' => $lead])) }}
 
                 <div class="form-group">
                     {{ Form::label('name', 'Name') }}
-                    {{ Form::text('name', null, array('class' => 'form-control')) }}
+                    {{ Form::text('name', $lead['name'], array('class' => 'form-control')) }}
                 </div>
 
                 <div class="form-group">
-                    {{ Form::label('phone', 'Phone') }}
-                    {{ Form::phone('phone', null, array('class' => 'form-control')) }}
+                    {{ Form::label('phone_number', 'Phone') }}
+                    {{ Form::text('phone_number', $lead['phone_number'], array('class' => 'form-control')) }}
                 </div>
 
                 <div class="form-group">
-                    {{ Form::label('phone', 'Call success') }}
-                    {{ Form::checkbox('called', null, array('class' => 'form-control')) }}
+                    {{ Form::label('level', 'Level') }}
+                    {{ Form::text('level', $lead['level'], array('class' => 'form-control')) }}
+                </div>
+
+                <div class="form-group">
+                    {{ Form::label('called_success', 'Call success') }}
+                    {{ Form::select('called_success', ['0' => 'No', '1' => 'Yes'], array('class' => 'form-control')) }}
                 </div>
 
                 <div class="form-group">
                     {{ Form::label('description', 'Comment') }}
-                    {{ Form::text('description', null, array('class' => 'form-control')) }}
+                    {{ Form::textarea('description', $lead['description'], array('class' => 'form-control')) }}
                 </div>
 
                 {{ Form::submit('Edit', array('class' => 'btn btn-primary')) }}

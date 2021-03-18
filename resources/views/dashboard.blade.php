@@ -24,6 +24,7 @@
                         <th>Order</th>
                         <th>Name</th>
                         <th>Phone</th>
+                        <th>Called</th>
                         <th>Comment</th>
                         <th>Date</th>
                     </tr>
@@ -34,6 +35,7 @@
                         <td>{{ $lead['id'] }}</td>
                         <td>{{ $lead['name'] }}</td>
                         <td>{{ $lead['phone_number'] }}</td>
+                        <td>{{ ($lead['called_success'] == 1) ? "YES" : "NO" }}</td>
                         <td>{{ isset($lead['description']) ? $lead['description'] : "" }}</td>
                         <td><a href="{{ URL::to('update-data/'.$lead['id']) }}">Edit</a></td>
                     </tr>
