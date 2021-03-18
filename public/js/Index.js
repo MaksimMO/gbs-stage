@@ -14606,8 +14606,7 @@ __webpack_require__.r(__webpack_exports__);
       name: '',
       phone: '',
       modalOpen: false,
-      isShowValidationMessage: false,
-      area: ''
+      isShowValidationMessage: false
     };
   },
   methods: {
