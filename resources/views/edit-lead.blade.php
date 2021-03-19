@@ -18,17 +18,17 @@
                 </div>
             </div>
             <div>
-                <h1>Edit {{ $lead['name'] }}</h1>
+                <h1>Редагувати запит від {{ $lead['name'] }}</h1>
 
                 {{ Form::open(['url' => "/update-data/".$lead['id'], 'method' => 'put']) }}
 
                 <div class="form-group">
-                    {{ Form::label('name', 'Name') }}
+                    {{ Form::label('name', 'Ім\'я') }}
                     {{ Form::text('name', $lead['name'], array('class' => 'form-control')) }}
                 </div>
 
                 <div class="form-group">
-                    {{ Form::label('phone_number', 'Phone') }}
+                    {{ Form::label('phone_number', 'Телефон') }}
                     {{ Form::text('phone_number', $lead['phone_number'], array('class' => 'form-control')) }}
                 </div>
 
@@ -38,16 +38,17 @@
                 </div>
 
                 <div class="form-group">
-                    {{ Form::label('called_success', 'Call success') }}
-                    {{ Form::select('called_success', ['0' => 'No', '1' => 'Yes', '2' => 'Not Relevant'], array('class' => 'form-control')) }}
+                    {{ Form::label('called_success', 'Результат дзвінка') }}
+                    {{ Form::select('called_success', ['0' => 'Новий', '1' => 'Не взяли трубку', '2' => 'Завершений дзвінок', '3' => 'Нерелевантні'], array('class' => 'form-control')) }}
                 </div>
 
                 <div class="form-group">
-                    {{ Form::label('description', 'Comment') }}
+                    {{ Form::label('description', 'Коментар') }}
                     {{ Form::textarea('description', $lead['description'], array('class' => 'form-control')) }}
                 </div>
 
-                {{ Form::submit('Edit', array('class' => 'btn btn-primary')) }}
+                {{ Form::submit('Зберегти', array('class' => 'btn btn-primary')) }}
+                <a href="{{url()->previous()}}" class="btn btn-default">Відміна</a>
 
                 {{ Form::close() }}
             </div>

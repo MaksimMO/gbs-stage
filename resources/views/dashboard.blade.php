@@ -21,30 +21,34 @@
                 <table border="1">
                     <thead>
                     <tr>
-                        <th>Order</th>
-                        <th>Name</th>
-                        <th>Phone</th>
-                        <th>Called</th>
-                        <th>Comment</th>
-                        <th>Date</th>
+                        <th>Level</th>
+                        <th>Ім'я</th>
+                        <th>Телефон</th>
+                        <th>Результат дзвінка</th>
+                        <th>Коментар</th>
+                        <th>Дата останніх змін</th>
+                        <th>Змінити</th>
                     </tr>
                     </thead>
                     <tbody>
                     @foreach ($leads as $lead)
                     <tr>
-                        <td>{{ $lead['id'] }}</td>
+                        <td>{{ $lead['level'] }}</td>
                         <td>{{ $lead['name'] }}</td>
                         <td>{{ $lead['phone_number'] }}</td>
 
-                        @if ($lead['called_success'] == 1)
-                        <td>YES</td>
+                        @if ($lead['called_success'] == 0)
+                        <td>Новий</td>
+                        @elseif ($lead['called_success'] == 1)
+                        <td>Не взяли трубку</td>
                         @elseif ($lead['called_success'] == 2)
-                        <td>Not Valid</td>
-                        @else
-                        <td>NO</td>
+                        <td>Завершений дзвінок</td>
+                        @elseif ($lead['called_success'] == 3)
+                        <td>Нерелевантні</td>
                         @endif
 
                         <td>{{ isset($lead['description']) ? $lead['description'] : "" }}</td>
+                        <td>{{ $lead['updated_at'] }}</td>
                         <td><a href="{{ URL::to('update-data/'.$lead['id']) }}">Edit</a></td>
                     </tr>
                     @endforeach
