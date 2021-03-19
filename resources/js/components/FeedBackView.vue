@@ -12,11 +12,46 @@
 
 <script>
 import FeedBackForm from './Form.vue';
+
+let preloadedAssets = {
+    g: [require('../../assets/feedBackFormView/background-g.png').default,
+        require('../../assets/feedBackFormView/g-level.svg').default],
+    b: [require('../../assets/feedBackFormView/background-b.png').default,
+        require('../../assets/feedBackFormView/b-level.svg').default],
+    s: [require('../../assets/feedBackFormView/background-s.png').default,
+        require('../../assets/feedBackFormView/s-level.svg').default]
+    }
+
 export default {
+    data(){
+        return {
+            isLoading:true
+        }
+
+    },
     props:['level'],
     components:{
         FeedBackForm
-    }
+    },
+    methods:{
+    },
+    beforeRouteEnter(to, from, next) {
+
+        const cacheImage = (url) =>{
+            return new Promise((resolve, reject) => {
+                    let img = new Image()
+                    img.onload = function() {
+                        resolve()
+                    }
+                    img.src = url;
+            });
+        }
+
+        Promise.all(
+            [cacheImage(preloadedAssets[to.params.level][0]),
+            cacheImage(preloadedAssets[to.params.level][1])])
+        .finally(next);
+  },
 }
 </script>
 

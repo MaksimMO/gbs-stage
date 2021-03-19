@@ -29,10 +29,11 @@
 
 
  import {createApp} from 'vue'
- import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
+ import { createRouter, createWebHistory, createWebHashHistory, beforeEach, afterEach } from 'vue-router'
  import Root from './Root.vue'
  import FeedBackView from './components/FeedBackView'
  import Home from './components/Home'
+
 
  const router = createRouter({
     history: createWebHistory(),
@@ -40,7 +41,15 @@
       { path: '/', component: Home, name: 'home'},
       { path: '/level-:level', component:FeedBackView, props: true }
     ],
-  })
+  });
+
+//   router.beforeEach((to, from, next) => {
+//     debugger
+//     next()
+//   })
+//   router.afterEach((d,t,y) => {
+//     debugger
+//   })
 
 const app = createApp(Root)
  app.use(router)

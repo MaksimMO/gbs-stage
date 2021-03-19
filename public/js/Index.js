@@ -14576,10 +14576,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Form_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Form.vue */ "./resources/js/components/Form.vue");
 
+var preloadedAssets = {
+  g: [__webpack_require__(/*! ../../assets/feedBackFormView/background-g.png */ "./resources/assets/feedBackFormView/background-g.png").default, __webpack_require__(/*! ../../assets/feedBackFormView/g-level.svg */ "./resources/assets/feedBackFormView/g-level.svg").default],
+  b: [__webpack_require__(/*! ../../assets/feedBackFormView/background-b.png */ "./resources/assets/feedBackFormView/background-b.png").default, __webpack_require__(/*! ../../assets/feedBackFormView/b-level.svg */ "./resources/assets/feedBackFormView/b-level.svg").default],
+  s: [__webpack_require__(/*! ../../assets/feedBackFormView/background-s.png */ "./resources/assets/feedBackFormView/background-s.png").default, __webpack_require__(/*! ../../assets/feedBackFormView/s-level.svg */ "./resources/assets/feedBackFormView/s-level.svg").default]
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      isLoading: true
+    };
+  },
   props: ['level'],
   components: {
     FeedBackForm: _Form_vue__WEBPACK_IMPORTED_MODULE_0__.default
+  },
+  methods: {},
+  beforeRouteEnter: function beforeRouteEnter(to, from, next) {
+    var cacheImage = function cacheImage(url) {
+      return new Promise(function (resolve, reject) {
+        var img = new Image();
+
+        img.onload = function () {
+          resolve();
+        };
+
+        img.src = url;
+      });
+    };
+
+    Promise.all([cacheImage(preloadedAssets[to.params.level][0]), cacheImage(preloadedAssets[to.params.level][1])])["finally"](next);
   }
 });
 
@@ -14745,9 +14771,7 @@ __webpack_require__.r(__webpack_exports__);
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_view = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-view");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div id=\"nav\">\r\n      <router-link to=\"/\">Home</router-link> |\r\n      <router-link to=\"/contact-form\">feed</router-link>\r\n  </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_view)], 2112
-  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
-  );
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_router_view);
 }
 
 /***/ }),
@@ -15053,7 +15077,7 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h1>home page</h1>\r\n  <router-link to=\"/level-g\">g level</router-link> |\r\n  <router-link to=\"/level-b\">b level</router-link> |\r\n  <router-link to=\"/level-s\">s level</router-link> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
     "class": "home_view",
     style: {
       marginLeft: $options.skewOffset
@@ -15072,7 +15096,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "text"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"text\"> "), _hoisted_2, _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" </div> ")];
+      return [_hoisted_2, _hoisted_3];
     }),
     _: 1
     /* STABLE */
@@ -15093,7 +15117,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "text"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"text\"> "), _hoisted_5, _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" </div> ")];
+      return [_hoisted_5, _hoisted_6];
     }),
     _: 1
     /* STABLE */
@@ -15114,7 +15138,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "text"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"text\"> "), _hoisted_8, _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" </div> ")];
+      return [_hoisted_8, _hoisted_9];
     }),
     _: 1
     /* STABLE */
@@ -15123,8 +15147,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* HYDRATE_EVENTS */
   )], 4
   /* STYLE */
-  )], 2112
-  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
   );
 }
 
@@ -15239,10 +15261,107 @@ var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_4__.createRouter)({
     component: _components_FeedBackView__WEBPACK_IMPORTED_MODULE_2__.default,
     props: true
   }]
-});
+}); //   router.beforeEach((to, from, next) => {
+//     debugger
+//     next()
+//   })
+//   router.afterEach((d,t,y) => {
+//     debugger
+//   })
+
 var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)(_Root_vue__WEBPACK_IMPORTED_MODULE_1__.default);
 app.use(router);
 window.vm = app.mount('#gbslevel-app');
+
+/***/ }),
+
+/***/ "./resources/assets/feedBackFormView/b-level.svg":
+/*!*******************************************************!*\
+  !*** ./resources/assets/feedBackFormView/b-level.svg ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?65998a52bc75e3367d5878dba8f72615");
+
+/***/ }),
+
+/***/ "./resources/assets/feedBackFormView/background-b.png":
+/*!************************************************************!*\
+  !*** ./resources/assets/feedBackFormView/background-b.png ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/background-b.png?7ae97d10fdd04337e46b98803b0fa5d8");
+
+/***/ }),
+
+/***/ "./resources/assets/feedBackFormView/background-g.png":
+/*!************************************************************!*\
+  !*** ./resources/assets/feedBackFormView/background-g.png ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/background-g.png?265de2c05b5404c1bce535377c88941f");
+
+/***/ }),
+
+/***/ "./resources/assets/feedBackFormView/background-s.png":
+/*!************************************************************!*\
+  !*** ./resources/assets/feedBackFormView/background-s.png ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/background-s.png?ccb8c3b21cfb0db30d55d6304200adb4");
+
+/***/ }),
+
+/***/ "./resources/assets/feedBackFormView/g-level.svg":
+/*!*******************************************************!*\
+  !*** ./resources/assets/feedBackFormView/g-level.svg ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?6714fed85f347740e7606f42a6405576");
+
+/***/ }),
+
+/***/ "./resources/assets/feedBackFormView/s-level.svg":
+/*!*******************************************************!*\
+  !*** ./resources/assets/feedBackFormView/s-level.svg ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level.svg?66970d48e594fdfc781d762fd2e8de1c");
 
 /***/ }),
 

@@ -309,7 +309,8 @@ div.slide img {
     flex-direction: column;
 }
 .your-level-text {
-    font-family: "Raleway Bold";
+    font-family: "Raleway";
+    font-weight: bold;
     font-size: 18px;
     line-height: 27px;
 }
@@ -317,9 +318,8 @@ div.slide img {
     background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat right;
     width: 86px;
     margin-top: 40px;
-    font-family: "Raleway Regular";
-    /* font-style: normal; */
-    /* font-weight: 300; */
+    font-family: "Raleway";
+    font-weight: normal;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
