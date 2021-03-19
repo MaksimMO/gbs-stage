@@ -214,6 +214,10 @@ label[data-v-8048fca2] {
   letter-spacing: 0.1em;
   font-feature-settings: "pnum" on, "lnum" on;
 }
+.phone a[data-v-28c122d5] {
+  color: inherit;
+  text-decoration: none;
+}
 .feed_back_view .text-1[data-v-28c122d5] {
   margin: 5vh 0;
   text-align: center;

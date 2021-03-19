@@ -2,7 +2,9 @@
 <div :class="`feed_back_view ${lavel}`">
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <div :class="`logo ${lavel}`"></div>
-    <div class="phone">0800 35 55 55</div>
+    <div class="phone"><a href="tel:0800355555">0800 355 555</a></div>
+
+
     <div class="text-1">або<br>залиште свій телефон і ми зателефонуємо Вам</div>
     <FeedBackForm :lavel="lavel" />
 </div>
@@ -75,6 +77,10 @@ export default {
     font-size: 36px;
     letter-spacing: 0.1em;
     font-feature-settings: 'pnum' on, 'lnum' on;
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
 .feed_back_view .text-1{
