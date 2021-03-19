@@ -35,7 +35,7 @@
                         @elseif ($lead['called_success'] == 2)
                         <td>Успішний дзвінок</td>
                         @elseif ($lead['called_success'] == 3)
-                        <td>Нерелевантні</td>
+                        <td>Некоректний</td>
                         @endif
 
                         <td>{{ isset($lead['description']) ? $lead['description'] : "" }}</td>
