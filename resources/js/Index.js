@@ -43,14 +43,30 @@
     ],
   });
 
+
+const app = createApp({
+    template:'<root />',
+    data(){
+        return{
+            isLoading:false
+        }
+    },
+    components:{
+        Root
+    },
+})
+
+
+
 //   router.beforeEach((to, from, next) => {
-//     debugger
 //     next()
-//   })
-//   router.afterEach((d,t,y) => {
 //     debugger
+//     app.data.isLoading=true;
 //   })
 
-const app = createApp(Root)
+// router.afterEach((d,t,y) => {
+//     app.data.isLoading=true;
+//   })
+
  app.use(router)
  window.vm=app.mount('#gbslevel-app')
