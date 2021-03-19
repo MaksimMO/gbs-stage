@@ -45,6 +45,7 @@ export default {
     color:#fff;
     padding:60px 0 80px;
     box-sizing:border-box;
+    
 }
 
 .feed_back_view .address{

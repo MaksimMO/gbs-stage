@@ -7,6 +7,7 @@ html, body {
     height: 100%;
     font-family: 'Raleway';
     font-feature-settings: 'pnum' on, 'lnum' on;
+    background-color: #000000;
 }
 
 
@@ -233,7 +234,6 @@ label[data-v-8048fca2] {
     display: flex;
     overflow: hidden;
     height:100%;
-    background-color: #000000;
 }
 div.slide {
     font-size: 40px;

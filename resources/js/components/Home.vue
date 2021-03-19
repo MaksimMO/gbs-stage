@@ -110,7 +110,7 @@ export default {
     display: flex;
     overflow: hidden;
     height:100%;
-    background-color: #000000;
+    
 }
 
 div.slide {
