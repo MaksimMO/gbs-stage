@@ -36,7 +36,7 @@
 
                 <div class="form-group">
                     {{ Form::label('description', 'Коментар') }}
-                    {{ Form::textarea('description', $lead['description'], ['class' => 'form-control', 'rows' => 2, 'cols' => 50]) }}
+                    {{ Form::textarea('description', $lead['description'], ['class' => 'form-control', 'rows' => 5, 'cols' => 50]) }}
                 </div>
 
                 <div class="form-group">
