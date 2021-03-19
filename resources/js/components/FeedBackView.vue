@@ -23,22 +23,14 @@ let preloadedAssets = {
     }
 
 export default {
-    data(){
-        // return {
-        //     isLoading:true
-        // }
-
-    },
     props:['level'],
     components:{
         FeedBackForm
     },
     methods:{
     },
-    beforeMount(){
-        this.$root.$data.isLoading=false;
-    },
     beforeRouteEnter(to, from, next) {
+        window.vm.$data.isLoading=true;
         const cacheImage = (url) =>{
             return new Promise((resolve, reject) => {
                     let img = new Image()
@@ -52,7 +44,10 @@ export default {
         Promise.all(
             [cacheImage(preloadedAssets[to.params.level][0]),
             cacheImage(preloadedAssets[to.params.level][1])])
-        .finally(next);
+        .finally(()=>{
+            window.vm.$data.isLoading=false;
+            next();
+        });
   },
 }
 </script>

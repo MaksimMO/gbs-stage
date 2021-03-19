@@ -62,14 +62,12 @@
 
 <script>
 
-// let preloadedAssets = {
-//     g: [require('../../assets/homeView/slide-1.png').default,
-//         require('../../assets/feedBackFormView/g-level.svg').default],
-//     b: [require('../../assets/homeView/slide-2.png').default,
-//         require('../../assets/feedBackFormView/b-level.svg').default],
-//     s: [require('../../assets/feedBackFormView/background-s.png').default,
-//         require('../../assets/feedBackFormView/s-level.svg').default]
-//     }
+let preloadedAssets =
+    [
+        require('../../assets/homeView/slide-1.png').default,
+        require('../../assets/homeView/slide-2.png').default,
+        require('../../assets/homeView/slide-3.png').default,
+    ]
 
 export default {
   data(){
@@ -104,9 +102,22 @@ export default {
   beforeMount(){
 
   },
-  beforeRouteLeave (to, from, next) {
-    this.$root.$data.isLoading=true;
-    next();
+  beforeRouteEnter (to, from, next) {
+    window.vm.$data.isLoading=true;
+    const cacheImage = (url) => {
+        return new Promise((resolve, reject) => {
+                let img = new Image()
+                img.onload = function() {
+                    resolve()
+                }
+                img.src = url;
+        });
+    }
+
+    Promise.all(preloadedAssets.map((item)=>cacheImage(item))).finally(()=>{
+      window.vm.$data.isLoading=false;
+      next();
+    });
   }
 }
 </script>

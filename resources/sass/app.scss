@@ -1,10 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:400,500,700,800';
 
 
-
-
-$color: #2194E0;
-
 @keyframes sheen {
   0% {
     transform: skewY(-45deg) translateX(0);
@@ -13,8 +9,6 @@ $color: #2194E0;
     transform: skewY(-45deg) translateX(12.5em);
   }
 }
-
-
 
 button{
     transform: skew(160deg);
