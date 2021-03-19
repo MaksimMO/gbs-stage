@@ -3,7 +3,7 @@
   <router-link to="/level-g">g level</router-link> |
   <router-link to="/level-b">b level</router-link> |
   <router-link to="/level-s">s level</router-link> -->
-<div class="home_view">
+<div class="home_view" :style="{marginLeft:skewOffset}">
      <div class="slide slide-1">
         <img src="../../assets/homeView/slide-1.png" alt="">
         <router-link to="/level-g" tag="div" class="text">
@@ -72,7 +72,21 @@
 
 <script>
 export default {
-
+  data(){
+    return {
+      innerHeight:window.innerHeight
+    }
+  },
+  mounted(){
+    window.addEventListener('resize', ()=> {
+        this.innerHeight = window.innerHeight;
+    });
+  },
+  computed:{
+    skewOffset(){
+      return `-${Math.round(this.innerHeight * Math.tan(15 * Math.PI/180))}px`;
+    }
+  }
 }
 </script>
 
