@@ -24,7 +24,7 @@ Route::post('/feedback-form',[App\Http\Controllers\HomeController::class, 'store
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
-Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('dashboard');
+Route::get('/gbs-user-admin', [App\Http\Controllers\AdminController::class, 'index'])->name('dashboard');
 
 
 Route::get('/update-data/{id}', [App\Http\Controllers\AdminController::class, 'checkLead'])->name('edit-lead');

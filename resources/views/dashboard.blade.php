@@ -40,11 +40,7 @@
 
                         <td>{{ isset($lead['description']) ? $lead['description'] : "" }}</td>
                         <td>{{ $lead['updated_at'] }}</td>
-                        <td>
-                            @if ( ($lead['called_success'] == 0) || ($lead['called_success'] == 1))
-                            <a href="{{ URL::to('update-data/'.$lead['id']) }}">Змінити</a>
-                            @endif
-                        </td>
+                        <td><a href="{{ URL::to('update-data/'.$lead['id']) }}">Змінити</a></td>
                     </tr>
                     @endforeach
                     </tbody>
