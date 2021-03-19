@@ -36,11 +36,13 @@
 
                 <div class="form-group">
                     {{ Form::label('description', 'Коментар') }}
-                    {{ Form::textarea('description', $lead['description'], array('class' => 'form-control')) }}
+                    {{ Form::textarea('description', $lead['description'], ['class' => 'form-control', 'rows' => 2, 'cols' => 50]) }}
                 </div>
 
-                {{ Form::submit('Зберегти', array('class' => 'btn btn-primary')) }}
-                <a href="{{url()->previous()}}" class="btn btn-danger">Відміна</a>
+                <div class="form-group">
+                    {{ Form::submit('Зберегти', array('class' => 'btn btn-primary')) }}
+                    <a href="{{url()->previous()}}" class="btn btn-danger">Відміна</a>
+                </div>
 
                 {{ Form::close() }}
             </div>

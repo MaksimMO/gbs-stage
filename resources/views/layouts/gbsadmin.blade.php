@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/gbs-user-admin') }}">
-                {{ config('app.name', 'Laravel') }}
+                {{ strtoupper(config('app.name', 'Laravel')) }} User Admin
             </a>
 
         </div>
