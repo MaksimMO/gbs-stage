@@ -61,6 +61,16 @@
 </template>
 
 <script>
+
+// let preloadedAssets = {
+//     g: [require('../../assets/homeView/slide-1.png').default,
+//         require('../../assets/feedBackFormView/g-level.svg').default],
+//     b: [require('../../assets/homeView/slide-2.png').default,
+//         require('../../assets/feedBackFormView/b-level.svg').default],
+//     s: [require('../../assets/feedBackFormView/background-s.png').default,
+//         require('../../assets/feedBackFormView/s-level.svg').default]
+//     }
+
 export default {
   data(){
     return {
@@ -90,6 +100,9 @@ export default {
     skewOffset(){
       return `-${Math.round(this.innerHeight * Math.tan(15 * Math.PI/180))}px`;
     }
+  },
+  beforeMount(){
+
   },
   beforeRouteLeave (to, from, next) {
     this.$root.$data.isLoading=true;

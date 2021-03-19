@@ -1,4 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700,800);
+@-webkit-keyframes sheen {
+  0% {
+    transform: skewY(-45deg) translateX(0);
+  }
+
+  100% {
+    transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+
+@keyframes sheen {
+  0% {
+    transform: skewY(-45deg) translateX(0);
+  }
+
+  100% {
+    transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+
 button {
   transform: skew(160deg);
   border: none;
@@ -13,10 +33,30 @@ button {
   line-height: 46px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+button:before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  transform: skewX(-45deg) translateX(0);
+  transition: none;
 }
 
 button:hover {
-  filter: brightness(110%);
+  filter: brightness(120%);
+}
+
+button:hover:before {
+  transform: skewX(-45deg) translateX(30em);
+  transition: all 0.5s ease-in-out;
 }
 
 button span {
