@@ -43,13 +43,15 @@
     ],
   });
 
+let data = {
+    isLoading:false
+}
+
 
 const app = createApp({
     template:'<root />',
     data(){
-        return{
-            isLoading:false
-        }
+        return data;
     },
     components:{
         Root
@@ -59,9 +61,9 @@ const app = createApp({
 
 
 //   router.beforeEach((to, from, next) => {
+//       debugger;
+//     data.isLoading=true;
 //     next()
-//     debugger
-//     app.data.isLoading=true;
 //   })
 
 // router.afterEach((d,t,y) => {

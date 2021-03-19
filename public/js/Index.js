@@ -14574,19 +14574,14 @@ var preloadedAssets = {
   s: [__webpack_require__(/*! ../../assets/feedBackFormView/background-s.png */ "./resources/assets/feedBackFormView/background-s.png").default, __webpack_require__(/*! ../../assets/feedBackFormView/s-level.svg */ "./resources/assets/feedBackFormView/s-level.svg").default]
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {// return {
-    //     isLoading:true
-    // }
-  },
   props: ['level'],
   components: {
     FeedBackForm: _Form_vue__WEBPACK_IMPORTED_MODULE_0__.default
   },
   methods: {},
-  beforeMount: function beforeMount() {
-    this.$root.$data.isLoading = false;
-  },
   beforeRouteEnter: function beforeRouteEnter(to, from, next) {
+    window.vm.$data.isLoading = true;
+
     var cacheImage = function cacheImage(url) {
       return new Promise(function (resolve, reject) {
         var img = new Image();
@@ -14599,7 +14594,10 @@ var preloadedAssets = {
       });
     };
 
-    Promise.all([cacheImage(preloadedAssets[to.params.level][0]), cacheImage(preloadedAssets[to.params.level][1])])["finally"](next);
+    Promise.all([cacheImage(preloadedAssets[to.params.level][0]), cacheImage(preloadedAssets[to.params.level][1])])["finally"](function () {
+      window.vm.$data.isLoading = false;
+      next();
+    });
   }
 });
 
@@ -14671,14 +14669,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-// let preloadedAssets = {
-//     g: [require('../../assets/homeView/slide-1.png').default,
-//         require('../../assets/feedBackFormView/g-level.svg').default],
-//     b: [require('../../assets/homeView/slide-2.png').default,
-//         require('../../assets/feedBackFormView/b-level.svg').default],
-//     s: [require('../../assets/feedBackFormView/background-s.png').default,
-//         require('../../assets/feedBackFormView/s-level.svg').default]
-//     }
+var preloadedAssets = [__webpack_require__(/*! ../../assets/homeView/slide-1.png */ "./resources/assets/homeView/slide-1.png").default, __webpack_require__(/*! ../../assets/homeView/slide-2.png */ "./resources/assets/homeView/slide-2.png").default, __webpack_require__(/*! ../../assets/homeView/slide-3.png */ "./resources/assets/homeView/slide-3.png").default];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -14712,9 +14703,27 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   beforeMount: function beforeMount() {},
-  beforeRouteLeave: function beforeRouteLeave(to, from, next) {
-    this.$root.$data.isLoading = true;
-    next();
+  beforeRouteEnter: function beforeRouteEnter(to, from, next) {
+    window.vm.$data.isLoading = true;
+
+    var cacheImage = function cacheImage(url) {
+      return new Promise(function (resolve, reject) {
+        var img = new Image();
+
+        img.onload = function () {
+          resolve();
+        };
+
+        img.src = url;
+      });
+    };
+
+    Promise.all(preloadedAssets.map(function (item) {
+      return cacheImage(item);
+    }))["finally"](function () {
+      window.vm.$data.isLoading = false;
+      next();
+    });
   }
 });
 
@@ -15279,20 +15288,21 @@ var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_4__.createRouter)({
     props: true
   }]
 });
+var _data = {
+  isLoading: false
+};
 var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
   template: '<root />',
   data: function data() {
-    return {
-      isLoading: false
-    };
+    return _data;
   },
   components: {
     Root: _Root_vue__WEBPACK_IMPORTED_MODULE_1__.default
   }
 }); //   router.beforeEach((to, from, next) => {
+//       debugger;
+//     data.isLoading=true;
 //     next()
-//     debugger
-//     app.data.isLoading=true;
 //   })
 // router.afterEach((d,t,y) => {
 //     app.data.isLoading=true;
