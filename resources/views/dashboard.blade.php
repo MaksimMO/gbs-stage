@@ -35,7 +35,15 @@
                         <td>{{ $lead['id'] }}</td>
                         <td>{{ $lead['name'] }}</td>
                         <td>{{ $lead['phone_number'] }}</td>
-                        <td>{{ ($lead['called_success'] == 1) ? "YES" : "NO" }}</td>
+
+                        @if ($lead['called_success'] == 1)
+                        <td>YES</td>
+                        @elseif ($lead['called_success'] == 2)
+                        <td>Not Valid</td>
+                        @else
+                        <td>NO</td>
+                        @endif
+
                         <td>{{ isset($lead['description']) ? $lead['description'] : "" }}</td>
                         <td><a href="{{ URL::to('update-data/'.$lead['id']) }}">Edit</a></td>
                     </tr>

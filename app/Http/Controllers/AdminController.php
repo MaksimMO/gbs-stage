@@ -25,7 +25,9 @@ class AdminController extends BaseController
      */
     public function index()
     {
-        $leads = Lead::all();
+        $leads = Lead::get()->sortBy(function($query){
+            return $query->called_success;
+        })->all();
 
         return view('dashboard',['leads' => $leads]);
     }

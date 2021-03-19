@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.gbsadmin')
 
 @section('content')
 <div class="container">
@@ -39,7 +39,7 @@
 
                 <div class="form-group">
                     {{ Form::label('called_success', 'Call success') }}
-                    {{ Form::select('called_success', ['0' => 'No', '1' => 'Yes'], array('class' => 'form-control')) }}
+                    {{ Form::select('called_success', ['0' => 'No', '1' => 'Yes', '2' => 'Not Relevant'], array('class' => 'form-control')) }}
                 </div>
 
                 <div class="form-group">
