@@ -31,7 +31,7 @@
 
                 <div class="form-group">
                     {{ Form::label('called_success', 'Результат дзвінка') }}
-                    {{ Form::select('called_success', ['0' => 'Новий', '1' => 'Не взяли трубку', '2' => 'Успішний дзвінок', '3' => 'Некоректний'], null, array('class' => 'form-control')) }}
+                    {{ Form::select('called_success', ['0' => 'Новий', '1' => 'Не взяли трубку', '2' => 'Успішний дзвінок', '3' => 'Некоректний'], $lead['called_success'], array('class' => 'form-control')) }}
                 </div>
 
                 <div class="form-group">
