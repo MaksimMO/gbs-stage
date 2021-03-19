@@ -4,7 +4,7 @@
   <router-link to="/level-b">b level</router-link> |
   <router-link to="/level-s">s level</router-link> -->
 <div class="home_view" :style="{marginLeft:skewOffset}">
-     <div class="slide slide-1">
+     <div class="slide slide-1" @mouseenter="enter" @mouseleave="leave">
         <img src="../../assets/homeView/slide-1.png" alt="">
         <router-link to="/level-g" tag="div" class="text">
         <!-- <div class="text"> -->
@@ -21,11 +21,11 @@
                 <div class="your-level-go">GO</div>
             </div>
         <!-- </div> -->
-        </router-link>
+        </router-link>  
     </div>
 
 
-    <div class="slide slide-2">
+    <div class="slide slide-2" @mouseenter="enter" @mouseleave="leave">
         <img src="../../assets/homeView/slide-2.png" alt="">
         <router-link to="/level-b" tag="div" class="text">
         <!-- <div class="text"> -->
@@ -47,7 +47,7 @@
     </div>
 
 
-    <div class="slide slide-3">
+    <div class="slide slide-3" @mouseenter="enter" @mouseleave="leave">
         <img src="../../assets/homeView/slide-3.png" alt="">
         <router-link to="/level-s" tag="div" class="text">
         <!-- <div class="text"> -->
@@ -75,6 +75,20 @@ export default {
   data(){
     return {
       innerHeight:window.innerHeight
+    }
+  },
+  methods:{
+    enter(e){
+      console.log('mouseleave', e.currentTarget);
+      let activeSlide = document.getElementsByClassName('is-active')[0];
+
+      if (!activeSlide){
+          e.currentTarget.classList.add("is-target");
+      }
+    },
+    leave(e){
+      console.log('mouseleave', e.currentTarget);
+      e.currentTarget.classList.remove("is-target");
     }
   },
   mounted(){
@@ -112,7 +126,6 @@ div.slide {
     transition: all .3s ease-in-out;
     filter: brightness(75%);
     overflow: hidden;
-    /* -webkit-backface-visibility: hidden; */
     transform: skew(-15deg);
     transform-origin: bottom;
     position: relative;
