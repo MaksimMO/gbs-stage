@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div>
-                <table border="1">
+                <table cellpadding="7" border="1">
                     <thead>
                     <tr>
                         <th>Level</th>
@@ -33,7 +33,7 @@
                     <tbody>
                     @foreach ($leads as $lead)
                     <tr>
-                        <td>{{ $lead['level'] }}</td>
+                        <td>{{ strtoupper($lead['level']) }}</td>
                         <td>{{ $lead['name'] }}</td>
                         <td>{{ $lead['phone_number'] }}</td>
 
@@ -49,7 +49,7 @@
 
                         <td>{{ isset($lead['description']) ? $lead['description'] : "" }}</td>
                         <td>{{ $lead['updated_at'] }}</td>
-                        <td><a href="{{ URL::to('update-data/'.$lead['id']) }}">Edit</a></td>
+                        <td><a href="{{ URL::to('update-data/'.$lead['id']) }}">Змінити</a></td>
                     </tr>
                     @endforeach
                     </tbody>
