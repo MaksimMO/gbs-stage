@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div>
-                <table cellpadding="7" border="1">
+                <table cellpadding="7" cellspacing="1" border="1">
                     <thead>
                     <tr>
                         <th>Level</th>
