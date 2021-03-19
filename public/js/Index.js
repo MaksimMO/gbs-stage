@@ -14577,7 +14577,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Form_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Form.vue */ "./resources/js/components/Form.vue");
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['lavel'],
+  props: ['level'],
   components: {
     FeedBackForm: _Form_vue__WEBPACK_IMPORTED_MODULE_0__.default
   }
@@ -14796,16 +14796,16 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   var _component_FeedBackForm = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("FeedBackForm");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
-    "class": "feed_back_view ".concat($props.lavel)
+    "class": "feed_back_view ".concat($props.level)
   }, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-    "class": "logo ".concat($props.lavel)
+    "class": "logo ".concat($props.level)
   }, null, 2
   /* CLASS */
   ), _hoisted_2, _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FeedBackForm, {
-    lavel: $props.lavel
+    level: $props.level
   }, null, 8
   /* PROPS */
-  , ["lavel"])], 2
+  , ["level"])], 2
   /* CLASS */
   );
 });
@@ -15235,7 +15235,7 @@ var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_4__.createRouter)({
     component: _components_Home__WEBPACK_IMPORTED_MODULE_3__.default,
     name: 'home'
   }, {
-    path: '/level-:lavel',
+    path: '/level-:level',
     component: _components_FeedBackView__WEBPACK_IMPORTED_MODULE_2__.default,
     props: true
   }]

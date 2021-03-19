@@ -38,7 +38,7 @@
     history: createWebHistory(),
     routes: [
       { path: '/', component: Home, name: 'home'},
-      { path: '/level-:lavel', component:FeedBackView, props: true }
+      { path: '/level-:level', component:FeedBackView, props: true }
     ],
   })
 
