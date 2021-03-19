@@ -33,7 +33,7 @@
                         @elseif ($lead['called_success'] == 1)
                         <td>Не взяли трубку</td>
                         @elseif ($lead['called_success'] == 2)
-                        <td>Завершений дзвінок</td>
+                        <td>Успішний дзвінок</td>
                         @elseif ($lead['called_success'] == 3)
                         <td>Нерелевантні</td>
                         @endif
