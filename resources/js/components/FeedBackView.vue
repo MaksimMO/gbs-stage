@@ -24,9 +24,9 @@ let preloadedAssets = {
 
 export default {
     data(){
-        return {
-            isLoading:true
-        }
+        // return {
+        //     isLoading:true
+        // }
 
     },
     props:['level'],
@@ -35,8 +35,10 @@ export default {
     },
     methods:{
     },
+    beforeMount(){
+        this.$root.$data.isLoading=false;
+    },
     beforeRouteEnter(to, from, next) {
-
         const cacheImage = (url) =>{
             return new Promise((resolve, reject) => {
                     let img = new Image()

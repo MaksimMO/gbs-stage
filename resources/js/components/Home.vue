@@ -90,6 +90,10 @@ export default {
     skewOffset(){
       return `-${Math.round(this.innerHeight * Math.tan(15 * Math.PI/180))}px`;
     }
+  },
+  beforeRouteLeave (to, from, next) {
+    this.$root.$data.isLoading=true;
+    next();
   }
 }
 </script>
