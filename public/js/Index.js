@@ -14582,21 +14582,22 @@ var preloadedAssets = {
   },
   methods: {},
   beforeRouteEnter: function beforeRouteEnter(to, from, next) {
-    window.vm.$data.isLoading = true;
-
     var cacheImage = function cacheImage(url) {
       return new Promise(function (resolve, reject) {
         var img = new Image();
-
-        img.onload = function () {
-          resolve();
-        };
-
+        img.onload = resolve;
         img.src = url;
       });
     };
 
+    console.log("wait to show loader for 0.6s");
+    var postponeTimelId = setTimeout(function () {
+      console.log("show loader");
+      window.vm.$data.isLoading = true;
+    }, 600);
     Promise.all([cacheImage(preloadedAssets[to.params.level][0]), cacheImage(preloadedAssets[to.params.level][1])])["finally"](function () {
+      clearTimeout(postponeTimelId);
+      console.log("hide loader");
       window.vm.$data.isLoading = false;
       next();
     });
@@ -14706,23 +14707,24 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/homeView/slide-1.png
   },
   beforeMount: function beforeMount() {},
   beforeRouteEnter: function beforeRouteEnter(to, from, next) {
-    window.vm.$data.isLoading = true;
-
     var cacheImage = function cacheImage(url) {
       return new Promise(function (resolve, reject) {
         var img = new Image();
-
-        img.onload = function () {
-          resolve();
-        };
-
+        img.onload = resolve;
         img.src = url;
       });
     };
 
+    console.log("wait to show loader for 0.6s");
+    var postponeTimelId = setTimeout(function () {
+      console.log("show loader");
+      window.vm.$data.isLoading = true;
+    }, 600);
     Promise.all(preloadedAssets.map(function (item) {
       return cacheImage(item);
     }))["finally"](function () {
+      clearTimeout(postponeTimelId);
+      console.log("hide loader");
       window.vm.$data.isLoading = false;
       next();
     });
@@ -15429,7 +15431,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title.svg?4306cc9634e5a1b5f166f1c7f028fb55");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title.svg?54ceea7b9b9da71a6191d0bc66c62d63");
 
 /***/ }),
 
@@ -15443,7 +15445,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title.svg?1d07260038905da404c03e52414fca17");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title.svg?d7c14c2336646658091fb6ade56098e8");
 
 /***/ }),
 
@@ -15457,7 +15459,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title.svg?81bbee189da07b95eda2a00f1320b2c1");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title.svg?d9686a7d8f9909571c83718a7173d53b");
 
 /***/ }),
 

@@ -83,18 +83,23 @@ export default {
 
   },
   beforeRouteEnter (to, from, next) {
-    window.vm.$data.isLoading=true;
+
     const cacheImage = (url) => {
         return new Promise((resolve, reject) => {
                 let img = new Image()
-                img.onload = function() {
-                    resolve()
-                }
+                img.onload = resolve;
                 img.src = url;
         });
     }
+    console.log("wait to show loader for 0.6s")
+    let postponeTimelId = setTimeout(()=>{
+      console.log("show loader")
+      window.vm.$data.isLoading=true
+    },600);
 
     Promise.all(preloadedAssets.map((item)=>cacheImage(item))).finally(()=>{
+      clearTimeout(postponeTimelId);
+      console.log("hide loader")
       window.vm.$data.isLoading=false;
       next();
     });
