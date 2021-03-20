@@ -3,8 +3,6 @@
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <div :class="`logo ${level}`"></div>
     <div class="phone"><a href="tel:0800355555">0800 355 555</a></div>
-
-
     <div class="text-1">або<br>залиште свій телефон і ми зателефонуємо Вам</div>
     <FeedBackForm :level="level" />
 </div>
