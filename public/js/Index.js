@@ -14597,8 +14597,12 @@ var preloadedAssets = {
     }, 600);
     Promise.all([cacheImage(preloadedAssets[to.params.level][0]), cacheImage(preloadedAssets[to.params.level][1])])["finally"](function () {
       clearTimeout(postponeTimelId);
-      console.log("hide loader");
-      window.vm.$data.isLoading = false;
+
+      if (window.vm.$data.isLoading) {
+        console.log("hide loader");
+        window.vm.$data.isLoading = false;
+      }
+
       next();
     });
   }
@@ -14724,8 +14728,12 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/homeView/slide-1.png
       return cacheImage(item);
     }))["finally"](function () {
       clearTimeout(postponeTimelId);
-      console.log("hide loader");
-      window.vm.$data.isLoading = false;
+
+      if (window.vm.$data.isLoading) {
+        console.log("hide loader");
+        window.vm.$data.isLoading = false;
+      }
+
       next();
     });
   }

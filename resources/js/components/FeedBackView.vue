@@ -44,9 +44,12 @@ export default {
         Promise.all(
             [cacheImage(preloadedAssets[to.params.level][0]),
             cacheImage(preloadedAssets[to.params.level][1])]).finally(()=>{
+
             clearTimeout(postponeTimelId);
-            console.log("hide loader")
-            window.vm.$data.isLoading=false;
+            if (window.vm.$data.isLoading){
+                console.log("hide loader")
+                window.vm.$data.isLoading=false;
+            }
             next();
         });
   },

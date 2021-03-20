@@ -99,8 +99,10 @@ export default {
 
     Promise.all(preloadedAssets.map((item)=>cacheImage(item))).finally(()=>{
       clearTimeout(postponeTimelId);
-      console.log("hide loader")
-      window.vm.$data.isLoading=false;
+      if (window.vm.$data.isLoading){
+        console.log("hide loader")
+        window.vm.$data.isLoading=false;
+      }
       next();
     });
   }
