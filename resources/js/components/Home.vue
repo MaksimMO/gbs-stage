@@ -1,8 +1,28 @@
 <template>
 <div class="home_view" :style="{marginLeft:skewOffset}">
-     <div class="slide slide-1" @mouseenter="enter" @mouseleave="leave">
+
+<div v-for="slide in slides"
+:key="slide.id"
+:class="['slide', `slide-${slide.id}`, [slide.isActive ? 'is-active' : ''], /*[slide.isHovered && !slides.find(({isActive})=>isActive) ? 'is-target' : '']*/]"
+@click="onSlideClick($event, slide)"
+@touchend="onSlideClick($event, slide)"
+@mouseenter="slide.isHovered=true"
+@mouseleave="slide.isHovered=false">
+
+    <img :src="slide.backgroundImage" alt="">
+    <router-link :to="slide.link" tag="div" class="text" @click="onlogoClick($event, slide.id)">
+    <img :src="slide.isActive ? slide.titleImageActive : slide.titleImage" />
+        <div class="your-level-wrapper">
+            <div class="your-level-text">{{slide.text1}}</div>
+            <div class="your-level-go">GO</div>
+        </div>
+    </router-link>
+</div>
+
+
+     <!-- <div class="slide slide-1" @mouseenter="enter" @mouseleave="leave" ref="slide-1" @click="onSlideClick">
         <img src="../../assets/homeView/slide-1.png" alt="">
-        <router-link to="/level-g" tag="div" class="text">
+        <router-link to="/level-g" tag="div" class="text" @click="onlogoClick($event, 1)">
         <img src="../../assets/homeView/g-level-title.svg" />
             <div class="your-level-wrapper">
                 <div class="your-level-text">Твій рівень спорту</div>
@@ -11,9 +31,9 @@
         </router-link>
     </div>
 
-    <div class="slide slide-2" @mouseenter="enter" @mouseleave="leave">
+    <div class="slide slide-2" @mouseenter="enter" @mouseleave="leave" ref="slide-2" @click="onSlideClick">
         <img src="../../assets/homeView/slide-2.png" alt="">
-        <router-link to="/level-b" tag="div" class="text">
+        <router-link to="/level-b" tag="div" class="text" @click="onlogoClick($event, 2)">
             <img src="../../assets/homeView/b-level-title.svg" />
             <div class="your-level-wrapper">
                 <div class="your-level-text">Твій рівень краси</div>
@@ -22,16 +42,16 @@
         </router-link>
     </div>
 
-    <div class="slide slide-3" @mouseenter="enter" @mouseleave="leave">
+    <div class="slide slide-3" @mouseenter="enter" @mouseleave="leave" ref="slide-3" @click="onSlideClick">
         <img src="../../assets/homeView/slide-3.png" alt="">
-        <router-link to="/level-s" tag="div" class="text">
+        <router-link to="/level-s" tag="div" class="text" @click="onlogoClick($event, 3)">
         <img src="../../assets/homeView/s-level-title.svg" />
             <div class="your-level-wrapper">
                 <div class="your-level-text">Твій рівень відпочинку</div>
                 <div class="your-level-go">GO</div>
             </div>
         </router-link>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -42,9 +62,15 @@ let preloadedAssets =
         require('../../assets/homeView/slide-1.png').default,
         require('../../assets/homeView/slide-2.png').default,
         require('../../assets/homeView/slide-3.png').default,
+
         require('../../assets/homeView/g-level-title.svg').default,
         require('../../assets/homeView/b-level-title.svg').default,
         require('../../assets/homeView/s-level-title.svg').default,
+
+        require('../../assets/homeView/g-level-title-active.svg').default,
+        require('../../assets/homeView/b-level-title-active.svg').default,
+        require('../../assets/homeView/s-level-title-active.svg').default,
+
         require('../../assets/homeView/arrow-right.svg').default,
         require('../../assets/homeView/arrow-right-hover.svg').default,
     ]
@@ -52,10 +78,74 @@ let preloadedAssets =
 export default {
   data(){
     return {
+      slides:[
+        {
+          id:1,
+          backgroundImage:require('../../assets/homeView/slide-1.png').default,
+          titleImage:require('../../assets/homeView/g-level-title.svg').default,
+          titleImageActive:require('../../assets/homeView/g-level-title-active.svg').default,
+          link:'/level-g',
+          text1:'Твій рівень спорту',
+          isActive:false,
+          isHovered:false
+        },
+        {
+          id:2,
+          backgroundImage:require('../../assets/homeView/slide-2.png').default,
+          titleImage:require('../../assets/homeView/b-level-title.svg').default,
+          titleImageActive:require('../../assets/homeView/b-level-title-active.svg').default,
+          link:'/level-b',
+          text1:'Твій рівень краси',
+          isActive:false,
+          isHovered:false
+
+        },
+        {
+          id:3,
+          backgroundImage:require('../../assets/homeView/slide-3.png').default,
+          titleImage:require('../../assets/homeView/s-level-title.svg').default,
+          titleImageActive:require('../../assets/homeView/s-level-title-active.svg').default,
+          link:'/level-s',
+          text1:'Твій рівень відпочинку',
+          isActive:false,
+          isHovered:false
+
+        },
+      ],
+
       innerHeight:window.innerHeight
     }
   },
   methods:{
+    onlogoClick(e, daw){
+      // debugger
+      console.log('onlogoClick', e.currentTarget);
+      return e.preventDefault();
+
+    },
+    onSlideClick(e, slide){
+      if (slide.isActive){
+        slide.isActive = false;
+      }else{
+        let activeSlide =  this.slides.find(({isActive})=>isActive) ?? slide;
+
+        activeSlide.isActive = true;
+
+        // activeSlide.isActive = false;
+        // slide.isActive=true;
+      }
+      // debugger
+			// let activeSlide = document.getElementsByClassName('is-active')[0];
+
+			// if (activeSlide && activeSlide !== e.currentTarget){
+			// 	activeSlide.classList.remove('is-active')
+			// }
+
+			// e.currentTarget.classList.remove("is-target");
+			// e.currentTarget.classList.toggle('is-active')
+
+			// console.log('onclick', e.currentTarget);
+    },
     enter(e){
       console.log('mouseleave', e.currentTarget);
       let activeSlide = document.getElementsByClassName('is-active')[0];

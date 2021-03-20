@@ -14676,14 +14676,69 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-var preloadedAssets = [__webpack_require__(/*! ../../assets/homeView/slide-1.png */ "./resources/assets/homeView/slide-1.png").default, __webpack_require__(/*! ../../assets/homeView/slide-2.png */ "./resources/assets/homeView/slide-2.png").default, __webpack_require__(/*! ../../assets/homeView/slide-3.png */ "./resources/assets/homeView/slide-3.png").default, __webpack_require__(/*! ../../assets/homeView/g-level-title.svg */ "./resources/assets/homeView/g-level-title.svg").default, __webpack_require__(/*! ../../assets/homeView/b-level-title.svg */ "./resources/assets/homeView/b-level-title.svg").default, __webpack_require__(/*! ../../assets/homeView/s-level-title.svg */ "./resources/assets/homeView/s-level-title.svg").default, __webpack_require__(/*! ../../assets/homeView/arrow-right.svg */ "./resources/assets/homeView/arrow-right.svg").default, __webpack_require__(/*! ../../assets/homeView/arrow-right-hover.svg */ "./resources/assets/homeView/arrow-right-hover.svg").default];
+var preloadedAssets = [__webpack_require__(/*! ../../assets/homeView/slide-1.png */ "./resources/assets/homeView/slide-1.png").default, __webpack_require__(/*! ../../assets/homeView/slide-2.png */ "./resources/assets/homeView/slide-2.png").default, __webpack_require__(/*! ../../assets/homeView/slide-3.png */ "./resources/assets/homeView/slide-3.png").default, __webpack_require__(/*! ../../assets/homeView/g-level-title.svg */ "./resources/assets/homeView/g-level-title.svg").default, __webpack_require__(/*! ../../assets/homeView/b-level-title.svg */ "./resources/assets/homeView/b-level-title.svg").default, __webpack_require__(/*! ../../assets/homeView/s-level-title.svg */ "./resources/assets/homeView/s-level-title.svg").default, __webpack_require__(/*! ../../assets/homeView/g-level-title-active.svg */ "./resources/assets/homeView/g-level-title-active.svg").default, __webpack_require__(/*! ../../assets/homeView/b-level-title-active.svg */ "./resources/assets/homeView/b-level-title-active.svg").default, __webpack_require__(/*! ../../assets/homeView/s-level-title-active.svg */ "./resources/assets/homeView/s-level-title-active.svg").default, __webpack_require__(/*! ../../assets/homeView/arrow-right.svg */ "./resources/assets/homeView/arrow-right.svg").default, __webpack_require__(/*! ../../assets/homeView/arrow-right-hover.svg */ "./resources/assets/homeView/arrow-right-hover.svg").default];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
+      slides: [{
+        id: 1,
+        backgroundImage: __webpack_require__(/*! ../../assets/homeView/slide-1.png */ "./resources/assets/homeView/slide-1.png").default,
+        titleImage: __webpack_require__(/*! ../../assets/homeView/g-level-title.svg */ "./resources/assets/homeView/g-level-title.svg").default,
+        titleImageActive: __webpack_require__(/*! ../../assets/homeView/g-level-title-active.svg */ "./resources/assets/homeView/g-level-title-active.svg").default,
+        link: '/level-g',
+        text1: 'Твій рівень спорту',
+        isActive: false,
+        isHovered: false
+      }, {
+        id: 2,
+        backgroundImage: __webpack_require__(/*! ../../assets/homeView/slide-2.png */ "./resources/assets/homeView/slide-2.png").default,
+        titleImage: __webpack_require__(/*! ../../assets/homeView/b-level-title.svg */ "./resources/assets/homeView/b-level-title.svg").default,
+        titleImageActive: __webpack_require__(/*! ../../assets/homeView/b-level-title-active.svg */ "./resources/assets/homeView/b-level-title-active.svg").default,
+        link: '/level-b',
+        text1: 'Твій рівень краси',
+        isActive: false,
+        isHovered: false
+      }, {
+        id: 3,
+        backgroundImage: __webpack_require__(/*! ../../assets/homeView/slide-3.png */ "./resources/assets/homeView/slide-3.png").default,
+        titleImage: __webpack_require__(/*! ../../assets/homeView/s-level-title.svg */ "./resources/assets/homeView/s-level-title.svg").default,
+        titleImageActive: __webpack_require__(/*! ../../assets/homeView/s-level-title-active.svg */ "./resources/assets/homeView/s-level-title-active.svg").default,
+        link: '/level-s',
+        text1: 'Твій рівень відпочинку',
+        isActive: false,
+        isHovered: false
+      }],
       innerHeight: window.innerHeight
     };
   },
   methods: {
+    onlogoClick: function onlogoClick(e, daw) {
+      // debugger
+      console.log('onlogoClick', e.currentTarget);
+      return e.preventDefault();
+    },
+    onSlideClick: function onSlideClick(e, slide) {
+      if (slide.isActive) {
+        slide.isActive = false;
+      } else {
+        var _this$slides$find;
+
+        var activeSlide = (_this$slides$find = this.slides.find(function (_ref) {
+          var isActive = _ref.isActive;
+          return isActive;
+        })) !== null && _this$slides$find !== void 0 ? _this$slides$find : slide;
+        activeSlide.isActive = true; // activeSlide.isActive = false;
+        // slide.isActive=true;
+      } // debugger
+      // let activeSlide = document.getElementsByClassName('is-active')[0];
+      // if (activeSlide && activeSlide !== e.currentTarget){
+      // 	activeSlide.classList.remove('is-active')
+      // }
+      // e.currentTarget.classList.remove("is-target");
+      // e.currentTarget.classList.toggle('is-active')
+      // console.log('onclick', e.currentTarget);
+
+    },
     enter: function enter(e) {
       console.log('mouseleave', e.currentTarget);
       var activeSlide = document.getElementsByClassName('is-active')[0];
@@ -14988,86 +15043,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _assets_homeView_slide_1_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/homeView/slide-1.png */ "./resources/assets/homeView/slide-1.png");
-/* harmony import */ var _assets_homeView_g_level_title_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/homeView/g-level-title.svg */ "./resources/assets/homeView/g-level-title.svg");
-/* harmony import */ var _assets_homeView_slide_2_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/homeView/slide-2.png */ "./resources/assets/homeView/slide-2.png");
-/* harmony import */ var _assets_homeView_b_level_title_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/homeView/b-level-title.svg */ "./resources/assets/homeView/b-level-title.svg");
-/* harmony import */ var _assets_homeView_slide_3_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/homeView/slide-3.png */ "./resources/assets/homeView/slide-3.png");
-/* harmony import */ var _assets_homeView_s_level_title_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/homeView/s-level-title.svg */ "./resources/assets/homeView/s-level-title.svg");
 
-
-
-
-
-
-
-
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: _assets_homeView_slide_1_png__WEBPACK_IMPORTED_MODULE_1__.default,
-  alt: ""
-}, null, -1
-/* HOISTED */
-);
-
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: _assets_homeView_g_level_title_svg__WEBPACK_IMPORTED_MODULE_2__.default
-}, null, -1
-/* HOISTED */
-);
+var _hoisted_1 = {
+  "class": "your-level-wrapper"
+};
+var _hoisted_2 = {
+  "class": "your-level-text"
+};
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "your-level-wrapper"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "your-level-text"
-}, "Твій рівень спорту"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "your-level-go"
-}, "GO")], -1
-/* HOISTED */
-);
-
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: _assets_homeView_slide_2_png__WEBPACK_IMPORTED_MODULE_3__.default,
-  alt: ""
-}, null, -1
-/* HOISTED */
-);
-
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: _assets_homeView_b_level_title_svg__WEBPACK_IMPORTED_MODULE_4__.default
-}, null, -1
-/* HOISTED */
-);
-
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "your-level-wrapper"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "your-level-text"
-}, "Твій рівень краси"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "your-level-go"
-}, "GO")], -1
-/* HOISTED */
-);
-
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: _assets_homeView_slide_3_png__WEBPACK_IMPORTED_MODULE_5__.default,
-  alt: ""
-}, null, -1
-/* HOISTED */
-);
-
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: _assets_homeView_s_level_title_svg__WEBPACK_IMPORTED_MODULE_6__.default
-}, null, -1
-/* HOISTED */
-);
-
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "your-level-wrapper"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "your-level-text"
-}, "Твій рівень відпочинку"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "your-level-go"
-}, "GO")], -1
+}, "GO", -1
 /* HOISTED */
 );
 
@@ -15079,70 +15065,57 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     style: {
       marginLeft: $options.skewOffset
     }
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-    "class": "slide slide-1",
-    onMouseenter: _cache[1] || (_cache[1] = function () {
-      return $options.enter && $options.enter.apply($options, arguments);
-    }),
-    onMouseleave: _cache[2] || (_cache[2] = function () {
-      return $options.leave && $options.leave.apply($options, arguments);
-    })
-  }, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/level-g",
-    tag: "div",
-    "class": "text"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_2, _hoisted_3];
-    }),
-    _: 1
-    /* STABLE */
+  }, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.slides, function (slide) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+      key: slide.id,
+      "class": ['slide', "slide-".concat(slide.id), [slide.isActive ? 'is-active' : '']
+      /*[slide.isHovered && !slides.find(({isActive})=>isActive) ? 'is-target' : '']*/
+      ],
+      onClick: function onClick($event) {
+        return $options.onSlideClick($event, slide);
+      },
+      onTouchend: function onTouchend($event) {
+        return $options.onSlideClick($event, slide);
+      },
+      onMouseenter: function onMouseenter($event) {
+        return slide.isHovered = true;
+      },
+      onMouseleave: function onMouseleave($event) {
+        return slide.isHovered = false;
+      }
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+      src: slide.backgroundImage,
+      alt: ""
+    }, null, 8
+    /* PROPS */
+    , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      to: slide.link,
+      tag: "div",
+      "class": "text",
+      onClick: function onClick($event) {
+        return $options.onlogoClick($event, slide.id);
+      }
+    }, {
+      "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+        return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+          src: slide.isActive ? slide.titleImageActive : slide.titleImage
+        }, null, 8
+        /* PROPS */
+        , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(slide.text1), 1
+        /* TEXT */
+        ), _hoisted_3])];
+      }),
+      _: 2
+      /* DYNAMIC */
 
-  })], 32
-  /* HYDRATE_EVENTS */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-    "class": "slide slide-2",
-    onMouseenter: _cache[3] || (_cache[3] = function () {
-      return $options.enter && $options.enter.apply($options, arguments);
-    }),
-    onMouseleave: _cache[4] || (_cache[4] = function () {
-      return $options.leave && $options.leave.apply($options, arguments);
-    })
-  }, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/level-b",
-    tag: "div",
-    "class": "text"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_5, _hoisted_6];
-    }),
-    _: 1
-    /* STABLE */
-
-  })], 32
-  /* HYDRATE_EVENTS */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-    "class": "slide slide-3",
-    onMouseenter: _cache[5] || (_cache[5] = function () {
-      return $options.enter && $options.enter.apply($options, arguments);
-    }),
-    onMouseleave: _cache[6] || (_cache[6] = function () {
-      return $options.leave && $options.leave.apply($options, arguments);
-    })
-  }, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/level-s",
-    tag: "div",
-    "class": "text"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_8, _hoisted_9];
-    }),
-    _: 1
-    /* STABLE */
-
-  })], 32
-  /* HYDRATE_EVENTS */
-  )], 4
+    }, 1032
+    /* PROPS, DYNAMIC_SLOTS */
+    , ["to", "onClick"])], 42
+    /* CLASS, PROPS, HYDRATE_EVENTS */
+    , ["onClick", "onTouchend", "onMouseenter", "onMouseleave"]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  )), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"slide slide-1\" @mouseenter=\"enter\" @mouseleave=\"leave\" ref=\"slide-1\" @click=\"onSlideClick\">\r\n        <img src=\"../../assets/homeView/slide-1.png\" alt=\"\">\r\n        <router-link to=\"/level-g\" tag=\"div\" class=\"text\" @click=\"onlogoClick($event, 1)\">\r\n        <img src=\"../../assets/homeView/g-level-title.svg\" />\r\n            <div class=\"your-level-wrapper\">\r\n                <div class=\"your-level-text\">Твій рівень спорту</div>\r\n                <div class=\"your-level-go\">GO</div>\r\n            </div>\r\n        </router-link>\r\n    </div>\r\n\r\n    <div class=\"slide slide-2\" @mouseenter=\"enter\" @mouseleave=\"leave\" ref=\"slide-2\" @click=\"onSlideClick\">\r\n        <img src=\"../../assets/homeView/slide-2.png\" alt=\"\">\r\n        <router-link to=\"/level-b\" tag=\"div\" class=\"text\" @click=\"onlogoClick($event, 2)\">\r\n            <img src=\"../../assets/homeView/b-level-title.svg\" />\r\n            <div class=\"your-level-wrapper\">\r\n                <div class=\"your-level-text\">Твій рівень краси</div>\r\n                <div class=\"your-level-go\">GO</div>\r\n            </div>\r\n        </router-link>\r\n    </div>\r\n\r\n    <div class=\"slide slide-3\" @mouseenter=\"enter\" @mouseleave=\"leave\" ref=\"slide-3\" @click=\"onSlideClick\">\r\n        <img src=\"../../assets/homeView/slide-3.png\" alt=\"\">\r\n        <router-link to=\"/level-s\" tag=\"div\" class=\"text\" @click=\"onlogoClick($event, 3)\">\r\n        <img src=\"../../assets/homeView/s-level-title.svg\" />\r\n            <div class=\"your-level-wrapper\">\r\n                <div class=\"your-level-text\">Твій рівень відпочинку</div>\r\n                <div class=\"your-level-go\">GO</div>\r\n            </div>\r\n        </router-link>\r\n    </div> ")], 4
   /* STYLE */
   );
 }
@@ -15429,6 +15402,20 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/homeView/b-level-title-active.svg":
+/*!************************************************************!*\
+  !*** ./resources/assets/homeView/b-level-title-active.svg ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
+
+/***/ }),
+
 /***/ "./resources/assets/homeView/b-level-title.svg":
 /*!*****************************************************!*\
   !*** ./resources/assets/homeView/b-level-title.svg ***!
@@ -15443,6 +15430,20 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/homeView/g-level-title-active.svg":
+/*!************************************************************!*\
+  !*** ./resources/assets/homeView/g-level-title-active.svg ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
+
+/***/ }),
+
 /***/ "./resources/assets/homeView/g-level-title.svg":
 /*!*****************************************************!*\
   !*** ./resources/assets/homeView/g-level-title.svg ***!
@@ -15454,6 +15455,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title.svg?d7c14c2336646658091fb6ade56098e8");
+
+/***/ }),
+
+/***/ "./resources/assets/homeView/s-level-title-active.svg":
+/*!************************************************************!*\
+  !*** ./resources/assets/homeView/s-level-title-active.svg ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
 
 /***/ }),
 
