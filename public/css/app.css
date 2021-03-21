@@ -33,6 +33,7 @@ button {
   line-height: 46px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  white-space: nowrap;
   position: relative;
   overflow: hidden;
 }
@@ -45,7 +46,7 @@ button:before {
   display: block;
   position: absolute;
   top: 0;
-  left: -4.5em;
+  left: -5em;
   transform: skewX(-45deg) translateX(0);
   transition: none;
 }
@@ -62,6 +63,14 @@ button:hover:before {
 button span {
   transform: skew(-160deg);
   display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  button {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+  }
 }
 
 

@@ -73,6 +73,9 @@ button{
 form{
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
 }
 
 
@@ -80,6 +83,11 @@ form{
     width: 370px;
     height: 69px;
     position: relative;
+    
+    @media screen and (max-width: 767px) {
+        width: unset;
+        height: 50px;
+    }
 }
 
 
@@ -104,6 +112,10 @@ input[type=number] {
     margin-bottom: 10px;
     font-size: 15px;
     opacity:1;
+
+    @media screen and (max-width: 767px) {
+       font-size: 12px;
+    }
 }
 
 input{
@@ -112,7 +124,7 @@ input{
     height:25px;
     font-family: Raleway;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     border: none;
     outline: none;
@@ -131,6 +143,10 @@ input{
          }
     }
 
+    @media screen and (max-width: 767px) {
+        font-size: 14px;
+    }
+
 }
 
  label {
@@ -142,6 +158,12 @@ input{
     color: #FFFFFF;
     opacity: 0.55;
     transition:all .2s ease-out;
+    
+    @media screen and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 18px;
+        top: -17px;
+    }
 }
 
 .error-message{

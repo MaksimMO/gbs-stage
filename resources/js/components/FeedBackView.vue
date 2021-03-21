@@ -82,6 +82,10 @@ export default {
     padding:60px 0 80px;
     box-sizing:border-box;
 
+    @media screen and (max-width: 767px) {
+        padding:54px 15px 40px;
+    }
+
 }
 
 .feed_back_view .address{
@@ -90,21 +94,37 @@ export default {
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.1em;
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 
 .feed_back_view .logo{
     width: 178px;
     height:84px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     flex-grow: 1;
+    background-size: 178px 84px;
+
+    @media screen and (max-width: 767px) {
+        width: 90px;
+        height:42px;
+        background-size: 92px 42px;
+        flex-grow: unset;
+    }
 
     &.g{
-        background: url('../../assets/feedBackFormView/g-level.svg') no-repeat center;
+        background-image: url('../../assets/feedBackFormView/g-level.svg');
     }
     &.b{
-        background: url('../../assets/feedBackFormView/b-level.svg') no-repeat center;
+        background-image: url('../../assets/feedBackFormView/b-level.svg');
     }
     &.s{
-        background: url('../../assets/feedBackFormView/s-level.svg') no-repeat center;
+        background-image: url('../../assets/feedBackFormView/s-level.svg');
     }
 }
 
@@ -118,6 +138,11 @@ export default {
         color: inherit;
         text-decoration: none;
     }
+
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
 
 .feed_back_view .text-1{
@@ -129,6 +154,12 @@ export default {
     font-size: 18px;
     letter-spacing: 0.1em;
     font-feature-settings: 'pnum' on, 'lnum' on;
+
+    @media screen and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 21px;
+        margin: unset;
+    }
 }
 
 

@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 
 .modal-overlay{
@@ -62,6 +62,7 @@ export default {
     background-color: #fff;
     padding-top: 60px ;
     padding-bottom: 60px ;
+    box-sizing:border-box;
     position: fixed;
     top:50%;
     /* top:60%; */
@@ -108,17 +109,18 @@ export default {
     margin-top:40px;
 }
 
-.modal:before, .modal::after{
+.modal::before, .modal::after{
     display: block;
     content: '';
     width:70px;
     height:60px;
     position: absolute;
     background: url('../../assets/popup-corner.svg') no-repeat;
+    background-size: cover;
 }
 
 
-.modal:before{
+.modal::before{
     top: 0;
     left: 10px;
     transform: translateY(-50%);
@@ -129,4 +131,47 @@ export default {
     right: 10px;
     transform: translateY(50%);
 }
+
+
+/* @media screen and (max-width: 1280px) {
+
+} */
+
+@media screen and (max-width: 767px) {
+    .modal{
+        width:289px;
+        padding: 40px 20px;
+
+
+        &::before, &::after{
+            width:35px;
+            height:30px;
+        }
+
+        &::before{
+            left: 5px;
+        }
+
+        &::after{
+            right: 5px;
+        }
+
+        .title{
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        .description{
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.05em;
+        }
+
+         button{
+            margin-top:30px;
+        }
+
+    }
+}
+
 </style>
