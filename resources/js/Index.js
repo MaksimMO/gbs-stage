@@ -33,8 +33,13 @@
  import Root from './Root.vue'
  import FeedBackView from './components/FeedBackView'
  import Home from './components/Home'
+ 
+ import {isMobile}  from 'mobile-device-detect'
 
 
+
+
+ 
  const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -44,9 +49,11 @@
   });
 
 let data = {
-    isLoading:false
+    isLoading:false,
+    isMobile
 }
 
+console.log('isMobile', isMobile)
 
 const app = createApp({
     template:'<root />',
@@ -58,8 +65,6 @@ const app = createApp({
     },
 })
 
-
-
 //   router.beforeEach((to, from, next) => {
 //       debugger;
 //     data.isLoading=true;
@@ -70,5 +75,5 @@ const app = createApp({
 //     app.data.isLoading=true;
 //   })
 
- app.use(router)
+app.use(router)
  window.vm=app.mount('#gbslevel-app')

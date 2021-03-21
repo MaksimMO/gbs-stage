@@ -1,58 +1,23 @@
 <template>
 <div class="home_view" :style="{marginLeft:skewOffset}">
 
-<div v-for="slide in slides"
-:key="slide.id"
-:class="['slide', `slide-${slide.id}`, [slide.isActive ? 'is-active' : ''], /*[slide.isHovered && !slides.find(({isActive})=>isActive) ? 'is-target' : '']*/]"
-@click="onSlideClick($event, slide)"
-@touchend="onSlideClick($event, slide)"
-@mouseenter="slide.isHovered=true"
-@mouseleave="slide.isHovered=false">
+  <div v-for="slide in slides"
+    :key="slide.id"
+    :class="['slide', `slide-${slide.id}`, /*[slide.isActive ? 'is-active' : ''],*/ [slide.isHovered || slide.isActive ? 'is-target' : '']]"
+    @click="onSlideClick(slide)"
+    @mouseenter="enter(slide)"
+    @mouseleave="leave(slide)">
 
     <img :src="slide.backgroundImage" alt="">
-    <router-link :to="slide.link" tag="div" class="text" @click="onlogoClick($event, slide.id)">
+    <div class="text" @click.stop="onlogoClick($event, slide)">
     <img :src="slide.isActive ? slide.titleImageActive : slide.titleImage" />
-        <div class="your-level-wrapper">
+        <div class="your-level-wrapper"> 
             <div class="your-level-text">{{slide.text1}}</div>
             <div class="your-level-go">GO</div>
         </div>
-    </router-link>
-</div>
-
-
-     <!-- <div class="slide slide-1" @mouseenter="enter" @mouseleave="leave" ref="slide-1" @click="onSlideClick">
-        <img src="../../assets/homeView/slide-1.png" alt="">
-        <router-link to="/level-g" tag="div" class="text" @click="onlogoClick($event, 1)">
-        <img src="../../assets/homeView/g-level-title.svg" />
-            <div class="your-level-wrapper">
-                <div class="your-level-text">Твій рівень спорту</div>
-                <div class="your-level-go">GO</div>
-            </div>
-        </router-link>
     </div>
-
-    <div class="slide slide-2" @mouseenter="enter" @mouseleave="leave" ref="slide-2" @click="onSlideClick">
-        <img src="../../assets/homeView/slide-2.png" alt="">
-        <router-link to="/level-b" tag="div" class="text" @click="onlogoClick($event, 2)">
-            <img src="../../assets/homeView/b-level-title.svg" />
-            <div class="your-level-wrapper">
-                <div class="your-level-text">Твій рівень краси</div>
-                <div class="your-level-go">GO</div>
-            </div>
-        </router-link>
-    </div>
-
-    <div class="slide slide-3" @mouseenter="enter" @mouseleave="leave" ref="slide-3" @click="onSlideClick">
-        <img src="../../assets/homeView/slide-3.png" alt="">
-        <router-link to="/level-s" tag="div" class="text" @click="onlogoClick($event, 3)">
-        <img src="../../assets/homeView/s-level-title.svg" />
-            <div class="your-level-wrapper">
-                <div class="your-level-text">Твій рівень відпочинку</div>
-                <div class="your-level-go">GO</div>
-            </div>
-        </router-link>
-    </div> -->
   </div>
+</div>
 </template>
 
 <script>
@@ -112,51 +77,35 @@ export default {
 
         },
       ],
-
-      innerHeight:window.innerHeight
+      innerHeight:window.innerHeight,
     }
   },
   methods:{
-    onlogoClick(e, daw){
-      // debugger
-      console.log('onlogoClick', e.currentTarget);
-      return e.preventDefault();
-
+    onlogoClick(e, slide){
+      console.log('onlogoClick')
+      slide.isActive=true;
+      this.$router.push(slide.link);
     },
-    onSlideClick(e, slide){
-      if (slide.isActive){
-        slide.isActive = false;
-      }else{
-        let activeSlide =  this.slides.find(({isActive})=>isActive) ?? slide;
+    onSlideClick(slide){
+      console.log('onSlideClick')
 
-        activeSlide.isActive = true;
-
-        // activeSlide.isActive = false;
-        // slide.isActive=true;
+      if(!this.isSelected){
+        slide.isActive = true;
+      }else if(slide.isActive){
+        slide.isActive=false;
+        slide.isHovered=false;
       }
-      // debugger
-			// let activeSlide = document.getElementsByClassName('is-active')[0];
 
-			// if (activeSlide && activeSlide !== e.currentTarget){
-			// 	activeSlide.classList.remove('is-active')
-			// }
-
-			// e.currentTarget.classList.remove("is-target");
-			// e.currentTarget.classList.toggle('is-active')
-
-			// console.log('onclick', e.currentTarget);
     },
-    enter(e){
-      console.log('mouseleave', e.currentTarget);
-      let activeSlide = document.getElementsByClassName('is-active')[0];
-
-      if (!activeSlide){
-          e.currentTarget.classList.add("is-target");
+    enter(slide){
+      if (!this.isSelected){
+        slide.isHovered=true;
       }
     },
-    leave(e){
-      console.log('mouseleave', e.currentTarget);
-      e.currentTarget.classList.remove("is-target");
+    leave(slide){
+      if (!this.isSelected){
+        slide.isHovered=false;
+      }
     }
   },
   mounted(){
@@ -167,6 +116,9 @@ export default {
   computed:{
     skewOffset(){
       return `-${Math.round(this.innerHeight * Math.tan(15 * Math.PI/180))}px`;
+    },
+    isSelected(){
+      return this.slides.some(({isActive})=>isActive);
     }
   },
   beforeMount(){
