@@ -26,7 +26,7 @@
 
                 <div class="form-group">
                     {{ Form::label('level', 'Level') }}
-                    {{ Form::text('level', $lead['level'], array('class' => 'form-control', 'readonly')) }}
+                    {{ Form::text('level', strtoupper($lead['level']), array('class' => 'form-control', 'readonly')) }}
                 </div>
 
                 <div class="form-group">
