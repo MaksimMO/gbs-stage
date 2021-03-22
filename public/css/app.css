@@ -19,12 +19,12 @@
   }
 }
 
-button {
+#gbslevel-app button {
   transform: skew(160deg);
   border: none;
   outline: none;
   padding: 0 55px;
-  background: #916C58;
+  background: #916c58;
   color: white;
   cursor: pointer;
   font-family: Raleway;
@@ -38,7 +38,7 @@ button {
   overflow: hidden;
 }
 
-button:before {
+#gbslevel-app button:before {
   content: "";
   background-color: rgba(255, 255, 255, 0.5);
   height: 100%;
@@ -51,22 +51,22 @@ button:before {
   transition: none;
 }
 
-button:hover {
+#gbslevel-app button:hover {
   filter: brightness(120%);
 }
 
-button:hover:before {
+#gbslevel-app button:hover:before {
   transform: skewX(-45deg) translateX(30em);
   transition: all 0.5s ease-in-out;
 }
 
-button span {
+#gbslevel-app button span {
   transform: skew(-160deg);
   display: inline-block;
 }
 
 @media screen and (max-width: 767px) {
-  button {
+  #gbslevel-app button {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 12px;

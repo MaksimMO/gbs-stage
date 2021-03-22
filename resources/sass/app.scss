@@ -1,69 +1,65 @@
-@import 'https://fonts.googleapis.com/css?family=Raleway:400,500,700,800';
-
+@import "https://fonts.googleapis.com/css?family=Raleway:400,500,700,800";
 
 @keyframes sheen {
-  0% {
-    transform: skewY(-45deg) translateX(0);
-  }
-  100% {
-    transform: skewY(-45deg) translateX(12.5em);
-  }
-}
-
-button{
-    transform: skew(160deg);
-    border: none;
-    outline: none;
-    padding: 0 55px;
-    background: #916C58;
-    color: white;
-    cursor: pointer;
-
-
-    font-family: Raleway;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 46px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    white-space: nowrap;
-
-
-
-    position: relative;
-    overflow: hidden;
-    &:before {
-      content: "";
-      background-color: rgba(255,255,255,0.5);
-      height: 100%;
-      width: 3em;
-      display: block;
-      position: absolute;
-      top: 0;
-      left: -5em;
-      transform: skewX(-45deg) translateX(0);
-      transition: none;
+    0% {
+        transform: skewY(-45deg) translateX(0);
     }
-    &:hover {
-      filter:brightness(120%);
-      &:before {
-        transform: skewX(-45deg) translateX(30em);
-       transition: all 0.5s ease-in-out;
-      }
+    100% {
+        transform: skewY(-45deg) translateX(12.5em);
     }
 }
 
-button span{
-    transform: skew(-160deg);
-    display: inline-block;
-}
+#gbslevel-app {
+    button {
+        transform: skew(160deg);
+        border: none;
+        outline: none;
+        padding: 0 55px;
+        background: #916c58;
+        color: white;
+        cursor: pointer;
 
+        font-family: Raleway;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 46px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        white-space: nowrap;
 
-@media screen and (max-width: 767px) {
-    button{
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 12px;
+        position: relative;
+        overflow: hidden;
+        &:before {
+            content: "";
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 100%;
+            width: 3em;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -5em;
+            transform: skewX(-45deg) translateX(0);
+            transition: none;
+        }
+        &:hover {
+            filter: brightness(120%);
+            &:before {
+                transform: skewX(-45deg) translateX(30em);
+                transition: all 0.5s ease-in-out;
+            }
+        }
     }
 
+    button span {
+        transform: skew(-160deg);
+        display: inline-block;
+    }
+
+    @media screen and (max-width: 767px) {
+        button {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 12px;
+        }
+    }
 }
