@@ -26,6 +26,13 @@ Route::post('/feedback-form',[App\Http\Controllers\HomeController::class, 'store
 
 Route::get('/gbs-user-admin', [App\Http\Controllers\AdminController::class, 'index'])->name('dashboard');
 
-
 Route::get('/update-data/{id}', [App\Http\Controllers\AdminController::class, 'checkLead'])->name('edit-lead');
 Route::put('/update-data/{id}', [App\Http\Controllers\AdminController::class, 'updateLead'])->name('update-lead');
+
+// Redirect on registration
+Route::get('/register', function() {
+    return redirect('/login');
+});
+Route::post('/register', function() {
+    return redirect('/login');
+});
