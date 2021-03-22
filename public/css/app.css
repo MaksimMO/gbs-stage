@@ -19,7 +19,7 @@
   }
 }
 
-#gbslevel-app button {
+.gbslevel button {
   transform: skew(160deg);
   border: none;
   outline: none;
@@ -38,7 +38,7 @@
   overflow: hidden;
 }
 
-#gbslevel-app button:before {
+.gbslevel button:before {
   content: "";
   background-color: rgba(255, 255, 255, 0.5);
   height: 100%;
@@ -51,22 +51,22 @@
   transition: none;
 }
 
-#gbslevel-app button:hover {
+.gbslevel button:hover {
   filter: brightness(120%);
 }
 
-#gbslevel-app button:hover:before {
+.gbslevel button:hover:before {
   transform: skewX(-45deg) translateX(30em);
   transition: all 0.5s ease-in-out;
 }
 
-#gbslevel-app button span {
+button span {
   transform: skew(-160deg);
   display: inline-block;
 }
 
 @media screen and (max-width: 767px) {
-  #gbslevel-app button {
+  button {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 12px;

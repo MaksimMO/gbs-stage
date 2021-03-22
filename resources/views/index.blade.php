@@ -11,7 +11,7 @@
         <link href="{{ mix('css/gbs-vue.css') }}" rel="stylesheet">
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     </head>
-    <body>
+    <body class="gbslevel">
     <div id="gbslevel-app"></div>
 
     </body>
