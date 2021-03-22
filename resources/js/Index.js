@@ -33,13 +33,13 @@
  import Root from './Root.vue'
  import FeedBackView from './components/FeedBackView'
  import Home from './components/Home'
- 
+
  import {isMobile}  from 'mobile-device-detect'
 
 
 
 
- 
+
  const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -77,3 +77,11 @@ const app = createApp({
 
 app.use(router)
  window.vm=app.mount('#gbslevel-app')
+
+
+ if(isMobile){
+     let gbsLevelAppElement = document.getElementById("gbslevel-app");
+     setTimeout(() => {
+         gbsLevelAppElement.style.height=`${window.innerHeight}px`
+     }, 500)
+}
