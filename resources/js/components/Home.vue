@@ -11,7 +11,7 @@
     <img :src="slide.backgroundImage" alt="">
     <div class="text" @click.stop="onlogoClick($event, slide)">
     <img :src="slide.isActive ? slide.titleImageActive : slide.titleImage" />
-        <div class="your-level-wrapper"> 
+        <div class="your-level-wrapper">
             <div class="your-level-text">{{slide.text1}}</div>
             <div class="your-level-go">GO</div>
         </div>
@@ -188,16 +188,16 @@ div.slide img {
     transition: all .3s ease-in-out;
 }
 
-.slide.is-active, .slide.is-target {
+.slide.is-target {
     filter: brightness(100%);
     flex-grow: 3;
 }
 
-.slide.is-active .text,  .slide.is-target .text{
+.slide.is-target .text{
     opacity: 1;
 }
 
-.slide.is-active .text .your-level-wrapper, .slide.is-target .text .your-level-wrapper {
+.slide.is-target .text .your-level-wrapper {
     opacity: 1;
 }
 
@@ -207,9 +207,9 @@ div.slide img {
     transition: all .2s ease;
 }
 
-.slide.slide.is-active .text svg {
+/* .slide.slide.is-active .text svg {
     fill: #916C58;
-}
+} */
 
 .text {
     opacity: 0.6;
@@ -271,7 +271,7 @@ div.slide img {
     text-decoration: none;
 }
 
-.slide.is-active .your-level-go, .slide.is-target .your-level-go {
+.slide.is-target .your-level-go {
     opacity: 1;
 }
 
@@ -294,7 +294,7 @@ div.slide img {
 
 
 @media screen and (max-width: 1280px) {
-    
+
     .slide .text img {
         width: 150px;
         height: auto;
