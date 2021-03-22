@@ -21,12 +21,12 @@
 
                 <div class="form-group">
                     {{ Form::label('phone_number', 'Телефон') }}
-                    {{ Form::text('phone_number', $lead['phone_number'], array('class' => 'form-control')) }}
+                    {{ Form::text('phone_number', $lead['phone_number'], array('class' => 'form-control', 'readonly')) }}
                 </div>
 
                 <div class="form-group">
                     {{ Form::label('level', 'Level') }}
-                    {{ Form::text('level', $lead['level'], array('class' => 'form-control')) }}
+                    {{ Form::text('level', strtoupper($lead['level']), array('class' => 'form-control', 'readonly')) }}
                 </div>
 
                 <div class="form-group">
