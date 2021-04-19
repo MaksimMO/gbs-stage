@@ -13,11 +13,11 @@ import FeedBackForm from './Form.vue';
 
 let preloadedAssets = {
     g: [require('../../assets/feedBackFormView/background-g.png').default,
-        require('../../assets/feedBackFormView/g-level.svg').default],
+        require('../../assets/images/g-level.svg').default],
     b: [require('../../assets/feedBackFormView/background-b.png').default,
-        require('../../assets/feedBackFormView/b-level.svg').default],
+        require('../../assets/images/b-level.svg').default],
     s: [require('../../assets/feedBackFormView/background-s.png').default,
-        require('../../assets/feedBackFormView/s-level.svg').default]
+        require('../../assets/images/s-level.svg').default]
     }
 
 export default {
@@ -118,13 +118,13 @@ export default {
     }
 
     &.g{
-        background-image: url('../../assets/feedBackFormView/g-level.svg');
+        background-image: url('../../assets/images/g-level.svg');
     }
     &.b{
-        background-image: url('../../assets/feedBackFormView/b-level.svg');
+        background-image: url('../../assets/images/b-level.svg');
     }
     &.s{
-        background-image: url('../../assets/feedBackFormView/s-level.svg');
+        background-image: url('../../assets/images/s-level.svg');
     }
 }
 

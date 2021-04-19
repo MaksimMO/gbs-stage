@@ -14578,9 +14578,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Form_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Form.vue */ "./resources/js/components/Form.vue");
 
 var preloadedAssets = {
-  g: [__webpack_require__(/*! ../../assets/feedBackFormView/background-g.png */ "./resources/assets/feedBackFormView/background-g.png").default, __webpack_require__(/*! ../../assets/feedBackFormView/g-level.svg */ "./resources/assets/feedBackFormView/g-level.svg").default],
-  b: [__webpack_require__(/*! ../../assets/feedBackFormView/background-b.png */ "./resources/assets/feedBackFormView/background-b.png").default, __webpack_require__(/*! ../../assets/feedBackFormView/b-level.svg */ "./resources/assets/feedBackFormView/b-level.svg").default],
-  s: [__webpack_require__(/*! ../../assets/feedBackFormView/background-s.png */ "./resources/assets/feedBackFormView/background-s.png").default, __webpack_require__(/*! ../../assets/feedBackFormView/s-level.svg */ "./resources/assets/feedBackFormView/s-level.svg").default]
+  g: [__webpack_require__(/*! ../../assets/feedBackFormView/background-g.png */ "./resources/assets/feedBackFormView/background-g.png").default, __webpack_require__(/*! ../../assets/images/g-level.svg */ "./resources/assets/images/g-level.svg").default],
+  b: [__webpack_require__(/*! ../../assets/feedBackFormView/background-b.png */ "./resources/assets/feedBackFormView/background-b.png").default, __webpack_require__(/*! ../../assets/images/b-level.svg */ "./resources/assets/images/b-level.svg").default],
+  s: [__webpack_require__(/*! ../../assets/feedBackFormView/background-s.png */ "./resources/assets/feedBackFormView/background-s.png").default, __webpack_require__(/*! ../../assets/images/s-level.svg */ "./resources/assets/images/s-level.svg").default]
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['level'],
@@ -15264,21 +15264,6 @@ if (mobile_device_detect__WEBPACK_IMPORTED_MODULE_4__.isMobile) {
 
 /***/ }),
 
-/***/ "./resources/assets/feedBackFormView/b-level.svg":
-/*!*******************************************************!*\
-  !*** ./resources/assets/feedBackFormView/b-level.svg ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?65998a52bc75e3367d5878dba8f72615");
-
-/***/ }),
-
 /***/ "./resources/assets/feedBackFormView/background-b.png":
 /*!************************************************************!*\
   !*** ./resources/assets/feedBackFormView/background-b.png ***!
@@ -15321,36 +15306,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/background-s.png?ccb8c3b21cfb0db30d55d6304200adb4");
-
-/***/ }),
-
-/***/ "./resources/assets/feedBackFormView/g-level.svg":
-/*!*******************************************************!*\
-  !*** ./resources/assets/feedBackFormView/g-level.svg ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?6714fed85f347740e7606f42a6405576");
-
-/***/ }),
-
-/***/ "./resources/assets/feedBackFormView/s-level.svg":
-/*!*******************************************************!*\
-  !*** ./resources/assets/feedBackFormView/s-level.svg ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level.svg?66970d48e594fdfc781d762fd2e8de1c");
 
 /***/ }),
 
@@ -15516,6 +15471,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slide-3.png?ac93e962dc4d5fb898052049d06cba32");
+
+/***/ }),
+
+/***/ "./resources/assets/images/b-level.svg":
+/*!*********************************************!*\
+  !*** ./resources/assets/images/b-level.svg ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?65998a52bc75e3367d5878dba8f72615");
+
+/***/ }),
+
+/***/ "./resources/assets/images/g-level.svg":
+/*!*********************************************!*\
+  !*** ./resources/assets/images/g-level.svg ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?6714fed85f347740e7606f42a6405576");
+
+/***/ }),
+
+/***/ "./resources/assets/images/s-level.svg":
+/*!*********************************************!*\
+  !*** ./resources/assets/images/s-level.svg ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level.svg?66970d48e594fdfc781d762fd2e8de1c");
 
 /***/ }),
 
