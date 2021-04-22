@@ -1,15 +1,21 @@
 <template>
-    <loader />
+    <Loader />
+    <Header />
     <router-view />
+    <Footer />
 </template>
 
 <script>
-import Loader from './components/loader.vue'
+import Header from './components/Header.vue'
+import Loader from './components/Loader.vue'
+import Footer from './components/Footer.vue'
 
 export default {
 
     components:{
-        Loader
+        Loader,
+        Header,
+        Footer
     }
 }
 </script>

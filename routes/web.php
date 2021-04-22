@@ -18,6 +18,11 @@ Route::get('/{level?}', function () {
 })->where('level', 'level\-[g|b|s|]');
 
 
+Route::get('/{main?}', function () {
+    return view('index');
+})->where('main', 'main\-[g|b|s|]');
+
+
 Auth::routes();
 
 Route::post('/feedback-form',[App\Http\Controllers\HomeController::class, 'storeLead']);

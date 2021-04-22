@@ -1,13 +1,15 @@
 <template>
-<div class="footer">
-  Footer
-</div>
+  <div class="main-g">
+      main g
+  </div>
 </template>
 
 <script>
+
 export default {
 
 }
+
 </script>
 
 <style>

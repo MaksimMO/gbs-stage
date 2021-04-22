@@ -3,7 +3,10 @@
  import {createApp} from 'vue'
  import { createRouter, createWebHistory, createWebHashHistory, beforeEach, afterEach } from 'vue-router'
  import Root from './Root.vue'
- import FeedBackView from './components/FeedBackView'
+ import FeedBackView from './components/FeedBackView.vue'
+ import MainG from './views/MainG.vue'
+//  import MainB from './components/MainB'
+//  import MainS from './components/MainS'
  import Home from './components/Home'
  import {isMobile}  from 'mobile-device-detect'
 
@@ -11,7 +14,10 @@
     history: createWebHistory(),
     routes: [
       { path: '/', component: Home, name: 'home'},
-      { path: '/level-:level', component:FeedBackView, props: true }
+      { path: '/level-:level', component:FeedBackView, props: true },
+      { path: '/main-g', component:MainG}
+    //   { path: '/main-b', component:MainB}
+    //   { path: '/main-s', component:MainS}
     ],
   });
 
