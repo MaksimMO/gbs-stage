@@ -5,17 +5,22 @@
  import Root from './Root.vue'
  import FeedBackView from './components/FeedBackView.vue'
  import MainG from './views/MainG.vue'
+ import AboutUsG from './views/AboutUsG.vue'
 //  import MainB from './components/MainB'
 //  import MainS from './components/MainS'
  import Home from './components/Home'
+ import {i18n} from './plugins/i18n.js'
  import {isMobile}  from 'mobile-device-detect'
+
+
 
  const router = createRouter({
     history: createWebHistory(),
     routes: [
       { path: '/', component: Home, name: 'home'},
       { path: '/level-:level', component:FeedBackView, props: true },
-      { path: '/main-g', component:MainG}
+      { path: '/main-g', component:MainG},
+      { path: '/about-us-g', component:AboutUsG}
     //   { path: '/main-b', component:MainB}
     //   { path: '/main-s', component:MainS}
     ],
@@ -26,10 +31,8 @@ let data = {
     isMobile
 }
 
-// console.log('isMobile', isMobile)
-
 const app = createApp({
-    template:'<root />',
+    template:'<root  />',
     data(){
         return data;
     },
@@ -39,6 +42,7 @@ const app = createApp({
 })
 
 app.use(router)
+app.use(i18n)
 window.vm=app.mount('#gbslevel-app')
 
 

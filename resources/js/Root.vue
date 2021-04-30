@@ -1,8 +1,7 @@
 <template>
     <Loader />
-    <Header />
     <router-view />
-    <Footer />
+    <!-- <Footer /> -->
 </template>
 
 <script>
@@ -34,6 +33,6 @@ html, body {
     background-color: #000000;
     /* height: 100vh; */
     /* min-height: 100vh; */
-    overflow: auto;
+    /* overflow: auto; */
 }
 </style>
