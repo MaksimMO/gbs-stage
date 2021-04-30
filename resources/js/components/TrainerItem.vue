@@ -70,8 +70,8 @@ export default {
     transform: none;
     position: absolute;
     display: block;
-    width: 46px;
-    height: 46px;
+    width:35px;
+    height: 35px;
     right: 10px;
     top: 10px;
 }
