@@ -1,10 +1,11 @@
 // require('./bootstrap');
 
  import {createApp} from 'vue'
- import { createRouter, createWebHistory, createWebHashHistory, beforeEach, afterEach } from 'vue-router'
+ import { createRouter, createWebHistory } from 'vue-router'
  import Root from './Root.vue'
  import FeedBackView from './components/FeedBackView.vue'
  import MainG from './views/MainG.vue'
+ import TeamG from './views/TeamG.vue'
 //  import MainB from './components/MainB'
 //  import MainS from './components/MainS'
  import Home from './components/Home'
@@ -13,9 +14,26 @@
  const router = createRouter({
     history: createWebHistory(),
     routes: [
-      { path: '/', component: Home, name: 'home'},
-      { path: '/level-:level', component:FeedBackView, props: true },
-      { path: '/main-g', component:MainG}
+        {
+            path: '/',
+            component: Home,
+            name: 'home'
+        },
+        {
+            path: '/level-:level',
+            component: FeedBackView,
+            props: true
+        },
+        {
+            path: '/main-g',
+            component:  MainG,
+            name: 'MainG'
+        },
+        {
+            path:'/team-g',
+            component:  TeamG,
+            name: 'TeamG'
+        },
     //   { path: '/main-b', component:MainB}
     //   { path: '/main-s', component:MainS}
     ],
