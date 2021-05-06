@@ -3,10 +3,10 @@
     @mouseenter="enter"
     @mouseleave="leave"
 >
-    <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="isSelected=!isSelected">
-    <div v-show="isHovered" class="info" @click="isSelected=!isSelected">
-        <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" style="width: 100%; height: 100%;">
-        <img v-if="isSelected" src="../../assets/images/close.png" alt="info" style="width: 100%; height: 100%;">
+    <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName">
+    <div v-show="isHovered && !isOpen || isSelected" class="info">
+        <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" style="width: 100%; height: 100%;" @click="isShow">
+        <img v-if="isSelected" src="../../assets/images/close.png" alt="info" style="width: 100%; height: 100%;" @click="isClosed">
     </div>
     <p class="firstName">{{trainer.firstName}}</p>
     <p class="lastName">{{trainer.lastName}}</p>
@@ -19,10 +19,10 @@
 
 <script>
 export default {
-    props: ['trainer'],
+    props: ['trainer', 'isOpen'],
     data(){
         return{
-            isSelected:false,
+            isSelected: false,
             isHovered:false,
         }
     },
@@ -34,17 +34,26 @@ export default {
     },
     leave(){
         this.isHovered = false;
+    },
+    isShow(){
+        this.$emit('isShow', true);
+        this.isSelected = true;
+    },
+    isClosed(){
+        this.$emit('isClosed', false);
+        this.isSelected = false;
     }
 }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .trainer-item{
-    height: 328px;
-    width: 328px;
+    max-height: 328px;
+    max-width: 328px;
     transition: all .2s ease-in;
     position: relative;
+    margin-bottom: 96px;
 
     &:last-child{
         transform-origin:right;
@@ -85,8 +94,8 @@ export default {
     position: absolute;
     width: 91px;
     height: 16px;
-    left: 30px;
-    top: 278px;
+    left: 1.88rem;
+    top: 17.5rem;
     background: #916C58;
 }
 .lastName{
@@ -99,8 +108,8 @@ export default {
     position: absolute;
     width: 91px;
     height: 16px;
-    left: 30px;
-    top: 302px;
+    left: 1.88rem;
+    top: 18.88rem;
     background: #916C58;
 }
 .descriptionTitle{
@@ -114,12 +123,12 @@ export default {
     color: #000000;
 }
 .description{
-    position: absolute;
+    display: block;
     overflow-y: auto;
-    width: 268px;
+    max-width: 268px;
     max-height: 200px;
     left: 0;
-    padding: 15px 30px;
+    padding: 0.94rem 1.88rem;
     top: 328px;
     font-family: Raleway;
     font-style: normal;

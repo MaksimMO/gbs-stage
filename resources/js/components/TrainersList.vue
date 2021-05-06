@@ -1,16 +1,28 @@
 <template>
     <div class="trainers-container">
-        <TrainerItem v-for="(trainer, idx)  in trainers.slice(idxGroup * 4, (idxGroup + 1) * 4)" :key="idx" :trainer="trainer"/>
+        <TrainerItem
+            v-for="(trainer, idx)  in trainers.slice(idxGroup * 4, (idxGroup + 1) * 4)"
+            :key="idx"
+            :trainer="trainer"
+            :isOpen="isOpen"
+            @isShow="(e) => change(e)"
+            @isClosed="(e) => change(e)"/>
     </div>
 </template>
 
 <script>
 import TrainerItem from '../components/TrainerItem.vue'
 export default {
-    props: ['trainers', 'idxGroup'],
+    emits: ['isClosed', 'isShow'],
+    props: ['trainers', 'idxGroup', 'isOpen'],
     components:{
         TrainerItem
-    }
+    },
+    methods: {
+        change(e) {
+            this.$emit('changeOpen', e);
+        }
+    },
 
 
 }
@@ -18,11 +30,11 @@ export default {
 
 <style>
     .trainers-container{
-      height: 328px;
       overflow: visible;
-      grid-template-columns: repeat(4, 328px);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-gap: 15px;
       display: grid;
+      padding: 0 42px;
       margin-bottom: 96px;
     }
 
