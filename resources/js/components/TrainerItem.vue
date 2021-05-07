@@ -49,8 +49,6 @@ export default {
 
 <style lang="scss" scoped>
 .trainer-item{
-    max-height: 328px;
-    max-width: 328px;
     transition: all .2s ease-in;
     position: relative;
     margin-bottom: 96px;
@@ -72,7 +70,6 @@ export default {
     img{
         display:block;
         width:100%;
-        height: 100%;
     }
 }
 .info{
