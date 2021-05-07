@@ -91,8 +91,8 @@ export default {
     position: absolute;
     width: 91px;
     height: 16px;
-    left: 1.88rem;
-    top: 17.5rem;
+    left: 30px;
+    bottom: 50px;
     background: #916C58;
 }
 .lastName{
@@ -105,8 +105,8 @@ export default {
     position: absolute;
     width: 91px;
     height: 16px;
-    left: 1.88rem;
-    top: 18.88rem;
+    left: 30px;
+    bottom: 30px;
     background: #916C58;
 }
 .descriptionTitle{
