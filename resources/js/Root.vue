@@ -1,7 +1,6 @@
 <template>
     <Loader />
     <router-view />
-    <!-- <Footer /> -->
 </template>
 
 <script>

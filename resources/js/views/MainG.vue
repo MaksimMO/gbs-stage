@@ -52,6 +52,13 @@
 
       <TrainersList  />
   </div>
+  <div class="combat-area">
+      <AreasSliderG />
+      <img class="skew-image-1" src="../../assets/images/popup-corner.svg" alt="">
+  </div>
+
+
+
 
 
 
@@ -68,17 +75,15 @@
 <script>
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
-// import TrainerItem from '../components/TrainerItem.vue'
-// import TrainerList from '../components/TrainerList.vue'
+import AreasSliderG from '../components/AreasSliderG/AreasSliderG.vue'
 import TrainersList from '../components/TrainersList.vue'
 
 export default {
   components:{
     Header,
     Footer,
-    // TrainerItem,
-    // TrainerList,
-    TrainersList
+    TrainersList,
+    AreasSliderG
   }
 }
 
@@ -190,9 +195,18 @@ export default {
 
     .trainers-container .trainer-item:nth-of-type(even) {
       margin-top:25px;
-
     }
-
   }
+    .combat-area{
+      height: 570px;
+      position: relative;
+
+      .skew-image-1{
+        position: absolute;
+        bottom: 45px;
+        right: 115px;
+        z-index: 1
+      }
+    }
 
 </style>
