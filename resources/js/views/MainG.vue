@@ -50,7 +50,12 @@
       Переглянути всіх
     </div>
 
-      <TrainersList  />
+    <TrainersList
+        :trainers="trainers"
+        :isOpen="isOpen"
+        @changeOpen="(e) => change(e)"
+      />
+
   </div>
   <div class="combat-area">
       <AreasSliderG />
@@ -78,13 +83,40 @@ import Footer from '../components/Footer.vue'
 import AreasSliderG from '../components/AreasSliderG/AreasSliderG.vue'
 import TrainersList from '../components/TrainersList.vue'
 
+
+           let trainers = [
+                {link: 'valentine.jpg', firstName: 'Валентин', lastName: 'Прізвище',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона!!! Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Vitaliy_Kaskun.jpg', firstName: 'Віталій', lastName: 'Каськун',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Vladimir_Leskov.jpg', firstName: 'Володимир', lastName: 'Лєсков',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Gornushkina_Julia.jpg', firstName: 'Юля', lastName: 'Горнушкіна',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' }
+            ]
+
+
+
 export default {
+
+  data(){
+    return{
+      isOpen: false,
+      trainers
+    }
+
+  },
   components:{
     Header,
     Footer,
     TrainersList,
     AreasSliderG
-  }
+  },
+  methods: {
+      change(e) {
+          this.isOpen = e;
+      }
+  },
 }
 
 </script>

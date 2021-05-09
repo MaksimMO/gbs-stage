@@ -1,18 +1,28 @@
 <template>
-<div class="trainers-container">
-    <TrainerItem :urlFoto="require('../../assets/images/trainers/valentin.jpg').default" :name="'Валентин'" :lastName="'Игнаткин'" :description="'бла блабла'" />
-    <TrainerItem :urlFoto="require('../../assets/images/trainers/vitaliy.jpg').default" :name="'Віталій'" :lastName="'Игнаткин'" :description="'бла блабла'" />
-    <TrainerItem :urlFoto="require('../../assets/images/trainers/volodimir.jpg').default" :name="'Валодимир'" :lastName="'Игнаткин'" :description="'бла блабла'" />
-    <TrainerItem :urlFoto="require('../../assets/images/trainers/yuliya.jpg').default" :name="'Юля'" :lastName="'Игнаткин'" :description="'бла блабла'" />
-</div>
+    <div class="trainers-container">
+        <TrainerItem
+            v-for="(trainer, idx)  in trainers"
+            :key="idx"
+            :trainer="trainer"
+            :isOpen="isOpen"
+            @isShow="(e) => change(e)"
+            @isClosed="(e) => change(e)"/>
+    </div>
 </template>
 
 <script>
 import TrainerItem from '../components/TrainerItem.vue'
 export default {
+    emits: ['isClosed', 'isShow'],
+    props: ['trainers', 'idxGroup', 'isOpen'],
     components:{
         TrainerItem
-    }
+    },
+    methods: {
+        change(e) {
+            this.$emit('changeOpen', e);
+        }
+    },
 
 
 }
@@ -20,11 +30,12 @@ export default {
 
 <style>
     .trainers-container{
-      height: 328px;
       overflow: visible;
-      grid-template-columns: repeat(4, 328px);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-gap: 15px;
       display: grid;
+      padding: 0 42px;
+      margin-bottom: 96px;
     }
 
 </style>

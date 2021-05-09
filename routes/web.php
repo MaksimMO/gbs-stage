@@ -22,6 +22,10 @@ Route::get('/{main?}', function () {
     return view('index');
 })->where('main', 'main\-[g|b|s|]');
 
+Route::get('/team-g', function () {
+    return view('index');
+});
+
 
 Auth::routes();
 
