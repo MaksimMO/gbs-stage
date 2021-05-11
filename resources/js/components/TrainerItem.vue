@@ -3,13 +3,15 @@
     @mouseenter="enter"
     @mouseleave="leave"
 >
-    <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName">
-    <div v-show="isHovered && !isOpen || isSelected" class="info">
-        <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" style="width: 100%; height: 100%;" @click="isShow">
-        <img v-if="isSelected" src="../../assets/images/close.png" alt="info" style="width: 100%; height: 100%;" @click="isClosed">
+    <div style="position: relative;">
+        <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName">
+        <div v-show="isHovered && !isOpen || isSelected" class="info">
+            <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" style="width: 100%; height: 100%;" @click="isShow">
+            <img v-if="isSelected" src="../../assets/images/close.png" alt="info" style="width: 100%; height: 100%;" @click="isClosed">
+        </div>
+        <p class="firstName">{{trainer.firstName}}</p>
+        <p class="lastName">{{trainer.lastName}}</p>
     </div>
-    <p class="firstName">{{trainer.firstName}}</p>
-    <p class="lastName">{{trainer.lastName}}</p>
     <div class="description">
         <p class="descriptionTitle">Напрямок діяльності</p>
         <p v-show="isSelected">{{trainer.description}}</p>
@@ -92,7 +94,7 @@ export default {
     width: 91px;
     height: 16px;
     left: 30px;
-    bottom: 50px;
+    bottom: -4px;
     background: #916C58;
 }
 .lastName{
@@ -106,7 +108,7 @@ export default {
     width: 91px;
     height: 16px;
     left: 30px;
-    bottom: 30px;
+    bottom: -25px;
     background: #916C58;
 }
 .descriptionTitle{
