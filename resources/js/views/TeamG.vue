@@ -1,5 +1,5 @@
 <template>
-<Header />
+<Header @click="isOpenMenu = !isOpenMenu" :isOpen="isOpenMenu"/>
   <div class="team-g">
       <section class="title">
           <h1>Наша команда</h1>
@@ -32,6 +32,7 @@ export default {
     data() {
         return {
             isOpen: false,
+            isOpenMenu: false,
             trainers: [
                 {link: 'valentine.jpg', firstName: 'Валентин', lastName: 'Прізвище',
                     description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона!!! Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
@@ -86,23 +87,36 @@ export default {
         background-color: #E5E5E5;
         height: auto !important;
     }
-    .header {
+    .header > div {
         position: inherit;
         margin-bottom: auto;
         color: #000;
         padding: 3.13rem 4.25rem 0 4.25rem;
         width: auto;
-        &>.address {
-            position: absolute;
-            left: 25.56rem;
-        }
         &>.phone-link{
-           margin-left: 29rem;
            position: relative;
         }
         &>.phone-link::before {
             position: absolute;
             left: -25px;
+        }
+        &>.appointment{
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            background-image: linear-gradient(transparent 50%, #916C58 50%);
+            width: 138px;
+            text-align: center;
+        }
+        &>.menu-open{
+            filter: brightness(0);
+        }
+        &>.close-opened{
+            filter: brightness(0);
         }
     }
     .team-g {
