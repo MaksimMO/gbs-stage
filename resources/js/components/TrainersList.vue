@@ -14,7 +14,7 @@
 import TrainerItem from '../components/TrainerItem.vue'
 export default {
     emits: ['isClosed', 'isShow'],
-    props: ['trainers', 'idxGroup', 'isOpen'],
+    props: ['trainers', 'isOpen'],
     components:{
         TrainerItem
     },

@@ -15,8 +15,7 @@
           <TrainerList
             v-for="(group, i) in articleGroups"
             :key="i"
-            :trainers="trainers"
-            :idxGroup="i"
+            :trainers="trainers.slice(i * 4, (i + 1) * 4)"
             :isOpen="isOpen"
             @changeOpen="(e) => change(e)"/>
       </section>
@@ -29,7 +28,7 @@ import TrainerList from '../components/TrainersList';
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 export default {
-    emits: ['changeOpen', 'isClosed', 'isShow'],
+    emits: ['changeOpen'],
     data() {
         return {
             isOpen: false,
