@@ -89,7 +89,7 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 1px 10px;
-    z-index: 100;
+    // z-index: 100;
     position: absolute;
     width: 91px;
     height: 16px;
@@ -103,7 +103,7 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 1px 10px;
-    z-index: 100;
+    // z-index: 100;
     position: absolute;
     width: 91px;
     height: 16px;

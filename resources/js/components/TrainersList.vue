@@ -35,7 +35,6 @@ export default {
       grid-column-gap: 15px;
       display: grid;
       padding: 0 42px;
-      margin-bottom: 96px;
     }
 
 </style>

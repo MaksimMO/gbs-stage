@@ -50,6 +50,9 @@ export default {
         text-align: center;
         margin: 0;
     }
+    li{
+        transition: all .6s ease-in-out;
+    }
     li > a {
         text-decoration: none;
         color: #fff;

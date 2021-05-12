@@ -1,6 +1,6 @@
 <template>
-<div  class="header">
-  <div>
+<div  :class="['header', {'is-open':isOpen}]">
+  <div :class="['main', {'is-open':isOpen}]">
     <div :class="`logo ${level}`"></div>
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink />
@@ -8,7 +8,9 @@
     <div class="lang">UA</div>
     <div :class="{'close-opened':isOpen, 'menu-open': !isOpen}" @click="isOpen = !isOpen"></div>
   </div>
-  <Menu v-show="isOpen" />
+  <transition name="slide-fade">
+    <Menu v-show="isOpen" />
+  </transition>
 </div>
 </template>
 
@@ -32,26 +34,52 @@ export default {
 
 <style lang="scss">
 .header{
-    background-color: #000;
-    padding: 3.13rem 4.25rem 1.87rem 4.25rem;
-}
-.header > div {
     position: fixed;
+    top: 0;
+    box-sizing: border-box;
     width: 100%;
+    z-index: 100;
+    color: #000;
+    padding: 50px 58px 30px 58px;
+    background-color: transparent;
+    transition: all 0.6s ease;
+}
+.is-open{
+   background-color: #000 !important;
+   color: #fff !important;
+}
+.header:hover{
+    background-color: #000;
+    color: #fff;
+    &>.menu-open{
+        filter: brightness(1);
+    }
+}
+.header:hover .main {
+    color: #fff;
+    background-color: #000;
+    &>.menu-open{
+        filter: brightness(1);
+    }
+}
+.main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
-    z-index: 1;
-
+    color: #000;
+    background-color: transparent;
+    transition: all 0.8s ease;
+    &:hover>.menu-open{
+        filter: invert(0%) sepia(93%) saturate(0%) hue-rotate(227deg) brightness(106%) contrast(106%);
+        &:hover{
+            filter: none;
+            cursor: pointer;
+            background-image: url("../../assets/images/menu-open-gold.svg");
+        }
+    }
   .logo {
     width: 178px;
     height: 84px;
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // flex-grow: 1;
-    // background-size: 178px 84px;
 
     @media screen and (max-width: 767px) {
       width: 90px;
@@ -76,7 +104,8 @@ export default {
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.1em;
-    margin-left: 15%;
+    margin-left: 7%;
+    margin-right: 2%;
 
     @media screen and (max-width: 767px) {
       font-size: 12px;
@@ -94,10 +123,12 @@ export default {
         background: linear-gradient(transparent 50%, #916C58 50%);
         width: 138px;
         text-align: center;
-        transition: all .6s ease-out;
+        transition: all 0.6s ease-in-out;
         cursor:pointer;
+
         &:hover{
-            background-color:#916C58;
+            transition: all 0.6s ease-in-out;
+            background: linear-gradient(transparent 0%, #916C58 0%);
         }
         &:active{
             color: #000;
@@ -111,8 +142,30 @@ export default {
   .close-opened {
     background-image: url("../../assets/images/menu-close.svg");
     background-repeat: no-repeat;
-    width: 28px;
-    height: 28px;
+    width: 38px;
+    height: 38px;
+    &:hover {
+        cursor: pointer;
+        filter: brightness(1);
+    }
+  }
+}
+.slide-fade-enter-active {
+  animation: show-in 0.6s;
+}
+
+.slide-fade-leave-active {
+  animation: show-in 0.6s reverse;
+}
+
+@keyframes show-in {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 </style>

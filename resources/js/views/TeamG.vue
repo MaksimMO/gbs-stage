@@ -88,11 +88,12 @@ export default {
     #gbslevel-app {
         background-color: #E5E5E5;
         height: auto !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
     }
-    .header > div {
-        position: inherit;
-        margin-bottom: auto;
-        width: auto;
+    .main {
         &>.phone-link{
            position: relative;
         }
@@ -101,7 +102,10 @@ export default {
             left: -25px;
         }
         &>.close-opened{
-            filter: brightness(1);
+            filter: brightness(0.6);
+        }
+        &>.menu-open{
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(105%);
         }
     }
     .team-g {
@@ -111,6 +115,8 @@ export default {
         margin-left: auto;
         margin-right: auto;
         position: relative;
+        top: 150px;
+        margin-bottom: 150px;
     }
     .title {
         width: 80%;
