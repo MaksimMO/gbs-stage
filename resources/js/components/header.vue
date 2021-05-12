@@ -120,15 +120,26 @@ export default {
         line-height: 16px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        background: linear-gradient(transparent 50%, #916C58 50%);
         width: 138px;
         text-align: center;
-        transition: all 0.6s ease-in-out;
+        transition: all 0.6s linear;
+        position: relative;
         cursor:pointer;
+        z-index: 1;
 
-        &:hover{
-            transition: all 0.6s ease-in-out;
-            background: linear-gradient(transparent 0%, #916C58 0%);
+        &:before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: #916C58;
+            z-index: -1;
+            transition: all 0.6s linear;
+        }
+        &:hover:before{
+            height: 100%;
         }
         &:active{
             color: #000;
