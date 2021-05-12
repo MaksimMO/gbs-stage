@@ -18,7 +18,7 @@
 <style lang="scss">
     .scrollTop {
         width: 25px;
-        position: absolute;
+        position: fixed;
         bottom: 280px;
         right: 10px;
         &>div{

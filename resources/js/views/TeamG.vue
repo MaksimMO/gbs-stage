@@ -19,7 +19,7 @@
             :isOpen="isOpen"
             @changeOpen="(e) => change(e)"/>
       </section>
-      <Scroll />
+      <Scroll v-show="visible"/>
   </div>
 <Footer />
 </template>
@@ -34,6 +34,7 @@ export default {
     data() {
         return {
             isOpen: false,
+            visible: false,
             trainers: [
                 {link: 'valentine.jpg', firstName: 'Валентин', lastName: 'Прізвище',
                     description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона!!! Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
@@ -68,11 +69,20 @@ export default {
         change(e) {
             this.isOpen = e;
         },
+        scrollListener (e) {
+            this.visible = window.scrollY > 500
+        },
     },
     computed: {
         articleGroups () {
             return Array.from(Array(Math.ceil(this.trainers.length / 4)).keys());
         }
+    },
+    mounted: function () {
+        window.addEventListener('scroll', this.scrollListener)
+    },
+    beforeDestroy: function () {
+        window.removeEventListener('scroll', this.scrollListener)
     },
     components: {
         TrainerList,
