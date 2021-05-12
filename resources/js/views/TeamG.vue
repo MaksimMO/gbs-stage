@@ -1,5 +1,5 @@
 <template>
-<Header @click="isOpenMenu = !isOpenMenu" :isOpen="isOpenMenu"/>
+<Header />
   <div class="team-g">
       <section class="title">
           <h1>Наша команда</h1>
@@ -19,20 +19,21 @@
             :isOpen="isOpen"
             @changeOpen="(e) => change(e)"/>
       </section>
+      <Scroll />
   </div>
 <Footer />
 </template>
 
 <script>
 import TrainerList from '../components/TrainersList';
-import Header from '../components/Header.vue'
-import Footer from '../components/Footer.vue'
+import Header from '../components/Header.vue';
+import Footer from '../components/Footer.vue';
+import Scroll from '../components/ScrollTop.vue';
 export default {
     emits: ['changeOpen'],
     data() {
         return {
             isOpen: false,
-            isOpenMenu: false,
             trainers: [
                 {link: 'valentine.jpg', firstName: 'Валентин', lastName: 'Прізвище',
                     description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона!!! Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
@@ -66,7 +67,7 @@ export default {
     methods: {
         change(e) {
             this.isOpen = e;
-        }
+        },
     },
     computed: {
         articleGroups () {
@@ -76,6 +77,7 @@ export default {
     components: {
         TrainerList,
         Header,
+        Scroll,
         Footer
     }
 }
@@ -90,8 +92,6 @@ export default {
     .header > div {
         position: inherit;
         margin-bottom: auto;
-        color: #000;
-        padding: 3.13rem 4.25rem 0 4.25rem;
         width: auto;
         &>.phone-link{
            position: relative;
@@ -100,23 +100,8 @@ export default {
             position: absolute;
             left: -25px;
         }
-        &>.appointment{
-            font-family: Raleway;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 14px;
-            line-height: 16px;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            background-image: linear-gradient(transparent 50%, #916C58 50%);
-            width: 138px;
-            text-align: center;
-        }
-        &>.menu-open{
-            filter: brightness(0);
-        }
         &>.close-opened{
-            filter: brightness(0);
+            filter: brightness(1);
         }
     }
     .team-g {
@@ -125,6 +110,7 @@ export default {
         height: 100%;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
     }
     .title {
         width: 80%;

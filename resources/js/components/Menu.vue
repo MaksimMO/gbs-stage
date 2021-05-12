@@ -41,7 +41,7 @@ export default {
         letter-spacing: 0.1em;
         text-transform: uppercase;
         list-style-type: none;
-        padding: 1.87rem 6.25rem 0 6.25rem;
+        padding: 1.87rem 1.25rem 0 6.25rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         grid-row-gap: 5px;
@@ -52,7 +52,7 @@ export default {
     }
     li > a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
     }
 
 </style>
