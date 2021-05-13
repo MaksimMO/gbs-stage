@@ -21,12 +21,17 @@ export default {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-feature-settings: 'pnum' on, 'lnum' on;
+
     color: #FFFFFF;
+    transition:color .1s ease-in;
     text-decoration: none;
 
     display: flex;
     align-items: center;
 
+    &:hover{
+        color:#916C58;
+    }
 }
 
 .phone-link::before{

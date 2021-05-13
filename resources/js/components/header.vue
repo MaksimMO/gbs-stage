@@ -20,10 +20,38 @@ export default {
   components: {
     PhoneLink,
   },
+  mounted(){
+    const debounce = (fn) => {
+      let frame;
+
+      return (...params) => {
+        if (frame) {
+          cancelAnimationFrame(frame);
+        }
+        frame = requestAnimationFrame(() => {
+
+          fn(...params);
+        });
+
+      }
+    };
+    const storeScroll = () => {
+      document.documentElement.dataset.scroll = window.scrollY;
+    }
+    document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+    storeScroll();
+
+  },
+  methods:{
+
+  }
 };
 </script>
 
 <style lang="scss" scoped>
+
+
+
 .header {
     position: fixed;
     width: 100%;
@@ -32,11 +60,14 @@ export default {
     align-items: center;
     color: #fff;
     z-index: 1;
+    padding: 50px 68px;
+    transition: all .2s ease-in;
 
   .logo {
     width: 178px;
     height: 84px;
-    // background-size: cover;
+    transition: all .2s ease-in;
+
     // background-repeat: no-repeat;
     // background-position: center;
     // flex-grow: 1;
@@ -50,13 +81,16 @@ export default {
     }
 
     &.g {
-      background-image: url("../../assets/images/g-level.svg");
+      background: url("../../assets/images/g-level.svg") no-repeat;
+      background-size: contain;
     }
     &.b {
-      background-image: url("../../assets/images/b-level.svg");
+      background: url("../../assets/images/b-level.svg") no-repeat ;
+      background-size: contain;
     }
     &.s {
-      background-image: url("../../assets/images/s-level.svg");
+      background: url("../../assets/images/s-level.svg") no-repeat;
+      background-size: contain;
     }
   }
   .address {
@@ -74,6 +108,16 @@ export default {
 
   .menu-open {
     background-image: url("../../assets/images/menu-open.svg");
+  }
+}
+
+html:not([data-scroll='0']) .header {
+  background-color: #000;
+  padding: 20px 68px;
+
+  .logo {
+    width: 82px;
+    height: 38px;
   }
 }
 </style>
