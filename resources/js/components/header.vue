@@ -63,7 +63,7 @@ export default {
     top: 0;
     box-sizing: border-box;
     width: 100%;
-    z-index: 100;
+    z-index: 120;
     color: #000;
     padding: 50px 58px 30px 58px;
     background-color: transparent;
@@ -73,20 +73,7 @@ export default {
    background-color: #000 !important;
    color: #fff !important;
 }
-.header:hover{
-    background-color: #000;
-    color: #fff;
-    &>.menu-open{
-        filter: brightness(1);
-    }
-}
-.header:hover .main {
-    color: #fff;
-    background-color: #000;
-    &>.menu-open{
-        filter: brightness(1);
-    }
-}
+
 .main {
     display: flex;
     justify-content: space-between;
@@ -94,14 +81,6 @@ export default {
     color: #000;
     background-color: transparent;
     transition: all 0.8s ease;
-    &:hover>.menu-open{
-        filter: invert(0%) sepia(93%) saturate(0%) hue-rotate(227deg) brightness(106%) contrast(106%);
-        &:hover{
-            filter: none;
-            cursor: pointer;
-            background-image: url("../../assets/images/menu-open-gold.svg");
-        }
-    }
   .logo {
     width: 178px;
     height: 84px;
@@ -177,6 +156,11 @@ export default {
     background-image: url("../../assets/images/menu-open.svg");
     width: 38px;
     height: 21px;
+    &:hover{
+        filter: none;
+        cursor: pointer;
+        background-image: url("../../assets/images/menu-open-gold.svg");
+    }
   }
   .close-opened {
     background-image: url("../../assets/images/menu-close.svg");
@@ -207,15 +191,19 @@ export default {
     opacity: 1;
   }
 }
-  }
-}
+
 
 html:not([data-scroll='0']) .header {
   background-color: #000;
   padding: 20px 68px;
+  color: #fff;
+  .main {
+    color: #fff;
+  }
 
   .logo {
     width: 82px;
     height: 38px;
   }
 }
+</style>

@@ -94,7 +94,7 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     #gbslevel-app {
         background-color: #E5E5E5;
         height: auto !important;
@@ -106,6 +106,7 @@ export default {
     .main {
         &>.phone-link{
            position: relative;
+           color: #000;
         }
         &>.phone-link::before {
             position: absolute;
