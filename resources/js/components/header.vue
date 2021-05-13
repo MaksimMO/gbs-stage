@@ -3,9 +3,10 @@
   <div :class="['main', {'is-open':isOpen}]">
     <div :class="`logo ${level}`"></div>
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
-    <PhoneLink />
+    <PhoneLink :class="{'is-open':isOpen}"/>
     <div class="appointment">Записатися</div>
-    <div class="lang">UA</div>
+    <!-- <div class="lang">UA</div> -->
+    <LanguageSwitcher :class="{'is-open':isOpen}"/>
     <div :class="{'close-opened':isOpen, 'menu-open': !isOpen}" @click="isOpen = !isOpen"></div>
   </div>
   <transition name="slide-fade">
@@ -17,8 +18,8 @@
 <script>
 import PhoneLink from "./PhoneLink.vue";
 import Menu from "./Menu.vue";
+import LanguageSwitcher from "./LanguageSwitcher.vue";
 export default {
-    // props: ['isOpen'],
   data() {
     return {
       level: "g",
@@ -28,6 +29,7 @@ export default {
   components: {
     PhoneLink,
     Menu,
+    LanguageSwitcher,
   },
   mounted(){
     const debounce = (fn) => {
@@ -72,6 +74,9 @@ export default {
 .is-open{
    background-color: #000 !important;
    color: #fff !important;
+   .buttonLang{
+       color: #fff !important;
+   }
 }
 
 .main {
@@ -196,11 +201,22 @@ export default {
 html:not([data-scroll='0']) .header {
   background-color: #000;
   padding: 20px 68px;
-  color: #fff;
+  color: #FFFFFF;
   .main {
-    color: #fff;
+    color: #FFFFFF;
+    &>.phone-link {
+        color: #FFFFFF;
+        &:hover {
+            color: #916C58;
+        }
+    }
+    &>.selectLang>.buttonLang {
+        color: #FFFFFF;
+    }
+    &>.menu-open{
+        filter: none;
+    }
   }
-
   .logo {
     width: 82px;
     height: 38px;

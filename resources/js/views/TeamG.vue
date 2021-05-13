@@ -112,6 +112,9 @@ export default {
             position: absolute;
             left: -25px;
         }
+        .buttonLang {
+            color: #000;
+        }
         &>.close-opened{
             filter: brightness(0.6);
         }
@@ -142,16 +145,34 @@ export default {
         font-size: 52px;
         margin-bottom: 16px;
         margin-left: 96px;
+        line-height: 54px;
+        letter-spacing: 0.02em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #000000;
     }
     .title > p {
         font-weight: 400;
         font-style: normal;
         font-size: 14px;
         margin-bottom: 10px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #000000;
     }
     .title > b {
         font-style: normal;
         font-size: 14px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: bold;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #000000;
     }
     .footer {
         height: 234px;

@@ -89,6 +89,12 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 1px 10px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
     // z-index: 100;
     position: absolute;
     width: 91px;
@@ -103,6 +109,13 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 1px 10px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
     // z-index: 100;
     position: absolute;
     width: 91px;
