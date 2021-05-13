@@ -62,6 +62,48 @@
       <img class="skew-image-1" src="../../assets/images/popup-corner.svg" alt="">
   </div>
 
+  <div class="also-for-you-container">
+    <div class="title">Також на Вас чекають</div>
+    <div class="orders">
+      <div class="order">
+        <div class="icon"></div>
+        <div class="title">
+          Фітнес бар
+        </div>
+        <div class="description">
+          На території комплексу два бари з професійними барменами, які з радістю задовольнять ваші потреби в здоровому харчуванні, спортивних напоях, ароматній каві, і не тільки…
+        </div>
+      </div>
+      <div class="order">
+        <div class="icon"></div>
+        <div class="title">
+          Безпека
+        </div>
+        <div class="description">
+          Тренажерний зал обладнаний усім необхідним для правильних та результативних тренувань, які тільки на користь здоров’ю та фізичній формі. Медична кваліфікована допомога та професійна консультація не по виклику, а як стандарт нашої турботи про клієнта.
+        </div>
+      </div>
+      <div class="order">
+        <div class="icon"></div>
+        <div class="title">
+          Комфорт і чистота
+        </div>
+        <div class="description">
+          Комфортні роздягальні з великими і просторими шафами, куди поміститься одночасно ваша спортивна сумка і ділова сорочка, яка після зняття залишиться такою ж випрасуваною.
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="seo-text">
+      <div class="title">
+        SEO текст
+      </div>
+      <div class="text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum. Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis. Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum. Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec hendrerit neque...
+      </div>
+    </div>
+
 
 
 
@@ -238,6 +280,85 @@ export default {
         bottom: 45px;
         right: 115px;
         z-index: 1
+      }
+    }
+
+    .also-for-you-container{
+      padding: 90px 150px;
+
+      &>.title{
+        font-family: Oswald;
+        font-size: 48px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        text-align: center;
+        margin-bottom: 62px;
+      }
+
+      .orders{
+        display: grid;
+        grid-column-gap:75px;
+        grid-template-columns: repeat(3, 1fr);
+
+        .order{
+
+          .icon{
+            height: 67px;
+          }
+
+          .title{
+            font-family: Oswald;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            margin: 12px 0 10px;
+          }
+
+          .description{
+            font-family: Raleway;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+
+          }
+
+          &:nth-of-type(1) .icon {
+            background:url('../../assets/images/skew-icon-1.svg') no-repeat left, url('../../assets/images/smoothie.svg') no-repeat 45px;
+          }
+
+          &:nth-of-type(2) .icon {
+            background: url('../../assets/images/skew-icon-1.svg') no-repeat left, url('../../assets/images/heart-beat.svg') no-repeat 45px;
+          }
+
+          &:nth-of-type(3) .icon {
+            background: url('../../assets/images/skew-icon-1.svg') no-repeat left, url('../../assets/images/hanger.svg') no-repeat 45px;
+          }
+
+        }
+
+      }
+
+    }
+
+    .seo-text{
+
+      margin-top:60px;
+
+      .title{
+          font-family: Oswald;
+          font-size: 52px;
+          font-weight: 600;
+          line-height: 54px;
+          letter-spacing: 0.02em;
+          text-align: center;
+      }
+      .text{
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+        padding: 30px 94px 150px;
       }
     }
 

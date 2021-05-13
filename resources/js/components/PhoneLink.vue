@@ -11,12 +11,34 @@ export default {
 }
 </script>
 
-<style >
+<style lang='scss' scoped>
+
+.phone-link{
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #FFFFFF;
+    transition:color .1s ease-in;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+
+    &:hover{
+        color:#916C58;
+    }
+}
+
 .phone-link::before{
         background:url('../../assets/images/phone-icon.svg') no-repeat center;
         content: '';
         width: 21px;
         height: 20px;
-        position: absolute;
+        margin-right: 7px;
     }
 </style>

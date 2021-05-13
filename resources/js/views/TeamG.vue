@@ -94,7 +94,7 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     #gbslevel-app {
         background-color: #E5E5E5;
         height: auto !important;

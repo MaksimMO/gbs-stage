@@ -29,6 +29,31 @@ export default {
     PhoneLink,
     Menu,
   },
+  mounted(){
+    const debounce = (fn) => {
+      let frame;
+
+      return (...params) => {
+        if (frame) {
+          cancelAnimationFrame(frame);
+        }
+        frame = requestAnimationFrame(() => {
+
+          fn(...params);
+        });
+
+      }
+    };
+    const storeScroll = () => {
+      document.documentElement.dataset.scroll = window.scrollY;
+    }
+    document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+    storeScroll();
+
+  },
+  methods:{
+
+  }
 };
 </script>
 
@@ -89,13 +114,16 @@ export default {
     }
 
     &.g {
-      background-image: url("../../assets/images/g-level.svg");
+      background: url("../../assets/images/g-level.svg") no-repeat;
+      background-size: contain;
     }
     &.b {
-      background-image: url("../../assets/images/b-level.svg");
+      background: url("../../assets/images/b-level.svg") no-repeat ;
+      background-size: contain;
     }
     &.s {
-      background-image: url("../../assets/images/s-level.svg");
+      background: url("../../assets/images/s-level.svg") no-repeat;
+      background-size: contain;
     }
   }
   .address {
@@ -179,4 +207,15 @@ export default {
     opacity: 1;
   }
 }
-</style>
+  }
+}
+
+html:not([data-scroll='0']) .header {
+  background-color: #000;
+  padding: 20px 68px;
+
+  .logo {
+    width: 82px;
+    height: 38px;
+  }
+}

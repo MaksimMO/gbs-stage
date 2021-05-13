@@ -7,6 +7,7 @@
  import MainG from './views/MainG.vue'
  import TeamG from './views/TeamG.vue'
  import AboutUsG from './views/AboutUsG.vue'
+ import AreasG from './views/AreasG.vue'
 //  import MainB from './components/MainB'
 //  import MainS from './components/MainS'
  import Home from './components/Home'
@@ -40,9 +41,15 @@
             component:  TeamG,
             name: 'TeamG'
         },
-      { path: '/about-us-g', component:AboutUsG}
-    //   { path: '/main-b', component:MainB}
-    //   { path: '/main-s', component:MainS}
+        {
+            path: '/about-us-g',
+            component:AboutUsG
+        },
+        {
+            path: '/areas-g',
+            component:AreasG
+        }
+
     ],
   });
 
