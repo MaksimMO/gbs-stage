@@ -8,7 +8,7 @@
   </div>
 
   <div class="about-us">
-    <h1>Про нас</h1>
+    <div class="title">Про нас</div>
     <div class="columns-container">
       <div class="col-1">
         <div>Тренажерний зал 1700 кв.м. з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym </div>
@@ -194,6 +194,15 @@ export default {
   display: flex;
   flex-direction: column;
 
+  .title{
+    font-family: Oswald;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: 0.02em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+  }
+
   .columns-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -242,6 +251,7 @@ export default {
     background: url('../../assets/images/main-g-our-team-water-text.svg') no-repeat 50px 50px;
 
     .our-team-container_header{
+      font-family: 'Oswald';
       height: 83px;
       background: url('../../assets/images/rectangle-1.svg') no-repeat ;
       color: #000000;
