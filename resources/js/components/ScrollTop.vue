@@ -1,7 +1,7 @@
 <template>
     <div class="scrollTop" @click="scrollToTop()">
         <div>Догори</div>
-        <img src="../../assets/images/scrollTop.svg" alt="scroll">
+        <img src="../../assets/images/scrollTopPng.png" alt="scroll">
     </div>
 </template>
 
@@ -17,7 +17,7 @@
 
 <style lang="scss">
     .scrollTop {
-        width: 25px;
+        // width: 25px;
         position: fixed;
         bottom: 310px;
         right: 10px;
@@ -34,8 +34,9 @@
             transform: translateX(-50%) rotate(-90deg);
         }
         &>img{
-            height: 61px;
-            width: 25px;
+            height: 65px;
+            width: 16px;
+            display: block;
             transition: height .6s ease-in;
         }
         &:hover{
