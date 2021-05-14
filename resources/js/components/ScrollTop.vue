@@ -19,7 +19,7 @@
     .scrollTop {
         width: 25px;
         position: fixed;
-        bottom: 280px;
+        bottom: 310px;
         right: 10px;
         &>div{
             font-family: Raleway;

@@ -137,7 +137,7 @@ export default {
 .description{
     display: block;
     overflow-y: auto;
-    max-width: 268px;
+    // max-width: 268px;
     max-height: 200px;
     left: 0;
     padding: 0.94rem 1.88rem;

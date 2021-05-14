@@ -147,7 +147,7 @@ export default {
     }
 
     .dropdown-fade-enter-active, .dropdown-fade-leave-active {
-        transition: all 0.5s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 
   .dropdown-fade-ente-to, .dropdown-fade-leave-to {

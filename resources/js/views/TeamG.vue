@@ -1,5 +1,5 @@
 <template>
-<Header />
+<Header class="header-change" />
   <div class="team-g">
       <section class="title">
           <h1>Наша команда</h1>
@@ -97,40 +97,20 @@ export default {
 <style lang="scss">
     #gbslevel-app {
         background-color: #E5E5E5;
-        height: auto !important;
-        top: 0;
-        left: 0;
-        right: 0;
-        position: absolute;
-    }
-    .main {
-        &>.phone-link{
-           position: relative;
-           color: #000;
-        }
-        &>.phone-link::before {
-            position: absolute;
-            left: -25px;
-        }
-        .buttonLang {
-            color: #000;
-        }
-        &>.close-opened{
-            filter: brightness(0.6);
-        }
-        &>.menu-open{
-            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(105%);
-        }
+        // height: auto !important;
+        // top: 0;
+        // left: 0;
+        // right: 0;
+        // position: absolute;
     }
     .team-g {
-        max-width: 1440px;
         width: 100%;
         height: 100%;
         margin-left: auto;
         margin-right: auto;
-        position: relative;
+        // position: relative;
         top: 150px;
-        margin-bottom: 150px;
+        // margin-bottom: 150px;
     }
     .title {
         width: 80%;

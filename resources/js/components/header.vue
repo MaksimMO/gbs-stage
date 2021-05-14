@@ -5,7 +5,6 @@
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink :class="{'is-open':isOpen}"/>
     <div class="appointment">Записатися</div>
-    <!-- <div class="lang">UA</div> -->
     <LanguageSwitcher :class="{'is-open':isOpen}"/>
     <div :class="{'close-opened':isOpen, 'menu-open': !isOpen}" @click="isOpen = !isOpen"></div>
   </div>
@@ -66,11 +65,31 @@ export default {
     box-sizing: border-box;
     width: 100%;
     z-index: 120;
-    color: #000;
+    color: #fff;
     padding: 50px 58px 30px 58px;
     background-color: transparent;
-    transition: all 0.6s ease;
+    transition: all 0.2s ease;
 }
+.header-change {
+    color: #000;
+    & .phone-link{
+        position: relative;
+        color: #000;
+    }
+    & .phone-link::before {
+        position: absolute;
+        left: -25px;
+    }
+    & .buttonLang {
+        color: #000;
+    }
+    & .close-opened{
+        filter: brightness(0.6);
+    }
+    & .menu-open{
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(105%);
+    }
+    }
 .is-open{
    background-color: #000 !important;
    color: #fff !important;
@@ -83,9 +102,9 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #000;
-    background-color: transparent;
-    transition: all 0.8s ease;
+    // color: #000;
+    // background-color: transparent;
+    transition: all 0.2s ease;
   .logo {
     width: 178px;
     height: 84px;
@@ -134,7 +153,7 @@ export default {
         text-transform: uppercase;
         width: 138px;
         text-align: center;
-        transition: all 0.6s linear;
+        transition: all 0.2s linear;
         position: relative;
         cursor:pointer;
         z-index: 1;
@@ -148,7 +167,7 @@ export default {
             height: 50%;
             background: #916C58;
             z-index: -1;
-            transition: all 0.6s linear;
+            transition: all 0.2s linear;
         }
         &:hover:before{
             height: 100%;
@@ -179,11 +198,11 @@ export default {
   }
 }
 .slide-fade-enter-active {
-  animation: show-in 0.6s;
+  animation: show-in 0.2s;
 }
 
 .slide-fade-leave-active {
-  animation: show-in 0.6s reverse;
+  animation: show-in 0.2s reverse;
 }
 
 @keyframes show-in {

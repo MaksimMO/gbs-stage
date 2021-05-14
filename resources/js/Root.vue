@@ -22,11 +22,13 @@ export default {
 html, body {
     height: 100%;
     margin: 0;
+    padding:0;
 }
 
 #gbslevel-app {
-    height: 100%;
+    /* height: 100%; */
     /* height: 702px; */
+    /* position: absolute; */
     font-family: 'Raleway';
     font-feature-settings: 'pnum' on, 'lnum' on;
     background-color: #000000;
