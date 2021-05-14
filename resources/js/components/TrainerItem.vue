@@ -6,8 +6,8 @@
     <div style="position: relative;">
         <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName">
         <div v-show="isHovered && !isOpen || isSelected" class="info">
-            <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" style="width: 100%; height: 100%;" @click="isShow">
-            <img v-if="isSelected" src="../../assets/images/close.png" alt="info" style="width: 100%; height: 100%;" @click="isClosed">
+            <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" style="width: 100%; height: 100%; cursor: pointer;" @click="isShow">
+            <img v-if="isSelected" src="../../assets/images/close.png" alt="info" style="width: 100%; height: 100%; cursor: pointer;" @click="isClosed">
         </div>
         <p class="firstName">{{trainer.firstName}}</p>
         <p class="lastName">{{trainer.lastName}}</p>
@@ -67,6 +67,7 @@ export default {
     &.is-scaled{
          transform:scale(1.3);
          z-index: 101;
+         margin-bottom: 0;
     }
 
     img{
@@ -149,6 +150,11 @@ export default {
     line-height: 28px;
     color: #000000;
     background-color: #ffffff;
+
+    & p {
+        margin: 0;
+        max-height: 95px;
+    }
 
     &::-webkit-scrollbar{
         width: 10px;
