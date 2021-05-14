@@ -11,17 +11,17 @@
     <div class="title">Про нас</div>
     <div class="columns-container">
       <div class="col-1">
-        <div>Тренажерний зал 1700 кв.м. з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym </div>
-        <div>Простора стилізована зона єдиноборств з професійним рингом</div>
-        <div>Окрема студія для сайкл-тренування з надсучасною світло- звуковою системою</div>
-        <div>Інноваційна зона функціонального тренінгу та кросфіту</div>
+        <div><span class="bold">Тренажерний зал 1700 кв.м.</span> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym </div>
+        <div>Простора стилізована <span class="bold">зона єдиноборств</span> з професійним рингом</div>
+        <div>Окрема <span class="bold">студія для сайкл-тренування</span> з надсучасною світло- звуковою системою</div>
+        <div><span class="bold">Інноваційна </span> зона функціонального тренінгу та кросфіту</div>
       </div>
       <div class="col-2">
-        <div>Студія Barre на основі балету</div>
-        <div>Мед кабінет, консультація лікаря</div>
-        <div>Власна пральня</div>
-        <div>Система вентиляції та кондиціонування  функцією очищення повітря</div>
-        <div>Високий рівень сервісу</div>
+        <div><span class="bold">Студія Barre </span>на основі балету</div>
+        <div>Мед кабінет, <span class="bold">консультація лікаря</span></div>
+        <div>Власна <span class="bold">пральня</span></div>
+        <div>Система вентиляції та кондиціонування  функцією <span class="bold">очищення повітря</span></div>
+        <div><span class="bold">Високий</span> рівень сервісу</div>
       </div>
     </div>
     <router-link class="link-1" to="/about-us-g">Детальніше</router-link>
@@ -31,13 +31,14 @@
   <div class="techno-gym-container">
     <div class="col-1">
       <div class="logo"></div>
+      <div class="title">Techno Gym</div>
       <div class="text">
-        TechnoGym - лідер серед виробників тренажерів, завдяки використанню останніх наукових відкриттів та технічних досягнень. Тренажери продумані
+        <span class="bold">TechnoGym</span> - лідер серед виробників тренажерів, завдяки використанню останніх наукових відкриттів та технічних досягнень. Тренажери продумані
         до найдрібніших деталей, тому на них щодня тренується більше 35 мільйонів
         спортсменів, які досягають найвищих спортивних результатів. А відтепер і ви
         зможете відчути їх унікальність.
       </div>
-      <router-link class="link-1" to="/about-us-g">Детальніше</router-link>
+      <router-link class="link-2" to="/about-us-g">Детальніше</router-link>
     </div>
       <img class="skew-image-1" src="../../assets/images/techno-gym-skew-images.png" alt="">
   </div>
@@ -46,9 +47,8 @@
       Наша команда
     </div>
 
-    <div class="all-our-trainers-link">
-      Переглянути всіх
-    </div>
+
+    <router-link class="all-our-trainers-link" to="/about-us-g">Переглянути всіх</router-link>
 
     <TrainersList
         :trainers="trainers"
@@ -163,7 +163,68 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+
+
+  .link-1{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+
+    display: flex;
+    align-items: center;
+
+    &:active{
+      color: #916C58;
+    }
+
+    &:after{
+      content: '';
+      width: 31px;
+      height:16px;
+      background: url("../../assets/homeView/arrow-right.svg") no-repeat;
+      margin-left: 15px;
+    }
+  }
+
+
+      .link-2{
+        font-family: Raleway;
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration:none;
+        width: max-content;
+        color:#fff;
+        transition: all 0.2s linear;
+        position: relative;
+        cursor: pointer;
+        z-index: 1;
+
+        &:before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -8px;
+            width: calc(100% + 16px);
+            height: 50%;
+            background: #916C58;
+            z-index: -1;
+            transition: all 0.2s linear;
+        }
+        &:hover:before{
+            height: 100%;
+        }
+        &:active{
+            color: #000;
+        }
+    }
+
 
 .top-image-container{
   position: relative;
@@ -178,19 +239,26 @@ export default {
   .skew-image-1{
     position: absolute;
     bottom: -27px;
-    left: 40px;
+    left: 100px;
   }
 
   .water-text{
     position: absolute;
-    right: 0;
+    right: 150px;
     bottom: -138px;
+
+    @media screen and (max-width: 1144px){
+      width: 620px;
+      bottom: -116px;
+    }
+
+
   }
 }
 
 .about-us{
   background-color: #ffff;
-  padding: 80px;
+  padding: 80px 150px 60px;
   display: flex;
   flex-direction: column;
 
@@ -198,7 +266,6 @@ export default {
     font-family: Oswald;
     font-weight: 600;
     font-size: 48px;
-    line-height: 54px;
     letter-spacing: 0.02em;
     font-feature-settings: 'pnum' on, 'lnum' on;
   }
@@ -207,6 +274,24 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    .col-1 > div,.col-2 > div {
+      margin-bottom: 20px;
+      span.bold{
+        font-weight: 600;
+      }
+    }
+
+
+
   }
 
   .link-1{
@@ -222,10 +307,10 @@ export default {
 
     .col-1{
 
-      padding-left: 150px;
+      padding: 116px 0 64px 150px;
       flex-direction: column;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       color: #ffff;
 
       .logo{
@@ -234,6 +319,30 @@ export default {
         height: 48px;
         widows: 174px;
       }
+
+      .title{
+          font-family: Oswald;
+          font-weight: 600;
+          font-size: 64px;
+          letter-spacing: 0.02em;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+          color: #916C58;
+      }
+
+      .text{
+        font-family: Raleway;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FFFFFF;
+      }
+
+      .link-2{
+
+      }
+
     }
 
     img{
@@ -248,7 +357,7 @@ export default {
     padding-top: 210px;
     box-sizing: border-box;
     background-color: #ffff;
-    background: url('../../assets/images/main-g-our-team-water-text.svg') no-repeat 50px 50px;
+    background: url('../../assets/images/main-g-our-team-water-text.svg') no-repeat 50px 50px, #fff;
 
     .our-team-container_header{
       font-family: 'Oswald';
@@ -265,16 +374,19 @@ export default {
       position: relative;
       padding-right: 150px;
     }
+
     .all-our-trainers-link{
+      background-color: #fff;
       margin: 56px 83px 76px 0;
       font-weight: bold;
       font-size: 12px;
       line-height: 14px;
-
       text-align: right;
       letter-spacing: 0.05em;
-      text-decoration-line: underline;
+      -webkit-text-decoration-line: underline;
       text-transform: uppercase;
+      display: block;
+      color: #000000;
     }
 
     .trainers-container .trainer-item:nth-of-type(even) {
@@ -294,7 +406,8 @@ export default {
     }
 
     .also-for-you-container{
-      padding: 90px 150px;
+      padding: 90px 150px 60px;
+      background-color: #fff;
 
       &>.title{
         font-family: Oswald;
@@ -319,6 +432,7 @@ export default {
           .title{
             font-family: Oswald;
             font-size: 24px;
+            line-height: 54px;
             font-weight: 600;
             letter-spacing: 0.02em;
             margin: 12px 0 10px;
@@ -327,21 +441,21 @@ export default {
           .description{
             font-family: Raleway;
             font-size: 14px;
-            font-weight: 400;
+            line-height: 28px;
             letter-spacing: 0.05em;
-
+            font-feature-settings: 'pnum' on, 'lnum' on;
           }
 
           &:nth-of-type(1) .icon {
-            background:url('../../assets/images/skew-icon-1.svg') no-repeat left, url('../../assets/images/smoothie.svg') no-repeat 45px;
+            background:url('../../assets/images/skew-icon-1.svg') no-repeat left, url('../../assets/images/smoothie.svg') no-repeat 60px;
           }
 
           &:nth-of-type(2) .icon {
-            background: url('../../assets/images/skew-icon-1.svg') no-repeat left, url('../../assets/images/heart-beat.svg') no-repeat 45px;
+            background: url('../../assets/images/skew-icon-1.svg') no-repeat left, url('../../assets/images/heart-beat.svg') no-repeat 60px;
           }
 
           &:nth-of-type(3) .icon {
-            background: url('../../assets/images/skew-icon-1.svg') no-repeat left, url('../../assets/images/hanger.svg') no-repeat 45px;
+            background: url('../../assets/images/skew-icon-1.svg') no-repeat left, url('../../assets/images/hanger.svg') no-repeat 60px;
           }
 
         }
@@ -351,8 +465,8 @@ export default {
     }
 
     .seo-text{
-
-      margin-top:60px;
+      background-color: #fff;
+      padding-top:60px;
 
       .title{
           font-family: Oswald;
