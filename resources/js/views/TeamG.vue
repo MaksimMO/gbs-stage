@@ -1,5 +1,5 @@
 <template>
-<Header class="header-change" />
+<Header class="header-invert" />
   <div class="team-g">
       <section class="title">
           <h1>Наша команда</h1>
@@ -19,7 +19,6 @@
             :isOpen="isOpen"
             @changeOpen="(e) => change(e)"/>
       </section>
-      <Scroll v-show="visible"/>
   </div>
 <Footer />
 </template>
@@ -28,13 +27,11 @@
 import TrainerList from '../components/TrainersList';
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
-import Scroll from '../components/ScrollTop.vue';
 export default {
     emits: ['changeOpen'],
     data() {
         return {
             isOpen: false,
-            visible: false,
             trainers: [
                 {link: 'valentine.jpg', firstName: 'Валентин', lastName: 'Прізвище',
                     description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона!!! Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
@@ -69,25 +66,15 @@ export default {
         change(e) {
             this.isOpen = e;
         },
-        scrollListener (e) {
-            this.visible = window.scrollY > 500
-        },
     },
     computed: {
         articleGroups () {
             return Array.from(Array(Math.ceil(this.trainers.length / 4)).keys());
         }
     },
-    mounted: function () {
-        window.addEventListener('scroll', this.scrollListener)
-    },
-    beforeDestroy: function () {
-        window.removeEventListener('scroll', this.scrollListener)
-    },
     components: {
         TrainerList,
         Header,
-        Scroll,
         Footer
     }
 }
@@ -96,21 +83,10 @@ export default {
 
 <style lang="scss">
     #gbslevel-app {
-        background-color: #E5E5E5;
-        // height: auto !important;
-        // top: 0;
-        // left: 0;
-        // right: 0;
-        // position: absolute;
+        background-color: transparent;
     }
     .team-g {
-        width: 100%;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        // position: relative;
-        top: 150px;
-        // margin-bottom: 150px;
+        padding-top: 150px;
     }
     .title {
         width: 80%;
@@ -123,7 +99,7 @@ export default {
         font-style: normal;
         font-family: 'Oswald';
         font-size: 52px;
-        margin-bottom: 16px;
+        margin: 0;
         margin-left: 96px;
         line-height: 54px;
         letter-spacing: 0.02em;

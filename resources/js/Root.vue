@@ -1,19 +1,37 @@
 <template>
     <Loader />
     <router-view />
+    <Scroll v-show="visible"/>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Loader from './components/Loader.vue'
 import Footer from './components/Footer.vue'
+import Scroll from './components/ScrollTop.vue';
 
 export default {
-
+    data() {
+        return {
+            visible: false
+        }
+    },
+    methods: {
+        scrollListener (e) {
+            this.visible = window.scrollY > 500
+        },
+    },
+    mounted: function () {
+        window.addEventListener('scroll', this.scrollListener)
+    },
+    beforeDestroy: function () {
+        window.removeEventListener('scroll', this.scrollListener)
+    },
     components:{
         Loader,
         Header,
-        Footer
+        Footer,
+        Scroll,
     }
 }
 </script>
@@ -26,7 +44,7 @@ html, body {
 }
 
 #gbslevel-app {
-    /* height: 100%; */
+    height: 100%;
     /* height: 702px; */
     /* position: absolute; */
     font-family: 'Raleway';

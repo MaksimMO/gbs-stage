@@ -35,6 +35,7 @@
         }
         &>img{
             height: 61px;
+            width: 25px;
             transition: height .6s ease-in;
         }
         &:hover{

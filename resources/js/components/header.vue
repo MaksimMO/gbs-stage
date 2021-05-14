@@ -1,6 +1,6 @@
 <template>
-<div  :class="['header', {'is-open':isOpen}]">
-  <div :class="['main', {'is-open':isOpen}]">
+<div  :class="['header', {'is-open':isOpen, 'isScroll': scrollYdata != 0 && !isOpen}]">
+  <div :class="['main']">
     <div :class="`logo ${level}`"></div>
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink :class="{'is-open':isOpen}"/>
@@ -23,6 +23,7 @@ export default {
     return {
       level: "g",
       isOpen: false,
+      scrollYdata: 0,
     };
   },
   components: {
@@ -46,11 +47,13 @@ export default {
       }
     };
     const storeScroll = () => {
-      document.documentElement.dataset.scroll = window.scrollY;
+        this.scrollYdata = window.scrollY;
+        // if(!this.isOpen){
+            document.documentElement.dataset.scroll = this.scrollYdata;
+        // }
     }
     document.addEventListener('scroll', debounce(storeScroll), { passive: true });
     storeScroll();
-
   },
   methods:{
 
@@ -68,9 +71,9 @@ export default {
     color: #fff;
     padding: 50px 58px 30px 58px;
     background-color: transparent;
-    transition: all 0.2s ease;
+    transition: all 0.6s ease-in;
 }
-.header-change {
+.header-invert {
     color: #000;
     & .phone-link{
         position: relative;
@@ -89,25 +92,32 @@ export default {
     & .menu-open{
         filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(105%);
     }
+    & .main>.logo.g {
+      background: url("../../assets/images/g-level-darck.svg") no-repeat;
+      background-size: contain;
     }
+}
 .is-open{
    background-color: #000 !important;
    color: #fff !important;
    .buttonLang{
        color: #fff !important;
    }
+   .main > .logo.g {
+    background: url("../../assets/images/g-level.svg") no-repeat;
+    background-size: contain;
+}
 }
 
 .main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // color: #000;
-    // background-color: transparent;
-    transition: all 0.2s ease;
+    transition: all 0.6s ease;
   .logo {
     width: 178px;
     height: 84px;
+    transition: all 0.6s ease-in;
 
     @media screen and (max-width: 767px) {
       width: 90px;
@@ -153,7 +163,7 @@ export default {
         text-transform: uppercase;
         width: 138px;
         text-align: center;
-        transition: all 0.2s linear;
+        transition: all 0.6s linear;
         position: relative;
         cursor:pointer;
         z-index: 1;
@@ -198,11 +208,11 @@ export default {
   }
 }
 .slide-fade-enter-active {
-  animation: show-in 0.2s;
+  animation: show-in 0.6s;
 }
 
 .slide-fade-leave-active {
-  animation: show-in 0.2s reverse;
+  animation: show-in 0.6s reverse;
 }
 
 @keyframes show-in {
@@ -216,8 +226,7 @@ export default {
   }
 }
 
-
-html:not([data-scroll='0']) .header {
+.isScroll {
   background-color: #000;
   padding: 20px 68px;
   color: #FFFFFF;
@@ -236,9 +245,43 @@ html:not([data-scroll='0']) .header {
         filter: none;
     }
   }
-  .logo {
-    width: 82px;
-    height: 38px;
-  }
+    & .main .logo {
+        width: 82px;
+        height: 38px;
+        &.g {
+        background: url("../../assets/images/g-level.svg") no-repeat;
+        background-size: contain;
+        }
+    }
 }
+
+
+// html:not([data-scroll='0']) .header, .header-invert.main {
+//   background-color: #000;
+//   padding: 20px 68px;
+//   color: #FFFFFF;
+//   .main {
+//     color: #FFFFFF;
+//     &>.phone-link {
+//         color: #FFFFFF;
+//         &:hover {
+//             color: #916C58;
+//         }
+//     }
+//     &>.selectLang>.buttonLang {
+//         color: #FFFFFF;
+//     }
+//     &>.menu-open{
+//         filter: none;
+//     }
+//   }
+//   .logo {
+//     width: 82px;
+//     height: 38px;
+//     &.g {
+//       background: url("../../assets/images/g-level.svg") no-repeat;
+//       background-size: contain;
+//     }
+//   }
+// }
 </style>
