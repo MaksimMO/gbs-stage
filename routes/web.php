@@ -26,6 +26,10 @@ Route::get('/team-g', function () {
     return view('index');
 });
 
+Route::get('/about-us-g', function () {
+    return view('index');
+});
+
 
 Auth::routes();
 

@@ -1,49 +1,49 @@
 <template>
 <Header class="header-invert" />
   <div class="aboutUs-g">
-      <section class="title">
-          <h1>Про нас</h1>
-          <p>
-            Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.
-            Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam.
-            Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est.
+    <section class="title">
+        <h1>Про нас</h1>
+        <p>
+        Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.
+        Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam.
+        Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est.
 
-          </p>
-          <p>
-            Suspendisse dictum ultricies imperdiet. Nunc pretium enim a purus dapibus, malesuada dignissim risus accumsan.
-            Donec commodo lacus laoreet consequat scelerisque. Aliquam vestibulum magna ornare arcu dignissim, non tristique nibh pharetra.
-            Etiam et sapien ullamcorper, dapibus magna vitae, ultrices nunc. Nulla sit amet tortor odio. Quisque accumsan non tellus eget ullamcorper.
-            Phasellus congue ligula quis arcu efficitur, sed ornare mi laoreet. Maecenas mi orci, sodales et convallis vitae, ultricies ac neque.
-            Donec facilisis orci ut sapien venenatis, nec vestibulum lorem auctor. Morbi dictum lacus neque, id volutpat sem iaculis non.
-          </p>
-      </section>
-      <section class="image-container-aboutUs">
-            <img class="image" src="../../assets/images/aboutUs-g-main.jpg" alt="">
-            <img class="skew-image" src="../../assets/images/popup-corner.svg" alt="">
-            <div class="text-image">
-                <p>
-                    Nulla sed augue vehicula, feugiat nisi sed, commodo dolor.
-                </p>
-            </div>
-      </section>
-      <section class="aboutUs-g-description">
-          <ul class="first">
-              <li><b>Тренажерний зал 1700 кв.м.</b> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym</li>
-              <li>Простора стилізована <b>зона єдиноборств</b> з професійним рингом</li>
-              <li>Окрема <b>студія для сайкл-тренування</b> з надсучасною світло- звуковою системою</li>
-              <li><b>Інноваційна</b> зона функціонального тренінгу та кросфіту</li>
-          </ul>
-          <ul class="second">
-              <li><b>Студія Barre</b> на основі балету</li>
-              <li>Мед кабінет, <b>консультація лікаря</b></li>
-              <li>Власна <b>пральня</b></li>
-              <li>Система вентиляції та кондиціонування  функцією <b>очищення повітря</b></li>
-              <li><b>Високий</b> рівень сервісу</li>
-          </ul>
-      </section>
-      <section class="our-team-aboutUs-container">
+        </p>
+        <p>
+        Suspendisse dictum ultricies imperdiet. Nunc pretium enim a purus dapibus, malesuada dignissim risus accumsan.
+        Donec commodo lacus laoreet consequat scelerisque. Aliquam vestibulum magna ornare arcu dignissim, non tristique nibh pharetra.
+        Etiam et sapien ullamcorper, dapibus magna vitae, ultrices nunc. Nulla sit amet tortor odio. Quisque accumsan non tellus eget ullamcorper.
+        Phasellus congue ligula quis arcu efficitur, sed ornare mi laoreet. Maecenas mi orci, sodales et convallis vitae, ultricies ac neque.
+        Donec facilisis orci ut sapien venenatis, nec vestibulum lorem auctor. Morbi dictum lacus neque, id volutpat sem iaculis non.
+        </p>
+    </section>
+    <section class="image-container-aboutUs">
+        <img class="image" src="../../assets/images/aboutUs-g-main.jpg" alt="">
+        <img class="skew-image" src="../../assets/images/popup-corner.svg" alt="">
+        <div class="text-image">
+            <p>
+                Nulla sed augue vehicula, feugiat nisi sed, commodo dolor.
+            </p>
+        </div>
+    </section>
+    <section class="aboutUs-g-description">
+        <ul class="first">
+            <li><b>Тренажерний зал 1700 кв.м.</b> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym</li>
+            <li>Простора стилізована <b>зона єдиноборств</b> з професійним рингом</li>
+            <li>Окрема <b>студія для сайкл-тренування</b> з надсучасною світло- звуковою системою</li>
+            <li><b>Інноваційна</b> зона функціонального тренінгу та кросфіту</li>
+        </ul>
+        <ul class="second">
+            <li><b>Студія Barre</b> на основі балету</li>
+            <li>Мед кабінет, <b>консультація лікаря</b></li>
+            <li>Власна <b>пральня</b></li>
+            <li>Система вентиляції та кондиціонування  функцією <b>очищення повітря</b></li>
+            <li><b>Високий</b> рівень сервісу</li>
+        </ul>
+    </section>
+    <section class="our-team-aboutUs-container">
         <div class="our-team-container_header">
-            Наша команда
+            <p>Наша команда</p>
             <router-link class="all-our-trainers-link" to="/team-g">
                 Переглянути всіх
             </router-link>
@@ -53,6 +53,14 @@
             :isOpen="isOpen"
             @changeOpen="(e) => change(e)"
         />
+    </section>
+    <section class="certificate-title">
+        <h1>Нагороди та сертифікати</h1>
+        <p>
+            Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.
+            Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam.
+            Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est.
+        </p>
     </section>
   </div>
 <Footer />
@@ -211,23 +219,61 @@ export default {
             font-size: 48px;
             display: flex;
             padding-left: 246px;
-            align-items: center;
-            justify-content: flex-start;
+            align-items: baseline;
+            justify-content: space-between;
             position: relative;
             padding-right: 150px;
+            margin-bottom: 74px;
+            p {
+                margin: 0;
+            }
         }
         .all-our-trainers-link{
-            margin: 56px 83px 76px 0;
+            margin: 0;
             font-weight: bold;
             font-size: 12px;
             line-height: 14px;
             text-align: right;
             letter-spacing: 0.05em;
+            color: #000000;
             text-transform: uppercase;
         }
 
         .trainers-container .trainer-item:nth-of-type(even) {
             margin-top:25px;
+        }
+    }
+    .certificate-title {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        padding-top: 60px;
+        h1 {
+            font-weight: 600;
+            font-style: normal;
+            font-family: Oswald;
+            font-size: 52px;
+            margin: 0;
+            text-align: center;
+            line-height: 54px;
+            letter-spacing: 0.02em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #000000;
+        }
+        p {
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 28px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #000000;
         }
     }
     .footer {
