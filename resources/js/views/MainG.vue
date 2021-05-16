@@ -48,7 +48,7 @@
     </div>
 
 
-    <router-link class="all-our-trainers-link" to="/about-us-g">Переглянути всіх</router-link>
+    <router-link class="all-our-trainers-link" to="/team-g">Переглянути всіх</router-link>
 
     <TrainersList
         :trainers="trainers"
@@ -353,7 +353,7 @@ export default {
 
 }
   .our-team-container{
-    height: 970px;
+    // height: 970px;
     padding-top: 210px;
     box-sizing: border-box;
     background-color: #ffff;
@@ -394,14 +394,14 @@ export default {
     }
   }
     .combat-area{
-      height: 570px;
+      // height: 570px;
       position: relative;
 
       .skew-image-1{
         position: absolute;
-        bottom: 45px;
+        bottom: -28px;
         right: 115px;
-        z-index: 1
+        z-index: 1;
       }
     }
 
