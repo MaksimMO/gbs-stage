@@ -199,6 +199,8 @@ export default {
   .close-opened {
     background-image: url("../../assets/images/menu-close.svg");
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
     width: 38px;
     height: 38px;
     &:hover {
