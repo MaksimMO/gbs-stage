@@ -62,6 +62,16 @@
             Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est.
         </p>
     </section>
+    <CertificateSlider />
+    <section class="certificate-description">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.
+            Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.
+            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.
+            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            Sed nec hendrerit neque...
+        </p>
+    </section>
   </div>
 <Footer />
 </template>
@@ -70,6 +80,8 @@
 import TrainersList from '../components/TrainersList';
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
+import CertificateSlider from '../components/CertificateSlider.vue';
+
 export default {
     emits: ['changeOpen'],
     data() {
@@ -95,6 +107,7 @@ export default {
     components: {
         TrainersList,
         Header,
+        CertificateSlider,
         Footer
     }
 }
@@ -272,6 +285,22 @@ export default {
             line-height: 28px;
             letter-spacing: 0.05em;
             text-align: center;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #000000;
+        }
+    }
+    .certificate-description {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        padding-top: 60px;
+        p {
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 28px;
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #000000;
         }
