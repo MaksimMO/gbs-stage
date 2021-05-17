@@ -74,17 +74,17 @@ export default {
     transition: all 0.6s ease-in;
 }
 .header-invert {
-    color: #000;
+    color: #000 !important;
     & .phone-link{
         position: relative;
-        color: #000;
+        color: #000 !important;
     }
     & .phone-link::before {
         position: absolute;
         left: -25px;
     }
     & .buttonLang {
-        color: #000;
+        color: #000 !important;
     }
     & .close-opened{
         filter: brightness(0.6);

@@ -8,7 +8,7 @@
           <router-link to="/">Зонування</router-link>
       </li>
       <li>
-          <router-link to="/">Наша команда</router-link>
+          <router-link to="/team-g">Наша команда</router-link>
       </li>
       <li>
           <router-link to="/">Тренажери</router-link>
@@ -42,9 +42,9 @@ export default {
         text-transform: uppercase;
         list-style-type: none;
         padding: 1.87rem 1.25rem 0 6.25rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-row-gap: 5px;
+        display: flex;
+        // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-column-gap: 15px;
         justify-content: space-between;
         align-items: center;
         text-align: center;
