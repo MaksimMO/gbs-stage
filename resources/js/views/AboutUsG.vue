@@ -115,10 +115,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    #gbslevel-app {
-        background-color: transparent;
-    }
+
     .aboutUs-g {
+        background-color: #fff !important;
         padding-top: 150px;
     }
     .title {

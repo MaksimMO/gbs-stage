@@ -18785,83 +18785,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _components_TrainersList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/TrainersList */ "./resources/js/components/TrainersList.vue");
-/* harmony import */ var _components_Header_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Header.vue */ "./resources/js/components/Header.vue");
-/* harmony import */ var _components_Footer_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Footer.vue */ "./resources/js/components/Footer.vue");
-
+/* harmony import */ var _components_Header_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Header.vue */ "./resources/js/components/Header.vue");
+/* harmony import */ var _components_Footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Footer.vue */ "./resources/js/components/Footer.vue");
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   emits: ['changeOpen'],
   data: function data() {
     return {
-      isOpen: false,
-      trainers: [{
-        link: 'valentine.jpg',
-        firstName: 'Валентин',
-        lastName: 'Прізвище',
-        description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона!!! Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона '
-      }, {
-        link: 'Vitaliy_Kaskun.jpg',
-        firstName: 'Віталій',
-        lastName: 'Каськун',
-        description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона '
-      }, {
-        link: 'Vladimir_Leskov.jpg',
-        firstName: 'Володимир',
-        lastName: 'Лєсков',
-        description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона '
-      }, {
-        link: 'Gornushkina_Julia.jpg',
-        firstName: 'Юля',
-        lastName: 'Горнушкіна',
-        description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона '
-      }, {
-        link: 'Irina_Slyusarenko.jpg',
-        firstName: 'Ірина',
-        lastName: 'Слюсаренко',
-        description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона '
-      }, {
-        link: 'Melnyk_Serhiy.jpg',
-        firstName: 'Сергій',
-        lastName: 'Мельник',
-        description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона '
-      }, {
-        link: 'Mikhail_Galagan.jpg',
-        firstName: 'Михайло',
-        lastName: 'Галаган',
-        description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона '
-      }, {
-        link: 'Nechko_Vasil.jpg',
-        firstName: 'Василь',
-        lastName: 'Нечко',
-        description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона '
-      }, {
-        link: 'Olena_Semenchuk.jpg',
-        firstName: 'Олена',
-        lastName: 'Семенчук',
-        description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона '
-      }, {
-        link: 'Olga_Depeshko.jpg',
-        firstName: 'Ольга',
-        lastName: 'Депешко',
-        description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона '
-      }, {
-        link: 'Olga_Martsenyuk.jpg',
-        firstName: 'Ольга',
-        lastName: 'Марценюк',
-        description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона '
-      }, {
-        link: 'Olga_Osadchuk.jpg',
-        firstName: 'Ольга',
-        lastName: 'Осадчук',
-        description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона '
-      }, {
-        link: 'Tatiana_Podzigun.jpg',
-        firstName: 'Тетяна',
-        lastName: 'Подзигун',
-        description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона '
-      }]
+      isOpen: false
     };
   },
   methods: {
@@ -18875,9 +18807,8 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   components: {
-    TrainerList: _components_TrainersList__WEBPACK_IMPORTED_MODULE_0__.default,
-    Header: _components_Header_vue__WEBPACK_IMPORTED_MODULE_1__.default,
-    Footer: _components_Footer_vue__WEBPACK_IMPORTED_MODULE_2__.default
+    Header: _components_Header_vue__WEBPACK_IMPORTED_MODULE_0__.default,
+    Footer: _components_Footer_vue__WEBPACK_IMPORTED_MODULE_1__.default
   }
 });
 
@@ -20496,43 +20427,18 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-bcffb62e");
 
-var _hoisted_1 = {
-  "class": "simulator-g"
-};
-
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
-  "class": "title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Тренажери"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Спортивний клуб «G level» оснащений найновішою преміум-лінійкою тренажерів від провідного світового бренду TechnoGym. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " TechnoGym - лідер серед виробників тренажерів, завдяки використанню останніх наукових відкриттів та технічних досягнень. Тренажери продумані до найдрібніших деталей, тому на них щодня тренується більше 35 мільйонів спортсменів, які досягають найвищих спортивних результатів. А відтепер і ви зможете відчути їх унікальність. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "logo"
-})], -1
-/* HOISTED */
-);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"simulator-g\" data-v-bcffb62e><section class=\"title\" data-v-bcffb62e><h1 data-v-bcffb62e>Тренажери</h1><p data-v-bcffb62e> Спортивний клуб «G level» оснащений найновішою преміум-лінійкою тренажерів від провідного світового бренду TechnoGym. </p><p data-v-bcffb62e> TechnoGym - лідер серед виробників тренажерів, завдяки використанню останніх наукових відкриттів та технічних досягнень. Тренажери продумані до найдрібніших деталей, тому на них щодня тренується більше 35 мільйонів спортсменів, які досягають найвищих спортивних результатів. А відтепер і ви зможете відчути їх унікальність. </p><div class=\"logo\" data-v-bcffb62e></div></section><section class=\"simulator-direction\" data-v-bcffb62e><ul class=\"direction\" data-v-bcffb62e><li data-v-bcffb62e>Верхня частина тіла</li><li data-v-bcffb62e>Нижня частина тіла</li><li data-v-bcffb62e>Кардіо</li><li data-v-bcffb62e>Багатофункціональні тренажери</li><li data-v-bcffb62e>Вільні ваги</li></ul></section></div>", 1);
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Header = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Header");
 
-  var _component_TrainerList = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("TrainerList");
-
   var _component_Footer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Footer");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header, {
     "class": "header-invert"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.articleGroups, function (group, i) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_TrainerList, {
-      key: i,
-      trainers: $data.trainers.slice(i * 4, (i + 1) * 4),
-      isOpen: $data.isOpen,
-      onChangeOpen: _cache[1] || (_cache[1] = function (e) {
-        return $options.change(e);
-      })
-    }, null, 8
-    /* PROPS */
-    , ["trainers", "isOpen"]);
-  }), 128
-  /* KEYED_FRAGMENT */
-  ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  }), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 });

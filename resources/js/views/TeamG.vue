@@ -82,10 +82,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    #gbslevel-app {
-        background-color: transparent;
-    }
+
     .team-g {
+        background-color: #fff;
         padding-top: 150px;
     }
     .title {
