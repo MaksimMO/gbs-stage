@@ -12,9 +12,9 @@
       <router-link class="link-1" to="/areas-g">Зонування</router-link>
       <router-link class="link-1" to="/team-g">Наша команда</router-link>
       <router-link class="link-1" to="/">тренажери</router-link>
-      <router-link class="link-1" to="/">Комфорт і чистота</router-link>
+      <!-- <router-link class="link-1" to="/">Комфорт і чистота</router-link>
       <router-link class="link-1" to="/">Фітнес бар</router-link>
-      <router-link class="link-1" to="/">Безпека та мед кабінет</router-link>
+      <router-link class="link-1" to="/">Безпека та мед кабінет</router-link> -->
   </div>
 
   <hr>
@@ -111,7 +111,7 @@ export default {
   .line-2{
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     .link-1{
@@ -126,6 +126,12 @@ export default {
       line-height: 16px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
+
+      margin-right:60px;
+
+      &:last-of-type{
+        margin-right: 0;
+      }
     }
   }
 

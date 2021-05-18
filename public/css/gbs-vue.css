@@ -746,7 +746,7 @@ to {
 .footer .line-2 {
   margin-top: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .footer .line-2 .link-1 {
@@ -760,6 +760,10 @@ to {
   line-height: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-right: 60px;
+}
+.footer .line-2 .link-1:last-of-type {
+  margin-right: 0;
 }
 .footer hr {
   background: #FFFFFF;
@@ -1367,28 +1371,28 @@ html, body {
 .footer[data-v-6d955afb] {
   height: 234px;
 }
-.swiper-container {
+.swiper-container[data-v-4a2d3a7d] {
   width: 100%;
   max-height: 380px;
   height: 100%;
   border-top: solid 2px #F3EFEC;
   border-bottom: solid 2px #F3EFEC;
 }
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev[data-v-4a2d3a7d], .swiper-button-next[data-v-4a2d3a7d] {
   --swiper-navigation-size: 20px;
   --swiper-navigation-color: #000;
   opacity: 1;
 }
-.swiper-button-prev {
+.swiper-button-prev[data-v-4a2d3a7d] {
   left: 62px !important;
 }
-.swiper-button-next {
+.swiper-button-next[data-v-4a2d3a7d] {
   right: 58px !important;
 }
-.swiper-wrapper {
+.swiper-wrapper[data-v-4a2d3a7d] {
   left: 250px;
 }
-.swiper-slide {
+.swiper-slide[data-v-4a2d3a7d] {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -1401,16 +1405,16 @@ html, body {
   max-width: 18.7vw !important;
   height: auto;
 }
-.swiper-slide-prev img {
+.swiper-slide-prev img[data-v-4a2d3a7d] {
   opacity: 0.5;
 }
-.swiper-slide-next + .swiper-slide + .swiper-slide img {
+.swiper-slide-next + .swiper-slide + .swiper-slide img[data-v-4a2d3a7d] {
   opacity: 0.5;
 }
-.isOpacity {
+.isOpacity[data-v-4a2d3a7d] {
   opacity: 0.5;
 }
-.swiper-slide img {
+.swiper-slide img[data-v-4a2d3a7d] {
   display: block;
   max-width: 18.7vw !important;
   height: auto;
@@ -1418,19 +1422,19 @@ html, body {
      object-fit: cover;
 }
 @charset "UTF-8";
-#gbslevel-app {
+#gbslevel-app[data-v-4edab8bb] {
   background-color: transparent;
 }
-.aboutUs-g {
+.aboutUs-g[data-v-4edab8bb] {
   padding-top: 150px;
 }
-.title {
+.title[data-v-4edab8bb] {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
 }
-.title > h1 {
+.title > h1[data-v-4edab8bb] {
   font-weight: 600;
   font-style: normal;
   font-family: Oswald;
@@ -1442,7 +1446,7 @@ html, body {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
 }
-.title > p {
+.title > p[data-v-4edab8bb] {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -1455,22 +1459,22 @@ html, body {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
 }
-.image-container-aboutUs {
+.image-container-aboutUs[data-v-4edab8bb] {
   position: relative;
   margin-bottom: 60px;
   padding-left: 246px;
 }
-.image-container-aboutUs .image {
+.image-container-aboutUs .image[data-v-4edab8bb] {
   width: 100%;
   max-height: 570px;
   display: block;
 }
-.image-container-aboutUs .skew-image {
+.image-container-aboutUs .skew-image[data-v-4edab8bb] {
   position: absolute;
   bottom: -27px;
   right: 150px;
 }
-.image-container-aboutUs .text-image {
+.image-container-aboutUs .text-image[data-v-4edab8bb] {
   position: absolute;
   left: -20px;
   bottom: 20px;
@@ -1487,13 +1491,13 @@ html, body {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #FFFFFF;
 }
-.image-container-aboutUs .text-image > p {
+.image-container-aboutUs .text-image > p[data-v-4edab8bb] {
   line-height: 5.2vw;
   margin: 0;
   margin-right: 60px;
   transform: skew(25deg);
 }
-.aboutUs-g-description {
+.aboutUs-g-description[data-v-4edab8bb] {
   overflow: visible;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 15px;
@@ -1501,10 +1505,10 @@ html, body {
   margin-bottom: 60px;
   padding-left: 150px;
 }
-.aboutUs-g-description ul {
+.aboutUs-g-description ul[data-v-4edab8bb] {
   list-style: none;
 }
-.aboutUs-g-description ul li {
+.aboutUs-g-description ul li[data-v-4edab8bb] {
   font-family: "Raleway";
   font-style: normal;
   font-weight: normal;
@@ -1513,7 +1517,7 @@ html, body {
   letter-spacing: 0.05em;
   font-feature-settings: "pnum" on, "lnum" on;
 }
-.aboutUs-g-description ul li::before {
+.aboutUs-g-description ul li[data-v-4edab8bb]::before {
   content: "•";
   color: #916C58;
   font-weight: bold;
@@ -1521,11 +1525,11 @@ html, body {
   width: 1em;
   margin-left: -1em;
 }
-.our-team-aboutUs-container {
+.our-team-aboutUs-container[data-v-4edab8bb] {
   background: rgba(145, 108, 88, 0.1);
   padding-top: 60px;
 }
-.our-team-aboutUs-container .our-team-container_header {
+.our-team-aboutUs-container .our-team-container_header[data-v-4edab8bb] {
   font-family: "Oswald";
   height: 83px;
   color: #000000;
@@ -1539,10 +1543,10 @@ html, body {
   padding-right: 150px;
   margin-bottom: 74px;
 }
-.our-team-aboutUs-container .our-team-container_header p {
+.our-team-aboutUs-container .our-team-container_header p[data-v-4edab8bb] {
   margin: 0;
 }
-.our-team-aboutUs-container .all-our-trainers-link {
+.our-team-aboutUs-container .all-our-trainers-link[data-v-4edab8bb] {
   margin: 0;
   font-weight: bold;
   font-size: 12px;
@@ -1552,17 +1556,17 @@ html, body {
   color: #000000;
   text-transform: uppercase;
 }
-.our-team-aboutUs-container .trainers-container .trainer-item:nth-of-type(even) {
+.our-team-aboutUs-container .trainers-container .trainer-item[data-v-4edab8bb]:nth-of-type(even) {
   margin-top: 25px;
 }
-.certificate-title {
+.certificate-title[data-v-4edab8bb] {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
   padding-top: 60px;
 }
-.certificate-title h1 {
+.certificate-title h1[data-v-4edab8bb] {
   font-weight: 600;
   font-style: normal;
   font-family: Oswald;
@@ -1574,7 +1578,7 @@ html, body {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
 }
-.certificate-title p {
+.certificate-title p[data-v-4edab8bb] {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -1588,14 +1592,14 @@ html, body {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
 }
-.certificate-description {
+.certificate-description[data-v-4edab8bb] {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
   padding-top: 60px;
 }
-.certificate-description p {
+.certificate-description p[data-v-4edab8bb] {
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
@@ -1604,7 +1608,7 @@ html, body {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
 }
-.footer {
+.footer[data-v-4edab8bb] {
   height: 234px;
 }
 #gbslevel-app[data-v-bcffb62e] {

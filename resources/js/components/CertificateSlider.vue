@@ -48,7 +48,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import 'swiper/swiper.min.css';
 @import 'swiper/components/navigation/navigation.min.css';
 

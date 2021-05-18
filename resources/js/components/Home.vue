@@ -49,7 +49,7 @@ export default {
           backgroundImage:require('../../assets/homeView/slide-1.png').default,
           titleImage:require('../../assets/homeView/g-level-title.svg').default,
           titleImageActive:require('../../assets/homeView/g-level-title-active.svg').default,
-          link:'/level-g',
+          link:'/main-g',
           text1:'Твій рівень спорту',
           isActive:false,
           isHovered:false
