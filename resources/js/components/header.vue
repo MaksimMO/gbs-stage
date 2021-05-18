@@ -72,90 +72,48 @@ export default {
     padding: 50px 58px 30px 58px;
     background-color: transparent;
     transition: all 0.6s ease-in;
-    &.is-open{
-        background-color: #000 !important;
-        color: #fff !important;
-        & .buttonLang{
-            color: #fff !important;
-        }
-        & .main{
-                color: #fff;
-                &>.phone-link{
-                    color: #fff !important;
-                }
-            }
-        & .main > .logo.g {
-            background: url("../../assets/images/g-level.svg") no-repeat;
-            background-size: contain;
-            }
-    }
-    &.header-invert {
-        color: #000;
-        & .phone-link{
-            position: relative;
-            color: #000;
-        }
-        & .phone-link::before {
-            position: absolute;
-            left: -25px;
-        }
-        & .buttonLang {
-            color: #000;
-        }
-        & .close-opened{
-            filter: brightness(0.6);
-        }
-        & .menu-open{
-            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(105%);
-        }
-        & .main>.logo.g {
-        background: url("../../assets/images/g-level-darck.svg") no-repeat;
-        background-size: contain;
-        }
-    }
-
 }
-// .header-invert {
-//     color: #000 !important;
-//     & .phone-link{
-//         position: relative;
-//         color: #000;
-//     }
-//     & .phone-link::before {
-//         position: absolute;
-//         left: -25px;
-//     }
-//     & .buttonLang {
-//         color: #000 !important;
-//     }
-//     & .close-opened{
-//         filter: brightness(0.6);
-//     }
-//     & .menu-open{
-//         filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(105%);
-//     }
-//     & .main>.logo.g {
-//       background: url("../../assets/images/g-level-darck.svg") no-repeat;
-//       background-size: contain;
-//     }
-// }
-// .is-open{
-//    background-color: #000 !important;
-//    color: #fff !important;
-//    & .buttonLang{
-//        color: #fff !important;
-//    }
-//    & .main{
-//         color: #fff;
-//         &>.phone-link{
-//             color: #fff;
-//         }
-//     }
-//    & .main > .logo.g {
-//     background: url("../../assets/images/g-level.svg") no-repeat;
-//     background-size: contain;
-//     }
-// }
+.header-invert {
+    color: #000 !important;
+    & .phone-link{
+        position: relative;
+        color: #000;
+    }
+    & .phone-link::before {
+        position: absolute;
+        left: -25px;
+    }
+    & .buttonLang {
+        color: #000 !important;
+    }
+    & .close-opened{
+        filter: brightness(0.6);
+    }
+    & .menu-open{
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(105%);
+    }
+    & .main>.logo.g {
+      background: url("../../assets/images/g-level-darck.svg") no-repeat;
+      background-size: contain;
+    }
+}
+.is-open{
+   background-color: #000 !important;
+   color: #fff !important;
+   & .buttonLang{
+       color: #fff !important;
+   }
+   & .main{
+        color: #fff;
+        &>.phone-link{
+            color: #fff;
+        }
+    }
+   & .main > .logo.g {
+        background: url("../../assets/images/g-level.svg") no-repeat;
+        background-size: contain;
+    }
+}
 
 .main {
     display: flex;
@@ -299,8 +257,8 @@ export default {
         width: 82px;
         height: 38px;
         &.g {
-        background: url("../../assets/images/g-level.svg") no-repeat;
-        background-size: contain;
+            background: url("../../assets/images/g-level.svg") no-repeat;
+            background-size: contain;
         }
     }
 }
