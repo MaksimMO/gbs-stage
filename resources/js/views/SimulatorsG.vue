@@ -1,0 +1,149 @@
+<template>
+<Header class="header-invert" />
+  <div class="simulator-g">
+      <section class="title">
+          <h1>Тренажери</h1>
+          <p>
+            Спортивний клуб «G level» оснащений найновішою преміум-лінійкою тренажерів від провідного світового бренду TechnoGym.
+          </p>
+          <p>
+            TechnoGym - лідер серед виробників тренажерів, завдяки використанню останніх наукових відкриттів та технічних досягнень.
+            Тренажери продумані до найдрібніших деталей, тому на них щодня тренується більше 35 мільйонів спортсменів,
+            які досягають найвищих спортивних результатів. А відтепер і ви зможете відчути їх унікальність.
+          </p>
+          <div class="logo"></div>
+      </section>
+      <section>
+          <TrainerList
+            v-for="(group, i) in articleGroups"
+            :key="i"
+            :trainers="trainers.slice(i * 4, (i + 1) * 4)"
+            :isOpen="isOpen"
+            @changeOpen="(e) => change(e)"/>
+      </section>
+  </div>
+<Footer />
+</template>
+
+<script>
+import TrainerList from '../components/TrainersList';
+import Header from '../components/Header.vue';
+import Footer from '../components/Footer.vue';
+export default {
+    emits: ['changeOpen'],
+    data() {
+        return {
+            isOpen: false,
+            trainers: [
+                {link: 'valentine.jpg', firstName: 'Валентин', lastName: 'Прізвище',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона!!! Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Vitaliy_Kaskun.jpg', firstName: 'Віталій', lastName: 'Каськун',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Vladimir_Leskov.jpg', firstName: 'Володимир', lastName: 'Лєсков',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Gornushkina_Julia.jpg', firstName: 'Юля', lastName: 'Горнушкіна',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Irina_Slyusarenko.jpg', firstName: 'Ірина', lastName: 'Слюсаренко',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Melnyk_Serhiy.jpg', firstName: 'Сергій', lastName: 'Мельник',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Mikhail_Galagan.jpg', firstName: 'Михайло', lastName: 'Галаган',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Nechko_Vasil.jpg', firstName: 'Василь', lastName: 'Нечко',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Olena_Semenchuk.jpg', firstName: 'Олена', lastName: 'Семенчук',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Olga_Depeshko.jpg', firstName: 'Ольга', lastName: 'Депешко',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Olga_Martsenyuk.jpg', firstName: 'Ольга', lastName: 'Марценюк',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Olga_Osadchuk.jpg', firstName: 'Ольга', lastName: 'Осадчук',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
+                {link: 'Tatiana_Podzigun.jpg', firstName: 'Тетяна', lastName: 'Подзигун',
+                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' }
+            ]
+        }
+    },
+    methods: {
+        change(e) {
+            this.isOpen = e;
+        },
+    },
+    computed: {
+        articleGroups () {
+            return Array.from(Array(Math.ceil(this.trainers.length / 4)).keys());
+        }
+    },
+    components: {
+        TrainerList,
+        Header,
+        Footer
+    }
+}
+
+</script>
+
+<style lang="scss" scoped>
+    #gbslevel-app {
+        background-color: transparent;
+    }
+    .simulator-g {
+        padding-top: 150px;
+        .logo {
+            background-image: url("../../assets/images/technogym-logo-black.svg");
+            background-repeat: no-repeat;
+            height: 84px;
+            width: 310px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            margin-left: auto;
+        }
+    }
+    .title {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+    .title > h1 {
+        font-weight: 600;
+        font-style: normal;
+        font-family: 'Oswald';
+        font-size: 52px;
+        margin: 0;
+        margin-left: 96px;
+        line-height: 54px;
+        letter-spacing: 0.02em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #000000;
+    }
+    .title > p {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #000000;
+    }
+    .title > b {
+        font-style: normal;
+        font-size: 14px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: bold;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #000000;
+    }
+
+    .footer {
+        height: 234px;
+    }
+</style>
+

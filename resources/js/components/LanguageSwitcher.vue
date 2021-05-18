@@ -10,7 +10,7 @@
       @keydown.up.exact.prevent="startArrowKeys"
       @keydown.down.exact.prevent="startArrowKeys"
     >
-      <span>{{ $i18n.locale.toUpperCase() }}</span>
+      {{ $i18n.locale.toUpperCase() }}
     </button>
     <transition name="dropdown-fade">
       <ul v-click-away="hideDropdown" v-if="isVisible" ref="dropdown" class="chooseLang">
@@ -98,7 +98,7 @@ export default {
 <style lang="scss" scoped>
     .selectLang {
         position: relative;
-        transition: all 0.8s ease;
+        transition: all 0.2s ease;
     }
     .buttonLang {
         width: 31px;
@@ -110,7 +110,7 @@ export default {
         line-height: 16px;
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: currentColor;
         background: transparent;
         padding: 0 5px;
         border-left: solid 2px #916C58;

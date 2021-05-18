@@ -30,6 +30,10 @@ Route::get('/about-us-g', function () {
     return view('index');
 });
 
+Route::get('/simulators-g', function () {
+    return view('index');
+});
+
 
 Auth::routes();
 

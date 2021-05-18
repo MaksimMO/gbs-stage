@@ -8,6 +8,7 @@
  import TeamG from './views/TeamG.vue'
  import AboutUsG from './views/AboutUsG.vue'
  import AreasG from './views/AreasG.vue'
+ import SimulatorsG from './views/SimulatorsG.vue'
 //  import MainB from './components/MainB'
 //  import MainS from './components/MainS'
  import Home from './components/Home'
@@ -48,7 +49,11 @@
         {
             path: '/areas-g',
             component:AreasG
-        }
+        },
+        {
+            path:'/simulators-g',
+            component:  SimulatorsG,
+        },
 
     ],
   });

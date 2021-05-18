@@ -11,7 +11,7 @@
           <router-link to="/team-g">Наша команда</router-link>
       </li>
       <li>
-          <router-link to="/">Тренажери</router-link>
+          <router-link to="/simulators-g">Тренажери</router-link>
       </li>
       <li>
           <router-link to="/">Комфорт і чистота</router-link>

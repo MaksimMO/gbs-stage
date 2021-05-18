@@ -23,7 +23,7 @@ export default {
     font-feature-settings: 'pnum' on, 'lnum' on;
 
     color: #FFFFFF;
-    transition:color .1s ease-in;
+    transition:color .2s ease-in;
     text-decoration: none;
 
     display: flex;
