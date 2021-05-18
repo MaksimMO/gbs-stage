@@ -4,7 +4,10 @@
     <div :class="`logo ${level}`"></div>
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink :class="{'is-open':isOpen}"/>
-    <div class="appointment">Записатися</div>
+    <div class="appointment" @click="modalOpen=true">Записатися</div>
+    <teleport to="body">
+      <MakeOrderPopup v-if="modalOpen" @closePopup="modalOpen=false"/>
+    </teleport>
     <LanguageSwitcher :class="{'is-open':isOpen}"/>
     <div :class="{'close-opened':isOpen, 'menu-open': !isOpen}" @click="isOpen = !isOpen"></div>
   </div>
@@ -12,24 +15,36 @@
     <Menu v-show="isOpen" />
   </transition>
 </div>
+
+
+
 </template>
 
 <script>
 import PhoneLink from "./PhoneLink.vue";
 import Menu from "./Menu.vue";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
+import MakeOrderPopup from './MakeOrderPopup.vue'
+
 export default {
   data() {
     return {
       level: "g",
       isOpen: false,
       scrollYdata: 0,
+      modalOpen:false
     };
   },
   components: {
     PhoneLink,
     Menu,
     LanguageSwitcher,
+    MakeOrderPopup
+  },
+  methods:{
+    // closePopup(){
+    //   this.modalOpen=false;
+    // }
   },
   mounted(){
     const debounce = (fn) => {
@@ -55,9 +70,6 @@ export default {
     document.addEventListener('scroll', debounce(storeScroll), { passive: true });
     storeScroll();
   },
-  methods:{
-
-  }
 };
 </script>
 

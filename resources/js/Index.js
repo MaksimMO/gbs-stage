@@ -12,6 +12,7 @@
 //  import MainB from './components/MainB'
 //  import MainS from './components/MainS'
  import Home from './components/Home'
+ import MakeOrderPopup from './components/MakeOrderPopup.vue'
  import {i18n} from './plugins/i18n.js'
  import {isMobile}  from 'mobile-device-detect'
 

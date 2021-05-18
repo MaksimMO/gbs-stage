@@ -83,7 +83,7 @@ form{
     width: 370px;
     height: 69px;
     position: relative;
-    
+
     @media screen and (max-width: 767px) {
         width: unset;
         height: 50px;
@@ -150,6 +150,7 @@ input{
 }
 
  label {
+    font-family: Raleway;
     position: absolute;
     top: -26px;
     font-weight: 500;
@@ -158,7 +159,7 @@ input{
     color: #FFFFFF;
     opacity: 0.55;
     transition:all .2s ease-out;
-    
+
     @media screen and (max-width: 767px) {
         font-size: 16px;
         line-height: 18px;
