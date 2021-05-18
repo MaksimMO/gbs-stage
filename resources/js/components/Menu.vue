@@ -13,7 +13,7 @@
       <li>
           <router-link to="/simulators-g">Тренажери</router-link>
       </li>
-      <li>
+      <!-- <li>
           <router-link to="/">Комфорт і чистота</router-link>
       </li>
       <li>
@@ -21,7 +21,7 @@
       </li>
       <li>
           <router-link to="/">Безпека</router-link>
-      </li>
+      </li> -->
   </ul>
 </template>
 
@@ -43,9 +43,8 @@ export default {
         list-style-type: none;
         padding: 1.87rem 1.25rem 0 6.25rem;
         display: flex;
-        // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-column-gap: 15px;
-        justify-content: space-between;
+        grid-column-gap: 60px;
+        justify-content: center;
         align-items: center;
         text-align: center;
         margin: 0;
