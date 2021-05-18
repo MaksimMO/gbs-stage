@@ -13,20 +13,20 @@
           </p>
           <div class="logo"></div>
       </section>
-      <section>
-          <TrainerList
-            v-for="(group, i) in articleGroups"
-            :key="i"
-            :trainers="trainers.slice(i * 4, (i + 1) * 4)"
-            :isOpen="isOpen"
-            @changeOpen="(e) => change(e)"/>
+      <section class="simulator-direction">
+          <ul class="direction">
+            <li>Верхня частина тіла</li>
+            <li>Нижня частина тіла</li>
+            <li>Кардіо</li>
+            <li>Багатофункціональні тренажери</li>
+            <li>Вільні ваги</li>
+        </ul>
       </section>
   </div>
 <Footer />
 </template>
 
 <script>
-import TrainerList from '../components/TrainersList';
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 export default {
@@ -34,34 +34,6 @@ export default {
     data() {
         return {
             isOpen: false,
-            trainers: [
-                {link: 'valentine.jpg', firstName: 'Валентин', lastName: 'Прізвище',
-                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона!!! Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
-                {link: 'Vitaliy_Kaskun.jpg', firstName: 'Віталій', lastName: 'Каськун',
-                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
-                {link: 'Vladimir_Leskov.jpg', firstName: 'Володимир', lastName: 'Лєсков',
-                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
-                {link: 'Gornushkina_Julia.jpg', firstName: 'Юля', lastName: 'Горнушкіна',
-                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
-                {link: 'Irina_Slyusarenko.jpg', firstName: 'Ірина', lastName: 'Слюсаренко',
-                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
-                {link: 'Melnyk_Serhiy.jpg', firstName: 'Сергій', lastName: 'Мельник',
-                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
-                {link: 'Mikhail_Galagan.jpg', firstName: 'Михайло', lastName: 'Галаган',
-                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
-                {link: 'Nechko_Vasil.jpg', firstName: 'Василь', lastName: 'Нечко',
-                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
-                {link: 'Olena_Semenchuk.jpg', firstName: 'Олена', lastName: 'Семенчук',
-                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
-                {link: 'Olga_Depeshko.jpg', firstName: 'Ольга', lastName: 'Депешко',
-                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
-                {link: 'Olga_Martsenyuk.jpg', firstName: 'Ольга', lastName: 'Марценюк',
-                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
-                {link: 'Olga_Osadchuk.jpg', firstName: 'Ольга', lastName: 'Осадчук',
-                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' },
-                {link: 'Tatiana_Podzigun.jpg', firstName: 'Тетяна', lastName: 'Подзигун',
-                    description: 'Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba, ufbf-official, fbbu, вона ' }
-            ]
         }
     },
     methods: {
@@ -72,10 +44,9 @@ export default {
     computed: {
         articleGroups () {
             return Array.from(Array(Math.ceil(this.trainers.length / 4)).keys());
-        }
+        },
     },
     components: {
-        TrainerList,
         Header,
         Footer
     }
@@ -88,7 +59,7 @@ export default {
         background-color: transparent;
     }
     .simulator-g {
-        padding-top: 150px;
+        padding-top: 225px;
         .logo {
             background-image: url("../../assets/images/technogym-logo-black.svg");
             background-repeat: no-repeat;
@@ -104,44 +75,78 @@ export default {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 60px;
+        & > h1 {
+            font-weight: 600;
+            font-style: normal;
+            font-family: Oswald;
+            font-size: 52px;
+            margin: 0;
+            margin-left: 96px;
+            line-height: 54px;
+            letter-spacing: 0.02em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #000000;
+        }
+        & > p {
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 28px;
+            letter-spacing: 0.05em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #000000;
+        }
     }
-    .title > h1 {
-        font-weight: 600;
+    .simulator-direction {
+        font-family: Oswald;
         font-style: normal;
-        font-family: 'Oswald';
-        font-size: 52px;
-        margin: 0;
-        margin-left: 96px;
-        line-height: 54px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
         letter-spacing: 0.02em;
         font-feature-settings: 'pnum' on, 'lnum' on;
-        color: #000000;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        & > .direction {
+            list-style-type: none;
+            display: flex;
+            color: #000000;
+            grid-column-gap: 40px;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+        }
     }
-    .title > p {
-        font-weight: 400;
-        font-style: normal;
-        font-size: 14px;
-        margin-bottom: 10px;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: normal;
-        line-height: 28px;
-        letter-spacing: 0.05em;
-        font-feature-settings: 'pnum' on, 'lnum' on;
-        color: #000000;
-    }
-    .title > b {
-        font-style: normal;
-        font-size: 14px;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: bold;
-        line-height: 28px;
-        letter-spacing: 0.05em;
-        font-feature-settings: 'pnum' on, 'lnum' on;
-        color: #000000;
-    }
-
+    // .title > h1 {
+    //     font-weight: 600;
+    //     font-style: normal;
+    //     font-family: Oswald;
+    //     font-size: 52px;
+    //     margin: 0;
+    //     margin-left: 96px;
+    //     line-height: 54px;
+    //     letter-spacing: 0.02em;
+    //     font-feature-settings: 'pnum' on, 'lnum' on;
+    //     color: #000000;
+    // }
+    // .title > p {
+    //     font-weight: 400;
+    //     font-style: normal;
+    //     font-size: 14px;
+    //     margin-bottom: 10px;
+    //     font-family: Raleway;
+    //     font-style: normal;
+    //     font-weight: normal;
+    //     line-height: 28px;
+    //     letter-spacing: 0.05em;
+    //     font-feature-settings: 'pnum' on, 'lnum' on;
+    //     color: #000000;
+    // }
     .footer {
         height: 234px;
     }
