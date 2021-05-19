@@ -2,12 +2,18 @@
 <div :class="`make-order-popup ${level}`">
     <div class="close" @click="$emit('closePopup')" ></div>
     <div class="text-1">Залиште свій телефон і ми зателефонуємо Вам</div>
-    <FeedBackForm :level="level" />
+    <FeedBackForm @submitSuccess="submitSuccess" :level="level" />
+
+
+    <popup-success v-if="modalOpen"/>
+
+
 </div>
 </template>
 
 <script>
-import FeedBackForm from './Form.vue';
+import FeedBackForm from './Form.vue'
+import popupSuccess from './PopupSuccess.vue'
 
 let preloadedAssets = {
         g: [require('../../assets/feedBackFormView/background-g.png').default],
@@ -18,23 +24,27 @@ let preloadedAssets = {
 export default {
     data(){
         return{
-            level:'g'
+            level:'g',
+            modalOpen:false
         }
 
     },
     // props:['closePopup'],
     // props:['level', 'closePopup'],
     components:{
-        FeedBackForm
+        FeedBackForm,
+        popupSuccess
     },
     mounted(){
-        // document.get
 
     },
     methods:{
-        close(){
+        submitSuccess(){
             debugger;
-            this.$emit('closepopup');
+            this.modalOpen=true;
+            setTimeout(()=>{
+                    this.$emit('closePopup')
+            }, 2500)
         }
 
     },

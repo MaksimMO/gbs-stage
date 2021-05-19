@@ -1,7 +1,11 @@
 <template>
 <div  :class="['header', {'is-open':isOpen, 'isScroll': scrollYdata != 0 && !isOpen}]">
   <div :class="['main']">
-    <div :class="`logo ${level}`"></div>
+
+     <router-link :to="`/main-${level}`">
+        <div :class="`logo ${level}`"></div>
+     </router-link>
+
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink :class="{'is-open':isOpen}"/>
     <div class="appointment" @click="modalOpen=true">Записатися</div>

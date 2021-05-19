@@ -14,13 +14,18 @@
         <button type="submit"><span>Залишити заявку</span></button>
     </form>
 
+
+
+
     <teleport to="body">
-        <popup v-if="modalOpen"/>
+            <popup v-if="modalOpen"/>
     </teleport>
 </template>
 
 <script>
 import popup from './Popup.vue'
+
+
 export default {
     props:['level'],
     data(){
@@ -45,7 +50,12 @@ export default {
             body.append('_token', this.csrf_token);
 
             fetch('/feedback-form', {method:'POST', body}).finally(()=>{
-                this.modalOpen=true;
+                if(this.level==='g'){
+                    this.$emit('submitSuccess');
+                }else{
+                    this.modalOpen=true;
+                }
+
             });
 
         },
