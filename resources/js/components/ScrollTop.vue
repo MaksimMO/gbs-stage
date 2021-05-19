@@ -1,6 +1,6 @@
 <template>
     <div class="scrollTop" @click="scrollToTop()">
-        <div>Догори</div>
+        <div class="scroll-text">Догори</div>
         <img src="../../assets/images/scrollTopPng.png" alt="scroll">
     </div>
 </template>
@@ -15,24 +15,32 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .scrollTop {
-        // width: 25px;
+        z-index: 999;
         position: fixed;
         bottom: 310px;
         right: 10px;
-        &>div{
-            font-family: Raleway;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 14px;
+        color: #fff;
+        mix-blend-mode: difference;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        &>.scroll-text{
+            // font-family: Raleway;
+            // font-style: normal;
+            // font-weight: 500;
+            // font-size: 12px;
+            // line-height: 14px;
             position: absolute;
             bottom: 18px;
-            color: #000;
+            right: -20px;
             margin: 0;
             transform: translateX(-50%) rotate(-90deg);
         }
+
         &>img{
             height: 65px;
             width: 16px;

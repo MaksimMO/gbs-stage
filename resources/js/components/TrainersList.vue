@@ -1,8 +1,8 @@
 <template>
     <div class="trainers-container">
         <TrainerItem
-            v-for="(trainer, idx)  in trainers"
-            :key="idx"
+            v-for="(trainer)  in trainers"
+            :key="trainer.id"
             :trainer="trainer"
             :isOpen="isOpen"
             @isShow="(e) => change(e)"

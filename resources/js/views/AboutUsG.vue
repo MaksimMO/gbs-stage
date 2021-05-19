@@ -115,10 +115,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
     .aboutUs-g {
-        background-color: #fff !important;
-        padding-top: 150px;
+        padding-top: 208px;
+        background-color: #FFFFFF !important;
     }
     .title {
         width: 80%;
@@ -292,7 +291,7 @@ export default {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 60px;
+        padding-bottom: 60px;
         padding-top: 60px;
         p {
             font-family: Raleway;

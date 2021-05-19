@@ -13,7 +13,7 @@
         <p class="lastName">{{trainer.lastName}}</p>
     </div>
     <div class="description">
-        <p class="descriptionTitle">Напрямок діяльності</p>
+        <p class="descriptionTitle">{{trainer.direction}}</p>
         <p v-show="isSelected">{{trainer.description}}</p>
     </div>
 </div>
