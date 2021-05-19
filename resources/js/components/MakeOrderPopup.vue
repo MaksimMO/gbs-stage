@@ -40,7 +40,6 @@ export default {
     },
     methods:{
         submitSuccess(){
-            debugger;
             this.modalOpen=true;
             setTimeout(()=>{
                     this.$emit('closePopup')

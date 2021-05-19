@@ -18447,7 +18447,6 @@ var preloadedAssets = {
     submitSuccess: function submitSuccess() {
       var _this = this;
 
-      debugger;
       this.modalOpen = true;
       setTimeout(function () {
         _this.$emit('closePopup');
