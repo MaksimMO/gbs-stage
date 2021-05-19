@@ -4,7 +4,7 @@
     @mouseleave="leave"
 >
     <div style="position: relative;">
-        <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName">
+        <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="isSelected ? isShow() : isClosed()">
         <div v-show="isHovered && !isOpen || isSelected" class="info">
             <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" style="width: 100%; height: 100%; cursor: pointer;" @click="isShow">
             <img v-if="isSelected" src="../../assets/images/close.png" alt="info" style="width: 100%; height: 100%; cursor: pointer;" @click="isClosed">

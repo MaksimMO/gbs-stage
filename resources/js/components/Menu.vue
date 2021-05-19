@@ -55,6 +55,12 @@ export default {
     li > a {
         text-decoration: none;
         color: #fff;
+        transition:opacity .2s ease-in;
+        opacity:.55;
+
+        &:hover{
+            opacity:1;
+        }
     }
 
 </style>

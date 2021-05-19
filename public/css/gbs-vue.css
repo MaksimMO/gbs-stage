@@ -101,6 +101,11 @@ li {
 li > a {
   text-decoration: none;
   color: #fff;
+  transition: opacity 0.2s ease-in;
+  opacity: 0.55;
+}
+li > a:hover {
+  opacity: 1;
 }
 .selectLang[data-v-621aa444] {
   position: relative;
@@ -760,10 +765,14 @@ to {
   line-height: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  transition: opacity 0.2s ease-in;
   margin-right: 60px;
 }
 .footer .line-2 .link-1:last-of-type {
   margin-right: 0;
+}
+.footer .line-2 .link-1:hover {
+  opacity: 1;
 }
 .footer hr {
   background: #FFFFFF;
@@ -795,33 +804,36 @@ to {
   width: 71px;
   background: url(/images/design-logo.svg?602aba4728f7af6bc0c0ddbc09c50601) no-repeat;
 }
-.scrollTop {
+.scrollTop[data-v-051e996d] {
+  z-index: 999;
   position: fixed;
   bottom: 310px;
   right: 10px;
-}
-.scrollTop > div {
+  color: #fff;
+  mix-blend-mode: difference;
   font-family: Raleway;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
+}
+.scrollTop > .scroll-text[data-v-051e996d] {
   position: absolute;
   bottom: 18px;
-  color: #000;
+  right: -20px;
   margin: 0;
   transform: translateX(-50%) rotate(-90deg);
 }
-.scrollTop > img {
+.scrollTop > img[data-v-051e996d] {
   height: 65px;
   width: 16px;
   display: block;
   transition: height 0.6s ease-in;
 }
-.scrollTop:hover {
+.scrollTop[data-v-051e996d]:hover {
   cursor: pointer;
 }
-.scrollTop:hover > img {
+.scrollTop:hover > img[data-v-051e996d] {
   height: 80px;
 }
 
@@ -1321,8 +1333,8 @@ html, body {
   padding: 30px 94px 150px;
 }
 .team-g[data-v-6d955afb] {
-  background-color: white;
-  padding-top: 150px;
+  padding-top: 208px;
+  background-color: #FFFFFF !important;
 }
 .title[data-v-6d955afb] {
   width: 80%;
@@ -1421,8 +1433,8 @@ html, body {
 }
 @charset "UTF-8";
 .aboutUs-g[data-v-4edab8bb] {
-  background-color: #fff !important;
-  padding-top: 150px;
+  padding-top: 208px;
+  background-color: #FFFFFF !important;
 }
 .title[data-v-4edab8bb] {
   width: 80%;
@@ -1592,7 +1604,7 @@ html, body {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   padding-top: 60px;
 }
 .certificate-description p[data-v-4edab8bb] {
@@ -1607,11 +1619,9 @@ html, body {
 .footer[data-v-4edab8bb] {
   height: 234px;
 }
-#gbslevel-app[data-v-bcffb62e] {
-  background-color: transparent;
-}
 .simulator-g[data-v-bcffb62e] {
-  padding-top: 225px;
+  padding-top: 208px;
+  background-color: #FFFFFF !important;
 }
 .simulator-g .logo[data-v-bcffb62e] {
   background-image: url(/images/technogym-logo-black.svg?6e3384e0b81af3319ec84d54c3f183b8);
@@ -1664,6 +1674,7 @@ html, body {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 60px;
 }
 .simulator-direction > .direction[data-v-bcffb62e] {
   list-style-type: none;
@@ -1673,6 +1684,41 @@ html, body {
   align-items: center;
   text-align: center;
   padding: 0;
+  cursor: pointer;
+  border-bottom: solid 2px #000000;
+}
+.simulator-direction > .direction li[data-v-bcffb62e] {
+  padding-bottom: 20px;
+}
+.simulator-direction > .direction li[data-v-bcffb62e]:hover {
+  color: #916C58;
+}
+.simulator-direction .invert-color[data-v-bcffb62e] {
+  color: #916C58;
+}
+.simulator-direction .simulator[data-v-bcffb62e] {
+  list-style-type: none;
+  overflow: visible;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 40px;
+  display: grid;
+  padding: 0;
+}
+.simulator-direction .simulator li img[data-v-bcffb62e] {
+  display: block;
+  width: 100%;
+}
+.simulator-direction .simulator li div[data-v-bcffb62e] {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  padding: 10px 5px 0 5px;
 }
 .footer[data-v-bcffb62e] {
   height: 234px;

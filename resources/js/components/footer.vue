@@ -126,11 +126,16 @@ export default {
       line-height: 16px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
+      transition:opacity .2s ease-in;
 
       margin-right:60px;
 
       &:last-of-type{
         margin-right: 0;
+      }
+
+      &:hover{
+        opacity:1;
       }
     }
   }
