@@ -84,7 +84,7 @@ export default {
 <style lang="scss" scoped>
 
     .team-g {
-        background-color: #fff;
+        background-color: white;
         padding-top: 150px;
     }
     .title {
