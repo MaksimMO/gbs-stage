@@ -5,7 +5,8 @@
     <div class="timetable">Години роботи</div>
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink />
-    <div class="social-networks"></div>
+    <!-- <div class="social-networks"></div> -->
+    <SocialNetworks  class="social-networks"/>
   </div>
   <div class="line-2">
       <router-link class="link-1" to="/about-us-g">Про нас</router-link>
@@ -38,6 +39,7 @@
 
 <script>
 import PhoneLink from "./PhoneLink.vue";
+import SocialNetworks from "./SocialNetworks.vue";
 export default {
   data() {
     return {
@@ -46,6 +48,7 @@ export default {
   },
   components: {
     PhoneLink,
+    SocialNetworks
   },
 };
 </script>
