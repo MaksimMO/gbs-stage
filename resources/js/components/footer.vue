@@ -5,8 +5,11 @@
     <div class="timetable">Години роботи</div>
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink />
-    <!-- <div class="social-networks"></div> -->
-    <SocialNetworks  class="social-networks"/>
+    <div class="social-networks">
+      <a href="https://www.youtube.com/gbs.level" class="youtube"></a>
+      <a href="https://www.facebook.com/gbs.level" class="facebook"></a>
+      <a href="https://www.instagram.com/gbs.level" class="instagram"></a>
+    </div>
   </div>
   <div class="line-2">
       <router-link class="link-1" to="/about-us-g">Про нас</router-link>
@@ -39,7 +42,6 @@
 
 <script>
 import PhoneLink from "./PhoneLink.vue";
-import SocialNetworks from "./SocialNetworks.vue";
 export default {
   data() {
     return {
@@ -47,8 +49,7 @@ export default {
     };
   },
   components: {
-    PhoneLink,
-    SocialNetworks
+    PhoneLink
   },
 };
 </script>
@@ -103,10 +104,31 @@ export default {
   }
 
   .social-networks{
-    width: 108px;
-    height:16px;
-    background-image: url("../../assets/images/social-icons.svg");
     justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(3, 16px);
+    grid-column-gap: 35px;
+
+    & > a{
+      text-decoration: none;
+      width: 16px;
+      height:16px;
+
+      &.youtube{
+        background-image: url("../../assets/images/youtube.svg");
+      }
+
+      &.facebook{
+        background-image: url("../../assets/images/facebook.svg");
+      }
+
+      &.instagram{
+        background-image: url("../../assets/images/instagram.svg");
+      }
+
+
+    }
+
   }
 
   }

@@ -853,10 +853,24 @@ to {
   white-space: nowrap;
 }
 .footer .line-1 .social-networks {
-  width: 108px;
-  height: 16px;
-  background-image: url(/images/social-icons.svg?2fe65c3a62282aa4c207a79b83de4c78);
   justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, 16px);
+  grid-column-gap: 35px;
+}
+.footer .line-1 .social-networks > a {
+  text-decoration: none;
+  width: 16px;
+  height: 16px;
+}
+.footer .line-1 .social-networks > a.youtube {
+  background-image: url(/images/youtube.svg?c1677447c97f633ce596b4c52413efe4);
+}
+.footer .line-1 .social-networks > a.facebook {
+  background-image: url(/images/facebook.svg?54bf56baa5ce9b1b5bd010cd9e02909e);
+}
+.footer .line-1 .social-networks > a.instagram {
+  background-image: url(/images/instagram.svg?a21938e086d667a24449c981641902d2);
 }
 .footer .line-2 {
   margin-top: 40px;
