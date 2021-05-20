@@ -132,6 +132,7 @@ export default {
         font-size: 52px;
         margin: 0;
         margin-left: 96px;
+        margin-bottom: 30px;
         line-height: 54px;
         letter-spacing: 0.02em;
         font-feature-settings: 'pnum' on, 'lnum' on;

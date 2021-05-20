@@ -45,7 +45,7 @@
             height: 65px;
             width: 16px;
             display: block;
-            transition: height .6s ease-in;
+            transition: height .2s ease-in;
         }
         &:hover{
             cursor: pointer;

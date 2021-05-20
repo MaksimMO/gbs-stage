@@ -27,7 +27,7 @@
             <span>UA</span>
           </a>
         </li>
-        <li>
+        <!-- <li>
           <a
             href="#"
             @click.prevent="setLocale('ru')"
@@ -39,7 +39,7 @@
           >
             <span>RU</span>
           </a>
-        </li>
+        </li> -->
       </ul>
     </transition>
   </div>
@@ -139,7 +139,7 @@ export default {
         padding: 10px 5px;
         margin-top: 9px;
         & li{
-            opacity: 0.45;
+            opacity: 0.75;
             &:hover {
                 opacity: 1;
             }

@@ -25,9 +25,9 @@ export default {
     height: 100%;
     width: 100%;
     top: 0;
-    transition: backdrop-filter .5s ease-in-out,
-        -webkit-backdrop-filter .5s ease-in-out,
-        background-color .5s ease-in-out;
+    // transition: backdrop-filter .5s ease-in-out,
+    //     -webkit-backdrop-filter .5s ease-in-out,
+    //     background-color .5s ease-in-out;
     background-color: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -46,7 +46,7 @@ export default {
     transform: translate(-50%, -50%) scale(1.3);
     display: flex;
     opacity: 0;
-    transition: all .5s ease-in-out;
+    // transition: all .5s ease-in-out;
     & img {
         width: 328px;
         height: 328px;

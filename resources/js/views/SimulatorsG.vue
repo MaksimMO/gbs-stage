@@ -22,16 +22,21 @@
             <li @click="direction = 'free_weights'" :class="{'invert-color': direction == 'free_weights'}">Вільні ваги</li>
         </ul>
         <ul class="simulator">
-            <li v-for="(simulator)  in directionCheck" :key="simulator.id" @click="openDateil(simulator.id)">
+            <li v-for="(simulator)  in directionCheck" :key="simulator.id" @click="openDetail(simulator.id)">
                 <img :src="simulator.link" :alt="simulator.name">
                 <div>{{simulator.name}}</div>
             </li>
         </ul>
       </section>
     </div>
-    <teleport to="body">
-      <PopupDetail v-if="isModalOpen"  @closePopup="isModalOpen = false" :simulatorDetail="simulatorDetail"/>
-    </teleport>
+
+
+        <teleport to="body">
+            <transition-group name="popup-detail">
+                <PopupDetail v-if="isModalOpen"  @closePopup="isModalOpen = false" :simulatorDetail="simulatorDetail"/>
+            </transition-group>
+        </teleport>
+
 <Footer />
 </template>
 
@@ -92,7 +97,7 @@ export default {
         change(e) {
             this.isOpen = e;
         },
-        openDateil(idSimulator) {
+        openDetail(idSimulator) {
             this.simulatorDetail = this.simulators.filter((simulator) => simulator.id === idSimulator)[0];
             this.isModalOpen = true;
         }
@@ -137,6 +142,7 @@ export default {
             font-size: 52px;
             margin: 0;
             margin-left: 96px;
+            margin-bottom: 30px;
             line-height: 54px;
             letter-spacing: 0.02em;
             font-feature-settings: 'pnum' on, 'lnum' on;
@@ -216,6 +222,15 @@ export default {
             }
         }
     }
+    .popup-detail-enter-active,
+    .popup-detail-leave-active {
+        transition: all .6s ease;
+    }
+    .popup-detail-enter-from,
+    .popup-detail-leave-to {
+        opacity: 0;
+    }
+
     .footer {
         height: 234px;
     }
