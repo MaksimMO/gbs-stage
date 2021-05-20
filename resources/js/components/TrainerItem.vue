@@ -4,7 +4,7 @@
     @mouseleave="leave"
 >
     <div style="position: relative;">
-        <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="isSelected ? isShow() : isClosed()">
+        <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="!isOpen ? isShow() : isClosed()">
         <div v-show="isHovered && !isOpen || isSelected" class="info">
             <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" style="width: 100%; height: 100%; cursor: pointer;" @click="isShow">
             <img v-if="isSelected" src="../../assets/images/close.png" alt="info" style="width: 100%; height: 100%; cursor: pointer;" @click="isClosed">
@@ -31,11 +31,14 @@ export default {
 
     methods:{
     enter(){
-        this.isHovered = true;
-
+        if(!this.isOpen) {
+            this.isHovered = true;
+        }
     },
     leave(){
-        this.isHovered = false;
+        if(!this.isOpen) {
+            this.isHovered = false;
+        }
     },
     isShow(){
         this.$emit('isShow', true);
@@ -55,13 +58,12 @@ export default {
     position: relative;
     margin-bottom: 96px;
 
-    &:last-child{
-        transform-origin:right;
+    &:nth-child(4n+4){
+        transform-origin: right;
     }
 
-
-    &:first-child{
-        transform-origin:left;
+    &:nth-child(4n+1){
+        transform-origin: left;
     }
 
     &.is-scaled{
@@ -72,6 +74,7 @@ export default {
 
     img{
         display:block;
+        cursor: pointer;
         width:100%;
     }
 }

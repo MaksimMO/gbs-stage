@@ -13,9 +13,7 @@
       </section>
       <section>
           <TrainerList
-            v-for="(group, i) in articleGroups"
-            :key="i"
-            :trainers="trainers.slice(i * 4, (i + 1) * 4)"
+            :trainers="trainers"
             :isOpen="isOpen"
             @changeOpen="(e) => change(e)"/>
       </section>
@@ -71,11 +69,7 @@ export default {
             this.isOpen = e;
         },
     },
-    computed: {
-        articleGroups () {
-            return Array.from(Array(Math.ceil(this.trainers.length / 4)).keys());
-        }
-    },
+
     // mounted(){
     //     console.log('mounted()');
     //     console.log('trainersGet', this.uaTrainers);
