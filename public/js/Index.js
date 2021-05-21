@@ -18793,33 +18793,17 @@ __webpack_require__.r(__webpack_exports__);
     return {
       isOpen: false,
       trainers: [{
-        "id": 1,
-        "link": "Vladimir_Leskov.jpg",
-        "firstName": "Володимир",
-        "lastName": "Лєсков",
-        "direction": "Cycle, Games, персональні тренування",
-        "description": "Самий позитивний тренер G level, який одночасно вміє бути ніжним, але і досить вимогливим! Його групові тренування наповнені шаленою енергією та пристрастю. Володимир кваліфікований персональний тренер, який власним прикладом мотивує своїх клієнтів. Отримав кубок України WABBA  за I місце в категорії «Men'sPhysique» та  I місце в абсолютній категорії «Men'sPhysique» (2020 р.) та входить в топ VI «Mг.Universe» WABBA (Португалія, 2020р.). А ще він обожнює готувати, так як в минулому – кондитер, тому звертайтесь за рецептами правильного харчування.)"
+        id: 0,
+        link: "Vladimir_Leskov.jpg"
       }, {
-        "id": 2,
-        "link": "Irina_Slyusarenko.jpg",
-        "firstName": "Ірина",
-        "lastName": "Слюсаренко",
-        "direction": "CrossFit",
-        "description": "Ірина – тренер, від погляду якої серце починає битись швидше, а твої спортивні досягнення  - рости з кожною хвилиною, тому що з нею ви зробите те, про що навіть і не мріяли : 100 віджимань, 50 бурпі чи 20 підтягувань… З Іриною – запросто! Вона - наша королева мотивації! А її досягнення являються підтвердженням цього факту: Майстер спорту з веслування, Майстер спорту з важкої атлетики, КМС з плавання, Чемпіон і призер України з веслування, 8 місце, Чемпіонат Світу з веслування, 2 місце CrossFit на звання «Найбільш підготовлена людина країни», 3 місце CrossFit banda Open в категорії Elite 8 місце CrossFit Games Open."
+        id: 1,
+        link: "Irina_Slyusarenko.jpg"
       }, {
-        "id": 3,
-        "link": "Olga_Depeshko.jpg",
-        "firstName": "Ольга",
-        "lastName": "Депешко",
-        "direction": "Персональні тренування",
-        "description": "Ззовні дуже тендітна Ольга, проведе вас через всі випробування і буде поруч з вами на кожному кроці. Вона подбає про те, щоб ви отримували максимум задоволення від кожного тренування. Також Ольга нутриціолог з восьмирічним досвідом роботи, сама багато навчається і вас обіцяє навчити їсти смачно та здорово. Вона працює не тільки з тілом, а із внутрішнім світом. Діюча учасниця змагання в категорії – бікіні."
+        id: 2,
+        link: "Olga_Depeshko.jpg"
       }, {
-        "id": 4,
-        "link": "Olga_Martsenyuk.jpg",
-        "firstName": "Ольга",
-        "lastName": "Марценюк",
-        "direction": "Barre, Пілатес",
-        "description": "Тренер, який зачаровує своєю посмішкою з першої хвилини знайомства! Ольга не вірить в обмеження і знає, як вам розкрити свій потенціал на максимум. Вас чекають фантастичні пліє, релєве, рівна осанка та неймовірно приємна крепатура! Її тренування приносять моральне задоволення та формують неймовірне тіло!"
+        id: 3,
+        link: "Olga_Martsenyuk.jpg"
       }]
     };
   },
@@ -18874,33 +18858,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var trainers = [{
-  "id": 1,
-  "link": "Vladimir_Leskov.jpg",
-  "firstName": "Володимир",
-  "lastName": "Лєсков",
-  "direction": "Cycle, Games, персональні тренування",
-  "description": "Самий позитивний тренер G level, який одночасно вміє бути ніжним, але і досить вимогливим! Його групові тренування наповнені шаленою енергією та пристрастю. Володимир кваліфікований персональний тренер, який власним прикладом мотивує своїх клієнтів. Отримав кубок України WABBA  за I місце в категорії «Men'sPhysique» та  I місце в абсолютній категорії «Men'sPhysique» (2020 р.) та входить в топ VI «Mг.Universe» WABBA (Португалія, 2020р.). А ще він обожнює готувати, так як в минулому – кондитер, тому звертайтесь за рецептами правильного харчування.)"
+  id: 0,
+  link: "Vladimir_Leskov.jpg"
 }, {
-  "id": 2,
-  "link": "Irina_Slyusarenko.jpg",
-  "firstName": "Ірина",
-  "lastName": "Слюсаренко",
-  "direction": "CrossFit",
-  "description": "Ірина – тренер, від погляду якої серце починає битись швидше, а твої спортивні досягнення  - рости з кожною хвилиною, тому що з нею ви зробите те, про що навіть і не мріяли : 100 віджимань, 50 бурпі чи 20 підтягувань… З Іриною – запросто! Вона - наша королева мотивації! А її досягнення являються підтвердженням цього факту: Майстер спорту з веслування, Майстер спорту з важкої атлетики, КМС з плавання, Чемпіон і призер України з веслування, 8 місце, Чемпіонат Світу з веслування, 2 місце CrossFit на звання «Найбільш підготовлена людина країни», 3 місце CrossFit banda Open в категорії Elite 8 місце CrossFit Games Open."
+  id: 1,
+  link: "Irina_Slyusarenko.jpg"
 }, {
-  "id": 3,
-  "link": "Olga_Depeshko.jpg",
-  "firstName": "Ольга",
-  "lastName": "Депешко",
-  "direction": "Персональні тренування",
-  "description": "Ззовні дуже тендітна Ольга, проведе вас через всі випробування і буде поруч з вами на кожному кроці. Вона подбає про те, щоб ви отримували максимум задоволення від кожного тренування. Також Ольга нутриціолог з восьмирічним досвідом роботи, сама багато навчається і вас обіцяє навчити їсти смачно та здорово. Вона працює не тільки з тілом, а із внутрішнім світом. Діюча учасниця змагання в категорії – бікіні."
+  id: 2,
+  link: "Olga_Depeshko.jpg"
 }, {
-  "id": 4,
-  "link": "Olga_Martsenyuk.jpg",
-  "firstName": "Ольга",
-  "lastName": "Марценюк",
-  "direction": "Barre, Пілатес",
-  "description": "Тренер, який зачаровує своєю посмішкою з першої хвилини знайомства! Ольга не вірить в обмеження і знає, як вам розкрити свій потенціал на максимум. Вас чекають фантастичні пліє, релєве, рівна осанка та неймовірно приємна крепатура! Її тренування приносять моральне задоволення та формують неймовірне тіло!"
+  id: 3,
+  link: "Olga_Martsenyuk.jpg"
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -18956,233 +18924,157 @@ __webpack_require__.r(__webpack_exports__);
       direction: 'upper_boddy',
       simulatorDetail: null,
       simulators: [{
+        id: 0,
+        direction: "upper_boddy",
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+      }, {
         id: 1,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер «вертикальна тяга» Vertical Traction",
-        description: "Тренажер Vertical Traction призначений для розвитку найбільших м'язів верхньої частини тіла - найширших м'язів спини."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 2,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер «жим від плеча вгору» Shoulder Press",
-        description: "Тренажер Shoulder Press дозволяє виконувати базове для дельтоподібних м'язів вправа - «армійський жим» в положенні сидячи."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 3,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер «жим від грудей» Chest Press",
-        description: "Тренажер Chest Press дає можливість виконувати базова вправа для грудних м'язів - жим від грудей."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 4,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Багатофункціональний тренажер Dual Pec/Rev Fly",
-        description: "Тренажер Dual Pectoral / Reverse Fly призначений для виконання двох вправ - «зведення рук» зміцнює м'язи грудей, додаткове навантаження отримують передній пучок дельтоподібних м'язів і біцепс плеча; «Розведення рук» зміцнює задній пучок дельтоподібних м'язів, додаткове навантаження отримують ромбовидні і трапецієподібні м'язи."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 5,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер PULLDOWN N «вертикальна тяга» з дисковим навантаженням",
-        description: "Тренажер призначений для вертикальної тяги до грудей в положенні сидячи. Вправа розвиває найширші м'язи спини, додаткове навантаження отримує біцепс плеча."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 6,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер «гребна тяга» Low Row",
-        description: "Тренажер Low Row дозволяє зміцнити найширші м'язи спини, виконуючи одне з базових вправ - горизонтальну тягу."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 7,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер «жим від грудей з широким хватом» з дисковим навантаженням",
-        description: "Wide Chest Press - тренажер дозволяє виконувати вправи, що нагадують руху на підйом гантелей, лежачи на лаві з негативним нахилом із задіянням нижній частині грудних м'язів."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 8,
-        direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер Incline chest press «жим від грудей під кутом» з дисковим навантаженням",
-        description: "Incline Chest Press - тренажер повторює рухи на відведення гантелей на похилій лаві з залученням м'язів верхньої частини грудей."
+        direction: "lower_boddy",
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 9,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Багатофункціональний тренажер для ніг Dual Abd",
-        description: "Тренажер Dual Abductor / Adductor дозволяє виконувати дві вправи - «зведення ніг» зміцнює що приводять м'язи стегна; «Розведення ніг» навантажує сідничні м'язи"
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 10,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер «розгинання ніг» Leg Extension",
-        description: "Тренажер Leg Extension дає можливість виконувати вправу «розгинання ніг в положенні сидячи» для розвитку найбільших м'язів ніг - квадріцепсов"
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 11,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер «згинання ніг лежачи» Ne Leg Curl",
-        description: "Тренажер для тренування задньої поверхні стегна. Легко налаштовується для використання атлетами різного зросту."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 12,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер Calf для литкових м’язів з дисковим навантаженням",
-        description: "Опрацювання литкових м'язів на цьому тренажері можлива без навантаження на хребетний стовп. Ефективність вправ настільки ж висока, як і при заняттях у вільній вазі завдяки використанню атлетичних дисків. Матеріал BODY PRINT приймає форму фігури спортсмена, роблячи заняття гранично комфортними."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 13,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер REAR KICK для сідничних м’язів з дисковим навантаженням",
-        description: "Широка амплітуда вправи дозволяє тренувати сідниці в максимально природних умовах і для ефективного результату"
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 14,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер LINEAR LEG PRESS «жим ногами» з дисковим навантаженням",
-        description: ""
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 15,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер LEG PRESS",
-        description: "Ця модель тренажера дозволяє ефективно опрацювати всі м'язи ніг від сідниць до литкових."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 16,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер LEG CURL",
-        description: "Тренажер серії SELECTION 700 для цільових тренувань м`язів задньої поверхні стегна."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 17,
-        direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Тренажер Hack Squat",
-        description: "Тренажер «Гакк-присідання» для тренування м'язів ніг і сідничних м'язів"
+        direction: "cardio",
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 18,
         direction: "cardio",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Бігова доріжка Run Live 500",
-        description: "У біговій доріжці Excite Live Run немає нічого, що може зашкодити вашому бігу. Низьке бігове полотно зручно для заходу на тренажер. Бічні ручки вкорочені і не утрудняють рухів руками. Біжіть вільно, як по доріжці в парку."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 19,
         direction: "cardio",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Орбітрек Synchro Live 700",
-        description: "Excite Live Synchro - тренажер, який захоплює тренуваннями і кожен день знаходить нові приводи для натхнення і прогресу. Регульована рампа від 5 до 33 градусів дозволяє опрацювати м'язи ніг і сідничні м'язи. Сучасна консоль поєднує масу програм тренувань і додатків для розваги. Плавні махові руху без ривків і ударного навантаження на суглоби з довжиною кроку до 67 см - це новий орбітрек Excite Live Synchro. Високі платформи і мінімум деталей з боків дарують відчуття свободи і ефективного тренування без зусиль."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 20,
         direction: "cardio",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Велотренажер Bake Live 500",
-        description: "Неймовірно реалістичний вертикальний велотренажер Excite Live Bike для кардіотренувань. Зручне кермо з кількома хватами, широка і низька рама, прості регулювання. Екран консолі, кермо, сидіння і педалі розташовані максимально природно для правильного положення тіла і різних типів тренування."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 21,
         direction: "cardio",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Велотренажер Recline live 500",
-        description: "Велотренажер Excite Live Recline для кардиотренировок в зручному положенні сидячи. Широкий отвір для простий посадки, сенсорний кермо для контролю пульсу, технологічна консоль з програмами тренувань і розвагами для прогресу і мотивації."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 22,
         direction: "cardio",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Кросс-тренажер Climb Live 500",
-        description: "Тренажер високих досягнень для кардиотренировки «підйом по сходах». Допомагає набути впевненості в собі, вийти за межі своїх можливостей і досягати нових результатів. Поєднує компактність, безпечну конструкцію, різноманітні програми тренувань і розваги. Підніміть свої тренування на новий рівень з конструкцією тренажера Excite Live Climb, яка максимально навантажує цільові сідничні м'язи і м'язи ніг. Тренуйтеся з комфортом і видимим результатом."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 23,
-        direction: "cardio",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Спинбайк Group Cycle Connect",
-        description: "Group Cycle Connect це перший в світі і єдиний велотренажер для закритих приміщень, який відстежує результати тренувань і забезпечує підтримку користувачів для поліпшення результатів за допомогою тренувань з повним зануренням у віртуальне середовище. У ньому поєднується унікальний дизайн з новітньою технологією зв'язку, приголомшливі відчуття і не має аналогів простота використання."
+        direction: "multifunction_simulators",
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 24,
         direction: "multifunction_simulators",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Багатофункціональний тренажер Multipower",
-        description: "MULTIPOWER - мультистанция для силових тренувань у вільній вазі і фіксованою траєкторією руху, на якій можна виконувати базові та ізолюючі вправи."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 25,
         direction: "multifunction_simulators",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Багатофункціональний тренажер Dual Adjustable Pulley",
-        description: "DUAL ADJUSTABLE PULLEY є самою останньою новинкою в лінійці силових тренажерів Element +. Завдяки ергономічному дизайну і передової біомеханіки, новий тросовий тренажер дозволяє користувачам виконувати толкательние вправи для максимального збільшення сили, потужності і швидкості руху."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 26,
         direction: "multifunction_simulators",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Багатофункціональний  тренажер Kneeling Easy Chin Dip",
-        description: "Це обладнання призначене для вправ з власною вагою, а також вправ з ваговими стеками під керівництвом тренера."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 27,
-        direction: "multifunction_simulators",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Багатофункціональний тренажер Cable Stations Connector",
-        description: "Можлива тренування одночасно п'яти чоловік з незалежним використанням вагового стека і одну людину з застосуванням вправ на мостовому з'єднанні."
+        direction: "free_weights",
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 28,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Комбінована стійка CHIN UP DIP LEG RAISE",
-        description: "Турнік Chin Up Dip Leg Raise дає можливість задіяти в роботі фактично всі м'язові групи верхній частині тіла: підтягування широким і вузьким хватом для найширших м'язів спини, дельт, біцепсів; віджимання на брусах для трицепсів і грудних м'язів; бічні скручування для косих м'язів живота; прямі скручування, підйом ніг з упором на ліктях і підйом ніг у висі для м'язів преса."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 29,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Універсальна стійка",
-        description: "Підставка спеціально розроблена для зберігання штанг, грифів і канатних аксесуарів. Включає 3 опори під штанги, додаткові гачки для канатних аксесуарів і верхню платформу, що витримує вагу до 50 кг."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 30,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Олімпійська жимова лавка від грудей під кутом",
-        description: ""
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 31,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Олімпійська жимова лавка від грудей",
-        description: ""
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 32,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Лавка Скотта Scott Bench",
-        description: "Багатофункціональна лава для спеціального опрацювання рук з балансиром."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 33,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Лавка Adjustable Bench",
-        description: ""
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 34,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Лавка для спини Lower Back Bench",
-        description: ""
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 35,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Горизонтальна лавка для спини/GHD Bench",
-        description: "Універсальний тренажер для розвитку м'язів задньої поверхні стегна. Також навантаження отримують м'язи низу спини, хребта, сідничні м'язи і частково литкові м'язи. Glute Ham Developer швидко зміцнює м'язи ніг, дає можливість відпрацювати обидві основні функції м'язів задньої поверхні стегна - згинання ноги в коліні і розгинання стегна."
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 36,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Лавка для пресу Adjust Decline/Abdomin. Crunch",
-        description: ""
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }, {
         id: 37,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Гантелі з уритановим покриттям",
-        description: "Гантелі з уритановим покриттям"
-      }, {
-        id: 38,
-        direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default,
-        name: "Гантелі хромовані",
-        description: "Нова лінія хромованих гантелей компанії Technogym. Вагові категорії гантелей: 1 - 10 кг. "
+        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
       }]
     };
   },
@@ -19237,107 +19129,49 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       isOpen: false,
-      // uaTrainers: ua.trainers,
       trainers: [{
-        "id": 1,
-        "link": "Vladimir_Leskov.jpg",
-        "firstName": "Володимир",
-        "lastName": "Лєсков",
-        "direction": "Cycle, Games, персональні тренування",
-        "description": "Самий позитивний тренер G level, який одночасно вміє бути ніжним, але і досить вимогливим! Його групові тренування наповнені шаленою енергією та пристрастю. Володимир кваліфікований персональний тренер, який власним прикладом мотивує своїх клієнтів. Отримав кубок України WABBA  за I місце в категорії «Men'sPhysique» та  I місце в абсолютній категорії «Men'sPhysique» (2020 р.) та входить в топ VI «Mг.Universe» WABBA (Португалія, 2020р.). А ще він обожнює готувати, так як в минулому – кондитер, тому звертайтесь за рецептами правильного харчування.)"
+        id: 0,
+        link: "Vladimir_Leskov.jpg"
       }, {
-        "id": 2,
-        "link": "Irina_Slyusarenko.jpg",
-        "firstName": "Ірина",
-        "lastName": "Слюсаренко",
-        "direction": "CrossFit",
-        "description": "Ірина – тренер, від погляду якої серце починає битись швидше, а твої спортивні досягнення  - рости з кожною хвилиною, тому що з нею ви зробите те, про що навіть і не мріяли : 100 віджимань, 50 бурпі чи 20 підтягувань… З Іриною – запросто! Вона - наша королева мотивації! А її досягнення являються підтвердженням цього факту: Майстер спорту з веслування, Майстер спорту з важкої атлетики, КМС з плавання, Чемпіон і призер України з веслування, 8 місце, Чемпіонат Світу з веслування, 2 місце CrossFit на звання «Найбільш підготовлена людина країни», 3 місце CrossFit banda Open в категорії Elite 8 місце CrossFit Games Open."
+        id: 1,
+        link: "Irina_Slyusarenko.jpg"
       }, {
-        "id": 3,
-        "link": "Olga_Depeshko.jpg",
-        "firstName": "Ольга",
-        "lastName": "Депешко",
-        "direction": "Персональні тренування",
-        "description": "Ззовні дуже тендітна Ольга, проведе вас через всі випробування і буде поруч з вами на кожному кроці. Вона подбає про те, щоб ви отримували максимум задоволення від кожного тренування. Також Ольга нутриціолог з восьмирічним досвідом роботи, сама багато навчається і вас обіцяє навчити їсти смачно та здорово. Вона працює не тільки з тілом, а із внутрішнім світом. Діюча учасниця змагання в категорії – бікіні."
+        id: 2,
+        link: "Olga_Depeshko.jpg"
       }, {
-        "id": 4,
-        "link": "Olga_Martsenyuk.jpg",
-        "firstName": "Ольга",
-        "lastName": "Марценюк",
-        "direction": "Barre, Пілатес",
-        "description": "Тренер, який зачаровує своєю посмішкою з першої хвилини знайомства! Ольга не вірить в обмеження і знає, як вам розкрити свій потенціал на максимум. Вас чекають фантастичні пліє, релєве, рівна осанка та неймовірно приємна крепатура! Її тренування приносять моральне задоволення та формують неймовірне тіло!"
+        id: 3,
+        link: "Olga_Martsenyuk.jpg"
       }, {
-        "id": 5,
-        "link": "Vitaliy_Kaskun.jpg",
-        "firstName": "Віталій",
-        "lastName": "Каськун",
-        "direction": "Персональні тренування",
-        "description": "Професійний спортсмен, кваліфікований пауерліфтер, персональний тренер, з яким не лише корисно, але й дуже захопливо тренуватись! Він знає, як знайти підхід до кожного, як правильно ставити спортивні  цілі, та як вас стимулювати до їх досягнення! Кредо Віталія: « Не зупинятися на досягнутому та підкорювати нові вершини». Підготував чимало призерів в чемпіонатах України та здобув повагу і прихильність в професійному колі, а ще виховує двух прекрасних синочків!"
+        id: 4,
+        link: "Vitaliy_Kaskun.jpg"
       }, {
-        "id": 6,
-        "link": "Mikhail_Galagan.jpg",
-        "firstName": "Михайло",
-        "lastName": "Галаган",
-        "direction": "Fighting, Тхеквондо",
-        "description": "Тренер-викладач з єдиноборств та авторської програми Fit-Fight. Михайло - володар Чорного Пояси 3-го дану з Тхеквондо. Виховав не одного чемпіона України та Європи. Завдяки своєму десятирічному стажу, він знає, як поставити удар, розвинути взривну силу, швидкість та витривалість, спалити калорії та виплеснути всю агресію. Відчуйте себе чемпіоном! Ви покинете файтинг зону неймовірно стомленим, але точно захочете повернутися ще раз. Тренування з Михайлом – найкрутіша антистрес-терапія."
+        id: 5,
+        link: "Mikhail_Galagan.jpg"
       }, {
-        "id": 7,
-        "link": "Olga_Osadchuk.jpg",
-        "firstName": "Ольга",
-        "lastName": "Осадчук",
-        "direction": "Персональні тренування",
-        "description": "Ольга  - сертифікований персональний тренер, який дуже швидко стане вашим близьким другом та наставником! Вона чемпіонка України з літнього біатлону.  Тому для неї – це не просто спорт, а сенс життя – допомогти людям, і це не стосується тільки тіла, а насамперед - вашого здоров’я та щоденного самопочуття. На кожному тренуванні вона віддається повністю та веде вас щодня до цілі! І будьте впевнені, на її тренуванні у вас не вийде відпочити, її шалена енергія змусить вас дізнатись, на що ви здатні!"
+        id: 6,
+        link: "Olga_Osadchuk.jpg"
       }, {
-        "id": 8,
-        "link": "Tatiana_Podzigun.jpg",
-        "firstName": "Тетяна",
-        "lastName": "Подзигун",
-        "direction": "Cycle, Games, персональні тренування",
-        "description": "Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba,ufbf-official,fbbu, вона розуміє, як довести себе та вас до крайності як фізично, так і розумово. Повірте, вона знає, як «вичавити» з вас всі соки!) Так швидко та емоційно ви ще не крутили педалі…)"
+        id: 6,
+        link: "Tatiana_Podzigun.jpg"
       }, {
-        "id": 9,
-        "link": "valentine.jpg",
-        "firstName": "Валентин",
-        "lastName": "Шпильчук",
-        "direction": "Персональні тренування",
-        "description": "Персональний тренер з дев’ятирічним досвідом. Валентин володіє електричною енергією, якою заряджає всіх клієнтів на результат! Філософія його тренувань: максимум комфорту та прогресу. Роблячи акцент на функціональному та спортивному фітнесі, Валентин наблизить вас до вашої мрії! Ви ніколи не дізнаєтесь своїх меж, поки не досягнете їх!"
+        id: 8,
+        link: "valentine.jpg"
       }, {
-        "id": 10,
-        "link": "Melnyk_Serhiy.jpg",
-        "firstName": "Сергій",
-        "lastName": "Мельник",
-        "direction": "Персональні тренування",
-        "description": "Майстер спорту з важкої атлетики, тричі призер юніороского чемпіонату України з важкої атлетики. Сергій спокійно та без крику заставить вас піднімати більше, бігти швидше та качати активніше! І повірте, ви не пропустите жодного заняття! З ним успіх гарантований!"
+        id: 9,
+        link: "Melnyk_Serhiy.jpg"
       }, {
-        "id": 11,
-        "link": "Olena_Semenchuk.jpg",
-        "firstName": "Олена",
-        "lastName": "Семенчук",
-        "direction": "Йога",
-        "description": "Психолог за освітою, Олена познайомилась з йогою – і зрозуміла, що це її життя! Вона викладач Кундаліні-Йоги. Протягом багатьох століть ця практика була перевагою для обраних і зберігалася у великому секреті. Але сьогодні  вже кожен може знахойти в ній щось для себе. Хтось прагне зміцнити фізичне здоров'я,  хтось хоче впоратися зі стресом, хтось націлений на роботу з енергією, а хтось любить співати мантри. Олена буде найкращим провідником в світ гармонії на пізнання себе! Навчить вас ОШО медитації, віппассані (класичній медитації) та холотропному диханню. А ще Олена грає на бандурі та малює картини, як бачила – йога ще відкриває ваш творчий потенціал."
+        id: 10,
+        link: "Olena_Semenchuk.jpg"
       }, {
-        "id": 13,
-        "link": "Nechko_Vasil.jpg",
-        "firstName": "Василь",
-        "lastName": "Нечко",
-        "direction": "Персональні тренування",
-        "description": "Майстер спорту міжнародного класу, чемпіон світу та рекордсмен України – все це про Василя. А ще це наш старший персональний тренер, який з перших хвилин знайомства вразить вас своєю харизмою та впевненістю. Бунтар з безліччю талантів. Він вважає, що фітнес повинен бути приємним, але таким же складним, як і життя. Його заняття зосереджені на ефективних вправах, які кидають виклик вашому тілу."
+        id: 11,
+        link: "Nechko_Vasil.jpg"
       }, {
-        "id": 14,
-        "link": "Gornushkina_Julia.jpg",
-        "firstName": "Юля",
-        "lastName": "Горнушкіна",
-        "direction": "Персональні тренування",
-        "description": "Юля з професійної сторони точно знає, що потрібно робити, щоб почувати себе здорово та при цьому мати рельєфне тіло. В минулому лікар, учасниця медичних конференцій, а також сертифікований дієтолог- нутриціолог. Мотивація, гарний настрій і потужна енергія тренера змусять вас працювати на максимум! Готуйтесь, це будуть спекотні тренування!"
+        id: 12,
+        link: "Gornushkina_Julia.jpg"
       }, {
-        "id": 15,
-        "link": "Dementieva_Elena.jpg",
-        "firstName": "Олена",
-        "lastName": "Дементьєва",
-        "direction": "Barre, Пілатес",
-        "description": "Олена з 6 років у професійному спорті, КМС з спортивно-бальних танців, представляла Україну в численних міжнародних змаганнях. Фітнес кар’єру розпочала в Італії, сертифікований фітнес тренер. Олена дуже ніжна, тендітна та виважена дівчина, але, водночас, супер енергійний та вимоглевий викладач! Як тільки заходиш в зал, то одразу вирівнюєщ осанку та тягенш нососочки! Її креативні заняття здивують навіть спортивних гуманів!"
-      }] // trainersGet: [...this.$root.$i18n.messages.t('ua.trainers')]
-
+        id: 13,
+        link: "Dementieva_Elena.jpg"
+      }]
     };
   },
   methods: {
@@ -19345,13 +19179,6 @@ __webpack_require__.r(__webpack_exports__);
       this.isOpen = e;
     }
   },
-  // mounted(){
-  //     console.log('mounted()');
-  //     console.log('trainersGet', this.uaTrainers);
-  //     console.log('$i18n', this.$root.$i18n.messages.ua);
-  //     console.log('$i18n.t(check)', this.$root.$t('check'));
-  //     console.log('$i18n.t(trainers)', this.$root.$i18n.t('trainers.0.description'));
-  // },
   components: {
     TrainerList: _components_TrainersList__WEBPACK_IMPORTED_MODULE_0__.default,
     Header: _components_Header_vue__WEBPACK_IMPORTED_MODULE_1__.default,
@@ -20414,12 +20241,12 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
     src: $props.simulatorDetail.link,
-    alt: $props.simulatorDetail.name
+    alt: _ctx.$i18n.t("simulators.".concat($props.simulatorDetail.id, ".name"))
   }, null, 8
   /* PROPS */
-  , ["src", "alt"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.simulatorDetail.name), 1
+  , ["src", "alt"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("simulators.".concat($props.simulatorDetail.id, ".name"))), 1
   /* TEXT */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.simulatorDetail.description), 1
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("simulators.".concat($props.simulatorDetail.id, ".description"))), 1
   /* TEXT */
   )])])]);
 });
@@ -20604,13 +20431,13 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.isHovered && !$props.isOpen || $data.isSelected]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.trainer.firstName), 1
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.isHovered && !$props.isOpen || $data.isSelected]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("trainers.".concat($props.trainer.id, ".firstName"))), 1
   /* TEXT */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.trainer.lastName), 1
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("trainers.".concat($props.trainer.id, ".lastName"))), 1
   /* TEXT */
-  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.trainer.direction), 1
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("trainers.".concat($props.trainer.id, ".direction"))), 1
   /* TEXT */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.trainer.description), 513
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("trainers.".concat($props.trainer.id, ".description"))), 513
   /* TEXT, NEED_PATCH */
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.isSelected]])])], 34
   /* CLASS, HYDRATE_EVENTS */
@@ -21128,10 +20955,10 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       }
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
       src: simulator.link,
-      alt: simulator.name
+      alt: _ctx.$i18n.t("simulators.".concat(simulator.id, ".name"))
     }, null, 8
     /* PROPS */
-    , ["src", "alt"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(simulator.name), 1
+    , ["src", "alt"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("simulators.".concat(simulator.id, ".name"))), 1
     /* TEXT */
     )], 8
     /* PROPS */
@@ -39347,7 +39174,7 @@ function compileToFunction(template, options) {
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"trainers":[{"id":1,"link":"\'Vladimir_Leskov.jpg","firstName":"Володимир","lastName":"Лєсков","direction":"Cycle, Games, персональні тренування","description":"Самий позитивний тренер G level, який одночасно вміє бути ніжним, але і досить вимогливим! Його групові тренування наповнені шаленою енергією та пристрастю. Володимир кваліфікований персональний тренер, який власним прикладом мотивує своїх клієнтів. Отримав кубок України WABBA  за I місце в категорії «Men\'sPhysique» та  I місце в абсолютній категорії «Men\'sPhysique» (2020 р.) та входить в топ VI «Mг.Universe» WABBA (Португалія, 2020р.). А ще він обожнює готувати, так як в минулому – кондитер, тому звертайтесь за рецептами правильного харчування.)"},{"id":2,"link":"Irina_Slyusarenko.jpg","firstName":"Ірина","lastName":"Слюсаренко","direction":"CrossFit","description":"Ірина – тренер, від погляду якої серце починає битись швидше, а твої спортивні досягнення  - рости з кожною хвилиною, тому що з нею ви зробите те, про що навіть і не мріяли : 100 віджимань, 50 бурпі чи 20 підтягувань… З Іриною – запросто! Вона - наша королева мотивації! А її досягнення являються підтвердженням цього факту: Майстер спорту з веслування, Майстер спорту з важкої атлетики, КМС з плавання, Чемпіон і призер України з веслування, 8 місце, Чемпіонат Світу з веслування, 2 місце CrossFit на звання «Найбільш підготовлена людина країни», 3 місце CrossFit banda Open в категорії Elite 8 місце CrossFit Games Open."},{"id":3,"link":"Olga_Depeshko.jpg","firstName":"Ольга","lastName":"Депешко","direction":"Персональні тренування","description":"Ззовні дуже тендітна Ольга, проведе вас через всі випробування і буде поруч з вами на кожному кроці. Вона подбає про те, щоб ви отримували максимум задоволення від кожного тренування. Також Ольга нутриціолог з восьмирічним досвідом роботи, сама багато навчається і вас обіцяє навчити їсти смачно та здорово. Вона працює не тільки з тілом, а із внутрішнім світом. Діюча учасниця змагання в категорії – бікіні."},{"id":4,"link":"Olga_Martsenyuk.jpg","firstName":"Ольга","lastName":"Марценюк","direction":"Barre, Пілатес","description":"Тренер, який зачаровує своєю посмішкою з першої хвилини знайомства! Ольга не вірить в обмеження і знає, як вам розкрити свій потенціал на максимум. Вас чекають фантастичні пліє, релєве, рівна осанка та неймовірно приємна крепатура! Її тренування приносять моральне задоволення та формують неймовірне тіло!"},{"id":5,"link":"Vitaliy_Kaskun.jpg","firstName":"Віталій","lastName":"Каськун","direction":"Персональні тренування","description":"Професійний спортсмен, кваліфікований пауерліфтер, персональний тренер, з яким не лише корисно, але й дуже захопливо тренуватись! Він знає, як знайти підхід до кожного, як правильно ставити спортивні  цілі, та як вас стимулювати до їх досягнення! Кредо Віталія: « Не зупинятися на досягнутому та підкорювати нові вершини». Підготував чимало призерів в чемпіонатах України та здобув повагу і прихильність в професійному колі, а ще виховує двух прекрасних синочків!"},{"id":6,"link":"Mikhail_Galagan.jpg","firstName":"Михайло","lastName":"Галаган","direction":"Fighting, Тхеквондо","description":"Тренер-викладач з єдиноборств та авторської програми Fit-Fight. Михайло - володар Чорного Пояси 3-го дану з Тхеквондо. Виховав не одного чемпіона України та Європи. Завдяки своєму десятирічному стажу, він знає, як поставити удар, розвинути взривну силу, швидкість та витривалість, спалити калорії та виплеснути всю агресію. Відчуйте себе чемпіоном! Ви покинете файтинг зону неймовірно стомленим, але точно захочете повернутися ще раз. Тренування з Михайлом – найкрутіша антистрес-терапія."},{"id":7,"link":"Olga_Osadchuk.jpg","firstName":"Ольга","lastName":"Осадчук","direction":"Персональні тренування","description":"Ольга  - сертифікований персональний тренер, який дуже швидко стане вашим близьким другом та наставником! Вона чемпіонка України з літнього біатлону.  Тому для неї – це не просто спорт, а сенс життя – допомогти людям, і це не стосується тільки тіла, а насамперед - вашого здоров’я та щоденного самопочуття. На кожному тренуванні вона віддається повністю та веде вас щодня до цілі! І будьте впевнені, на її тренуванні у вас не вийде відпочити, її шалена енергія змусить вас дізнатись, на що ви здатні!"},{"id":8,"link":"Tatiana_Podzigun.jpg","firstName":"Тетяна","lastName":"Подзигун","direction":"Cycle, Games, персональні тренування","description":"Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba,ufbf-official,fbbu, вона розуміє, як довести себе та вас до крайності як фізично, так і розумово. Повірте, вона знає, як «вичавити» з вас всі соки!) Так швидко та емоційно ви ще не крутили педалі…)"},{"id":9,"link":"valentine.jpg","firstName":"Валентин","lastName":"Шпильчук","direction":"Персональні тренування","description":"Персональний тренер з дев’ятирічним досвідом. Валентин володіє електричною енергією, якою заряджає всіх клієнтів на результат! Філософія його тренувань: максимум комфорту та прогресу. Роблячи акцент на функціональному та спортивному фітнесі, Валентин наблизить вас до вашої мрії! Ви ніколи не дізнаєтесь своїх меж, поки не досягнете їх!"},{"id":10,"link":"Melnyk_Serhiy.jpg","firstName":"Сергій","lastName":"Мельник","direction":"Персональні тренування","description":"Майстер спорту з важкої атлетики, тричі призер юніороского чемпіонату України з важкої атлетики. Сергій спокійно та без крику заставить вас піднімати більше, бігти швидше та качати активніше! І повірте, ви не пропустите жодного заняття! З ним успіх гарантований!"},{"id":11,"link":"Olena_Semenchuk.jpg","firstName":"Олена","lastName":"Семенчук","direction":"Йога","description":"Психолог за освітою, Олена познайомилась з йогою – і зрозуміла, що це її життя! Вона викладач Кундаліні-Йоги. Протягом багатьох століть ця практика була перевагою для обраних і зберігалася у великому секреті. Але сьогодні  вже кожен може знахойти в ній щось для себе. Хтось прагне зміцнити фізичне здоров\'я,  хтось хоче впоратися зі стресом, хтось націлений на роботу з енергією, а хтось любить співати мантри. Олена буде найкращим провідником в світ гармонії на пізнання себе! Навчить вас ОШО медитації, віппассані (класичній медитації) та холотропному диханню. А ще Олена грає на бандурі та малює картини, як бачила – йога ще відкриває ваш творчий потенціал."},{"id":13,"link":"Nechko_Vasil.jpg","firstName":"Василь","lastName":"Нечко","direction":"Персональні тренування","description":"Майстер спорту міжнародного класу, чемпіон світу та рекордсмен України – все це про Василя. А ще це наш старший персональний тренер, який з перших хвилин знайомства вразить вас своєю харизмою та впевненістю. Бунтар з безліччю талантів. Він вважає, що фітнес повинен бути приємним, але таким же складним, як і життя. Його заняття зосереджені на ефективних вправах, які кидають виклик вашому тілу."},{"id":14,"link":"Gornushkina_Julia.jpg","firstName":"Юля","lastName":"Горнушкіна","direction":"Персональні тренування","description":"Юля з професійної сторони точно знає, що потрібно робити, щоб почувати себе здорово та при цьому мати рельєфне тіло. В минулому лікар, учасниця медичних конференцій, а також сертифікований дієтолог- нутриціолог. Мотивація, гарний настрій і потужна енергія тренера змусять вас працювати на максимум! Готуйтесь, це будуть спекотні тренування!"},{"id":15,"link":"Dementieva_Elena.jpg","firstName":"Олена","lastName":"Дементьєва","direction":"Barre, Пілатес","description":"Олена з 6 років у професійному спорті, КМС з спортивно-бальних танців, представляла Україну в численних міжнародних змаганнях. Фітнес кар’єру розпочала в Італії, сертифікований фітнес тренер. Олена дуже ніжна, тендітна та виважена дівчина, але, водночас, супер енергійний та вимоглевий викладач! Як тільки заходиш в зал, то одразу вирівнюєщ осанку та тягенш нососочки! Її креативні заняття здивують навіть спортивних гуманів!"}],"check":"поиск тренеров"}');
+module.exports = JSON.parse('{"trainers":[{"firstName":"Володимир","lastName":"Лєсков","direction":"Cycle, Games, персональні тренування","description":"Самий позитивний тренер G level, який одночасно вміє бути ніжним, але і досить вимогливим! Його групові тренування наповнені шаленою енергією та пристрастю. Володимир кваліфікований персональний тренер, який власним прикладом мотивує своїх клієнтів. Отримав кубок України WABBA  за I місце в категорії «Men\'sPhysique» та  I місце в абсолютній категорії «Men\'sPhysique» (2020 р.) та входить в топ VI «Mг.Universe» WABBA (Португалія, 2020р.). А ще він обожнює готувати, так як в минулому – кондитер, тому звертайтесь за рецептами правильного харчування.)"},{"firstName":"Ірина","lastName":"Слюсаренко","direction":"CrossFit","description":"Ірина – тренер, від погляду якої серце починає битись швидше, а твої спортивні досягнення  - рости з кожною хвилиною, тому що з нею ви зробите те, про що навіть і не мріяли : 100 віджимань, 50 бурпі чи 20 підтягувань… З Іриною – запросто! Вона - наша королева мотивації! А її досягнення являються підтвердженням цього факту: Майстер спорту з веслування, Майстер спорту з важкої атлетики, КМС з плавання, Чемпіон і призер України з веслування, 8 місце, Чемпіонат Світу з веслування, 2 місце CrossFit на звання «Найбільш підготовлена людина країни», 3 місце CrossFit banda Open в категорії Elite 8 місце CrossFit Games Open."},{"firstName":"Ольга","lastName":"Депешко","direction":"Персональні тренування","description":"Ззовні дуже тендітна Ольга, проведе вас через всі випробування і буде поруч з вами на кожному кроці. Вона подбає про те, щоб ви отримували максимум задоволення від кожного тренування. Також Ольга нутриціолог з восьмирічним досвідом роботи, сама багато навчається і вас обіцяє навчити їсти смачно та здорово. Вона працює не тільки з тілом, а із внутрішнім світом. Діюча учасниця змагання в категорії – бікіні."},{"firstName":"Ольга","lastName":"Марценюк","direction":"Barre, Пілатес","description":"Тренер, який зачаровує своєю посмішкою з першої хвилини знайомства! Ольга не вірить в обмеження і знає, як вам розкрити свій потенціал на максимум. Вас чекають фантастичні пліє, релєве, рівна осанка та неймовірно приємна крепатура! Її тренування приносять моральне задоволення та формують неймовірне тіло!"},{"firstName":"Віталій","lastName":"Каськун","direction":"Персональні тренування","description":"Професійний спортсмен, кваліфікований пауерліфтер, персональний тренер, з яким не лише корисно, але й дуже захопливо тренуватись! Він знає, як знайти підхід до кожного, як правильно ставити спортивні  цілі, та як вас стимулювати до їх досягнення! Кредо Віталія: « Не зупинятися на досягнутому та підкорювати нові вершини». Підготував чимало призерів в чемпіонатах України та здобув повагу і прихильність в професійному колі, а ще виховує двух прекрасних синочків!"},{"firstName":"Михайло","lastName":"Галаган","direction":"Fighting, Тхеквондо","description":"Тренер-викладач з єдиноборств та авторської програми Fit-Fight. Михайло - володар Чорного Пояси 3-го дану з Тхеквондо. Виховав не одного чемпіона України та Європи. Завдяки своєму десятирічному стажу, він знає, як поставити удар, розвинути взривну силу, швидкість та витривалість, спалити калорії та виплеснути всю агресію. Відчуйте себе чемпіоном! Ви покинете файтинг зону неймовірно стомленим, але точно захочете повернутися ще раз. Тренування з Михайлом – найкрутіша антистрес-терапія."},{"firstName":"Ольга","lastName":"Осадчук","direction":"Персональні тренування","description":"Ольга  - сертифікований персональний тренер, який дуже швидко стане вашим близьким другом та наставником! Вона чемпіонка України з літнього біатлону.  Тому для неї – це не просто спорт, а сенс життя – допомогти людям, і це не стосується тільки тіла, а насамперед - вашого здоров’я та щоденного самопочуття. На кожному тренуванні вона віддається повністю та веде вас щодня до цілі! І будьте впевнені, на її тренуванні у вас не вийде відпочити, її шалена енергія змусить вас дізнатись, на що ви здатні!"},{"firstName":"Тетяна","lastName":"Подзигун","direction":"Cycle, Games, персональні тренування","description":"Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba,ufbf-official,fbbu, вона розуміє, як довести себе та вас до крайності як фізично, так і розумово. Повірте, вона знає, як «вичавити» з вас всі соки!) Так швидко та емоційно ви ще не крутили педалі…)"},{"firstName":"Валентин","lastName":"Шпильчук","direction":"Персональні тренування","description":"Персональний тренер з дев’ятирічним досвідом. Валентин володіє електричною енергією, якою заряджає всіх клієнтів на результат! Філософія його тренувань: максимум комфорту та прогресу. Роблячи акцент на функціональному та спортивному фітнесі, Валентин наблизить вас до вашої мрії! Ви ніколи не дізнаєтесь своїх меж, поки не досягнете їх!"},{"firstName":"Сергій","lastName":"Мельник","direction":"Персональні тренування","description":"Майстер спорту з важкої атлетики, тричі призер юніороского чемпіонату України з важкої атлетики. Сергій спокійно та без крику заставить вас піднімати більше, бігти швидше та качати активніше! І повірте, ви не пропустите жодного заняття! З ним успіх гарантований!"},{"firstName":"Олена","lastName":"Семенчук","direction":"Йога","description":"Психолог за освітою, Олена познайомилась з йогою – і зрозуміла, що це її життя! Вона викладач Кундаліні-Йоги. Протягом багатьох століть ця практика була перевагою для обраних і зберігалася у великому секреті. Але сьогодні  вже кожен може знахойти в ній щось для себе. Хтось прагне зміцнити фізичне здоров\'я,  хтось хоче впоратися зі стресом, хтось націлений на роботу з енергією, а хтось любить співати мантри. Олена буде найкращим провідником в світ гармонії на пізнання себе! Навчить вас ОШО медитації, віппассані (класичній медитації) та холотропному диханню. А ще Олена грає на бандурі та малює картини, як бачила – йога ще відкриває ваш творчий потенціал."},{"firstName":"Василь","lastName":"Нечко","direction":"Персональні тренування","description":"Майстер спорту міжнародного класу, чемпіон світу та рекордсмен України – все це про Василя. А ще це наш старший персональний тренер, який з перших хвилин знайомства вразить вас своєю харизмою та впевненістю. Бунтар з безліччю талантів. Він вважає, що фітнес повинен бути приємним, але таким же складним, як і життя. Його заняття зосереджені на ефективних вправах, які кидають виклик вашому тілу."},{"firstName":"Юля","lastName":"Горнушкіна","direction":"Персональні тренування","description":"Юля з професійної сторони точно знає, що потрібно робити, щоб почувати себе здорово та при цьому мати рельєфне тіло. В минулому лікар, учасниця медичних конференцій, а також сертифікований дієтолог- нутриціолог. Мотивація, гарний настрій і потужна енергія тренера змусять вас працювати на максимум! Готуйтесь, це будуть спекотні тренування!"},{"firstName":"Олена","lastName":"Дементьєва","direction":"Barre, Пілатес","description":"Олена з 6 років у професійному спорті, КМС з спортивно-бальних танців, представляла Україну в численних міжнародних змаганнях. Фітнес кар’єру розпочала в Італії, сертифікований фітнес тренер. Олена дуже ніжна, тендітна та виважена дівчина, але, водночас, супер енергійний та вимоглевий викладач! Як тільки заходиш в зал, то одразу вирівнюєщ осанку та тягенш нососочки! Її креативні заняття здивують навіть спортивних гуманів!"}]}');
 
 /***/ }),
 
@@ -39358,7 +39185,7 @@ module.exports = JSON.parse('{"trainers":[{"id":1,"link":"\'Vladimir_Leskov.jpg"
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"trainers":[{"id":1,"link":"Vladimir_Leskov.jpg","firstName":"Володимир","lastName":"Лєсков","direction":"Cycle, Games, персональні тренування","description":"Самий позитивний тренер G level, який одночасно вміє бути ніжним, але і досить вимогливим! Його групові тренування наповнені шаленою енергією та пристрастю. Володимир кваліфікований персональний тренер, який власним прикладом мотивує своїх клієнтів. Отримав кубок України WABBA  за I місце в категорії «Men\'sPhysique» та  I місце в абсолютній категорії «Men\'sPhysique» (2020 р.) та входить в топ VI «Mг.Universe» WABBA (Португалія, 2020р.). А ще він обожнює готувати, так як в минулому – кондитер, тому звертайтесь за рецептами правильного харчування.)"},{"id":2,"link":"Irina_Slyusarenko.jpg","firstName":"Ірина","lastName":"Слюсаренко","direction":"CrossFit","description":"Ірина – тренер, від погляду якої серце починає битись швидше, а твої спортивні досягнення  - рости з кожною хвилиною, тому що з нею ви зробите те, про що навіть і не мріяли : 100 віджимань, 50 бурпі чи 20 підтягувань… З Іриною – запросто! Вона - наша королева мотивації! А її досягнення являються підтвердженням цього факту: Майстер спорту з веслування, Майстер спорту з важкої атлетики, КМС з плавання, Чемпіон і призер України з веслування, 8 місце, Чемпіонат Світу з веслування, 2 місце CrossFit на звання «Найбільш підготовлена людина країни», 3 місце CrossFit banda Open в категорії Elite 8 місце CrossFit Games Open."},{"id":3,"link":"Olga_Depeshko.jpg","firstName":"Ольга","lastName":"Депешко","direction":"Персональні тренування","description":"Ззовні дуже тендітна Ольга, проведе вас через всі випробування і буде поруч з вами на кожному кроці. Вона подбає про те, щоб ви отримували максимум задоволення від кожного тренування. Також Ольга нутриціолог з восьмирічним досвідом роботи, сама багато навчається і вас обіцяє навчити їсти смачно та здорово. Вона працює не тільки з тілом, а із внутрішнім світом. Діюча учасниця змагання в категорії – бікіні."},{"id":4,"link":"Olga_Martsenyuk.jpg","firstName":"Ольга","lastName":"Марценюк","direction":"Barre, Пілатес","description":"Тренер, який зачаровує своєю посмішкою з першої хвилини знайомства! Ольга не вірить в обмеження і знає, як вам розкрити свій потенціал на максимум. Вас чекають фантастичні пліє, релєве, рівна осанка та неймовірно приємна крепатура! Її тренування приносять моральне задоволення та формують неймовірне тіло!"},{"id":5,"link":"Vitaliy_Kaskun.jpg","firstName":"Віталій","lastName":"Каськун","direction":"Персональні тренування","description":"Професійний спортсмен, кваліфікований пауерліфтер, персональний тренер, з яким не лише корисно, але й дуже захопливо тренуватись! Він знає, як знайти підхід до кожного, як правильно ставити спортивні  цілі, та як вас стимулювати до їх досягнення! Кредо Віталія: « Не зупинятися на досягнутому та підкорювати нові вершини». Підготував чимало призерів в чемпіонатах України та здобув повагу і прихильність в професійному колі, а ще виховує двух прекрасних синочків!"},{"id":6,"link":"Mikhail_Galagan.jpg","firstName":"Михайло","lastName":"Галаган","direction":"Fighting, Тхеквондо","description":"Тренер-викладач з єдиноборств та авторської програми Fit-Fight. Михайло - володар Чорного Пояси 3-го дану з Тхеквондо. Виховав не одного чемпіона України та Європи. Завдяки своєму десятирічному стажу, він знає, як поставити удар, розвинути взривну силу, швидкість та витривалість, спалити калорії та виплеснути всю агресію. Відчуйте себе чемпіоном! Ви покинете файтинг зону неймовірно стомленим, але точно захочете повернутися ще раз. Тренування з Михайлом – найкрутіша антистрес-терапія."},{"id":7,"link":"Olga_Osadchuk.jpg","firstName":"Ольга","lastName":"Осадчук","direction":"Персональні тренування","description":"Ольга  - сертифікований персональний тренер, який дуже швидко стане вашим близьким другом та наставником! Вона чемпіонка України з літнього біатлону.  Тому для неї – це не просто спорт, а сенс життя – допомогти людям, і це не стосується тільки тіла, а насамперед - вашого здоров’я та щоденного самопочуття. На кожному тренуванні вона віддається повністю та веде вас щодня до цілі! І будьте впевнені, на її тренуванні у вас не вийде відпочити, її шалена енергія змусить вас дізнатись, на що ви здатні!"},{"id":8,"link":"Tatiana_Podzigun.jpg","firstName":"Тетяна","lastName":"Подзигун","direction":"Cycle, Games, персональні тренування","description":"Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba,ufbf-official,fbbu, вона розуміє, як довести себе та вас до крайності як фізично, так і розумово. Повірте, вона знає, як «вичавити» з вас всі соки!) Так швидко та емоційно ви ще не крутили педалі…)"},{"id":9,"link":"valentine.jpg","firstName":"Валентин","lastName":"Шпильчук","direction":"Персональні тренування","description":"Персональний тренер з дев’ятирічним досвідом. Валентин володіє електричною енергією, якою заряджає всіх клієнтів на результат! Філософія його тренувань: максимум комфорту та прогресу. Роблячи акцент на функціональному та спортивному фітнесі, Валентин наблизить вас до вашої мрії! Ви ніколи не дізнаєтесь своїх меж, поки не досягнете їх!"},{"id":10,"link":"Melnyk_Serhiy.jpg","firstName":"Сергій","lastName":"Мельник","direction":"Персональні тренування","description":"Майстер спорту з важкої атлетики, тричі призер юніороского чемпіонату України з важкої атлетики. Сергій спокійно та без крику заставить вас піднімати більше, бігти швидше та качати активніше! І повірте, ви не пропустите жодного заняття! З ним успіх гарантований!"},{"id":11,"link":"Olena_Semenchuk.jpg","firstName":"Олена","lastName":"Семенчук","direction":"Йога","description":"Психолог за освітою, Олена познайомилась з йогою – і зрозуміла, що це її життя! Вона викладач Кундаліні-Йоги. Протягом багатьох століть ця практика була перевагою для обраних і зберігалася у великому секреті. Але сьогодні  вже кожен може знахойти в ній щось для себе. Хтось прагне зміцнити фізичне здоров\'я,  хтось хоче впоратися зі стресом, хтось націлений на роботу з енергією, а хтось любить співати мантри. Олена буде найкращим провідником в світ гармонії на пізнання себе! Навчить вас ОШО медитації, віппассані (класичній медитації) та холотропному диханню. А ще Олена грає на бандурі та малює картини, як бачила – йога ще відкриває ваш творчий потенціал."},{"id":13,"link":"Nechko_Vasil.jpg","firstName":"Василь","lastName":"Нечко","direction":"Персональні тренування","description":"Майстер спорту міжнародного класу, чемпіон світу та рекордсмен України – все це про Василя. А ще це наш старший персональний тренер, який з перших хвилин знайомства вразить вас своєю харизмою та впевненістю. Бунтар з безліччю талантів. Він вважає, що фітнес повинен бути приємним, але таким же складним, як і життя. Його заняття зосереджені на ефективних вправах, які кидають виклик вашому тілу."},{"id":14,"link":"Gornushkina_Julia.jpg","firstName":"Юля","lastName":"Горнушкіна","direction":"Персональні тренування","description":"Юля з професійної сторони точно знає, що потрібно робити, щоб почувати себе здорово та при цьому мати рельєфне тіло. В минулому лікар, учасниця медичних конференцій, а також сертифікований дієтолог- нутриціолог. Мотивація, гарний настрій і потужна енергія тренера змусять вас працювати на максимум! Готуйтесь, це будуть спекотні тренування!"},{"id":15,"link":"Dementieva_Elena.jpg","firstName":"Олена","lastName":"Дементьєва","direction":"Barre, Пілатес","description":"Олена з 6 років у професійному спорті, КМС з спортивно-бальних танців, представляла Україну в численних міжнародних змаганнях. Фітнес кар’єру розпочала в Італії, сертифікований фітнес тренер. Олена дуже ніжна, тендітна та виважена дівчина, але, водночас, супер енергійний та вимоглевий викладач! Як тільки заходиш в зал, то одразу вирівнюєщ осанку та тягенш нососочки! Її креативні заняття здивують навіть спортивних гуманів!"}],"check":"пошук тренерів"}');
+module.exports = JSON.parse('{"trainers":[{"firstName":"Володимир","lastName":"Лєсков","direction":"Cycle, Games, персональні тренування","description":"Самий позитивний тренер G level, який одночасно вміє бути ніжним, але і досить вимогливим! Його групові тренування наповнені шаленою енергією та пристрастю. Володимир кваліфікований персональний тренер, який власним прикладом мотивує своїх клієнтів. Отримав кубок України WABBA  за I місце в категорії «Men\'sPhysique» та  I місце в абсолютній категорії «Men\'sPhysique» (2020 р.) та входить в топ VI «Mг.Universe» WABBA (Португалія, 2020р.). А ще він обожнює готувати, так як в минулому – кондитер, тому звертайтесь за рецептами правильного харчування.)"},{"firstName":"Ірина","lastName":"Слюсаренко","direction":"CrossFit","description":"Ірина – тренер, від погляду якої серце починає битись швидше, а твої спортивні досягнення  - рости з кожною хвилиною, тому що з нею ви зробите те, про що навіть і не мріяли : 100 віджимань, 50 бурпі чи 20 підтягувань… З Іриною – запросто! Вона - наша королева мотивації! А її досягнення являються підтвердженням цього факту: Майстер спорту з веслування, Майстер спорту з важкої атлетики, КМС з плавання, Чемпіон і призер України з веслування, 8 місце, Чемпіонат Світу з веслування, 2 місце CrossFit на звання «Найбільш підготовлена людина країни», 3 місце CrossFit banda Open в категорії Elite 8 місце CrossFit Games Open."},{"firstName":"Ольга","lastName":"Депешко","direction":"Персональні тренування","description":"Ззовні дуже тендітна Ольга, проведе вас через всі випробування і буде поруч з вами на кожному кроці. Вона подбає про те, щоб ви отримували максимум задоволення від кожного тренування. Також Ольга нутриціолог з восьмирічним досвідом роботи, сама багато навчається і вас обіцяє навчити їсти смачно та здорово. Вона працює не тільки з тілом, а із внутрішнім світом. Діюча учасниця змагання в категорії – бікіні."},{"firstName":"Ольга","lastName":"Марценюк","direction":"Barre, Пілатес","description":"Тренер, який зачаровує своєю посмішкою з першої хвилини знайомства! Ольга не вірить в обмеження і знає, як вам розкрити свій потенціал на максимум. Вас чекають фантастичні пліє, релєве, рівна осанка та неймовірно приємна крепатура! Її тренування приносять моральне задоволення та формують неймовірне тіло!"},{"firstName":"Віталій","lastName":"Каськун","direction":"Персональні тренування","description":"Професійний спортсмен, кваліфікований пауерліфтер, персональний тренер, з яким не лише корисно, але й дуже захопливо тренуватись! Він знає, як знайти підхід до кожного, як правильно ставити спортивні  цілі, та як вас стимулювати до їх досягнення! Кредо Віталія: « Не зупинятися на досягнутому та підкорювати нові вершини». Підготував чимало призерів в чемпіонатах України та здобув повагу і прихильність в професійному колі, а ще виховує двух прекрасних синочків!"},{"firstName":"Михайло","lastName":"Галаган","direction":"Fighting, Тхеквондо","description":"Тренер-викладач з єдиноборств та авторської програми Fit-Fight. Михайло - володар Чорного Пояси 3-го дану з Тхеквондо. Виховав не одного чемпіона України та Європи. Завдяки своєму десятирічному стажу, він знає, як поставити удар, розвинути взривну силу, швидкість та витривалість, спалити калорії та виплеснути всю агресію. Відчуйте себе чемпіоном! Ви покинете файтинг зону неймовірно стомленим, але точно захочете повернутися ще раз. Тренування з Михайлом – найкрутіша антистрес-терапія."},{"firstName":"Ольга","lastName":"Осадчук","direction":"Персональні тренування","description":"Ольга  - сертифікований персональний тренер, який дуже швидко стане вашим близьким другом та наставником! Вона чемпіонка України з літнього біатлону.  Тому для неї – це не просто спорт, а сенс життя – допомогти людям, і це не стосується тільки тіла, а насамперед - вашого здоров’я та щоденного самопочуття. На кожному тренуванні вона віддається повністю та веде вас щодня до цілі! І будьте впевнені, на її тренуванні у вас не вийде відпочити, її шалена енергія змусить вас дізнатись, на що ви здатні!"},{"firstName":"Тетяна","lastName":"Подзигун","direction":"Cycle, Games, персональні тренування","description":"Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba,ufbf-official,fbbu, вона розуміє, як довести себе та вас до крайності як фізично, так і розумово. Повірте, вона знає, як «вичавити» з вас всі соки!) Так швидко та емоційно ви ще не крутили педалі…)"},{"firstName":"Валентин","lastName":"Шпильчук","direction":"Персональні тренування","description":"Персональний тренер з дев’ятирічним досвідом. Валентин володіє електричною енергією, якою заряджає всіх клієнтів на результат! Філософія його тренувань: максимум комфорту та прогресу. Роблячи акцент на функціональному та спортивному фітнесі, Валентин наблизить вас до вашої мрії! Ви ніколи не дізнаєтесь своїх меж, поки не досягнете їх!"},{"firstName":"Сергій","lastName":"Мельник","direction":"Персональні тренування","description":"Майстер спорту з важкої атлетики, тричі призер юніороского чемпіонату України з важкої атлетики. Сергій спокійно та без крику заставить вас піднімати більше, бігти швидше та качати активніше! І повірте, ви не пропустите жодного заняття! З ним успіх гарантований!"},{"firstName":"Олена","lastName":"Семенчук","direction":"Йога","description":"Психолог за освітою, Олена познайомилась з йогою – і зрозуміла, що це її життя! Вона викладач Кундаліні-Йоги. Протягом багатьох століть ця практика була перевагою для обраних і зберігалася у великому секреті. Але сьогодні  вже кожен може знахойти в ній щось для себе. Хтось прагне зміцнити фізичне здоров\'я,  хтось хоче впоратися зі стресом, хтось націлений на роботу з енергією, а хтось любить співати мантри. Олена буде найкращим провідником в світ гармонії на пізнання себе! Навчить вас ОШО медитації, віппассані (класичній медитації) та холотропному диханню. А ще Олена грає на бандурі та малює картини, як бачила – йога ще відкриває ваш творчий потенціал."},{"firstName":"Василь","lastName":"Нечко","direction":"Персональні тренування","description":"Майстер спорту міжнародного класу, чемпіон світу та рекордсмен України – все це про Василя. А ще це наш старший персональний тренер, який з перших хвилин знайомства вразить вас своєю харизмою та впевненістю. Бунтар з безліччю талантів. Він вважає, що фітнес повинен бути приємним, але таким же складним, як і життя. Його заняття зосереджені на ефективних вправах, які кидають виклик вашому тілу."},{"firstName":"Юля","lastName":"Горнушкіна","direction":"Персональні тренування","description":"Юля з професійної сторони точно знає, що потрібно робити, щоб почувати себе здорово та при цьому мати рельєфне тіло. В минулому лікар, учасниця медичних конференцій, а також сертифікований дієтолог- нутриціолог. Мотивація, гарний настрій і потужна енергія тренера змусять вас працювати на максимум! Готуйтесь, це будуть спекотні тренування!"},{"firstName":"Олена","lastName":"Дементьєва","direction":"Barre, Пілатес","description":"Олена з 6 років у професійному спорті, КМС з спортивно-бальних танців, представляла Україну в численних міжнародних змаганнях. Фітнес кар’єру розпочала в Італії, сертифікований фітнес тренер. Олена дуже ніжна, тендітна та виважена дівчина, але, водночас, супер енергійний та вимоглевий викладач! Як тільки заходиш в зал, то одразу вирівнюєщ осанку та тягенш нососочки! Її креативні заняття здивують навіть спортивних гуманів!"}],"simulators":[{"name":"Тренажер «вертикальна тяга» Vertical Traction","description":"Тренажер Vertical Traction призначений для розвитку найбільших м\'язів верхньої частини тіла - найширших м\'язів спини."},{"name":"Тренажер «жим від плеча вгору» Shoulder Press","description":"Тренажер Shoulder Press дозволяє виконувати базове для дельтоподібних м\'язів вправа - «армійський жим» в положенні сидячи."},{"name":"Тренажер «жим від грудей» Chest Press","description":"Тренажер Chest Press дає можливість виконувати базова вправа для грудних м\'язів - жим від грудей."},{"name":"Багатофункціональний тренажер Dual Pec/Rev Fly","description":"Тренажер Dual Pectoral / Reverse Fly призначений для виконання двох вправ - «зведення рук» зміцнює м\'язи грудей, додаткове навантаження отримують передній пучок дельтоподібних м\'язів і біцепс плеча; «Розведення рук» зміцнює задній пучок дельтоподібних м\'язів, додаткове навантаження отримують ромбовидні і трапецієподібні м\'язи."},{"name":"Тренажер PULLDOWN N «вертикальна тяга» з дисковим навантаженням","description":"Тренажер призначений для вертикальної тяги до грудей в положенні сидячи. Вправа розвиває найширші м\'язи спини, додаткове навантаження отримує біцепс плеча."},{"name":"Тренажер «гребна тяга» Low Row","description":"Тренажер Low Row дозволяє зміцнити найширші м\'язи спини, виконуючи одне з базових вправ - горизонтальну тягу."},{"name":"Тренажер «жим від грудей з широким хватом» з дисковим навантаженням","description":"Wide Chest Press - тренажер дозволяє виконувати вправи, що нагадують руху на підйом гантелей, лежачи на лаві з негативним нахилом із задіянням нижній частині грудних м\'язів."},{"name":"Тренажер Incline chest press «жим від грудей під кутом» з дисковим навантаженням","description":"Incline Chest Press - тренажер повторює рухи на відведення гантелей на похилій лаві з залученням м\'язів верхньої частини грудей."},{"name":"Багатофункціональний тренажер для ніг Dual Abd","description":"Тренажер Dual Abductor / Adductor дозволяє виконувати дві вправи - «зведення ніг» зміцнює що приводять м\'язи стегна; «Розведення ніг» навантажує сідничні м\'язи"},{"name":"Тренажер «розгинання ніг» Leg Extension","description":"Тренажер Leg Extension дає можливість виконувати вправу «розгинання ніг в положенні сидячи» для розвитку найбільших м\'язів ніг - квадріцепсов"},{"name":"Тренажер «згинання ніг лежачи» Ne Leg Curl","description":"Тренажер для тренування задньої поверхні стегна. Легко налаштовується для використання атлетами різного зросту."},{"name":"Тренажер Calf для литкових м’язів з дисковим навантаженням","description":"Опрацювання литкових м\'язів на цьому тренажері можлива без навантаження на хребетний стовп. Ефективність вправ настільки ж висока, як і при заняттях у вільній вазі завдяки використанню атлетичних дисків. Матеріал BODY PRINT приймає форму фігури спортсмена, роблячи заняття гранично комфортними."},{"name":"Тренажер REAR KICK для сідничних м’язів з дисковим навантаженням","description":"Широка амплітуда вправи дозволяє тренувати сідниці в максимально природних умовах і для ефективного результату"},{"name":"Тренажер LINEAR LEG PRESS «жим ногами» з дисковим навантаженням","description":""},{"name":"Тренажер LEG PRESS","description":"Ця модель тренажера дозволяє ефективно опрацювати всі м\'язи ніг від сідниць до литкових."},{"name":"Тренажер LEG CURL","description":"Тренажер серії SELECTION 700 для цільових тренувань м`язів задньої поверхні стегна."},{"name":"Тренажер Hack Squat","description":"Тренажер «Гакк-присідання» для тренування м\'язів ніг і сідничних м\'язів"},{"name":"Бігова доріжка Run Live 500","description":"У біговій доріжці Excite Live Run немає нічого, що може зашкодити вашому бігу. Низьке бігове полотно зручно для заходу на тренажер. Бічні ручки вкорочені і не утрудняють рухів руками. Біжіть вільно, як по доріжці в парку."},{"name":"Орбітрек Synchro Live 700","description":"Excite Live Synchro - тренажер, який захоплює тренуваннями і кожен день знаходить нові приводи для натхнення і прогресу. Регульована рампа від 5 до 33 градусів дозволяє опрацювати м\'язи ніг і сідничні м\'язи. Сучасна консоль поєднує масу програм тренувань і додатків для розваги. Плавні махові руху без ривків і ударного навантаження на суглоби з довжиною кроку до 67 см - це новий орбітрек Excite Live Synchro. Високі платформи і мінімум деталей з боків дарують відчуття свободи і ефективного тренування без зусиль."},{"name":"Велотренажер Bake Live 500","description":"Неймовірно реалістичний вертикальний велотренажер Excite Live Bike для кардіотренувань. Зручне кермо з кількома хватами, широка і низька рама, прості регулювання. Екран консолі, кермо, сидіння і педалі розташовані максимально природно для правильного положення тіла і різних типів тренування."},{"name":"Велотренажер Recline live 500","description":"Велотренажер Excite Live Recline для кардиотренировок в зручному положенні сидячи. Широкий отвір для простий посадки, сенсорний кермо для контролю пульсу, технологічна консоль з програмами тренувань і розвагами для прогресу і мотивації."},{"name":"Кросс-тренажер Climb Live 500","description":"Тренажер високих досягнень для кардиотренировки «підйом по сходах». Допомагає набути впевненості в собі, вийти за межі своїх можливостей і досягати нових результатів. Поєднує компактність, безпечну конструкцію, різноманітні програми тренувань і розваги. Підніміть свої тренування на новий рівень з конструкцією тренажера Excite Live Climb, яка максимально навантажує цільові сідничні м\'язи і м\'язи ніг. Тренуйтеся з комфортом і видимим результатом."},{"name":"Спинбайк Group Cycle Connect","description":"Group Cycle Connect це перший в світі і єдиний велотренажер для закритих приміщень, який відстежує результати тренувань і забезпечує підтримку користувачів для поліпшення результатів за допомогою тренувань з повним зануренням у віртуальне середовище. У ньому поєднується унікальний дизайн з новітньою технологією зв\'язку, приголомшливі відчуття і не має аналогів простота використання."},{"name":"Багатофункціональний тренажер Multipower","description":"MULTIPOWER - мультистанция для силових тренувань у вільній вазі і фіксованою траєкторією руху, на якій можна виконувати базові та ізолюючі вправи."},{"name":"Багатофункціональний тренажер Dual Adjustable Pulley","description":"DUAL ADJUSTABLE PULLEY є самою останньою новинкою в лінійці силових тренажерів Element +. Завдяки ергономічному дизайну і передової біомеханіки, новий тросовий тренажер дозволяє користувачам виконувати толкательние вправи для максимального збільшення сили, потужності і швидкості руху."},{"name":"Багатофункціональний  тренажер Kneeling Easy Chin Dip","description":"Це обладнання призначене для вправ з власною вагою, а також вправ з ваговими стеками під керівництвом тренера."},{"name":"Багатофункціональний тренажер Cable Stations Connector","description":"Можлива тренування одночасно п\'яти чоловік з незалежним використанням вагового стека і одну людину з застосуванням вправ на мостовому з\'єднанні."},{"name":"Комбінована стійка CHIN UP DIP LEG RAISE","description":"Турнік Chin Up Dip Leg Raise дає можливість задіяти в роботі фактично всі м\'язові групи верхній частині тіла: підтягування широким і вузьким хватом для найширших м\'язів спини, дельт, біцепсів; віджимання на брусах для трицепсів і грудних м\'язів; бічні скручування для косих м\'язів живота; прямі скручування, підйом ніг з упором на ліктях і підйом ніг у висі для м\'язів преса."},{"name":"Універсальна стійка","description":"Підставка спеціально розроблена для зберігання штанг, грифів і канатних аксесуарів. Включає 3 опори під штанги, додаткові гачки для канатних аксесуарів і верхню платформу, що витримує вагу до 50 кг."},{"name":"Олімпійська жимова лавка від грудей під кутом","description":""},{"name":"Олімпійська жимова лавка від грудей","description":""},{"name":"Лавка Скотта Scott Bench","description":"Багатофункціональна лава для спеціального опрацювання рук з балансиром."},{"name":"Лавка Adjustable Bench","description":""},{"name":"Лавка для спини Lower Back Bench","description":""},{"name":"Горизонтальна лавка для спини/GHD Bench","description":"Універсальний тренажер для розвитку м\'язів задньої поверхні стегна. Також навантаження отримують м\'язи низу спини, хребта, сідничні м\'язи і частково литкові м\'язи. Glute Ham Developer швидко зміцнює м\'язи ніг, дає можливість відпрацювати обидві основні функції м\'язів задньої поверхні стегна - згинання ноги в коліні і розгинання стегна."},{"name":"Лавка для пресу Adjust Decline/Abdomin. Crunch","description":""},{"name":"Гантелі з уритановим покриттям","description":"Гантелі з уритановим покриттям"},{"name":"Гантелі хромовані","description":"Нова лінія хромованих гантелей компанії Technogym. Вагові категорії гантелей: 1 - 10 кг. "}]}');
 
 /***/ })
 

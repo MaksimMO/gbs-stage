@@ -9,12 +9,12 @@
             <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" style="width: 100%; height: 100%; cursor: pointer;" @click="isShow">
             <img v-if="isSelected" src="../../assets/images/close.png" alt="info" style="width: 100%; height: 100%; cursor: pointer;" @click="isClosed">
         </div>
-        <p class="firstName">{{trainer.firstName}}</p>
-        <p class="lastName">{{trainer.lastName}}</p>
+        <p class="firstName">{{$i18n.t(`trainers.${trainer.id}.firstName`)}}</p>
+        <p class="lastName">{{$i18n.t(`trainers.${trainer.id}.lastName`)}}</p>
     </div>
     <div class="description">
-        <p class="descriptionTitle">{{trainer.direction}}</p>
-        <p v-show="isSelected">{{trainer.description}}</p>
+        <p class="descriptionTitle">{{$i18n.t(`trainers.${trainer.id}.direction`)}}</p>
+        <p v-show="isSelected">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
     </div>
 </div>
 </template>

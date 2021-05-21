@@ -2,10 +2,10 @@
 <div class="modal-overlay">
         <div class="modal">
             <div class="close" @click="$emit('closePopup')" ></div>
-            <img :src="simulatorDetail.link" :alt="simulatorDetail.name">
+            <img :src="simulatorDetail.link" :alt="$i18n.t(`simulators.${simulatorDetail.id}.name`)">
             <div class="description">
-                <p class="title">{{simulatorDetail.name}}</p>
-                <p class="detail">{{simulatorDetail.description}}</p>
+                <p class="title">{{$i18n.t(`simulators.${simulatorDetail.id}.name`)}}</p>
+                <p class="detail">{{$i18n.t(`simulators.${simulatorDetail.id}.description`)}}</p>
             </div>
         </div>
 </div>
