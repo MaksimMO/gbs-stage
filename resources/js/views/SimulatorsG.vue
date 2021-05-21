@@ -224,7 +224,7 @@ export default {
     }
     .popup-detail-enter-active,
     .popup-detail-leave-active {
-        transition: all .6s ease;
+        transition: all .2s ease;
     }
     .popup-detail-enter-from,
     .popup-detail-leave-to {

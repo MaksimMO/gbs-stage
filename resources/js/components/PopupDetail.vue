@@ -14,6 +14,12 @@
 <script>
 export default {
     props: ['simulatorDetail'],
+    mounted() {
+        document.body.style.overflow = 'hidden';
+    },
+    unmounted(){
+        document.body.style.overflow = 'auto';
+    }
 }
 </script>
 

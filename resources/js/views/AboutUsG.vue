@@ -26,6 +26,9 @@
             </p>
         </div>
     </section>
+    <section class="gallery-slider">
+        <GallerySlider />
+    </section>
     <section class="aboutUs-g-description">
         <ul class="first">
             <li><b>Тренажерний зал 1700 кв.м.</b> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym</li>
@@ -80,7 +83,8 @@
 import TrainersList from '../components/TrainersList';
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
-import CertificateSlider from '../components/CertificateSlider/CertificateSlider.vue';
+import CertificateSlider from '../components/CertificateSlider.vue';
+import GallerySlider from '../components/GallerySlider.vue';
 
 export default {
     emits: ['changeOpen'],
@@ -107,6 +111,7 @@ export default {
     components: {
         TrainersList,
         Header,
+        GallerySlider,
         CertificateSlider,
         Footer
     }
@@ -191,6 +196,9 @@ export default {
                transform: skew(25deg);
             }
         }
+    }
+    .gallery-slider {
+        position: relative;
     }
     .aboutUs-g-description {
         overflow: visible;
