@@ -35,6 +35,11 @@ Route::get('/simulators-g', function () {
 });
 
 
+Route::get('/areas-g', function () {
+    return view('index');
+});
+
+
 Auth::routes();
 
 Route::post('/feedback-form',[App\Http\Controllers\HomeController::class, 'storeLead']);

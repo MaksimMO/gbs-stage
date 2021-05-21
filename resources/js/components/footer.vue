@@ -15,7 +15,7 @@
       <router-link class="link-1" to="/about-us-g">Про нас</router-link>
       <router-link class="link-1" to="/areas-g">Зонування</router-link>
       <router-link class="link-1" to="/team-g">Наша команда</router-link>
-      <router-link class="link-1" to="/">тренажери</router-link>
+      <router-link class="link-1" to="/simulators-g">тренажери</router-link>
       <!-- <router-link class="link-1" to="/">Комфорт і чистота</router-link>
       <router-link class="link-1" to="/">Фітнес бар</router-link>
       <router-link class="link-1" to="/">Безпека та мед кабінет</router-link> -->

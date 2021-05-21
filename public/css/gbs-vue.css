@@ -657,11 +657,11 @@ label[data-v-8048fca2] {
   filter: brightness(1);
 }
 .slide-fade-enter-active[data-v-1f42fb90] {
-  -webkit-animation: show-in-1f42fb90 0.6s;
-          animation: show-in-1f42fb90 0.6s;
+  -webkit-animation: show-in-1f42fb90 0.25s;
+          animation: show-in-1f42fb90 0.25s;
 }
 .slide-fade-leave-active[data-v-1f42fb90] {
-  animation: show-in-1f42fb90 0.6s reverse;
+  animation: show-in-1f42fb90 0.25s reverse;
 }
 @-webkit-keyframes show-in-1f42fb90 {
 0%[data-v-1f42fb90] {
@@ -1841,6 +1841,13 @@ html, body {
 .footer[data-v-4edab8bb] {
   height: 234px;
 }
+
+.areas-g[data-v-1c2b00e0]{
+    background-color: #fff;
+    height: 100%;
+}
+
+
 .modal-overlay[data-v-6462e882] {
   position: fixed;
   height: 100%;

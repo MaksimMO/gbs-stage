@@ -1,5 +1,7 @@
 <template>
-  Зонування
+<div class="areas-g">
+  Стронінка у процесі розробки...
+</div>
 </template>
 
 <script>
@@ -8,6 +10,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
-</style>
+.areas-g{
+    background-color: #fff;
+    height: 100%;
+}
+
+</style>>

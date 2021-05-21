@@ -5,7 +5,7 @@
           <router-link to="/about-us-g">Про нас</router-link>
       </li>
       <li>
-          <router-link to="/">Зонування</router-link>
+          <router-link to="/areas-g">Зонування</router-link>
       </li>
       <li>
           <router-link to="/team-g">Наша команда</router-link>
