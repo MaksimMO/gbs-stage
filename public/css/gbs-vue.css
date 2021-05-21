@@ -576,7 +576,7 @@ label[data-v-8048fca2] {
 .header-invert .menu-open[data-v-1f42fb90] {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(105%);
 }
-.header-invert .main > .logo.g[data-v-1f42fb90] {
+.header-invert .main > a > .logo.g[data-v-1f42fb90] {
   background: url(/images/g-level-darck.svg?b12f10e8b0ef5b7d9921289b7942c945) no-repeat;
   background-size: contain;
 }
@@ -594,7 +594,7 @@ label[data-v-8048fca2] {
 .is-open .main > .phone-link[data-v-1f42fb90] {
   color: #fff;
 }
-.is-open .main > .logo.g[data-v-1f42fb90] {
+.is-open .main > a > .logo.g[data-v-1f42fb90] {
   background: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9) no-repeat;
   background-size: contain;
 }
@@ -604,28 +604,28 @@ label[data-v-8048fca2] {
   align-items: center;
   transition: all 0.6s ease;
 }
-.main .logo[data-v-1f42fb90] {
+.main > a > .logo[data-v-1f42fb90] {
   width: 178px;
   height: 84px;
   transition: all 0.6s ease-in;
 }
 @media screen and (max-width: 767px) {
-.main .logo[data-v-1f42fb90] {
+.main > a > .logo[data-v-1f42fb90] {
     width: 90px;
     height: 42px;
     background-size: 92px 42px;
     flex-grow: unset;
 }
 }
-.main .logo.g[data-v-1f42fb90] {
+.main > a > .logo.g[data-v-1f42fb90] {
   background: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9) no-repeat;
   background-size: contain;
 }
-.main .logo.b[data-v-1f42fb90] {
+.main > a > .logo.b[data-v-1f42fb90] {
   background: url(/images/b-level.svg?65998a52bc75e3367d5878dba8f72615) no-repeat;
   background-size: contain;
 }
-.main .logo.s[data-v-1f42fb90] {
+.main > a > .logo.s[data-v-1f42fb90] {
   background: url(/images/s-level.svg?66970d48e594fdfc781d762fd2e8de1c) no-repeat;
   background-size: contain;
 }
@@ -745,11 +745,11 @@ label[data-v-8048fca2] {
 .isScroll .main > .menu-open[data-v-1f42fb90] {
   filter: none;
 }
-.isScroll .main .logo[data-v-1f42fb90] {
+.isScroll .main > a > .logo[data-v-1f42fb90] {
   width: 82px;
   height: 38px;
 }
-.isScroll .main .logo.g[data-v-1f42fb90] {
+.isScroll .main > a > .logo.g[data-v-1f42fb90] {
   background: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9) no-repeat;
   background-size: contain;
 }
@@ -1463,9 +1463,7 @@ html, body {
   background-color: #FFFFFF !important;
 }
 .title[data-v-6d955afb] {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 7.81vw;
   margin-bottom: 60px;
 }
 .title > h1[data-v-6d955afb] {
@@ -1560,7 +1558,7 @@ html, body {
      object-fit: cover;
 }
 .swiper-container[data-v-a1dfde10] {
-  width: 60%;
+  width: 100%;
   max-height: 380px;
   height: 100%;
   margin-bottom: 60px;
@@ -1599,9 +1597,7 @@ html, body {
   background-color: #FFFFFF !important;
 }
 .title[data-v-4edab8bb] {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 7.81vw;
   margin-bottom: 60px;
 }
 .title > h1[data-v-4edab8bb] {
@@ -1670,6 +1666,7 @@ html, body {
 }
 .gallery-slider[data-v-4edab8bb] {
   position: relative;
+  padding: 0 7.81vw;
 }
 .aboutUs-g-description[data-v-4edab8bb] {
   overflow: visible;
@@ -1677,7 +1674,7 @@ html, body {
   grid-column-gap: 15px;
   display: grid;
   margin-bottom: 60px;
-  padding-left: 150px;
+  padding: 0 6.25vw;
 }
 .aboutUs-g-description ul[data-v-4edab8bb] {
   list-style: none;
@@ -1734,9 +1731,7 @@ html, body {
   margin-top: 25px;
 }
 .certificate-title[data-v-4edab8bb] {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 7.81vw;
   margin-bottom: 60px;
   padding-top: 60px;
 }
@@ -1767,9 +1762,7 @@ html, body {
   color: #000000;
 }
 .certificate-description[data-v-4edab8bb] {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 7.81vw;
   padding-bottom: 60px;
   padding-top: 60px;
 }
@@ -1890,9 +1883,7 @@ html, body {
   margin-left: auto;
 }
 .title[data-v-bcffb62e] {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 7.81vw;
   margin-bottom: 60px;
 }
 .title > h1[data-v-bcffb62e] {
@@ -1929,9 +1920,7 @@ html, body {
   line-height: 27px;
   letter-spacing: 0.02em;
   font-feature-settings: "pnum" on, "lnum" on;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 7.81vw;
   padding-bottom: 60px;
 }
 .simulator-direction > .direction[data-v-bcffb62e] {

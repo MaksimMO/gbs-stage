@@ -54,7 +54,7 @@ export default {
 @import 'swiper/components/navigation/navigation.min.css';
 
 .swiper-container {
-    width: 60%;
+    width: 100%;
     max-height: 380px;
     height: 100%;
     margin-bottom: 60px;
@@ -71,9 +71,6 @@ export default {
         opacity: 1;
         right: 60px !important;
     }
-    // ::v-deep(.swiper-wrapper) {
-    //     width: 80%;
-    // }
 }
 
 
@@ -85,16 +82,12 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    // max-width: 370px;
-    // padding: 0 39px 0 39px;
-    // max-width: 19.3vw !important;
     height: auto;
   }
 
 
 .swiper-slide img {
     display: block;
-    // max-width: 19.3vw;
     height: auto;
     object-fit: cover;
   }

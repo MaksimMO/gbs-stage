@@ -92,9 +92,7 @@ export default {
         background-color: #FFFFFF !important;
     }
     .title {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 0 7.81vw;
         margin-bottom: 60px;
     }
     .title > h1 {

@@ -125,9 +125,10 @@ export default {
         background-color: #FFFFFF !important;
     }
     .title {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        // width: 80%;
+        // margin-left: auto;
+        // margin-right: auto;
+        padding: 0 7.81vw;
         margin-bottom: 60px;
     }
     .title > h1 {
@@ -199,6 +200,7 @@ export default {
     }
     .gallery-slider {
         position: relative;
+        padding: 0 7.81vw;
     }
     .aboutUs-g-description {
         overflow: visible;
@@ -206,7 +208,7 @@ export default {
         grid-column-gap: 15px;
         display: grid;
         margin-bottom: 60px;
-        padding-left: 150px;
+        padding: 0 6.25vw;
         & ul {
             list-style: none;
             & li {
@@ -264,9 +266,10 @@ export default {
         }
     }
     .certificate-title {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        // width: 80%;
+        // margin-left: auto;
+        // margin-right: auto;
+        padding: 0 7.81vw;
         margin-bottom: 60px;
         padding-top: 60px;
         h1 {
@@ -297,9 +300,10 @@ export default {
         }
     }
     .certificate-description {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        // width: 80%;
+        // margin-left: auto;
+        // margin-right: auto;
+        padding: 0 7.81vw;
         padding-bottom: 60px;
         padding-top: 60px;
         p {

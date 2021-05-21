@@ -131,9 +131,7 @@ export default {
         }
     }
     .title {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 0 7.81vw;
         margin-bottom: 60px;
         & > h1 {
             font-weight: 600;
@@ -170,9 +168,7 @@ export default {
         line-height: 27px;
         letter-spacing: 0.02em;
         font-feature-settings: 'pnum' on, 'lnum' on;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 0 7.81vw;
         padding-bottom: 60px;
         & > .direction {
             list-style-type: none;

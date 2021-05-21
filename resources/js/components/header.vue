@@ -108,7 +108,7 @@ export default {
     & .menu-open{
         filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(105%);
     }
-    & .main>.logo.g {
+    & .main>a>.logo.g {
       background: url("../../assets/images/g-level-darck.svg") no-repeat;
       background-size: contain;
     }
@@ -126,7 +126,7 @@ export default {
             color: #fff;
         }
     }
-   & .main>.logo.g {
+   & .main>a>.logo.g {
         background: url("../../assets/images/g-level.svg") no-repeat;
         background-size: contain;
     }
@@ -137,7 +137,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     transition: all 0.6s ease;
-  .logo {
+   &>a>.logo {
     width: 178px;
     height: 84px;
     transition: all 0.6s ease-in;
@@ -270,7 +270,7 @@ export default {
         filter: none;
     }
   }
-    & .main .logo {
+    & .main>a>.logo {
         width: 82px;
         height: 38px;
         &.g {
