@@ -116,6 +116,7 @@ export default {
 .is-open{
    background-color: #000 !important;
    color: #fff !important;
+   transition: all 0.6s ease;
    & .buttonLang{
        color: #fff !important;
    }
@@ -125,7 +126,7 @@ export default {
             color: #fff;
         }
     }
-   & .main > .logo.g {
+   & .main>.logo.g {
         background: url("../../assets/images/g-level.svg") no-repeat;
         background-size: contain;
     }
