@@ -21,11 +21,14 @@
             <li @click="direction = 'multifunction_simulators'" :class="{'invert-color': direction == 'multifunction_simulators'}">Багатофункціональні тренажери</li>
             <li @click="direction = 'free_weights'" :class="{'invert-color': direction == 'free_weights'}">Вільні ваги</li>
         </ul>
+
         <ul class="simulator">
-            <li v-for="(simulator)  in directionCheck" :key="simulator.id" @click="openDetail(simulator.id)">
-                <img :src="simulator.link" :alt="$i18n.t(`simulators.${simulator.id}.name`)">
-                <div>{{$i18n.t(`simulators.${simulator.id}.name`)}}</div>
-            </li>
+            <transition-group name="popup-detail">
+                <li v-for="(simulator)  in directionCheck" :key="simulator.id" @click="openDetail(simulator.id)">
+                    <img :src="simulator.link" :alt="$i18n.t(`simulators.${simulator.id}.name`)">
+                    <div>{{$i18n.t(`simulators.${simulator.id}.name`)}}</div>
+                </li>
+            </transition-group>
         </ul>
       </section>
     </div>
