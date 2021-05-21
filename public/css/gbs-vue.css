@@ -576,7 +576,7 @@ label[data-v-8048fca2] {
 .header-invert .menu-open[data-v-1f42fb90] {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(105%);
 }
-.header-invert .main .logo.g[data-v-1f42fb90] {
+.header-invert .main > .logo.g[data-v-1f42fb90] {
   background: url(/images/g-level-darck.svg?b12f10e8b0ef5b7d9921289b7942c945) no-repeat;
   background-size: contain;
 }
@@ -594,7 +594,7 @@ label[data-v-8048fca2] {
 .is-open .main > .phone-link[data-v-1f42fb90] {
   color: #fff;
 }
-.is-open .main .logo.g[data-v-1f42fb90] {
+.is-open .main > .logo.g[data-v-1f42fb90] {
   background: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9) no-repeat;
   background-size: contain;
 }
