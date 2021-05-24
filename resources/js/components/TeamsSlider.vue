@@ -57,6 +57,7 @@ export default {
     height: 100%;
     position: unset;
     margin-bottom: 25px;
+    overflow: unset;
     ::v-deep(.swiper-button-prev) {
         --swiper-navigation-size: 20px;
         --swiper-navigation-color: #000;
@@ -98,9 +99,9 @@ export default {
         // &:nth-child(4n+1){
         //     transform-origin: left;
         // }
-        & .description{
-            position: unset;
-        }
+        // & .description{
+        //     position: unset;
+        // }
 
         &.is-scaled{
             transform:scale(1.3);
@@ -122,6 +123,15 @@ export default {
         transform-origin: left;
     }
 }
+.swiper-slide-prev {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide{
+    pointer-events: none;
+    opacity: 0;
+}
 .swiper-slide-next + .swiper-slide + .swiper-slide .trainer-item {
     transform-origin: right;
 }
@@ -129,13 +139,8 @@ export default {
 .swiper-slide-next + .swiper-slide .trainer-item,
 .swiper-slide-next .trainer-item{
     transform-origin: center;
-    // -ms-transform-origin-y: top;
-    // -webkit-transform-origin-y: top;
 }
 
-// .swiper-slide-next .trainer-item {
-//     transform-origin: center;
-// }
 
 .swiper-slide img {
     display: block;
@@ -143,101 +148,6 @@ export default {
     height: auto;
     object-fit: cover;
   }
-
-
-// .info{
-//     transform: none;
-//     position: absolute;
-//     display: block;
-//     width:35px;
-//     height: 35px;
-//     right: 10px;
-//     top: 10px;
-// }
-// .firstName{
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 1px 10px;
-//     font-family: Raleway;
-//     font-style: normal;
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 14px;
-//     color: #FFFFFF;
-//     // z-index: 100;
-//     position: absolute;
-//     width: 91px;
-//     height: 16px;
-//     left: 30px;
-//     bottom: -4px;
-//     background: #916C58;
-// }
-// .lastName{
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 1px 10px;
-//     font-family: Raleway;
-//     font-style: normal;
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 14px;
-//     letter-spacing: 0.05em;
-//     color: #FFFFFF;
-//     // z-index: 100;
-//     position: absolute;
-//     width: 91px;
-//     height: 16px;
-//     left: 30px;
-//     bottom: -25px;
-//     background: #916C58;
-// }
-// .descriptionTitle{
-//     font-family: Raleway;
-//     font-style: normal;
-//     font-weight: 800;
-//     font-size: 14px;
-//     line-height: 24px;
-//     letter-spacing: 0.05em;
-//     margin: 0;
-//     color: #000000;
-// }
-// .description{
-//     display: block;
-//     overflow-y: auto;
-//     // max-width: 268px;
-//     max-height: 200px;
-//     left: 0;
-//     padding: 0.94rem 1.88rem;
-//     top: 328px;
-//     font-family: Raleway;
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 28px;
-//     color: #000000;
-//     background-color: #ffffff;
-
-//     & p {
-//         margin: 0;
-//         max-height: 95px;
-//     }
-
-//     &::-webkit-scrollbar{
-//         width: 10px;
-//     }
-//     &::-webkit-scrollbar-track{
-//         margin-top: 15px;
-//         margin-bottom: -100px;
-//     }
-//     &::-webkit-scrollbar-thumb {
-//         background: url('../../assets/images/scroll.svg') no-repeat;
-//     }
-// }
-
 
 </style>>
 

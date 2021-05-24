@@ -1664,6 +1664,7 @@ html, body {
   height: 100%;
   position: unset;
   margin-bottom: 25px;
+  overflow: unset;
 }
 .swiper-container[data-v-004dd59c] .swiper-button-prev {
   --swiper-navigation-size: 20px;
@@ -1694,9 +1695,6 @@ html, body {
   width: 100%;
   height: 100%;
 }
-.swiper-slide[data-v-004dd59c] .trainer-item .description {
-  position: unset;
-}
 .swiper-slide[data-v-004dd59c] .trainer-item.is-scaled {
   transform: scale(1.3);
   z-index: 101;
@@ -1709,6 +1707,14 @@ html, body {
 }
 .swiper-slide-active .trainer-item[data-v-004dd59c] {
   transform-origin: left;
+}
+.swiper-slide-prev[data-v-004dd59c] {
+  pointer-events: none;
+  opacity: 0;
+}
+.swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide[data-v-004dd59c] {
+  pointer-events: none;
+  opacity: 0;
 }
 .swiper-slide-next + .swiper-slide + .swiper-slide .trainer-item[data-v-004dd59c] {
   transform-origin: right;
