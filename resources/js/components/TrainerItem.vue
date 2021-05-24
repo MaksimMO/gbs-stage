@@ -100,7 +100,6 @@ export default {
     font-size: 14px;
     line-height: 14px;
     color: #FFFFFF;
-    // z-index: 100;
     position: absolute;
     width: 91px;
     height: 16px;
@@ -121,7 +120,6 @@ export default {
     line-height: 14px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
-    // z-index: 100;
     position: absolute;
     width: 91px;
     height: 16px;
@@ -143,12 +141,10 @@ export default {
     display: block;
     position: absolute;
     overflow-y: auto;
-    // max-width: 268px;
     max-height: 200px;
     left: 0;
     right: 0;
     padding: 0.94rem 1.88rem;
-    top: 23.06vw;
     font-family: Raleway;
     font-style: normal;
     font-weight: 400;
