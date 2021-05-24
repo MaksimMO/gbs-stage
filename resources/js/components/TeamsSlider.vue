@@ -84,7 +84,7 @@ export default {
     &:nth-child(2n){
         margin-top: 30px;
     }
-    & .trainer-item{
+    & ::v-deep(.trainer-item){
         transition: all .2s ease-in;
         position: relative;
         margin-bottom: 0;
@@ -98,6 +98,9 @@ export default {
         // &:nth-child(4n+1){
         //     transform-origin: left;
         // }
+        & .description{
+            position: unset;
+        }
 
         &.is-scaled{
             transform:scale(1.3);
@@ -111,6 +114,7 @@ export default {
             width:100%;
         }
     }
+
   }
 
 .swiper-slide-active {
@@ -125,6 +129,8 @@ export default {
 .swiper-slide-next + .swiper-slide .trainer-item,
 .swiper-slide-next .trainer-item{
     transform-origin: center;
+    // -ms-transform-origin-y: top;
+    // -webkit-transform-origin-y: top;
 }
 
 // .swiper-slide-next .trainer-item {
