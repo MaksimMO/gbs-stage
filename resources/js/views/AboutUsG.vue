@@ -27,7 +27,7 @@
         </div>
     </section>
     <section class="gallery-slider">
-        <GallerySlider />
+        <GallerySlider :images="gallery" />
     </section>
     <section class="aboutUs-g-description">
         <ul class="first">
@@ -51,11 +51,18 @@
                 Переглянути всіх
             </router-link>
         </div>
-        <TrainersList
+        <div class="teams-slider">
+            <TeamsSlider
+                :trainers="trainers"
+                :isOpen="isOpen"
+                @changeOpen="(e) => change(e)"
+            />
+        </div>
+        <!-- <TrainersList
             :trainers="trainers"
             :isOpen="isOpen"
             @changeOpen="(e) => change(e)"
-        />
+        /> -->
     </section>
     <section class="certificate-title">
         <h1>Нагороди та сертифікати</h1>
@@ -85,6 +92,7 @@ import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 import CertificateSlider from '../components/CertificateSlider.vue';
 import GallerySlider from '../components/GallerySlider.vue';
+import TeamsSlider from '../components/TeamsSlider.vue';
 
 export default {
     emits: ['changeOpen'],
@@ -95,7 +103,29 @@ export default {
                 {id: 0, link: "Vladimir_Leskov.jpg"},
                 {id: 1, link: "Irina_Slyusarenko.jpg"},
                 {id: 2, link: "Olga_Depeshko.jpg"},
-                {id: 3, link: "Olga_Martsenyuk.jpg"}
+                {id: 3, link: "Olga_Martsenyuk.jpg"},
+                {id: 4, link: "Vitaliy_Kaskun.jpg"},
+                {id: 5, link: "Mikhail_Galagan.jpg"},
+                {id: 6, link: "Olga_Osadchuk.jpg"},
+                {id: 6, link: "Tatiana_Podzigun.jpg"},
+                {id: 8, link: "valentine.jpg"},
+                {id: 9, link: "Melnyk_Serhiy.jpg"},
+                {id: 10, link: "Olena_Semenchuk.jpg"},
+                {id: 11, link: "Nechko_Vasil.jpg"},
+                {id: 12, link: "Gornushkina_Julia.jpg"},
+                {id: 13, link: "Dementieva_Elena.jpg"}
+            ],
+            gallery: [
+                { id: 1, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default },
+                { id: 2, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default },
+                { id: 3, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default },
+                { id: 4, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default },
+                { id: 5, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg").default },
+                { id: 6, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4574_370x370.jpg").default },
+                { id: 7, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4583_370x370.jpg").default },
+                { id: 8, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4595_370x370.jpg").default },
+                { id: 9, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4608_370x370.jpg").default },
+                { id: 10, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4614_370x370.jpg").default }
             ]
         }
     },
@@ -108,6 +138,7 @@ export default {
         TrainersList,
         Header,
         GallerySlider,
+        TeamsSlider,
         CertificateSlider,
         Footer
     }
@@ -198,6 +229,10 @@ export default {
         position: relative;
         padding: 0 7.81vw;
     }
+    .teams-slider {
+        position: relative;
+        padding: 60px 7.81vw;
+    }
     .aboutUs-g-description {
         overflow: visible;
         grid-template-columns: repeat(2, 1fr);
@@ -241,7 +276,7 @@ export default {
             justify-content: space-between;
             position: relative;
             padding-right: 150px;
-            margin-bottom: 74px;
+            // margin-bottom: 74px;
             p {
                 margin: 0;
             }

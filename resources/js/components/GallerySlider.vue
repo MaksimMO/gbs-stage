@@ -19,6 +19,7 @@ SwiperCore.use([Navigation]);
 
 
 export default {
+    props: ['images'],
   components: {
     Swiper,
     SwiperSlide,
@@ -26,19 +27,6 @@ export default {
   data() {
     return {
       isOpacity: false,
-      images: [
-        { id: 1, imageUrl: require("../../assets/images/TeamG/gallery/photo-1.jpg").default },
-        { id: 2, imageUrl: require("../../assets/images/TeamG/gallery/photo-2.jpg").default },
-        { id: 3, imageUrl: require("../../assets/images/TeamG/gallery/photo-3.jpg").default },
-        { id: 4, imageUrl: require("../../assets/images/TeamG/gallery/photo-1.jpg").default },
-        { id: 5, imageUrl: require("../../assets/images/TeamG/gallery/photo-2.jpg").default },
-        { id: 6, imageUrl: require("../../assets/images/TeamG/gallery/photo-3.jpg").default },
-        { id: 7, imageUrl: require("../../assets/images/TeamG/gallery/photo-1.jpg").default },
-        { id: 8, imageUrl: require("../../assets/images/TeamG/gallery/photo-2.jpg").default },
-        { id: 9, imageUrl: require("../../assets/images/TeamG/gallery/photo-3.jpg").default },
-        { id: 10, imageUrl: require("../../assets/images/TeamG/gallery/photo-1.jpg").default },
-        { id: 11, imageUrl: require("../../assets/images/TeamG/gallery/photo-2.jpg").default },
-      ],
     };
   },
   methods: {
@@ -88,6 +76,7 @@ export default {
 
 .swiper-slide img {
     display: block;
+    // width: 100%;
     height: auto;
     object-fit: cover;
   }

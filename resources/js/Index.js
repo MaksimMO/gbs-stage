@@ -57,6 +57,9 @@
         },
 
     ],
+    scrollBehavior() {
+        document.getElementById('gbslevel-app').scrollIntoView();
+    }
   });
 
 let data = {

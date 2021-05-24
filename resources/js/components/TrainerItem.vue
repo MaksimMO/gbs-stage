@@ -3,7 +3,7 @@
     @mouseenter="enter"
     @mouseleave="leave"
 >
-    <div style="position: relative;">
+    <div style="position: relative; z-index: 99;">
         <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="!isOpen ? isShow() : isClosed()">
         <div v-show="isHovered && !isOpen || isSelected" class="info">
             <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" style="width: 100%; height: 100%; cursor: pointer;" @click="isShow">
@@ -41,12 +41,14 @@ export default {
         }
     },
     isShow(){
-        this.$emit('isShow', true);
-        this.isSelected = true;
+            this.$emit('isShow', true);
+            this.isSelected = true;
     },
     isClosed(){
-        this.$emit('isClosed', false);
-        this.isSelected = false;
+        if(this.isOpen && this.isSelected) {
+            this.$emit('isClosed', false);
+            this.isSelected = false;
+        }
     }
 }
 }
@@ -56,7 +58,7 @@ export default {
 .trainer-item{
     transition: all .2s ease-in;
     position: relative;
-    margin-bottom: 96px;
+    margin-bottom: 126px;
 
     &:nth-child(4n+4){
         transform-origin: right;
@@ -69,7 +71,6 @@ export default {
     &.is-scaled{
          transform:scale(1.3);
          z-index: 101;
-         margin-bottom: 0;
     }
 
     img{
@@ -140,12 +141,14 @@ export default {
 }
 .description{
     display: block;
+    position: absolute;
     overflow-y: auto;
     // max-width: 268px;
     max-height: 200px;
     left: 0;
+    right: 0;
     padding: 0.94rem 1.88rem;
-    top: 328px;
+    top: 23.06vw;
     font-family: Raleway;
     font-style: normal;
     font-weight: 400;
@@ -156,7 +159,7 @@ export default {
 
     & p {
         margin: 0;
-        max-height: 95px;
+        // max-height: 95px;
     }
 
     &::-webkit-scrollbar{

@@ -18159,47 +18159,14 @@ __webpack_require__.r(__webpack_exports__);
 
 swiper_core__WEBPACK_IMPORTED_MODULE_0__.default.use([swiper_core__WEBPACK_IMPORTED_MODULE_1__.default]);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ['images'],
   components: {
     Swiper: swiper_vue__WEBPACK_IMPORTED_MODULE_2__.Swiper,
     SwiperSlide: swiper_vue__WEBPACK_IMPORTED_MODULE_3__.SwiperSlide
   },
   data: function data() {
     return {
-      isOpacity: false,
-      images: [{
-        id: 1,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/photo-1.jpg */ "./resources/assets/images/TeamG/gallery/photo-1.jpg").default
-      }, {
-        id: 2,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/photo-2.jpg */ "./resources/assets/images/TeamG/gallery/photo-2.jpg").default
-      }, {
-        id: 3,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/photo-3.jpg */ "./resources/assets/images/TeamG/gallery/photo-3.jpg").default
-      }, {
-        id: 4,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/photo-1.jpg */ "./resources/assets/images/TeamG/gallery/photo-1.jpg").default
-      }, {
-        id: 5,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/photo-2.jpg */ "./resources/assets/images/TeamG/gallery/photo-2.jpg").default
-      }, {
-        id: 6,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/photo-3.jpg */ "./resources/assets/images/TeamG/gallery/photo-3.jpg").default
-      }, {
-        id: 7,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/photo-1.jpg */ "./resources/assets/images/TeamG/gallery/photo-1.jpg").default
-      }, {
-        id: 8,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/photo-2.jpg */ "./resources/assets/images/TeamG/gallery/photo-2.jpg").default
-      }, {
-        id: 9,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/photo-3.jpg */ "./resources/assets/images/TeamG/gallery/photo-3.jpg").default
-      }, {
-        id: 10,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/photo-1.jpg */ "./resources/assets/images/TeamG/gallery/photo-1.jpg").default
-      }, {
-        id: 11,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/photo-2.jpg */ "./resources/assets/images/TeamG/gallery/photo-2.jpg").default
-      }]
+      isOpacity: false
     };
   },
   methods: {}
@@ -18703,6 +18670,50 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/TeamsSlider.vue?vue&type=script&lang=js":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/TeamsSlider.vue?vue&type=script&lang=js ***!
+  \*****************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var swiper_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/vue */ "./node_modules/swiper/esm/vue/swiper.js");
+/* harmony import */ var swiper_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/vue */ "./node_modules/swiper/esm/vue/swiper-slide.js");
+/* harmony import */ var _components_TrainerItem_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/TrainerItem.vue */ "./resources/js/components/TrainerItem.vue");
+/* harmony import */ var swiper_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/core */ "./node_modules/swiper/esm/components/core/core-class.js");
+/* harmony import */ var swiper_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/core */ "./node_modules/swiper/esm/components/navigation/navigation.js");
+
+
+
+swiper_core__WEBPACK_IMPORTED_MODULE_1__.default.use([swiper_core__WEBPACK_IMPORTED_MODULE_2__.default]);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  emits: ['isClosed', 'isShow'],
+  props: ['trainers', 'isOpen'],
+  components: {
+    Swiper: swiper_vue__WEBPACK_IMPORTED_MODULE_3__.Swiper,
+    SwiperSlide: swiper_vue__WEBPACK_IMPORTED_MODULE_4__.SwiperSlide,
+    TrainerItem: _components_TrainerItem_vue__WEBPACK_IMPORTED_MODULE_0__.default
+  },
+  data: function data() {
+    return {
+      isOpacity: false,
+      isSelected: false,
+      isHovered: false
+    };
+  },
+  methods: {
+    change: function change(e) {
+      this.$emit('changeOpen', e);
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/TrainerItem.vue?vue&type=script&lang=js":
 /*!*****************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/TrainerItem.vue?vue&type=script&lang=js ***!
@@ -18738,8 +18749,10 @@ __webpack_require__.r(__webpack_exports__);
       this.isSelected = true;
     },
     isClosed: function isClosed() {
-      this.$emit('isClosed', false);
-      this.isSelected = false;
+      if (this.isOpen && this.isSelected) {
+        this.$emit('isClosed', false);
+        this.isSelected = false;
+      }
     }
   }
 });
@@ -18790,6 +18803,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Footer_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Footer.vue */ "./resources/js/components/Footer.vue");
 /* harmony import */ var _components_CertificateSlider_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/CertificateSlider.vue */ "./resources/js/components/CertificateSlider.vue");
 /* harmony import */ var _components_GallerySlider_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/GallerySlider.vue */ "./resources/js/components/GallerySlider.vue");
+/* harmony import */ var _components_TeamsSlider_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/TeamsSlider.vue */ "./resources/js/components/TeamsSlider.vue");
+
 
 
 
@@ -18812,6 +18827,67 @@ __webpack_require__.r(__webpack_exports__);
       }, {
         id: 3,
         link: "Olga_Martsenyuk.jpg"
+      }, {
+        id: 4,
+        link: "Vitaliy_Kaskun.jpg"
+      }, {
+        id: 5,
+        link: "Mikhail_Galagan.jpg"
+      }, {
+        id: 6,
+        link: "Olga_Osadchuk.jpg"
+      }, {
+        id: 6,
+        link: "Tatiana_Podzigun.jpg"
+      }, {
+        id: 8,
+        link: "valentine.jpg"
+      }, {
+        id: 9,
+        link: "Melnyk_Serhiy.jpg"
+      }, {
+        id: 10,
+        link: "Olena_Semenchuk.jpg"
+      }, {
+        id: 11,
+        link: "Nechko_Vasil.jpg"
+      }, {
+        id: 12,
+        link: "Gornushkina_Julia.jpg"
+      }, {
+        id: 13,
+        link: "Dementieva_Elena.jpg"
+      }],
+      gallery: [{
+        id: 1,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default
+      }, {
+        id: 2,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default
+      }, {
+        id: 3,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default
+      }, {
+        id: 4,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default
+      }, {
+        id: 5,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg").default
+      }, {
+        id: 6,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4574_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4574_370x370.jpg").default
+      }, {
+        id: 7,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4583_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4583_370x370.jpg").default
+      }, {
+        id: 8,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4595_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4595_370x370.jpg").default
+      }, {
+        id: 9,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4608_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4608_370x370.jpg").default
+      }, {
+        id: 10,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4614_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4614_370x370.jpg").default
       }]
     };
   },
@@ -18824,6 +18900,7 @@ __webpack_require__.r(__webpack_exports__);
     TrainersList: _components_TrainersList__WEBPACK_IMPORTED_MODULE_0__.default,
     Header: _components_Header_vue__WEBPACK_IMPORTED_MODULE_1__.default,
     GallerySlider: _components_GallerySlider_vue__WEBPACK_IMPORTED_MODULE_4__.default,
+    TeamsSlider: _components_TeamsSlider_vue__WEBPACK_IMPORTED_MODULE_5__.default,
     CertificateSlider: _components_CertificateSlider_vue__WEBPACK_IMPORTED_MODULE_3__.default,
     Footer: _components_Footer_vue__WEBPACK_IMPORTED_MODULE_2__.default
   }
@@ -19684,7 +19761,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     spaceBetween: 15
   }, {
     "default": _withId(function () {
-      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.images, function (image) {
+      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.images, function (image) {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_swiper_slide, {
           key: image.id
         }, {
@@ -19977,7 +20054,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
         }, ["exact"]), ["esc"]))]
       }, [_hoisted_3], 544
       /* HYDRATE_EVENTS, NEED_PATCH */
-      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\r\n          <a\r\n            href=\"#\"\r\n            @click.prevent=\"setLocale('ru')\"\r\n            @keydown.shift.tab=\"focusPrevious(false)\"\r\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\r\n            @keydown.down.exact.prevent=\"\"\r\n            @keydown.tab.exact=\"hideDropdown\"\r\n            @keydown.esc.exact=\"hideDropdown\"\r\n          >\r\n            <span>RU</span>\r\n          </a>\r\n        </li> ")], 512
+      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\n          <a\n            href=\"#\"\n            @click.prevent=\"setLocale('ru')\"\n            @keydown.shift.tab=\"focusPrevious(false)\"\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\n            @keydown.down.exact.prevent=\"\"\n            @keydown.tab.exact=\"hideDropdown\"\n            @keydown.esc.exact=\"hideDropdown\"\n          >\n            <span>RU</span>\n          </a>\n        </li> ")], 512
       /* NEED_PATCH */
       )), [[_directive_click_away, $options.hideDropdown]]) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
@@ -20381,6 +20458,72 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/TeamsSlider.vue?vue&type=template&id=004dd59c&scoped=true":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/TeamsSlider.vue?vue&type=template&id=004dd59c&scoped=true ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("data-v-004dd59c");
+
+var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_TrainerItem = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("TrainerItem");
+
+  var _component_swiper_slide = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("swiper-slide");
+
+  var _component_swiper = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("swiper");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_swiper, {
+    navigation: true,
+    slidesPerView: 4,
+    spaceBetween: 15
+  }, {
+    "default": _withId(function () {
+      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.trainers, function (trainer) {
+        return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_swiper_slide, {
+          key: trainer.id
+        }, {
+          "default": _withId(function () {
+            return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_TrainerItem, {
+              key: trainer.id,
+              trainer: trainer,
+              isOpen: $props.isOpen,
+              onIsShow: _cache[1] || (_cache[1] = function (e) {
+                return $options.change(e);
+              }),
+              onIsClosed: _cache[2] || (_cache[2] = function (e) {
+                return $options.change(e);
+              })
+            }, null, 8
+            /* PROPS */
+            , ["trainer", "isOpen"])];
+          }),
+          _: 2
+          /* DYNAMIC */
+
+        }, 1024
+        /* DYNAMIC_SLOTS */
+        );
+      }), 128
+      /* KEYED_FRAGMENT */
+      )), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_swiper_slide)];
+    }),
+    _: 1
+    /* STABLE */
+
+  });
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/TrainerItem.vue?vue&type=template&id=6a0f304d&scoped=true":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/TrainerItem.vue?vue&type=template&id=6a0f304d&scoped=true ***!
@@ -20405,7 +20548,8 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 
 var _hoisted_1 = {
   style: {
-    "position": "relative"
+    "position": "relative",
+    "z-index": "99"
   }
 };
 var _hoisted_2 = {
@@ -20601,13 +20745,17 @@ var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 
 var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Переглянути всіх ");
 
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+var _hoisted_10 = {
+  "class": "teams-slider"
+};
+
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
   "class": "certificate-title"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Нагороди та сертифікати"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum. Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam. Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est. ")], -1
 /* HOISTED */
 );
 
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
   "class": "certificate-description"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum. Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis. Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum. Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec hendrerit neque... ")], -1
 /* HOISTED */
@@ -20622,7 +20770,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
 
-  var _component_TrainersList = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("TrainersList");
+  var _component_TeamsSlider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("TeamsSlider");
 
   var _component_CertificateSlider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("CertificateSlider");
 
@@ -20630,7 +20778,11 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header, {
     "class": "header-invert"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_GallerySlider)]), _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_GallerySlider, {
+    images: $data.gallery
+  }, null, 8
+  /* PROPS */
+  , ["images"])]), _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "all-our-trainers-link",
     to: "/team-g"
   }, {
@@ -20640,7 +20792,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     _: 1
     /* STABLE */
 
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_TrainersList, {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_TeamsSlider, {
     trainers: $data.trainers,
     isOpen: $data.isOpen,
     onChangeOpen: _cache[1] || (_cache[1] = function (e) {
@@ -20648,7 +20800,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   }, null, 8
   /* PROPS */
-  , ["trainers", "isOpen"])]), _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CertificateSlider), _hoisted_11]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  , ["trainers", "isOpen"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <TrainersList\n            :trainers=\"trainers\"\n            :isOpen=\"isOpen\"\n            @changeOpen=\"(e) => change(e)\"\n        /> ")]), _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CertificateSlider), _hoisted_12]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 });
@@ -20897,7 +21049,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   }, null, 8
   /* PROPS */
-  , ["trainers", "isOpen"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AreasSliderG), _hoisted_18]), _hoisted_19, _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"text-block-1\">\r\n    main g\r\n    {{ $t(\"msg\") }}\r\n  </div> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  , ["trainers", "isOpen"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AreasSliderG), _hoisted_18]), _hoisted_19, _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"text-block-1\">\n    main g\n    {{ $t(\"msg\") }}\n  </div> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 });
@@ -21172,7 +21324,10 @@ var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_12__.createRouter)({
   }, {
     path: '/simulators-g',
     component: _views_SimulatorsG_vue__WEBPACK_IMPORTED_MODULE_7__.default
-  }]
+  }],
+  scrollBehavior: function scrollBehavior() {
+    document.getElementById('gbslevel-app').scrollIntoView();
+  }
 });
 var _data = {
   isLoading: false,
@@ -23104,7 +23259,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?736193b044696161e2a6e9f91539c73e");
 
 /***/ }),
 
@@ -23134,7 +23289,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?df90caa4b4466fae2999be366ce12b13");
 
 /***/ }),
 
@@ -23164,7 +23319,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?d94603bf7c6c5c4b24c3e6245db8ea26");
 
 /***/ }),
 
@@ -23273,10 +23428,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/images/TeamG/gallery/photo-1.jpg":
-/*!***********************************************************!*\
-  !*** ./resources/assets/images/TeamG/gallery/photo-1.jpg ***!
-  \***********************************************************/
+/***/ "./resources/assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg":
+/*!**********************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg ***!
+  \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -23284,14 +23439,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/photo-1.jpg?37aa788634c5ac6d5bf7ea8b34290516");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_1540-1_370x370.jpg?0550fb8629206eff1ca41ae541a7ae27");
 
 /***/ }),
 
-/***/ "./resources/assets/images/TeamG/gallery/photo-2.jpg":
-/*!***********************************************************!*\
-  !*** ./resources/assets/images/TeamG/gallery/photo-2.jpg ***!
-  \***********************************************************/
+/***/ "./resources/assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg":
+/*!**********************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg ***!
+  \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -23299,14 +23454,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/photo-2.jpg?0e3c1df8fccd657ae34980099b213670");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_1548-1_370x370.jpg?16573bf687218b3aa35ba182e7b2180c");
 
 /***/ }),
 
-/***/ "./resources/assets/images/TeamG/gallery/photo-3.jpg":
-/*!***********************************************************!*\
-  !*** ./resources/assets/images/TeamG/gallery/photo-3.jpg ***!
-  \***********************************************************/
+/***/ "./resources/assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg":
+/*!**********************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg ***!
+  \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -23314,7 +23469,112 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/photo-3.jpg?d456232f1e5cb6a892f722fa0d29e4bb");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_1620-1_370x370.jpg?1895c2c51ed65b8ab7df2009c27fa36a");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg":
+/*!**********************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_1627-1_370x370.jpg?623f1fce662dd0ab555c90fe64ade73a");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg":
+/*!**********************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_1635-1_370x370.jpg?83c416823e655638a0b269114f8ade63");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/IMG_4574_370x370.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/IMG_4574_370x370.jpg ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_4574_370x370.jpg?18fe789acedecb7a999e631ba7e8e0a9");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/IMG_4583_370x370.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/IMG_4583_370x370.jpg ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_4583_370x370.jpg?ebd0adbaa154b385c8a9db30f2494a24");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/IMG_4595_370x370.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/IMG_4595_370x370.jpg ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_4595_370x370.jpg?efe8366ce6f198f97393dbd377f539ad");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/IMG_4608_370x370.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/IMG_4608_370x370.jpg ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_4608_370x370.jpg?de607e352b8634142a71ba4c55b6cb21");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/IMG_4614_370x370.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/IMG_4614_370x370.jpg ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_4614_370x370.jpg?f886bff94be1188508e8f4386ad6f1bc");
 
 /***/ }),
 
@@ -23434,7 +23694,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?4322557835a36f1758bad92f49d6dca9");
 
 /***/ }),
 
@@ -23479,7 +23739,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-water-text.svg?96ffed6606128a90b9107d563f89bd05");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-water-text.svg?6ee2cadd0d229a2a8feead3efd3f7472");
 
 /***/ }),
 
@@ -23757,6 +24017,19 @@ __webpack_require__.r(__webpack_exports__);
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/ScrollTop.vue?vue&type=style&index=0&id=051e996d&lang=scss&scoped=true ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/TeamsSlider.vue?vue&type=style&index=0&id=004dd59c&lang=scss&scoped=true":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/TeamsSlider.vue?vue&type=style&index=0&id=004dd59c&lang=scss&scoped=true ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -34261,6 +34534,36 @@ _ScrollTop_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__fi
 
 /***/ }),
 
+/***/ "./resources/js/components/TeamsSlider.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/TeamsSlider.vue ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _TeamsSlider_vue_vue_type_template_id_004dd59c_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TeamsSlider.vue?vue&type=template&id=004dd59c&scoped=true */ "./resources/js/components/TeamsSlider.vue?vue&type=template&id=004dd59c&scoped=true");
+/* harmony import */ var _TeamsSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TeamsSlider.vue?vue&type=script&lang=js */ "./resources/js/components/TeamsSlider.vue?vue&type=script&lang=js");
+/* harmony import */ var _TeamsSlider_vue_vue_type_style_index_0_id_004dd59c_lang_scss_scoped_true__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TeamsSlider.vue?vue&type=style&index=0&id=004dd59c&lang=scss&scoped=true */ "./resources/js/components/TeamsSlider.vue?vue&type=style&index=0&id=004dd59c&lang=scss&scoped=true");
+
+
+
+
+;
+_TeamsSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _TeamsSlider_vue_vue_type_template_id_004dd59c_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render
+_TeamsSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__scopeId = "data-v-004dd59c"
+/* hot reload */
+if (false) {}
+
+_TeamsSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/components/TeamsSlider.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_TeamsSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
 /***/ "./resources/js/components/TrainerItem.vue":
 /*!*************************************************!*\
   !*** ./resources/js/components/TrainerItem.vue ***!
@@ -34758,6 +35061,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/TeamsSlider.vue?vue&type=script&lang=js":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/TeamsSlider.vue?vue&type=script&lang=js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TeamsSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TeamsSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./TeamsSlider.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/TeamsSlider.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/components/TrainerItem.vue?vue&type=script&lang=js":
 /*!*************************************************************************!*\
   !*** ./resources/js/components/TrainerItem.vue?vue&type=script&lang=js ***!
@@ -35158,6 +35477,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/TeamsSlider.vue?vue&type=template&id=004dd59c&scoped=true":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/TeamsSlider.vue?vue&type=template&id=004dd59c&scoped=true ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TeamsSlider_vue_vue_type_template_id_004dd59c_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TeamsSlider_vue_vue_type_template_id_004dd59c_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./TeamsSlider.vue?vue&type=template&id=004dd59c&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/TeamsSlider.vue?vue&type=template&id=004dd59c&scoped=true");
+
+
+/***/ }),
+
 /***/ "./resources/js/components/TrainerItem.vue?vue&type=template&id=6a0f304d&scoped=true":
 /*!*******************************************************************************************!*\
   !*** ./resources/js/components/TrainerItem.vue?vue&type=template&id=6a0f304d&scoped=true ***!
@@ -35474,6 +35809,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_clonedRuleSet_12_use_0_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_use_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ScrollTop_vue_vue_type_style_index_0_id_051e996d_lang_scss_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ScrollTop.vue?vue&type=style&index=0&id=051e996d&lang=scss&scoped=true */ "./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/ScrollTop.vue?vue&type=style&index=0&id=051e996d&lang=scss&scoped=true");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/TeamsSlider.vue?vue&type=style&index=0&id=004dd59c&lang=scss&scoped=true":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/components/TeamsSlider.vue?vue&type=style&index=0&id=004dd59c&lang=scss&scoped=true ***!
+  \**********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_clonedRuleSet_12_use_0_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_use_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TeamsSlider_vue_vue_type_style_index_0_id_004dd59c_lang_scss_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./TeamsSlider.vue?vue&type=style&index=0&id=004dd59c&lang=scss&scoped=true */ "./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/TeamsSlider.vue?vue&type=style&index=0&id=004dd59c&lang=scss&scoped=true");
 
 
 /***/ }),

@@ -21,24 +21,25 @@
         position: fixed;
         bottom: 310px;
         right: 10px;
-        color: #fff;
-        mix-blend-mode: difference;
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 14px;
+        mix-blend-mode: color;
+
         &>.scroll-text{
-            // font-family: Raleway;
-            // font-style: normal;
-            // font-weight: 500;
-            // font-size: 12px;
-            // line-height: 14px;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
             position: absolute;
+            color: #fff;
             bottom: 18px;
             right: -20px;
             margin: 0;
             transform: translateX(-50%) rotate(-90deg);
+            @supports (mix-blend-mode: color) {
+                    color: #fff;
+                    mix-blend-mode: color;
+            }
+
         }
 
         &>img{
@@ -54,4 +55,5 @@
             height: 80px;
         }
     }
+
 </style>
