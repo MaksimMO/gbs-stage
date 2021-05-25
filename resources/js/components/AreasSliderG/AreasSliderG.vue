@@ -1,6 +1,6 @@
 
 <template>
-<swiper :navigation="true" class="mySwiper">
+<swiper :navigation="true" class="mySwiper" v-if="isSlider">
   <swiper-slide v-for="slide in slides" :key="slide.id">
     <img :src="slide.imageUrl" />
       <div class="text-block">
@@ -11,6 +11,16 @@
     </div>
   </swiper-slide>
   </swiper>
+  <div v-else class="container-areas">
+    <div class="area" v-for="slide in slides" :key="slide.id">
+      <img :src="slide.imageUrl" />
+      <div class="text-block">
+        <div class="title">{{slide.title}}</div>
+        <div class="description">{{slide.description}}</div>
+        <router-link :to="`area-g-${slide.id}`" class="link-2">Переглянути</router-link>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -24,6 +34,11 @@ SwiperCore.use([Navigation]);
 
 
 export default {
+  props:{
+    isSlider:{
+      default:true
+    }
+  },
   components: {
     Swiper,
     SwiperSlide,
@@ -54,50 +69,10 @@ export default {
 @import 'swiper/components/navigation/navigation.min.css';
 
 
-.mySwiper {
-  width: 100%;
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    --swiper-navigation-size: 25px;
-    --swiper-navigation-color: #fff;
-    opacity: 0.45;
-  }
+@mixin area-main{
 
-  .swiper-button-prev {
-    left: 60px !important;
-  }
 
-  .swiper-button-next {
-    right: 60px !important;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .current-slide-number {
-      align-self: end;
-      text-align: left;
-      font-family: Raleway;
-      font-size: 24px;
-      letter-spacing: 0.05em;
-      font-feature-settings: "pnum" on, "lnum" on;
-      color: #ffffff;
-      opacity: 0.45;
-    }
 
     .text-block {
       position: absolute;
@@ -108,6 +83,7 @@ export default {
       padding: 0 0 64px 120px;
       display: grid;
       grid-template-rows: minmax(min-content, 92px) 1fr 1fr min-content;
+
       .title {
         font-family: Oswald;
         font-weight: 600;
@@ -115,7 +91,10 @@ export default {
         line-height: 96px;
         letter-spacing: 0.01em;
         font-feature-settings: "pnum" on, "lnum" on;
-        color: #916c58;
+        color: #FFFFFF;
+
+        opacity: 0.8;
+
         text-align: left;
         align-self: end;
         margin-bottom: 30px;
@@ -166,7 +145,93 @@ export default {
       }
     }
   }
+
+
+
+.mySwiper {
+  width: 100%;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    --swiper-navigation-size: 25px;
+    --swiper-navigation-color: #fff;
+    opacity: 0.45;
+  }
+
+  .swiper-button-prev {
+    left: 60px !important;
+  }
+
+  .swiper-button-next {
+    right: 60px !important;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .current-slide-number {
+      align-self: end;
+      text-align: left;
+      font-family: Raleway;
+      font-size: 24px;
+      letter-spacing: 0.05em;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #ffffff;
+      opacity: 0.45;
+    }
+
+    @include area-main;
+  }
 }
+
+.container-areas{
+  width: 100%;
+
+  .area {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & + .area{
+      margin-top: 30px;
+    }
+
+
+    .text-block {
+      grid-template-rows: 1fr 1fr min-content;
+    }
+
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+
+  @include area-main;
+}
+
 </style>
 
 

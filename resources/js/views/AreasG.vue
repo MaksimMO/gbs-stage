@@ -1,20 +1,46 @@
 <template>
+ <Header class="header-invert" />
 <div class="areas-g">
-  Стронінка у процесі розробки...
+  <div class="title">
+    Зонування
+  </div>
+  <AreasSliderG :isSlider="false" />
 </div>
+  <Footer />
 </template>
 
 <script>
+import AreasSliderG from '../components/AreasSliderG/AreasSliderG.vue'
+import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue'
 export default {
+  components:{
+    AreasSliderG,
+    Header,
+    Footer
+  }
 
 }
+
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 
 .areas-g{
     background-color: #fff;
-    height: 100%;
+    padding-top: 208px;
+
+    .title{
+      font-family: Oswald;
+      font-weight: 600;
+      font-size: 52px;
+      line-height: 54px;
+      letter-spacing: 0.02em;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #000000;
+      margin-bottom: 30px;
+      margin-left: 216px;
+    }
 }
 
 </style>>
