@@ -55,6 +55,10 @@ button span {
     display: inline-block;
 }
 
+.overfllow-hidden {
+    overflow: hidden;
+}
+
 @media screen and (max-width: 767px) {
     button {
         padding-left: 20px;
@@ -62,3 +66,4 @@ button span {
         font-size: 12px;
     }
 }
+

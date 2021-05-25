@@ -1,8 +1,8 @@
 
 <template>
   <swiper :navigation="true" :slidesPerView="'auto'" >
-    <swiper-slide v-for="image in images" :key="image.id">
-        <img :src="image.imageUrl" />
+    <swiper-slide v-for="image in images" :key="image.id" @click="checkClick">
+        <img :src="image.imageUrl"/>
     </swiper-slide>
     <swiper-slide></swiper-slide>
   </swiper>
@@ -42,7 +42,9 @@ export default {
     };
   },
   methods: {
-
+      checkClick() {
+          console.log('click sertificate');
+      }
   },
 
 }
@@ -90,21 +92,55 @@ export default {
     padding: 0 39px 0 39px;
     max-width: 18.7vw !important;
     height: auto;
+    &::after {
+        content: url('../../assets/images/zoom-img.svg');
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    &:hover::after {
+        display: flex;
+    }
   }
 
-.swiper-slide-prev img {
-    opacity: 0.5;
+.swiper-slide-prev {
+    pointer-events: none;
+    &::after {
+        content: '';
+        position: unset;
+        display: none;
+        background-color: unset;
+        width: unset;
+        height: unset;
+    }
+    & img {
+        opacity: 0.5;
+    }
 }
 
 .swiper-slide-next + .swiper-slide + .swiper-slide {
-      img{
-            opacity: 0.5;
-        }
+    pointer-events: none;
+    &::after {
+        content: '';
+        position: unset;
+        background-color: unset;
+        width: unset;
+        height: unset;
+        display: none;
+    }
+    & img{
+        opacity: 0.5;
+    }
   }
 
-.isOpacity {
-   opacity: 0.5;
-}
+// .isOpacity {
+//    opacity: 0.5;
+// }
 
 .swiper-slide img {
     display: block;

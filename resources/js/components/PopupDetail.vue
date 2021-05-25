@@ -15,10 +15,10 @@
 export default {
     props: ['simulatorDetail'],
     mounted() {
-        document.body.style.overflow = 'hidden';
+        document.body.classList.add('overfllow-hidden');
     },
     unmounted(){
-        document.body.style.overflow = 'auto';
+        document.body.classList.remove('overfllow-hidden');
     }
 }
 </script>
@@ -31,9 +31,6 @@ export default {
     height: 100%;
     width: 100%;
     top: 0;
-    // transition: backdrop-filter .5s ease-in-out,
-    //     -webkit-backdrop-filter .5s ease-in-out,
-    //     background-color .5s ease-in-out;
     background-color: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);

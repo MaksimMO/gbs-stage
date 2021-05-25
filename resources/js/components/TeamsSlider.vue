@@ -62,13 +62,13 @@ export default {
         --swiper-navigation-size: 20px;
         --swiper-navigation-color: #000;
         opacity: 1;
-        left: 60px !important;
+        left: 20px !important;
     }
     ::v-deep(.swiper-button-next) {
         --swiper-navigation-size: 20px;
         --swiper-navigation-color: #000;
         opacity: 1;
-        right: 60px !important;
+        right: 20px !important;
     }
 }
 
@@ -91,17 +91,6 @@ export default {
         margin-bottom: 0;
         width: 100%;
         height: 100%;
-        // &:nth-child(2n){
-        //     // transform-origin: right;
-        //     margin-top: 50px;
-        // }
-
-        // &:nth-child(4n+1){
-        //     transform-origin: left;
-        // }
-        // & .description{
-        //     position: unset;
-        // }
 
         &.is-scaled{
             transform:scale(1.3);

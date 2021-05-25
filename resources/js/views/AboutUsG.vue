@@ -58,11 +58,6 @@
                 @changeOpen="(e) => change(e)"
             />
         </div>
-        <!-- <TrainersList
-            :trainers="trainers"
-            :isOpen="isOpen"
-            @changeOpen="(e) => change(e)"
-        /> -->
     </section>
     <section class="certificate-title">
         <h1>Нагороди та сертифікати</h1>

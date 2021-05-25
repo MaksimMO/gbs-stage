@@ -35,9 +35,9 @@
 
 
         <teleport to="body">
-            <transition-group name="popup-detail">
+            <transition name="popup-detail">
                 <PopupDetail v-if="isModalOpen"  @closePopup="isModalOpen = false" :simulatorDetail="simulatorDetail"/>
-            </transition-group>
+            </transition>
         </teleport>
 
 <Footer />
@@ -95,6 +95,9 @@ export default {
                 {id: 37, direction: "free_weights", link: require("../../assets/images/simulator-default.jpg").default}
             ]
         }
+    },
+    mounted() {
+        console.log('isMobile', this.$root.$data.isMobile);
     },
     methods: {
         change(e) {
@@ -221,6 +224,35 @@ export default {
             }
         }
     }
+    @media screen and (max-width: 768px){
+      .simulator-direction {
+        font-size: 14px;
+        padding: 0 15px;
+        & > .direction {
+            display: grid;
+            grid-column-gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 22px;
+            border-bottom: none;
+            & li {
+                padding-bottom: 5px;
+                &:hover {
+                    color: #916C58;
+                }
+            }
+        }
+        .invert-color{
+            color: #916C58;
+            border-bottom: solid 2px #916C58;
+        }
+        & .simulator {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 30px;
+        }
+      }
+    }
+
     .popup-detail-enter-active,
     .popup-detail-leave-active {
         transition: all .2s ease;
