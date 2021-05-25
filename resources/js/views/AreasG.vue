@@ -28,7 +28,7 @@ export default {
 
 .areas-g{
     background-color: #fff;
-    padding-top: 208px;
+    padding: 208px 30px 60px;
 
     .title{
       font-family: Oswald;
