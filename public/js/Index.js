@@ -19765,8 +19765,30 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_swiper, {
     navigation: true,
-    slidesPerView: 3,
-    spaceBetween: 15
+    slidesPerView: 2,
+    spaceBetween: 15,
+    breakpoints: {
+      '640': {
+        'slidesPerView': 2,
+        'spaceBetween': 15
+      },
+      '768': {
+        'slidesPerView': 3,
+        'spaceBetween': 15
+      },
+      '1024': {
+        'slidesPerView': 3,
+        'spaceBetween': 15
+      },
+      '1440': {
+        'slidesPerView': 3,
+        'spaceBetween': 15
+      },
+      '2560': {
+        'slidesPerView': 4,
+        'spaceBetween': 15
+      }
+    }
   }, {
     "default": _withId(function () {
       return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.images, function (image) {

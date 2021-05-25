@@ -1681,6 +1681,7 @@ html, body {
 }
 .swiper-slide img[data-v-a1dfde10] {
   display: block;
+  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;

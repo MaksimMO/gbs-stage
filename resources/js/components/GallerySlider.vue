@@ -1,6 +1,32 @@
 
 <template>
-  <swiper :navigation="true" :slidesPerView="3" :spaceBetween="15">
+  <swiper
+    :navigation="true"
+    :slidesPerView="2"
+    :spaceBetween="15"
+    :breakpoints="{
+        '640': {
+            'slidesPerView': 2,
+            'spaceBetween': 15
+        },
+        '768': {
+            'slidesPerView': 3,
+            'spaceBetween': 15
+        },
+        '1024': {
+            'slidesPerView': 3,
+            'spaceBetween': 15
+        },
+        '1440': {
+            'slidesPerView': 3,
+            'spaceBetween': 15
+        },
+        '2560': {
+            'slidesPerView': 4,
+            'spaceBetween': 15
+        }
+    }"
+  >
     <swiper-slide v-for="image in images" :key="image.id">
         <img :src="image.imageUrl" />
     </swiper-slide>
@@ -76,7 +102,7 @@ export default {
 
 .swiper-slide img {
     display: block;
-    // width: 100%;
+    width: 100%;
     height: auto;
     object-fit: cover;
   }
