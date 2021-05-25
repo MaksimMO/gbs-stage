@@ -892,7 +892,6 @@ to {
   position: fixed;
   bottom: 310px;
   right: 10px;
-  mix-blend-mode: color;
 }
 .scrollTop > .scroll-text[data-v-051e996d] {
   font-family: Raleway;
@@ -901,17 +900,11 @@ to {
   font-size: 12px;
   line-height: 14px;
   position: absolute;
-  color: #fff;
+  color: #000;
   bottom: 18px;
   right: -20px;
   margin: 0;
   transform: translateX(-50%) rotate(-90deg);
-}
-@supports (mix-blend-mode: color) {
-.scrollTop > .scroll-text[data-v-051e996d] {
-    color: #fff;
-    mix-blend-mode: color;
-}
 }
 .scrollTop > img[data-v-051e996d] {
   height: 65px;
@@ -1709,10 +1702,12 @@ html, body {
   transform-origin: left;
 }
 .swiper-slide-prev[data-v-004dd59c] {
+  transition: all 0.2s ease-in;
   pointer-events: none;
   opacity: 0;
 }
 .swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide[data-v-004dd59c] {
+  transition: all 0.2s ease-in;
   pointer-events: none;
   opacity: 0;
 }
@@ -1733,6 +1728,7 @@ html, body {
 .aboutUs-g[data-v-4edab8bb] {
   padding-top: 208px;
   background-color: #FFFFFF !important;
+  overflow: hidden;
 }
 .title[data-v-4edab8bb] {
   padding: 0 7.81vw;

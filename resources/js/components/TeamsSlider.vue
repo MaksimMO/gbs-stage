@@ -124,11 +124,13 @@ export default {
     }
 }
 .swiper-slide-prev {
+    transition: all .2s ease-in;
     pointer-events: none;
     opacity: 0;
 }
 
 .swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide{
+    transition: all .2s ease-in;
     pointer-events: none;
     opacity: 0;
 }

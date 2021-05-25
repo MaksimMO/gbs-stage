@@ -21,7 +21,7 @@
         position: fixed;
         bottom: 310px;
         right: 10px;
-        mix-blend-mode: color;
+        // mix-blend-mode: color;
 
         &>.scroll-text{
             font-family: Raleway;
@@ -30,15 +30,15 @@
             font-size: 12px;
             line-height: 14px;
             position: absolute;
-            color: #fff;
+            color: #000;
             bottom: 18px;
             right: -20px;
             margin: 0;
             transform: translateX(-50%) rotate(-90deg);
-            @supports (mix-blend-mode: color) {
-                    color: #fff;
-                    mix-blend-mode: color;
-            }
+            // @supports (mix-blend-mode: color) {
+            //         color: #fff;
+            //         mix-blend-mode: color;
+            // }
 
         }
 

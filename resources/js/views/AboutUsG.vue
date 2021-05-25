@@ -150,11 +150,9 @@ export default {
     .aboutUs-g {
         padding-top: 208px;
         background-color: #FFFFFF !important;
+        overflow: hidden;
     }
     .title {
-        // width: 80%;
-        // margin-left: auto;
-        // margin-right: auto;
         padding: 0 7.81vw;
         margin-bottom: 60px;
     }
@@ -276,7 +274,6 @@ export default {
             justify-content: space-between;
             position: relative;
             padding-right: 150px;
-            // margin-bottom: 74px;
             p {
                 margin: 0;
             }
