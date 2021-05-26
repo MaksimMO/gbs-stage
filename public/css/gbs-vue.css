@@ -535,7 +535,7 @@ label[data-v-8048fca2] {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(105%);
 }
 .header-invert .main > a > .logo.g[data-v-1f42fb90] {
-  background: url(/images/g-level-darck.svg?c361667f2e00cb0a3637e2f975c1cc80) no-repeat;
+  background: url(/images/g-level-darck.svg?b12f10e8b0ef5b7d9921289b7942c945) no-repeat;
   background-size: contain;
 }
 .is-open[data-v-1f42fb90] {
@@ -553,7 +553,7 @@ label[data-v-8048fca2] {
   color: #fff;
 }
 .is-open .main > a > .logo.g[data-v-1f42fb90] {
-  background: url(/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca) no-repeat;
+  background: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9) no-repeat;
   background-size: contain;
 }
 .main[data-v-1f42fb90] {
@@ -576,7 +576,7 @@ label[data-v-8048fca2] {
 }
 }
 .main > a > .logo.g[data-v-1f42fb90] {
-  background: url(/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca) no-repeat;
+  background: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9) no-repeat;
   background-size: contain;
 }
 .main > a > .logo.b[data-v-1f42fb90] {
@@ -635,7 +635,7 @@ label[data-v-8048fca2] {
   color: #000;
 }
 .main .menu-open[data-v-1f42fb90] {
-  background-image: url(/images/menu-open.svg?87e74746bd587cbd0c724e573fb0b27a);
+  background-image: url(/images/menu-open.svg?761c80ccaf88f896e093367310cae5ba);
   width: 38px;
   height: 21px;
 }
@@ -708,7 +708,7 @@ label[data-v-8048fca2] {
   height: 38px;
 }
 .isScroll .main > a > .logo.g[data-v-1f42fb90] {
-  background: url(/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca) no-repeat;
+  background: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9) no-repeat;
   background-size: contain;
 }
 @-webkit-keyframes animate-circle {
@@ -788,7 +788,7 @@ to {
   justify-self: normal;
 }
 .footer .line-1 .logo.g {
-  background-image: url(/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca);
+  background-image: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9);
 }
 .footer .line-1 .logo.b {
   background-image: url(/images/b-level.svg?65998a52bc75e3367d5878dba8f72615);
@@ -823,13 +823,13 @@ to {
   height: 16px;
 }
 .footer .line-1 .social-networks > a.youtube {
-  background-image: url(/images/youtube.svg?c1677447c97f633ce596b4c52413efe4);
+  background-image: url(/images/youtube.svg?1142378c070c1d6d4c4c76264aa458ab);
 }
 .footer .line-1 .social-networks > a.facebook {
-  background-image: url(/images/facebook.svg?54bf56baa5ce9b1b5bd010cd9e02909e);
+  background-image: url(/images/facebook.svg?b7485c04d1d306c6218574a3ac8af002);
 }
 .footer .line-1 .social-networks > a.instagram {
-  background-image: url(/images/instagram.svg?a21938e086d667a24449c981641902d2);
+  background-image: url(/images/instagram.svg?63a0b3819ce60d3152e6007738817613);
 }
 .footer .line-2 {
   margin-top: 40px;
@@ -994,7 +994,7 @@ html, body {
 }
 }
 .feed_back_view .logo.g[data-v-28c122d5] {
-  background-image: url(/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca);
+  background-image: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9);
 }
 .feed_back_view .logo.b[data-v-28c122d5] {
   background-image: url(/images/b-level.svg?65998a52bc75e3367d5878dba8f72615);
@@ -1478,7 +1478,7 @@ html, body {
   color: #ffff;
 }
 .techno-gym-container .col-1 .logo[data-v-6918511f] {
-  background-image: url(/images/technogym-logo.svg?58e84d71995a27ba4ec62ad8d48a4fc6);
+  background-image: url(/images/technogym-logo.svg?b19c87b75ba105dc1de99317eb2b7c3e);
   background-repeat: no-repeat;
   height: 48px;
   widows: 174px;
@@ -1509,12 +1509,12 @@ html, body {
   padding-top: 210px;
   box-sizing: border-box;
   background-color: #ffff;
-  background: url(/images/main-g-our-team-water-text.svg?6b9c63279b48909a3c9b2812fd082f9b) no-repeat 50px 50px, #fff;
+  background: url(/images/main-g-our-team-water-text.svg?b3bc1a5b892346aba7f4f498b479dd63) no-repeat 50px 50px, #fff;
 }
 .our-team-container .our-team-container_header[data-v-6918511f] {
   font-family: "Oswald";
   height: 83px;
-  background: url(/images/rectangle-1.svg?572b0668a66b51ba2d0c019cf5872bf5) no-repeat;
+  background: url(/images/rectangle-1.svg?e5b6c711ae755c10eb619cde8698d8b8) no-repeat;
   color: #000000;
   font-weight: 600;
   font-size: 48px;
@@ -1697,7 +1697,7 @@ html, body {
   height: auto;
 }
 .swiper-slide[data-v-4a2d3a7d]::after {
-  content: url(/images/zoom-img.svg?e7724d44281f74e3d5d0723bf72fefdb);
+  content: url(/images/zoom-img.svg?a7b077eb6c87af5c6b383e8bb2e95e2b);
   display: none;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.1);
@@ -2154,7 +2154,7 @@ html, body {
   background-color: #FFFFFF !important;
 }
 .simulator-g .logo[data-v-bcffb62e] {
-  background-image: url(/images/technogym-logo-black.svg?6e3384e0b81af3319ec84d54c3f183b8);
+  background-image: url(/images/technogym-logo-black.svg?41e9fcde23524c6f008c5c6aa677f53e);
   background-repeat: no-repeat;
   height: 84px;
   width: 310px;

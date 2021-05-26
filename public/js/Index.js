@@ -19032,155 +19032,155 @@ __webpack_require__.r(__webpack_exports__);
       simulators: [{
         id: 0,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/vertical_traction.jpg */ "./resources/assets/images/simulators/vertical_traction.jpg").default
       }, {
         id: 1,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/shoulder_press.jpg */ "./resources/assets/images/simulators/shoulder_press.jpg").default
       }, {
         id: 2,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/chest_press.jpg */ "./resources/assets/images/simulators/chest_press.jpg").default
       }, {
         id: 3,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/dual_prectoral_reverse_fly.jpg */ "./resources/assets/images/simulators/dual_prectoral_reverse_fly.jpg").default
       }, {
         id: 4,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/pull_down.jpg */ "./resources/assets/images/simulators/pull_down.jpg").default
       }, {
         id: 5,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/low_row.jpg */ "./resources/assets/images/simulators/low_row.jpg").default
       }, {
         id: 6,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/wide_chest_press.jpg */ "./resources/assets/images/simulators/wide_chest_press.jpg").default
       }, {
         id: 7,
         direction: "upper_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/incline_chest_press.jpg */ "./resources/assets/images/simulators/incline_chest_press.jpg").default
       }, {
         id: 8,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/dual_abd.jpg */ "./resources/assets/images/simulators/dual_abd.jpg").default
       }, {
         id: 9,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/leg_extension.jpg */ "./resources/assets/images/simulators/leg_extension.jpg").default
       }, {
         id: 10,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/ne_leg_curl.jpg */ "./resources/assets/images/simulators/ne_leg_curl.jpg").default
       }, {
         id: 11,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/simulator-default.jpg */ "./resources/assets/images/simulators/simulator-default.jpg").default
       }, {
         id: 12,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/rear_kick.jpg */ "./resources/assets/images/simulators/rear_kick.jpg").default
       }, {
         id: 13,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/Linear_leg_press.jpg */ "./resources/assets/images/simulators/Linear_leg_press.jpg").default
       }, {
         id: 14,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/leg_press.jpg */ "./resources/assets/images/simulators/leg_press.jpg").default
       }, {
         id: 15,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/leg_curl.jpg */ "./resources/assets/images/simulators/leg_curl.jpg").default
       }, {
         id: 16,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/hack_squat.jpg */ "./resources/assets/images/simulators/hack_squat.jpg").default
       }, {
         id: 17,
         direction: "cardio",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/run_live_500.jpg */ "./resources/assets/images/simulators/run_live_500.jpg").default
       }, {
         id: 18,
         direction: "cardio",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/synchro_live_700.jpg */ "./resources/assets/images/simulators/synchro_live_700.jpg").default
       }, {
         id: 19,
         direction: "cardio",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/bake_live_500.jpg */ "./resources/assets/images/simulators/bake_live_500.jpg").default
       }, {
         id: 20,
         direction: "cardio",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/recline_live_500.jpg */ "./resources/assets/images/simulators/recline_live_500.jpg").default
       }, {
         id: 21,
         direction: "cardio",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/climb_live_500.jpg */ "./resources/assets/images/simulators/climb_live_500.jpg").default
       }, {
         id: 22,
         direction: "cardio",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/group_cycle_connect.jpg */ "./resources/assets/images/simulators/group_cycle_connect.jpg").default
       }, {
         id: 23,
         direction: "multifunction_simulators",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/simulator-default.jpg */ "./resources/assets/images/simulators/simulator-default.jpg").default
       }, {
         id: 24,
         direction: "multifunction_simulators",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/dual_adjustable_pulley.png */ "./resources/assets/images/simulators/dual_adjustable_pulley.png").default
       }, {
         id: 25,
         direction: "multifunction_simulators",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/kneeling_easy_chin_dip.jpg */ "./resources/assets/images/simulators/kneeling_easy_chin_dip.jpg").default
       }, {
         id: 26,
         direction: "multifunction_simulators",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/cable_stations_connector.jpg */ "./resources/assets/images/simulators/cable_stations_connector.jpg").default
       }, {
         id: 27,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/simulator-default.jpg */ "./resources/assets/images/simulators/simulator-default.jpg").default
       }, {
         id: 28,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/universal_storage.jpg */ "./resources/assets/images/simulators/universal_storage.jpg").default
       }, {
         id: 29,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/pure_strength_olympic_incline_bench.jpg */ "./resources/assets/images/simulators/pure_strength_olympic_incline_bench.jpg").default
       }, {
         id: 30,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/pure_strength_olympic_flat_bench.jpg */ "./resources/assets/images/simulators/pure_strength_olympic_flat_bench.jpg").default
       }, {
         id: 31,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/scott_bench.jpg */ "./resources/assets/images/simulators/scott_bench.jpg").default
       }, {
         id: 32,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/adjustable_bench.jpg */ "./resources/assets/images/simulators/adjustable_bench.jpg").default
       }, {
         id: 33,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/lower_back_bench.jpg */ "./resources/assets/images/simulators/lower_back_bench.jpg").default
       }, {
         id: 34,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/ghd_bench.jpg */ "./resources/assets/images/simulators/ghd_bench.jpg").default
       }, {
         id: 35,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/adjustable_decline_ab_crunch.jpg */ "./resources/assets/images/simulators/adjustable_decline_ab_crunch.jpg").default
       }, {
         id: 36,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/simulator-default.jpg */ "./resources/assets/images/simulators/simulator-default.jpg").default
       }, {
         id: 37,
         direction: "free_weights",
-        link: __webpack_require__(/*! ../../assets/images/simulator-default.jpg */ "./resources/assets/images/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/simulator-default.jpg */ "./resources/assets/images/simulators/simulator-default.jpg").default
       }]
     };
   },
@@ -20145,7 +20145,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
         }, ["exact"]), ["esc"]))]
       }, [_hoisted_3], 544
       /* HYDRATE_EVENTS, NEED_PATCH */
-      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\r\n          <a\r\n            href=\"#\"\r\n            @click.prevent=\"setLocale('ru')\"\r\n            @keydown.shift.tab=\"focusPrevious(false)\"\r\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\r\n            @keydown.down.exact.prevent=\"\"\r\n            @keydown.tab.exact=\"hideDropdown\"\r\n            @keydown.esc.exact=\"hideDropdown\"\r\n          >\r\n            <span>RU</span>\r\n          </a>\r\n        </li> ")], 512
+      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\n          <a\n            href=\"#\"\n            @click.prevent=\"setLocale('ru')\"\n            @keydown.shift.tab=\"focusPrevious(false)\"\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\n            @keydown.down.exact.prevent=\"\"\n            @keydown.tab.exact=\"hideDropdown\"\n            @keydown.esc.exact=\"hideDropdown\"\n          >\n            <span>RU</span>\n          </a>\n        </li> ")], 512
       /* NEED_PATCH */
       )), [[_directive_click_away, $options.hideDropdown]]) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
@@ -21158,7 +21158,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   }, null, 8
   /* PROPS */
-  , ["trainers", "isOpen"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AreasSliderG), _hoisted_18]), _hoisted_19, _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"text-block-1\">\r\n    main g\r\n    {{ $t(\"msg\") }}\r\n  </div> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  , ["trainers", "isOpen"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AreasSliderG), _hoisted_18]), _hoisted_19, _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"text-block-1\">\n    main g\n    {{ $t(\"msg\") }}\n  </div> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 });
@@ -23368,7 +23368,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?736193b044696161e2a6e9f91539c73e");
 
 /***/ }),
 
@@ -23398,7 +23398,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?df90caa4b4466fae2999be366ce12b13");
 
 /***/ }),
 
@@ -23428,7 +23428,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?d94603bf7c6c5c4b24c3e6245db8ea26");
 
 /***/ }),
 
@@ -23803,7 +23803,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?4322557835a36f1758bad92f49d6dca9");
 
 /***/ }),
 
@@ -23848,7 +23848,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-water-text.svg?96ffed6606128a90b9107d563f89bd05");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-water-text.svg?6ee2cadd0d229a2a8feead3efd3f7472");
 
 /***/ }),
 
@@ -23897,10 +23897,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/images/simulator-default.jpg":
-/*!*******************************************************!*\
-  !*** ./resources/assets/images/simulator-default.jpg ***!
-  \*******************************************************/
+/***/ "./resources/assets/images/simulators/Linear_leg_press.jpg":
+/*!*****************************************************************!*\
+  !*** ./resources/assets/images/simulators/Linear_leg_press.jpg ***!
+  \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -23908,7 +23908,502 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/simulator-default.jpg?7af8580fe2257658647a2cfb06670209");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Linear_leg_press.jpg?1f39a06f4bf0008ec55c8beee6fd2ac1");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/adjustable_bench.jpg":
+/*!*****************************************************************!*\
+  !*** ./resources/assets/images/simulators/adjustable_bench.jpg ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/adjustable_bench.jpg?599ebb7bb0311ed9759ada6405871af2");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/adjustable_decline_ab_crunch.jpg":
+/*!*****************************************************************************!*\
+  !*** ./resources/assets/images/simulators/adjustable_decline_ab_crunch.jpg ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/adjustable_decline_ab_crunch.jpg?44de9d2f7ba85c62d9238012997ebccb");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/bake_live_500.jpg":
+/*!**************************************************************!*\
+  !*** ./resources/assets/images/simulators/bake_live_500.jpg ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/bake_live_500.jpg?38acdc696b6ddc5069f45065a367f09e");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/cable_stations_connector.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/simulators/cable_stations_connector.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/cable_stations_connector.jpg?67c93722ea848d041b76be7fe4f7860c");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/chest_press.jpg":
+/*!************************************************************!*\
+  !*** ./resources/assets/images/simulators/chest_press.jpg ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/chest_press.jpg?426ea58a8600cc80b23021eeaf2c9bd6");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/climb_live_500.jpg":
+/*!***************************************************************!*\
+  !*** ./resources/assets/images/simulators/climb_live_500.jpg ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/climb_live_500.jpg?a946cf0982b51d4b89d497953e9185d0");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/dual_abd.jpg":
+/*!*********************************************************!*\
+  !*** ./resources/assets/images/simulators/dual_abd.jpg ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/dual_abd.jpg?11f519de2e89c72d94dfe100ad657f96");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/dual_adjustable_pulley.png":
+/*!***********************************************************************!*\
+  !*** ./resources/assets/images/simulators/dual_adjustable_pulley.png ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/dual_adjustable_pulley.png?16fa36697b4d3c1d834a84ec7e0d7ca9");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/dual_prectoral_reverse_fly.jpg":
+/*!***************************************************************************!*\
+  !*** ./resources/assets/images/simulators/dual_prectoral_reverse_fly.jpg ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/dual_prectoral_reverse_fly.jpg?002468755bbd09eeb508a4f0e7e2e0c2");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/ghd_bench.jpg":
+/*!**********************************************************!*\
+  !*** ./resources/assets/images/simulators/ghd_bench.jpg ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/ghd_bench.jpg?99663094958af4f707aef26c5810b3f3");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/group_cycle_connect.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/simulators/group_cycle_connect.jpg ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/group_cycle_connect.jpg?841e01cb594217472730085b67f84f71");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/hack_squat.jpg":
+/*!***********************************************************!*\
+  !*** ./resources/assets/images/simulators/hack_squat.jpg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/hack_squat.jpg?91bd0d614150192b6f290b83940c295a");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/incline_chest_press.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/simulators/incline_chest_press.jpg ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/incline_chest_press.jpg?628ea7629e595e0e0f4799e88254d52b");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/kneeling_easy_chin_dip.jpg":
+/*!***********************************************************************!*\
+  !*** ./resources/assets/images/simulators/kneeling_easy_chin_dip.jpg ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/kneeling_easy_chin_dip.jpg?9b766db01286963b403680ce07ef8203");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/leg_curl.jpg":
+/*!*********************************************************!*\
+  !*** ./resources/assets/images/simulators/leg_curl.jpg ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/leg_curl.jpg?2ebe2d9ba436f01d072cf1ca9fb707aa");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/leg_extension.jpg":
+/*!**************************************************************!*\
+  !*** ./resources/assets/images/simulators/leg_extension.jpg ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/leg_extension.jpg?122cd5f56c18f78e6559b29c16103255");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/leg_press.jpg":
+/*!**********************************************************!*\
+  !*** ./resources/assets/images/simulators/leg_press.jpg ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/leg_press.jpg?e96caeece732f1ca68ba3f1706f1e24c");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/low_row.jpg":
+/*!********************************************************!*\
+  !*** ./resources/assets/images/simulators/low_row.jpg ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/low_row.jpg?507a62c983bf79fef263955f2d5d9695");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/lower_back_bench.jpg":
+/*!*****************************************************************!*\
+  !*** ./resources/assets/images/simulators/lower_back_bench.jpg ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/lower_back_bench.jpg?e7f1401ec67f0d6781742f3d2509807f");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/ne_leg_curl.jpg":
+/*!************************************************************!*\
+  !*** ./resources/assets/images/simulators/ne_leg_curl.jpg ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/ne_leg_curl.jpg?0ffcca5d2c8767355fe5a9f44a6e38cd");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/pull_down.jpg":
+/*!**********************************************************!*\
+  !*** ./resources/assets/images/simulators/pull_down.jpg ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/pull_down.jpg?de1e38574e3856986d2ea5d62544a074");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/pure_strength_olympic_flat_bench.jpg":
+/*!*********************************************************************************!*\
+  !*** ./resources/assets/images/simulators/pure_strength_olympic_flat_bench.jpg ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/pure_strength_olympic_flat_bench.jpg?e95be56965f3afecb90c4324a0520cf4");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/pure_strength_olympic_incline_bench.jpg":
+/*!************************************************************************************!*\
+  !*** ./resources/assets/images/simulators/pure_strength_olympic_incline_bench.jpg ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/pure_strength_olympic_incline_bench.jpg?1a0e821973a1245674eba1ea785ac655");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/rear_kick.jpg":
+/*!**********************************************************!*\
+  !*** ./resources/assets/images/simulators/rear_kick.jpg ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/rear_kick.jpg?b50cb00f54b7418719f2c62ba46b5203");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/recline_live_500.jpg":
+/*!*****************************************************************!*\
+  !*** ./resources/assets/images/simulators/recline_live_500.jpg ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/recline_live_500.jpg?7a6c7f42c2fcef42e5fd0968941d4fa0");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/run_live_500.jpg":
+/*!*************************************************************!*\
+  !*** ./resources/assets/images/simulators/run_live_500.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/run_live_500.jpg?3a8ac1cdb5234440f3a4ddaa9fae67d2");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/scott_bench.jpg":
+/*!************************************************************!*\
+  !*** ./resources/assets/images/simulators/scott_bench.jpg ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/scott_bench.jpg?12f14a990237f02e972e8e40e442d046");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/shoulder_press.jpg":
+/*!***************************************************************!*\
+  !*** ./resources/assets/images/simulators/shoulder_press.jpg ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/shoulder_press.jpg?06581be0e5662a4713e634696f9308c4");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/simulator-default.jpg":
+/*!******************************************************************!*\
+  !*** ./resources/assets/images/simulators/simulator-default.jpg ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/simulator-default.jpg?8158d5ff917b4d21e5cc1fd2e94de894");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/synchro_live_700.jpg":
+/*!*****************************************************************!*\
+  !*** ./resources/assets/images/simulators/synchro_live_700.jpg ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/synchro_live_700.jpg?67f8d46915ef84a52f6ceada5e26ccf3");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/universal_storage.jpg":
+/*!******************************************************************!*\
+  !*** ./resources/assets/images/simulators/universal_storage.jpg ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/universal_storage.jpg?b5c7dea4b6b68f93373d4929488fd56a");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/vertical_traction.jpg":
+/*!******************************************************************!*\
+  !*** ./resources/assets/images/simulators/vertical_traction.jpg ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/vertical_traction.jpg?47666f36869a7926a30712c60abdfdd7");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/wide_chest_press.jpg":
+/*!*****************************************************************!*\
+  !*** ./resources/assets/images/simulators/wide_chest_press.jpg ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/wide_chest_press.jpg?8985e8b84f61348a9c2d67998c88d173");
 
 /***/ }),
 
