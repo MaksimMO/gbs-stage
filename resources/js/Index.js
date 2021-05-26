@@ -5,6 +5,7 @@
  import Root from './Root.vue'
  import FeedBackView from './components/FeedBackView.vue'
  import MainG from './views/MainG.vue'
+ import MainB from './views/MainB.vue'
  import TeamG from './views/TeamG.vue'
  import AboutUsG from './views/AboutUsG.vue'
  import AreasG from './views/AreasG.vue'
@@ -54,6 +55,11 @@
         {
             path:'/simulators-g',
             component:  SimulatorsG,
+        },
+        {
+            path: '/main-b',
+            component:  MainB,
+            name: 'MainB'
         },
 
     ],

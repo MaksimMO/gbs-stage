@@ -1,5 +1,5 @@
 <template>
-<Header class="header-invert" />
+<Header class="header-invert"  :level="'g'"/>
   <div class="team-g">
       <section class="title">
           <h1>Наша команда</h1>

@@ -1,6 +1,6 @@
 <template>
-  <Header :level="'g'"/>
-  <div class="view-main-g">
+  <Header :level="'b'"/>
+  <div class="view-main-b">
   <div class="top-image-container">
     <img class="top-image" src="../../assets/images/main-g-background.jpg" alt="">
     <img class="skew-image-1" src="../../assets/images/popup-corner.svg" alt="">

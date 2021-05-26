@@ -31,9 +31,10 @@ import LanguageSwitcher from "./LanguageSwitcher.vue";
 import MakeOrderPopup from './MakeOrderPopup.vue'
 
 export default {
+  props: ['level'],
   data() {
     return {
-      level: "g",
+    //   level: "g",
       isOpen: false,
       scrollYdata: 0,
       modalOpen:false
@@ -51,6 +52,7 @@ export default {
     // }
   },
   mounted(){
+    console.log('level', this.level);
     const debounce = (fn) => {
       let frame;
 

@@ -1,5 +1,5 @@
 <template>
-<Header class="header-invert" />
+<Header class="header-invert" :level="'g'"/>
   <div class="aboutUs-g">
     <section class="title">
         <h1>Про нас</h1>
