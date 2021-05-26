@@ -27,17 +27,15 @@ export default {
     return {
       isOpacity: false,
       images: [
-        { id: 1, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
-        { id: 2, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
-        { id: 3, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
-        { id: 4, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
-        { id: 5, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
-        { id: 6, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
-        { id: 7, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
-        { id: 8, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
-        { id: 9, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
-        { id: 10, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
-        { id: 11, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+        { id: 1, imageUrl: require("../../assets/images/TeamB/brandMakeUp/loreal.jpg").default },
+        { id: 2, imageUrl: require("../../assets/images/TeamB/brandMakeUp/dior.jpg").default },
+        { id: 3, imageUrl: require("../../assets/images/TeamB/brandMakeUp/academie.jpg").default },
+        { id: 4, imageUrl: require("../../assets/images/TeamB/brandMakeUp/loreal.jpg").default },
+        { id: 5, imageUrl: require("../../assets/images/TeamB/brandMakeUp/dior.jpg").default },
+        { id: 6, imageUrl: require("../../assets/images/TeamB/brandMakeUp/academie.jpg").default },
+        { id: 7, imageUrl: require("../../assets/images/TeamB/brandMakeUp/loreal.jpg").default },
+        { id: 8, imageUrl: require("../../assets/images/TeamB/brandMakeUp/dior.jpg").default },
+        { id: 9, imageUrl: require("../../assets/images/TeamB/brandMakeUp/academie.jpg").default },
       ],
     };
   },
@@ -89,23 +87,23 @@ export default {
     align-items: center;
     border-left: solid 2px #F3EFEC;
     border-right: solid 2px #F3EFEC;
-    padding: 0 39px 0 39px;
+    padding: 40px 39px;
     max-width: 18.7vw !important;
     height: auto;
-    &::after {
-        content: url('../../assets/images/zoom-img.svg');
-        display: none;
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.1);
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
-    &:hover::after {
-        display: flex;
-    }
+    // &::after {
+    //     content: url('../../assets/images/zoom-img.svg');
+    //     display: none;
+    //     position: absolute;
+    //     background-color: rgba(0, 0, 0, 0.1);
+    //     width: 100%;
+    //     height: 100%;
+    //     justify-content: center;
+    //     align-items: center;
+    //     cursor: pointer;
+    // }
+    // &:hover::after {
+    //     display: flex;
+    // }
   }
 
 .swiper-slide-prev {
@@ -119,7 +117,7 @@ export default {
         height: unset;
     }
     & img {
-        opacity: 0.5;
+        opacity: 0.15;
     }
 }
 
@@ -134,13 +132,9 @@ export default {
         display: none;
     }
     & img{
-        opacity: 0.5;
+        opacity: 0.15;
     }
   }
-
-// .isOpacity {
-//    opacity: 0.5;
-// }
 
 .swiper-slide img {
     display: block;

@@ -196,7 +196,7 @@ export default {
 
         .text-image{
             position: absolute;
-            left: -20px;
+            left: -25px;
             bottom: 20px;
             width: 67.2vw;//67.3%
             height: 5.2vw;//83px

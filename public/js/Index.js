@@ -17938,6 +17938,71 @@ swiper_core__WEBPACK_IMPORTED_MODULE_0__.default.use([swiper_core__WEBPACK_IMPOR
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BrandMakeupSlider.vue?vue&type=script&lang=js":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BrandMakeupSlider.vue?vue&type=script&lang=js ***!
+  \***********************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var swiper_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/vue */ "./node_modules/swiper/esm/vue/swiper.js");
+/* harmony import */ var swiper_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/vue */ "./node_modules/swiper/esm/vue/swiper-slide.js");
+/* harmony import */ var swiper_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/core */ "./node_modules/swiper/esm/components/core/core-class.js");
+/* harmony import */ var swiper_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/core */ "./node_modules/swiper/esm/components/navigation/navigation.js");
+
+
+swiper_core__WEBPACK_IMPORTED_MODULE_0__.default.use([swiper_core__WEBPACK_IMPORTED_MODULE_1__.default]);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    Swiper: swiper_vue__WEBPACK_IMPORTED_MODULE_2__.Swiper,
+    SwiperSlide: swiper_vue__WEBPACK_IMPORTED_MODULE_3__.SwiperSlide
+  },
+  data: function data() {
+    return {
+      isOpacity: false,
+      images: [{
+        id: 1,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/loreal.jpg */ "./resources/assets/images/TeamB/brandMakeUp/loreal.jpg").default
+      }, {
+        id: 2,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/dior.jpg */ "./resources/assets/images/TeamB/brandMakeUp/dior.jpg").default
+      }, {
+        id: 3,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/academie.jpg */ "./resources/assets/images/TeamB/brandMakeUp/academie.jpg").default
+      }, {
+        id: 4,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/loreal.jpg */ "./resources/assets/images/TeamB/brandMakeUp/loreal.jpg").default
+      }, {
+        id: 5,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/dior.jpg */ "./resources/assets/images/TeamB/brandMakeUp/dior.jpg").default
+      }, {
+        id: 6,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/academie.jpg */ "./resources/assets/images/TeamB/brandMakeUp/academie.jpg").default
+      }, {
+        id: 7,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/loreal.jpg */ "./resources/assets/images/TeamB/brandMakeUp/loreal.jpg").default
+      }, {
+        id: 8,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/dior.jpg */ "./resources/assets/images/TeamB/brandMakeUp/dior.jpg").default
+      }, {
+        id: 9,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/academie.jpg */ "./resources/assets/images/TeamB/brandMakeUp/academie.jpg").default
+      }]
+    };
+  },
+  methods: {
+    checkClick: function checkClick() {
+      console.log('click sertificate');
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/CertificateSlider.vue?vue&type=script&lang=js":
 /*!***********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/CertificateSlider.vue?vue&type=script&lang=js ***!
@@ -18958,30 +19023,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _components_Header_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Header.vue */ "./resources/js/components/Header.vue");
 /* harmony import */ var _components_Footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Footer.vue */ "./resources/js/components/Footer.vue");
-/* harmony import */ var _components_AreasSliderG_AreasSliderG_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/AreasSliderG/AreasSliderG.vue */ "./resources/js/components/AreasSliderG/AreasSliderG.vue");
-/* harmony import */ var _components_TrainersList_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/TrainersList.vue */ "./resources/js/components/TrainersList.vue");
+/* harmony import */ var _components_GallerySlider_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/GallerySlider.vue */ "./resources/js/components/GallerySlider.vue");
+/* harmony import */ var _components_BrandMakeupSlider_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/BrandMakeupSlider.vue */ "./resources/js/components/BrandMakeupSlider.vue");
 
 
 
 
-var trainers = [{
-  id: 0,
-  link: "Vladimir_Leskov.jpg"
-}, {
-  id: 1,
-  link: "Irina_Slyusarenko.jpg"
-}, {
-  id: 2,
-  link: "Olga_Depeshko.jpg"
-}, {
-  id: 3,
-  link: "Olga_Martsenyuk.jpg"
-}];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       isOpen: false,
-      trainers: trainers
+      gallery: [{
+        id: 1,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-1.jpg */ "./resources/assets/images/TeamB/gallery/photo-1.jpg").default
+      }, {
+        id: 2,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-2.jpg */ "./resources/assets/images/TeamB/gallery/photo-2.jpg").default
+      }, {
+        id: 3,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-3.jpg */ "./resources/assets/images/TeamB/gallery/photo-3.jpg").default
+      }, {
+        id: 4,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-1.jpg */ "./resources/assets/images/TeamB/gallery/photo-1.jpg").default
+      }, {
+        id: 5,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-2.jpg */ "./resources/assets/images/TeamB/gallery/photo-2.jpg").default
+      }, {
+        id: 6,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-3.jpg */ "./resources/assets/images/TeamB/gallery/photo-3.jpg").default
+      }, {
+        id: 7,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-1.jpg */ "./resources/assets/images/TeamB/gallery/photo-1.jpg").default
+      }, {
+        id: 8,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-2.jpg */ "./resources/assets/images/TeamB/gallery/photo-2.jpg").default
+      }, {
+        id: 9,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-3.jpg */ "./resources/assets/images/TeamB/gallery/photo-3.jpg").default
+      }, {
+        id: 10,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-1.jpg */ "./resources/assets/images/TeamB/gallery/photo-1.jpg").default
+      }]
     };
   },
   mounted: function mounted() {
@@ -18994,8 +19076,8 @@ var trainers = [{
   components: {
     Header: _components_Header_vue__WEBPACK_IMPORTED_MODULE_0__.default,
     Footer: _components_Footer_vue__WEBPACK_IMPORTED_MODULE_1__.default,
-    TrainersList: _components_TrainersList_vue__WEBPACK_IMPORTED_MODULE_3__.default,
-    AreasSliderG: _components_AreasSliderG_AreasSliderG_vue__WEBPACK_IMPORTED_MODULE_2__.default
+    GallerySlider: _components_GallerySlider_vue__WEBPACK_IMPORTED_MODULE_2__.default,
+    BrandMakeupSlider: _components_BrandMakeupSlider_vue__WEBPACK_IMPORTED_MODULE_3__.default
   },
   methods: {
     change: function change(e) {
@@ -19516,6 +19598,62 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* KEYED_FRAGMENT */
   ))]));
 }
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BrandMakeupSlider.vue?vue&type=template&id=ebb675d4&scoped=true":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BrandMakeupSlider.vue?vue&type=template&id=ebb675d4&scoped=true ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("data-v-ebb675d4");
+
+var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_swiper_slide = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("swiper-slide");
+
+  var _component_swiper = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("swiper");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_swiper, {
+    navigation: true,
+    slidesPerView: 'auto'
+  }, {
+    "default": _withId(function () {
+      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.images, function (image) {
+        return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_swiper_slide, {
+          key: image.id,
+          onClick: $options.checkClick
+        }, {
+          "default": _withId(function () {
+            return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+              src: image.imageUrl
+            }, null, 8
+            /* PROPS */
+            , ["src"])];
+          }),
+          _: 2
+          /* DYNAMIC */
+
+        }, 1032
+        /* PROPS, DYNAMIC_SLOTS */
+        , ["onClick"]);
+      }), 128
+      /* KEYED_FRAGMENT */
+      )), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_swiper_slide)];
+    }),
+    _: 1
+    /* STABLE */
+
+  });
+});
 
 /***/ }),
 
@@ -21026,10 +21164,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _assets_images_main_g_background_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/main-g-background.jpg */ "./resources/assets/images/main-g-background.jpg");
+/* harmony import */ var _assets_images_main_b_background_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/main-b-background.jpg */ "./resources/assets/images/main-b-background.jpg");
 /* harmony import */ var _assets_images_popup_corner_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg");
-/* harmony import */ var _assets_images_main_g_water_text_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/main-g-water-text.svg */ "./resources/assets/images/main-g-water-text.svg");
-/* harmony import */ var _assets_images_techno_gym_skew_images_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/techno-gym-skew-images.png */ "./resources/assets/images/techno-gym-skew-images.png");
+/* harmony import */ var _assets_images_warning_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/warning.svg */ "./resources/assets/images/warning.svg");
+/* harmony import */ var _assets_images_aboutUs_b_main_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/aboutUs-b-main.jpg */ "./resources/assets/images/aboutUs-b-main.jpg");
 
 
 
@@ -21044,191 +21182,117 @@ var _hoisted_1 = {
   "class": "view-main-b"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
   "class": "top-image-container"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   "class": "top-image",
-  src: _assets_images_main_g_background_jpg__WEBPACK_IMPORTED_MODULE_1__.default,
+  src: _assets_images_main_b_background_jpg__WEBPACK_IMPORTED_MODULE_1__.default,
   alt: ""
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   "class": "skew-image-1",
   src: _assets_images_popup_corner_svg__WEBPACK_IMPORTED_MODULE_2__.default,
   alt: ""
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  "class": "water-text",
-  src: _assets_images_main_g_water_text_svg__WEBPACK_IMPORTED_MODULE_3__.default,
-  alt: ""
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "water-text"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "top-text"
+}, "Твій рівень"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "down-text"
+}, "краси")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "vector1"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "vector2"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "vector3"
 })], -1
 /* HOISTED */
 );
 
-var _hoisted_3 = {
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
   "class": "about-us"
-};
-
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"title\" data-v-68d1db9a>Про нас</div><div class=\"columns-container\" data-v-68d1db9a><div class=\"col-1\" data-v-68d1db9a><div data-v-68d1db9a><span class=\"bold\" data-v-68d1db9a>Тренажерний зал 1700 кв.м.</span> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym </div><div data-v-68d1db9a>Простора стилізована <span class=\"bold\" data-v-68d1db9a>зона єдиноборств</span> з професійним рингом</div><div data-v-68d1db9a>Окрема <span class=\"bold\" data-v-68d1db9a>студія для сайкл-тренування</span> з надсучасною світло- звуковою системою</div><div data-v-68d1db9a><span class=\"bold\" data-v-68d1db9a>Інноваційна </span> зона функціонального тренінгу та кросфіту</div></div><div class=\"col-2\" data-v-68d1db9a><div data-v-68d1db9a><span class=\"bold\" data-v-68d1db9a>Студія Barre </span>на основі балету</div><div data-v-68d1db9a>Мед кабінет, <span class=\"bold\" data-v-68d1db9a>консультація лікаря</span></div><div data-v-68d1db9a>Власна <span class=\"bold\" data-v-68d1db9a>пральня</span></div><div data-v-68d1db9a>Система вентиляції та кондиціонування функцією <span class=\"bold\" data-v-68d1db9a>очищення повітря</span></div><div data-v-68d1db9a><span class=\"bold\" data-v-68d1db9a>Високий</span> рівень сервісу</div></div></div>", 2);
-
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Детальніше");
-
-var _hoisted_7 = {
-  "class": "techno-gym-container"
-};
-var _hoisted_8 = {
-  "class": "col-1"
-};
-
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "logo"
-}, null, -1
-/* HOISTED */
-);
-
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "title"
-}, "Techno Gym", -1
-/* HOISTED */
-);
-
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "text"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
-  "class": "bold"
-}, "TechnoGym"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" - лідер серед виробників тренажерів, завдяки використанню останніх наукових відкриттів та технічних досягнень. Тренажери продумані до найдрібніших деталей, тому на них щодня тренується більше 35 мільйонів спортсменів, які досягають найвищих спортивних результатів. А відтепер і ви зможете відчути їх унікальність. ")], -1
-/* HOISTED */
-);
-
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Детальніше");
-
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  "class": "skew-image-1",
-  src: _assets_images_techno_gym_skew_images_png__WEBPACK_IMPORTED_MODULE_4__.default,
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Про нас "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "line-background"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "container-text"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Сучасний beauty-простір у м. Вінниці, де на вас чекають найкращі beauty- майстри України, найпопулярніша європейська косметика та найновіші технології світової індустрії краси. Ідеальні стрижки, фарбування волосся, чоловічі процедури від кращих барберів, безпечний манікюр та педикюр або стильний мейкап, пілінг для обличчя чи райський масаж для всього тіла? На вас чекають просторі кабінети з панорамними вікнами, паралельні сервіси для економії часу, консультації спеціалістів та косметика для домашнього догляду. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "about-us-warning"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "top-image",
+  src: _assets_images_warning_svg__WEBPACK_IMPORTED_MODULE_3__.default,
   alt: ""
-}, null, -1
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Салон відкритий як для членів клубу, так і для гостей без клубних карт. ")])], -1
 /* HOISTED */
 );
 
-var _hoisted_14 = {
-  "class": "our-team-container"
-};
-
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "our-team-container_header"
-}, " Наша команда ", -1
-/* HOISTED */
-);
-
-var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Переглянути всіх");
-
-var _hoisted_17 = {
-  "class": "combat-area"
-};
-
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  "class": "skew-image-1",
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+  "class": "image-container-aboutUs"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "image",
+  src: _assets_images_aboutUs_b_main_jpg__WEBPACK_IMPORTED_MODULE_4__.default,
+  alt: ""
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "skew-image",
   src: _assets_images_popup_corner_svg__WEBPACK_IMPORTED_MODULE_2__.default,
   alt: ""
-}, null, -1
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "text-image"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Nulla sed augue vehicula, feugiat nisi sed, commodo dolor. ")])], -1
 /* HOISTED */
 );
 
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "also-for-you-container"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "title"
-}, "Також на Вас чекають"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "orders"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "order"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "icon"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "title"
-}, " Фітнес бар "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "description"
-}, " На території комплексу два бари з професійними барменами, які з радістю задовольнять ваші потреби в здоровому харчуванні, спортивних напоях, ароматній каві, і не тільки… ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "order"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "icon"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "title"
-}, " Безпека "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "description"
-}, " Тренажерний зал обладнаний усім необхідним для правильних та результативних тренувань, які тільки на користь здоров’ю та фізичній формі. Медична кваліфікована допомога та професійна консультація не по виклику, а як стандарт нашої турботи про клієнта. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "order"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "icon"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "title"
-}, " Комфорт і чистота "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "description"
-}, " Комфортні роздягальні з великими і просторими шафами, куди поміститься одночасно ваша спортивна сумка і ділова сорочка, яка після зняття залишиться такою ж випрасуваною. ")])])], -1
+var _hoisted_5 = {
+  "class": "gallery-slider"
+};
+var _hoisted_6 = {
+  "class": "brand-makeup"
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Ми довіряємо найкращим", -1
 /* HOISTED */
 );
 
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "seo-text"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "title"
-}, " SEO текст "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "text"
-}, " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum. Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis. Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum. Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec hendrerit neque... ")], -1
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "SEO текст", -1
 /* HOISTED */
 );
+
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum. Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis. Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum. Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec hendrerit neque... ", -1
+/* HOISTED */
+);
+
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Більше");
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Header = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Header");
 
+  var _component_GallerySlider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("GallerySlider");
+
+  var _component_BrandMakeupSlider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("BrandMakeupSlider");
+
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
-
-  var _component_TrainersList = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("TrainersList");
-
-  var _component_AreasSliderG = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("AreasSliderG");
 
   var _component_Footer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Footer");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header, {
     level: 'b'
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    "class": "link-1",
-    to: "/about-us-g"
-  }, {
-    "default": _withId(function () {
-      return [_hoisted_6];
-    }),
-    _: 1
-    /* STABLE */
-
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [_hoisted_9, _hoisted_10, _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    "class": "link-2",
-    to: "/about-us-g"
-  }, {
-    "default": _withId(function () {
-      return [_hoisted_12];
-    }),
-    _: 1
-    /* STABLE */
-
-  })]), _hoisted_13]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    "class": "all-our-trainers-link",
-    to: "/team-g"
-  }, {
-    "default": _withId(function () {
-      return [_hoisted_16];
-    }),
-    _: 1
-    /* STABLE */
-
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_TrainersList, {
-    trainers: $data.trainers,
-    isOpen: $data.isOpen,
-    onChangeOpen: _cache[1] || (_cache[1] = function (e) {
-      return $options.change(e);
-    })
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, _hoisted_3, _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_GallerySlider, {
+    images: $data.gallery
   }, null, 8
   /* PROPS */
-  , ["trainers", "isOpen"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AreasSliderG), _hoisted_18]), _hoisted_19, _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"text-block-1\">\n    main g\n    {{ $t(\"msg\") }}\n  </div> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer, {
+  , ["images"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_BrandMakeupSlider), _hoisted_8, _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "link-1",
+    to: "/"
+  }, {
+    "default": _withId(function () {
+      return [_hoisted_10];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer, {
     level: 'b'
   })], 64
   /* STABLE_FRAGMENT */
@@ -23799,6 +23863,96 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/TeamB/brandMakeUp/academie.jpg":
+/*!****************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/academie.jpg ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/academie.jpg?3c3538fa0d91b8c7154758bc45045390");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/dior.jpg":
+/*!************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/dior.jpg ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/dior.jpg?f49016481ae4b4316e231de3857e1220");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/loreal.jpg":
+/*!**************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/loreal.jpg ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/loreal.jpg?46dd6018308b41d956ef9d66c3074fe6");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/gallery/photo-1.jpg":
+/*!***********************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/photo-1.jpg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/photo-1.jpg?999c9f24b136c3adee4beb7bb66c01ed");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/gallery/photo-2.jpg":
+/*!***********************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/photo-2.jpg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/photo-2.jpg?ef52d628b25cfd34cb60bd22cf9889e6");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/gallery/photo-3.jpg":
+/*!***********************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/photo-3.jpg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/photo-3.jpg?7022632314c6bb36d56a10c6cc3020c8");
+
+/***/ }),
+
 /***/ "./resources/assets/images/TeamG/certificate/certificate1.png":
 /*!********************************************************************!*\
   !*** ./resources/assets/images/TeamG/certificate/certificate1.png ***!
@@ -23994,6 +24148,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/aboutUs-b-main.jpg":
+/*!****************************************************!*\
+  !*** ./resources/assets/images/aboutUs-b-main.jpg ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/aboutUs-b-main.jpg?b6ff62b4460d362c4567dbf9e1c3cbd8");
+
+/***/ }),
+
 /***/ "./resources/assets/images/aboutUs-g-main.jpg":
 /*!****************************************************!*\
   !*** ./resources/assets/images/aboutUs-g-main.jpg ***!
@@ -24126,6 +24295,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/info.png?54ed3dd378a45635fafed8669c1b530c");
+
+/***/ }),
+
+/***/ "./resources/assets/images/main-b-background.jpg":
+/*!*******************************************************!*\
+  !*** ./resources/assets/images/main-b-background.jpg ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-b-background.jpg?247dccb7382a8d4915d6de3ebe2b5a57");
 
 /***/ }),
 
@@ -24729,10 +24913,38 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/warning.svg":
+/*!*********************************************!*\
+  !*** ./resources/assets/images/warning.svg ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/warning.svg?67b5872f8674f66a316722b146cad9dc");
+
+/***/ }),
+
 /***/ "./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/AreasSliderG/AreasSliderG.vue?vue&type=style&index=0&id=208c8a74&lang=scss":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/AreasSliderG/AreasSliderG.vue?vue&type=style&index=0&id=208c8a74&lang=scss ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BrandMakeupSlider.vue?vue&type=style&index=0&id=ebb675d4&lang=scss&scoped=true":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BrandMakeupSlider.vue?vue&type=style&index=0&id=ebb675d4&lang=scss&scoped=true ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -34982,6 +35194,36 @@ _AreasSliderG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default._
 
 /***/ }),
 
+/***/ "./resources/js/components/BrandMakeupSlider.vue":
+/*!*******************************************************!*\
+  !*** ./resources/js/components/BrandMakeupSlider.vue ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _BrandMakeupSlider_vue_vue_type_template_id_ebb675d4_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BrandMakeupSlider.vue?vue&type=template&id=ebb675d4&scoped=true */ "./resources/js/components/BrandMakeupSlider.vue?vue&type=template&id=ebb675d4&scoped=true");
+/* harmony import */ var _BrandMakeupSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BrandMakeupSlider.vue?vue&type=script&lang=js */ "./resources/js/components/BrandMakeupSlider.vue?vue&type=script&lang=js");
+/* harmony import */ var _BrandMakeupSlider_vue_vue_type_style_index_0_id_ebb675d4_lang_scss_scoped_true__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BrandMakeupSlider.vue?vue&type=style&index=0&id=ebb675d4&lang=scss&scoped=true */ "./resources/js/components/BrandMakeupSlider.vue?vue&type=style&index=0&id=ebb675d4&lang=scss&scoped=true");
+
+
+
+
+;
+_BrandMakeupSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _BrandMakeupSlider_vue_vue_type_template_id_ebb675d4_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render
+_BrandMakeupSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__scopeId = "data-v-ebb675d4"
+/* hot reload */
+if (false) {}
+
+_BrandMakeupSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/components/BrandMakeupSlider.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_BrandMakeupSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
 /***/ "./resources/js/components/CertificateSlider.vue":
 /*!*******************************************************!*\
   !*** ./resources/js/components/CertificateSlider.vue ***!
@@ -35759,6 +36001,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/BrandMakeupSlider.vue?vue&type=script&lang=js":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/BrandMakeupSlider.vue?vue&type=script&lang=js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BrandMakeupSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BrandMakeupSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BrandMakeupSlider.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BrandMakeupSlider.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/components/CertificateSlider.vue?vue&type=script&lang=js":
 /*!*******************************************************************************!*\
   !*** ./resources/js/components/CertificateSlider.vue?vue&type=script&lang=js ***!
@@ -36191,6 +36449,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/BrandMakeupSlider.vue?vue&type=template&id=ebb675d4&scoped=true":
+/*!*************************************************************************************************!*\
+  !*** ./resources/js/components/BrandMakeupSlider.vue?vue&type=template&id=ebb675d4&scoped=true ***!
+  \*************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BrandMakeupSlider_vue_vue_type_template_id_ebb675d4_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BrandMakeupSlider_vue_vue_type_template_id_ebb675d4_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BrandMakeupSlider.vue?vue&type=template&id=ebb675d4&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BrandMakeupSlider.vue?vue&type=template&id=ebb675d4&scoped=true");
+
+
+/***/ }),
+
 /***/ "./resources/js/components/CertificateSlider.vue?vue&type=template&id=4a2d3a7d&scoped=true":
 /*!*************************************************************************************************!*\
   !*** ./resources/js/components/CertificateSlider.vue?vue&type=template&id=4a2d3a7d&scoped=true ***!
@@ -36600,6 +36874,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_clonedRuleSet_12_use_0_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_use_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_AreasSliderG_vue_vue_type_style_index_0_id_208c8a74_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!../../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./AreasSliderG.vue?vue&type=style&index=0&id=208c8a74&lang=scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/AreasSliderG/AreasSliderG.vue?vue&type=style&index=0&id=208c8a74&lang=scss");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/BrandMakeupSlider.vue?vue&type=style&index=0&id=ebb675d4&lang=scss&scoped=true":
+/*!****************************************************************************************************************!*\
+  !*** ./resources/js/components/BrandMakeupSlider.vue?vue&type=style&index=0&id=ebb675d4&lang=scss&scoped=true ***!
+  \****************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_clonedRuleSet_12_use_0_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_use_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BrandMakeupSlider_vue_vue_type_style_index_0_id_ebb675d4_lang_scss_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BrandMakeupSlider.vue?vue&type=style&index=0&id=ebb675d4&lang=scss&scoped=true */ "./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BrandMakeupSlider.vue?vue&type=style&index=0&id=ebb675d4&lang=scss&scoped=true");
 
 
 /***/ }),
