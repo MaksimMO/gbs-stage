@@ -40,7 +40,7 @@
             </transition>
         </teleport>
 
-<Footer />
+<Footer :level="'g'"/>
 </template>
 
 <script>

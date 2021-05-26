@@ -43,9 +43,10 @@
 <script>
 import PhoneLink from "./PhoneLink.vue";
 export default {
+  props: ['level'],
   data() {
     return {
-      level: "g",
+    //   level: "g",
     };
   },
   components: {

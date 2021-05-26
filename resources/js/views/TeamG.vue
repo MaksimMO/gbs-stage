@@ -18,7 +18,7 @@
             @changeOpen="(e) => change(e)"/>
       </section>
   </div>
-<Footer />
+<Footer :level="'g'"/>
 </template>
 
 <script>

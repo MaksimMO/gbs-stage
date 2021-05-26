@@ -78,7 +78,7 @@
         </p>
     </section>
   </div>
-<Footer />
+<Footer :level="'g'"/>
 </template>
 
 <script>

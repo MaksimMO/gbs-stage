@@ -52,7 +52,6 @@ export default {
     // }
   },
   mounted(){
-    console.log('level', this.level);
     const debounce = (fn) => {
       let frame;
 

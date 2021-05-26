@@ -115,7 +115,7 @@
     {{ $t("msg") }}
   </div> -->
   </div>
-  <Footer />
+  <Footer :level="'g'"/>
 
 </template>
 

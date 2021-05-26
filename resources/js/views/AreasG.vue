@@ -6,7 +6,7 @@
   </div>
   <AreasSliderG :isSlider="false" />
 </div>
-  <Footer />
+  <Footer :level="'g'"/>
 </template>
 
 <script>
