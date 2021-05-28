@@ -115,6 +115,10 @@ export default {
         padding: 0 5px;
         border-left: solid 2px #916C58;
         transform: unset;
+        &::before {
+            transform: none !important;
+            transition: none !important;
+        }
         &>span{
             transform: unset;
         }

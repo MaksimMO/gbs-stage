@@ -6,13 +6,13 @@
     <div style="position: relative; z-index: 99;">
         <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="!isOpen ? isShow() : isClosed()">
         <div v-show="isHovered && !isOpen || isSelected" class="info">
-            <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" style="width: 100%; height: 100%; cursor: pointer;" @click="isShow">
-            <img v-if="isSelected" src="../../assets/images/close.png" alt="info" style="width: 100%; height: 100%; cursor: pointer;" @click="isClosed">
+            <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" class="info-show" @click="isShow">
+            <img v-if="isSelected" src="../../assets/images/close.png" alt="info" class="info-close" @click="isClosed">
         </div>
         <p class="firstName">{{$i18n.t(`trainers.${trainer.id}.firstName`)}}</p>
         <p class="lastName">{{$i18n.t(`trainers.${trainer.id}.lastName`)}}</p>
     </div>
-    <div class="description">
+    <div :class="['description', {'description-background': isSelected}]">
         <p class="descriptionTitle">{{$i18n.t(`trainers.${trainer.id}.direction`)}}</p>
         <p v-show="isSelected">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
     </div>
@@ -87,12 +87,32 @@ export default {
     height: 35px;
     right: 10px;
     top: 10px;
+    & .info-show {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        background: #ACACAC;
+        border-radius: 50%;
+        &:hover {
+           background: #916C58;
+        }
+    }
+    & .info-close {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        background: #ACACAC;
+        border-radius: 50%;
+        &:hover {
+           background: #916C58;
+        }
+    }
 }
 .firstName{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     padding: 1px 10px;
     font-family: Raleway;
     font-style: normal;
@@ -110,8 +130,8 @@ export default {
 .lastName{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     padding: 1px 10px;
     font-family: Raleway;
     font-style: normal;
@@ -151,7 +171,7 @@ export default {
     font-size: 14px;
     line-height: 28px;
     color: #000000;
-    background-color: #ffffff;
+    // background-color: #ffffff;
 
     & p {
         margin: 0;
@@ -168,6 +188,10 @@ export default {
     &::-webkit-scrollbar-thumb {
         background: url('../../assets/images/scroll.svg') no-repeat;
     }
+}
+
+.description-background {
+    background-color: #ffffff;
 }
 
 </style>

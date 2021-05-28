@@ -1,5 +1,5 @@
 <template>
-  <Header :level="'b'"/>
+  <Header />
   <div class="view-main-b">
   <section class="top-image-container">
     <img class="top-image" src="../../assets/images/main-b-background.jpg" alt="">
@@ -213,7 +213,7 @@ export default {
         position: absolute;
         bottom: 0;
         right: -170px;
-        width: 1545px;
+        width: 1545px; //74.8599vw;
         height: 83px;
         background: #916C58;
         opacity: 0.07;

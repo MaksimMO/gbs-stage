@@ -85,6 +85,10 @@ li > a:hover {
   border-left: solid 2px #916C58;
   transform: unset;
 }
+.buttonLang[data-v-621aa444]::before {
+  transform: none !important;
+  transition: none !important;
+}
 .buttonLang > span[data-v-621aa444] {
   transform: unset;
 }
@@ -654,7 +658,7 @@ label[data-v-8048fca2] {
 }
 .main .close-opened[data-v-1f42fb90]:hover {
   cursor: pointer;
-  filter: brightness(1);
+  background-image: url(/images/menu-close-white.svg?91bd8bef07d7e63dd1e6c4e7b4778c75);
 }
 .slide-fade-enter-active[data-v-1f42fb90] {
   -webkit-animation: show-in-1f42fb90 0.6s;
@@ -1265,11 +1269,31 @@ html, body {
   right: 10px;
   top: 10px;
 }
+.info .info-show[data-v-6a0f304d] {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: #ACACAC;
+  border-radius: 50%;
+}
+.info .info-show[data-v-6a0f304d]:hover {
+  background: #916C58;
+}
+.info .info-close[data-v-6a0f304d] {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: #ACACAC;
+  border-radius: 50%;
+}
+.info .info-close[data-v-6a0f304d]:hover {
+  background: #916C58;
+}
 .firstName[data-v-6a0f304d] {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   padding: 1px 10px;
   font-family: Raleway;
   font-style: normal;
@@ -1287,8 +1311,8 @@ html, body {
 .lastName[data-v-6a0f304d] {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   padding: 1px 10px;
   font-family: Raleway;
   font-style: normal;
@@ -1328,7 +1352,6 @@ html, body {
   font-size: 14px;
   line-height: 28px;
   color: #000000;
-  background-color: #ffffff;
 }
 .description p[data-v-6a0f304d] {
   margin: 0;
@@ -1342,6 +1365,9 @@ html, body {
 }
 .description[data-v-6a0f304d]::-webkit-scrollbar-thumb {
   background: url(/images/scroll.svg?88f80a994e4d7cebd13ede09ced32003) no-repeat;
+}
+.description-background[data-v-6a0f304d] {
+  background-color: #ffffff;
 }
 
 .trainers-container{
@@ -2238,11 +2264,12 @@ html, body {
   font-feature-settings: "pnum" on, "lnum" on;
 }
 .aboutUs-g-description ul li[data-v-4edab8bb]::before {
-  content: "•";
+  content: "⯀";
   color: #916C58;
   font-weight: bold;
+  font-size: 10px;
   display: inline-block;
-  width: 1em;
+  width: 1.5em;
   margin-left: -1em;
 }
 .our-team-aboutUs-container[data-v-4edab8bb] {
@@ -2289,6 +2316,7 @@ html, body {
   font-family: Oswald;
   font-size: 52px;
   margin: 0;
+  margin-bottom: 40px;
   text-align: center;
   line-height: 54px;
   letter-spacing: 0.02em;
@@ -2299,7 +2327,7 @@ html, body {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin: 0;
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
@@ -2373,6 +2401,7 @@ html, body {
   height: 100%;
   max-height: 328px;
   margin-left: 23px;
+  margin-top: 20px;
   overflow: hidden;
 }
 .modal .description .title[data-v-6462e882] {
@@ -2380,7 +2409,7 @@ html, body {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 54px;
+  line-height: normal;
   letter-spacing: 0.02em;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #916C58;
@@ -2445,6 +2474,9 @@ html, body {
   margin-top: 20px;
   margin-left: auto;
 }
+li[data-v-bcffb62e] {
+  transform: none !important;
+}
 .title[data-v-bcffb62e] {
   padding: 0 7.81vw;
   margin-bottom: 60px;
@@ -2497,14 +2529,25 @@ html, body {
   cursor: pointer;
   border-bottom: solid 2px #000000;
 }
-.simulator-direction > .direction li[data-v-bcffb62e] {
+.simulator-direction > .direction > li[data-v-bcffb62e] {
   padding-bottom: 20px;
+  position: relative;
 }
-.simulator-direction > .direction li[data-v-bcffb62e]:hover {
+.simulator-direction > .direction > li[data-v-bcffb62e]:hover {
   color: #916C58;
 }
 .simulator-direction .invert-color[data-v-bcffb62e] {
   color: #916C58;
+}
+.simulator-direction .invert-color[data-v-bcffb62e]::before {
+  content: "";
+  color: #916C58;
+  position: absolute;
+  bottom: -2px;
+  top: 0px;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid #916C58;
 }
 .simulator-direction .simulator[data-v-bcffb62e] {
   list-style-type: none;

@@ -245,11 +245,12 @@ export default {
                 font-feature-settings: 'pnum' on, 'lnum' on;
             }
             & li::before {
-                content: "\2022";
+                content: "\2BC0";
                 color: #916C58;
                 font-weight: bold;
+                font-size: 10px;
                 display: inline-block;
-                width: 1em;
+                width: 1.5em;
                 margin-left: -1em;
             }
         }
@@ -301,6 +302,7 @@ export default {
             font-family: Oswald;
             font-size: 52px;
             margin: 0;
+            margin-bottom: 40px;;
             text-align: center;
             line-height: 54px;
             letter-spacing: 0.02em;
@@ -311,7 +313,7 @@ export default {
             font-weight: 400;
             font-style: normal;
             font-size: 14px;
-            margin-bottom: 10px;
+            margin: 0;
             font-family: Raleway;
             font-style: normal;
             font-weight: normal;

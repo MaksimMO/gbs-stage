@@ -59,13 +59,14 @@ export default {
         height: 100%;
         max-height: 328px;
         margin-left: 23px;
+        margin-top: 20px;
         overflow: hidden;
         & .title {
             font-family: Oswald;
             font-style: normal;
             font-weight: 600;
             font-size: 24px;
-            line-height: 54px;
+            line-height: normal;
             letter-spacing: 0.02em;
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #916C58;

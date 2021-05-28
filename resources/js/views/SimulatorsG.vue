@@ -136,6 +136,9 @@ export default {
             margin-left: auto;
         }
     }
+    li {
+        transform: none !important;
+    }
     .title {
         padding: 0 7.81vw;
         margin-bottom: 60px;
@@ -186,8 +189,9 @@ export default {
             padding: 0;
             cursor: pointer;
             border-bottom: solid 2px #000000;
-            & li {
+            & > li {
                 padding-bottom: 20px;
+                position: relative;
                 &:hover {
                     color: #916C58;
                 }
@@ -195,6 +199,16 @@ export default {
         }
         .invert-color{
             color: #916C58;
+            &::before {
+                content: "";
+                color: #916C58;
+                position: absolute;
+                bottom: -2px;
+                top: 0px;
+                left: 0;
+                right: 0;
+                border-bottom: 2px solid #916C58;
+            }
         }
         & .simulator{
             list-style-type: none;

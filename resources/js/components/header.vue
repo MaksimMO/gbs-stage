@@ -2,8 +2,8 @@
 <div  :class="['header', {'is-open':isOpen, 'isScroll': scrollYdata != 0 && !isOpen}]">
   <div :class="['main']">
 
-     <router-link :to="`/main-${level}`">
-        <div :class="`logo ${level}`"></div>
+     <router-link :to="`/main-${$root.$data.area}`">
+        <div :class="`logo ${$root.$data.area}`"></div>
      </router-link>
 
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
@@ -31,10 +31,8 @@ import LanguageSwitcher from "./LanguageSwitcher.vue";
 import MakeOrderPopup from './MakeOrderPopup.vue'
 
 export default {
-  props: ['level'],
   data() {
     return {
-    //   level: "g",
       isOpen: false,
       scrollYdata: 0,
       modalOpen:false
@@ -45,11 +43,6 @@ export default {
     Menu,
     LanguageSwitcher,
     MakeOrderPopup
-  },
-  methods:{
-    // closePopup(){
-    //   this.modalOpen=false;
-    // }
   },
   mounted(){
     const debounce = (fn) => {
@@ -68,9 +61,7 @@ export default {
     };
     const storeScroll = () => {
         this.scrollYdata = window.scrollY;
-        // if(!this.isOpen){
             document.documentElement.dataset.scroll = this.scrollYdata;
-        // }
     }
     document.addEventListener('scroll', debounce(storeScroll), { passive: true });
     storeScroll();
@@ -229,7 +220,7 @@ export default {
     height: 38px;
     &:hover {
         cursor: pointer;
-        filter: brightness(1);
+        background-image: url("../../assets/images/menu-close-white.svg");
     }
   }
 }

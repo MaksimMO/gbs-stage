@@ -37,29 +37,35 @@
         {
             path: '/main-g',
             component:  MainG,
-            name: 'MainG'
+            name: 'MainG',
+            meta: { area: 'g' }
         },
         {
             path:'/team-g',
             component:  TeamG,
-            name: 'TeamG'
+            name: 'TeamG',
+            meta: { area: 'g' }
         },
         {
             path: '/about-us-g',
-            component:AboutUsG
+            component:AboutUsG,
+            meta: { area: 'g' }
         },
         {
             path: '/areas-g',
-            component:AreasG
+            component:AreasG,
+            meta: { area: 'g' }
         },
         {
             path:'/simulators-g',
             component:  SimulatorsG,
+            meta: { area: 'g' }
         },
         {
             path: '/main-b',
             component:  MainB,
-            name: 'MainB'
+            name: 'MainB',
+            meta: { area: 'b' }
         },
 
     ],
@@ -70,8 +76,28 @@
 
 let data = {
     isLoading:false,
-    isMobile
+    isMobile,
+    area: '',
 }
+
+router.beforeEach((to, from, next) => {
+    console.log(to.matched);
+    data.area = to.meta.area;
+    // if (to.matched.some(record => record.meta.area)) {
+    //   // этот путь требует авторизации, проверяем залогинен ли
+    //   // пользователь, и если нет, перенаправляем на страницу логина
+    //   if (!auth.loggedIn()) {
+    //     next({
+    //       path: '/login',
+    //       query: { redirect: to.fullPath }
+    //     })
+    //   } else {
+    //     next()
+    //   }
+    // } else {
+      next() // всегда так или иначе нужно вызвать next()!
+    // }
+  })
 
 const app = createApp({
     template:'<root  />',

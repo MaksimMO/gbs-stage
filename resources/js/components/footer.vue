@@ -1,7 +1,7 @@
 <template>
 <div class="footer">
   <div class="line-1">
-    <div :class="`logo ${level}`"></div>
+    <div :class="`logo ${$root.$data.area}`"></div>
     <div class="timetable">Години роботи</div>
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink />
@@ -43,10 +43,8 @@
 <script>
 import PhoneLink from "./PhoneLink.vue";
 export default {
-  props: ['level'],
   data() {
     return {
-    //   level: "g",
     };
   },
   components: {
