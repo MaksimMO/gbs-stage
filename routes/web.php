@@ -39,6 +39,11 @@ Route::get('/areas-g', function () {
     return view('index');
 });
 
+Route::get('/price-b', function () {
+    return view('index');
+});
+
+
 
 Auth::routes();
 

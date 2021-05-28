@@ -10,6 +10,7 @@
  import AboutUsG from './views/AboutUsG.vue'
  import AreasG from './views/AreasG.vue'
  import SimulatorsG from './views/SimulatorsG.vue'
+ import PriceB from './views/PriceB.vue'
 //  import MainB from './components/MainB'
 //  import MainS from './components/MainS'
  import Home from './components/Home'
@@ -65,6 +66,12 @@
             path: '/main-b',
             component:  MainB,
             name: 'MainB',
+            meta: { area: 'b' }
+        },
+        {
+            path: '/price-b',
+            component:  PriceB,
+            name: 'PriceB',
             meta: { area: 'b' }
         },
 
