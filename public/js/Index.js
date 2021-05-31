@@ -19208,57 +19208,139 @@ __webpack_require__.r(__webpack_exports__);
           name: 'Juvederm Voluma з лідокаїном (1 мл)',
           price: '5 800'
         }]
-      } // {id: 2, direction: "cosmetology", сhapter: 'Консультації', list: [
-      //     {name: 'Первинна консультація трихолога', price: 700},
-      //     {name: 'Вторинна консультація трихолога', price: 400},
-      //     {name: 'Первинна консультація косметолога', price: 500},
-      //     {name: 'Вторинна консультація трихолога', price: 300}
-      // ]},
-      // {id: 3, direction: "cosmetology", сhapter: 'Консультації', list: [
-      //     {name: 'Первинна консультація трихолога', price: 700},
-      //     {name: 'Вторинна консультація трихолога', price: 400},
-      //     {name: 'Первинна консультація косметолога', price: 500},
-      //     {name: 'Вторинна консультація трихолога', price: 300}
-      // ]},
-      // {id: 4, direction: "cosmetology", сhapter: 'Консультації', list: [
-      //     {name: 'Первинна консультація трихолога', price: 700},
-      //     {name: 'Вторинна консультація трихолога', price: 400},
-      //     {name: 'Первинна консультація косметолога', price: 500},
-      //     {name: 'Вторинна консультація трихолога', price: 300}
-      // ]},
-      // {id: 5, direction: "cosmetology", сhapter: 'Консультації', list: [
-      //     {name: 'Первинна консультація трихолога', price: 700},
-      //     {name: 'Вторинна консультація трихолога', price: 400},
-      //     {name: 'Первинна консультація косметолога', price: 500},
-      //     {name: 'Вторинна консультація трихолога', price: 300}
-      // ]},
-      // {id: 6, direction: "cosmetology", сhapter: 'Консультації', list: [
-      //     {name: 'Первинна консультація трихолога', price: 700},
-      //     {name: 'Вторинна консультація трихолога', price: 400},
-      //     {name: 'Первинна консультація косметолога', price: 500},
-      //     {name: 'Вторинна консультація трихолога', price: 300}
-      // ]},
-      ]
+      }, {
+        id: 2,
+        direction: "cosmetology",
+        сhapter: 'Біоревіталізація',
+        lists: [{
+          name: 'Hyalual 0.55% (1.5 мл)',
+          price: '2 200'
+        }, {
+          name: 'Hyalual 1,1% (2 мл)',
+          price: '3 000'
+        }, {
+          name: 'Hyalual 1,8% (2 мл)',
+          price: '3 500'
+        }, {
+          name: 'Meso-Wharton (1.5 мл)',
+          price: '4 400'
+        }, {
+          name: 'Meso-Xantin (1.5 мл)',
+          price: '4 300'
+        }, {
+          name: 'Rejuran Hyalual (2 мл)',
+          price: '5 800'
+        }]
+      }, {
+        id: 3,
+        direction: "cosmetology",
+        сhapter: 'Плазмотерапія',
+        lists: [{
+          name: 'Плазмотерапія волосистої частини голови (1 пробірка)',
+          price: '1 300'
+        }, {
+          name: 'Плазмотерапія лиця (1 пробірка)',
+          price: '1 300'
+        }]
+      }, {
+        id: 4,
+        direction: "cosmetology",
+        сhapter: 'Догляд Holy Land',
+        lists: [{
+          name: 'Чистка',
+          price: '600'
+        }, {
+          name: 'Догляд Holy Land з вітаміном С',
+          price: '870'
+        }, {
+          name: 'Догляд Holy Land ліфтинг та зволоження',
+          price: '1 000'
+        }, {
+          name: 'Пілінг Deep',
+          price: '700'
+        }, {
+          name: 'Пілінг Professional',
+          price: '700'
+        }, {
+          name: 'Чищення обличчя з пілінгом',
+          price: '800'
+        }]
+      }, {
+        id: 5,
+        direction: "cosmetology",
+        сhapter: 'Мезотерапія',
+        lists: [{
+          name: 'PBSerum Triada',
+          price: '2 800'
+        }, {
+          name: 'PBSerum Slim',
+          price: '1 200'
+        }, {
+          name: 'PBSerum Drain',
+          price: '1 200'
+        }, {
+          name: 'PBSerum Smooth',
+          price: '1 200'
+        }, {
+          name: 'RRS Whitening',
+          price: '2 270'
+        }, {
+          name: 'RRS Cellustrix',
+          price: '1 400'
+        }, {
+          name: 'RRS Eyes',
+          price: '1 360'
+        }, {
+          name: 'RRS Eyes з пілінгом Innoaesthetics',
+          price: '1 400'
+        }, {
+          name: 'RRS Hair',
+          price: '900'
+        }, {
+          name: 'Toskani Hair',
+          price: '900'
+        }]
+      }, {
+        id: 6,
+        direction: "cosmetology",
+        сhapter: 'Ботулінотерапія',
+        subtiteles: [{
+          name: 'Ботокс Allergan',
+          lists: [{
+            name: '1 зона',
+            price: '2 500'
+          }, {
+            name: '2 зони',
+            price: '4 400'
+          }, {
+            name: '3 зони',
+            price: '6 500'
+          }, {
+            name: 'Корекція 1 зона',
+            price: '900'
+          }]
+        }, {
+          name: 'Ботокс Dysport',
+          lists: [{
+            name: 'Лоб',
+            price: '2 800'
+          }, {
+            name: 'Міжбрів’я',
+            price: '3 000'
+          }, {
+            name: 'Очі',
+            price: '2 500'
+          }]
+        }]
+      }]
     };
-  },
-  // mounted() {
-  //     console.log('isMobile', this.$root.$data.isMobile);
-  // },
-  methods: {
-    change: function change(e) {
-      this.isOpen = e;
-    } // openDetail(idSimulator) {
-    //     this.simulatorDetail = this.simulators.filter((simulator) => simulator.id === idSimulator)[0];
-    //     this.isModalOpen = true;
-    // }
-
   },
   computed: {
     directionCheck: function directionCheck() {
       var _this = this;
 
-      return this.simulators.filter(function (simulator) {
-        return simulator.direction === _this.direction;
+      return this.prices.filter(function (price) {
+        return price.direction === _this.direction;
       });
     }
   },
@@ -21681,7 +21763,27 @@ var _hoisted_6 = {
 var _hoisted_7 = {
   "class": "type-name"
 };
-var _hoisted_8 = {
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "line-dotted"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_9 = {
+  "class": "type-price"
+};
+var _hoisted_10 = {
+  "class": "type-name"
+};
+
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "line-dotted"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_12 = {
   "class": "type-price"
 };
 
@@ -21739,26 +21841,49 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     }
   }, "Make Up & Brows", 2
   /* CLASS */
-  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.TransitionGroup, {
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.TransitionGroup, {
     name: "list-price"
   }, {
     "default": _withId(function () {
-      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.prices, function (price) {
-        return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("ul", {
+      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.directionCheck, function (price) {
+        return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", {
           key: price.id
-        }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(price.сhapter), 1
+        }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(price.сhapter), 1
         /* TEXT */
-        ), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(price.lists, function (list) {
-          return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", {
-            key: list.id
-          }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.name), 1
+        ), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(price.subtiteles, function (subtitel, idx) {
+          return (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)(((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+            "class": "subtitle",
+            key: idx
+          }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(subtitel.name), 1
           /* TEXT */
-          ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p class=\"line-dotted\"></p> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.price) + " грн", 1
-          /* TEXT */
-          )]);
+          ), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(subtitel.lists, function (list) {
+            return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", {
+              key: list.id
+            }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.name), 1
+            /* TEXT */
+            ), _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.price) + " грн", 1
+            /* TEXT */
+            )]);
+          }), 128
+          /* KEYED_FRAGMENT */
+          ))], 512
+          /* NEED_PATCH */
+          )), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, price.subtiteles]]);
         }), 128
         /* KEYED_FRAGMENT */
-        ))]);
+        )), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(price.lists, function (list) {
+          return (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)(((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", {
+            key: list.id
+          }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.name), 1
+          /* TEXT */
+          ), _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.price) + " грн", 1
+          /* TEXT */
+          )], 512
+          /* NEED_PATCH */
+          )), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, price.lists]]);
+        }), 128
+        /* KEYED_FRAGMENT */
+        ))])]);
       }), 128
       /* KEYED_FRAGMENT */
       ))];
@@ -24544,7 +24669,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?65998a52bc75e3367d5878dba8f72615");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?02bae0682140f88722059abfc0376dc1");
 
 /***/ }),
 

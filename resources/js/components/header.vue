@@ -104,6 +104,10 @@ export default {
       background: url("../../assets/images/g-level-darck.svg") no-repeat;
       background-size: contain;
     }
+    & .main>a>.logo.b {
+      background: url("../../assets/images/b-level-darck.svg") no-repeat;
+      background-size: contain;
+    }
 }
 .is-open{
    background-color: #000 !important;
@@ -120,6 +124,10 @@ export default {
     }
    & .main>a>.logo.g {
         background: url("../../assets/images/g-level.svg") no-repeat;
+        background-size: contain;
+    }
+    & .main>a>.logo.b {
+        background: url("../../assets/images/b-level.svg") no-repeat;
         background-size: contain;
     }
 }
@@ -267,6 +275,10 @@ export default {
         height: 38px;
         &.g {
             background: url("../../assets/images/g-level.svg") no-repeat;
+            background-size: contain;
+        }
+        &.b {
+            background: url("../../assets/images/b-level.svg") no-repeat;
             background-size: contain;
         }
     }

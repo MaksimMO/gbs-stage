@@ -13,18 +13,28 @@
             <li @click="direction = 'make_up_brows'" :class="{'invert-color': direction == 'make_up_brows'}">Make Up &#38; Brows</li>
         </ul>
 
-        <div class="price">
+        <ul class="price">
             <transition-group name="list-price">
-                <ul v-for="(price)  in prices" :key="price.id">
-                    <p class="сhapter">{{price.сhapter}}</p>
-                    <li  v-for="(list)  in price.lists" :key="list.id">
-                        <p class="type-name">{{list.name}}</p>
-                        <!-- <p class="line-dotted"></p> -->
-                        <p class="type-price">{{list.price}} грн</p>
-                    </li>
-                </ul>
+                <li v-for="(price)  in directionCheck" :key="price.id">
+                    <ul>
+                        <p class="сhapter">{{price.сhapter}}</p>
+                        <div class="subtitle" v-show="price.subtiteles" v-for="(subtitel, idx)  in price.subtiteles" :key="idx">
+                            <p>{{subtitel.name}}</p>
+                            <li v-for="(list)  in subtitel.lists" :key="list.id">
+                                <p class="type-name">{{list.name}}</p>
+                                <p class="line-dotted"></p>
+                                <p class="type-price">{{list.price}} грн</p>
+                            </li>
+                        </div>
+                        <li v-show="price.lists"  v-for="(list)  in price.lists" :key="list.id">
+                            <p class="type-name">{{list.name}}</p>
+                            <p class="line-dotted"></p>
+                            <p class="type-price">{{list.price}} грн</p>
+                        </li>
+                    </ul>
+                </li>
             </transition-group>
-        </div>
+        </ul>
       </section>
     </div>
 <Footer/>
@@ -53,56 +63,59 @@ export default {
                     {name: 'Juvederm Volbella з лідокаїном (1 мл)', price: '5 800'},
                     {name: 'Juvederm Volift Retouch (0.55 мл)', price: '4 500'},
                     {name: 'Juvederm Volift з лідокаїном (1 мл)', price: '4 700'},
-                    {name: 'Juvederm Voluma з лідокаїном (1 мл)', price: '5 800'},
+                    {name: 'Juvederm Voluma з лідокаїном (1 мл)', price: '5 800'}
                 ]},
-                // {id: 2, direction: "cosmetology", сhapter: 'Консультації', list: [
-                //     {name: 'Первинна консультація трихолога', price: 700},
-                //     {name: 'Вторинна консультація трихолога', price: 400},
-                //     {name: 'Первинна консультація косметолога', price: 500},
-                //     {name: 'Вторинна консультація трихолога', price: 300}
-                // ]},
-                // {id: 3, direction: "cosmetology", сhapter: 'Консультації', list: [
-                //     {name: 'Первинна консультація трихолога', price: 700},
-                //     {name: 'Вторинна консультація трихолога', price: 400},
-                //     {name: 'Первинна консультація косметолога', price: 500},
-                //     {name: 'Вторинна консультація трихолога', price: 300}
-                // ]},
-                // {id: 4, direction: "cosmetology", сhapter: 'Консультації', list: [
-                //     {name: 'Первинна консультація трихолога', price: 700},
-                //     {name: 'Вторинна консультація трихолога', price: 400},
-                //     {name: 'Первинна консультація косметолога', price: 500},
-                //     {name: 'Вторинна консультація трихолога', price: 300}
-                // ]},
-                // {id: 5, direction: "cosmetology", сhapter: 'Консультації', list: [
-                //     {name: 'Первинна консультація трихолога', price: 700},
-                //     {name: 'Вторинна консультація трихолога', price: 400},
-                //     {name: 'Первинна консультація косметолога', price: 500},
-                //     {name: 'Вторинна консультація трихолога', price: 300}
-                // ]},
-                // {id: 6, direction: "cosmetology", сhapter: 'Консультації', list: [
-                //     {name: 'Первинна консультація трихолога', price: 700},
-                //     {name: 'Вторинна консультація трихолога', price: 400},
-                //     {name: 'Первинна консультація косметолога', price: 500},
-                //     {name: 'Вторинна консультація трихолога', price: 300}
-                // ]},
+                {id: 2, direction: "cosmetology", сhapter: 'Біоревіталізація', lists: [
+                    {name: 'Hyalual 0.55% (1.5 мл)', price: '2 200'},
+                    {name: 'Hyalual 1,1% (2 мл)', price: '3 000'},
+                    {name: 'Hyalual 1,8% (2 мл)', price: '3 500'},
+                    {name: 'Meso-Wharton (1.5 мл)', price: '4 400'},
+                    {name: 'Meso-Xantin (1.5 мл)', price: '4 300'},
+                    {name: 'Rejuran Hyalual (2 мл)', price: '5 800'}
+                ]},
+                {id: 3, direction: "cosmetology", сhapter: 'Плазмотерапія', lists: [
+                    {name: 'Плазмотерапія волосистої частини голови (1 пробірка)', price: '1 300'},
+                    {name: 'Плазмотерапія лиця (1 пробірка)', price: '1 300'}
+                ]},
+                {id: 4, direction: "cosmetology", сhapter: 'Догляд Holy Land', lists: [
+                    {name: 'Чистка', price: '600'},
+                    {name: 'Догляд Holy Land з вітаміном С', price: '870'},
+                    {name: 'Догляд Holy Land ліфтинг та зволоження', price: '1 000'},
+                    {name: 'Пілінг Deep', price: '700'},
+                    {name: 'Пілінг Professional', price: '700'},
+                    {name: 'Чищення обличчя з пілінгом', price: '800'}
+                ]},
+                {id: 5, direction: "cosmetology", сhapter: 'Мезотерапія', lists: [
+                    {name: 'PBSerum Triada', price: '2 800'},
+                    {name: 'PBSerum Slim', price: '1 200'},
+                    {name: 'PBSerum Drain', price: '1 200'},
+                    {name: 'PBSerum Smooth', price: '1 200'},
+                    {name: 'RRS Whitening', price: '2 270'},
+                    {name: 'RRS Cellustrix', price: '1 400'},
+                    {name: 'RRS Eyes', price: '1 360'},
+                    {name: 'RRS Eyes з пілінгом Innoaesthetics', price: '1 400'},
+                    {name: 'RRS Hair', price: '900'},
+                    {name: 'Toskani Hair', price: '900'}
+                ]},
+                {id: 6, direction: "cosmetology", сhapter: 'Ботулінотерапія', subtiteles: [
+                    {name: 'Ботокс Allergan', lists: [
+                        {name: '1 зона', price: '2 500'},
+                        {name: '2 зони', price: '4 400'},
+                        {name: '3 зони', price: '6 500'},
+                        {name: 'Корекція 1 зона', price: '900'}
+                    ]},
+                    {name: 'Ботокс Dysport', lists: [
+                        {name: 'Лоб', price: '2 800'},
+                        {name: 'Міжбрів’я', price: '3 000'},
+                        {name: 'Очі', price: '2 500'}
+                    ]},
+                ]},
             ]
         }
     },
-    // mounted() {
-    //     console.log('isMobile', this.$root.$data.isMobile);
-    // },
-    methods: {
-        change(e) {
-            this.isOpen = e;
-        },
-        // openDetail(idSimulator) {
-        //     this.simulatorDetail = this.simulators.filter((simulator) => simulator.id === idSimulator)[0];
-        //     this.isModalOpen = true;
-        // }
-    },
     computed: {
         directionCheck () {
-            return this.simulators.filter((simulator) => simulator.direction === this.direction);
+            return this.prices.filter((price) => price.direction === this.direction);
         },
     },
     components: {
@@ -183,14 +196,24 @@ export default {
             color: #000000;
             font-feature-settings: 'pnum' on, 'lnum' on;
             font-style: normal;
-            grid-template-columns: repeat(2, 1fr);
-            grid-column-gap: 15px;
-            display: grid;
-            &>ul {
+            // grid-template-columns: repeat(2, 1fr);
+            // grid-column-gap: 134px;
+            // display: grid;
+            column-count: 2;
+            column-gap: 134px;
+            padding: 0;
+            &>li:nth-child(4){
+                break-after: column;
+            }
+            &>li {
                 list-style-type: none;
                 padding: 0;
-                &>p{
+                &>ul {
+                    padding: 0;
+                }
+                &>ul>.сhapter{
                     margin: 0;
+                    margin-bottom: 10px;
                     font-family: Oswald;
                     font-weight: 600;
                     font-size: 24px;
@@ -198,69 +221,44 @@ export default {
                     letter-spacing: 0.02em;
                     font-feature-settings: 'pnum' on, 'lnum' on;
                 }
-                &>li{
+                &>ul>.subtitle {
+                    &>p {
+                        font-family: Raleway;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 28px;
+                        letter-spacing: 0.05em;
+                        margin: 0;
+                        margin-bottom: 10px;
+                    }
+                }
+                &>ul>li,
+                &>ul>.subtitle>li{
                     font-family: Raleway;
                     font-weight: normal;
                     width: 100%;
                     font-size: 14px;
                     line-height: 28px;
                     letter-spacing: 0.05em;
-                    // display: inline-block;
-                    overflow: hidden;
-                    &::after {
-                        content:'............................................................................................................................................................................................................................';
-                        display: block;
-                        white-space: nowrap;
-                        overflow: hidden;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                    & .line-dotted {
+                        flex: 1 0;
+                        border-bottom: 1px dotted #000;
+                        height: 20px;
+                        margin: 0 .4em;
                     }
-                    // & .line-dotted {
-                    //     display: table-cell;
-                    //     overflow: auto;
-                    //     width: 100%;
-                    //     margin: 0;
-                    //     border-bottom: 1px dotted;
-                    // }
                     & .type-name {
-                        float:left;
                         margin: 0;
-                        margin-right: 10px;
-                        // display: table-cell;
+                        max-width: 316px;
                     }
                     & .type-price {
-                        float:right;
-                        // min-width: 85px;
-                        // text-align: right;
-                        // display: table-cell;
                         margin: 0;
-                        margin-left: 10px;
+                        font-weight: 600;
                     }
                 }
             }
-            // list-style-type: none;
-            // overflow: visible;
-            // grid-template-columns: repeat(4, 1fr);
-            // grid-column-gap: 15px;
-            // grid-row-gap: 40px;
-            // display: grid;
-            // padding: 0;
-            // &>div {
-            //     cursor: pointer;
-            // }
-            // & li img {
-            //     display:block;
-            //     width:100%;
-            // }
-            // & li div{
-            //     font-family: Oswald;
-            //     font-style: normal;
-            //     font-weight: 600;
-            //     font-size: 18px;
-            //     line-height: 27px;
-            //     letter-spacing: 0.02em;
-            //     font-feature-settings: 'pnum' on, 'lnum' on;
-            //     color: #000000;
-            //     padding: 10px 5px 0 5px;
-            // }
         }
     }
     @media screen and (max-width: 768px){
