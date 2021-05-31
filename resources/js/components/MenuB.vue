@@ -1,27 +1,14 @@
 <template>
-
   <ul class="main-menu">
       <li>
-          <router-link to="/about-us-g">Про нас</router-link>
+          <router-link to="/main-b">Наша команда</router-link>
       </li>
       <li>
-          <router-link to="/areas-g">Зонування</router-link>
+          <router-link to="/price-b">Ціни</router-link>
       </li>
       <li>
-          <router-link to="/team-g">Наша команда</router-link>
+          <router-link to="/main-b">Контакти</router-link>
       </li>
-      <li>
-          <router-link to="/simulators-g">Тренажери</router-link>
-      </li>
-      <!-- <li>
-          <router-link to="/">Комфорт і чистота</router-link>
-      </li>
-      <li>
-          <router-link to="/">Фітнес бар</router-link>
-      </li>
-      <li>
-          <router-link to="/">Безпека</router-link>
-      </li> -->
   </ul>
 </template>
 

@@ -102,8 +102,8 @@ export default {
 
 .swiper-slide img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     object-fit: cover;
   }
 

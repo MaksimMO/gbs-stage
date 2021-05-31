@@ -11,7 +11,7 @@
       <a href="https://www.instagram.com/gbs.level" class="instagram"></a>
     </div>
   </div>
-  <div class="line-2">
+  <div v-show="$root.$data.area == 'g'" class="line-2">
       <router-link class="link-1" to="/about-us-g">Про нас</router-link>
       <router-link class="link-1" to="/areas-g">Зонування</router-link>
       <router-link class="link-1" to="/team-g">Наша команда</router-link>
@@ -19,6 +19,11 @@
       <!-- <router-link class="link-1" to="/">Комфорт і чистота</router-link>
       <router-link class="link-1" to="/">Фітнес бар</router-link>
       <router-link class="link-1" to="/">Безпека та мед кабінет</router-link> -->
+  </div>
+  <div v-show="$root.$data.area == 'b'" class="line-2">
+      <router-link class="link-1" to="/main-b">Наша команда</router-link>
+      <router-link class="link-1" to="/price-b">Ціни</router-link>
+      <router-link class="link-1" to="/main-b">Контакти</router-link>
   </div>
 
   <hr>

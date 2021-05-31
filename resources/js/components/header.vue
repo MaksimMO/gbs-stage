@@ -16,7 +16,10 @@
     <div :class="{'close-opened':isOpen, 'menu-open': !isOpen}" @click="isOpen = !isOpen"></div>
   </div>
   <transition name="slide-fade">
-    <Menu v-show="isOpen" />
+    <MenuG v-show="isOpen && $root.$data.area == 'g'" />
+  </transition>
+  <transition name="slide-fade">
+    <MenuB v-show="isOpen && $root.$data.area == 'b'" />
   </transition>
 </div>
 
@@ -26,7 +29,8 @@
 
 <script>
 import PhoneLink from "./PhoneLink.vue";
-import Menu from "./Menu.vue";
+import MenuG from "./MenuG.vue";
+import MenuB from "./MenuB.vue";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 import MakeOrderPopup from './MakeOrderPopup.vue'
 
@@ -40,7 +44,8 @@ export default {
   },
   components: {
     PhoneLink,
-    Menu,
+    MenuG,
+    MenuB,
     LanguageSwitcher,
     MakeOrderPopup
   },

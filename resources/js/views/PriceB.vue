@@ -13,28 +13,46 @@
             <li @click="direction = 'make_up_brows'" :class="{'invert-color': direction == 'make_up_brows'}">Make Up &#38; Brows</li>
         </ul>
 
-        <ul class="price">
+        <div class="price">
             <transition-group name="list-price">
-                <li v-for="(price)  in directionCheck" :key="price.id">
-                    <ul>
+                <div class="left">
+                    <ul v-for="(price)  in directionCheckLeft" :key="price.id">
                         <p class="сhapter">{{price.сhapter}}</p>
                         <div class="subtitle" v-show="price.subtiteles" v-for="(subtitel, idx)  in price.subtiteles" :key="idx">
                             <p>{{subtitel.name}}</p>
                             <li v-for="(list)  in subtitel.lists" :key="list.id">
-                                <p class="type-name">{{list.name}}</p>
-                                <p class="line-dotted"></p>
-                                <p class="type-price">{{list.price}} грн</p>
+                                <div class="type-name">{{list.name}}</div>
+                                <div class="line-dotted"></div>
+                                <div class="type-price">{{list.price}} грн</div>
                             </li>
                         </div>
                         <li v-show="price.lists"  v-for="(list)  in price.lists" :key="list.id">
-                            <p class="type-name">{{list.name}}</p>
-                            <p class="line-dotted"></p>
-                            <p class="type-price">{{list.price}} грн</p>
+                            <div class="type-name">{{list.name}}</div>
+                            <div class="line-dotted"></div>
+                            <div class="type-price">{{list.price}} грн</div>
                         </li>
                     </ul>
-                </li>
+                </div>
+                <div class="right">
+                    <ul v-for="(price)  in directionCheckRight" :key="price.id">
+                        <p class="сhapter">{{price.сhapter}}</p>
+                        <div class="subtitle" v-show="price.subtiteles" v-for="(subtitel, idx)  in price.subtiteles" :key="idx">
+                            <p>{{subtitel.name}}</p>
+                            <li v-for="(list)  in subtitel.lists" :key="list.id">
+                                <div class="type-name">{{list.name}}</div>
+                                <div class="line-dotted"></div>
+                                <div class="type-price">{{list.price}} грн</div>
+                            </li>
+                        </div>
+                        <li v-show="price.lists"  v-for="(list)  in price.lists" :key="list.id">
+                            <div class="type-name">{{list.name}}</div>
+                            <div class="line-dotted"></div>
+                            <div class="type-price">{{list.price}} грн</div>
+                        </li>
+                    </ul>
+                </div>
             </transition-group>
-        </ul>
+        </div>
       </section>
     </div>
 <Footer/>
@@ -48,13 +66,13 @@ export default {
         return {
             direction: 'cosmetology',
             prices: [
-                {id: 0, direction: "cosmetology", сhapter: 'Консультації', lists: [
+                {id: 0, direction: "cosmetology", side: 'left', сhapter: 'Консультації', lists: [
                     {name: 'Первинна консультація трихолога', price: '700'},
                     {name: 'Вторинна консультація трихолога', price: '400'},
                     {name: 'Первинна консультація косметолога', price: '500'},
                     {name: 'Вторинна консультація трихолога', price: '300'}
                 ]},
-                {id: 1, direction: "cosmetology", сhapter: 'Контурна пластика обличчя', lists: [
+                {id: 1, direction: "cosmetology", side: 'left', сhapter: 'Контурна пластика обличчя', lists: [
                     {name: 'Belotero Balance (1 мл)', price: '7 200'},
                     {name: 'Belotero Volume (1 мл)', price: '5 700'},
                     {name: 'Belotero Lips Shape (0.6 мл)', price: '4 350'},
@@ -65,7 +83,7 @@ export default {
                     {name: 'Juvederm Volift з лідокаїном (1 мл)', price: '4 700'},
                     {name: 'Juvederm Voluma з лідокаїном (1 мл)', price: '5 800'}
                 ]},
-                {id: 2, direction: "cosmetology", сhapter: 'Біоревіталізація', lists: [
+                {id: 2, direction: "cosmetology", side: 'left', сhapter: 'Біоревіталізація', lists: [
                     {name: 'Hyalual 0.55% (1.5 мл)', price: '2 200'},
                     {name: 'Hyalual 1,1% (2 мл)', price: '3 000'},
                     {name: 'Hyalual 1,8% (2 мл)', price: '3 500'},
@@ -73,11 +91,11 @@ export default {
                     {name: 'Meso-Xantin (1.5 мл)', price: '4 300'},
                     {name: 'Rejuran Hyalual (2 мл)', price: '5 800'}
                 ]},
-                {id: 3, direction: "cosmetology", сhapter: 'Плазмотерапія', lists: [
+                {id: 3, direction: "cosmetology", side: 'left', сhapter: 'Плазмотерапія', lists: [
                     {name: 'Плазмотерапія волосистої частини голови (1 пробірка)', price: '1 300'},
                     {name: 'Плазмотерапія лиця (1 пробірка)', price: '1 300'}
                 ]},
-                {id: 4, direction: "cosmetology", сhapter: 'Догляд Holy Land', lists: [
+                {id: 4, direction: "cosmetology", side: 'right', сhapter: 'Догляд Holy Land', lists: [
                     {name: 'Чистка', price: '600'},
                     {name: 'Догляд Holy Land з вітаміном С', price: '870'},
                     {name: 'Догляд Holy Land ліфтинг та зволоження', price: '1 000'},
@@ -85,7 +103,7 @@ export default {
                     {name: 'Пілінг Professional', price: '700'},
                     {name: 'Чищення обличчя з пілінгом', price: '800'}
                 ]},
-                {id: 5, direction: "cosmetology", сhapter: 'Мезотерапія', lists: [
+                {id: 5, direction: "cosmetology", side: 'right', сhapter: 'Мезотерапія', lists: [
                     {name: 'PBSerum Triada', price: '2 800'},
                     {name: 'PBSerum Slim', price: '1 200'},
                     {name: 'PBSerum Drain', price: '1 200'},
@@ -97,7 +115,7 @@ export default {
                     {name: 'RRS Hair', price: '900'},
                     {name: 'Toskani Hair', price: '900'}
                 ]},
-                {id: 6, direction: "cosmetology", сhapter: 'Ботулінотерапія', subtiteles: [
+                {id: 6, direction: "cosmetology", side: 'right', сhapter: 'Ботулінотерапія', subtiteles: [
                     {name: 'Ботокс Allergan', lists: [
                         {name: '1 зона', price: '2 500'},
                         {name: '2 зони', price: '4 400'},
@@ -114,8 +132,11 @@ export default {
         }
     },
     computed: {
-        directionCheck () {
-            return this.prices.filter((price) => price.direction === this.direction);
+        directionCheckLeft () {
+            return this.prices.filter((price) => price.direction === this.direction && price.side === 'left');
+        },
+        directionCheckRight () {
+            return this.prices.filter((price) => price.direction === this.direction && price.side === 'right');
         },
     },
     components: {
@@ -196,22 +217,14 @@ export default {
             color: #000000;
             font-feature-settings: 'pnum' on, 'lnum' on;
             font-style: normal;
-            // grid-template-columns: repeat(2, 1fr);
-            // grid-column-gap: 134px;
-            // display: grid;
-            column-count: 2;
-            column-gap: 134px;
-            padding: 0;
-            &>li:nth-child(4){
-                break-after: column;
-            }
-            &>li {
+            grid-template-columns: repeat(2, 444px);
+            grid-column-gap: 134px;
+            display: grid;
+            &>.left>ul,
+            &>.right>ul {
                 list-style-type: none;
                 padding: 0;
-                &>ul {
-                    padding: 0;
-                }
-                &>ul>.сhapter{
+                &>.сhapter{
                     margin: 0;
                     margin-bottom: 10px;
                     font-family: Oswald;
@@ -221,7 +234,7 @@ export default {
                     letter-spacing: 0.02em;
                     font-feature-settings: 'pnum' on, 'lnum' on;
                 }
-                &>ul>.subtitle {
+                &>.subtitle {
                     &>p {
                         font-family: Raleway;
                         font-weight: 600;
@@ -232,8 +245,8 @@ export default {
                         margin-bottom: 10px;
                     }
                 }
-                &>ul>li,
-                &>ul>.subtitle>li{
+                &>li,
+                &>.subtitle>li{
                     font-family: Raleway;
                     font-weight: normal;
                     width: 100%;
@@ -255,7 +268,6 @@ export default {
                     }
                     & .type-price {
                         margin: 0;
-                        font-weight: 600;
                     }
                 }
             }
