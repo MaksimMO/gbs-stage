@@ -25,6 +25,20 @@
 import TrainerList from '../components/TrainersList';
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
+let preloadedAssets = [
+        require('../../assets/images/TeamG/Vladimir_Leskov.jpg').default,
+        require('../../assets/images/TeamG/Irina_Slyusarenko.jpg').default,
+        require('../../assets/images/TeamG/Olga_Depeshko.jpg').default,
+        require('../../assets/images/TeamG/Olga_Martsenyuk.jpg').default,
+        require('../../assets/images/TeamG/Mikhail_Galagan.jpg').default,
+        require('../../assets/images/TeamG/Olga_Osadchuk.jpg').default,
+        require('../../assets/images/TeamG/valentine.jpg').default,
+        require('../../assets/images/TeamG/Melnyk_Serhiy.jpg').default,
+        require('../../assets/images/TeamG/Olena_Semenchuk.jpg').default,
+        require('../../assets/images/TeamG/Nechko_Vasil.jpg').default,
+        require('../../assets/images/TeamG/Gornushkina_Julia.jpg').default,
+        require('../../assets/images/TeamG/Dementieva_Elena.jpg').default,
+    ]
 export default {
     emits: ['changeOpen'],
     data() {
@@ -50,6 +64,43 @@ export default {
         change(e) {
             this.isOpen = e;
         },
+    },
+    beforeRouteEnter(to, from, next) {
+        const cacheImage = (url) =>{
+            return new Promise((resolve, reject) => {
+                let img = new Image()
+                img.onload = resolve;
+                img.src = url;
+            });
+        }
+        console.log("wait to show loader for 0.6s")
+        let postponeTimelId = setTimeout(()=>{
+            console.log("show loader")
+            window.vm.$data.isLoading=true
+        },600);
+
+
+        Promise.all(
+            [cacheImage(preloadedAssets[0]),
+            cacheImage(preloadedAssets[1]),
+            cacheImage(preloadedAssets[2]),
+            cacheImage(preloadedAssets[3]),
+            cacheImage(preloadedAssets[4]),
+            cacheImage(preloadedAssets[5]),
+            cacheImage(preloadedAssets[6]),
+            cacheImage(preloadedAssets[7]),
+            cacheImage(preloadedAssets[8]),
+            cacheImage(preloadedAssets[9]),
+            cacheImage(preloadedAssets[10]),
+            cacheImage(preloadedAssets[11])]).finally(()=>{
+
+            clearTimeout(postponeTimelId);
+            if (window.vm.$data.isLoading){
+                console.log("hide loader")
+                window.vm.$data.isLoading=false;
+            }
+            next();
+        });
     },
     components: {
         TrainerList,

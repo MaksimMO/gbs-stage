@@ -96,24 +96,10 @@ let preloadedAssets = [
         require('../../assets/images/TeamG/Irina_Slyusarenko.jpg').default,
         require('../../assets/images/TeamG/Olga_Depeshko.jpg').default,
         require('../../assets/images/TeamG/Olga_Martsenyuk.jpg').default,
-        require('../../assets/images/TeamG/Mikhail_Galagan.jpg').default,
-        require('../../assets/images/TeamG/Olga_Osadchuk.jpg').default,
-        require('../../assets/images/TeamG/valentine.jpg').default,
-        require('../../assets/images/TeamG/Melnyk_Serhiy.jpg').default,
-        require('../../assets/images/TeamG/Olena_Semenchuk.jpg').default,
-        require('../../assets/images/TeamG/Nechko_Vasil.jpg').default,
-        require('../../assets/images/TeamG/Gornushkina_Julia.jpg').default,
-        require('../../assets/images/TeamG/Dementieva_Elena.jpg').default,
         require("../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default,
         require("../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default,
         require("../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default,
         require("../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default,
-        require("../../assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg").default,
-        require("../../assets/images/TeamG/gallery/IMG_4574_370x370.jpg").default,
-        require("../../assets/images/TeamG/gallery/IMG_4583_370x370.jpg").default,
-        require("../../assets/images/TeamG/gallery/IMG_4595_370x370.jpg").default,
-        require("../../assets/images/TeamG/gallery/IMG_4608_370x370.jpg").default,
-        require("../../assets/images/TeamG/gallery/IMG_4614_370x370.jpg").default,
     ]
 
 export default {
@@ -121,7 +107,6 @@ export default {
     data() {
         return {
             isOpen: false,
-            assets: [],
             trainers: [
                 {id: 0, link: "Vladimir_Leskov.jpg"},
                 {id: 1, link: "Irina_Slyusarenko.jpg"},
@@ -172,7 +157,15 @@ export default {
 
         Promise.all(
             [cacheImage(preloadedAssets[0]),
-            cacheImage(preloadedAssets[1])]).finally(()=>{
+            cacheImage(preloadedAssets[1]),
+            cacheImage(preloadedAssets[2]),
+            cacheImage(preloadedAssets[3]),
+            cacheImage(preloadedAssets[4]),
+            cacheImage(preloadedAssets[5]),
+            cacheImage(preloadedAssets[6]),
+            cacheImage(preloadedAssets[7]),
+            cacheImage(preloadedAssets[8]),
+            cacheImage(preloadedAssets[9])]).finally(()=>{
 
             clearTimeout(postponeTimelId);
             if (window.vm.$data.isLoading){

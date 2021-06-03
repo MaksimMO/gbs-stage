@@ -73,6 +73,16 @@ import Footer from '../components/Footer.vue';
 import GallerySlider from '../components/GallerySlider.vue';
 import BrandMakeupSlider from '../components/BrandMakeupSlider.vue';
 
+let preloadedAssets = [
+        require('../../assets/images/main-b-background.jpg').default,
+        require('../../assets/images/popup-corner.svg').default,
+        require('../../assets/images/aboutUs-b-main.jpg').default,
+        require('../../assets/images/popup-corner.svg').default,
+        require('../../assets/images/TeamB/gallery/photo-1.jpg').default,
+        require('../../assets/images/TeamB/gallery/photo-2.jpg').default,
+        require("../../assets/images/TeamB/gallery/photo-3.jpg").default,
+    ];
+
 export default {
 
   data(){
@@ -100,6 +110,38 @@ export default {
       preloadLink.as = "image";
       document.head.appendChild(preloadLink);
   },
+  beforeRouteEnter(to, from, next) {
+        const cacheImage = (url) =>{
+            return new Promise((resolve, reject) => {
+                let img = new Image()
+                img.onload = resolve;
+                img.src = url;
+            });
+        }
+        console.log("wait to show loader for 0.6s")
+        let postponeTimelId = setTimeout(()=>{
+            console.log("show loader")
+            window.vm.$data.isLoading=true
+        },600);
+
+
+        Promise.all(
+            [cacheImage(preloadedAssets[0]),
+            cacheImage(preloadedAssets[1]),
+            cacheImage(preloadedAssets[2]),
+            cacheImage(preloadedAssets[3]),
+            cacheImage(preloadedAssets[4]),
+            cacheImage(preloadedAssets[5]),
+            cacheImage(preloadedAssets[6])]).finally(()=>{
+
+            clearTimeout(postponeTimelId);
+            if (window.vm.$data.isLoading){
+                console.log("hide loader")
+                window.vm.$data.isLoading=false;
+            }
+            next();
+        });
+    },
   components:{
     Header,
     Footer,
