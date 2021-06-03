@@ -48,7 +48,7 @@ export default {
             body.append('phone_number', this.phone);
             body.append('level', this.level);
             body.append('_token', this.csrf_token);
-            body.append('comment', `Абонимент ${this.choiceLevel}`);
+            body.append('description', `Абонимент ${this.choiceLevel}`);
 
             fetch('/feedback-form', {method:'POST', body}).finally(()=>{
                 if(this.level==='g'){

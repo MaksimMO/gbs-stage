@@ -89,26 +89,52 @@ import CertificateSlider from '../components/CertificateSlider.vue';
 import GallerySlider from '../components/GallerySlider.vue';
 import TeamsSlider from '../components/TeamsSlider.vue';
 
+let preloadedAssets = [
+        require('../../assets/images/aboutUs-g-main.jpg').default,
+        require('../../assets/images/popup-corner.svg').default,
+        require('../../assets/images/TeamG/Vladimir_Leskov.jpg').default,
+        require('../../assets/images/TeamG/Irina_Slyusarenko.jpg').default,
+        require('../../assets/images/TeamG/Olga_Depeshko.jpg').default,
+        require('../../assets/images/TeamG/Olga_Martsenyuk.jpg').default,
+        require('../../assets/images/TeamG/Mikhail_Galagan.jpg').default,
+        require('../../assets/images/TeamG/Olga_Osadchuk.jpg').default,
+        require('../../assets/images/TeamG/valentine.jpg').default,
+        require('../../assets/images/TeamG/Melnyk_Serhiy.jpg').default,
+        require('../../assets/images/TeamG/Olena_Semenchuk.jpg').default,
+        require('../../assets/images/TeamG/Nechko_Vasil.jpg').default,
+        require('../../assets/images/TeamG/Gornushkina_Julia.jpg').default,
+        require('../../assets/images/TeamG/Dementieva_Elena.jpg').default,
+        require("../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default,
+        require("../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default,
+        require("../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default,
+        require("../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default,
+        require("../../assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg").default,
+        require("../../assets/images/TeamG/gallery/IMG_4574_370x370.jpg").default,
+        require("../../assets/images/TeamG/gallery/IMG_4583_370x370.jpg").default,
+        require("../../assets/images/TeamG/gallery/IMG_4595_370x370.jpg").default,
+        require("../../assets/images/TeamG/gallery/IMG_4608_370x370.jpg").default,
+        require("../../assets/images/TeamG/gallery/IMG_4614_370x370.jpg").default,
+    ]
+
 export default {
     emits: ['changeOpen'],
     data() {
         return {
             isOpen: false,
+            assets: [],
             trainers: [
                 {id: 0, link: "Vladimir_Leskov.jpg"},
                 {id: 1, link: "Irina_Slyusarenko.jpg"},
                 {id: 2, link: "Olga_Depeshko.jpg"},
                 {id: 3, link: "Olga_Martsenyuk.jpg"},
-                {id: 4, link: "Vitaliy_Kaskun.jpg"},
-                {id: 5, link: "Mikhail_Galagan.jpg"},
-                {id: 6, link: "Olga_Osadchuk.jpg"},
-                {id: 6, link: "Tatiana_Podzigun.jpg"},
-                {id: 8, link: "valentine.jpg"},
-                {id: 9, link: "Melnyk_Serhiy.jpg"},
-                {id: 10, link: "Olena_Semenchuk.jpg"},
-                {id: 11, link: "Nechko_Vasil.jpg"},
-                {id: 12, link: "Gornushkina_Julia.jpg"},
-                {id: 13, link: "Dementieva_Elena.jpg"}
+                {id: 4, link: "Mikhail_Galagan.jpg"},
+                {id: 5, link: "Olga_Osadchuk.jpg"},
+                {id: 6, link: "valentine.jpg"},
+                {id: 7, link: "Melnyk_Serhiy.jpg"},
+                {id: 8, link: "Olena_Semenchuk.jpg"},
+                {id: 9, link: "Nechko_Vasil.jpg"},
+                {id: 10, link: "Gornushkina_Julia.jpg"},
+                {id: 11, link: "Dementieva_Elena.jpg"}
             ],
             gallery: [
                 { id: 1, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default },
@@ -128,6 +154,33 @@ export default {
         change(e) {
             this.isOpen = e;
         },
+    },
+    beforeRouteEnter(to, from, next) {
+        const cacheImage = (url) =>{
+            return new Promise((resolve, reject) => {
+                let img = new Image()
+                img.onload = resolve;
+                img.src = url;
+            });
+        }
+        console.log("wait to show loader for 0.6s")
+        let postponeTimelId = setTimeout(()=>{
+            console.log("show loader")
+            window.vm.$data.isLoading=true
+        },600);
+
+
+        Promise.all(
+            [cacheImage(preloadedAssets[0]),
+            cacheImage(preloadedAssets[1])]).finally(()=>{
+
+            clearTimeout(postponeTimelId);
+            if (window.vm.$data.isLoading){
+                console.log("hide loader")
+                window.vm.$data.isLoading=false;
+            }
+            next();
+        });
     },
     components: {
         TrainersList,
