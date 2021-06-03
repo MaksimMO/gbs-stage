@@ -33,6 +33,9 @@ Route::get('/about-us-g', function () {
 Route::get('/simulators-g', function () {
     return view('index');
 });
+Route::get('/tickets-g', function () {
+    return view('index');
+});
 
 
 Route::get('/areas-g', function () {

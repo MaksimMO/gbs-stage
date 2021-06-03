@@ -12,6 +12,9 @@
       <li>
           <router-link to="/simulators-g">Тренажери</router-link>
       </li>
+      <li>
+          <router-link to="/tickets-g">Абонементи</router-link>
+      </li>
       <!-- <li>
           <router-link to="/">Комфорт і чистота</router-link>
       </li>

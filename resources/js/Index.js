@@ -10,6 +10,7 @@
  import AboutUsG from './views/AboutUsG.vue'
  import AreasG from './views/AreasG.vue'
  import SimulatorsG from './views/SimulatorsG.vue'
+ import TicketsG from './views/TicketsG.vue'
  import PriceB from './views/PriceB.vue'
 //  import MainB from './components/MainB'
 //  import MainS from './components/MainS'
@@ -60,6 +61,11 @@
         {
             path:'/simulators-g',
             component:  SimulatorsG,
+            meta: { area: 'g' }
+        },
+        {
+            path:'/tickets-g',
+            component:  TicketsG,
             meta: { area: 'g' }
         },
         {

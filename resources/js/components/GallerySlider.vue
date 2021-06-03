@@ -17,11 +17,7 @@
             'slidesPerView': 3,
             'spaceBetween': 15
         },
-        '1440': {
-            'slidesPerView': 3,
-            'spaceBetween': 15
-        },
-        '2560': {
+        '1441': {
             'slidesPerView': 4,
             'spaceBetween': 15
         }

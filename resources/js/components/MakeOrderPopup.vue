@@ -2,7 +2,7 @@
 <div :class="`make-order-popup ${level}`">
     <div class="close" @click="$emit('closePopup')" ></div>
     <div class="text-1">Залиште свій телефон і ми зателефонуємо Вам</div>
-    <FeedBackForm @submitSuccess="submitSuccess" :level="level" />
+    <FeedBackForm @submitSuccess="submitSuccess" :level="level" :choiceLevel="choiceLevel"/>
 
 
     <popup-success v-if="modalOpen"/>
@@ -22,6 +22,7 @@ let preloadedAssets = {
     }
 
 export default {
+    props: ['choiceLevel'],
     data(){
         return{
             level:'g',

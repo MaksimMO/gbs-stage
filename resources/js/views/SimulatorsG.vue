@@ -1,5 +1,5 @@
 <template>
-<Header class="header-invert" :level="'g'" />
+<Header class="header-invert" />
   <div class="simulator-g">
       <section class="title">
           <h1>Тренажери</h1>
@@ -40,7 +40,7 @@
             </transition>
         </teleport>
 
-<Footer :level="'g'"/>
+<Footer />
 </template>
 
 <script>

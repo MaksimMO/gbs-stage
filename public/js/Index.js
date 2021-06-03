@@ -18165,7 +18165,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Popup_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Popup.vue */ "./resources/js/components/Popup.vue");
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['level'],
+  props: ['level', 'choiceLevel'],
   data: function data() {
     return {
       csrf_token: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
@@ -18188,6 +18188,7 @@ __webpack_require__.r(__webpack_exports__);
       body.append('phone_number', this.phone);
       body.append('level', this.level);
       body.append('_token', this.csrf_token);
+      body.append('comment', "\u0410\u0431\u043E\u043D\u0438\u043C\u0435\u043D\u0442 ".concat(this.choiceLevel));
       fetch('/feedback-form', {
         method: 'POST',
         body: body
@@ -18541,6 +18542,7 @@ var preloadedAssets = {
   s: [__webpack_require__(/*! ../../assets/feedBackFormView/background-s.png */ "./resources/assets/feedBackFormView/background-s.png").default]
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ['choiceLevel'],
   data: function data() {
     return {
       level: 'g',
@@ -18728,6 +18730,28 @@ __webpack_require__.r(__webpack_exports__);
   unmounted: function unmounted() {
     console.log('onUnmounted!');
     this.isOpened = false;
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/PopupTickets.vue?vue&type=script&lang=js":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/PopupTickets.vue?vue&type=script&lang=js ***!
+  \******************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  mounted: function mounted() {
+    document.body.classList.add('overfllow-hidden');
+  },
+  unmounted: function unmounted() {
+    document.body.classList.remove('overfllow-hidden');
   }
 });
 
@@ -19631,33 +19655,27 @@ __webpack_require__.r(__webpack_exports__);
         link: "Olga_Martsenyuk.jpg"
       }, {
         id: 4,
-        link: "Vitaliy_Kaskun.jpg"
-      }, {
-        id: 5,
         link: "Mikhail_Galagan.jpg"
       }, {
-        id: 6,
+        id: 5,
         link: "Olga_Osadchuk.jpg"
       }, {
         id: 6,
-        link: "Tatiana_Podzigun.jpg"
-      }, {
-        id: 8,
         link: "valentine.jpg"
       }, {
-        id: 9,
+        id: 7,
         link: "Melnyk_Serhiy.jpg"
       }, {
-        id: 10,
+        id: 8,
         link: "Olena_Semenchuk.jpg"
       }, {
-        id: 11,
+        id: 9,
         link: "Nechko_Vasil.jpg"
       }, {
-        id: 12,
+        id: 10,
         link: "Gornushkina_Julia.jpg"
       }, {
-        id: 13,
+        id: 11,
         link: "Dementieva_Elena.jpg"
       }]
     };
@@ -19671,6 +19689,89 @@ __webpack_require__.r(__webpack_exports__);
     TrainerList: _components_TrainersList__WEBPACK_IMPORTED_MODULE_0__.default,
     Header: _components_Header_vue__WEBPACK_IMPORTED_MODULE_1__.default,
     Footer: _components_Footer_vue__WEBPACK_IMPORTED_MODULE_2__.default
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/TicketsG.vue?vue&type=script&lang=js":
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/TicketsG.vue?vue&type=script&lang=js ***!
+  \*********************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _components_Header_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Header.vue */ "./resources/js/components/Header.vue");
+/* harmony import */ var _components_Footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Footer.vue */ "./resources/js/components/Footer.vue");
+/* harmony import */ var _components_PopupTickets_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/PopupTickets.vue */ "./resources/js/components/PopupTickets.vue");
+/* harmony import */ var _components_MakeOrderPopup_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/MakeOrderPopup.vue */ "./resources/js/components/MakeOrderPopup.vue");
+
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      isModalOpen: false,
+      isModalOrderOpen: false,
+      ticketDetail: null,
+      choiceLevel: null,
+      tickets: [{
+        id: 1,
+        level: 'level 1',
+        link: __webpack_require__(/*! ../../assets/images/TeamG/tickets/level1.png */ "./resources/assets/images/TeamG/tickets/level1.png").default,
+        period: {
+          time1: 'пн-пт: 07:00 - 23:00',
+          time2: 'сб-нд: 08:00 - 23:00',
+          dayOff: '45 днів'
+        },
+        price: '28 000',
+        details: ['Безліміт на самостійне відвідування спортивного залу.', '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона).', '<b>Гостьове відвідування</b> – 7 рази протягом терміну дії клубної карти.', 'Брендові рушники, брендові халати для відвідування SPA комплексу.', 'Користування шафами покращеного формату.', '<b>Групові тренування</b> – 42 занятя* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 6 рази протягом терміну дії клубної карти.</b>', '<b>Масаж класичний</b> – 2 послуги.', 'Знижка 10 % на послуги “B Level”.', '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>2 послуги</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>2 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>2 послуги</b><br> або нігтьовий сервіс – <b>2 послуги</b>.</p>']
+      }, {
+        id: 2,
+        level: 'level 2',
+        link: __webpack_require__(/*! ../../assets/images/TeamG/tickets/level2.png */ "./resources/assets/images/TeamG/tickets/level2.png").default,
+        period: {
+          time1: 'пн-пт: 07:00 - 23:00',
+          dayOff: '30 днів'
+        },
+        price: '18 000',
+        details: ['Безліміт на самостійне відвідування спортивного залу.', '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 2 рази на місяць протягом терміну дії клубної карти.', '<b>Гостьове відвідування</b> – 5 рази протягом терміну дії клубної карти.', 'Брендові рушники, брендові халати для відвідування SPA комплексу.', 'Користування шафами покращеного формату.', '<b>Групові тренування</b> – 21 занятя* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 3 рази протягом терміну дії клубної карти.</b>', '<b>Масаж класичний</b> – 2 послуги.', 'Знижка 7 % на послуги “B Level”.', '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>1 послуги</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>1 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>1 послуги</b><br> або нігтьовий сервіс – <b>1 послуги</b>.</p>']
+      }, {
+        id: 3,
+        level: 'level 3',
+        link: __webpack_require__(/*! ../../assets/images/TeamG/tickets/level3.png */ "./resources/assets/images/TeamG/tickets/level3.png").default,
+        period: {
+          time1: 'пн-пт: 07:00 - 1:00',
+          dayOff: '30 днів'
+        },
+        price: '12 000',
+        details: ['Безліміт на самостійне відвідування спортивного залу.', '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 1 рази на місяць протягом терміну дії клубної карти.', '<b>Гостьове відвідування</b> – 2 рази протягом терміну дії клубної карти.', 'Брендові рушники, брендові халати для відвідування SPA комплексу.', 'Користування шафами покращеного формату.', '<b>Групові тренування</b> – 14 занятя* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 2 рази протягом терміну дії клубної карти.</b>', 'Знижка 5 % на послуги “B Level”.', '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>1 послуги</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>1 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>1 послуги</b><br> або нігтьовий сервіс – <b>1 послуги</b>.</p>']
+      }]
+    };
+  },
+  methods: {
+    openDetail: function openDetail(idLevel) {
+      this.ticketDetail = this.tickets.filter(function (ticket) {
+        return ticket.id === idLevel;
+      })[0];
+      this.isModalOpen = true;
+    },
+    openOrder: function openOrder(level) {
+      this.isModalOpen = false;
+      this.isModalOrderOpen = true;
+      this.choiceLevel = level;
+    }
+  },
+  components: {
+    Header: _components_Header_vue__WEBPACK_IMPORTED_MODULE_0__.default,
+    Footer: _components_Footer_vue__WEBPACK_IMPORTED_MODULE_1__.default,
+    PopupTickets: _components_PopupTickets_vue__WEBPACK_IMPORTED_MODULE_2__.default,
+    MakeOrderPopup: _components_MakeOrderPopup_vue__WEBPACK_IMPORTED_MODULE_3__.default
   }
 });
 
@@ -20320,11 +20421,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
         'slidesPerView': 3,
         'spaceBetween': 15
       },
-      '1440': {
-        'slidesPerView': 3,
-        'spaceBetween': 15
-      },
-      '2560': {
+      '1441': {
         'slidesPerView': 4,
         'spaceBetween': 15
       }
@@ -20725,10 +20822,11 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   }), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FeedBackForm, {
     onSubmitSuccess: $options.submitSuccess,
-    level: $data.level
+    level: $data.level,
+    choiceLevel: $props.choiceLevel
   }, null, 8
   /* PROPS */
-  , ["onSubmitSuccess", "level"]), $data.modalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_popup_success, {
+  , ["onSubmitSuccess", "level", "choiceLevel"]), $data.modalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_popup_success, {
     key: 0
   })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 2
   /* CLASS */
@@ -20820,6 +20918,8 @@ var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNod
 
 var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Тренажери");
 
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Абонементи");
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
 
@@ -20855,6 +20955,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_5];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    to: "/tickets-g"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_6];
     }),
     _: 1
     /* STABLE */
@@ -21049,6 +21158,44 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   }, [_hoisted_1], 2
   /* CLASS */
   );
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/PopupTickets.vue?vue&type=template&id=893619f4&scoped=true":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/PopupTickets.vue?vue&type=template&id=893619f4&scoped=true ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("data-v-893619f4");
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-893619f4");
+
+var _hoisted_1 = {
+  "class": "modal-overlay"
+};
+var _hoisted_2 = {
+  "class": "modal"
+};
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
+
+var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+    "class": "close",
+    onClick: _cache[1] || (_cache[1] = function ($event) {
+      return _ctx.$emit('closePopup');
+    })
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")])]);
 });
 
 /***/ }),
@@ -22171,8 +22318,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   var _component_Footer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Footer");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header, {
-    "class": "header-invert",
-    level: 'g'
+    "class": "header-invert"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $data.direction = 'upper_boddy';
@@ -22264,9 +22410,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     _: 1
     /* STABLE */
 
-  })])), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer, {
-    level: 'g'
-  })], 64
+  })])), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 });
@@ -22330,6 +22474,202 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/TicketsG.vue?vue&type=template&id=06dcca5f&scoped=true":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/TicketsG.vue?vue&type=template&id=06dcca5f&scoped=true ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("data-v-06dcca5f");
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-06dcca5f");
+
+var _hoisted_1 = {
+  "class": "team-g"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+  "class": "title"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Абонементи"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " GBS Level – це три види клубних карт. Естетичні, емоційні, хардкорні, стримані, релаксуючі, автентичні, максималістичні та вдночас мінімалістичні. Створені в колаборації з Нашими Клієнтами "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, " ОБИРАЙ СВІЙ РІВЕНЬ! ")], -1
+/* HOISTED */
+);
+
+var _hoisted_3 = {
+  "class": "tickets"
+};
+var _hoisted_4 = {
+  "class": "level"
+};
+var _hoisted_5 = {
+  "class": "level"
+};
+var _hoisted_6 = {
+  "class": "level"
+};
+var _hoisted_7 = {
+  "class": "ticket-title"
+};
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Тип клубної карти: ");
+
+var _hoisted_9 = {
+  "class": "ticket-discript"
+};
+var _hoisted_10 = {
+  "class": "ticket-period"
+};
+
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Термін дії: "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "1 рік")], -1
+/* HOISTED */
+);
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Час відвідування:", -1
+/* HOISTED */
+);
+
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Призупинення дії: ");
+
+var _hoisted_14 = {
+  "class": "ticket-period-price"
+};
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Замовити", -1
+/* HOISTED */
+);
+
+var _hoisted_16 = {
+  "class": "ticket-datail"
+};
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
+
+var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_Header = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Header");
+
+  var _component_PopupTickets = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("PopupTickets");
+
+  var _component_MakeOrderPopup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("MakeOrderPopup");
+
+  var _component_Footer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Footer");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header, {
+    "class": "header-invert"
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.tickets[0].level), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+    src: $data.tickets[0].link,
+    alt: "Level 1"
+  }, null, 8
+  /* PROPS */
+  , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+    "class": "detail",
+    onClick: _cache[1] || (_cache[1] = function ($event) {
+      return $options.openDetail(1);
+    })
+  }, "Детальніше")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.tickets[1].level), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+    src: $data.tickets[1].link,
+    alt: "Level 2"
+  }, null, 8
+  /* PROPS */
+  , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+    "class": "detail",
+    onClick: _cache[2] || (_cache[2] = function ($event) {
+      return $options.openDetail(2);
+    })
+  }, "Детальніше")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.tickets[2].level), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+    src: $data.tickets[2].link,
+    alt: "Level 3"
+  }, null, 8
+  /* PROPS */
+  , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+    "class": "detail",
+    onClick: _cache[3] || (_cache[3] = function ($event) {
+      return $options.openDetail(3);
+    })
+  }, "Детальніше")])])]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
+    to: "body"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+    name: "popup-tickets"
+  }, {
+    "default": _withId(function () {
+      return [$data.isModalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_PopupTickets, {
+        key: 0,
+        onClosePopup: _cache[5] || (_cache[5] = function ($event) {
+          return $data.isModalOpen = false;
+        })
+      }, {
+        "default": _withId(function () {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.level), 1
+          /* TEXT */
+          )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+            src: $data.ticketDetail.link,
+            alt: $data.ticketDetail.level
+          }, null, 8
+          /* PROPS */
+          , ["src", "alt"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [_hoisted_11, _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.time1), 1
+          /* TEXT */
+          )], 512
+          /* NEED_PATCH */
+          ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.ticketDetail.period.time1]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.time1), 1
+          /* TEXT */
+          )], 512
+          /* NEED_PATCH */
+          ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.ticketDetail.period.time2]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.dayOff), 1
+          /* TEXT */
+          )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.price) + " грн", 1
+          /* TEXT */
+          ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+            onClick: _cache[4] || (_cache[4] = function ($event) {
+              return $options.openOrder($data.ticketDetail.level);
+            })
+          }, [_hoisted_15])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_16, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.ticketDetail.details, function (detail, idx) {
+            return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", {
+              key: idx,
+              innerHTML: detail
+            }, null, 8
+            /* PROPS */
+            , ["innerHTML"]);
+          }), 128
+          /* KEYED_FRAGMENT */
+          ))])];
+        }),
+        _: 1
+        /* STABLE */
+
+      })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
+    to: "body"
+  }, [$data.isModalOrderOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_MakeOrderPopup, {
+    key: 0,
+    onClosePopup: _cache[6] || (_cache[6] = function ($event) {
+      return $data.isModalOrderOpen = false;
+    }),
+    choiceLevel: $data.choiceLevel
+  }, null, 8
+  /* PROPS */
+  , ["choiceLevel"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  /* STABLE_FRAGMENT */
+  );
+});
+
+/***/ }),
+
 /***/ "./resources/js/Index.js":
 /*!*******************************!*\
   !*** ./resources/js/Index.js ***!
@@ -22339,7 +22679,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
 /* harmony import */ var _Root_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Root.vue */ "./resources/js/Root.vue");
 /* harmony import */ var _components_FeedBackView_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/FeedBackView.vue */ "./resources/js/components/FeedBackView.vue");
 /* harmony import */ var _views_MainG_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./views/MainG.vue */ "./resources/js/views/MainG.vue");
@@ -22348,13 +22688,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_AboutUsG_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./views/AboutUsG.vue */ "./resources/js/views/AboutUsG.vue");
 /* harmony import */ var _views_AreasG_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./views/AreasG.vue */ "./resources/js/views/AreasG.vue");
 /* harmony import */ var _views_SimulatorsG_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./views/SimulatorsG.vue */ "./resources/js/views/SimulatorsG.vue");
-/* harmony import */ var _views_PriceB_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./views/PriceB.vue */ "./resources/js/views/PriceB.vue");
-/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Home */ "./resources/js/components/Home.vue");
-/* harmony import */ var _components_MakeOrderPopup_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/MakeOrderPopup.vue */ "./resources/js/components/MakeOrderPopup.vue");
-/* harmony import */ var _plugins_i18n_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./plugins/i18n.js */ "./resources/js/plugins/i18n.js");
-/* harmony import */ var mobile_device_detect__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! mobile-device-detect */ "./node_modules/mobile-device-detect/dist/index.js");
-/* harmony import */ var mobile_device_detect__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(mobile_device_detect__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _views_TicketsG_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./views/TicketsG.vue */ "./resources/js/views/TicketsG.vue");
+/* harmony import */ var _views_PriceB_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./views/PriceB.vue */ "./resources/js/views/PriceB.vue");
+/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/Home */ "./resources/js/components/Home.vue");
+/* harmony import */ var _components_MakeOrderPopup_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/MakeOrderPopup.vue */ "./resources/js/components/MakeOrderPopup.vue");
+/* harmony import */ var _plugins_i18n_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./plugins/i18n.js */ "./resources/js/plugins/i18n.js");
+/* harmony import */ var mobile_device_detect__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! mobile-device-detect */ "./node_modules/mobile-device-detect/dist/index.js");
+/* harmony import */ var mobile_device_detect__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(mobile_device_detect__WEBPACK_IMPORTED_MODULE_14__);
 // require('./bootstrap');
+
 
 
 
@@ -22372,11 +22714,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_14__.createRouter)({
-  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_14__.createWebHistory)(),
+var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_15__.createRouter)({
+  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_15__.createWebHistory)(),
   routes: [{
     path: '/',
-    component: _components_Home__WEBPACK_IMPORTED_MODULE_10__.default,
+    component: _components_Home__WEBPACK_IMPORTED_MODULE_11__.default,
     name: 'home'
   }, {
     path: '/level-:level',
@@ -22415,6 +22757,12 @@ var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_14__.createRouter)({
       area: 'g'
     }
   }, {
+    path: '/tickets-g',
+    component: _views_TicketsG_vue__WEBPACK_IMPORTED_MODULE_9__.default,
+    meta: {
+      area: 'g'
+    }
+  }, {
     path: '/main-b',
     component: _views_MainB_vue__WEBPACK_IMPORTED_MODULE_4__.default,
     name: 'MainB',
@@ -22423,7 +22771,7 @@ var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_14__.createRouter)({
     }
   }, {
     path: '/price-b',
-    component: _views_PriceB_vue__WEBPACK_IMPORTED_MODULE_9__.default,
+    component: _views_PriceB_vue__WEBPACK_IMPORTED_MODULE_10__.default,
     name: 'PriceB',
     meta: {
       area: 'b'
@@ -22435,7 +22783,7 @@ var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_14__.createRouter)({
 });
 var _data = {
   isLoading: false,
-  isMobile: mobile_device_detect__WEBPACK_IMPORTED_MODULE_13__.isMobile,
+  isMobile: mobile_device_detect__WEBPACK_IMPORTED_MODULE_14__.isMobile,
   area: ''
 };
 router.beforeEach(function (to, from, next) {
@@ -22466,10 +22814,10 @@ var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
   }
 });
 app.use(router);
-app.use(_plugins_i18n_js__WEBPACK_IMPORTED_MODULE_12__.i18n);
+app.use(_plugins_i18n_js__WEBPACK_IMPORTED_MODULE_13__.i18n);
 window.vm = app.mount('#gbslevel-app');
 
-if (mobile_device_detect__WEBPACK_IMPORTED_MODULE_13__.isMobile) {
+if (mobile_device_detect__WEBPACK_IMPORTED_MODULE_14__.isMobile) {
   document.getElementById("gbslevel-app").style.height = "".concat(window.innerHeight, "px");
 }
 
@@ -24791,6 +25139,51 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/TeamG/tickets/level1.png":
+/*!**********************************************************!*\
+  !*** ./resources/assets/images/TeamG/tickets/level1.png ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/level1.png?e26480dc9119a8de294bb738753a1c91");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/tickets/level2.png":
+/*!**********************************************************!*\
+  !*** ./resources/assets/images/TeamG/tickets/level2.png ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/level2.png?06e196aa9ab6cba51dea828e35eada67");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/tickets/level3.png":
+/*!**********************************************************!*\
+  !*** ./resources/assets/images/TeamG/tickets/level3.png ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/level3.png?4516e7f138362ddef5d6bc7bfd3d632e");
+
+/***/ }),
+
 /***/ "./resources/assets/images/aboutUs-b-main.jpg":
 /*!****************************************************!*\
   !*** ./resources/assets/images/aboutUs-b-main.jpg ***!
@@ -25792,6 +26185,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/PopupTickets.vue?vue&type=style&index=0&id=893619f4&scoped=true&lang=scss":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/PopupTickets.vue?vue&type=style&index=0&id=893619f4&scoped=true&lang=scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/ScrollTop.vue?vue&type=style&index=0&id=051e996d&lang=scss&scoped=true":
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/ScrollTop.vue?vue&type=style&index=0&id=051e996d&lang=scss&scoped=true ***!
@@ -25913,6 +26319,19 @@ __webpack_require__.r(__webpack_exports__);
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/TeamG.vue?vue&type=style&index=0&id=6d955afb&lang=scss&scoped=true ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/TicketsG.vue?vue&type=style&index=0&id=06dcca5f&lang=scss&scoped=true":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/TicketsG.vue?vue&type=style&index=0&id=06dcca5f&lang=scss&scoped=true ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -36368,6 +36787,36 @@ _PopupSuccess_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default._
 
 /***/ }),
 
+/***/ "./resources/js/components/PopupTickets.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/components/PopupTickets.vue ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _PopupTickets_vue_vue_type_template_id_893619f4_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PopupTickets.vue?vue&type=template&id=893619f4&scoped=true */ "./resources/js/components/PopupTickets.vue?vue&type=template&id=893619f4&scoped=true");
+/* harmony import */ var _PopupTickets_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PopupTickets.vue?vue&type=script&lang=js */ "./resources/js/components/PopupTickets.vue?vue&type=script&lang=js");
+/* harmony import */ var _PopupTickets_vue_vue_type_style_index_0_id_893619f4_scoped_true_lang_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PopupTickets.vue?vue&type=style&index=0&id=893619f4&scoped=true&lang=scss */ "./resources/js/components/PopupTickets.vue?vue&type=style&index=0&id=893619f4&scoped=true&lang=scss");
+
+
+
+
+;
+_PopupTickets_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _PopupTickets_vue_vue_type_template_id_893619f4_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render
+_PopupTickets_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__scopeId = "data-v-893619f4"
+/* hot reload */
+if (false) {}
+
+_PopupTickets_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/components/PopupTickets.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_PopupTickets_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
 /***/ "./resources/js/components/ScrollTop.vue":
 /*!***********************************************!*\
   !*** ./resources/js/components/ScrollTop.vue ***!
@@ -36697,6 +37146,36 @@ _TeamG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file =
 
 /***/ }),
 
+/***/ "./resources/js/views/TicketsG.vue":
+/*!*****************************************!*\
+  !*** ./resources/js/views/TicketsG.vue ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _TicketsG_vue_vue_type_template_id_06dcca5f_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TicketsG.vue?vue&type=template&id=06dcca5f&scoped=true */ "./resources/js/views/TicketsG.vue?vue&type=template&id=06dcca5f&scoped=true");
+/* harmony import */ var _TicketsG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TicketsG.vue?vue&type=script&lang=js */ "./resources/js/views/TicketsG.vue?vue&type=script&lang=js");
+/* harmony import */ var _TicketsG_vue_vue_type_style_index_0_id_06dcca5f_lang_scss_scoped_true__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TicketsG.vue?vue&type=style&index=0&id=06dcca5f&lang=scss&scoped=true */ "./resources/js/views/TicketsG.vue?vue&type=style&index=0&id=06dcca5f&lang=scss&scoped=true");
+
+
+
+
+;
+_TicketsG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _TicketsG_vue_vue_type_template_id_06dcca5f_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render
+_TicketsG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__scopeId = "data-v-06dcca5f"
+/* hot reload */
+if (false) {}
+
+_TicketsG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/views/TicketsG.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_TicketsG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
 /***/ "./resources/js/Root.vue?vue&type=script&lang=js":
 /*!*******************************************************!*\
   !*** ./resources/js/Root.vue?vue&type=script&lang=js ***!
@@ -37001,6 +37480,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/PopupTickets.vue?vue&type=script&lang=js":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/PopupTickets.vue?vue&type=script&lang=js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_PopupTickets_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_PopupTickets_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./PopupTickets.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/PopupTickets.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/components/ScrollTop.vue?vue&type=script&lang=js":
 /*!***********************************************************************!*\
   !*** ./resources/js/components/ScrollTop.vue?vue&type=script&lang=js ***!
@@ -37173,6 +37668,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TeamG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TeamG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./TeamG.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/TeamG.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/views/TicketsG.vue?vue&type=script&lang=js":
+/*!*****************************************************************!*\
+  !*** ./resources/js/views/TicketsG.vue?vue&type=script&lang=js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TicketsG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TicketsG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./TicketsG.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/TicketsG.vue?vue&type=script&lang=js");
  
 
 /***/ }),
@@ -37481,6 +37992,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/PopupTickets.vue?vue&type=template&id=893619f4&scoped=true":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/components/PopupTickets.vue?vue&type=template&id=893619f4&scoped=true ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_PopupTickets_vue_vue_type_template_id_893619f4_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_PopupTickets_vue_vue_type_template_id_893619f4_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./PopupTickets.vue?vue&type=template&id=893619f4&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/PopupTickets.vue?vue&type=template&id=893619f4&scoped=true");
+
+
+/***/ }),
+
 /***/ "./resources/js/components/ScrollTop.vue?vue&type=template&id=051e996d&scoped=true":
 /*!*****************************************************************************************!*\
   !*** ./resources/js/components/ScrollTop.vue?vue&type=template&id=051e996d&scoped=true ***!
@@ -37653,6 +38180,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TeamG_vue_vue_type_template_id_6d955afb_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TeamG_vue_vue_type_template_id_6d955afb_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./TeamG.vue?vue&type=template&id=6d955afb&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/TeamG.vue?vue&type=template&id=6d955afb&scoped=true");
+
+
+/***/ }),
+
+/***/ "./resources/js/views/TicketsG.vue?vue&type=template&id=06dcca5f&scoped=true":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/views/TicketsG.vue?vue&type=template&id=06dcca5f&scoped=true ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TicketsG_vue_vue_type_template_id_06dcca5f_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TicketsG_vue_vue_type_template_id_06dcca5f_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./TicketsG.vue?vue&type=template&id=06dcca5f&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/TicketsG.vue?vue&type=template&id=06dcca5f&scoped=true");
 
 
 /***/ }),
@@ -37878,6 +38421,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/PopupTickets.vue?vue&type=style&index=0&id=893619f4&scoped=true&lang=scss":
+/*!***********************************************************************************************************!*\
+  !*** ./resources/js/components/PopupTickets.vue?vue&type=style&index=0&id=893619f4&scoped=true&lang=scss ***!
+  \***********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_clonedRuleSet_12_use_0_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_use_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_PopupTickets_vue_vue_type_style_index_0_id_893619f4_scoped_true_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./PopupTickets.vue?vue&type=style&index=0&id=893619f4&scoped=true&lang=scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/PopupTickets.vue?vue&type=style&index=0&id=893619f4&scoped=true&lang=scss");
+
+
+/***/ }),
+
 /***/ "./resources/js/components/ScrollTop.vue?vue&type=style&index=0&id=051e996d&lang=scss&scoped=true":
 /*!********************************************************************************************************!*\
   !*** ./resources/js/components/ScrollTop.vue?vue&type=style&index=0&id=051e996d&lang=scss&scoped=true ***!
@@ -38004,6 +38560,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_clonedRuleSet_12_use_0_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_use_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TeamG_vue_vue_type_style_index_0_id_6d955afb_lang_scss_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./TeamG.vue?vue&type=style&index=0&id=6d955afb&lang=scss&scoped=true */ "./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/TeamG.vue?vue&type=style&index=0&id=6d955afb&lang=scss&scoped=true");
+
+
+/***/ }),
+
+/***/ "./resources/js/views/TicketsG.vue?vue&type=style&index=0&id=06dcca5f&lang=scss&scoped=true":
+/*!**************************************************************************************************!*\
+  !*** ./resources/js/views/TicketsG.vue?vue&type=style&index=0&id=06dcca5f&lang=scss&scoped=true ***!
+  \**************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_clonedRuleSet_12_use_0_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_use_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_TicketsG_vue_vue_type_style_index_0_id_06dcca5f_lang_scss_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./TicketsG.vue?vue&type=style&index=0&id=06dcca5f&lang=scss&scoped=true */ "./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/TicketsG.vue?vue&type=style&index=0&id=06dcca5f&lang=scss&scoped=true");
 
 
 /***/ }),
@@ -41728,7 +42297,7 @@ module.exports = JSON.parse('{"trainers":[{"firstName":"Володимир","las
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"trainers":[{"firstName":"Володимир","lastName":"Лєсков","direction":"Cycle, Games, персональні тренування","description":"Самий позитивний тренер G level, який одночасно вміє бути ніжним, але і досить вимогливим! Його групові тренування наповнені шаленою енергією та пристрастю. Володимир кваліфікований персональний тренер, який власним прикладом мотивує своїх клієнтів. Отримав кубок України WABBA  за I місце в категорії «Men\'sPhysique» та  I місце в абсолютній категорії «Men\'sPhysique» (2020 р.) та входить в топ VI «Mг.Universe» WABBA (Португалія, 2020р.). А ще він обожнює готувати, так як в минулому – кондитер, тому звертайтесь за рецептами правильного харчування.)"},{"firstName":"Ірина","lastName":"Слюсаренко","direction":"CrossFit","description":"Ірина – тренер, від погляду якої серце починає битись швидше, а твої спортивні досягнення  - рости з кожною хвилиною, тому що з нею ви зробите те, про що навіть і не мріяли : 100 віджимань, 50 бурпі чи 20 підтягувань… З Іриною – запросто! Вона - наша королева мотивації! А її досягнення являються підтвердженням цього факту: Майстер спорту з веслування, Майстер спорту з важкої атлетики, КМС з плавання, Чемпіон і призер України з веслування, 8 місце, Чемпіонат Світу з веслування, 2 місце CrossFit на звання «Найбільш підготовлена людина країни», 3 місце CrossFit banda Open в категорії Elite 8 місце CrossFit Games Open."},{"firstName":"Ольга","lastName":"Депешко","direction":"Персональні тренування","description":"Ззовні дуже тендітна Ольга, проведе вас через всі випробування і буде поруч з вами на кожному кроці. Вона подбає про те, щоб ви отримували максимум задоволення від кожного тренування. Також Ольга нутриціолог з восьмирічним досвідом роботи, сама багато навчається і вас обіцяє навчити їсти смачно та здорово. Вона працює не тільки з тілом, а із внутрішнім світом. Діюча учасниця змагання в категорії – бікіні."},{"firstName":"Ольга","lastName":"Марценюк","direction":"Barre, Пілатес","description":"Тренер, який зачаровує своєю посмішкою з першої хвилини знайомства! Ольга не вірить в обмеження і знає, як вам розкрити свій потенціал на максимум. Вас чекають фантастичні пліє, релєве, рівна осанка та неймовірно приємна крепатура! Її тренування приносять моральне задоволення та формують неймовірне тіло!"},{"firstName":"Віталій","lastName":"Каськун","direction":"Персональні тренування","description":"Професійний спортсмен, кваліфікований пауерліфтер, персональний тренер, з яким не лише корисно, але й дуже захопливо тренуватись! Він знає, як знайти підхід до кожного, як правильно ставити спортивні  цілі, та як вас стимулювати до їх досягнення! Кредо Віталія: « Не зупинятися на досягнутому та підкорювати нові вершини». Підготував чимало призерів в чемпіонатах України та здобув повагу і прихильність в професійному колі, а ще виховує двух прекрасних синочків!"},{"firstName":"Михайло","lastName":"Галаган","direction":"Fighting, Тхеквондо","description":"Тренер-викладач з єдиноборств та авторської програми Fit-Fight. Михайло - володар Чорного Пояси 3-го дану з Тхеквондо. Виховав не одного чемпіона України та Європи. Завдяки своєму десятирічному стажу, він знає, як поставити удар, розвинути взривну силу, швидкість та витривалість, спалити калорії та виплеснути всю агресію. Відчуйте себе чемпіоном! Ви покинете файтинг зону неймовірно стомленим, але точно захочете повернутися ще раз. Тренування з Михайлом – найкрутіша антистрес-терапія."},{"firstName":"Ольга","lastName":"Осадчук","direction":"Персональні тренування","description":"Ольга  - сертифікований персональний тренер, який дуже швидко стане вашим близьким другом та наставником! Вона чемпіонка України з літнього біатлону.  Тому для неї – це не просто спорт, а сенс життя – допомогти людям, і це не стосується тільки тіла, а насамперед - вашого здоров’я та щоденного самопочуття. На кожному тренуванні вона віддається повністю та веде вас щодня до цілі! І будьте впевнені, на її тренуванні у вас не вийде відпочити, її шалена енергія змусить вас дізнатись, на що ви здатні!"},{"firstName":"Тетяна","lastName":"Подзигун","direction":"Cycle, Games, персональні тренування","description":"Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba,ufbf-official,fbbu, вона розуміє, як довести себе та вас до крайності як фізично, так і розумово. Повірте, вона знає, як «вичавити» з вас всі соки!) Так швидко та емоційно ви ще не крутили педалі…)"},{"firstName":"Валентин","lastName":"Шпильчук","direction":"Персональні тренування","description":"Персональний тренер з дев’ятирічним досвідом. Валентин володіє електричною енергією, якою заряджає всіх клієнтів на результат! Філософія його тренувань: максимум комфорту та прогресу. Роблячи акцент на функціональному та спортивному фітнесі, Валентин наблизить вас до вашої мрії! Ви ніколи не дізнаєтесь своїх меж, поки не досягнете їх!"},{"firstName":"Сергій","lastName":"Мельник","direction":"Персональні тренування","description":"Майстер спорту з важкої атлетики, тричі призер юніороского чемпіонату України з важкої атлетики. Сергій спокійно та без крику заставить вас піднімати більше, бігти швидше та качати активніше! І повірте, ви не пропустите жодного заняття! З ним успіх гарантований!"},{"firstName":"Олена","lastName":"Семенчук","direction":"Йога","description":"Психолог за освітою, Олена познайомилась з йогою – і зрозуміла, що це її життя! Вона викладач Кундаліні-Йоги. Протягом багатьох століть ця практика була перевагою для обраних і зберігалася у великому секреті. Але сьогодні  вже кожен може знахойти в ній щось для себе. Хтось прагне зміцнити фізичне здоров\'я,  хтось хоче впоратися зі стресом, хтось націлений на роботу з енергією, а хтось любить співати мантри. Олена буде найкращим провідником в світ гармонії на пізнання себе! Навчить вас ОШО медитації, віппассані (класичній медитації) та холотропному диханню. А ще Олена грає на бандурі та малює картини, як бачила – йога ще відкриває ваш творчий потенціал."},{"firstName":"Василь","lastName":"Нечко","direction":"Персональні тренування","description":"Майстер спорту міжнародного класу, чемпіон світу та рекордсмен України – все це про Василя. А ще це наш старший персональний тренер, який з перших хвилин знайомства вразить вас своєю харизмою та впевненістю. Бунтар з безліччю талантів. Він вважає, що фітнес повинен бути приємним, але таким же складним, як і життя. Його заняття зосереджені на ефективних вправах, які кидають виклик вашому тілу."},{"firstName":"Юля","lastName":"Горнушкіна","direction":"Персональні тренування","description":"Юля з професійної сторони точно знає, що потрібно робити, щоб почувати себе здорово та при цьому мати рельєфне тіло. В минулому лікар, учасниця медичних конференцій, а також сертифікований дієтолог- нутриціолог. Мотивація, гарний настрій і потужна енергія тренера змусять вас працювати на максимум! Готуйтесь, це будуть спекотні тренування!"},{"firstName":"Олена","lastName":"Дементьєва","direction":"Barre, Пілатес","description":"Олена з 6 років у професійному спорті, КМС з спортивно-бальних танців, представляла Україну в численних міжнародних змаганнях. Фітнес кар’єру розпочала в Італії, сертифікований фітнес тренер. Олена дуже ніжна, тендітна та виважена дівчина, але, водночас, супер енергійний та вимоглевий викладач! Як тільки заходиш в зал, то одразу вирівнюєщ осанку та тягенш нососочки! Її креативні заняття здивують навіть спортивних гуманів!"}],"simulators":[{"name":"Тренажер «вертикальна тяга» Vertical Traction","description":"Тренажер Vertical Traction призначений для розвитку найбільших м\'язів верхньої частини тіла - найширших м\'язів спини."},{"name":"Тренажер «жим від плеча вгору» Shoulder Press","description":"Тренажер Shoulder Press дозволяє виконувати базове для дельтоподібних м\'язів вправа - «армійський жим» в положенні сидячи."},{"name":"Тренажер «жим від грудей» Chest Press","description":"Тренажер Chest Press дає можливість виконувати базова вправа для грудних м\'язів - жим від грудей."},{"name":"Багатофункціональний тренажер Dual Pec/Rev Fly","description":"Тренажер Dual Pectoral / Reverse Fly призначений для виконання двох вправ - «зведення рук» зміцнює м\'язи грудей, додаткове навантаження отримують передній пучок дельтоподібних м\'язів і біцепс плеча; «Розведення рук» зміцнює задній пучок дельтоподібних м\'язів, додаткове навантаження отримують ромбовидні і трапецієподібні м\'язи."},{"name":"Тренажер PULLDOWN N «вертикальна тяга» з дисковим навантаженням","description":"Тренажер призначений для вертикальної тяги до грудей в положенні сидячи. Вправа розвиває найширші м\'язи спини, додаткове навантаження отримує біцепс плеча."},{"name":"Тренажер «гребна тяга» Low Row","description":"Тренажер Low Row дозволяє зміцнити найширші м\'язи спини, виконуючи одне з базових вправ - горизонтальну тягу."},{"name":"Тренажер «жим від грудей з широким хватом» з дисковим навантаженням","description":"Wide Chest Press - тренажер дозволяє виконувати вправи, що нагадують руху на підйом гантелей, лежачи на лаві з негативним нахилом із задіянням нижній частині грудних м\'язів."},{"name":"Тренажер Incline chest press «жим від грудей під кутом» з дисковим навантаженням","description":"Incline Chest Press - тренажер повторює рухи на відведення гантелей на похилій лаві з залученням м\'язів верхньої частини грудей."},{"name":"Багатофункціональний тренажер для ніг Dual Abd","description":"Тренажер Dual Abductor / Adductor дозволяє виконувати дві вправи - «зведення ніг» зміцнює що приводять м\'язи стегна; «Розведення ніг» навантажує сідничні м\'язи"},{"name":"Тренажер «розгинання ніг» Leg Extension","description":"Тренажер Leg Extension дає можливість виконувати вправу «розгинання ніг в положенні сидячи» для розвитку найбільших м\'язів ніг - квадріцепсов"},{"name":"Тренажер «згинання ніг лежачи» Ne Leg Curl","description":"Тренажер для тренування задньої поверхні стегна. Легко налаштовується для використання атлетами різного зросту."},{"name":"Тренажер Calf для литкових м’язів з дисковим навантаженням","description":"Опрацювання литкових м\'язів на цьому тренажері можлива без навантаження на хребетний стовп. Ефективність вправ настільки ж висока, як і при заняттях у вільній вазі завдяки використанню атлетичних дисків. Матеріал BODY PRINT приймає форму фігури спортсмена, роблячи заняття гранично комфортними."},{"name":"Тренажер REAR KICK для сідничних м’язів з дисковим навантаженням","description":"Широка амплітуда вправи дозволяє тренувати сідниці в максимально природних умовах і для ефективного результату"},{"name":"Тренажер LINEAR LEG PRESS «жим ногами» з дисковим навантаженням","description":""},{"name":"Тренажер LEG PRESS","description":"Ця модель тренажера дозволяє ефективно опрацювати всі м\'язи ніг від сідниць до литкових."},{"name":"Тренажер LEG CURL","description":"Тренажер серії SELECTION 700 для цільових тренувань м`язів задньої поверхні стегна."},{"name":"Тренажер Hack Squat","description":"Тренажер «Гакк-присідання» для тренування м\'язів ніг і сідничних м\'язів"},{"name":"Бігова доріжка Run Live 500","description":"У біговій доріжці Excite Live Run немає нічого, що може зашкодити вашому бігу. Низьке бігове полотно зручно для заходу на тренажер. Бічні ручки вкорочені і не утрудняють рухів руками. Біжіть вільно, як по доріжці в парку."},{"name":"Орбітрек Synchro Live 700","description":"Excite Live Synchro - тренажер, який захоплює тренуваннями і кожен день знаходить нові приводи для натхнення і прогресу. Регульована рампа від 5 до 33 градусів дозволяє опрацювати м\'язи ніг і сідничні м\'язи. Сучасна консоль поєднує масу програм тренувань і додатків для розваги. Плавні махові руху без ривків і ударного навантаження на суглоби з довжиною кроку до 67 см - це новий орбітрек Excite Live Synchro. Високі платформи і мінімум деталей з боків дарують відчуття свободи і ефективного тренування без зусиль."},{"name":"Велотренажер Bake Live 500","description":"Неймовірно реалістичний вертикальний велотренажер Excite Live Bike для кардіотренувань. Зручне кермо з кількома хватами, широка і низька рама, прості регулювання. Екран консолі, кермо, сидіння і педалі розташовані максимально природно для правильного положення тіла і різних типів тренування."},{"name":"Велотренажер Recline live 500","description":"Велотренажер Excite Live Recline для кардиотренировок в зручному положенні сидячи. Широкий отвір для простий посадки, сенсорний кермо для контролю пульсу, технологічна консоль з програмами тренувань і розвагами для прогресу і мотивації."},{"name":"Кросс-тренажер Climb Live 500","description":"Тренажер високих досягнень для кардиотренировки «підйом по сходах». Допомагає набути впевненості в собі, вийти за межі своїх можливостей і досягати нових результатів. Поєднує компактність, безпечну конструкцію, різноманітні програми тренувань і розваги. Підніміть свої тренування на новий рівень з конструкцією тренажера Excite Live Climb, яка максимально навантажує цільові сідничні м\'язи і м\'язи ніг. Тренуйтеся з комфортом і видимим результатом."},{"name":"Спинбайк Group Cycle Connect","description":"Group Cycle Connect це перший в світі і єдиний велотренажер для закритих приміщень, який відстежує результати тренувань і забезпечує підтримку користувачів для поліпшення результатів за допомогою тренувань з повним зануренням у віртуальне середовище. У ньому поєднується унікальний дизайн з новітньою технологією зв\'язку, приголомшливі відчуття і не має аналогів простота використання."},{"name":"Багатофункціональний тренажер Multipower","description":"MULTIPOWER - мультистанция для силових тренувань у вільній вазі і фіксованою траєкторією руху, на якій можна виконувати базові та ізолюючі вправи."},{"name":"Багатофункціональний тренажер Dual Adjustable Pulley","description":"DUAL ADJUSTABLE PULLEY є самою останньою новинкою в лінійці силових тренажерів Element +. Завдяки ергономічному дизайну і передової біомеханіки, новий тросовий тренажер дозволяє користувачам виконувати толкательние вправи для максимального збільшення сили, потужності і швидкості руху."},{"name":"Багатофункціональний  тренажер Kneeling Easy Chin Dip","description":"Це обладнання призначене для вправ з власною вагою, а також вправ з ваговими стеками під керівництвом тренера."},{"name":"Багатофункціональний тренажер Cable Stations Connector","description":"Можлива тренування одночасно п\'яти чоловік з незалежним використанням вагового стека і одну людину з застосуванням вправ на мостовому з\'єднанні."},{"name":"Комбінована стійка CHIN UP DIP LEG RAISE","description":"Турнік Chin Up Dip Leg Raise дає можливість задіяти в роботі фактично всі м\'язові групи верхній частині тіла: підтягування широким і вузьким хватом для найширших м\'язів спини, дельт, біцепсів; віджимання на брусах для трицепсів і грудних м\'язів; бічні скручування для косих м\'язів живота; прямі скручування, підйом ніг з упором на ліктях і підйом ніг у висі для м\'язів преса."},{"name":"Універсальна стійка","description":"Підставка спеціально розроблена для зберігання штанг, грифів і канатних аксесуарів. Включає 3 опори під штанги, додаткові гачки для канатних аксесуарів і верхню платформу, що витримує вагу до 50 кг."},{"name":"Олімпійська жимова лавка від грудей під кутом","description":""},{"name":"Олімпійська жимова лавка від грудей","description":""},{"name":"Лавка Скотта Scott Bench","description":"Багатофункціональна лава для спеціального опрацювання рук з балансиром."},{"name":"Лавка Adjustable Bench","description":""},{"name":"Лавка для спини Lower Back Bench","description":""},{"name":"Горизонтальна лавка для спини/GHD Bench","description":"Універсальний тренажер для розвитку м\'язів задньої поверхні стегна. Також навантаження отримують м\'язи низу спини, хребта, сідничні м\'язи і частково литкові м\'язи. Glute Ham Developer швидко зміцнює м\'язи ніг, дає можливість відпрацювати обидві основні функції м\'язів задньої поверхні стегна - згинання ноги в коліні і розгинання стегна."},{"name":"Лавка для пресу Adjust Decline/Abdomin. Crunch","description":""},{"name":"Гантелі з уритановим покриттям","description":"Гантелі з уритановим покриттям"},{"name":"Гантелі хромовані","description":"Нова лінія хромованих гантелей компанії Technogym. Вагові категорії гантелей: 1 - 10 кг. "}]}');
+module.exports = JSON.parse('{"trainers":[{"firstName":"Володимир","lastName":"Лєсков","direction":"Cycle, Games, персональні тренування","description":"Самий позитивний тренер G level, який одночасно вміє бути ніжним, але і досить вимогливим! Його групові тренування наповнені шаленою енергією та пристрастю. Володимир кваліфікований персональний тренер, який власним прикладом мотивує своїх клієнтів. Отримав кубок України WABBA  за I місце в категорії «Men\'sPhysique» та  I місце в абсолютній категорії «Men\'sPhysique» (2020 р.) та входить в топ VI «Mг.Universe» WABBA (Португалія, 2020р.). А ще він обожнює готувати, так як в минулому – кондитер, тому звертайтесь за рецептами правильного харчування.)"},{"firstName":"Ірина","lastName":"Слюсаренко","direction":"CrossFit","description":"Ірина – тренер, від погляду якої серце починає битись швидше, а твої спортивні досягнення  - рости з кожною хвилиною, тому що з нею ви зробите те, про що навіть і не мріяли : 100 віджимань, 50 бурпі чи 20 підтягувань… З Іриною – запросто! Вона - наша королева мотивації! А її досягнення являються підтвердженням цього факту: Майстер спорту з веслування, Майстер спорту з важкої атлетики, КМС з плавання, Чемпіон і призер України з веслування, 8 місце, Чемпіонат Світу з веслування, 2 місце CrossFit на звання «Найбільш підготовлена людина країни», 3 місце CrossFit banda Open в категорії Elite 8 місце CrossFit Games Open."},{"firstName":"Ольга","lastName":"Депешко","direction":"Персональні тренування","description":"Ззовні дуже тендітна Ольга, проведе вас через всі випробування і буде поруч з вами на кожному кроці. Вона подбає про те, щоб ви отримували максимум задоволення від кожного тренування. Також Ольга нутриціолог з восьмирічним досвідом роботи, сама багато навчається і вас обіцяє навчити їсти смачно та здорово. Вона працює не тільки з тілом, а із внутрішнім світом. Діюча учасниця змагання в категорії – бікіні."},{"firstName":"Ольга","lastName":"Марценюк","direction":"Barre, Пілатес","description":"Тренер, який зачаровує своєю посмішкою з першої хвилини знайомства! Ольга не вірить в обмеження і знає, як вам розкрити свій потенціал на максимум. Вас чекають фантастичні пліє, релєве, рівна осанка та неймовірно приємна крепатура! Її тренування приносять моральне задоволення та формують неймовірне тіло!"},{"firstName":"Михайло","lastName":"Галаган","direction":"Fighting, Тхеквондо","description":"Тренер-викладач з єдиноборств та авторської програми Fit-Fight. Михайло - володар Чорного Пояси 3-го дану з Тхеквондо. Виховав не одного чемпіона України та Європи. Завдяки своєму десятирічному стажу, він знає, як поставити удар, розвинути взривну силу, швидкість та витривалість, спалити калорії та виплеснути всю агресію. Відчуйте себе чемпіоном! Ви покинете файтинг зону неймовірно стомленим, але точно захочете повернутися ще раз. Тренування з Михайлом – найкрутіша антистрес-терапія."},{"firstName":"Ольга","lastName":"Осадчук","direction":"Персональні тренування","description":"Ольга  - сертифікований персональний тренер, який дуже швидко стане вашим близьким другом та наставником! Вона чемпіонка України з літнього біатлону.  Тому для неї – це не просто спорт, а сенс життя – допомогти людям, і це не стосується тільки тіла, а насамперед - вашого здоров’я та щоденного самопочуття. На кожному тренуванні вона віддається повністю та веде вас щодня до цілі! І будьте впевнені, на її тренуванні у вас не вийде відпочити, її шалена енергія змусить вас дізнатись, на що ви здатні!"},{"firstName":"Валентин","lastName":"Шпильчук","direction":"Персональні тренування","description":"Персональний тренер з дев’ятирічним досвідом. Валентин володіє електричною енергією, якою заряджає всіх клієнтів на результат! Філософія його тренувань: максимум комфорту та прогресу. Роблячи акцент на функціональному та спортивному фітнесі, Валентин наблизить вас до вашої мрії! Ви ніколи не дізнаєтесь своїх меж, поки не досягнете їх!"},{"firstName":"Сергій","lastName":"Мельник","direction":"Персональні тренування","description":"Майстер спорту з важкої атлетики, тричі призер юніороского чемпіонату України з важкої атлетики. Сергій спокійно та без крику заставить вас піднімати більше, бігти швидше та качати активніше! І повірте, ви не пропустите жодного заняття! З ним успіх гарантований!"},{"firstName":"Олена","lastName":"Семенчук","direction":"Йога","description":"Психолог за освітою, Олена познайомилась з йогою – і зрозуміла, що це її життя! Вона викладач Кундаліні-Йоги. Протягом багатьох століть ця практика була перевагою для обраних і зберігалася у великому секреті. Але сьогодні  вже кожен може знахойти в ній щось для себе. Хтось прагне зміцнити фізичне здоров\'я,  хтось хоче впоратися зі стресом, хтось націлений на роботу з енергією, а хтось любить співати мантри. Олена буде найкращим провідником в світ гармонії на пізнання себе! Навчить вас ОШО медитації, віппассані (класичній медитації) та холотропному диханню. А ще Олена грає на бандурі та малює картини, як бачила – йога ще відкриває ваш творчий потенціал."},{"firstName":"Василь","lastName":"Нечко","direction":"Персональні тренування","description":"Майстер спорту міжнародного класу, чемпіон світу та рекордсмен України – все це про Василя. А ще це наш старший персональний тренер, який з перших хвилин знайомства вразить вас своєю харизмою та впевненістю. Бунтар з безліччю талантів. Він вважає, що фітнес повинен бути приємним, але таким же складним, як і життя. Його заняття зосереджені на ефективних вправах, які кидають виклик вашому тілу."},{"firstName":"Юля","lastName":"Горнушкіна","direction":"Персональні тренування","description":"Юля з професійної сторони точно знає, що потрібно робити, щоб почувати себе здорово та при цьому мати рельєфне тіло. В минулому лікар, учасниця медичних конференцій, а також сертифікований дієтолог- нутриціолог. Мотивація, гарний настрій і потужна енергія тренера змусять вас працювати на максимум! Готуйтесь, це будуть спекотні тренування!"},{"firstName":"Олена","lastName":"Дементьєва","direction":"Barre, Пілатес","description":"Олена з 6 років у професійному спорті, КМС з спортивно-бальних танців, представляла Україну в численних міжнародних змаганнях. Фітнес кар’єру розпочала в Італії, сертифікований фітнес тренер. Олена дуже ніжна, тендітна та виважена дівчина, але, водночас, супер енергійний та вимоглевий викладач! Як тільки заходиш в зал, то одразу вирівнюєщ осанку та тягенш нососочки! Її креативні заняття здивують навіть спортивних гуманів!"}],"simulators":[{"name":"Тренажер «вертикальна тяга» Vertical Traction","description":"Тренажер Vertical Traction призначений для розвитку найбільших м\'язів верхньої частини тіла - найширших м\'язів спини."},{"name":"Тренажер «жим від плеча вгору» Shoulder Press","description":"Тренажер Shoulder Press дозволяє виконувати базове для дельтоподібних м\'язів вправа - «армійський жим» в положенні сидячи."},{"name":"Тренажер «жим від грудей» Chest Press","description":"Тренажер Chest Press дає можливість виконувати базова вправа для грудних м\'язів - жим від грудей."},{"name":"Багатофункціональний тренажер Dual Pec/Rev Fly","description":"Тренажер Dual Pectoral / Reverse Fly призначений для виконання двох вправ - «зведення рук» зміцнює м\'язи грудей, додаткове навантаження отримують передній пучок дельтоподібних м\'язів і біцепс плеча; «Розведення рук» зміцнює задній пучок дельтоподібних м\'язів, додаткове навантаження отримують ромбовидні і трапецієподібні м\'язи."},{"name":"Тренажер PULLDOWN N «вертикальна тяга» з дисковим навантаженням","description":"Тренажер призначений для вертикальної тяги до грудей в положенні сидячи. Вправа розвиває найширші м\'язи спини, додаткове навантаження отримує біцепс плеча."},{"name":"Тренажер «гребна тяга» Low Row","description":"Тренажер Low Row дозволяє зміцнити найширші м\'язи спини, виконуючи одне з базових вправ - горизонтальну тягу."},{"name":"Тренажер «жим від грудей з широким хватом» з дисковим навантаженням","description":"Wide Chest Press - тренажер дозволяє виконувати вправи, що нагадують руху на підйом гантелей, лежачи на лаві з негативним нахилом із задіянням нижній частині грудних м\'язів."},{"name":"Тренажер Incline chest press «жим від грудей під кутом» з дисковим навантаженням","description":"Incline Chest Press - тренажер повторює рухи на відведення гантелей на похилій лаві з залученням м\'язів верхньої частини грудей."},{"name":"Багатофункціональний тренажер для ніг Dual Abd","description":"Тренажер Dual Abductor / Adductor дозволяє виконувати дві вправи - «зведення ніг» зміцнює що приводять м\'язи стегна; «Розведення ніг» навантажує сідничні м\'язи"},{"name":"Тренажер «розгинання ніг» Leg Extension","description":"Тренажер Leg Extension дає можливість виконувати вправу «розгинання ніг в положенні сидячи» для розвитку найбільших м\'язів ніг - квадріцепсов"},{"name":"Тренажер «згинання ніг лежачи» Ne Leg Curl","description":"Тренажер для тренування задньої поверхні стегна. Легко налаштовується для використання атлетами різного зросту."},{"name":"Тренажер Calf для литкових м’язів з дисковим навантаженням","description":"Опрацювання литкових м\'язів на цьому тренажері можлива без навантаження на хребетний стовп. Ефективність вправ настільки ж висока, як і при заняттях у вільній вазі завдяки використанню атлетичних дисків. Матеріал BODY PRINT приймає форму фігури спортсмена, роблячи заняття гранично комфортними."},{"name":"Тренажер REAR KICK для сідничних м’язів з дисковим навантаженням","description":"Широка амплітуда вправи дозволяє тренувати сідниці в максимально природних умовах і для ефективного результату"},{"name":"Тренажер LINEAR LEG PRESS «жим ногами» з дисковим навантаженням","description":""},{"name":"Тренажер LEG PRESS","description":"Ця модель тренажера дозволяє ефективно опрацювати всі м\'язи ніг від сідниць до литкових."},{"name":"Тренажер LEG CURL","description":"Тренажер серії SELECTION 700 для цільових тренувань м`язів задньої поверхні стегна."},{"name":"Тренажер Hack Squat","description":"Тренажер «Гакк-присідання» для тренування м\'язів ніг і сідничних м\'язів"},{"name":"Бігова доріжка Run Live 500","description":"У біговій доріжці Excite Live Run немає нічого, що може зашкодити вашому бігу. Низьке бігове полотно зручно для заходу на тренажер. Бічні ручки вкорочені і не утрудняють рухів руками. Біжіть вільно, як по доріжці в парку."},{"name":"Орбітрек Synchro Live 700","description":"Excite Live Synchro - тренажер, який захоплює тренуваннями і кожен день знаходить нові приводи для натхнення і прогресу. Регульована рампа від 5 до 33 градусів дозволяє опрацювати м\'язи ніг і сідничні м\'язи. Сучасна консоль поєднує масу програм тренувань і додатків для розваги. Плавні махові руху без ривків і ударного навантаження на суглоби з довжиною кроку до 67 см - це новий орбітрек Excite Live Synchro. Високі платформи і мінімум деталей з боків дарують відчуття свободи і ефективного тренування без зусиль."},{"name":"Велотренажер Bake Live 500","description":"Неймовірно реалістичний вертикальний велотренажер Excite Live Bike для кардіотренувань. Зручне кермо з кількома хватами, широка і низька рама, прості регулювання. Екран консолі, кермо, сидіння і педалі розташовані максимально природно для правильного положення тіла і різних типів тренування."},{"name":"Велотренажер Recline live 500","description":"Велотренажер Excite Live Recline для кардиотренировок в зручному положенні сидячи. Широкий отвір для простий посадки, сенсорний кермо для контролю пульсу, технологічна консоль з програмами тренувань і розвагами для прогресу і мотивації."},{"name":"Кросс-тренажер Climb Live 500","description":"Тренажер високих досягнень для кардиотренировки «підйом по сходах». Допомагає набути впевненості в собі, вийти за межі своїх можливостей і досягати нових результатів. Поєднує компактність, безпечну конструкцію, різноманітні програми тренувань і розваги. Підніміть свої тренування на новий рівень з конструкцією тренажера Excite Live Climb, яка максимально навантажує цільові сідничні м\'язи і м\'язи ніг. Тренуйтеся з комфортом і видимим результатом."},{"name":"Спинбайк Group Cycle Connect","description":"Group Cycle Connect це перший в світі і єдиний велотренажер для закритих приміщень, який відстежує результати тренувань і забезпечує підтримку користувачів для поліпшення результатів за допомогою тренувань з повним зануренням у віртуальне середовище. У ньому поєднується унікальний дизайн з новітньою технологією зв\'язку, приголомшливі відчуття і не має аналогів простота використання."},{"name":"Багатофункціональний тренажер Multipower","description":"MULTIPOWER - мультистанция для силових тренувань у вільній вазі і фіксованою траєкторією руху, на якій можна виконувати базові та ізолюючі вправи."},{"name":"Багатофункціональний тренажер Dual Adjustable Pulley","description":"DUAL ADJUSTABLE PULLEY є самою останньою новинкою в лінійці силових тренажерів Element +. Завдяки ергономічному дизайну і передової біомеханіки, новий тросовий тренажер дозволяє користувачам виконувати толкательние вправи для максимального збільшення сили, потужності і швидкості руху."},{"name":"Багатофункціональний  тренажер Kneeling Easy Chin Dip","description":"Це обладнання призначене для вправ з власною вагою, а також вправ з ваговими стеками під керівництвом тренера."},{"name":"Багатофункціональний тренажер Cable Stations Connector","description":"Можлива тренування одночасно п\'яти чоловік з незалежним використанням вагового стека і одну людину з застосуванням вправ на мостовому з\'єднанні."},{"name":"Комбінована стійка CHIN UP DIP LEG RAISE","description":"Турнік Chin Up Dip Leg Raise дає можливість задіяти в роботі фактично всі м\'язові групи верхній частині тіла: підтягування широким і вузьким хватом для найширших м\'язів спини, дельт, біцепсів; віджимання на брусах для трицепсів і грудних м\'язів; бічні скручування для косих м\'язів живота; прямі скручування, підйом ніг з упором на ліктях і підйом ніг у висі для м\'язів преса."},{"name":"Універсальна стійка","description":"Підставка спеціально розроблена для зберігання штанг, грифів і канатних аксесуарів. Включає 3 опори під штанги, додаткові гачки для канатних аксесуарів і верхню платформу, що витримує вагу до 50 кг."},{"name":"Олімпійська жимова лавка від грудей під кутом","description":""},{"name":"Олімпійська жимова лавка від грудей","description":""},{"name":"Лавка Скотта Scott Bench","description":"Багатофункціональна лава для спеціального опрацювання рук з балансиром."},{"name":"Лавка Adjustable Bench","description":""},{"name":"Лавка для спини Lower Back Bench","description":""},{"name":"Горизонтальна лавка для спини/GHD Bench","description":"Універсальний тренажер для розвитку м\'язів задньої поверхні стегна. Також навантаження отримують м\'язи низу спини, хребта, сідничні м\'язи і частково литкові м\'язи. Glute Ham Developer швидко зміцнює м\'язи ніг, дає можливість відпрацювати обидві основні функції м\'язів задньої поверхні стегна - згинання ноги в коліні і розгинання стегна."},{"name":"Лавка для пресу Adjust Decline/Abdomin. Crunch","description":""},{"name":"Гантелі з уритановим покриттям","description":"Гантелі з уритановим покриттям"},{"name":"Гантелі хромовані","description":"Нова лінія хромованих гантелей компанії Technogym. Вагові категорії гантелей: 1 - 10 кг. "}]}');
 
 /***/ })
 
