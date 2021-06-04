@@ -148,28 +148,15 @@ export default {
                 img.src = url;
             });
         }
-        console.log("wait to show loader for 0.6s")
         let postponeTimelId = setTimeout(()=>{
-            console.log("show loader")
             window.vm.$data.isLoading=true
         },600);
 
 
-        Promise.all(
-            [cacheImage(preloadedAssets[0]),
-            cacheImage(preloadedAssets[1]),
-            cacheImage(preloadedAssets[2]),
-            cacheImage(preloadedAssets[3]),
-            cacheImage(preloadedAssets[4]),
-            cacheImage(preloadedAssets[5]),
-            cacheImage(preloadedAssets[6]),
-            cacheImage(preloadedAssets[7]),
-            cacheImage(preloadedAssets[8]),
-            cacheImage(preloadedAssets[9])]).finally(()=>{
+        Promise.all(preloadedAssets.map((urlImg) => (cacheImage(urlImg)))).finally(()=>{
 
             clearTimeout(postponeTimelId);
             if (window.vm.$data.isLoading){
-                console.log("hide loader")
                 window.vm.$data.isLoading=false;
             }
             next();

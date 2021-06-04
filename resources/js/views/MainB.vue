@@ -125,14 +125,7 @@ export default {
         },600);
 
 
-        Promise.all(
-            [cacheImage(preloadedAssets[0]),
-            cacheImage(preloadedAssets[1]),
-            cacheImage(preloadedAssets[2]),
-            cacheImage(preloadedAssets[3]),
-            cacheImage(preloadedAssets[4]),
-            cacheImage(preloadedAssets[5]),
-            cacheImage(preloadedAssets[6])]).finally(()=>{
+        Promise.all(preloadedAssets.map((urlImg) => (cacheImage(urlImg)))).finally(()=>{
 
             clearTimeout(postponeTimelId);
             if (window.vm.$data.isLoading){

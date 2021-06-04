@@ -47,6 +47,42 @@
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 import PopupDetail from '../components/PopupDetail.vue'
+let preloadedAssets = [
+        require("../../assets/images/simulators/vertical_traction.jpg").default,
+        require("../../assets/images/simulators/shoulder_press.jpg").default,
+        require("../../assets/images/simulators/chest_press.jpg").default,
+        require("../../assets/images/simulators/dual_prectoral_reverse_fly.jpg").default,
+        require("../../assets/images/simulators/pull_down.jpg").default,
+        require("../../assets/images/simulators/low_row.jpg").default,
+        require("../../assets/images/simulators/wide_chest_press.jpg").default,
+        require("../../assets/images/simulators/incline_chest_press.jpg").default,
+        require("../../assets/images/simulators/dual_abd.jpg").default,
+        require("../../assets/images/simulators/leg_extension.jpg").default,
+        require("../../assets/images/simulators/ne_leg_curl.jpg").default,
+        require("../../assets/images/simulators/simulator-default.jpg").default,
+        require("../../assets/images/simulators/rear_kick.jpg").default,
+        require("../../assets/images/simulators/Linear_leg_press.jpg").default,
+        require("../../assets/images/simulators/leg_press.jpg").default,
+        require("../../assets/images/simulators/leg_curl.jpg").default,
+        require("../../assets/images/simulators/hack_squat.jpg").default,
+        require("../../assets/images/simulators/run_live_500.jpg").default,
+        require("../../assets/images/simulators/synchro_live_700.jpg").default,
+        require("../../assets/images/simulators/bake_live_500.jpg").default,
+        require("../../assets/images/simulators/recline_live_500.jpg").default,
+        require("../../assets/images/simulators/climb_live_500.jpg").default,
+        require("../../assets/images/simulators/group_cycle_connect.jpg").default,
+        require("../../assets/images/simulators/dual_adjustable_pulley.png").default,
+        require("../../assets/images/simulators/kneeling_easy_chin_dip.jpg").default,
+        require("../../assets/images/simulators/cable_stations_connector.jpg").default,
+        require("../../assets/images/simulators/universal_storage.jpg").default,
+        require("../../assets/images/simulators/pure_strength_olympic_incline_bench.jpg").default,
+        require("../../assets/images/simulators/pure_strength_olympic_flat_bench.jpg").default,
+        require("../../assets/images/simulators/scott_bench.jpg").default,
+        require("../../assets/images/simulators/adjustable_bench.jpg").default,
+        require("../../assets/images/simulators/lower_back_bench.jpg").default,
+        require("../../assets/images/simulators/ghd_bench.jpg").default,
+        require("../../assets/images/simulators/adjustable_decline_ab_crunch.jpg").default
+    ]
 export default {
     data() {
         return {
@@ -112,6 +148,27 @@ export default {
         directionCheck () {
             return this.simulators.filter((simulator) => simulator.direction === this.direction);
         },
+    },
+    beforeRouteEnter(to, from, next) {
+        const cacheImage = (url) =>{
+            return new Promise((resolve, reject) => {
+                let img = new Image()
+                img.onload = resolve;
+                img.src = url;
+            });
+        }
+        let postponeTimelId = setTimeout(()=>{
+            window.vm.$data.isLoading=true
+        },600);
+
+        Promise.all(preloadedAssets.map((urlImg) => (cacheImage(urlImg)))).finally(()=>{
+
+            clearTimeout(postponeTimelId);
+            if (window.vm.$data.isLoading){
+                window.vm.$data.isLoading=false;
+            }
+            next();
+        });
     },
     components: {
         Header,
