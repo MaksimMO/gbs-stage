@@ -29,6 +29,7 @@
         "vue-router": "^4.0.5"
     },
     "dependencies": {
+        "@fawmi/vue-google-maps": "^0.8.6",
         "swiper": "^6.5.9",
         "vue-i18n": "^9.1.6",
         "vue3-click-away": "^1.2.1"

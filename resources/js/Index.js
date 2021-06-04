@@ -2,6 +2,7 @@
 
  import {createApp} from 'vue'
  import { createRouter, createWebHistory } from 'vue-router'
+ import  VueGoogleMaps from '@fawmi/vue-google-maps';
  import Root from './Root.vue'
  import FeedBackView from './components/FeedBackView.vue'
  import MainG from './views/MainG.vue'
@@ -12,6 +13,7 @@
  import SimulatorsG from './views/SimulatorsG.vue'
  import TicketsG from './views/TicketsG.vue'
  import PriceB from './views/PriceB.vue'
+ import Contacts from './views/Contacts.vue'
 //  import MainB from './components/MainB'
 //  import MainS from './components/MainS'
  import Home from './components/Home'
@@ -69,6 +71,21 @@
             meta: { area: 'g' }
         },
         {
+            path:'/contacts-g',
+            component:  Contacts,
+            meta: { area: 'g' }
+        },
+        {
+            path:'/contacts-b',
+            component:  Contacts,
+            meta: { area: 'b' }
+        },
+        {
+            path:'/contacts-s',
+            component:  Contacts,
+            meta: { area: 's' }
+        },
+        {
             path: '/main-b',
             component:  MainB,
             name: 'MainB',
@@ -124,6 +141,11 @@ const app = createApp({
 
 app.use(router)
 app.use(i18n)
+app.use(VueGoogleMaps, {
+    load: {
+        key: 'AIzaSyAtPFNu4yHiJm6G2QgLQ2eZs2tFnMkJoTU',
+    },
+})
 window.vm=app.mount('#gbslevel-app')
 
 

@@ -15,15 +15,9 @@
       <li>
           <router-link to="/tickets-g">Абонементи</router-link>
       </li>
-      <!-- <li>
-          <router-link to="/">Комфорт і чистота</router-link>
-      </li>
       <li>
-          <router-link to="/">Фітнес бар</router-link>
+          <router-link to="/contacts-g">Контакти</router-link>
       </li>
-      <li>
-          <router-link to="/">Безпека</router-link>
-      </li> -->
   </ul>
 </template>
 

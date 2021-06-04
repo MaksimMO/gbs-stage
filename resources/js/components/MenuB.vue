@@ -7,7 +7,7 @@
           <router-link to="/price-b">Ціни</router-link>
       </li>
       <li>
-          <router-link to="/main-b">Контакти</router-link>
+          <router-link to="/contacts-b">Контакти</router-link>
       </li>
   </ul>
 </template>

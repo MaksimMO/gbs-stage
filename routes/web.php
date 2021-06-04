@@ -37,6 +37,16 @@ Route::get('/tickets-g', function () {
     return view('index');
 });
 
+Route::get('/contacts-g', function () {
+    return view('index');
+});
+Route::get('/contacts-b', function () {
+    return view('index');
+});
+Route::get('/contacts-s', function () {
+    return view('index');
+});
+
 
 Route::get('/areas-g', function () {
     return view('index');
