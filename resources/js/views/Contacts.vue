@@ -33,7 +33,7 @@
                 :center="center"
                 :zoom="15"
                 map-type-id="terrain"
-                style="width: 659px; height: 487px"
+                style="width: 659px; height: 487px;"
             >
                 <GMapMarker
                     :position="markersPosition"
@@ -114,16 +114,6 @@ export default {
                     margin: 0;
                     width: 90%;
                 }
-                // & p::before{
-                //     background-color: rgba(145, 08, 88, .15);
-                //     border-radius: 50%;
-                //     display: inline-block;
-                //     content: url('../../assets/images/marker.svg');
-                //     width: 46px;
-                //     height: 46px;
-                //     text-align: center;
-                //     margin-right: 20px;
-                // }
             }
             & .contact-address::before{
                     background-color: rgba(145, 08, 88, .15);
@@ -179,6 +169,9 @@ export default {
     }
     .location-map {
         margin-bottom: 60px;
+        &::v-deep(button) {
+            transform: unset;
+        }
     }
     .footer {
         height: 234px;

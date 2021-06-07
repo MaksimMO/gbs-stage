@@ -24355,7 +24355,8 @@ app.use(router);
 app.use(_plugins_i18n_js__WEBPACK_IMPORTED_MODULE_15__.i18n);
 app.use(_fawmi_vue_google_maps__WEBPACK_IMPORTED_MODULE_1__.default, {
   load: {
-    key: 'AIzaSyAtPFNu4yHiJm6G2QgLQ2eZs2tFnMkJoTU'
+    key: 'AIzaSyAtPFNu4yHiJm6G2QgLQ2eZs2tFnMkJoTU' // key: 'AIzaSyBJ2TlWNjUrKtlb098kaEn-LiKjmApa-sM',
+
   }
 });
 window.vm = app.mount('#gbslevel-app');

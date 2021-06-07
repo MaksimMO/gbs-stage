@@ -144,6 +144,8 @@ app.use(i18n)
 app.use(VueGoogleMaps, {
     load: {
         key: 'AIzaSyAtPFNu4yHiJm6G2QgLQ2eZs2tFnMkJoTU',
+        // key: 'AIzaSyBJ2TlWNjUrKtlb098kaEn-LiKjmApa-sM',
+
     },
 })
 window.vm=app.mount('#gbslevel-app')

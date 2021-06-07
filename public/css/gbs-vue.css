@@ -3173,6 +3173,9 @@ li[data-v-5d9f7d78] {
 .location-map[data-v-cf61fa1c] {
   margin-bottom: 60px;
 }
+.location-map[data-v-cf61fa1c] button {
+  transform: unset;
+}
 .footer[data-v-cf61fa1c] {
   height: 234px;
 }
