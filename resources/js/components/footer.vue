@@ -52,6 +52,13 @@ export default {
     return {
     };
   },
+  mounted(){
+      let preloadLink = document.createElement("link");
+      preloadLink.href = require('../../assets/feedBackFormView/background-g.png').default;
+      preloadLink.rel = "preload";
+      preloadLink.as = "image";
+      document.head.appendChild(preloadLink);
+  },
   components: {
     PhoneLink
   },

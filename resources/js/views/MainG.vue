@@ -122,7 +122,7 @@
 <script>
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
-import AreasSliderG from '../components/AreasSliderG/AreasSliderG.vue'
+import AreasSliderG from '../components/AreasG/AreasSliderG.vue'
 import TrainersList from '../components/TrainersList.vue'
 
 
@@ -397,7 +397,6 @@ export default {
     }
   }
     .combat-area{
-      // height: 570px;
       position: relative;
 
       .skew-image-1{

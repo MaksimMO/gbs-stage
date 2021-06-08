@@ -1,11 +1,12 @@
 
 <template>
   <swiper
+  @click="onModalOpen"
     :navigation="true"
     :slidesPerView="2"
     :spaceBetween="15"
     :breakpoints="{
-        '640': {
+        '320': {
             'slidesPerView': 2,
             'spaceBetween': 15
         },
@@ -23,38 +24,51 @@
         }
     }"
   >
-    <swiper-slide v-for="image in images" :key="image.id">
-        <img :src="image.imageUrl" />
+    <swiper-slide v-for="image in images" :key="image.id"  >
+        <img :src="image.imageUrl"  />
     </swiper-slide>
-    <swiper-slide></swiper-slide>
+    <!-- <swiper-slide></swiper-slide> -->
   </swiper>
+
+  <teleport to="body">
+      <SwiperOverlay :slides="images" :indexToShowFrom="indexToShowFrom" v-if="modalOpen" @closePopup="modalOpen=false"/>
+  </teleport>
+
 </template>
 <script>
+import SwiperOverlay from '../components/swiperOverlay.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
 
-import SwiperCore, {
-  Navigation
-} from 'swiper/core';
+// import SwiperCore, {
+//   Navigation
+// } from 'swiper/core';
 
-SwiperCore.use([Navigation]);
+// SwiperCore.use([Navigation]);
 
 
 export default {
-    props: ['images'],
+  props: ['images'],
   components: {
     Swiper,
     SwiperSlide,
+    SwiperOverlay
   },
   data() {
     return {
       isOpacity: false,
+      modalOpen:false,
+      indexToShowFrom:undefined
     };
   },
   methods: {
-
+    onModalOpen(e){
+      if (e.clickedIndex !== undefined){
+        this.modalOpen=true;
+        this.indexToShowFrom=e.clickedIndex;
+      }
+    }
   },
-
 }
 </script>
 
@@ -69,12 +83,14 @@ export default {
     height: 100%;
     margin-bottom: 60px;
     position: unset;
+
     ::v-deep(.swiper-button-prev) {
         --swiper-navigation-size: 20px;
         --swiper-navigation-color: #000;
         opacity: 1;
         left: 60px !important;
     }
+
     ::v-deep(.swiper-button-next) {
         --swiper-navigation-size: 20px;
         --swiper-navigation-color: #000;
@@ -93,6 +109,26 @@ export default {
     justify-content: center;
     align-items: center;
     height: auto;
+
+
+    &::after {
+      content: url('../../assets/images/zoom-img.svg');
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &:hover::after {
+        display: flex;
+    }
+
+    &:hover  img{
+       filter: brightness(0.5);
+    }
   }
 
 
@@ -101,6 +137,7 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition:filter .2s ease-out;
   }
 
 

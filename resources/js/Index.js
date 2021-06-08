@@ -7,15 +7,15 @@
  import FeedBackView from './components/FeedBackView.vue'
  import MainG from './views/MainG.vue'
  import MainB from './views/MainB.vue'
+ import MainS from './views/MainS.vue'
  import TeamG from './views/TeamG.vue'
  import AboutUsG from './views/AboutUsG.vue'
  import AreasG from './views/AreasG.vue'
+ import AreaG from './views/AreaG.vue'
  import SimulatorsG from './views/SimulatorsG.vue'
  import TicketsG from './views/TicketsG.vue'
  import PriceB from './views/PriceB.vue'
  import Contacts from './views/Contacts.vue'
-//  import MainB from './components/MainB'
-//  import MainS from './components/MainS'
  import Home from './components/Home'
  import MakeOrderPopup from './components/MakeOrderPopup.vue'
  import {i18n} from './plugins/i18n.js'
@@ -61,6 +61,12 @@
             meta: { area: 'g' }
         },
         {
+            props:true,
+            path: '/areas-g/:id',
+            component:AreaG,
+            meta: { area: 'g' }
+        },
+        {
             path:'/simulators-g',
             component:  SimulatorsG,
             meta: { area: 'g' }
@@ -97,6 +103,13 @@
             name: 'PriceB',
             meta: { area: 'b' }
         },
+        {
+            path: '/main-s',
+            component:  MainS,
+            name: 'MainS',
+            meta: { area: 's' }
+        },
+
 
     ],
     scrollBehavior() {

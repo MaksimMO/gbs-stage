@@ -48,9 +48,9 @@ Route::get('/contacts-s', function () {
 });
 
 
-Route::get('/areas-g', function () {
+Route::get('/areas-g/{id?}', function () {
     return view('index');
-});
+})->where('id', '[1|2|3|4]');
 
 Route::get('/price-b', function () {
     return view('index');
