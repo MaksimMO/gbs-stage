@@ -70,6 +70,15 @@ export default {
     }
     document.addEventListener('scroll', debounce(storeScroll), { passive: true });
     storeScroll();
+
+
+
+    let preloadLink = document.createElement("link");
+    //todo different images
+    preloadLink.href = require('../../assets/feedBackFormView/background-g.png').default;
+    preloadLink.rel = "preload";
+    preloadLink.as = "image";
+    document.head.appendChild(preloadLink);
   },
 };
 </script>

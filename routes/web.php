@@ -52,6 +52,10 @@ Route::get('/areas-g/{id?}', function () {
     return view('index');
 })->where('id', '[1|2|3|4]');
 
+Route::get('/areas-s/{id?}', function () {
+    return view('index');
+})->where('id', '[1|2|3|4|5|6]');
+
 Route::get('/price-b', function () {
     return view('index');
 });
