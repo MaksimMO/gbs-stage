@@ -1,6 +1,6 @@
 <template>
     <Loader />
-    <ChangeLevel />
+    <ChangeLevel v-show="$root.$data.area != undefined"/>
     <router-view />
     <Scroll v-show="visible"/>
 </template>

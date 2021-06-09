@@ -2,7 +2,7 @@
 <div class="change-level">
     <div class="block-background"></div>
     <div class="line"></div>
-    <div v-if="areCh == 'g'" class="left-navigation">
+    <div v-if="areaGet == 'g'" class="left-navigation">
         <router-link to="/main-b">
             <img src="../../assets/images/b-level-change.svg" class="b"/>
         </router-link>
@@ -10,7 +10,7 @@
             <img src="../../assets/images/s-level-change.svg" class="s"/>
         </router-link>
     </div>
-    <div v-if="areCh == 'b'" class="left-navigation">
+    <div v-if="areaGet == 'b'" class="left-navigation">
         <router-link to="/main-g">
             <img src="../../assets/images/g-level-link.svg" class="g"/>
         </router-link>
@@ -18,7 +18,7 @@
             <img src="../../assets/images/s-level-change.svg" class="s"/>
         </router-link>
     </div>
-    <div v-if="areCh == 's'" class="left-navigation">
+    <div v-if="areaGet == 's'" class="left-navigation">
         <router-link to="/main-b">
             <img src="../../assets/images/b-level-change.svg" class="b"/>
         </router-link>
@@ -33,8 +33,7 @@
 
 export default {
  computed: {
-     areCh(){
-         console.log(this.$root.$data.area);
+     areaGet(){
          return this.$root.$data.area;
      }
  }
