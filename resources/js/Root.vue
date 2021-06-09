@@ -1,5 +1,6 @@
 <template>
     <Loader />
+    <ChangeLevel />
     <router-view />
     <Scroll v-show="visible"/>
 </template>
@@ -9,6 +10,7 @@ import Header from './components/Header.vue'
 import Loader from './components/Loader.vue'
 import Footer from './components/Footer.vue'
 import Scroll from './components/ScrollTop.vue';
+import ChangeLevel from './components/ChangeLevel.vue';
 
 export default {
     data() {
@@ -32,6 +34,7 @@ export default {
         Header,
         Footer,
         Scroll,
+        ChangeLevel,
     }
 }
 </script>
