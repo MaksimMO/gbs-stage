@@ -136,24 +136,12 @@ let data = {
     area: '',
 }
 
+
+
 router.beforeEach((to, from, next) => {
-    console.log(to.matched);
-    data.area = to.meta.area;
-    // if (to.matched.some(record => record.meta.area)) {
-    //   // этот путь требует авторизации, проверяем залогинен ли
-    //   // пользователь, и если нет, перенаправляем на страницу логина
-    //   if (!auth.loggedIn()) {
-    //     next({
-    //       path: '/login',
-    //       query: { redirect: to.fullPath }
-    //     })
-    //   } else {
-    //     next()
-    //   }
-    // } else {
-      next() // всегда так или иначе нужно вызвать next()!
-    // }
-  })
+    window.vm.$data.area = to.meta.area;
+    next()
+})
 
 const app = createApp({
     template:'<root  />',
@@ -164,6 +152,8 @@ const app = createApp({
         Root
     },
 })
+
+
 
 app.use(router)
 app.use(i18n)
