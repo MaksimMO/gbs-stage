@@ -79,6 +79,7 @@ export default {
     preloadLink.rel = "preload";
     preloadLink.as = "image";
     document.head.appendChild(preloadLink);
+    console.log('background cached')
   },
 };
 </script>
