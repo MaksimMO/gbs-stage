@@ -944,6 +944,7 @@ to {
   position: fixed;
   bottom: 310px;
   right: 10px;
+  mix-blend-mode: difference;
 }
 .scrollTop > .scroll-text[data-v-051e996d] {
   font-family: Raleway;
@@ -952,23 +953,25 @@ to {
   font-size: 12px;
   line-height: 14px;
   position: absolute;
-  color: #000;
+  color: #FFFFFF;
   bottom: 18px;
   right: -20px;
   margin: 0;
+  mix-blend-mode: difference;
   transform: translateX(-50%) rotate(-90deg);
 }
-.scrollTop > img[data-v-051e996d] {
-  height: 65px;
+.scrollTop > svg[data-v-051e996d] {
+  height: 61px;
   width: 16px;
   display: block;
-  transition: height 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .scrollTop[data-v-051e996d]:hover {
   cursor: pointer;
 }
-.scrollTop:hover > img[data-v-051e996d] {
-  height: 80px;
+.scrollTop:hover > svg[data-v-051e996d] {
+  transform: scaleY(1.3);
+  transform-origin: bottom;
 }
 .change-level[data-v-78416699] {
   position: fixed;
@@ -999,19 +1002,16 @@ to {
 .left-navigation .g[data-v-78416699] {
   width: 21px;
   height: 40px;
-  opacity: 0.75;
   margin-bottom: 35px;
 }
 .left-navigation .b[data-v-78416699] {
   width: 21px;
   height: 40px;
-  opacity: 0.75;
   margin-bottom: 35px;
 }
 .left-navigation .s[data-v-78416699] {
   width: 21px;
   height: 40px;
-  opacity: 0.75;
 }
 
 html, body {

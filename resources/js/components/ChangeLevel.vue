@@ -4,10 +4,10 @@
     <div class="line"></div>
     <div v-if="areaGet == 'g'" class="left-navigation">
         <router-link to="/main-b">
-            <img src="../../assets/images/b-level-change.svg" class="b"/>
+            <img src="../../assets/images/b-level-link.svg" class="b"/>
         </router-link>
         <router-link to="/main-s">
-            <img src="../../assets/images/s-level-change.svg" class="s"/>
+            <img src="../../assets/images/s-level-link.svg" class="s"/>
         </router-link>
     </div>
     <div v-if="areaGet == 'b'" class="left-navigation">
@@ -15,12 +15,12 @@
             <img src="../../assets/images/g-level-link.svg" class="g"/>
         </router-link>
         <router-link to="/main-s">
-            <img src="../../assets/images/s-level-change.svg" class="s"/>
+            <img src="../../assets/images/s-level-link.svg" class="s"/>
         </router-link>
     </div>
     <div v-if="areaGet == 's'" class="left-navigation">
         <router-link to="/main-b">
-            <img src="../../assets/images/b-level-change.svg" class="b"/>
+            <img src="../../assets/images/b-level-link.svg" class="b"/>
         </router-link>
         <router-link to="/main-g">
             <img src="../../assets/images/g-level-link.svg" class="g"/>
@@ -71,20 +71,17 @@ export default {
     & .g{
         width: 21px;
         height: 40px;
-        opacity: .75;
         margin-bottom: 35px;
     }
 
     & .b{
         width: 21px;
         height: 40px;
-        opacity: .75;
         margin-bottom: 35px;
     }
     & .s{
         width: 21px;
         height: 40px;
-        opacity: .75;
     }
 }
 </style>
