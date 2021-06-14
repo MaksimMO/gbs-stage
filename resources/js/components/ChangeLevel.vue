@@ -53,6 +53,7 @@ export default {
         width: 327px;
         height: 779px;
         background: #7f4c3e;
+        pointer-events:none;
     }
     & .line{
         position: absolute;
