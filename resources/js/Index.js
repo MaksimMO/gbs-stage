@@ -12,8 +12,8 @@
  import AboutUsG from './views/AboutUsG.vue'
  import AreasG from './views/AreasG.vue'
  import AreaG from './views/AreaG.vue'
-//  import AreasS from './views/AreasS.vue'
-//  import AreaS from './views/AreaS.vue'
+ import AreasS from './views/AreasS.vue'
+ import AreaS from './views/AreaS.vue'
  import SimulatorsG from './views/SimulatorsG.vue'
  import TicketsG from './views/TicketsG.vue'
  import PriceB from './views/PriceB.vue'
@@ -111,17 +111,17 @@
             name: 'MainS',
             meta: { area: 's' }
         },
-        // {
-        //     path: '/areas-s',
-        //     component:AreasS,
-        //     meta: { area: 's' }
-        // },
-        // {
-        //     props:true,
-        //     path: '/areas-s/:id',
-        //     component:AreaS,
-        //     meta: { area: 's' }
-        // },
+        {
+            path: '/areas-s',
+            component:AreasS,
+            meta: { area: 's' }
+        },
+        {
+            props:true,
+            path: '/areas-s/:id',
+            component:AreaS,
+            meta: { area: 's' }
+        },
 
 
     ],
