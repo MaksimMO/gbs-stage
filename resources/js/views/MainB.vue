@@ -153,6 +153,7 @@ export default {
 <style lang="scss" scoped>
 .view-main-b {
     overflow: hidden;
+    background-color: #FFFFFF;
 }
 
 
@@ -291,6 +292,7 @@ export default {
     position: relative;
     margin-bottom: 60px;
     padding-left: 246px;
+    background-color: #FFFFFF;
 
     .image{
         width: 100%;
@@ -333,9 +335,11 @@ export default {
     position: relative;
     padding: 0 7.81vw;
     margin-bottom: 60px;
+    background-color: #FFFFFF;
 }
 
 .brand-makeup {
+    background-color: #FFFFFF;
     & h1 {
         font-family: Oswald;
         font-style: normal;

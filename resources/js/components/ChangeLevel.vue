@@ -1,12 +1,11 @@
 <template>
-<div class="change-level">
-    <div class="block-background"></div>
-    <div class="line"></div>
+    <div class="block-background"  v-if="areaGet != undefined"></div>
+    <div class="line" v-if="areaGet != undefined"></div>
     <div v-if="areaGet == 'g'" class="left-navigation">
-        <router-link to="/main-b">
+        <router-link to="/main-b"  v-if="areaGet == 'g'">
             <img src="../../assets/images/b-level-link.svg" class="b"/>
         </router-link>
-        <router-link to="/main-s">
+        <router-link to="/main-s"  v-if="areaGet == 'g'">
             <img src="../../assets/images/s-level-link.svg" class="s"/>
         </router-link>
     </div>
@@ -26,7 +25,6 @@
             <img src="../../assets/images/g-level-link.svg" class="g"/>
         </router-link>
     </div>
-</div>
 </template>
 
 <script>
@@ -42,45 +40,45 @@ export default {
 
 <style lang="scss" scoped>
 
-.change-level {
+.block-background{
     position: fixed;
-    z-index: 115;
-    & .block-background{
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0.05;
-        width: 327px;
-        height: 779px;
-        background: #7f4c3e;
-        pointer-events:none;
-    }
-    & .line{
-        position: absolute;
-        height: 376px;
-        left: 71px;
-        top: 173px;
-        border-left: solid 2px #D5D4D3;
-        mix-blend-mode: difference;
-    }
+    top: 0;
+    left: 0;
+    opacity: 0.05;
+    width: 327px;
+    height: 779px;
+    background: #7f4c3e;
 }
 
+.line{
+    position: fixed;
+    height: 376px;
+    left: 71px;
+    top: 173px;
+    z-index: 115;
+    border-left: solid 2px #FFFFFF;
+    mix-blend-mode: difference;
+}
 .left-navigation{
-    position: absolute;
+    position: fixed;
     left: 62px;
     top: 600px;
+    z-index: 115;
     & .g{
         width: 21px;
+        display: block;
         height: 40px;
         margin-bottom: 35px;
     }
 
     & .b{
+        display: block;
         width: 21px;
         height: 40px;
         margin-bottom: 35px;
     }
     & .s{
+        display: block;
         width: 21px;
         height: 40px;
     }

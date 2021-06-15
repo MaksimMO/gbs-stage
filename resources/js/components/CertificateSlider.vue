@@ -1,15 +1,18 @@
 
 <template>
-  <swiper :navigation="true" :slidesPerView="'auto'" >
-    <swiper-slide v-for="image in images" :key="image.id" @click="checkClick">
+  <swiper :navigation="true" :slidesPerView="'auto'" @click="onModalOpen">
+    <swiper-slide v-for="image in images" :key="image.id" >
         <img :src="image.imageUrl"/>
     </swiper-slide>
     <swiper-slide></swiper-slide>
   </swiper>
+  <teleport to="body">
+      <SwiperOverlay :slides="images" :indexToShowFrom="indexToShowFrom" v-if="modalOpen" @closePopup="modalOpen=false"/>
+  </teleport>
 </template>
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
-
+import SwiperOverlay from '../components/swiperOverlay.vue';
 
 import SwiperCore, {
   Navigation
@@ -22,10 +25,13 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
+    SwiperOverlay
   },
   data() {
     return {
       isOpacity: false,
+      modalOpen:false,
+      indexToShowFrom:undefined,
       images: [
         { id: 1, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
         { id: 2, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
@@ -44,7 +50,13 @@ export default {
   methods: {
       checkClick() {
           console.log('click sertificate');
+      },
+      onModalOpen(e){
+      if (e.clickedIndex !== undefined){
+        this.modalOpen=true;
+        this.indexToShowFrom=e.clickedIndex;
       }
+    }
   },
 
 }

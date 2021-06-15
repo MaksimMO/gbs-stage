@@ -94,6 +94,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    .view-main-s {
+        background-color: #FFFFFF;
+        overflow: hidden;
+    }
 
 
   .link-1{
@@ -290,6 +294,7 @@ export default {
     position: relative;
     padding: 0 7.81vw;
     margin-bottom: 60px;
+    background-color: #FFFFFF;
 }
 
     .areas-slider{
