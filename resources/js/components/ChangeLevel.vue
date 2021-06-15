@@ -1,4 +1,5 @@
 <template>
+    <div class="navigation-link">
     <div class="block-background"  v-if="areaGet != undefined"></div>
     <div class="line" v-if="areaGet != undefined"></div>
     <div v-if="areaGet == 'g'" class="left-navigation">
@@ -24,6 +25,7 @@
         <router-link to="/main-g">
             <img src="../../assets/images/g-level-link.svg" class="g"/>
         </router-link>
+    </div>
     </div>
 </template>
 
