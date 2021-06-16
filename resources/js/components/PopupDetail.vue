@@ -123,4 +123,38 @@ export default {
     filter: unset;
 }
 
+ @media screen and (max-width: 1023px) and (min-width: 768px){
+    .modal{
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .modal{
+        width: 45vw;
+        height: auto;
+        padding: 36px 10px 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & img {
+            width: 100%;
+            height: auto;
+        }
+        & .description {
+            width: auto;
+            padding: 0 10px;
+            margin-left: 0;
+            & .title {
+                font-size: 16px;
+            }
+            & .detail {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+    }
+}
+
 </style>

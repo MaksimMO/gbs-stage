@@ -1,5 +1,5 @@
 <template>
-  <ul class="main-menu">
+  <ul class="main-menu-b">
       <li>
           <router-link to="/main-b">Наша команда</router-link>
       </li>
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
-    .main-menu{
+    .main-menu-b{
         font-family: Raleway;
         font-style: normal;
         font-weight: 600;

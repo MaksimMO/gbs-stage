@@ -186,6 +186,7 @@ export default {
         .logo {
             background-image: url("../../assets/images/technogym-logo-black.svg");
             background-repeat: no-repeat;
+            background-size: contain;
             height: 84px;
             width: 310px;
             margin-bottom: 30px;
@@ -249,6 +250,7 @@ export default {
             & > li {
                 padding-bottom: 20px;
                 position: relative;
+                white-space: nowrap;
                 &:hover {
                     color: #916C58;
                 }
@@ -295,7 +297,57 @@ export default {
             }
         }
     }
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1023px) and (min-width: 768px){
+        .simulator-direction {
+            font-size: 14px;
+            padding: 0 15px;
+            & > .direction {
+                display: grid;
+                grid-column-gap: 20px;
+                grid-template-columns: repeat(3, 1fr);
+                grid-row-gap: 22px;
+                border-bottom: none;
+                & li {
+                    padding-bottom: 5px;
+                    &:hover {
+                        color: #916C58;
+                    }
+                }
+            }
+            .invert-color{
+                color: #916C58;
+                border-bottom: solid 2px #916C58;
+            }
+            & .simulator {
+                grid-template-columns: repeat(3, 1fr);
+                grid-column-gap: 10px;
+                grid-row-gap: 30px;
+            }
+        }
+    }
+    @media screen and (max-width: 767px){
+        .simulator-g {
+            padding-top: 108px;
+            .logo {
+                height: 38px;
+                width: 140px;
+                margin-bottom: 20px;
+            }
+        }
+        .title {
+            padding: 0 15px;
+            margin-bottom: 20px;
+            & > h1 {
+                font-size: 32px;
+                margin-left: 50px;
+                margin-bottom: 20px;
+                line-height: 48px;
+            }
+            & > p {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
       .simulator-direction {
         font-size: 14px;
         padding: 0 15px;

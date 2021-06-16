@@ -315,6 +315,15 @@ export default {
     }
 }
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .header {
+        opacity: .8;
+    }
+    .address {
+        display: none;
+    }
+}
+
 
 // html:not([data-scroll='0']) .header, .header-invert.main {
 //   background-color: #000;

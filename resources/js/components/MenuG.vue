@@ -1,5 +1,5 @@
 <template>
-  <ul class="main-menu">
+  <ul class="main-menu-g">
       <li>
           <router-link to="/about-us-g">Про нас</router-link>
       </li>
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="scss">
-    .main-menu{
+    .main-menu-g{
         font-family: Raleway;
         font-style: normal;
         font-weight: 600;
@@ -57,6 +57,19 @@ export default {
         &:hover{
             opacity:1;
         }
+    }
+    @media screen and (max-width: 1023px) and (min-width: 768px){
+        .main-menu-g {
+            display: block;
+            padding: 1.87rem 0 0 0;
+            li{
+                margin-bottom: 35px;
+            }
+            li > a {
+                opacity: 1;
+            }
+        }
+
     }
 
 </style>
