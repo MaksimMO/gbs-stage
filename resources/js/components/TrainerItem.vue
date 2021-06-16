@@ -2,9 +2,28 @@
 <div :class="['trainer-item', {'is-scaled':isHovered||isSelected}]"
     @mouseenter="enter"
     @mouseleave="leave"
+    v-if="!$root.$data.isMobile"
 >
     <div style="position: relative; z-index: 99;">
         <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="!isOpen ? isShow() : isClosed()">
+        <div v-show="isHovered && !isOpen || isSelected" class="info">
+            <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" class="info-show" @click="isShow">
+            <img v-if="isSelected" src="../../assets/images/close.png" alt="info" class="info-close" @click="isClosed">
+        </div>
+        <p class="firstName">{{$i18n.t(`trainers.${trainer.id}.firstName`)}}</p>
+        <p class="lastName">{{$i18n.t(`trainers.${trainer.id}.lastName`)}}</p>
+    </div>
+    <div :class="['description', {'description-background': isSelected}]">
+        <p class="descriptionTitle">{{$i18n.t(`trainers.${trainer.id}.direction`)}}</p>
+        <p v-show="isSelected">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
+    </div>
+</div>
+<div :class="['trainer-item-mobile', {'is-scaled':isHovered||isSelected}]"
+    v-else
+    @click="!isHovered ? enter() : leave()"
+>
+    <div style="position: relative; z-index: 99;">
+        <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName">
         <div v-show="isHovered && !isOpen || isSelected" class="info">
             <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" class="info-show" @click="isShow">
             <img v-if="isSelected" src="../../assets/images/close.png" alt="info" class="info-close" @click="isClosed">
@@ -41,8 +60,8 @@ export default {
         }
     },
     isShow(){
-            this.$emit('isShow', true);
-            this.isSelected = true;
+        this.$emit('isShow', true);
+        this.isSelected = true;
     },
     isClosed(){
         if(this.isOpen && this.isSelected) {
@@ -72,42 +91,43 @@ export default {
          transform:scale(1.3);
          z-index: 101;
     }
+    .info{
+        transform: none;
+        position: absolute;
+        display: block;
+        width: 2.43vw;
+        right: 10px;
+        top: 10px;
+        & .info-show {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            background: #ACACAC;
+            border-radius: 50%;
+            &:hover {
+            background: #916C58;
+            }
+        }
+        & .info-close {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            background: #ACACAC;
+            border-radius: 50%;
+            &:hover {
+            background: #916C58;
+            }
+        }
+    }
 
-    img{
-        display:block;
-        cursor: pointer;
-        width:100%;
-    }
 }
-.info{
-    transform: none;
-    position: absolute;
-    display: block;
-    width:35px;
-    height: 35px;
-    right: 10px;
-    top: 10px;
-    & .info-show {
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        background: #ACACAC;
-        border-radius: 50%;
-        &:hover {
-           background: #916C58;
-        }
-    }
-    & .info-close {
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        background: #ACACAC;
-        border-radius: 50%;
-        &:hover {
-           background: #916C58;
-        }
-    }
+
+img{
+    display:block;
+    cursor: pointer;
+    width:100%;
 }
+
 .firstName{
     display: flex;
     flex-direction: row;
@@ -171,7 +191,6 @@ export default {
     font-size: 14px;
     line-height: 28px;
     color: #000000;
-    // background-color: #ffffff;
 
     & p {
         margin: 0;
@@ -192,6 +211,48 @@ export default {
 
 .description-background {
     background-color: #ffffff;
+}
+
+
+
+
+.trainer-item-mobile {
+    transition: all .2s ease-in;
+    position: relative;
+    margin-bottom: 60px;
+
+    &.is-scaled{
+         transform:scale(1.1);
+         z-index: 101;
+    }
+    .info{
+        transform: none;
+        position: absolute;
+        display: block;
+        width: 35px;
+        right: 10px;
+        top: 10px;
+        & .info-show {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            background: #ACACAC;
+            border-radius: 50%;
+            &:hover {
+            background: #916C58;
+            }
+        }
+        & .info-close {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            background: #ACACAC;
+            border-radius: 50%;
+            &:hover {
+            background: #916C58;
+            }
+        }
+    }
 }
 
 </style>

@@ -1,6 +1,6 @@
 <template>
-<Header class="header-invert"  :level="'g'"/>
-  <div class="team-g">
+<Header class="header-invert"/>
+  <div :class="{'team-g': !$root.$data.isMobile, 'team-g-mobile': $root.$data.isMobile}">
       <section class="title">
           <h1>Наша команда</h1>
           <p>
@@ -18,7 +18,7 @@
             @changeOpen="(e) => change(e)"/>
       </section>
   </div>
-<Footer :level="'g'"/>
+<Footer/>
 </template>
 
 <script>
@@ -115,50 +115,96 @@ export default {
     .team-g {
         padding-top: 208px;
         background-color: #FFFFFF !important;
+        .title {
+            padding: 0 7.81vw;
+            margin-bottom: 60px;
+        }
+        .title > h1 {
+            font-weight: 600;
+            font-style: normal;
+            font-family: 'Oswald';
+            font-size: 52px;
+            margin: 0;
+            margin-left: 96px;
+            margin-bottom: 30px;
+            line-height: 54px;
+            letter-spacing: 0.02em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #000000;
+        }
+        .title > p {
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: normal;
+            line-height: 28px;
+            letter-spacing: 0.05em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #000000;
+        }
+        .title > b {
+            font-style: normal;
+            font-size: 14px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: bold;
+            line-height: 28px;
+            letter-spacing: 0.05em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #000000;
+        }
     }
-    .title {
-        padding: 0 7.81vw;
-        margin-bottom: 60px;
+    .team-g-mobile {
+        padding-top: 108px;
+        background-color: #FFFFFF !important;
+        .title {
+            padding: 0 15px;
+            margin-bottom: 50px;
+        }
+        .title > h1 {
+            font-weight: 600;
+            font-style: normal;
+            font-family: 'Oswald';
+            font-size: 32px;
+            margin: 0;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            line-height: 48px;
+            letter-spacing: 0.02em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #000000;
+        }
+        .title > p {
+            font-weight: 400;
+            font-style: normal;
+            font-size: 12px;
+            margin-bottom: 10px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: normal;
+            line-height: 18px;
+            letter-spacing: 0.05em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #000000;
+        }
+        .title > b {
+            font-style: normal;
+            font-size: 12px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: bold;
+            line-height: 18px;
+            letter-spacing: 0.05em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #000000;
+        }
     }
-    .title > h1 {
-        font-weight: 600;
-        font-style: normal;
-        font-family: 'Oswald';
-        font-size: 52px;
-        margin: 0;
-        margin-left: 96px;
-        margin-bottom: 30px;
-        line-height: 54px;
-        letter-spacing: 0.02em;
-        font-feature-settings: 'pnum' on, 'lnum' on;
-        color: #000000;
-    }
-    .title > p {
-        font-weight: 400;
-        font-style: normal;
-        font-size: 14px;
-        margin-bottom: 10px;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: normal;
-        line-height: 28px;
-        letter-spacing: 0.05em;
-        font-feature-settings: 'pnum' on, 'lnum' on;
-        color: #000000;
-    }
-    .title > b {
-        font-style: normal;
-        font-size: 14px;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: bold;
-        line-height: 28px;
-        letter-spacing: 0.05em;
-        font-feature-settings: 'pnum' on, 'lnum' on;
-        color: #000000;
-    }
+
     .footer {
-        height: 234px;
+        height: 443px;
     }
 </style>
 

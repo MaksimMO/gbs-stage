@@ -140,6 +140,7 @@ let data = {
 
 router.beforeEach((to, from, next) => {
     window.vm.$data.area = to.meta.area;
+    window.vm.$data.isMobile = isMobile;
     next()
 })
 

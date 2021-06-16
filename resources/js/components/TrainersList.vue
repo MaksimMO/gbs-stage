@@ -1,5 +1,5 @@
 <template>
-    <div class="trainers-container">
+    <div :class="{'trainers-container': !$root.$data.isMobile, 'trainers-container-mobile': $root.$data.isMobile}">
         <TrainerItem
             v-for="(trainer)  in trainers"
             :key="trainer.id"
@@ -35,6 +35,14 @@ export default {
       grid-column-gap: 15px;
       display: grid;
       padding: 0 42px;
+    }
+    .trainers-container-mobile{
+        overflow: visible;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+        grid-column-gap: 15px;
+        grid-row-gap: 30px;
+        display: grid;
+        padding: 0 40px;
     }
 
 </style>
