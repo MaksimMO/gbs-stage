@@ -157,6 +157,29 @@ export default {
             color: #000000;
         }
     }
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+        .team-g {
+            .title {
+                padding: 0 50px;
+                margin-bottom: 40px;
+            }
+            .title > h1 {
+                font-size: 49px;
+                margin-left: 57px;
+                margin-bottom: 20px;
+                line-height: 54px;
+            }
+            .title > p {
+                font-size: 12px;
+                margin-bottom: 15px;
+                line-height: 22px;
+            }
+            .title > b {
+                font-size: 12px;
+                line-height: 22px;
+            }
+        }
+    }
     .team-g-mobile {
         padding-top: 108px;
         background-color: #FFFFFF !important;

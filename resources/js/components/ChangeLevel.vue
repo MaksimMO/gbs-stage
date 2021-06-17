@@ -85,4 +85,12 @@ export default {
         height: 40px;
     }
 }
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .line{
+        left: 31px;
+    }
+    .left-navigation {
+        left: 22px;
+    }
+}
 </style>

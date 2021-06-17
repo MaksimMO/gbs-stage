@@ -23388,8 +23388,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _assets_images_info_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/info.png */ "./resources/assets/images/info.png");
-/* harmony import */ var _assets_images_close_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/close.png */ "./resources/assets/images/close.png");
+/* harmony import */ var _assets_images_info_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/info.svg */ "./resources/assets/images/info.svg");
+/* harmony import */ var _assets_images_close_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/close.svg */ "./resources/assets/images/close.svg");
 
 
 
@@ -23459,7 +23459,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   /* PROPS */
   , ["src", "alt"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [!$data.isSelected ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("img", {
     key: 0,
-    src: _assets_images_info_png__WEBPACK_IMPORTED_MODULE_1__.default,
+    src: _assets_images_info_svg__WEBPACK_IMPORTED_MODULE_1__.default,
     alt: "info",
     "class": "info-show",
     onClick: _cache[2] || (_cache[2] = function () {
@@ -23467,7 +23467,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.isSelected ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("img", {
     key: 1,
-    src: _assets_images_close_png__WEBPACK_IMPORTED_MODULE_2__.default,
+    src: _assets_images_close_svg__WEBPACK_IMPORTED_MODULE_2__.default,
     alt: "info",
     "class": "info-close",
     onClick: _cache[3] || (_cache[3] = function () {
@@ -23494,30 +23494,30 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   )) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
     key: 1,
     "class": ['trainer-item-mobile', {
-      'is-scaled': $data.isHovered || $data.isSelected
-    }],
-    onClick: _cache[8] || (_cache[8] = function ($event) {
-      return !$data.isHovered ? $options.enter() : $options.leave();
-    })
+      'is-scaled': $data.isSelected
+    }]
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
     src: "../../images/".concat($props.trainer.link),
-    alt: $props.trainer.firstName
+    alt: $props.trainer.firstName,
+    onClick: _cache[6] || (_cache[6] = function ($event) {
+      return !$props.isOpen ? $options.isShow() : $options.isClosed();
+    })
   }, null, 8
   /* PROPS */
   , ["src", "alt"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [!$data.isSelected ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("img", {
     key: 0,
-    src: _assets_images_info_png__WEBPACK_IMPORTED_MODULE_1__.default,
+    src: _assets_images_info_svg__WEBPACK_IMPORTED_MODULE_1__.default,
     alt: "info",
     "class": "info-show",
-    onClick: _cache[6] || (_cache[6] = function () {
+    onClick: _cache[7] || (_cache[7] = function () {
       return $options.isShow && $options.isShow.apply($options, arguments);
     })
   })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.isSelected ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("img", {
     key: 1,
-    src: _assets_images_close_png__WEBPACK_IMPORTED_MODULE_2__.default,
+    src: _assets_images_close_svg__WEBPACK_IMPORTED_MODULE_2__.default,
     alt: "info",
     "class": "info-close",
-    onClick: _cache[7] || (_cache[7] = function () {
+    onClick: _cache[8] || (_cache[8] = function () {
       return $options.isClosed && $options.isClosed.apply($options, arguments);
     })
   })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 512
@@ -28617,9 +28617,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/images/close.png":
+/***/ "./resources/assets/images/close.svg":
 /*!*******************************************!*\
-  !*** ./resources/assets/images/close.png ***!
+  !*** ./resources/assets/images/close.svg ***!
   \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -28628,7 +28628,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/close.png?cb3fc32c96b6a8fef970bf8b998ba524");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/close.svg?2855e6317fe0e97b677566f1ee2fba5b");
 
 /***/ }),
 
@@ -28677,9 +28677,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/images/info.png":
+/***/ "./resources/assets/images/info.svg":
 /*!******************************************!*\
-  !*** ./resources/assets/images/info.png ***!
+  !*** ./resources/assets/images/info.svg ***!
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -28688,7 +28688,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/info.png?54ed3dd378a45635fafed8669c1b530c");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/info.svg?6c9484336357a780fd96bcef5a715b14");
 
 /***/ }),
 

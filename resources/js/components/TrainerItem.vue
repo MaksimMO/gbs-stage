@@ -7,8 +7,8 @@
     <div style="position: relative; z-index: 99;">
         <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="!isOpen ? isShow() : isClosed()">
         <div v-show="isHovered && !isOpen || isSelected" class="info">
-            <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" class="info-show" @click="isShow">
-            <img v-if="isSelected" src="../../assets/images/close.png" alt="info" class="info-close" @click="isClosed">
+            <img v-if="!isSelected" src="../../assets/images/info.svg" alt="info" class="info-show" @click="isShow">
+            <img v-if="isSelected" src="../../assets/images/close.svg" alt="info" class="info-close" @click="isClosed">
         </div>
         <p class="firstName">{{$i18n.t(`trainers.${trainer.id}.firstName`)}}</p>
         <p class="lastName">{{$i18n.t(`trainers.${trainer.id}.lastName`)}}</p>
@@ -18,15 +18,12 @@
         <p v-show="isSelected">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
     </div>
 </div>
-<div :class="['trainer-item-mobile', {'is-scaled':isHovered||isSelected}]"
-    v-else
-    @click="!isHovered ? enter() : leave()"
->
+<div v-else :class="['trainer-item-mobile', {'is-scaled': isSelected}]">
     <div style="position: relative; z-index: 99;">
-        <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName">
+        <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="!isOpen ? isShow() : isClosed()">
         <div v-show="isHovered && !isOpen || isSelected" class="info">
-            <img v-if="!isSelected" src="../../assets/images/info.png" alt="info" class="info-show" @click="isShow">
-            <img v-if="isSelected" src="../../assets/images/close.png" alt="info" class="info-close" @click="isClosed">
+            <img v-if="!isSelected" src="../../assets/images/info.svg" alt="info" class="info-show" @click="isShow">
+            <img v-if="isSelected" src="../../assets/images/close.svg" alt="info" class="info-close" @click="isClosed">
         </div>
         <p class="firstName">{{$i18n.t(`trainers.${trainer.id}.firstName`)}}</p>
         <p class="lastName">{{$i18n.t(`trainers.${trainer.id}.lastName`)}}</p>
@@ -102,21 +99,21 @@ export default {
             width: 100%;
             height: 100%;
             cursor: pointer;
-            background: #ACACAC;
+            // background: #ACACAC;
             border-radius: 50%;
-            &:hover {
-            background: #916C58;
-            }
+            // &:hover {
+            // background: #916C58;
+            // }
         }
         & .info-close {
             width: 100%;
             height: 100%;
             cursor: pointer;
-            background: #ACACAC;
+            // background: #ACACAC;
             border-radius: 50%;
-            &:hover {
-            background: #916C58;
-            }
+            // &:hover {
+            // background: #916C58;
+            // }
         }
     }
 
@@ -213,6 +210,43 @@ img{
     background-color: #ffffff;
 }
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .trainer-item{
+        margin-bottom: 78px;
+
+        &:nth-child(4n+4){
+            transform-origin: center;
+        }
+
+        &:nth-child(4n+1){
+            transform-origin: center;
+        }
+
+        &.is-scaled{
+            transform:scale(1.2);
+        }
+    }
+    .firstName{
+        font-size: 10px;
+        width: 75.17px;
+        height: 13.88px;
+    }
+    .lastName{
+        font-size: 10px;
+        width: 75.17px;
+        height: 13.88px;
+    }
+    .descriptionTitle{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .description{
+        font-size: 12px;
+        line-height: 22px;
+        max-height: 161px;
+    }
+}
+
 
 
 
@@ -236,21 +270,21 @@ img{
             width: 100%;
             height: 100%;
             cursor: pointer;
-            background: #ACACAC;
+            // background: #ACACAC;
             border-radius: 50%;
-            &:hover {
-            background: #916C58;
-            }
+            // &:hover {
+            // background: #916C58;
+            // }
         }
         & .info-close {
             width: 100%;
             height: 100%;
             cursor: pointer;
-            background: #ACACAC;
+            // background: #ACACAC;
             border-radius: 50%;
-            &:hover {
-            background: #916C58;
-            }
+            // &:hover {
+            // background: #916C58;
+            // }
         }
     }
 }
