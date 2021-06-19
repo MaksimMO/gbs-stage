@@ -16,14 +16,18 @@
       <router-link class="link-1" to="/areas-g">Зонування</router-link>
       <router-link class="link-1" to="/team-g">Наша команда</router-link>
       <router-link class="link-1" to="/simulators-g">тренажери</router-link>
-      <!-- <router-link class="link-1" to="/">Комфорт і чистота</router-link>
-      <router-link class="link-1" to="/">Фітнес бар</router-link>
-      <router-link class="link-1" to="/">Безпека та мед кабінет</router-link> -->
+
   </div>
   <div v-show="$root.$data.area == 'b'" class="line-2">
       <router-link class="link-1" to="/main-b">Наша команда</router-link>
       <router-link class="link-1" to="/price-b">Ціни</router-link>
-      <router-link class="link-1" to="/main-b">Контакти</router-link>
+      <router-link class="link-1" to="/contacts-b">Контакти</router-link>
+  </div>
+
+  <div v-show="$root.$data.area == 's'" class="line-2">
+      <router-link class="link-1" to="/about-us-s">Про нас</router-link>
+      <router-link class="link-1" to="/areas-s">Послуги</router-link>
+      <router-link class="link-1" to="/contacts-s">Контакти</router-link>
   </div>
 
   <hr>
