@@ -86,11 +86,42 @@ export default {
     }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
+    .block-background{
+        width: 149px;
+        height: 400px;
+    }
     .line{
-        left: 31px;
+        height: 190px;
+        left: 25px;
+        top: 92px;
+        border-width: 1px;
     }
     .left-navigation {
-        left: 22px;
+        left: 16px;
+        top: 302px;
+        & .g{
+            height: 30px;
+            margin-bottom: 20px;
+        }
+
+        & .b{
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        & .s{
+            height: 30px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .block-background {
+        display: none;
+    }
+    .line{
+        display: none;
+    }
+    .left-navigation {
+        display: none;
     }
 }
 </style>

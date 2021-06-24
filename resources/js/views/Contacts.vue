@@ -173,6 +173,65 @@ export default {
             transform: unset;
         }
     }
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+        .contacts {
+            padding-top: 108px;
+        }
+        .title {
+            padding: 0 50px;
+            margin-bottom: 40px;
+        }
+        .title > h1 {
+            font-size: 49px;
+            margin-left: 57px;
+        }
+        .location {
+            padding: 0 50px;
+            margin-bottom: 30px;
+            display: block;
+            & .location-contact {
+                & .contact-social-networks {
+                    text-align: left;
+                    padding-left: 63px;
+                }
+            }
+        }
+        .location-map {
+            & .vue-map-container {
+                width: 100% !important;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .contacts {
+            padding-top: 108px;
+        }
+        .title {
+            padding: 0 15px;
+            margin-bottom: 40px;
+        }
+        .title > h1 {
+            font-size: 32px;
+            margin-left: 48px;
+        }
+        .location {
+            padding: 0 15px;
+            margin-bottom: 30px;
+            display: block;
+            & .location-contact {
+                padding-top: 0;
+                & .contact-social-networks {
+                    text-align: left;
+                    padding-left: 63px;
+                }
+            }
+        }
+        .location-map {
+            & .vue-map-container {
+                width: 100% !important;
+            }
+        }
+    }
     .footer {
         height: 234px;
     }

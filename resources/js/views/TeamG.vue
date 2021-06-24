@@ -180,6 +180,29 @@ export default {
             }
         }
     }
+    @media screen and (max-width: 767px){
+        .team-g {
+            .title {
+                padding: 0 15px;
+                margin-bottom: 50px;
+            }
+            .title > h1 {
+                font-size: 32px;
+                margin-left: 50px;
+                margin-bottom: 20px;
+                line-height: 48px;
+            }
+            .title > p {
+                font-size: 12px;
+                margin-bottom: 10px;
+                line-height: 18px;
+            }
+            .title > b {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
     .team-g-mobile {
         padding-top: 108px;
         background-color: #FFFFFF !important;
@@ -225,6 +248,8 @@ export default {
             color: #000000;
         }
     }
+
+
 
     .footer {
         height: 443px;

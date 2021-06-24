@@ -1,6 +1,28 @@
 
 <template>
-  <swiper :navigation="true" :slidesPerView="4" :spaceBetween="15">
+  <swiper
+    :navigation="true"
+    :slidesPerView="2"
+    :spaceBetween="15"
+    :breakpoints="{
+        '320': {
+            'slidesPerView': 2,
+            'spaceBetween': 15
+        },
+        '768': {
+            'slidesPerView': 3,
+            'spaceBetween': 15
+        },
+        '1024': {
+            'slidesPerView': 4,
+            'spaceBetween': 15
+        },
+        '1441': {
+            'slidesPerView': 4,
+            'spaceBetween': 15
+        }
+    }"
+>
     <swiper-slide v-for="trainer in trainers" :key="trainer.id">
         <TrainerItem
             :key="trainer.id"
@@ -138,6 +160,40 @@ export default {
     // width: 100%;
     height: auto;
     object-fit: cover;
+  }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .swiper-container {
+        ::v-deep(.swiper-button-prev) {
+            left: 10px !important;
+        }
+        ::v-deep(.swiper-button-next) {
+            right: 10px !important;
+        }
+    }
+
+    .swiper-slide-next + .swiper-slide + .swiper-slide{
+        transition: all .2s ease-in;
+        pointer-events: none;
+        opacity: 0;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .swiper-container {
+        ::v-deep(.swiper-button-prev) {
+            display: none;
+        }
+        ::v-deep(.swiper-button-next) {
+            display: none;
+        }
+    }
+
+    .swiper-slide-next + .swiper-slide{
+        transition: all .2s ease-in;
+        pointer-events: none;
+        opacity: 0;
+    }
   }
 
 </style>>

@@ -329,6 +329,34 @@ export default {
     .address {
         display: none;
     }
+    .isScroll {
+        & .main>a>.logo {
+            width: 72px;
+            height: 33px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .header {
+        opacity: .8;
+        padding: 27px 20px;
+    }
+    .main {
+        &>a>.logo {
+            width: 72px;
+            height: 33px;
+        }
+    }
+    .address {
+        display: none;
+    }
+    .isScroll {
+        & .main>a>.logo {
+            width: 72px;
+            height: 33px;
+        }
+    }
 }
 
 

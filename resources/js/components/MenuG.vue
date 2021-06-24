@@ -71,5 +71,18 @@ export default {
         }
 
     }
+    @media screen and (max-width: 767px){
+        .main-menu-g {
+            display: block;
+            padding: 1.87rem 0 0 0;
+            li{
+                margin-bottom: 35px;
+            }
+            li > a {
+                opacity: 1;
+            }
+        }
+
+    }
 
 </style>

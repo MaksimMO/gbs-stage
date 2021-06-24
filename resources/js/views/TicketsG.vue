@@ -338,6 +338,7 @@ export default {
             margin-left: -1em;
         }
     }
+
     .popup-tickets-enter-active,
     .popup-tickets-leave-active {
         transition: all .2s ease;
@@ -345,6 +346,166 @@ export default {
     .popup-tickets-enter-from,
     .popup-tickets-leave-to {
         opacity: 0;
+    }
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+        .team-g {
+            padding-top: 108px;
+            height: 65%;
+        }
+        .title {
+            padding: 0 50px;
+            margin-bottom: 40px;
+        }
+        .title > h1 {
+            font-size: 49px;
+            margin-left: 57px;
+            margin-bottom: 20px;
+            line-height: 54px;
+        }
+        .title > p {
+            font-size: 12px;
+            margin-bottom: 15px;
+            line-height: 22px;
+        }
+        .title > b {
+            font-size: 12px;
+            line-height: 22px;
+        }
+        .tickets {
+            grid-template-columns: repeat(3, 171px);
+            grid-column-gap: 57px;
+            justify-content: center;
+            padding: 0 50px;
+            & p {
+                margin-bottom: 20px;
+                padding-left: 10px;
+                font-size: 22px;
+                line-height: 32px;
+            }
+            & img {
+                max-width: 171px;
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+            & .detail {
+                padding-right: 10px;
+            }
+        }
+        .ticket-title {
+            font-size: 22px;
+            line-height: 33px;
+        }
+        .ticket-discript {
+            & img {
+                max-width: 268px;
+            }
+            & .ticket-period {
+                width: 100%;
+                & p {
+                    font-size: 12px;
+                }
+            }
+            & .ticket-period-price{
+                grid-column-gap: 20px;
+                & p{
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+                & button {
+                    width: 200px;
+                    height: 46px;
+                }
+            }
+        }
+        .ticket-datail {
+            & li {
+                font-size: 12px;
+                line-height: 22px;
+            }
+        }
+    }
+    @media screen and (max-width: 767px){
+        .team-g {
+            padding-top: 108px;
+        }
+        .title {
+            padding: 0 15px;
+            margin-bottom: 50px;
+        }
+        .title > h1 {
+            font-size: 32px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            line-height: 48px;
+        }
+        .title > p {
+            font-size: 12px;
+            margin-bottom: 20px;
+            line-height: 18px;
+        }
+        .title > b {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .tickets {
+            grid-template-columns: repeat(1, 290px);
+            justify-content: center;
+            padding: 0 15px;
+            & p {
+                margin-bottom: 20px;
+                padding-left: 10px;
+                font-size: 18px;
+                line-height: 27px;
+            }
+            & img {
+                max-width: 290px;
+                width: 100%;
+                height: auto;
+                margin-bottom: 30px;
+            }
+            & .detail {
+                padding-right: 10px;
+            }
+        }
+        .ticket-title {
+            font-size: 18px;
+            line-height: 27px;
+            margin-top: 40px;
+        }
+        .ticket-discript {
+            position: relative;
+            left: -250px;
+            & img {
+                max-width: 268px;
+            }
+            & .ticket-period {
+                width: 100%;
+                & p {
+                    font-size: 12px;
+                }
+            }
+            & .ticket-period-price{
+                grid-column-gap: 20px;
+                display: inline-block;
+                & p{
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin-bottom: 30px;
+                }
+                & button {
+                    width: 200px;
+                    height: 46px;
+                }
+            }
+        }
+        .ticket-datail {
+            padding: 0 15px;
+            & li {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
     }
     .footer {
         height: 234px;

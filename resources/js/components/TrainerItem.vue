@@ -247,6 +247,44 @@ img{
     }
 }
 
+@media screen and (max-width: 767px) {
+    .trainer-item{
+        margin-bottom: 60px;
+
+        &:nth-child(4n+4){
+            transform-origin: center;
+        }
+
+        &:nth-child(4n+1){
+            transform-origin: center;
+        }
+
+        &.is-scaled{
+            transform:scale(1.1);
+        }
+    }
+    .firstName{
+        font-size: 10px;
+        width: 75.17px;
+        height: 13.88px;
+    }
+    .lastName{
+        font-size: 10px;
+        width: 75.17px;
+        height: 13.88px;
+    }
+    .descriptionTitle{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .description{
+        font-size: 12px;
+        line-height: 22px;
+        max-height: 161px;
+    }
+}
+
+
 
 
 

@@ -140,6 +140,30 @@ export default {
     transition:filter .2s ease-out;
   }
 
+  @media screen and (max-width: 1023px) and (min-width: 768px) {
+      .swiper-container {
+        ::v-deep(.swiper-button-prev) {
+            left: 20px !important;
+        }
+
+        ::v-deep(.swiper-button-next) {
+            right: 20px !important;
+        }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+      .swiper-container {
+        ::v-deep(.swiper-button-prev) {
+            display: none;
+        }
+
+        ::v-deep(.swiper-button-next) {
+            display: none;
+        }
+    }
+  }
+
 
 
 </style>>

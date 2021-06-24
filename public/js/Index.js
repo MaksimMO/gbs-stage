@@ -23335,8 +23335,26 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_swiper, {
     navigation: true,
-    slidesPerView: 4,
-    spaceBetween: 15
+    slidesPerView: 2,
+    spaceBetween: 15,
+    breakpoints: {
+      '320': {
+        'slidesPerView': 2,
+        'spaceBetween': 15
+      },
+      '768': {
+        'slidesPerView': 3,
+        'spaceBetween': 15
+      },
+      '1024': {
+        'slidesPerView': 4,
+        'spaceBetween': 15
+      },
+      '1441': {
+        'slidesPerView': 4,
+        'spaceBetween': 15
+      }
+    }
   }, {
     "default": _withId(function () {
       return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.trainers, function (trainer) {
@@ -23933,7 +23951,7 @@ var _hoisted_1 = {
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
   "class": "title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Про нас"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum. Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam. Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Suspendisse dictum ultricies imperdiet. Nunc pretium enim a purus dapibus, malesuada dignissim risus accumsan. Donec commodo lacus laoreet consequat scelerisque. Aliquam vestibulum magna ornare arcu dignissim, non tristique nibh pharetra. Etiam et sapien ullamcorper, dapibus magna vitae, ultrices nunc. Nulla sit amet tortor odio. Quisque accumsan non tellus eget ullamcorper. Phasellus congue ligula quis arcu efficitur, sed ornare mi laoreet. Maecenas mi orci, sodales et convallis vitae, ultricies ac neque. Donec facilisis orci ut sapien venenatis, nec vestibulum lorem auctor. Morbi dictum lacus neque, id volutpat sem iaculis non. ")], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Про нас"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " GBS LEVEL - це абсолютно новий рівень клубного життя Вінниці. Культура Спорту G LEVEL, краса В LEVEL та естетика S LEVEL поєднані у єдиний комплекс із найпрогресивнішим обладненням, стильним дизайном та неперевершеним комфортом. ")], -1
 /* HOISTED */
 );
 

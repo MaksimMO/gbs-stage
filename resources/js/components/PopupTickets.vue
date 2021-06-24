@@ -61,6 +61,21 @@ export default {
     }
   }
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .modal{
+        width: 668px;
+        max-height: 981px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .modal{
+        width: 320px;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
 .modal-overlay  .modal{
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);

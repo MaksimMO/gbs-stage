@@ -41,6 +41,13 @@ export default {
             grid-template-columns: repeat(3, 1fr);
         }
     }
+    @media screen and (max-width: 767px) {
+        .trainers-container{
+            grid-template-columns: repeat(auto-fill, minmax(240px, 2fr));
+            justify-content: center;
+            padding: 0 40px;
+        }
+    }
     .trainers-container-mobile{
         overflow: visible;
         grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));

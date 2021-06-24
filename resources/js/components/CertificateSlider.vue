@@ -161,6 +161,49 @@ export default {
     object-fit: cover;
   }
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .swiper-container {
+        ::v-deep(.swiper-button-prev) {
+            display: none;
+        }
+        ::v-deep(.swiper-button-next) {
+            display: none;
+        }
+        ::v-deep(.swiper-wrapper) {
+            left: 100px;
+        }
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    .swiper-container {
+        ::v-deep(.swiper-button-prev) {
+            display: none;
+        }
+        ::v-deep(.swiper-button-next) {
+            display: none;
+        }
+        ::v-deep(.swiper-wrapper) {
+            left: 100px;
+        }
+    }
+    .swiper-slide-next + .swiper-slide {
+        pointer-events: none;
+        &::after {
+            content: '';
+            position: unset;
+            background-color: unset;
+            width: unset;
+            height: unset;
+            display: none;
+        }
+        & img{
+            opacity: 0.5;
+        }
+    }
+  }
+
+
 
 
 </style>

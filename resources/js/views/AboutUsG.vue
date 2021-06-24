@@ -4,17 +4,9 @@
     <section class="title">
         <h1>Про нас</h1>
         <p>
-        Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.
-        Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam.
-        Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est.
-
-        </p>
-        <p>
-        Suspendisse dictum ultricies imperdiet. Nunc pretium enim a purus dapibus, malesuada dignissim risus accumsan.
-        Donec commodo lacus laoreet consequat scelerisque. Aliquam vestibulum magna ornare arcu dignissim, non tristique nibh pharetra.
-        Etiam et sapien ullamcorper, dapibus magna vitae, ultrices nunc. Nulla sit amet tortor odio. Quisque accumsan non tellus eget ullamcorper.
-        Phasellus congue ligula quis arcu efficitur, sed ornare mi laoreet. Maecenas mi orci, sodales et convallis vitae, ultricies ac neque.
-        Donec facilisis orci ut sapien venenatis, nec vestibulum lorem auctor. Morbi dictum lacus neque, id volutpat sem iaculis non.
+            GBS LEVEL - це абсолютно новий рівень клубного життя Вінниці.
+            Культура Спорту G LEVEL, краса В LEVEL та естетика S LEVEL поєднані у єдиний
+            комплекс із найпрогресивнішим обладненням, стильним дизайном та неперевершеним комфортом.
         </p>
     </section>
     <section class="image-container-aboutUs">
@@ -372,6 +364,202 @@ export default {
             line-height: 28px;
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #000000;
+        }
+    }
+
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+        .title {
+            padding: 0 50px;
+            margin-bottom: 50px;
+        }
+        .title > h1 {
+            font-size: 49px;
+            margin-left: 57px;
+            margin-bottom: 20px;
+        }
+        .title > p {
+            font-size: 12px;
+            line-height: 22px;
+        }
+         .image-container-aboutUs{
+            margin-bottom: 50px;
+            padding-left: 107px;
+
+            .image{
+                width: 100%;
+                max-height: 316px;
+            }
+
+            .skew-image{
+                width: 52px;
+                height: 45px;
+                right: 25px;
+            }
+
+            .text-image{
+                position: absolute;
+                left: -25px;
+                bottom: 20px;
+                width: 506px;//67.3%
+                height: 56px;//83px
+                font-size: 18px;//36px
+                &>p{
+                    line-height: 56px;//83px
+                    margin-right: 30px;
+                }
+            }
+        }
+        .gallery-slider {
+            padding: 0 50px;
+        }
+        .aboutUs-g-description {
+            padding: 0 50px;
+            margin-bottom: 50px;
+            & ul {
+                & li {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+        .our-team-aboutUs-container{
+            background: rgba(145, 108, 88, 0.1);
+            padding-top: 30px;
+            .our-team-container_header{
+                font-size: 45px;
+                display: flex;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .trainers-container .trainer-item:nth-of-type(even) {
+                margin-top:25px;
+            }
+        }
+        .teams-slider {
+            padding: 40px 30px;
+        }
+         .certificate-title {
+            padding: 0 50px;
+            margin-bottom: 30px;
+            padding-top: 50px;
+            h1 {
+                font-size: 45px;
+                margin-bottom: 30px;;
+            }
+            p {
+                font-size: 12px;
+                line-height: 22px;
+            }
+        }
+        .certificate-description {
+            padding: 0 50px;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            p {
+                font-size: 12px;
+                line-height: 22px;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .title {
+            padding: 0 15px;
+            margin-bottom: 50px;
+        }
+        .title > h1 {
+            font-size: 32px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+        .title > p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+         .image-container-aboutUs{
+            margin-bottom: 73px;
+            padding: 0;
+
+            .image{
+                width: 100%;
+                max-height: 214px;
+            }
+
+            .skew-image{
+                width: 35px;
+                height: 30px;
+                right: 15px;
+                bottom: -15px;
+            }
+
+            .text-image{
+                text-align: left;
+                bottom: -35px;
+                width: 57.3%;//67.3%
+                height: auto;//83px
+                font-size: 18px;//36px
+                &>p{
+                    line-height: 24px;
+                    margin-left: 45px;
+                    margin-right: 0;
+                }
+            }
+        }
+        .gallery-slider {
+            padding: 0 15px;
+        }
+        .aboutUs-g-description {
+            padding: 0 15px;
+            grid-template-columns: repeat(1, 1fr);
+            margin-bottom: 50px;
+            & ul {
+                margin: 0;
+                & li {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+        .our-team-aboutUs-container{
+            background: rgba(145, 108, 88, 0.1);
+            padding-top: 50px;
+            .our-team-container_header{
+                font-size: 24px;
+                display: inline-block;
+                padding-left: 37px;
+                padding-right: 15px;
+                width: 90%;
+                & p {
+                    text-align: right;
+                }
+            }
+            .trainers-container .trainer-item:nth-of-type(even) {
+                margin-top:25px;
+            }
+        }
+        .teams-slider {
+            padding: 37px 0 37px 15px;
+        }
+         .certificate-title {
+            padding: 0 15px;
+            margin-bottom: 20px;
+            padding-top: 50px;
+            h1 {
+                font-size: 24px;
+                margin-bottom: 20px;;
+            }
+            p {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+        .certificate-description {
+            padding: 0 15px;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            p {
+                font-size: 12px;
+                line-height: 18px;
+            }
         }
     }
     .footer {
