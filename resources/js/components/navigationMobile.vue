@@ -1,8 +1,9 @@
 <template>
 <div class="mobile-navigation">
-    <img :src="getUrl('g')" >
-    <img :src="getUrl('b')" >
-    <img :src="getUrl('s')" >
+  <router-link to="/main-g"><img :src="getUrl('g')" ></router-link>
+  <router-link to="/main-b"><img :src="getUrl('b')" ></router-link>
+  <router-link to="/main-s"><img :src="getUrl('s')" ></router-link>
+
 </div>
 </template>
 

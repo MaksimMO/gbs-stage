@@ -1,11 +1,18 @@
 <template>
-  <Header :level="'g'"/>
+  <Header/>
   <div class="view-main-g">
-  <div class="top-image-container">
-    <img class="top-image" src="../../assets/images/main-g-background.jpg" alt="">
+
+  <section class="top-image-container">
+   <img class="top-image" src="../../assets/images/main-g-background.jpg" alt="">
     <img class="skew-image-1" src="../../assets/images/popup-corner.svg" alt="">
-    <img class="water-text" src="../../assets/images/main-g-water-text.svg" alt="">
-  </div>
+    <div class="water-text">
+        <p class="top-text">Твій рівень</p>
+        <p class="down-text">спорту</p>
+    </div>
+        <div class="vector1"></div>
+        <div class="vector2"></div>
+        <div class="vector3"></div>
+  </section>
 
   <div class="about-us">
     <div class="title">Про нас</div>
@@ -43,6 +50,10 @@
       <img class="skew-image-1" src="../../assets/images/techno-gym-skew-images.png" alt="">
   </div>
   <div class="our-team-container">
+    <div class="water-text">
+        <p class="top-text">Професіонали</p>
+        <p class="down-text">своєї справи</p>
+    </div>
     <div class="our-team-container_header">
       Наша команда
     </div>
@@ -104,18 +115,8 @@
       </div>
     </div>
 
-
-
-
-
-
-
-  <!-- <div class="text-block-1">
-    main g
-    {{ $t("msg") }}
-  </div> -->
   </div>
-  <Footer :level="'g'"/>
+  <Footer/>
 
 </template>
 
@@ -239,19 +240,62 @@ export default {
     position: absolute;
     bottom: -27px;
     left: 100px;
+
+    @media screen and (max-width:767px){
+      bottom: -13px;
+      left: 15px;
+      width: 35px;
+    }
   }
 
   .water-text{
     position: absolute;
-    right: 150px;
-    bottom: -138px;
-
-    @media screen and (max-width: 1144px){
-      width: 620px;
-      bottom: -116px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 7.5vw;
+    line-height: 8.802vw;
+    text-align: right;
+    bottom: -7.5vw;
+    right: 7.8125vw;
+    color: transparent;
+    & .top-text {
+        margin: 0;
+        -webkit-text-stroke-color: #fff;
+        -webkit-text-stroke-width: 0.5px;
     }
-
-
+    & .down-text {
+        margin: 0;
+        -webkit-text-stroke-color: #916C58;
+        -webkit-text-stroke-width: 1px;
+    }
+  }
+  .vector1 {
+    position: absolute;
+    width: 66.085vw; //1268.85px;
+    height: 7.515vw; //144.29px;
+    right: -35.9375vw; //-690px;
+    bottom: 26.594vw; //510.62px;
+    background: linear-gradient(172.97deg, rgba(255, 255, 255, 0.25) 2.64%, rgba(255, 255, 255, 0) 48.7%);
+    transform: rotate(-75.49deg);
+  }
+  .vector2 {
+    position: absolute;
+    width: 66.085vw; //1268.85px;
+    height: 3.705vw; //71.145px;
+    right: -28.828vw; //-553.5px;
+    bottom: 23.365vw; //448.62px;
+    background: linear-gradient(172.97deg, rgba(255, 255, 255, 0.25) 2.64%, rgba(255, 255, 255, 0) 48.7%);
+    transform: rotate(-75.49deg);
+  }
+  .vector3 {
+    position: absolute;
+    width: 66.085vw; //1268.85px;
+    height: 3.705vw; //71.145px;
+    right: -24.01vw; //-461px;
+    bottom: 19.198vw; //368.62px;
+    background: linear-gradient(172.97deg, rgba(255, 255, 255, 0.25) 2.64%, rgba(255, 255, 255, 0) 48.7%);
+    transform: rotate(-75.49deg);
   }
 }
 
@@ -261,12 +305,21 @@ export default {
   display: flex;
   flex-direction: column;
 
+    @media screen and (max-width:767px){
+        padding: 30px 15px 15px;
+    }
+
   .title{
     font-family: Oswald;
     font-weight: 600;
     font-size: 48px;
     letter-spacing: 0.02em;
     font-feature-settings: 'pnum' on, 'lnum' on;
+
+    @media screen and (max-width:767px){
+         font-size: 24px;
+         margin-bottom: 30px;
+    }
   }
 
   .columns-container{
@@ -282,8 +335,33 @@ export default {
     letter-spacing: 0.05em;
     font-feature-settings: 'pnum' on, 'lnum' on;
 
+    @media screen and (max-width:767px){
+        display: block;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
     .col-1 > div,.col-2 > div {
       margin-bottom: 20px;
+      position: relative;
+      margin-left: 10px;
+
+      &::before{
+        content: '';
+        height: 5px;
+        width: 5px;
+        background-color: #916C58;
+        position: absolute;
+        top: 12px;
+        left: -10px;
+
+        @media screen and (max-width:767px){
+            top: 7px;
+        }
+      }
+
+
+
       span.bold{
         font-weight: 600;
       }
@@ -295,6 +373,9 @@ export default {
 
   .link-1{
     align-self: flex-end;
+     @media screen and (max-width:767px){
+        font-size: 10px;
+    }
   }
 }
 
@@ -303,6 +384,12 @@ export default {
     background-size: cover;
     height: 570px;
     display: flex;
+    position: relative;
+
+    @media screen and (max-width:767px){
+        background-image: url("../../assets/images/main-g-techno-gym-background-320.jpg");
+        height: initial;
+    }
 
     .col-1{
 
@@ -312,11 +399,21 @@ export default {
       justify-content: space-between;
       color: #ffff;
 
+        @media screen and (max-width:767px){
+            padding: 40px 15px 40px 15px;
+        }
+
       .logo{
         background-image: url("../../assets/images/technogym-logo.svg");
         background-repeat: no-repeat;
+        background-size: contain;
         height: 48px;
-        widows: 174px;
+
+          @media screen and (max-width:767px){
+            height: 23px;
+
+        }
+
       }
 
       .title{
@@ -326,6 +423,11 @@ export default {
           letter-spacing: 0.02em;
           font-feature-settings: 'pnum' on, 'lnum' on;
           color: #916C58;
+
+          @media screen and (max-width:767px){
+            font-size: 36px;
+            padding: 50px 0 30px 0;
+          }
       }
 
       .text{
@@ -336,9 +438,14 @@ export default {
         letter-spacing: 0.1em;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #FFFFFF;
+          @media screen and (max-width:767px){
+              font-size: 12px;
+              line-height: 18px;
+          }
       }
 
       .link-2{
+        margin-top: 30px;
 
       }
 
@@ -348,15 +455,56 @@ export default {
       height: 294px;
       align-self: flex-end;
       margin-bottom: -60px;
+
+      @media screen and (max-width:767px){
+        height: 105px;
+        margin-bottom: initial;
+        position: absolute;
+        right: 0;
+        bottom: -30px;
+      }
     }
 
 }
   .our-team-container{
     // height: 970px;
-    padding-top: 210px;
-    box-sizing: border-box;
+    // padding-top: 210px;
+    // box-sizing: border-box;
     background-color: #ffff;
-    background: url('../../assets/images/main-g-our-team-water-text.svg') no-repeat 50px 50px, #fff;
+    // background: url('../../assets/images/main-g-our-team-water-text.svg') no-repeat 50px 50px, #fff;
+
+
+
+    .water-text{
+      margin-top: 60px;
+      margin-left: 150px;
+
+
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 7.5vw;
+      line-height: 8.802vw;
+      bottom: -7.5vw;
+      right: 7.8125vw;
+      color: transparent;
+
+      @media screen and (max-width:767px){
+        margin-top: 50px;
+        margin-left: 15px;
+      }
+
+      & .top-text {
+          margin: 0;
+          -webkit-text-stroke-color: #000;
+          -webkit-text-stroke-width: 1px;
+      }
+      & .down-text {
+          margin: 0;
+          -webkit-text-stroke-color: #916C58;
+          -webkit-text-stroke-width: 1px;
+      }
+    }
 
     .our-team-container_header{
       font-family: 'Oswald';
@@ -372,6 +520,15 @@ export default {
       // top: 217px;
       position: relative;
       padding-right: 150px;
+      top: -40px;
+
+      @media screen and (max-width:767px){
+        height: 36px;
+        padding-right: 25px;
+        font-size: 24px;
+        top: initial;
+        background-position: calc(100% - 50px);
+      }
     }
 
     .all-our-trainers-link{
@@ -407,6 +564,10 @@ export default {
       padding: 90px 150px 60px;
       background-color: #fff;
 
+      @media screen and (max-width:767px){
+        padding: 60px 30px 0;
+      }
+
       &>.title{
         font-family: Oswald;
         font-size: 48px;
@@ -414,12 +575,22 @@ export default {
         letter-spacing: 0.02em;
         text-align: center;
         margin-bottom: 62px;
+
+        @media screen and (max-width:767px){
+          font-size: 24px;
+          line-height: 36px
+        }
       }
 
       .orders{
         display: grid;
         grid-column-gap:75px;
         grid-template-columns: repeat(3, 1fr);
+
+        @media screen and (max-width:767px){
+          grid-template-columns: repeat(1, 1fr);
+          grid-row-gap: 15px;
+        }
 
         .order{
 
@@ -464,7 +635,7 @@ export default {
 
     .seo-text{
       background-color: #fff;
-      padding-top:60px;
+      margin-bottom: 50px;
 
       .title{
           font-family: Oswald;
@@ -473,6 +644,11 @@ export default {
           line-height: 54px;
           letter-spacing: 0.02em;
           text-align: center;
+
+          @media screen and (max-width:767px){
+            font-size: 32px;
+            line-height: 48px;
+          }
       }
       .text{
         font-family: Raleway;
@@ -481,6 +657,12 @@ export default {
         line-height: 28px;
         letter-spacing: 0.05em;
         padding: 30px 94px 150px;
+
+          @media screen and (max-width:767px){
+            padding: 30px 15px 30px;
+            font-size: 12px;
+            line-height: 18px;
+          }
       }
     }
 
