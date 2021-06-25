@@ -249,10 +249,5 @@ export default {
         }
     }
 
-
-
-    .footer {
-        height: 443px;
-    }
 </style>
 

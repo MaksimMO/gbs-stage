@@ -1,30 +1,32 @@
 <template>
 <div class="footer">
   <div class="line-1">
-    <div :class="`logo ${$root.$data.area}`"></div>
-    <div class="timetable">Години роботи</div>
+    <router-link :to="`/main-${$root.$data.area}`" class="logo-link-wrapper">
+      <div :class="`logo ${$root.$data.area}`"></div>
+    </router-link>
+
+    <div class="timetable"><span>Пн - Пт з 07:00 до 23:00</span>   <span>Сб - Нд з 08:00 до 23:00</span></div>
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink />
     <div class="social-networks">
-      <!-- <a href="https://www.youtube.com/gbs.level" class="youtube"></a> -->
       <a href="https://www.facebook.com/gbs.level" class="facebook"></a>
       <a href="https://www.instagram.com/gbs.level" class="instagram"></a>
     </div>
   </div>
-  <div v-show="$root.$data.area == 'g'" class="line-2">
+  <div v-if="$root.$data.area == 'g'" class="line-2">
       <router-link class="link-1" to="/about-us-g">Про нас</router-link>
       <router-link class="link-1" to="/areas-g">Зонування</router-link>
       <router-link class="link-1" to="/team-g">Наша команда</router-link>
       <router-link class="link-1" to="/simulators-g">тренажери</router-link>
 
   </div>
-  <div v-show="$root.$data.area == 'b'" class="line-2">
+  <div v-if="$root.$data.area == 'b'" class="line-2">
       <router-link class="link-1" to="/main-b">Наша команда</router-link>
       <router-link class="link-1" to="/price-b">Ціни</router-link>
       <router-link class="link-1" to="/contacts-b">Контакти</router-link>
   </div>
 
-  <div v-show="$root.$data.area == 's'" class="line-2">
+  <div v-if="$root.$data.area == 's'" class="line-2">
       <router-link class="link-1" to="/about-us-s">Про нас</router-link>
       <router-link class="link-1" to="/areas-s">Послуги</router-link>
       <router-link class="link-1" to="/contacts-s">Контакти</router-link>
@@ -74,26 +76,27 @@ export default {
 
 
 .line-1{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: end;
-    justify-items: center;
+    display: flex;
+    grid-column-gap: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+  .logo-link-wrapper{
+      justify-self: normal;
+    .logo {
+      height: 43px;
+      width: 89px;
+      background-size: contain;
+      background-repeat: no-repeat;
 
-
-  .logo {
-    height: 43px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    justify-self: normal;
-
-    &.g {
-      background-image: url("../../assets/images/g-level.svg");
-    }
-    &.b {
-      background-image: url("../../assets/images/b-level.svg");
-    }
-    &.s {
-      background-image: url("../../assets/images/s-level.svg");
+      &.g {
+        background-image: url("../../assets/images/g-level.svg");
+      }
+      &.b {
+        background-image: url("../../assets/images/b-level.svg");
+      }
+      &.s {
+        background-image: url("../../assets/images/s-level.svg");
+      }
     }
   }
 
@@ -103,6 +106,10 @@ export default {
     font-style: normal;
     font-weight: 600;
     letter-spacing: 0.1em;
+    text-align: center;
+    span{
+      white-space: nowrap;
+    }
   }
 
   .address {
@@ -117,17 +124,13 @@ export default {
   .social-networks{
     justify-self: end;
     display: grid;
-    grid-template-columns: repeat(3, 16px);
+    grid-template-columns: repeat(2, 16px);
     grid-column-gap: 35px;
 
     & > a{
       text-decoration: none;
       width: 16px;
       height:16px;
-
-      // &.youtube{
-      //   background-image: url("../../assets/images/youtube.svg");
-      // }
 
       &.facebook{
         background-image: url("../../assets/images/facebook.svg");

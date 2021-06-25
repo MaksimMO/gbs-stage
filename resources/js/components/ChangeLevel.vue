@@ -43,7 +43,7 @@ export default {
 <style lang="scss" scoped>
 
 .block-background{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     opacity: 0.05;

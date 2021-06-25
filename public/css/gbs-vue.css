@@ -1166,24 +1166,27 @@ to {
   background-color: #000;
 }
 .footer .line-1[data-v-7ce6f146] {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  align-items: end;
-  justify-items: center;
+  display: flex;
+  grid-column-gap: 10px;
+  justify-content: space-between;
+  align-items: flex-end;
 }
-.footer .line-1 .logo[data-v-7ce6f146] {
-  height: 43px;
-  background-size: contain;
-  background-repeat: no-repeat;
+.footer .line-1 .logo-link-wrapper[data-v-7ce6f146] {
   justify-self: normal;
 }
-.footer .line-1 .logo.g[data-v-7ce6f146] {
+.footer .line-1 .logo-link-wrapper .logo[data-v-7ce6f146] {
+  height: 43px;
+  width: 89px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.footer .line-1 .logo-link-wrapper .logo.g[data-v-7ce6f146] {
   background-image: url(/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca);
 }
-.footer .line-1 .logo.b[data-v-7ce6f146] {
+.footer .line-1 .logo-link-wrapper .logo.b[data-v-7ce6f146] {
   background-image: url(/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212);
 }
-.footer .line-1 .logo.s[data-v-7ce6f146] {
+.footer .line-1 .logo-link-wrapper .logo.s[data-v-7ce6f146] {
   background-image: url(/images/s-level.svg?66970d48e594fdfc781d762fd2e8de1c);
 }
 .footer .line-1 .timetable[data-v-7ce6f146] {
@@ -1192,6 +1195,10 @@ to {
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.1em;
+  text-align: center;
+}
+.footer .line-1 .timetable span[data-v-7ce6f146] {
+  white-space: nowrap;
 }
 .footer .line-1 .address[data-v-7ce6f146] {
   font-weight: bold;
@@ -1204,7 +1211,7 @@ to {
 .footer .line-1 .social-networks[data-v-7ce6f146] {
   justify-self: end;
   display: grid;
-  grid-template-columns: repeat(3, 16px);
+  grid-template-columns: repeat(2, 16px);
   grid-column-gap: 35px;
 }
 .footer .line-1 .social-networks > a[data-v-7ce6f146] {
@@ -1408,7 +1415,7 @@ to {
   transform-origin: bottom;
 }
 .block-background[data-v-78416699] {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   opacity: 0.05;
@@ -3365,9 +3372,6 @@ img[data-v-6a0f304d] {
   letter-spacing: 0.05em;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
-}
-.footer[data-v-6d955afb] {
-  height: 443px;
 }
 .swiper-container[data-v-4a2d3a7d] {
   width: 100%;
