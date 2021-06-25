@@ -563,6 +563,7 @@ export default {
     .teams-slider {
         position: relative;
         padding: 60px 7.81vw;
+        z-index: 2;
     }
 
   }

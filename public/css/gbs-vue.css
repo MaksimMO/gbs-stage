@@ -2367,6 +2367,7 @@ img[data-v-6a0f304d] {
 .our-team-container .teams-slider[data-v-6918511f] {
   position: relative;
   padding: 60px 7.81vw;
+  z-index: 2;
 }
 .combat-area[data-v-6918511f] {
   position: relative;
