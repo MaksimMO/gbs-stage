@@ -105,7 +105,7 @@
       </div>
     </div>
   </div>
-
+<!--
     <div class="seo-text">
       <div class="title">
         SEO текст
@@ -113,7 +113,7 @@
       <div class="text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum. Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis. Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum. Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec hendrerit neque...
       </div>
-    </div>
+    </div> -->
 
   </div>
   <Footer/>
