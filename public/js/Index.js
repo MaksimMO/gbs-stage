@@ -19578,7 +19578,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/homeView/slide-1.png
         backgroundImage: __webpack_require__(/*! ../../assets/homeView/slide-2.png */ "./resources/assets/homeView/slide-2.png").default,
         titleImage: __webpack_require__(/*! ../../assets/homeView/b-level-title.svg */ "./resources/assets/homeView/b-level-title.svg").default,
         titleImageActive: __webpack_require__(/*! ../../assets/homeView/b-level-title-active.svg */ "./resources/assets/homeView/b-level-title-active.svg").default,
-        link: '/level-b',
+        link: '/main-b',
         text1: 'Твій рівень краси',
         isActive: false,
         isHovered: false
@@ -19587,7 +19587,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/homeView/slide-1.png
         backgroundImage: __webpack_require__(/*! ../../assets/homeView/slide-3.png */ "./resources/assets/homeView/slide-3.png").default,
         titleImage: __webpack_require__(/*! ../../assets/homeView/s-level-title.svg */ "./resources/assets/homeView/s-level-title.svg").default,
         titleImageActive: __webpack_require__(/*! ../../assets/homeView/s-level-title-active.svg */ "./resources/assets/homeView/s-level-title-active.svg").default,
-        link: '/level-s',
+        link: '/main-s',
         text1: 'Твій рівень відпочинку',
         isActive: false,
         isHovered: false

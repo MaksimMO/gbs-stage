@@ -59,7 +59,7 @@ export default {
           backgroundImage:require('../../assets/homeView/slide-2.png').default,
           titleImage:require('../../assets/homeView/b-level-title.svg').default,
           titleImageActive:require('../../assets/homeView/b-level-title-active.svg').default,
-          link:'/level-b',
+          link:'/main-b',
           text1:'Твій рівень краси',
           isActive:false,
           isHovered:false
@@ -70,7 +70,7 @@ export default {
           backgroundImage:require('../../assets/homeView/slide-3.png').default,
           titleImage:require('../../assets/homeView/s-level-title.svg').default,
           titleImageActive:require('../../assets/homeView/s-level-title-active.svg').default,
-          link:'/level-s',
+          link:'/main-s',
           text1:'Твій рівень відпочинку',
           isActive:false,
           isHovered:false
