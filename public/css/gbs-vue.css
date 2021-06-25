@@ -996,6 +996,7 @@ label[data-v-8048fca2] {
   background-color: #000 !important;
   color: #fff !important;
   transition: all 0.6s ease;
+  height: 100%;
 }
 .is-open .buttonLang[data-v-79315c4c] {
   color: #fff !important;
@@ -1210,9 +1211,6 @@ to {
   text-decoration: none;
   width: 16px;
   height: 16px;
-}
-.footer .line-1 .social-networks > a.youtube[data-v-7ce6f146] {
-  background-image: url(/images/youtube.svg?c1677447c97f633ce596b4c52413efe4);
 }
 .footer .line-1 .social-networks > a.facebook[data-v-7ce6f146] {
   background-image: url(/images/facebook.svg?54bf56baa5ce9b1b5bd010cd9e02909e);

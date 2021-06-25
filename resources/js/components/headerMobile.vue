@@ -119,6 +119,8 @@ export default {
    background-color: #000 !important;
    color: #fff !important;
    transition: all 0.6s ease;
+   height: 100%;
+
    & .buttonLang{
        color: #fff !important;
    }

@@ -6,7 +6,7 @@
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink />
     <div class="social-networks">
-      <a href="https://www.youtube.com/gbs.level" class="youtube"></a>
+      <!-- <a href="https://www.youtube.com/gbs.level" class="youtube"></a> -->
       <a href="https://www.facebook.com/gbs.level" class="facebook"></a>
       <a href="https://www.instagram.com/gbs.level" class="instagram"></a>
     </div>
@@ -125,9 +125,9 @@ export default {
       width: 16px;
       height:16px;
 
-      &.youtube{
-        background-image: url("../../assets/images/youtube.svg");
-      }
+      // &.youtube{
+      //   background-image: url("../../assets/images/youtube.svg");
+      // }
 
       &.facebook{
         background-image: url("../../assets/images/facebook.svg");
