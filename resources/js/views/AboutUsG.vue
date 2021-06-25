@@ -1,6 +1,6 @@
 <template>
-<Header class="header-invert" :level="'g'"/>
-  <div class="aboutUs-g">
+<Header class="header-invert"/>
+  <div class="view-about-us-g">
     <section class="title">
         <h1>Про нас</h1>
         <p>
@@ -51,7 +51,7 @@
             />
         </div>
     </section>
-    <section class="certificate-title">
+    <!-- <section class="certificate-title">
         <h1>Нагороди та сертифікати</h1>
         <p>
             Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.
@@ -68,13 +68,12 @@
             Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
             Sed nec hendrerit neque...
         </p>
-    </section>
+    </section> -->
   </div>
-<Footer :level="'g'"/>
+<Footer/>
 </template>
 
 <script>
-import TrainersList from '../components/TrainersList';
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 import CertificateSlider from '../components/CertificateSlider.vue';
@@ -155,7 +154,6 @@ export default {
         });
     },
     components: {
-        TrainersList,
         Header,
         GallerySlider,
         TeamsSlider,
@@ -167,7 +165,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .aboutUs-g {
+    .view-about-us-g {
         padding-top: 208px;
         background-color: #FFFFFF !important;
         overflow: hidden;
@@ -283,6 +281,7 @@ export default {
     .our-team-aboutUs-container{
         background: rgba(145, 108, 88, 0.1);
         padding-top: 60px;
+        padding-bottom: 220px;
         .our-team-container_header{
             font-family: 'Oswald';
             height: 83px;
@@ -425,6 +424,8 @@ export default {
         .our-team-aboutUs-container{
             background: rgba(145, 108, 88, 0.1);
             padding-top: 30px;
+
+
             .our-team-container_header{
                 font-size: 45px;
                 display: flex;

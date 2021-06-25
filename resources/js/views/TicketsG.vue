@@ -15,17 +15,17 @@
       <section class="tickets">
           <div class="level">
               <p>{{tickets[0].level}}</p>
-              <img :src="tickets[0].link" alt="Level 1">
+              <img :src="tickets[0].link" alt="Level 1" @click="openDetail(1)">
               <div class="detail" @click="openDetail(1)">Детальніше</div>
           </div>
           <div class="level">
               <p>{{tickets[1].level}}</p>
-              <img :src="tickets[1].link" alt="Level 2">
+              <img :src="tickets[1].link" alt="Level 2" @click="openDetail(1)">
               <div class="detail" @click="openDetail(2)" >Детальніше</div>
           </div>
           <div class="level">
               <p>{{tickets[2].level}}</p>
-              <img :src="tickets[2].link" alt="Level 3">
+              <img :src="tickets[2].link" alt="Level 3" @click="openDetail(1)">
               <div class="detail" @click="openDetail(3)">Детальніше</div>
           </div>
       </section>
@@ -213,6 +213,7 @@ export default {
             width: 100%;
             height: auto;
             margin-bottom: 30px;
+            cursor: pointer;
         }
         & .detail {
             font-family: Raleway;

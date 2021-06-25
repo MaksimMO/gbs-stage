@@ -61,11 +61,14 @@
 
     <router-link class="all-our-trainers-link" to="/team-g">Переглянути всіх</router-link>
 
-    <TrainersList
-        :trainers="trainers"
-        :isOpen="isOpen"
-        @changeOpen="(e) => change(e)"
-      />
+
+    <div class="teams-slider">
+        <TeamsSlider
+            :trainers="trainers"
+            :isOpen="isOpen"
+            @changeOpen="(e) => change(e)"
+        />
+    </div>
 
   </div>
   <div class="combat-area">
@@ -124,16 +127,23 @@
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import AreasSliderG from '../components/AreasG/AreasSliderG.vue'
-import TrainersList from '../components/TrainersList.vue'
+import TeamsSlider from '../components/TeamsSlider.vue';
 
 
            let trainers = [
                 {id: 0, link: "Vladimir_Leskov.jpg"},
                 {id: 1, link: "Irina_Slyusarenko.jpg"},
                 {id: 2, link: "Olga_Depeshko.jpg"},
-                {id: 3, link: "Olga_Martsenyuk.jpg"}
+                {id: 3, link: "Olga_Martsenyuk.jpg"},
+                {id: 4, link: "Mikhail_Galagan.jpg"},
+                {id: 5, link: "Olga_Osadchuk.jpg"},
+                {id: 6, link: "valentine.jpg"},
+                {id: 7, link: "Melnyk_Serhiy.jpg"},
+                {id: 8, link: "Olena_Semenchuk.jpg"},
+                {id: 9, link: "Nechko_Vasil.jpg"},
+                {id: 10, link: "Gornushkina_Julia.jpg"},
+                {id: 11, link: "Dementieva_Elena.jpg"}
             ]
-
 
 
 export default {
@@ -151,8 +161,8 @@ export default {
   components:{
     Header,
     Footer,
-    TrainersList,
-    AreasSliderG
+    AreasSliderG,
+    TeamsSlider
   },
   methods: {
       change(e) {
@@ -471,6 +481,7 @@ export default {
     // padding-top: 210px;
     // box-sizing: border-box;
     background-color: #ffff;
+    padding-bottom: 110px;
     // background: url('../../assets/images/main-g-our-team-water-text.svg') no-repeat 50px 50px, #fff;
 
 
@@ -545,9 +556,15 @@ export default {
       color: #000000;
     }
 
-    .trainers-container .trainer-item:nth-of-type(even) {
-      margin-top:25px;
+    // .trainers-container .trainer-item:nth-of-type(even) {
+    //   margin-top:25px;
+    // }
+
+    .teams-slider {
+        position: relative;
+        padding: 60px 7.81vw;
     }
+
   }
     .combat-area{
       position: relative;
