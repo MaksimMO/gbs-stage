@@ -168,6 +168,6 @@ app.use(VueGoogleMaps, {
 window.vm=app.mount('#gbslevel-app')
 
 
-if(isMobile){
-    document.getElementById("gbslevel-app").style.height=`${window.innerHeight}px`;
-}
+// if(isMobile){
+//     document.getElementById("gbslevel-app").style.height=`${window.innerHeight}px`;
+// }

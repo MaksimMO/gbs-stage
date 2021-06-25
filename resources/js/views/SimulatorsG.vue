@@ -385,8 +385,6 @@ export default {
         opacity: 0;
     }
 
-    .footer {
-        height: 234px;
-    }
+
 </style>
 
