@@ -13,6 +13,9 @@
             </li>
         </ul>
         <div class="address-mobile">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
+        <div style="padding: 26px">
+            <NavigationMobile />
+        </div>
         <teleport to="body">
             <MakeOrderPopup v-if="modalOpen" @closePopup="modalOpen=false"/>
         </teleport>
@@ -20,7 +23,8 @@
 </template>
 
 <script>
-import MakeOrderPopup from './MakeOrderPopup.vue'
+import MakeOrderPopup from './MakeOrderPopup.vue';
+import NavigationMobile from './navigationMobile.vue';
 export default {
     data() {
         return {
@@ -28,7 +32,8 @@ export default {
         };
     },
     components: {
-        MakeOrderPopup
+        MakeOrderPopup,
+        NavigationMobile
     },
 };
 </script>

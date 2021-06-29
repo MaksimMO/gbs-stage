@@ -348,7 +348,7 @@ export default {
     .popup-tickets-leave-to {
         opacity: 0;
     }
-    @media screen and (max-width: 1023px) and (min-width: 768px) {
+    @media screen and (max-width: 1123px) and (min-width: 768px) {
         .team-g {
             padding-top: 108px;
             height: 65%;
@@ -502,6 +502,9 @@ export default {
         }
         .ticket-datail {
             padding: 0 15px;
+            overflow: auto;
+            max-height: 320px;
+            height: 100%;
             & li {
                 font-size: 12px;
                 line-height: 18px;

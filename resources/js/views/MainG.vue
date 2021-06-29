@@ -174,6 +174,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    .view-main-g{
+        overflow: hidden;
+    }
 
 
   .link-1{

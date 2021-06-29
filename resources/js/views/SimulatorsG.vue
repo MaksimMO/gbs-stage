@@ -247,6 +247,7 @@ export default {
             padding: 0;
             cursor: pointer;
             border-bottom: solid 2px #000000;
+            text-align: left;
             & > li {
                 padding-bottom: 20px;
                 position: relative;
@@ -372,6 +373,14 @@ export default {
             grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 10px;
             grid-row-gap: 30px;
+            & li img {
+                max-width: 140px;
+            }
+            & li div{
+                font-size: 12px;
+                line-height: 21px;
+                padding: 5px 0;
+            }
         }
       }
     }

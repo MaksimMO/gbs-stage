@@ -71,7 +71,7 @@ export default {
 @media screen and (max-width: 767px){
     .modal{
         width: 320px;
-        height: auto;
+        height: 90vh;
         overflow: hidden;
     }
 }

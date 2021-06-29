@@ -131,7 +131,8 @@ export default {
 
 @media screen and (max-width: 767px){
     .modal{
-        width: 45vw;
+        max-width: 290px;
+        width: 100%;
         height: auto;
         padding: 36px 10px 20px 10px;
         display: flex;
@@ -154,6 +155,10 @@ export default {
             }
         }
 
+    }
+    .close {
+        width: 10px;
+        height: 10px;
     }
 }
 

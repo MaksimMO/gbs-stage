@@ -9,12 +9,18 @@
       <li>
           <router-link to="/contacts-b">Контакти</router-link>
       </li>
+      <li class="navigation-mobile">
+          <NavigationMobile />
+      </li>
   </ul>
 </template>
 
 <script>
+import NavigationMobile from './navigationMobile.vue';
 export default {
-
+    components: {
+        NavigationMobile
+    },
 };
 </script>
 
@@ -38,6 +44,7 @@ export default {
     }
     li{
         transition: all .6s ease-in-out;
+        white-space: nowrap;
     }
     li > a {
         text-decoration: none;
@@ -48,6 +55,39 @@ export default {
         &:hover{
             opacity:1;
         }
+    }
+    .navigation-mobile{
+        display: none;
+    }
+    @media screen and (max-width: 1023px) and (min-width: 768px){
+        .main-menu-b {
+            display: block;
+            padding: 1.87rem 0 0 0;
+            li{
+                margin-bottom: 35px;
+            }
+            li > a {
+                opacity: 1;
+            }
+        }
+
+    }
+    @media screen and (max-width: 767px){
+        .main-menu-b {
+            display: block;
+            padding: 1.87rem 0 0 0;
+            li{
+                margin-bottom: 35px;
+            }
+            li > a {
+                opacity: 1;
+            }
+        }
+        .navigation-mobile{
+            display: block;
+            padding: 26px;
+        }
+
     }
 
 </style>

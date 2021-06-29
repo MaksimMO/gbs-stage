@@ -281,7 +281,7 @@ export default {
     .our-team-aboutUs-container{
         background: rgba(145, 108, 88, 0.1);
         padding-top: 60px;
-        padding-bottom: 220px;
+        // padding-bottom: 220px;
         .our-team-container_header{
             font-family: 'Oswald';
             height: 83px;
@@ -367,6 +367,9 @@ export default {
     }
 
     @media screen and (max-width: 1023px) and (min-width: 768px) {
+        .view-about-us-g {
+            padding-top: 108px;
+        }
         .title {
             padding: 0 50px;
             margin-bottom: 50px;
@@ -463,6 +466,9 @@ export default {
         }
     }
     @media screen and (max-width: 767px) {
+        .view-about-us-g {
+            padding-top: 108px;
+        }
         .title {
             padding: 0 15px;
             margin-bottom: 50px;

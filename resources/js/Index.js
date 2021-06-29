@@ -21,7 +21,7 @@
  import Home from './components/Home'
  import MakeOrderPopup from './components/MakeOrderPopup.vue'
  import {i18n} from './plugins/i18n.js'
- import {isMobile}  from 'mobile-device-detect'
+ import {isMobile, isMobileOnly}  from 'mobile-device-detect'
 
 
 
@@ -133,6 +133,7 @@
 let data = {
     isLoading:false,
     isMobile,
+    isMobileOnly,
     area: '',
 }
 
