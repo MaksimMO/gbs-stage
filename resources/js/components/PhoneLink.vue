@@ -38,7 +38,8 @@ export default {
         background:url('../../assets/images/phone-icon.svg') no-repeat center;
         content: '';
         width: 21px;
-        height: 20px;
+        height: 21px;
+        flex-shrink: 0;
         margin-right: 7px;
     }
 </style>

@@ -241,9 +241,12 @@ export default {
 
   .top-image{
     width: 100%;
-
-    //reset inline mode for image
     display: block;
+    
+    @media screen and (max-width:767px){
+      height: 446px;
+      object-fit: cover;
+    }
   }
 
   .skew-image-1{
@@ -483,6 +486,9 @@ export default {
     background-color: #ffff;
     padding-bottom: 110px;
     // background: url('../../assets/images/main-g-our-team-water-text.svg') no-repeat 50px 50px, #fff;
+      @media screen and (max-width:767px){
+        padding-bottom: 0;
+      }
 
 
 
@@ -554,6 +560,13 @@ export default {
       text-transform: uppercase;
       display: block;
       color: #000000;
+      @media screen and (max-width:767px){
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 15px;
+        margin-top: 15px;
+        text-align: left;
+      }
     }
 
     // .trainers-container .trainer-item:nth-of-type(even) {
@@ -564,6 +577,10 @@ export default {
         position: relative;
         padding: 60px 7.81vw;
         z-index: 2;
+
+      @media screen and (max-width:767px){
+       padding: 20px 15px;
+      }
     }
 
   }
@@ -575,6 +592,12 @@ export default {
         bottom: -28px;
         right: 115px;
         z-index: 1;
+
+          @media screen and (max-width:767px){
+            width: 35px;
+            bottom: -14px;
+            right: 15px;
+          }
       }
     }
 

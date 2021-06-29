@@ -41,7 +41,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" >
 @import 'swiper/swiper.min.css';
 @import 'swiper/components/navigation/navigation.min.css';
 
@@ -57,10 +57,20 @@ export default {
 
   .swiper-button-prev {
     left: 60px !important;
+      
+      @media screen and (max-width:767px){
+        left: calc(100% - 80px) !important;
+        top: 25px;
+      }
   }
 
   .swiper-button-next {
     right: 60px !important;
+      
+      @media screen and (max-width:767px){
+        right: 15px !important;
+        top: 25px;
+      }
   }
 
   .swiper-slide {
@@ -75,8 +85,13 @@ export default {
     img {
       display: block;
       width: 100%;
-      height: 100%;
+      // height: 100%;
       object-fit: cover;
+
+
+      @media screen and (max-width:767px){
+        height: 446px;
+      }
     }
 
     .current-slide-number {
@@ -88,6 +103,9 @@ export default {
       font-feature-settings: "pnum" on, "lnum" on;
       color: #ffffff;
       opacity: 0.45;
+      
+      @media screen and (max-width:767px){
+       align-self: flex-start;      }
     }
 
     .text-block {
@@ -99,6 +117,11 @@ export default {
       padding: 0 0 64px 120px;
       display: grid;
       grid-template-rows: minmax(min-content, 92px) 1fr 1fr min-content;
+
+      @media screen and (max-width:767px){
+        padding: 40px 15px;
+        width: 100%;
+      }
 
       .title {
         font-family: Oswald;
@@ -114,6 +137,11 @@ export default {
         text-align: left;
         align-self: end;
         margin-bottom: 30px;
+
+        @media screen and (max-width:767px){
+          font-size: 36px;
+          line-height: 54px;
+        }
       }
 
       .description {
@@ -124,6 +152,11 @@ export default {
         letter-spacing: 0.05em;
         font-feature-settings: "pnum" on, "lnum" on;
         color: #ffffff;
+        
+        @media screen and (max-width:767px){
+          font-size: 12px;
+          line-height: 18px;
+        }
       }
 
       .link-2 {
