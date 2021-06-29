@@ -41,7 +41,7 @@ export default {
 }
 </script>
 
-<style lang="scss" >
+<style lang="scss" scoped >
 @import 'swiper/swiper.min.css';
 @import 'swiper/components/navigation/navigation.min.css';
 
@@ -57,7 +57,7 @@ export default {
 
   .swiper-button-prev {
     left: 60px !important;
-      
+
       @media screen and (max-width:767px){
         left: calc(100% - 80px) !important;
         top: 25px;
@@ -66,7 +66,7 @@ export default {
 
   .swiper-button-next {
     right: 60px !important;
-      
+
       @media screen and (max-width:767px){
         right: 15px !important;
         top: 25px;
@@ -103,7 +103,7 @@ export default {
       font-feature-settings: "pnum" on, "lnum" on;
       color: #ffffff;
       opacity: 0.45;
-      
+
       @media screen and (max-width:767px){
        align-self: flex-start;      }
     }
@@ -152,7 +152,7 @@ export default {
         letter-spacing: 0.05em;
         font-feature-settings: "pnum" on, "lnum" on;
         color: #ffffff;
-        
+
         @media screen and (max-width:767px){
           font-size: 12px;
           line-height: 18px;

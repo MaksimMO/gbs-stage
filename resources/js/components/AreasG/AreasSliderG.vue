@@ -1,10 +1,10 @@
 
 <template>
-<swiper :navigation="true" class="mySwiper">
+<swiper :navigation="true" :pagination="{'type': 'fraction'}" class="mySwiper">
   <swiper-slide v-for="slide in slides" :key="slide.id">
     <img :src="slide.imageUrl" />
       <div class="text-block">
-        <div class="current-slide-number">{{slide.id}}/{{slides.length}}</div>
+        <!-- <div class="current-slide-number">{{slide.id}}/{{slides.length}}</div> -->
         <div class="title">{{slide.title}}</div>
         <div class="description">{{slide.description}}</div>
         <router-link  :to="`/areas-g/${slide.id}`" class="link-2">Переглянути</router-link>
@@ -22,10 +22,10 @@ import areas from './areas.js';
 
 
 import SwiperCore, {
-  Navigation
+  Navigation, Pagination
 } from 'swiper/core';
 
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Pagination]);
 
 
 export default {
@@ -41,26 +41,50 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import 'swiper/swiper.min.css';
 @import 'swiper/components/navigation/navigation.min.css';
 
 .mySwiper {
   width: 100%;
 
-  .swiper-button-prev,
-  .swiper-button-next {
+
+  ::v-deep(.swiper-button-prev),
+  ::v-deep(.swiper-button-next) {
     --swiper-navigation-size: 25px;
     --swiper-navigation-color: #fff;
     opacity: 0.45;
   }
 
-  .swiper-button-prev {
+  ::v-deep(.swiper-button-prev) {
     left: 60px !important;
+
+      @media screen and (max-width:767px){
+        left: calc(100% - 80px) !important;
+        top: 35px;
+      }
   }
 
-  .swiper-button-next {
+  ::v-deep(.swiper-button-next) {
     right: 60px !important;
+
+      @media screen and (max-width:767px){
+        right: 15px !important;
+        top: 35px;
+      }
+  }
+
+    ::v-deep(.swiper-pagination-fraction){
+      position: absolute;
+      left: 120px;
+      top: 25px;
+      font-family: Raleway;
+      font-size: 24px;
+      letter-spacing: 0.05em;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #ffffff;
+      opacity: 0.45;
+      z-index: 2;
   }
 
   .swiper-slide {
@@ -75,20 +99,15 @@ export default {
     img {
       display: block;
       width: 100%;
-      height: 100%;
+      // height: 100%;
       object-fit: cover;
+
+
+      @media screen and (max-width:767px){
+        height: 446px;
+      }
     }
 
-    .current-slide-number {
-      align-self: end;
-      text-align: left;
-      font-family: Raleway;
-      font-size: 24px;
-      letter-spacing: 0.05em;
-      font-feature-settings: "pnum" on, "lnum" on;
-      color: #ffffff;
-      opacity: 0.45;
-    }
 
     .text-block {
       position: absolute;
@@ -98,7 +117,12 @@ export default {
       height: 100%;
       padding: 0 0 64px 120px;
       display: grid;
-      grid-template-rows: minmax(min-content, 92px) 1fr 1fr min-content;
+      grid-template-rows: minmax(min-content, 92px) 1fr min-content;
+
+      @media screen and (max-width:767px){
+        padding: 88px 15px 40px 15px;
+        width: 100%;
+      }
 
       .title {
         font-family: Oswald;
@@ -114,6 +138,11 @@ export default {
         text-align: left;
         align-self: end;
         margin-bottom: 30px;
+
+        @media screen and (max-width:767px){
+          font-size: 36px;
+          line-height: 54px;
+        }
       }
 
       .description {
@@ -124,6 +153,11 @@ export default {
         letter-spacing: 0.05em;
         font-feature-settings: "pnum" on, "lnum" on;
         color: #ffffff;
+
+        @media screen and (max-width:767px){
+          font-size: 12px;
+          line-height: 18px;
+        }
       }
 
       .link-2 {

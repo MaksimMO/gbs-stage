@@ -120,6 +120,9 @@ export default {
     letter-spacing: 0.1em;
     white-space: nowrap;
   }
+  .phone-link{
+    flex-shrink: 0;
+  }
 
   .social-networks{
     justify-self: end;
