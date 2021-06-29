@@ -216,6 +216,10 @@ export default {
         cursor: pointer;
         z-index: 1;
 
+        @media screen and (max-width:767px){
+          font-size: 12px;
+        }
+
         &:before{
             content: "";
             position: absolute;
@@ -242,7 +246,7 @@ export default {
   .top-image{
     width: 100%;
     display: block;
-    
+
     @media screen and (max-width:767px){
       height: 446px;
       object-fit: cover;
@@ -560,7 +564,7 @@ export default {
       text-transform: uppercase;
       display: block;
       color: #000000;
-      
+
       @media screen and (max-width:767px){
         margin-bottom: 0;
         margin-right: 0;
@@ -580,7 +584,8 @@ export default {
         z-index: 2;
 
       @media screen and (max-width:767px){
-       padding: 20px 15px;
+        padding: 20px 15px;
+        margin-top: 15px;
       }
 
 
@@ -588,7 +593,7 @@ export default {
       ::v-deep(.swiper-button-prev){
         @media screen and (max-width:767px){
             background-image: url('../../assets/images/btn-slider-prev.svg');
-            top: 0;
+            top: -25px;
             left: calc(100% - 155px) !important;
             display: initial;
             width: 66px;
@@ -603,11 +608,11 @@ export default {
       ::v-deep(.swiper-button-next){
         @media screen and (max-width:767px){
           background-image: url('../../assets/images/btn-slider-next.svg');
-          top: 0;
+          top: -25px;
           display: initial;
           width: 66px;
           height: 46px;
-            
+
             &::after{
               display: none;
             }

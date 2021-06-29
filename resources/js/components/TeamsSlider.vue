@@ -104,8 +104,14 @@ export default {
     justify-content: center;
     align-items: center;
     height: auto;
+
     &:nth-child(2n){
+
         margin-top: 30px;
+
+        @media screen and (max-width:767px){
+            margin-top: initial;
+        }
     }
     & ::v-deep(.trainer-item){
         transition: all .2s ease-in;

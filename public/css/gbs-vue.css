@@ -37,7 +37,7 @@
   color: #916C58;
 }
 .phone-link[data-v-100dbea6]::before {
-  background: url(/images/phone-icon.svg?9db9d2eacac8d28d2f4402782aae721e) no-repeat center;
+  background: url(/images/phone-icon.svg?6606c30dc31d93744d33a398f4312050) no-repeat center;
   content: "";
   width: 21px;
   height: 21px;
@@ -700,7 +700,7 @@ label[data-v-8048fca2] {
   color: #000;
 }
 .main .menu-open[data-v-46ab9914] {
-  background-image: url(/images/menu-open.svg?761c80ccaf88f896e093367310cae5ba);
+  background-image: url(/images/menu-open.svg?87e74746bd587cbd0c724e573fb0b27a);
   width: 38px;
   height: 21px;
 }
@@ -1040,7 +1040,7 @@ label[data-v-8048fca2] {
   background-size: contain;
 }
 .main .menu-open[data-v-79315c4c] {
-  background-image: url(/images/menu-open.svg?761c80ccaf88f896e093367310cae5ba);
+  background-image: url(/images/menu-open.svg?87e74746bd587cbd0c724e573fb0b27a);
   width: 30px;
   height: 21px;
 }
@@ -1050,7 +1050,7 @@ label[data-v-8048fca2] {
   background-image: url(/images/menu-open-gold.svg?65e64eccc4460b4d0a9ee652f775717f);
 }
 .main .close-opened[data-v-79315c4c] {
-  background-image: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1);
+  background-image: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -1059,7 +1059,7 @@ label[data-v-8048fca2] {
 }
 .main .close-opened[data-v-79315c4c]:hover {
   cursor: pointer;
-  background-image: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1);
+  background-image: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f);
 }
 .menu-mobile-enter-active[data-v-79315c4c],
 .menu-mobile-leave-active[data-v-79315c4c] {
@@ -1221,10 +1221,10 @@ to {
   height: 16px;
 }
 .footer .line-1 .social-networks > a.facebook[data-v-7ce6f146] {
-  background-image: url(/images/facebook.svg?b7485c04d1d306c6218574a3ac8af002);
+  background-image: url(/images/facebook.svg?54bf56baa5ce9b1b5bd010cd9e02909e);
 }
 .footer .line-1 .social-networks > a.instagram[data-v-7ce6f146] {
-  background-image: url(/images/instagram.svg?63a0b3819ce60d3152e6007738817613);
+  background-image: url(/images/instagram.svg?a21938e086d667a24449c981641902d2);
 }
 .footer .line-2[data-v-7ce6f146] {
   margin-top: 40px;
@@ -1331,10 +1331,10 @@ to {
   height: 16px;
 }
 .footer .social-networks > a.facebook[data-v-75b1a930] {
-  background-image: url(/images/facebook.svg?b7485c04d1d306c6218574a3ac8af002);
+  background-image: url(/images/facebook.svg?54bf56baa5ce9b1b5bd010cd9e02909e);
 }
 .footer .social-networks > a.instagram[data-v-75b1a930] {
-  background-image: url(/images/instagram.svg?63a0b3819ce60d3152e6007738817613);
+  background-image: url(/images/instagram.svg?a21938e086d667a24449c981641902d2);
 }
 .footer .line-2[data-v-75b1a930] {
   margin-top: 40px;
@@ -1958,6 +1958,11 @@ img[data-v-6a0f304d] {
 .swiper-slide[data-v-004dd59c]:nth-child(2n) {
   margin-top: 30px;
 }
+@media screen and (max-width: 767px) {
+.swiper-slide[data-v-004dd59c]:nth-child(2n) {
+    margin-top: initial;
+}
+}
 .swiper-slide[data-v-004dd59c] .trainer-item {
   transition: all 0.2s ease-in;
   position: relative;
@@ -2045,7 +2050,7 @@ img[data-v-6a0f304d] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
+  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
   margin-left: 15px;
 }
 .link-2[data-v-6918511f] {
@@ -2063,6 +2068,11 @@ img[data-v-6a0f304d] {
   position: relative;
   cursor: pointer;
   z-index: 1;
+}
+@media screen and (max-width: 767px) {
+.link-2[data-v-6918511f] {
+    font-size: 12px;
+}
 }
 .link-2[data-v-6918511f]:before {
   content: "";
@@ -2255,7 +2265,7 @@ img[data-v-6a0f304d] {
 }
 }
 .techno-gym-container .col-1 .logo[data-v-6918511f] {
-  background-image: url(/images/technogym-logo.svg?b19c87b75ba105dc1de99317eb2b7c3e);
+  background-image: url(/images/technogym-logo.svg?58e84d71995a27ba4ec62ad8d48a4fc6);
   background-repeat: no-repeat;
   background-size: contain;
   height: 48px;
@@ -2351,7 +2361,7 @@ img[data-v-6a0f304d] {
 .our-team-container .our-team-container_header[data-v-6918511f] {
   font-family: "Oswald";
   height: 83px;
-  background: url(/images/rectangle-1.svg?e5b6c711ae755c10eb619cde8698d8b8) no-repeat;
+  background: url(/images/rectangle-1.svg?572b0668a66b51ba2d0c019cf5872bf5) no-repeat;
   color: #000000;
   font-weight: 600;
   font-size: 48px;
@@ -2401,12 +2411,13 @@ img[data-v-6a0f304d] {
 @media screen and (max-width: 767px) {
 .our-team-container .teams-slider[data-v-6918511f] {
     padding: 20px 15px;
+    margin-top: 15px;
 }
 }
 @media screen and (max-width: 767px) {
 .our-team-container .teams-slider[data-v-6918511f] .swiper-button-prev {
-    background-image: url(/images/btn-slider-prev.svg?542265c73d348a7923228ff529f0bf87);
-    top: 0;
+    background-image: url(/images/btn-slider-prev.svg?76e6b361267d549044081690d829ecfd);
+    top: -25px;
     left: calc(100% - 155px) !important;
     display: initial;
     width: 66px;
@@ -2418,8 +2429,8 @@ img[data-v-6a0f304d] {
 }
 @media screen and (max-width: 767px) {
 .our-team-container .teams-slider[data-v-6918511f] .swiper-button-next {
-    background-image: url(/images/btn-slider-next.svg?bf0e0c1285a781b513be6bc4fc3db73f);
-    top: 0;
+    background-image: url(/images/btn-slider-next.svg?9d7a5909b0b5b1bfa38abc497852d845);
+    top: -25px;
     display: initial;
     width: 66px;
     height: 46px;
@@ -2948,7 +2959,7 @@ img[data-v-6a0f304d] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
+  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
   margin-left: 15px;
 }
 .mySwiper {
@@ -3119,7 +3130,7 @@ img[data-v-6a0f304d] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
+  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
   margin-left: 15px;
 }
 .link-2[data-v-69c16b2b] {
@@ -4776,7 +4787,7 @@ li[data-v-bcffb62e] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
+  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
   margin-left: 15px;
 }
 .ticket-title[data-v-06dcca5f] {
@@ -5268,7 +5279,7 @@ li[data-v-5d9f7d78] {
   background-color: rgba(145, 8, 88, 0.15);
   border-radius: 50%;
   display: inline-block;
-  content: url(/images/phone-icon.svg?9db9d2eacac8d28d2f4402782aae721e);
+  content: url(/images/phone-icon.svg?6606c30dc31d93744d33a398f4312050);
   width: 46px;
   height: 46px;
   text-align: center;
@@ -5443,7 +5454,7 @@ div.slide img {
     line-height: 27px;
 }
 .your-level-go {
-    background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat right;
+    background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat right;
     width: 86px;
     margin-top: 40px;
     font-family: "Raleway";
@@ -5455,7 +5466,7 @@ div.slide img {
     transition: opacity .6s ease-in-out;
 }
 .your-level-go:hover {
-    background: url(/images/arrow-right-hover.svg?6de6297fc0175501f65ca02aea303c25) no-repeat right
+    background: url(/images/arrow-right-hover.svg?87b43b62664da17195421bbf0a4be9aa) no-repeat right
 }
 .your-level-go a {
     color: #FFFFFF;
