@@ -2388,7 +2388,7 @@ img[data-v-6a0f304d] {
 .our-team-container .all-our-trainers-link[data-v-6918511f] {
     margin-bottom: 0;
     margin-right: 0;
-    margin-left: 15px;
+    margin-left: 37px;
     margin-top: 15px;
     text-align: left;
 }
@@ -2401,6 +2401,31 @@ img[data-v-6a0f304d] {
 @media screen and (max-width: 767px) {
 .our-team-container .teams-slider[data-v-6918511f] {
     padding: 20px 15px;
+}
+}
+@media screen and (max-width: 767px) {
+.our-team-container .teams-slider[data-v-6918511f] .swiper-button-prev {
+    background-image: url(/images/btn-slider-prev.svg?542265c73d348a7923228ff529f0bf87);
+    top: 0;
+    left: calc(100% - 155px) !important;
+    display: initial;
+    width: 66px;
+    height: 46px;
+}
+.our-team-container .teams-slider[data-v-6918511f] .swiper-button-prev::after {
+    display: none;
+}
+}
+@media screen and (max-width: 767px) {
+.our-team-container .teams-slider[data-v-6918511f] .swiper-button-next {
+    background-image: url(/images/btn-slider-next.svg?bf0e0c1285a781b513be6bc4fc3db73f);
+    top: 0;
+    display: initial;
+    width: 66px;
+    height: 46px;
+}
+.our-team-container .teams-slider[data-v-6918511f] .swiper-button-next::after {
+    display: none;
 }
 }
 .combat-area[data-v-6918511f] {

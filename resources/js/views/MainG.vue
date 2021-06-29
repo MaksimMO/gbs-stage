@@ -560,10 +560,11 @@ export default {
       text-transform: uppercase;
       display: block;
       color: #000000;
+      
       @media screen and (max-width:767px){
         margin-bottom: 0;
         margin-right: 0;
-        margin-left: 15px;
+        margin-left: 37px;
         margin-top: 15px;
         text-align: left;
       }
@@ -581,6 +582,38 @@ export default {
       @media screen and (max-width:767px){
        padding: 20px 15px;
       }
+
+
+
+      ::v-deep(.swiper-button-prev){
+        @media screen and (max-width:767px){
+            background-image: url('../../assets/images/btn-slider-prev.svg');
+            top: 0;
+            left: calc(100% - 155px) !important;
+            display: initial;
+            width: 66px;
+            height: 46px;
+
+            &::after{
+              display: none;
+            }
+        }
+      }
+
+      ::v-deep(.swiper-button-next){
+        @media screen and (max-width:767px){
+          background-image: url('../../assets/images/btn-slider-next.svg');
+          top: 0;
+          display: initial;
+          width: 66px;
+          height: 46px;
+            
+            &::after{
+              display: none;
+            }
+        }
+      }
+
     }
 
   }
