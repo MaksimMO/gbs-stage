@@ -268,7 +268,7 @@ export default {
                 font-feature-settings: 'pnum' on, 'lnum' on;
             }
             & li::before {
-                content: "⯀";
+                content: "\25A0";
                 color: #916C58;
                 font-weight: bold;
                 font-size: 10px;

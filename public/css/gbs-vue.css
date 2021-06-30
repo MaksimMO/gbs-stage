@@ -3800,7 +3800,7 @@ img[data-v-6a0f304d] {
   font-feature-settings: "pnum" on, "lnum" on;
 }
 .aboutUs-g-description ul li[data-v-4edab8bb]::before {
-  content: "⯀";
+  content: "■";
   color: #916C58;
   font-weight: bold;
   font-size: 10px;
@@ -4994,7 +4994,7 @@ li[data-v-bcffb62e] {
   color: #000000;
 }
 .ticket-detail li[data-v-06dcca5f]::before {
-  content: "⯀";
+  content: "■";
   color: #916C58;
   font-weight: bold;
   font-size: 8px;

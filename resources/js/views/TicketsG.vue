@@ -330,7 +330,7 @@ export default {
         }
 
         & li::before {
-            content: "\2BC0";
+            content: "\25A0";
             color: #916C58;
             font-weight: bold;
             font-size: 8px;
