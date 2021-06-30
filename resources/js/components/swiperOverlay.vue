@@ -66,6 +66,12 @@ export default {
 .swiper-container {
     width: 80%;
     height: 70%;
+
+    @media screen and (max-width: 767px) {
+      width: initial;
+      height: 80%;
+      // height: initial;
+    }
 }
 
 
@@ -75,10 +81,14 @@ export default {
     top: 50%;
     z-index: 10;
     cursor: pointer;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 
   .swiper-navigation-prev-1 {
-    left: 0x;
+    left: 0;
     height: 8px;
     width: 31px;
     background: url("../../assets/images/arrow-right-1.svg") no-repeat;
@@ -102,7 +112,13 @@ export default {
   // display: block;
   // width: 100%;
   height: 100%;
+
+
   // object-fit: cover;
+    @media screen and (max-width: 767px) {
+          height: initial;
+          width: 100%
+    }
 }
 
   .close {
@@ -116,6 +132,11 @@ export default {
     &:hover {
         cursor: pointer;
         filter: brightness(1);
+    }
+
+    @media screen and (max-width: 767px) {
+      right: 20px;
+      top: 20px;
     }
   }
 
