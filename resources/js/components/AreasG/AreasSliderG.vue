@@ -85,6 +85,10 @@ export default {
       color: #ffffff;
       opacity: 0.45;
       z-index: 2;
+
+      @media screen and (max-width:767px){
+        left: 15px;
+      }
   }
 
   .swiper-slide {
@@ -114,13 +118,12 @@ export default {
       box-sizing: border-box;
       left: 0;
       width: 65%;
-      height: 100%;
-      padding: 0 0 64px 120px;
+      padding: 0 0 0 120px;
       display: grid;
       grid-template-rows: minmax(min-content, 92px) 1fr min-content;
 
       @media screen and (max-width:767px){
-        padding: 88px 15px 40px 15px;
+        padding: 0 15px 0 15px;
         width: 100%;
       }
 

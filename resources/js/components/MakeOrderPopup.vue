@@ -80,6 +80,9 @@ export default {
 <style lang="scss" scoped>
 
 .make-order-popup{
+
+
+
     &.g{
         background:url('../../assets/feedBackFormView/background-g.png') no-repeat center;
          background-size: cover;
@@ -108,6 +111,9 @@ export default {
     top: 0;
     z-index: 120;
 
+    @media screen and (max-width:767px){
+
+    }
     // @media screen and (max-width: 767px) {
     //     padding:54px 15px 40px;
     // }
@@ -196,6 +202,11 @@ export default {
     &:hover {
         cursor: pointer;
         filter: brightness(1);
+    }
+
+    @media screen and (max-width:767px){
+        right: 25px;
+        top: 25px;
     }
   }
 

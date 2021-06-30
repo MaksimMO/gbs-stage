@@ -83,8 +83,9 @@ button{
 form{
     display: flex;
     flex-direction: column;
+
     @media screen and (max-width: 767px) {
-        width: 100%;
+        width: 80%;
     }
 }
 
