@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
     .trainers-container{
       overflow: visible;
       grid-template-columns: repeat(4, 1fr);
@@ -48,13 +48,20 @@ export default {
             padding: 0 40px;
         }
     }
+
     .trainers-container-mobile{
         overflow: visible;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+        grid-template-columns: repeat(auto-fill, minmax(240px, 2fr));
         grid-column-gap: 15px;
         grid-row-gap: 30px;
         display: grid;
-        padding: 0 40px;
+        padding: 0 15px;
+
+        @media screen and (max-width: 767px) {
+             padding: 0 40px;
+        }
+
+
     }
 
 </style>
