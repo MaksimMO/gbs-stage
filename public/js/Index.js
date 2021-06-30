@@ -22670,7 +22670,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
         }, ["exact"]), ["esc"]))]
       }, [_hoisted_3], 544
       /* HYDRATE_EVENTS, NEED_PATCH */
-      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\n          <a\n            href=\"#\"\n            @click.prevent=\"setLocale('ru')\"\n            @keydown.shift.tab=\"focusPrevious(false)\"\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\n            @keydown.down.exact.prevent=\"\"\n            @keydown.tab.exact=\"hideDropdown\"\n            @keydown.esc.exact=\"hideDropdown\"\n          >\n            <span>RU</span>\n          </a>\n        </li> ")], 512
+      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\r\n          <a\r\n            href=\"#\"\r\n            @click.prevent=\"setLocale('ru')\"\r\n            @keydown.shift.tab=\"focusPrevious(false)\"\r\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\r\n            @keydown.down.exact.prevent=\"\"\r\n            @keydown.tab.exact=\"hideDropdown\"\r\n            @keydown.esc.exact=\"hideDropdown\"\r\n          >\r\n            <span>RU</span>\r\n          </a>\r\n        </li> ")], 512
       /* NEED_PATCH */
       )), [[_directive_click_away, $options.hideDropdown]]) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
@@ -24496,7 +24496,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   }, null, 8
   /* PROPS */
-  , ["trainers", "isOpen"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"certificate-title\">\n        <h1>Нагороди та сертифікати</h1>\n        <p>\n            Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.\n            Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam.\n            Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est.\n        </p>\n    </section>\n    <CertificateSlider />\n    <section class=\"certificate-description\">\n        <p>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.\n            Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.\n            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.\n            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n            Sed nec hendrerit neque...\n        </p>\n    </section> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  , ["trainers", "isOpen"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"certificate-title\">\r\n        <h1>Нагороди та сертифікати</h1>\r\n        <p>\r\n            Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.\r\n            Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam.\r\n            Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est.\r\n        </p>\r\n    </section>\r\n    <CertificateSlider />\r\n    <section class=\"certificate-description\">\r\n        <p>\r\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.\r\n            Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.\r\n            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.\r\n            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n            Sed nec hendrerit neque...\r\n        </p>\r\n    </section> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 });
@@ -28376,7 +28376,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?736193b044696161e2a6e9f91539c73e");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
 
 /***/ }),
 
@@ -28406,7 +28406,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?df90caa4b4466fae2999be366ce12b13");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
 
 /***/ }),
 
@@ -28436,7 +28436,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?d94603bf7c6c5c4b24c3e6245db8ea26");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
 
 /***/ }),
 
@@ -29261,7 +29261,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-link.svg?c48b740a3620a8a51bcc05ebe5253bdb");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-link.svg?938210241c158bd8542a7f8b28d672cd");
 
 /***/ }),
 
@@ -29276,7 +29276,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?02bae0682140f88722059abfc0376dc1");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212");
 
 /***/ }),
 
@@ -29291,7 +29291,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/close.svg?2855e6317fe0e97b677566f1ee2fba5b");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/close.svg?40f036580b6c18960e76c27a387cba94");
 
 /***/ }),
 
@@ -29306,7 +29306,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebookGold.svg?a27e5b4dde3c6d3ecf3f28f59983b62d");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebookGold.svg?2ef6ec7b557d1537f9b550eba23e8d1f");
 
 /***/ }),
 
@@ -29336,7 +29336,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-link.svg?b4a59adf52665650c8ae64f9444650cd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-link.svg?fd94afd0b003f21a26d254ee80e958f2");
 
 /***/ }),
 
@@ -29351,7 +29351,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?4322557835a36f1758bad92f49d6dca9");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca");
 
 /***/ }),
 
@@ -29366,7 +29366,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/info.svg?6c9484336357a780fd96bcef5a715b14");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/info.svg?b47e3582bc4a2656231c960a851e0d0b");
 
 /***/ }),
 
@@ -29381,7 +29381,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagramGold.svg?5841637642267db63a3c458114907398");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagramGold.svg?56cb837170980da00a05c5fdaf2eee66");
 
 /***/ }),
 
@@ -29561,7 +29561,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-link.svg?3b6f9f21a9fb0b985be3502ee31e6d0b");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-link.svg?973ebae533ed3dd52f602e3aad341150");
 
 /***/ }),
 
@@ -30116,7 +30116,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/warning.svg?67b5872f8674f66a316722b146cad9dc");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/warning.svg?83875f065e7638defea28c6ed7e64a48");
 
 /***/ }),
 
