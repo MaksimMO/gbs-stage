@@ -422,6 +422,9 @@ export default {
                     font-size: 12px;
                     line-height: 18px;
                 }
+                & li::before {
+                    font-size: 8px;
+                }
             }
         }
         .our-team-aboutUs-container{
@@ -523,6 +526,9 @@ export default {
                 & li {
                     font-size: 12px;
                     line-height: 18px;
+                }
+                & li::before {
+                    font-size: 8px;
                 }
             }
         }

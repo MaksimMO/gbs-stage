@@ -3940,6 +3940,9 @@ img[data-v-6a0f304d] {
     font-size: 12px;
     line-height: 18px;
 }
+.aboutUs-g-description ul li[data-v-4edab8bb]::before {
+    font-size: 8px;
+}
 .our-team-aboutUs-container[data-v-4edab8bb] {
     background: rgba(145, 108, 88, 0.1);
     padding-top: 30px;
@@ -4036,6 +4039,9 @@ img[data-v-6a0f304d] {
 .aboutUs-g-description ul li[data-v-4edab8bb] {
     font-size: 12px;
     line-height: 18px;
+}
+.aboutUs-g-description ul li[data-v-4edab8bb]::before {
+    font-size: 8px;
 }
 .our-team-aboutUs-container[data-v-4edab8bb] {
     background: rgba(145, 108, 88, 0.1);
