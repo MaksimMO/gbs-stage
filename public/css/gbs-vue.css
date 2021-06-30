@@ -3789,6 +3789,8 @@ img[data-v-6a0f304d] {
 }
 .aboutUs-g-description ul[data-v-4edab8bb] {
   list-style: none;
+  padding: 0;
+  padding-left: 2.5em;
 }
 .aboutUs-g-description ul li[data-v-4edab8bb] {
   font-family: "Raleway";
@@ -3806,7 +3808,7 @@ img[data-v-6a0f304d] {
   font-size: 10px;
   display: inline-block;
   width: 1.5em;
-  margin-left: -1em;
+  margin-left: -1.5em;
 }
 .our-team-aboutUs-container[data-v-4edab8bb] {
   background: rgba(145, 108, 88, 0.1);
@@ -3936,6 +3938,9 @@ img[data-v-6a0f304d] {
     padding: 0 50px;
     margin-bottom: 50px;
 }
+.aboutUs-g-description ul[data-v-4edab8bb] {
+    padding-left: 0.7em;
+}
 .aboutUs-g-description ul li[data-v-4edab8bb] {
     font-size: 12px;
     line-height: 18px;
@@ -4035,6 +4040,7 @@ img[data-v-6a0f304d] {
 }
 .aboutUs-g-description ul[data-v-4edab8bb] {
     margin: 0;
+    padding-left: 0.7em;
 }
 .aboutUs-g-description ul li[data-v-4edab8bb] {
     font-size: 12px;
@@ -4988,6 +4994,8 @@ li[data-v-bcffb62e] {
 }
 .ticket-detail[data-v-06dcca5f] {
   list-style: none;
+  padding: 0;
+  padding-left: 1em;
 }
 .ticket-detail li[data-v-06dcca5f] {
   font-family: Raleway;
@@ -5003,10 +5011,10 @@ li[data-v-bcffb62e] {
   content: "■";
   color: #916C58;
   font-weight: bold;
-  font-size: 8px;
+  font-size: 10px;
   display: inline-block;
   width: 1.5em;
-  margin-left: -1em;
+  margin-left: -1.5em;
 }
 .popup-tickets-enter-active[data-v-06dcca5f],
 .popup-tickets-leave-active[data-v-06dcca5f] {
@@ -5088,6 +5096,9 @@ li[data-v-bcffb62e] {
 .ticket-detail li[data-v-06dcca5f] {
     font-size: 12px;
     line-height: 22px;
+}
+.ticket-detail li[data-v-06dcca5f]::before {
+    font-size: 8px;
 }
 }
 @media screen and (max-width: 767px) {
@@ -5171,6 +5182,9 @@ li[data-v-bcffb62e] {
 .ticket-detail li[data-v-06dcca5f] {
     font-size: 12px;
     line-height: 18px;
+}
+.ticket-detail li[data-v-06dcca5f]::before {
+    font-size: 8px;
 }
 }
 @charset "UTF-8";

@@ -258,6 +258,8 @@ export default {
         padding: 0 6.25vw;
         & ul {
             list-style: none;
+            padding: 0;
+            padding-left: 2.5em;
             & li {
                 font-family: 'Raleway';
                 font-style: normal;
@@ -274,7 +276,7 @@ export default {
                 font-size: 10px;
                 display: inline-block;
                 width: 1.5em;
-                margin-left: -1em;
+                margin-left: -1.5em;
             }
         }
     }
@@ -418,6 +420,7 @@ export default {
             padding: 0 50px;
             margin-bottom: 50px;
             & ul {
+                padding-left: 0.7em;
                 & li {
                     font-size: 12px;
                     line-height: 18px;
@@ -523,6 +526,7 @@ export default {
             margin-bottom: 50px;
             & ul {
                 margin: 0;
+                padding-left: 0.7em;
                 & li {
                     font-size: 12px;
                     line-height: 18px;

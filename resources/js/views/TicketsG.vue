@@ -318,6 +318,8 @@ export default {
     }
     .ticket-detail {
         list-style: none;
+        padding: 0;
+        padding-left: 1em;
         & li {
             font-family: Raleway;
             font-style: normal;
@@ -333,10 +335,10 @@ export default {
             content: "\25A0";
             color: #916C58;
             font-weight: bold;
-            font-size: 8px;
+            font-size: 10px;
             display: inline-block;
             width: 1.5em;
-            margin-left: -1em;
+            margin-left: -1.5em;
         }
     }
 
@@ -424,6 +426,9 @@ export default {
                 font-size: 12px;
                 line-height: 22px;
             }
+            & li::before {
+                font-size: 8px;
+            }
         }
     }
     @media screen and (max-width: 767px){
@@ -508,6 +513,9 @@ export default {
             & li {
                 font-size: 12px;
                 line-height: 18px;
+            }
+            & li::before {
+                font-size: 8px;
             }
         }
     }
