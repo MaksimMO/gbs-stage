@@ -1,6 +1,6 @@
 <template>
     <Loader />
-    <ChangeLevel v-show="$root.$data.area != undefined && !$root.$data.isMobile"/>
+    <ChangeLevel v-show="$root.$data.area != undefined"/>
     <router-view />
     <Scroll v-show="visible"/>
 </template>

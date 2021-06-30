@@ -1,8 +1,8 @@
 <template>
     <div class="navigation-link">
-    <div class="block-background"  v-if="areaGet != undefined"></div>
-    <div class="line" v-if="areaGet != undefined"></div>
-    <div v-if="areaGet == 'g'" class="left-navigation">
+    <div class="block-background"  v-if="areaGet != undefined && $root.$data.isMobile"></div>
+    <div class="line" v-if="areaGet != undefined && !$root.$data.isMobile"></div>
+    <div v-if="areaGet == 'g' && !$root.$data.isMobile" class="left-navigation">
         <router-link to="/main-b"  v-if="areaGet == 'g'">
             <img src="../../assets/images/b-level-link.svg" class="b"/>
         </router-link>
@@ -10,7 +10,7 @@
             <img src="../../assets/images/s-level-link.svg" class="s"/>
         </router-link>
     </div>
-    <div v-if="areaGet == 'b'" class="left-navigation">
+    <div v-if="areaGet == 'b' && !$root.$data.isMobile" class="left-navigation">
         <router-link to="/main-g">
             <img src="../../assets/images/g-level-link.svg" class="g"/>
         </router-link>
@@ -18,7 +18,7 @@
             <img src="../../assets/images/s-level-link.svg" class="s"/>
         </router-link>
     </div>
-    <div v-if="areaGet == 's'" class="left-navigation">
+    <div v-if="areaGet == 's' && !$root.$data.isMobile" class="left-navigation">
         <router-link to="/main-b">
             <img src="../../assets/images/b-level-link.svg" class="b"/>
         </router-link>
@@ -114,8 +114,9 @@ export default {
     }
 }
 @media screen and (max-width: 767px) {
-    .block-background {
-        display: none;
+    .block-background{
+        width: 105px;
+        height: 590px;
     }
     .line{
         display: none;

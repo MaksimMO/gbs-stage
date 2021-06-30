@@ -31,6 +31,7 @@ export default {
     height: 100%;
     width: 100%;
     top: 0;
+    z-index: 120;
     background-color: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);

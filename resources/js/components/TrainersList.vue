@@ -5,6 +5,7 @@
             :key="trainer.id"
             :trainer="trainer"
             :isOpen="isOpen"
+            :isSlider="false"
             @isShow="(e) => change(e)"
             @isClosed="(e) => change(e)"/>
     </div>

@@ -7,7 +7,7 @@
     <div style="position: relative; z-index: 99;">
         <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="!isOpen ? isShow() : isClosed()">
         <div v-show="isHovered && !isOpen || isSelected" class="info">
-            <template v-if="!$root.$data.isMobileOnly">
+            <template v-if="!isSlider">
                 <img v-if="!isSelected" src="../../assets/images/info.svg" alt="info" class="info-show" @click="isShow">
                 <img v-if="isSelected" src="../../assets/images/close.svg" alt="info" class="info-close" @click="isClosed">
             </template>
@@ -39,7 +39,7 @@
 
 <script>
 export default {
-    props: ['trainer', 'isOpen'],
+    props: ['trainer', 'isOpen', 'isSlider'],
     data(){
         return{
             isSelected: false,
@@ -48,24 +48,24 @@ export default {
     },
     methods:{
     enter(){
-        if(!this.isOpen && !this.$root.$data.isMobileOnly) {
+        if(!this.isOpen && !this.isSlider) {
             this.isHovered = true;
         }
     },
     leave(){
-        if(!this.isOpen && !this.$root.$data.isMobileOnly) {
+        if(!this.isOpen && !this.isSlider) {
             this.isHovered = false;
         }
     },
     isShow(){
 
-        if(!this.$root.$data.isMobileOnly){
+        if(!this.isSlider){
             this.$emit('isShow', true);
             this.isSelected = true;
         }
     },
     isClosed(){
-        if(this.isOpen && this.isSelected && !this.$root.$data.isMobileOnly) {
+        if(this.isOpen && this.isSelected && !this.isSlider) {
             this.$emit('isClosed', false);
             this.isSelected = false;
         }

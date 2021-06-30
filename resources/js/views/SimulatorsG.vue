@@ -303,10 +303,8 @@ export default {
             font-size: 14px;
             padding: 0 15px;
             & > .direction {
-                display: grid;
                 grid-column-gap: 20px;
-                grid-template-columns: repeat(3, 1fr);
-                grid-row-gap: 22px;
+                flex-wrap: wrap;
                 border-bottom: none;
                 & li {
                     padding-bottom: 5px;
@@ -353,10 +351,8 @@ export default {
         font-size: 14px;
         padding: 0 15px;
         & > .direction {
-            display: grid;
             grid-column-gap: 20px;
-            grid-template-columns: repeat(2, 1fr);
-            grid-row-gap: 22px;
+            flex-wrap: wrap;
             border-bottom: none;
             & li {
                 padding-bottom: 5px;

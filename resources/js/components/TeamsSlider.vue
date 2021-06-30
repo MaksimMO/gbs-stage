@@ -28,6 +28,7 @@
             :key="trainer.id"
             :trainer="trainer"
             :isOpen="isOpen"
+            :isSlider="true"
             @isShow="(e) => change(e)"
             @isClosed="(e) => change(e)"/>
     </swiper-slide>

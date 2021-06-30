@@ -26,6 +26,7 @@ export default {
     height: 100%;
     width: 100%;
     top: 0;
+    overflow: auto;
     z-index: 125;
     background-color: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
@@ -64,15 +65,20 @@ export default {
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .modal{
         width: 668px;
-        max-height: 981px;
     }
 }
 
 @media screen and (max-width: 767px){
     .modal{
-        width: 320px;
-        height: 90vh;
+        width: 100%;
         overflow: hidden;
+        top: 0;
+        left: 0;
+        transform: unset;
+
+    }
+    .modal-overlay  .modal{
+        transform: unset !important;
     }
 }
 

@@ -20,12 +20,12 @@
           </div>
           <div class="level">
               <p>{{tickets[1].level}}</p>
-              <img :src="tickets[1].link" alt="Level 2" @click="openDetail(1)">
+              <img :src="tickets[1].link" alt="Level 2" @click="openDetail(2)">
               <div class="detail" @click="openDetail(2)" >Детальніше</div>
           </div>
           <div class="level">
               <p>{{tickets[2].level}}</p>
-              <img :src="tickets[2].link" alt="Level 3" @click="openDetail(1)">
+              <img :src="tickets[2].link" alt="Level 3" @click="openDetail(3)">
               <div class="detail" @click="openDetail(3)">Детальніше</div>
           </div>
       </section>
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="ticket-datail">
+                <ul class="ticket-detail">
                     <li v-for="(detail, idx)  in ticketDetail.details" :key="idx" v-html="detail"></li>
                 </ul>
             </PopupTickets>
@@ -316,7 +316,7 @@ export default {
             }
         }
     }
-    .ticket-datail {
+    .ticket-detail {
         list-style: none;
         & li {
             font-family: Raleway;
@@ -419,7 +419,7 @@ export default {
                 }
             }
         }
-        .ticket-datail {
+        .ticket-detail {
             & li {
                 font-size: 12px;
                 line-height: 22px;
@@ -500,10 +500,10 @@ export default {
                 }
             }
         }
-        .ticket-datail {
+        .ticket-detail {
             padding: 0 15px;
-            overflow: auto;
-            max-height: 320px;
+            // overflow: auto;
+            // max-height: 320px;
             height: 100%;
             & li {
                 font-size: 12px;
