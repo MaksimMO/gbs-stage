@@ -54,43 +54,51 @@
         },
         {
             path: '/about-us-g',
-            component:AboutUsG,
+            component: AboutUsG,
+            name: 'AboutUsG',
             meta: { area: 'g' }
         },
         {
             path: '/areas-g',
-            component:AreasG,
+            component: AreasG,
+            name: 'AreasG',
             meta: { area: 'g' }
         },
         {
             props:true,
             path: '/areas-g/:id',
-            component:AreaG,
+            component: AreaG,
+            name: 'AreaG',
             meta: { area: 'g' }
         },
         {
             path:'/simulators-g',
             component:  SimulatorsG,
+            name: 'SimulatorsG',
             meta: { area: 'g' }
         },
         {
             path:'/tickets-g',
             component:  TicketsG,
+            name: 'TicketsG',
             meta: { area: 'g' }
         },
         {
             path:'/contacts-g',
             component:  Contacts,
+            name: 'ContactsG',
             meta: { area: 'g' }
         },
         {
             path:'/contacts-b',
             component:  Contacts,
+            name: 'ContactsB',
             meta: { area: 'b' }
         },
         {
             path:'/contacts-s',
             component:  Contacts,
+            name: 'ContactsS',
             meta: { area: 's' }
         },
         {
@@ -113,13 +121,15 @@
         },
         {
             path: '/areas-s',
-            component:AreasS,
+            component: AreasS,
+            name: 'AreasS',
             meta: { area: 's' }
         },
         {
             props:true,
             path: '/areas-s/:id',
-            component:AreaS,
+            component: AreaS,
+            name: 'AreasS',
             meta: { area: 's' }
         },
 

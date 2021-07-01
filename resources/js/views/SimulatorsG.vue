@@ -1,5 +1,6 @@
 <template>
 <Header class="header-invert" />
+<Breadcrumb />
   <div class="simulator-g">
       <section class="title">
           <h1>Тренажери</h1>
@@ -45,8 +46,10 @@
 
 <script>
 import Header from '../components/Header.vue';
+import Breadcrumb from '../components/Breadcrumb.vue';
 import Footer from '../components/Footer.vue';
-import PopupDetail from '../components/PopupDetail.vue'
+import PopupDetail from '../components/PopupDetail.vue';
+
 let preloadedAssets = [
         require("../../assets/images/simulators/vertical_traction.jpg").default,
         require("../../assets/images/simulators/shoulder_press.jpg").default,
@@ -172,6 +175,7 @@ export default {
     },
     components: {
         Header,
+        Breadcrumb,
         PopupDetail,
         Footer
     }

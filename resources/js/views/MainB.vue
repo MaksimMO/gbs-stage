@@ -29,7 +29,7 @@
             </p>
         </div>
         <div class="about-us-warning">
-            <img class="top-image" src="../../assets/images/warning.svg" alt="">
+            <img class="top-image-warning" src="../../assets/images/warning.svg" alt="">
             <p>
                 Салон відкритий як для членів клубу, так і для гостей без клубних карт.
             </p>
@@ -388,6 +388,184 @@ export default {
             height:16px;
             background: url("../../assets/homeView/arrow-right.svg") no-repeat;
             margin-left: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .top-image-container{
+        .skew-image-1{
+            left: 32px;
+            bottom: -16px;
+            width: 37px;
+            height: 32px;
+        }
+    }
+    .about-us{
+        padding: 80px 50px 50px;
+        .title{
+            font-size: 45px;
+            margin-bottom: 20px;
+            & .line-background {
+                width: 805px;
+            }
+        }
+        .container-text{
+            font-size: 12px;
+            line-height: 22px;
+        }
+        .about-us-warning {
+            font-size: 12px;
+            line-height: 22px;
+            & p{
+                margin: 0;
+                margin-left: 18px;
+            }
+            & .top-image-warning{
+                height: 19px;
+            }
+        }
+
+    }
+    .image-container-aboutUs{
+        margin-bottom: 50px;
+        padding-left: 107px;
+
+        .image{
+            width: 100%;
+            max-height: 316px;
+        }
+
+        .skew-image{
+            width: 52px;
+            height: 45px;
+            right: 25px;
+        }
+
+        .text-image{
+            position: absolute;
+            left: -25px;
+            bottom: 20px;
+            width: 506px;//67.3%
+            height: 56px;//83px
+            font-size: 18px;//36px
+            &>p{
+                line-height: 56px;//83px
+                margin-right: 30px;
+            }
+        }
+    }
+    .gallery-slider {
+        padding: 0 50px;
+    }
+
+    .brand-makeup {
+        & h1 {
+            font-size: 45px;
+            color: #000000;
+            margin: 50px 0 30px 0;
+        }
+        & p {
+            font-size: 12px;
+            line-height: 22px;
+            padding: 0 50px;
+        }
+        .link-1{
+            font-size: 10px;
+            margin-bottom: 50px;
+            padding: 0 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .top-image-container{
+        .skew-image-1{
+            left: 15px;
+            bottom: -15px;
+            width: 35px;
+            height: 30px;
+        }
+    }
+    .about-us{
+        padding: 54px 15px 50px;
+        .title{
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 30px;
+            padding-left: 0;
+            padding-bottom: 0;
+            & .line-background {
+                width: 110vw;
+                height: 33px;
+            }
+        }
+        .container-text{
+            font-size: 12px;
+            line-height: 22px;
+        }
+        .about-us-warning {
+            font-size: 12px;
+            line-height: 22px;
+            & p{
+                margin: 0;
+                margin-left: 18px;
+            }
+            & .top-image-warning{
+                height: 19px;
+            }
+        }
+
+    }
+    .image-container-aboutUs{
+        margin-bottom: 73px;
+        padding: 0;
+
+        .image{
+            width: 100%;
+            max-height: 214px;
+        }
+
+        .skew-image{
+            width: 35px;
+            height: 30px;
+            right: 15px;
+            bottom: -15px;
+        }
+
+        .text-image{
+            text-align: left;
+            bottom: -35px;
+            width: 57.3%;//67.3%
+            height: auto;//83px
+            font-size: 18px;//36px
+            &>p{
+                line-height: 24px;
+                margin-left: 45px;
+                margin-right: 0;
+            }
+        }
+    }
+    .gallery-slider {
+        padding: 0 15px;
+    }
+
+    .brand-makeup {
+        & h1 {
+            font-size: 24px;
+            line-height: 36px;
+            color: #000000;
+            margin: 50px 0 20px 0;
+        }
+        & p {
+            font-size: 12px;
+            line-height: 18px;
+            padding: 0 15px;
+        }
+        .link-1{
+            font-size: 10px;
+            margin-bottom: 50px;
+            padding: 0 15px;
         }
     }
 }

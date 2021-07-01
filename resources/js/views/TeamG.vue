@@ -1,5 +1,6 @@
 <template>
 <Header class="header-invert"/>
+<Breadcrumb />
   <div :class="{'team-g': !$root.$data.isMobile, 'team-g-mobile': $root.$data.isMobile}">
       <section class="title">
           <h1>Наша команда</h1>
@@ -24,6 +25,7 @@
 <script>
 import TrainerList from '../components/TrainersList';
 import Header from '../components/Header.vue';
+import Breadcrumb from '../components/Breadcrumb.vue';
 import Footer from '../components/Footer.vue';
 let preloadedAssets = [
         require('../../assets/images/TeamG/Vladimir_Leskov.jpg').default,
@@ -105,6 +107,7 @@ export default {
     components: {
         TrainerList,
         Header,
+        Breadcrumb,
         Footer
     }
 }

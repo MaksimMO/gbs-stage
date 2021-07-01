@@ -1,5 +1,6 @@
 <template>
 <Header class="header-invert"/>
+<Breadcrumb />
   <div class="price-b">
       <section class="title">
           <h1>Ціни на послуги в BLevel</h1>
@@ -61,6 +62,8 @@
 <script>
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
+import Breadcrumb from '../components/Breadcrumb.vue';
+
 export default {
     data() {
         return {
@@ -141,7 +144,8 @@ export default {
     },
     components: {
         Header,
-        Footer
+        Footer,
+        Breadcrumb
     }
 }
 
@@ -195,6 +199,7 @@ export default {
             & > li {
                 padding-bottom: 20px;
                 position: relative;
+                white-space: nowrap;
                 &:hover {
                     color: #916C58;
                 }
@@ -220,6 +225,7 @@ export default {
             grid-template-columns: repeat(2, 444px);
             grid-column-gap: 134px;
             display: grid;
+            min-height: 47.8vh;
             &>.left>ul,
             &>.right>ul {
                 list-style-type: none;
@@ -268,51 +274,119 @@ export default {
                     }
                     & .type-price {
                         margin: 0;
+                        font-weight: 600;
                     }
                 }
             }
         }
     }
-    @media screen and (max-width: 768px){
-      .price-direction {
-        font-size: 14px;
-        padding: 0 15px;
-        & > .direction {
-            display: grid;
-            grid-column-gap: 20px;
-            grid-template-columns: repeat(2, 1fr);
-            grid-row-gap: 22px;
-            border-bottom: none;
-            & li {
-                padding-bottom: 5px;
-                &:hover {
-                    color: #916C58;
+    @media screen and (max-width: 1142px) and (min-width: 1024px){
+        .price-direction {
+            & .price{
+                text-align: left;
+                display: block;
+                width: 50%;
+            }
+        }
+    }
+    @media screen and (max-width: 1023px) and (min-width: 768px){
+        .price-b {
+            padding-top: 108px;
+        }
+        .title {
+            padding: 0 50px;
+            margin-bottom: 30px;
+            & > h1 {
+                font-size: 49px;
+                margin: 0;
+                margin-left: 0;
+            }
+        }
+        .price-direction {
+            font-size: 14px;
+            padding: 0 15px;
+            & > .direction {
+                border-bottom: none;
+                text-align: left;
+                & li {
+                    padding-bottom: 10px;
+                    &:hover {
+                        color: #916C58;
+                    }
+                }
+            }
+            & .invert-color{
+                color: #916C58;
+                border-bottom: solid 2px #916C58;
+            }
+            & .price{
+                text-align: left;
+                display: block;
+                width: 50%;
+            }
+        }
+    }
+    @media screen and (max-width: 767px){
+        .price-b {
+            padding-top: 108px;
+        }
+        .title {
+            padding: 0 15px;
+            margin-bottom: 20px;
+            & > h1 {
+                font-size: 32px;
+                line-height: 48px;
+                margin: 0;
+                margin-left: 0;
+            }
+        }
+        .price-direction {
+            font-size: 14px;
+            padding: 0 15px;
+            & > .direction {
+                border-bottom: none;
+                text-align: left;
+                & li {
+                    padding-bottom: 5px;
+                }
+            }
+            & .price{
+                text-align: left;
+                display: block;
+                width: 100%;
+                &>.left>ul,
+                &>.right>ul {
+                    &>.сhapter{
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                    &>.subtitle {
+                        &>p {
+                            font-size: 10px;
+                            line-height: 18px;
+                        }
+                    }
+                    &>li,
+                    &>.subtitle>li{
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
                 }
             }
         }
-        .invert-color{
-            color: #916C58;
-            border-bottom: solid 2px #916C58;
-        }
-        & .simulator {
-            grid-template-columns: repeat(2, 1fr);
-            grid-column-gap: 10px;
-            grid-row-gap: 30px;
-        }
-      }
     }
 
-    .list-price-enter-active,
-    .list-price-leave-active {
-        transition: all .2s ease;
-    }
-    .list-price-enter-from,
-    .list-price-leave-to {
-        opacity: 0;
-    }
+    // .list-price-enter-active,
+    // .list-price-leave-active {
+    //     transition: all .2s ease;
+    // }
+    // .list-price-enter-from,
+    // .list-price-leave-to {
+    //     opacity: 0;
+    // }
 
-    .footer {
-        height: 234px;
-    }
+    // .footer {
+    //     height: 234px;
+    // }
 </style>
 

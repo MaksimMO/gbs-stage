@@ -72,6 +72,7 @@ export default {
     padding: 30px 150px;
     color: #fff;
     background-color: #000;
+    overflow: hidden;
 
 
 

@@ -1,6 +1,7 @@
 <template>
 
 <Header class="header-invert" />
+<Breadcrumb :area="area.title"/>
 <div :class="['view-area-g', `area-g-${area.id}`]">
 
     <div class="title">{{area.title}}</div>
@@ -43,6 +44,7 @@ import Footer from "../components/Footer.vue";
 import GallerySlider from '../components/GallerySlider.vue';
 import SwiperOverlay from '../components/swiperOverlay.vue';
 import MakeOrderPopup from '../components/MakeOrderPopup.vue';
+import Breadcrumb from '../components/Breadcrumb.vue';
 
 
 export default {
@@ -73,7 +75,8 @@ export default {
         Header,
         Footer,
         SwiperOverlay,
-        MakeOrderPopup
+        MakeOrderPopup,
+        Breadcrumb
     }
 }
 </script>

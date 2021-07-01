@@ -1,5 +1,6 @@
 <template>
 <Header class="header-invert"/>
+    <Breadcrumb />
   <div class="view-about-us-g">
     <section class="title">
         <h1>Про нас</h1>
@@ -79,6 +80,7 @@ import Footer from '../components/Footer.vue';
 import CertificateSlider from '../components/CertificateSlider.vue';
 import GallerySlider from '../components/GallerySlider.vue';
 import TeamsSlider from '../components/TeamsSlider.vue';
+import Breadcrumb from '../components/Breadcrumb.vue';
 
 let preloadedAssets = [
         require('../../assets/images/aboutUs-g-main.jpg').default,
@@ -155,6 +157,7 @@ export default {
     },
     components: {
         Header,
+        Breadcrumb,
         GallerySlider,
         TeamsSlider,
         CertificateSlider,

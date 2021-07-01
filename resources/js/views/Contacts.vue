@@ -1,5 +1,6 @@
 <template>
 <Header class="header-invert"/>
+<Breadcrumb />
   <div class="contacts">
       <section class="title">
           <h1>Контакти</h1>
@@ -57,6 +58,7 @@
 
 <script>
 import Header from '../components/Header.vue';
+import Breadcrumb from '../components/Breadcrumb.vue';
 import Footer from '../components/Footer.vue';
 export default {
     data() {
@@ -69,6 +71,7 @@ export default {
     },
     components: {
         Header,
+        Breadcrumb,
         Footer,
     }
 }

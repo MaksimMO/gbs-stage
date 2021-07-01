@@ -71,6 +71,7 @@ export default {
     }
     @media screen and (max-width: 1023px) and (min-width: 768px){
         .main-menu-g {
+            height: 100vh;
             display: block;
             padding: 1.87rem 0 0 0;
             li{

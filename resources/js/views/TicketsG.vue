@@ -1,5 +1,6 @@
 <template>
 <Header class="header-invert"/>
+<Breadcrumb />
   <div class="team-g">
       <section class="title">
           <h1>Абонементи</h1>
@@ -62,9 +63,17 @@
 
 <script>
 import Header from '../components/Header.vue';
+import Breadcrumb from '../components/Breadcrumb.vue';
 import Footer from '../components/Footer.vue';
 import PopupTickets from '../components/PopupTickets.vue';
 import MakeOrderPopup from '../components/MakeOrderPopup.vue';
+
+let preloadedAssets = [
+        require('../../assets/images/TeamG/tickets/level1.png').default,
+        require('../../assets/images/TeamG/tickets/level2.png').default,
+        require('../../assets/images/TeamG/tickets/level3.png').default
+    ]
+
 export default {
     data() {
         return {
@@ -131,8 +140,31 @@ export default {
             this.choiceLevel = level;
         }
     },
+    beforeRouteEnter(to, from, next) {
+        const cacheImage = (url) =>{
+            return new Promise((resolve, reject) => {
+                let img = new Image()
+                img.onload = resolve;
+                img.src = url;
+            });
+        }
+        let postponeTimelId = setTimeout(()=>{
+            window.vm.$data.isLoading=true
+        },600);
+
+
+        Promise.all(preloadedAssets.map((urlImg) => (cacheImage(urlImg)))).finally(()=>{
+
+            clearTimeout(postponeTimelId);
+            if (window.vm.$data.isLoading){
+                window.vm.$data.isLoading=false;
+            }
+            next();
+        });
+    },
     components: {
         Header,
+        Breadcrumb,
         Footer,
         PopupTickets,
         MakeOrderPopup

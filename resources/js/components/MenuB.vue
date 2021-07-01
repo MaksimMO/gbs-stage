@@ -26,6 +26,7 @@ export default {
 
 <style lang="scss">
     .main-menu-b{
+        height: 100vh;
         font-family: Raleway;
         font-style: normal;
         font-weight: 600;
