@@ -14,6 +14,9 @@
   <transition name="menu-mobile">
     <MenuBmobile v-show="isOpen && $root.$data.area == 'b'" />
   </transition>
+  <transition name="menu-mobile">
+    <MenuSmobile v-show="isOpen && $root.$data.area == 's'" />
+  </transition>
 </div>
 
 
@@ -24,6 +27,7 @@
 import PhoneLink from "./PhoneLink.vue";
 import MenuGmobile from "./MenuGmobile.vue";
 import MenuBmobile from "./MenuBmobile.vue";
+import MenuSmobile from "./MenuSmobile.vue";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 
 export default {
@@ -37,6 +41,7 @@ export default {
     PhoneLink,
     MenuGmobile,
     MenuBmobile,
+    MenuSmobile,
     LanguageSwitcher,
   },
   mounted(){
@@ -114,6 +119,10 @@ export default {
       background: url("../../assets/images/b-level-darck.svg") no-repeat;
       background-size: contain;
     }
+    & .main>a>.logo.s {
+      background: url("../../assets/images/s-level-darck.svg") no-repeat;
+      background-size: contain;
+    }
 }
 .is-open{
    background-color: #000 !important;
@@ -136,6 +145,10 @@ export default {
     }
     & .main>a>.logo.b {
         background: url("../../assets/images/b-level.svg") no-repeat;
+        background-size: contain;
+    }
+    & .main>a>.logo.s {
+        background: url("../../assets/images/s-level.svg") no-repeat;
         background-size: contain;
     }
 }
@@ -224,6 +237,10 @@ export default {
         }
         &.b {
             background: url("../../assets/images/b-level.svg") no-repeat;
+            background-size: contain;
+        }
+        &.s {
+            background: url("../../assets/images/s-level.svg") no-repeat;
             background-size: contain;
         }
     }

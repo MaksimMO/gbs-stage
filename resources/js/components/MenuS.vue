@@ -1,13 +1,13 @@
 <template>
-  <ul class="main-menu-b">
+  <ul class="main-menu-s">
       <li>
-          <router-link to="/main-b">Наша команда</router-link>
+          <router-link to="/main-s">Про нас</router-link>
       </li>
       <li>
-          <router-link to="/price-b">Ціни</router-link>
+          <router-link to="/price-s">Ціни</router-link>
       </li>
       <li>
-          <router-link to="/contacts-b">Контакти</router-link>
+          <router-link to="/contacts-s">Контакти</router-link>
       </li>
       <li class="navigation-mobile">
           <NavigationMobile />
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss">
-    .main-menu-b{
+    .main-menu-s{
         font-family: Raleway;
         font-style: normal;
         font-weight: 600;
@@ -61,7 +61,7 @@ export default {
         display: none;
     }
     @media screen and (max-width: 1023px) and (min-width: 768px){
-        .main-menu-b {
+        .main-menu-s {
             height: 100vh;
             display: block;
             padding: 1.87rem 0 0 0;
@@ -75,7 +75,7 @@ export default {
 
     }
     @media screen and (max-width: 767px){
-        .main-menu-b {
+        .main-menu-s {
             display: block;
             padding: 1.87rem 0 0 0;
             li{

@@ -17,6 +17,7 @@
  import SimulatorsG from './views/SimulatorsG.vue'
  import TicketsG from './views/TicketsG.vue'
  import PriceB from './views/PriceB.vue'
+ import PriceS from './views/PriceS.vue'
  import Contacts from './views/Contacts.vue'
  import Home from './components/Home'
  import MakeOrderPopup from './components/MakeOrderPopup.vue'
@@ -130,6 +131,12 @@
             path: '/areas-s/:id',
             component: AreaS,
             name: 'AreasS',
+            meta: { area: 's' }
+        },
+        {
+            path: '/price-s',
+            component:  PriceS,
+            name: 'PriceS',
             meta: { area: 's' }
         },
 

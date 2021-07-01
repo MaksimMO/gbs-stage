@@ -377,17 +377,13 @@ export default {
         }
     }
 
-    // .list-price-enter-active,
-    // .list-price-leave-active {
-    //     transition: all .2s ease;
-    // }
-    // .list-price-enter-from,
-    // .list-price-leave-to {
-    //     opacity: 0;
-    // }
-
-    // .footer {
-    //     height: 234px;
-    // }
+    .list-price-enter-active,
+    .list-price-leave-active {
+        transition: all .2s ease;
+    }
+    .list-price-enter-from,
+    .list-price-leave-to {
+        opacity: 0;
+    }
 </style>
 

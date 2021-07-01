@@ -21,6 +21,9 @@
   <transition name="slide-fade">
     <MenuB v-show="isOpen && $root.$data.area == 'b'" />
   </transition>
+  <transition name="slide-fade">
+    <MenuS v-show="isOpen && $root.$data.area == 's'" />
+  </transition>
 </div>
 </template>
 
@@ -28,6 +31,7 @@
 import PhoneLink from "./PhoneLink.vue";
 import MenuG from "./MenuG.vue";
 import MenuB from "./MenuB.vue";
+import MenuS from "./MenuS.vue";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 import MakeOrderPopup from './MakeOrderPopup.vue'
 
@@ -43,6 +47,7 @@ export default {
     PhoneLink,
     MenuG,
     MenuB,
+    MenuS,
     LanguageSwitcher,
     MakeOrderPopup
   },
@@ -77,7 +82,6 @@ export default {
     preloadLink.rel = "preload";
     preloadLink.as = "image";
     document.head.appendChild(preloadLink);
-    // console.log('background cached')
   },
 };
 </script>
@@ -94,24 +98,7 @@ export default {
     background-color: transparent;
     transition: all 0.6s ease-in;
 }
-// .is-mobile{
-//     padding: 30px 15px 30px 15px !important;
-//     transition: all 0.6s ease-in;
-//     & .main {
-//         &>a>.logo {
-//             width: 50px;
-//             height: 23px;
-//         }
-//         & .menu-open{
-//             width: 30px;
-//         }
-//         & .close-opened {
-//             background-image: url("../../assets/homeView/arrow-right.svg");
-//             width: 30px;
-//             height: 21px;
-//         }
-//     }
-// }
+
 .header-invert {
     color: #000 !important;
     & .phone-link{
@@ -139,6 +126,10 @@ export default {
       background: url("../../assets/images/b-level-darck.svg") no-repeat;
       background-size: contain;
     }
+    & .main>a>.logo.s {
+      background: url("../../assets/images/s-level-darck.svg") no-repeat;
+      background-size: contain;
+    }
 }
 .is-open{
    background-color: #000 !important;
@@ -161,6 +152,10 @@ export default {
         background: url("../../assets/images/b-level.svg") no-repeat;
         background-size: contain;
     }
+    & .main>a>.logo.s {
+        background: url("../../assets/images/s-level.svg") no-repeat;
+        background-size: contain;
+    }
 }
 
 .main {
@@ -172,14 +167,6 @@ export default {
         width: 178px;
         height: 84px;
         transition: all 0.6s ease-in;
-
-    // @media screen and (max-width: 767px) {
-    //   width: 90px;
-    //   height: 42px;
-    //   background-size: 92px 42px;
-    //   flex-grow: unset;
-    // }
-
     &.g {
       background: url("../../assets/images/g-level.svg") no-repeat;
       background-size: contain;
@@ -310,6 +297,10 @@ export default {
         }
         &.b {
             background: url("../../assets/images/b-level.svg") no-repeat;
+            background-size: contain;
+        }
+        &.s {
+            background: url("../../assets/images/s-level.svg") no-repeat;
             background-size: contain;
         }
     }
