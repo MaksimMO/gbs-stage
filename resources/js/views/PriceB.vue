@@ -187,6 +187,7 @@ export default {
         padding: 0 7.81vw;
         padding-bottom: 60px;
         & > .direction {
+            flex-wrap: wrap;
             list-style-type: none;
             display: flex;
             color: #000000;

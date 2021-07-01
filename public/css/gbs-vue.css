@@ -5492,6 +5492,7 @@ li[data-v-5d9f7d78] {
   padding-bottom: 60px;
 }
 .price-direction > .direction[data-v-5d9f7d78] {
+  flex-wrap: wrap;
   list-style-type: none;
   display: flex;
   color: #000000;
