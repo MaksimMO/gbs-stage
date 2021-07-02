@@ -1,7 +1,7 @@
 export default
  [
     { "id": 1, "imageUrl": require("../../../assets/images/areas-s/area-s-1.jpg").default,
-    "title":"РИМСЬКА СОЛЬОВА ПАРОВА", "description":"Римська сольова парова - не тільки фізичне очищення тіла, а й особлива аура відчуттів і романтичної ніжності."},
+    "title":"Римська сольова парова", "description":"Римська сольова парова - не тільки фізичне очищення тіла, а й особлива аура відчуттів і романтичної ніжності."},
     { "id": 2, "imageUrl": require("../../../assets/images/areas-s/area-s-2.jpg").default,
     "title":"Римський Арома Грот", "description":"Це ритуал в якому ефірні масла, змішуючись із потоками пару трансформуються в невагомі хмаринки корисних речовин."},
     { "id": 3, "imageUrl": require("../../../assets/images/areas-s/area-s-3.jpg").default,

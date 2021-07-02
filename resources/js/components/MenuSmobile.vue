@@ -3,7 +3,7 @@
         <div class="appointment-mobile" @click="modalOpen=true">Записатися</div>
         <ul >
             <li>
-                <router-link to="/main-s">Про нас</router-link>
+                <router-link to="/areas-s">Послуги</router-link>
             </li>
             <li>
                 <router-link to="/price-s">Ціни</router-link>

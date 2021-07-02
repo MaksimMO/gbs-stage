@@ -331,4 +331,130 @@ export default {
       }
     }
 
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+    .top-image-container{
+        .skew-image-1{
+            left: 32px;
+            bottom: -16px;
+            width: 37px;
+            height: 32px;
+        }
+    }
+    .about-us{
+        padding: 80px 50px 50px;
+        .title{
+            font-size: 45px;
+            margin-bottom: 20px;
+            & .line-background {
+                width: 805px;
+            }
+        }
+        .container-text{
+            font-size: 12px;
+            line-height: 22px;
+        }
+        .about-us-warning {
+            font-size: 12px;
+            line-height: 22px;
+            & p{
+                margin: 0;
+                margin-left: 18px;
+            }
+            & .top-image-warning{
+                height: 19px;
+            }
+        }
+
+    }
+    .gallery-slider {
+        padding: 0 50px;
+    }
+    .areas-slider{
+      .skew-image-1{
+        width: 37.33px;
+        height: 32;
+        bottom: -16px;
+        right: 31.33px;
+      }
+    }
+    .seo-text{
+      padding-top:30px;
+
+      .title{
+          font-size: 49px;
+      }
+      .text{
+        font-size: 12px;
+        line-height: 22px;
+        padding: 20px 50px 64px;
+      }
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .top-image-container{
+        .skew-image-1{
+            left: 15px;
+            bottom: -15px;
+            width: 35px;
+            height: 30px;
+        }
+    }
+    .about-us{
+        padding: 54px 15px 50px;
+        .title{
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 30px;
+            padding-left: 0;
+            padding-bottom: 0;
+            & .line-background {
+                width: 110vw;
+                height: 33px;
+            }
+        }
+        .container-text{
+            font-size: 12px;
+            line-height: 22px;
+        }
+        .about-us-warning {
+            font-size: 12px;
+            line-height: 22px;
+            & p{
+                margin: 0;
+                margin-left: 18px;
+            }
+            & .top-image-warning{
+                height: 19px;
+            }
+        }
+
+    }
+    .gallery-slider {
+        padding: 0 15px;
+    }
+    .areas-slider{
+      .skew-image-1{
+        width: 35px;
+        height: 30;
+        bottom: -15px;
+        right: 15px;
+      }
+    }
+    .seo-text{
+      padding-top:50px;
+
+      .title{
+          font-size: 32px;
+          line-height: 48px;
+      }
+      .text{
+        font-size: 12px;
+        line-height: 18px;
+        padding: 30px 15px 64px;
+      }
+    }
+}
+
 </style>

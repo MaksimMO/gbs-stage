@@ -1,6 +1,5 @@
 const mix = require('laravel-mix');
 
-
 mix.webpackConfig({
     mode: 'development',
     devtool:'source-map'

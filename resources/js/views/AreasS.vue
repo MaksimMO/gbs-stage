@@ -1,5 +1,6 @@
 <template>
   <Header class="header-invert" />
+  <Breadcrumb />
   <div class="view-areas-s">
     <div class="title">Зонування</div>
 
@@ -23,6 +24,7 @@
 import areas from "../components/AreasS/areas.js";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+import Breadcrumb from '../components/Breadcrumb.vue';
 
 export default {
   data() {
@@ -34,6 +36,7 @@ export default {
   components: {
     Header,
     Footer,
+    Breadcrumb
   },
 };
 </script>
@@ -98,7 +101,7 @@ export default {
           color: #ffffff;
 
           opacity: 0.8;
-
+          text-transform: uppercase;
           text-align: left;
           align-self: end;
           margin-bottom: 30px;

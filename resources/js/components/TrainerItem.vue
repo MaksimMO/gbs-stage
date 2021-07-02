@@ -5,7 +5,8 @@
     v-if="!$root.$data.isMobile"
 >
     <div style="position: relative; z-index: 99;">
-        <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="!isOpen ? isShow() : isClosed()">
+        <img v-if="!isHovered" :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="!isOpen ? isShow() : isClosed()">
+        <Video v-else @click="!isOpen ? isShow() : isClosed()"/>
         <div v-show="isHovered && !isOpen || isSelected" class="info">
             <template v-if="!isSlider">
                 <img v-if="!isSelected" src="../../assets/images/info.svg" alt="info" class="info-show" @click="isShow">
@@ -22,7 +23,8 @@
 </div>
 <div v-else :class="['trainer-item-mobile', {'is-scaled': isSelected}]">
     <div style="position: relative; z-index: 99;">
-        <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="!isOpen ? isShow() : isClosed()">
+        <img v-if="!isSelected" :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="!isOpen ? isShow() : isClosed()">
+        <VideoMobile v-else @click="!isOpen ? isShow() : isClosed()" :isSelected="isSelected"/>
         <div v-show="isHovered && !isOpen || isSelected" class="info">
             <img v-if="!isSelected" src="../../assets/images/info.svg" alt="info" class="info-show" @click="isShow">
             <img v-if="isSelected" src="../../assets/images/close.svg" alt="info" class="info-close" @click="isClosed">
@@ -38,6 +40,8 @@
 </template>
 
 <script>
+import Video from '../components/Video.vue';
+import VideoMobile from '../components/VideoMobile.vue';
 export default {
     props: ['trainer', 'isOpen', 'isSlider'],
     data(){
@@ -47,30 +51,34 @@ export default {
         }
     },
     methods:{
-    enter(){
-        if(!this.isOpen && !this.isSlider) {
-            this.isHovered = true;
-        }
-    },
-    leave(){
-        if(!this.isOpen && !this.isSlider) {
-            this.isHovered = false;
-        }
-    },
-    isShow(){
+        enter(){
+            if(!this.isOpen && !this.isSlider) {
+                this.isHovered = true;
+            }
+        },
+        leave(){
+            if(!this.isOpen && !this.isSlider) {
+                this.isHovered = false;
+            }
+        },
+        isShow(){
 
-        if(!this.isSlider){
-            this.$emit('isShow', true);
-            this.isSelected = true;
+            if(!this.isSlider){
+                this.$emit('isShow', true);
+                this.isSelected = true;
+            }
+        },
+        isClosed(){
+            if(this.isOpen && this.isSelected && !this.isSlider) {
+                this.$emit('isClosed', false);
+                this.isSelected = false;
+            }
         }
     },
-    isClosed(){
-        if(this.isOpen && this.isSelected && !this.isSlider) {
-            this.$emit('isClosed', false);
-            this.isSelected = false;
-        }
+    components: {
+        Video,
+        VideoMobile
     }
-}
 }
 </script>
 
@@ -128,6 +136,13 @@ img{
     cursor: pointer;
     width:100%;
 }
+
+Video{
+    display:block;
+    cursor: pointer;
+    width: 100%;
+}
+
 
 .firstName{
     display: flex;

@@ -152,7 +152,21 @@ export default {
             display: none;
         }
         ::v-deep(.swiper-wrapper) {
-            left: 100px;
+            left: 200px;
+        }
+    }
+    .swiper-slide-next + .swiper-slide {
+        pointer-events: none;
+        &::after {
+            content: '';
+            position: unset;
+            background-color: unset;
+            width: unset;
+            height: unset;
+            display: none;
+        }
+        & img{
+            opacity: 0.5;
         }
     }
   }
@@ -166,10 +180,38 @@ export default {
             display: none;
         }
         ::v-deep(.swiper-wrapper) {
-            left: 100px;
+            left: 150px;
         }
     }
     .swiper-slide-next + .swiper-slide {
+        pointer-events: none;
+        &::after {
+            content: '';
+            position: unset;
+            background-color: unset;
+            width: unset;
+            height: unset;
+            display: none;
+        }
+        & img{
+            opacity: 0.5;
+        }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .swiper-container {
+        ::v-deep(.swiper-button-prev) {
+            display: none;
+        }
+        ::v-deep(.swiper-button-next) {
+            display: none;
+        }
+        ::v-deep(.swiper-wrapper) {
+            left: 130px;
+        }
+    }
+    .swiper-slide-next {
         pointer-events: none;
         &::after {
             content: '';

@@ -130,7 +130,7 @@
             props:true,
             path: '/areas-s/:id',
             component: AreaS,
-            name: 'AreasS',
+            name: 'AreaS',
             meta: { area: 's' }
         },
         {

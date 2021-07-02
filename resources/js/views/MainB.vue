@@ -72,6 +72,7 @@ import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 import GallerySlider from '../components/GallerySlider.vue';
 import BrandMakeupSlider from '../components/BrandMakeupSlider.vue';
+import { preloadLink } from '../utils.js';
 
 let preloadedAssets = [
         require('../../assets/images/main-b-background.jpg').default,
@@ -104,11 +105,12 @@ export default {
 
   },
   mounted(){
-      let preloadLink = document.createElement("link");
-      preloadLink.href = require('../../assets/feedBackFormView/background-g.png').default;
-      preloadLink.rel = "preload";
-      preloadLink.as = "image";
-      document.head.appendChild(preloadLink);
+      preloadLink('feedBackFormView/background-g.png', 'image')
+    //   let preloadLink = document.createElement("link");
+    //   preloadLink.href = require('../../assets/feedBackFormView/background-g.png').default;
+    //   preloadLink.rel = "preload";
+    //   preloadLink.as = "image";
+    //   document.head.appendChild(preloadLink);
   },
   beforeRouteEnter(to, from, next) {
         const cacheImage = (url) =>{

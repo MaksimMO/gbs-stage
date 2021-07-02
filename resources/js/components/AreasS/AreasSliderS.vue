@@ -1,10 +1,10 @@
 
 <template>
-<swiper :navigation="true" class="mySwiper">
+<swiper :navigation="true" class="mySwiperS">
   <swiper-slide v-for="slide in slides" :key="slide.id">
     <img :src="slide.imageUrl" />
       <div class="text-block">
-        <div class="current-slide-number">{{slide.id}}/{{slides.length}}</div>
+        <div class="current-slide-number-s">{{slide.id}}/{{slides.length}}</div>
         <div class="title">{{slide.title}}</div>
         <div class="description">{{slide.description}}</div>
         <router-link  :to="`/areas-s/${slide.id}`" class="link-2">Переглянути</router-link>
@@ -45,32 +45,32 @@ export default {
 @import 'swiper/swiper.min.css';
 @import 'swiper/components/navigation/navigation.min.css';
 
-.mySwiper {
+.mySwiperS {
   width: 100%;
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    --swiper-navigation-size: 25px;
-    --swiper-navigation-color: #fff;
-    opacity: 0.45;
-  }
+    ::v-deep(.swiper-button-prev),
+    ::v-deep(.swiper-button-next) {
+        --swiper-navigation-size: 25px;
+        --swiper-navigation-color: #fff;
+        opacity: 0.45;
+    }
 
-  .swiper-button-prev {
+  :v-deep(.swiper-button-prev) {
     left: 60px !important;
 
-      @media screen and (max-width:767px){
-        left: calc(100% - 80px) !important;
-        top: 25px;
-      }
+    //   @media screen and (max-width:767px){
+    //     left: calc(100% - 80px) !important;
+    //     top: 25px;
+    //   }
   }
 
-  .swiper-button-next {
+  ::v-deep(.swiper-button-next) {
     right: 60px !important;
 
-      @media screen and (max-width:767px){
-        right: 15px !important;
-        top: 25px;
-      }
+    //   @media screen and (max-width:767px){
+    //     right: 15px !important;
+    //     top: 25px;
+    //   }
   }
 
   .swiper-slide {
@@ -94,7 +94,7 @@ export default {
       }
     }
 
-    .current-slide-number {
+    .current-slide-number-s {
       align-self: end;
       text-align: left;
       font-family: Raleway;
@@ -194,6 +194,91 @@ export default {
       }
     }
   }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .mySwiperS {
+        ::v-deep(.swiper-button-prev),
+        ::v-deep(.swiper-button-next) {
+            --swiper-navigation-size: 15px;
+        }
+        ::v-deep(.swiper-button-prev) {
+            left: 15px !important;
+        }
+
+        ::v-deep(.swiper-button-next) {
+            right: 15px !important;
+        }
+
+        .swiper-slide {
+            .current-slide-number-s {
+                font-size: 12.8px;
+                line-height: 14.93px;
+            }
+
+            .text-block {
+                padding: 0 0 34px 50px;
+                .title {
+                    font-size: 45px;
+                    line-height: 54px;
+                    margin-bottom: 20px;
+                }
+                .description {
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+
+                .link-2 {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .mySwiperS {
+        // ::v-deep(.swiper-button-prev),
+        // ::v-deep(.swiper-button-next) {
+        //     --swiper-navigation-size: 15px;
+        // }
+        ::v-deep(.swiper-button-prev) {
+            left: calc(100% - 80px) !important;
+            top: 25px;
+        }
+
+        ::v-deep(.swiper-button-next) {
+            right: 15px !important;
+            top: 25px;
+        }
+
+        .swiper-slide {
+            .current-slide-number-s {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            .text-block {
+                padding: 0 0 64px 15px;
+                height: auto;
+                .title {
+                    font-size: 36px;
+                    line-height: 54px;
+                    margin-bottom: 30px;
+                }
+                .description {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+
+                .link-2 {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
 }
 
 </style>

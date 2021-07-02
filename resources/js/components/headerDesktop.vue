@@ -52,7 +52,6 @@ export default {
     MakeOrderPopup
   },
   mounted(){
-    console.log('$root.$data.isMobile', this.$root.$data.isMobile)
     const debounce = (fn) => {
       let frame;
 

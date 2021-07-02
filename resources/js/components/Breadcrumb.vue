@@ -41,6 +41,7 @@ let breadcrumbs = {
     s: 'Slevel',
     AboutUsG: 'Про нас',
     AreasG: 'Зонування',
+    AreasS: 'Послуги',
     TeamG: 'Наша команда',
     SimulatorsG: 'Тренажери',
     TicketsG: 'Абонементи',
@@ -48,6 +49,7 @@ let breadcrumbs = {
     ContactsB: 'Контакти',
     ContactsS: 'Контакти',
     AreaG: "Зонування",
+    AreaS: "Послуги",
     PriceB: "Прайс",
     PriceS: "Прайс"
 }
@@ -61,13 +63,7 @@ export default {
         routeName(){
             return breadcrumbs[this.$route.name];
         }
-    },
-    mounted() {
-        console.log('area', this.area);
-        console.log('this.$router', this.$route);
-        console.log('this.$router.name', this.$route.name);
     }
-
 }
 </script>
 

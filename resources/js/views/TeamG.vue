@@ -27,7 +27,22 @@ import TrainerList from '../components/TrainersList';
 import Header from '../components/Header.vue';
 import Breadcrumb from '../components/Breadcrumb.vue';
 import Footer from '../components/Footer.vue';
+import { preloadLink } from '../utils.js';
 let preloadedAssets = [
+        require('../../assets/images/TeamG/Vladimir_Leskov.jpg').default,
+        require('../../assets/images/TeamG/Irina_Slyusarenko.jpg').default,
+        require('../../assets/images/TeamG/Olga_Depeshko.jpg').default,
+        require('../../assets/images/TeamG/Olga_Martsenyuk.jpg').default,
+        require('../../assets/images/TeamG/Mikhail_Galagan.jpg').default,
+        require('../../assets/images/TeamG/Olga_Osadchuk.jpg').default,
+        require('../../assets/images/TeamG/valentine.jpg').default,
+        require('../../assets/images/TeamG/Melnyk_Serhiy.jpg').default,
+        require('../../assets/images/TeamG/Olena_Semenchuk.jpg').default,
+        require('../../assets/images/TeamG/Nechko_Vasil.jpg').default,
+        require('../../assets/images/TeamG/Gornushkina_Julia.jpg').default,
+        require('../../assets/images/TeamG/Dementieva_Elena.jpg').default,
+    ]
+let preloadedVideo = [
         require('../../assets/images/TeamG/Vladimir_Leskov.jpg').default,
         require('../../assets/images/TeamG/Irina_Slyusarenko.jpg').default,
         require('../../assets/images/TeamG/Olga_Depeshko.jpg').default,
@@ -47,21 +62,24 @@ export default {
         return {
             isOpen: false,
             trainers: [
-                {id: 0, link: "Vladimir_Leskov.jpg"},
-                {id: 1, link: "Irina_Slyusarenko.jpg"},
-                {id: 2, link: "Olga_Depeshko.jpg"},
-                {id: 3, link: "Olga_Martsenyuk.jpg"},
-                {id: 4, link: "Mikhail_Galagan.jpg"},
-                {id: 5, link: "Olga_Osadchuk.jpg"},
-                {id: 6, link: "valentine.jpg"},
-                {id: 7, link: "Melnyk_Serhiy.jpg"},
-                {id: 8, link: "Olena_Semenchuk.jpg"},
-                {id: 9, link: "Nechko_Vasil.jpg"},
-                {id: 10, link: "Gornushkina_Julia.jpg"},
+                {id: 0, link: "Vladimir_Leskov.jpg", linkVideo: "Vladimir_Leskov.MOV"},
+                {id: 1, link: "Irina_Slyusarenko.jpg", linkVideo: "Irina_Slyusarenko.MOV"},
+                {id: 2, link: "Olga_Depeshko.jpg", linkVideo: "Olga_Depeshko.MOV"},
+                {id: 3, link: "Olga_Martsenyuk.jpg", linkVideo: "Olga_Martsenyuk.MOV"},
+                {id: 4, link: "Mikhail_Galagan.jpg", linkVideo: "Mikhail_Galagan.MOV"},
+                {id: 5, link: "Olga_Osadchuk.jpg", linkVideo: "Olga_Osadchuk.MOV"},
+                {id: 6, link: "valentine.jpg", linkVideo: "valentine.MOV"},
+                {id: 7, link: "Melnyk_Serhiy.jpg", linkVideo: "Melnyk_Serhiy.MOV"},
+                {id: 8, link: "Olena_Semenchuk.jpg", linkVideo: "Olena_Semenchuk.MOV"},
+                {id: 9, link: "Nechko_Vasil.jpg", linkVideo: "Nechko_Vasil.MOV"},
+                {id: 10, link: "Gornushkina_Julia.jpg", linkVideo: "Gornushkina_Julia.MOV"},
                 {id: 11, link: "Dementieva_Elena.jpg"}
             ],
         }
     },
+    // mounted(){
+    //   preloadLink('feedBackFormView/background-g.png', 'image');
+    // },
     methods: {
         change(e) {
             this.isOpen = e;
@@ -82,19 +100,7 @@ export default {
         },600);
 
 
-        Promise.all(
-            [cacheImage(preloadedAssets[0]),
-            cacheImage(preloadedAssets[1]),
-            cacheImage(preloadedAssets[2]),
-            cacheImage(preloadedAssets[3]),
-            cacheImage(preloadedAssets[4]),
-            cacheImage(preloadedAssets[5]),
-            cacheImage(preloadedAssets[6]),
-            cacheImage(preloadedAssets[7]),
-            cacheImage(preloadedAssets[8]),
-            cacheImage(preloadedAssets[9]),
-            cacheImage(preloadedAssets[10]),
-            cacheImage(preloadedAssets[11])]).finally(()=>{
+        Promise.all(preloadedAssets.map((urlImg) => (cacheImage(urlImg)))).finally(()=>{
 
             clearTimeout(postponeTimelId);
             if (window.vm.$data.isLoading){
