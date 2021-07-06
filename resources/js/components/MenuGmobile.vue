@@ -1,6 +1,6 @@
 <template>
     <div class="main-menu-mobile">
-        <div class="appointment-mobile" @click="modalOpen=true">Записатися</div>
+        <div class="appointment-mobile" @click="modalOpen=true">Залишити заявку</div>
         <ul >
             <li>
                 <router-link to="/about-us-g">Про нас</router-link>
@@ -82,7 +82,7 @@ export default {
         line-height: 16px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        width: 138px;
+        width: max-content;
         text-align: center;
         transition: all 0.6s linear;
         position: relative;

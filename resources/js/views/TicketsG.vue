@@ -5,7 +5,7 @@
       <section class="title">
           <h1>Абонементи</h1>
           <p>
-            GBS Level – це три види клубних карт.
+            GBS LEVEL – це три види клубних карт.
             Естетичні, емоційні, хардкорні, стримані, релаксуючі, автентичні,  максималістичні та вдночас мінімалістичні.
             Створені в колаборації з Нашими Клієнтами
           </p>
@@ -84,7 +84,7 @@ export default {
             tickets: [
                 {id: 1, level: 'level 1', link: require("../../assets/images/TeamG/tickets/level1.png").default,
                     period: { time1: 'пн-пт: 07:00 - 23:00', time2: 'сб-нд: 08:00 - 23:00', dayOff: '45 днів'},
-                    price: '28 000',
+                    price: '30 000',
                     details: [
                         'Безліміт на самостійне відвідування спортивного залу.',
                         '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона).',
@@ -99,7 +99,7 @@ export default {
                 },
                 {id: 2, level: 'level 2', link: require("../../assets/images/TeamG/tickets/level2.png").default,
                     period: { time1: 'пн-пт: 07:00 - 23:00', dayOff: '30 днів'},
-                    price: '18 000',
+                    price: '20 000',
                     details: [
                         'Безліміт на самостійне відвідування спортивного залу.',
                         '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 2 рази на місяць протягом терміну дії клубної карти.',
@@ -114,7 +114,7 @@ export default {
                 },
                 {id: 3, level: 'level 3',link: require("../../assets/images/TeamG/tickets/level3.png").default,
                     period: { time1: 'пн-пт: 07:00 - 1:00', dayOff: '30 днів'},
-                    price: '12 000',
+                    price: '13 000',
                     details: [
                         'Безліміт на самостійне відвідування спортивного залу.',
                         '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 1 рази на місяць протягом терміну дії клубної карти.',
@@ -226,6 +226,15 @@ export default {
         display: grid;
         justify-content: center;
         padding: 0 7.81vw;
+        transition: transform .2s ease-in;
+
+        .level{
+            transition: transform 0.2s ease-in;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
         & p {
             text-transform: uppercase;
             margin: 0;

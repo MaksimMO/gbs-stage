@@ -10,6 +10,21 @@
             комплекс із найпрогресивнішим обладненням, стильним дизайном та неперевершеним комфортом.
         </p>
     </section>
+    <section class="about-us-g-description">
+        <ul class="first">
+            <li><b>Тренажерний зал 1700 кв.м.</b> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym</li>
+            <li>Простора стилізована <b>зона єдиноборств</b> з професійним рингом</li>
+            <li>Окрема <b>студія для сайкл-тренування</b> з надсучасною світло- звуковою системою</li>
+            <li><b>Інноваційна</b> зона функціонального тренінгу та кросфіту</li>
+        </ul>
+        <ul class="second">
+            <li><b>Студія Barre</b> на основі балету</li>
+            <!-- <li>Мед кабінет, <b>консультація лікаря</b></li> -->
+            <li>Власна <b>пральня</b></li>
+            <li>Система вентиляції та кондиціонування  функцією <b>очищення повітря</b></li>
+            <li><b>Високий</b> рівень сервісу</li>
+        </ul>
+    </section>
     <section class="image-container-aboutUs">
         <img class="image" src="../../assets/images/aboutUs-g-main.jpg" alt="">
         <img class="skew-image" src="../../assets/images/popup-corner.svg" alt="">
@@ -22,21 +37,7 @@
     <section class="gallery-slider">
         <GallerySlider :images="gallery" />
     </section>
-    <section class="aboutUs-g-description">
-        <ul class="first">
-            <li><b>Тренажерний зал 1700 кв.м.</b> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym</li>
-            <li>Простора стилізована <b>зона єдиноборств</b> з професійним рингом</li>
-            <li>Окрема <b>студія для сайкл-тренування</b> з надсучасною світло- звуковою системою</li>
-            <li><b>Інноваційна</b> зона функціонального тренінгу та кросфіту</li>
-        </ul>
-        <ul class="second">
-            <li><b>Студія Barre</b> на основі балету</li>
-            <li>Мед кабінет, <b>консультація лікаря</b></li>
-            <li>Власна <b>пральня</b></li>
-            <li>Система вентиляції та кондиціонування  функцією <b>очищення повітря</b></li>
-            <li><b>Високий</b> рівень сервісу</li>
-        </ul>
-    </section>
+
     <section class="our-team-aboutUs-container">
         <div class="our-team-container_header">
             <p>Наша команда</p>
@@ -252,7 +253,7 @@ export default {
         position: relative;
         padding: 60px 7.81vw;
     }
-    .aboutUs-g-description {
+    .about-us-g-description {
         overflow: visible;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 15px;
@@ -419,7 +420,7 @@ export default {
         .gallery-slider {
             padding: 0 50px;
         }
-        .aboutUs-g-description {
+        .about-us-g-description {
             padding: 0 50px;
             margin-bottom: 50px;
             & ul {
@@ -523,7 +524,7 @@ export default {
         .gallery-slider {
             padding: 0 15px;
         }
-        .aboutUs-g-description {
+        .about-us-g-description {
             padding: 0 15px;
             grid-template-columns: repeat(1, 1fr);
             margin-bottom: 50px;

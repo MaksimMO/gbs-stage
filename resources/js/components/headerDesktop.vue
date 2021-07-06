@@ -8,7 +8,7 @@
 
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink :class="{'is-open':isOpen}"/>
-    <div class="appointment" @click="modalOpen=true">Записатися</div>
+    <div class="appointment" @click="modalOpen=true">Залишити заявку</div>
     <teleport to="body">
       <MakeOrderPopup v-if="modalOpen" @closePopup="modalOpen=false"/>
     </teleport>
@@ -197,7 +197,7 @@ export default {
         line-height: 16px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        width: 138px;
+        // width: 138px;
         text-align: center;
         transition: all 0.6s linear;
         position: relative;
@@ -208,8 +208,8 @@ export default {
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
-            width: 100%;
+            left: -2%;
+            width: 104%;
             height: 50%;
             background: #916C58;
             z-index: -1;

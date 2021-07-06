@@ -9,7 +9,7 @@
         <img :src="area.imageUrl" />
         <div class="text-block">
           <div class="title">{{ area.title }}</div>
-          <div class="description">{{ area.description }}</div>
+          <div class="description" v-html="area.description"></div>
           <router-link :to="`/areas-s/${area.id}`" class="link-2"
             >Переглянути</router-link
           >
@@ -79,6 +79,7 @@ export default {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        filter: brightness(0.7);
       }
 
       .text-block {

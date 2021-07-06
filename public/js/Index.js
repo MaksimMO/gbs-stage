@@ -18869,9 +18869,9 @@ swiper_core__WEBPACK_IMPORTED_MODULE_0__.default.use([swiper_core__WEBPACK_IMPOR
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 var breadcrumbs = {
-  g: 'Glevel',
-  b: 'Blevel',
-  s: 'Slevel',
+  g: 'G LEVEL',
+  b: 'B LEVEL',
+  s: 'S LEVEL',
   AboutUsG: 'Про нас',
   AreasG: 'Зонування',
   AreasS: 'Послуги',
@@ -19099,6 +19099,7 @@ var preloadedAssets = {
       csrf_token: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
       name: '',
       phone: '',
+      email: '',
       modalOpen: false,
       isShowValidationMessage: false
     };
@@ -19114,6 +19115,7 @@ var preloadedAssets = {
       var body = new FormData();
       body.append('name', this.name);
       body.append('phone_number', this.phone);
+      body.append('email', this.email);
       body.append('level', this.level);
       body.append('_token', this.csrf_token);
       body.append('description', "\u0410\u0431\u043E\u043D\u0438\u043C\u0435\u043D\u0442 ".concat(this.choiceLevel));
@@ -21654,7 +21656,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/TeamG/tickets
           time2: 'сб-нд: 08:00 - 23:00',
           dayOff: '45 днів'
         },
-        price: '28 000',
+        price: '30 000',
         details: ['Безліміт на самостійне відвідування спортивного залу.', '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона).', '<b>Гостьове відвідування</b> – 7 рази протягом терміну дії клубної карти.', 'Брендові рушники, брендові халати для відвідування SPA комплексу.', 'Користування шафами покращеного формату.', '<b>Групові тренування</b> – 42 занятя* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 6 рази протягом терміну дії клубної карти.</b>', '<b>Масаж класичний</b> – 2 послуги.', 'Знижка 10 % на послуги “B Level”.', '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>2 послуги</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>2 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>2 послуги</b><br> або нігтьовий сервіс – <b>2 послуги</b>.</p>']
       }, {
         id: 2,
@@ -21664,7 +21666,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/TeamG/tickets
           time1: 'пн-пт: 07:00 - 23:00',
           dayOff: '30 днів'
         },
-        price: '18 000',
+        price: '20 000',
         details: ['Безліміт на самостійне відвідування спортивного залу.', '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 2 рази на місяць протягом терміну дії клубної карти.', '<b>Гостьове відвідування</b> – 5 рази протягом терміну дії клубної карти.', 'Брендові рушники, брендові халати для відвідування SPA комплексу.', 'Користування шафами покращеного формату.', '<b>Групові тренування</b> – 21 занятя* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 3 рази протягом терміну дії клубної карти.</b>', '<b>Масаж класичний</b> – 2 послуги.', 'Знижка 7 % на послуги “B Level”.', '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>1 послуги</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>1 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>1 послуги</b><br> або нігтьовий сервіс – <b>1 послуги</b>.</p>']
       }, {
         id: 3,
@@ -21674,7 +21676,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/TeamG/tickets
           time1: 'пн-пт: 07:00 - 1:00',
           dayOff: '30 днів'
         },
-        price: '12 000',
+        price: '13 000',
         details: ['Безліміт на самостійне відвідування спортивного залу.', '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 1 рази на місяць протягом терміну дії клубної карти.', '<b>Гостьове відвідування</b> – 2 рази протягом терміну дії клубної карти.', 'Брендові рушники, брендові халати для відвідування SPA комплексу.', 'Користування шафами покращеного формату.', '<b>Групові тренування</b> – 14 занятя* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 2 рази протягом терміну дії клубної карти.</b>', 'Знижка 5 % на послуги “B Level”.', '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>1 послуги</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>1 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>1 послуги</b><br> або нігтьовий сервіс – <b>1 послуги</b>.</p>']
       }]
     };
@@ -22468,7 +22470,17 @@ var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 /* HOISTED */
 );
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+var _hoisted_5 = {
+  "class": "input-wrapper"
+};
+
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+  "for": "email"
+}, "E-mail", -1
+/* HOISTED */
+);
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
   type: "submit"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Залишити заявку")], -1
 /* HOISTED */
@@ -22480,7 +22492,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   var _component_popup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("popup");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", {
-    onSubmit: _cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+    onSubmit: _cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $options.onSubmit && $options.onSubmit.apply($options, arguments);
     }, ["prevent"]))
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
@@ -22518,7 +22530,24 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     "class": "error-message"
   }, "Дане поле заповнене не коректно", 4
   /* STYLE */
-  )]), _hoisted_5], 32
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+    autocomplete: "off",
+    "onUpdate:modelValue": _cache[3] || (_cache[3] = function ($event) {
+      return $data.email = $event;
+    }),
+    id: "email",
+    name: "email",
+    placeholder: " "
+  }, null, 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.email]]), _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+    style: {
+      opacity: $data.email.length === 0 && $data.isShowValidationMessage ? 1 : 0
+    },
+    "class": "error-message"
+  }, "Дане поле заповнене не коректно", 4
+  /* STYLE */
+  )]), _hoisted_7], 32
   /* HYDRATE_EVENTS */
   ), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
     to: "body"
@@ -22792,7 +22821,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
         }, ["exact"]), ["esc"]))]
       }, [_hoisted_3], 544
       /* HYDRATE_EVENTS, NEED_PATCH */
-      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\n          <a\n            href=\"#\"\n            @click.prevent=\"setLocale('ru')\"\n            @keydown.shift.tab=\"focusPrevious(false)\"\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\n            @keydown.down.exact.prevent=\"\"\n            @keydown.tab.exact=\"hideDropdown\"\n            @keydown.esc.exact=\"hideDropdown\"\n          >\n            <span>RU</span>\n          </a>\n        </li> ")], 512
+      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\r\n          <a\r\n            href=\"#\"\r\n            @click.prevent=\"setLocale('ru')\"\r\n            @keydown.shift.tab=\"focusPrevious(false)\"\r\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\r\n            @keydown.down.exact.prevent=\"\"\r\n            @keydown.tab.exact=\"hideDropdown\"\r\n            @keydown.esc.exact=\"hideDropdown\"\r\n          >\r\n            <span>RU</span>\r\n          </a>\r\n        </li> ")], 512
       /* NEED_PATCH */
       )), [[_directive_click_away, $options.hideDropdown]]) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
@@ -22985,7 +23014,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $data.modalOpen = true;
     })
-  }, "Записатися"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  }, "Залишити заявку"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/price-b"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
@@ -23161,7 +23190,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $data.modalOpen = true;
     })
-  }, "Записатися"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  }, "Залишити заявку"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/about-us-g"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
@@ -23334,7 +23363,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $data.modalOpen = true;
     })
-  }, "Записатися"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  }, "Залишити заявку"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/areas-s"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
@@ -24317,7 +24346,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $data.modalOpen = true;
     })
-  }, "Записатися"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
+  }, "Залишити заявку"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
     to: "body"
   }, [$data.modalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_MakeOrderPopup, {
     key: 0,
@@ -24684,6 +24713,16 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 );
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+  "class": "about-us-g-description"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
+  "class": "first"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Тренажерний зал 1700 кв.м."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Простора стилізована "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "зона єдиноборств"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з професійним рингом")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Окрема "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "студія для сайкл-тренування"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з надсучасною світло- звуковою системою")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Інноваційна"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" зона функціонального тренінгу та кросфіту")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
+  "class": "second"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Студія Barre"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" на основі балету")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>Мед кабінет, <b>консультація лікаря</b></li> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Власна "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "пральня")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Система вентиляції та кондиціонування функцією "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "очищення повітря")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Високий"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" рівень сервісу")])])], -1
+/* HOISTED */
+);
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
   "class": "image-container-aboutUs"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   "class": "image",
@@ -24699,20 +24738,9 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 /* HOISTED */
 );
 
-var _hoisted_4 = {
+var _hoisted_5 = {
   "class": "gallery-slider"
 };
-
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
-  "class": "aboutUs-g-description"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
-  "class": "first"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Тренажерний зал 1700 кв.м."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Простора стилізована "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "зона єдиноборств"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з професійним рингом")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Окрема "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "студія для сайкл-тренування"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з надсучасною світло- звуковою системою")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Інноваційна"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" зона функціонального тренінгу та кросфіту")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
-  "class": "second"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Студія Barre"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" на основі балету")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Мед кабінет, "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "консультація лікаря")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Власна "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "пральня")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Система вентиляції та кондиціонування функцією "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "очищення повітря")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Високий"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" рівень сервісу")])])], -1
-/* HOISTED */
-);
-
 var _hoisted_6 = {
   "class": "our-team-aboutUs-container"
 };
@@ -24747,11 +24775,11 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header, {
     "class": "header-invert"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Breadcrumb), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_GallerySlider, {
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Breadcrumb), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, _hoisted_3, _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_GallerySlider, {
     images: $data.gallery
   }, null, 8
   /* PROPS */
-  , ["images"])]), _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  , ["images"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "all-our-trainers-link",
     to: "/team-g"
   }, {
@@ -24958,7 +24986,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     src: $options.area.imageUrl
   }, null, 8
   /* PROPS */
-  , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"gallery-slider\">\n        <GallerySlider :images=\"gallery\" />\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+  , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"gallery-slider\">\r\n        <GallerySlider :images=\"gallery\" />\r\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $data.isMakeOrderPopupOpen = true;
     })
@@ -25110,11 +25138,8 @@ var _hoisted_4 = {
 var _hoisted_5 = {
   "class": "title"
 };
-var _hoisted_6 = {
-  "class": "description"
-};
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Переглянути");
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Переглянути");
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
@@ -25139,14 +25164,17 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     /* PROPS */
     , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(area.title), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(area.description), 1
-    /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+      "class": "description",
+      innerHTML: area.description
+    }, null, 8
+    /* PROPS */
+    , ["innerHTML"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
       to: "/areas-s/".concat(area.id),
       "class": "link-2"
     }, {
       "default": _withId(function () {
-        return [_hoisted_7];
+        return [_hoisted_6];
       }),
       _: 2
       /* DYNAMIC */
@@ -25497,7 +25525,7 @@ var _hoisted_3 = {
   "class": "about-us"
 };
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"title\" data-v-6918511f> Про нас <div class=\"line-background\" data-v-6918511f></div></div><div class=\"columns-container\" data-v-6918511f><div class=\"col-1\" data-v-6918511f><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Тренажерний зал 1700 кв.м.</span> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym </div><div data-v-6918511f>Простора стилізована <span class=\"bold\" data-v-6918511f>зона єдиноборств</span> з професійним рингом</div><div data-v-6918511f>Окрема <span class=\"bold\" data-v-6918511f>студія для сайкл-тренування</span> з надсучасною світло- звуковою системою</div><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Інноваційна </span> зона функціонального тренінгу та кросфіту</div></div><div class=\"col-2\" data-v-6918511f><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Студія Barre </span>на основі балету</div><div data-v-6918511f>Мед кабінет, <span class=\"bold\" data-v-6918511f>консультація лікаря</span></div><div data-v-6918511f>Власна <span class=\"bold\" data-v-6918511f>пральня</span></div><div data-v-6918511f>Система вентиляції та кондиціонування функцією <span class=\"bold\" data-v-6918511f>очищення повітря</span></div><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Високий</span> рівень сервісу</div></div></div>", 2);
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"title\" data-v-6918511f> Про нас <div class=\"line-background\" data-v-6918511f></div></div><div class=\"columns-container\" data-v-6918511f><div class=\"col-1\" data-v-6918511f><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Тренажерний зал 1700 кв.м.</span> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym </div><div data-v-6918511f>Простора стилізована <span class=\"bold\" data-v-6918511f>зона єдиноборств</span> з професійним рингом</div><div data-v-6918511f>Окрема <span class=\"bold\" data-v-6918511f>студія для сайкл-тренування</span> з надсучасною світло- звуковою системою</div><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Інноваційна </span> зона функціонального тренінгу та кросфіту</div></div><div class=\"col-2\" data-v-6918511f><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Студія Barre </span>на основі балету</div><!-- &lt;div&gt;Мед кабінет, &lt;span class=&quot;bold&quot;&gt;консультація лікаря&lt;/span&gt;&lt;/div&gt; --><div data-v-6918511f>Власна <span class=\"bold\" data-v-6918511f>пральня</span></div><div data-v-6918511f>Система вентиляції та кондиціонування функцією <span class=\"bold\" data-v-6918511f>очищення повітря</span></div><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Високий</span> рівень сервісу</div></div></div>", 2);
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Детальніше");
 
@@ -25554,7 +25582,7 @@ var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 
 var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "our-team-container_header"
-}, " Наша команда ", -1
+}, " G LEVEL TEAM ", -1
 /* HOISTED */
 );
 
@@ -25597,7 +25625,7 @@ var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
   "class": "title"
 }, " Безпека "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "description"
-}, " Тренажерний зал обладнаний усім необхідним для правильних та результативних тренувань, які тільки на користь здоров’ю та фізичній формі. Медична кваліфікована допомога та професійна консультація не по виклику, а як стандарт нашої турботи про клієнта. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+}, " Тренажерний зал обладнаний усім необхідним для правильних та результативних тренувань, які тільки на користь здоров’ю та фізичній формі. Вентиляція із системою очищення повітря подбає про те, щоб під час тренувань ваші легені наповнювались тільки правильним повітрям. Цілодобова охорона та персональні міні сейфи для вашого спокою та збереження цінних для вас речей. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "order"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "icon"
@@ -25634,7 +25662,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [_hoisted_9, _hoisted_10, _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "link-2",
-    to: "/about-us-g"
+    to: "/simulators-g"
   }, {
     "default": _withId(function () {
       return [_hoisted_12];
@@ -26341,7 +26369,7 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
   "class": "title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Наша команда"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Команда G LEVEL - це професійні тренера та інструктори, кандидати та майстри спорту, під керівництвом яких ви досягнете вражаючих результатів в найбільш оптимальні строки без ризику для здоров'я. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, " Це ті, хто вас мотивує і знущається, а ще робить вас здоровими та красивими! ")], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Наша команда"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Команда G LEVEL - це професійні тренера та інструктори, кандидати та майстри спорту, під керівництвом яких ви досягнете вражаючих результатів в найбільш оптимальні строки без ризику для здоров'я. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, " Це ті, хто вас мотивує і знущається, а ще робить здоровими та красивими! ")], -1
 /* HOISTED */
 );
 
@@ -26403,7 +26431,7 @@ var _hoisted_1 = {
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
   "class": "title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Абонементи"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " GBS Level – це три види клубних карт. Естетичні, емоційні, хардкорні, стримані, релаксуючі, автентичні, максималістичні та вдночас мінімалістичні. Створені в колаборації з Нашими Клієнтами "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, " ОБИРАЙ СВІЙ РІВЕНЬ! ")], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Абонементи"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " GBS LEVEL – це три види клубних карт. Естетичні, емоційні, хардкорні, стримані, релаксуючі, автентичні, максималістичні та вдночас мінімалістичні. Створені в колаборації з Нашими Клієнтами "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, " ОБИРАЙ СВІЙ РІВЕНЬ! ")], -1
 /* HOISTED */
 );
 
@@ -26817,7 +26845,7 @@ window.vm = app.mount('#gbslevel-app'); // if(isMobile){
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
   "id": 1,
   "imageUrl": __webpack_require__(/*! ../../../assets/images/areas/area-1-g.jpg */ "./resources/assets/images/areas/area-1-g.jpg").default,
-  "title": "Зона єдтиноборств",
+  "title": "Зона єдиноборств",
   "description": "Простора ЗОНА ЄДИНОБОРСТВ з професійним рингом, індивідуальними та груповими заняттями по боксу у найкращих тренерів порадує як любителів боксу, так і новачків, які давно мріяли опанувати легендарний удар Брюса Лі."
 }, {
   "id": 2,
@@ -26850,7 +26878,7 @@ window.vm = app.mount('#gbslevel-app'); // if(isMobile){
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
   "id": 1,
-  "imageUrl": __webpack_require__(/*! ../../../assets/images/areas-s/area-s-1.jpg */ "./resources/assets/images/areas-s/area-s-1.jpg").default,
+  "imageUrl": __webpack_require__(/*! ../../../assets/images/areas-s/area-s-1-1.jpg */ "./resources/assets/images/areas-s/area-s-1-1.jpg").default,
   "title": "Римська сольова парова",
   "description": "Римська сольова парова - не тільки фізичне очищення тіла, а й особлива аура відчуттів і романтичної ніжності."
 }, {
@@ -26877,7 +26905,12 @@ window.vm = app.mount('#gbslevel-app'); // if(isMobile){
   "id": 6,
   "imageUrl": __webpack_require__(/*! ../../../assets/images/areas-s/area-s-6.jpg */ "./resources/assets/images/areas-s/area-s-6.jpg").default,
   "title": "За враженнями в Душ!",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut nisl a magna pellentesque pellentesque a rutrum urna."
+  "description": "<b>\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u0430 1: \u0422\u0440\u043E\u043F\u0456\u0447\u043D\u0438\u0439 \u0434\u043E\u0449 \u0437 \u0430\u0440\u043E\u043C\u0430\u0442\u043E\u043C</b>\n    <br>\n    \u0422\u0435\u043F\u043B\u0438\u0439 \u0442\u0440\u043E\u043F\u0456\u0447\u043D\u0438\u0439 \u0434\u043E\u0449 \u0437 \u0433\u0443\u0441\u0442\u0438\u043C\u0438 \u043C'\u044F\u043A\u0438\u043C\u0438 \u043A\u0440\u0430\u043F\u043B\u044F\u043C\u0438 \u0441\u0442\u0456\u043A\u0430\u0454 \u0442\u0430 \u043D\u0430\u043F\u043E\u0432\u043D\u044E\u0454 \u0434\u0443\u0448\u0443 \u0456 \u0442\u0456\u043B\u043E \u0435\u043D\u0435\u0440\u0433\u0456\u0454\u044E \u0435\u043A\u0437\u043E\u0442\u0438\u0447\u043D\u0438\u0445 \u0442\u0440\u043E\u043F\u0456\u043A\u0456\u0432. \u0424\u0440\u0443\u043A\u0442\u043E\u0432\u0438\u0439 \u0430\u0440\u043E\u043C\u0430\u0442 \u0437\u0430\u043F\u043E\u0432\u043D\u044E\u0454 \u043A\u0456\u043C\u043D\u0430\u0442\u0443, \u0430 \u0432\u0434\u0430\u043B\u0438\u043D\u0456 \u0447\u0443\u0442\u043D\u043E \u0449\u0435\u0431\u0435\u0442\u0430\u043D\u043D\u044F \u0434\u0438\u043A\u043E\u0432\u0438\u043D\u043D\u0438\u0445 \u043F\u0442\u0430\u0445\u0456\u0432.\n    <br>\n    <b>\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u0430 2: \u0422\u0443\u043C\u0430\u043D </b><br>\n    \u0425\u043E\u043B\u043E\u0434\u043D\u0438\u0439 \u0442\u0443\u043C\u0430\u043D\u043D\u0438\u0439 \u0434\u043E\u0449 \u0437 \u0434\u0443\u0436\u0435 \u0434\u0440\u0456\u0431\u043D\u0438\u043C\u0438 \u043A\u0440\u0430\u043F\u043B\u044F\u043C\u0438 \u0432\u043E\u0434\u0438. \u041D\u0430\u0441\u043E\u043B\u043E\u0434\u0436\u0443\u0439\u0442\u0435\u0441\u044C \u0441\u0432\u0456\u0436\u0456\u0441\u0442\u044E \u043D\u0430 \u0444\u043E\u043D\u0456 \u0448\u0443\u043C\u0443 \u043C\u043E\u0440\u044F.\n    <br>\n    <b>\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u0430 3: \u0422\u0440\u043E\u043F\u0456\u043A\u0430 </b><br>\n    \u041E\u0441\u0432\u0456\u0436\u0430\u044E\u0447\u0438\u0439 \u0442\u0443\u043C\u0430\u043D\u043D\u0438\u0439 \u0434\u0443\u0448 \u043D\u0435\u0432\u0430\u0433\u043E\u043C\u0438\u043C\u0438 \u043A\u0440\u0430\u043F\u043B\u044F\u043C\u0438 \u0432\u043E\u0434\u0438, \u044F\u043A\u0456 \u0432 \u043E\u0440\u0435\u043E\u043B\u0456 \u043F\u0440\u043E\u0445\u043E\u043B\u043E\u0434\u043D\u043E\u0433\u043E \u0441\u0438\u043D\u044C\u043E\u0433\u043E \u043A\u043E\u043B\u044C\u043E\u0440\u0443 \u0437 \u0448\u0443\u043C\u043E\u043C \u0434\u0430\u043B\u0435\u043A\u043E\u0433\u043E \u043C\u043E\u0440\u044F. \u041F\u043E\u0441\u0442\u0443\u043F\u043E\u0432\u0430 \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0446\u0456\u044F \u0432 \u0442\u0435\u043F\u043B\u0438\u0439 \u0442\u0440\u043E\u043F\u0456\u0447\u043D\u0438\u0439 \u0434\u043E\u0449 \u0437 \u043C\u0430\u0441\u0438\u0432\u043D\u0438\u043C\u0438 \u043C'\u044F\u043A\u0438\u043C\u0438 \u043A\u0440\u0430\u043F\u043B\u044F\u043C\u0438 \u0442\u0430 \u043B\u0435\u0433\u043A\u0438\u043C \u0442\u0443\u043C\u0430\u043D\u043E\u043C, \u0449\u043E \u0432 \u043E\u0440\u0435\u043E\u043B\u0456 \u0444\u0440\u0443\u043A\u0442\u043E\u0432\u0438\u0445 \u0430\u0440\u043E\u043C\u0430\u0442\u0456\u0432."
+}, {
+  "id": 7,
+  "imageUrl": __webpack_require__(/*! ../../../assets/images/areas-s/area-s-7.jpg */ "./resources/assets/images/areas-s/area-s-7.jpg").default,
+  "title": "Масаж",
+  "description": "Стилізований масажний кабінет, запаморочливі аромати та спеціалісти по естетиці тіла «розкажуть» Вам про усю філософію релаксу, оздоровлення та зарядження енергією."
 }]);
 
 /***/ }),
@@ -28769,7 +28802,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?736193b044696161e2a6e9f91539c73e");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
 
 /***/ }),
 
@@ -28799,7 +28832,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?df90caa4b4466fae2999be366ce12b13");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
 
 /***/ }),
 
@@ -28829,7 +28862,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?d94603bf7c6c5c4b24c3e6245db8ea26");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
 
 /***/ }),
 
@@ -29624,7 +29657,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/about-g-water-text.svg?59919db3211551399f10fbf94a2c4535");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/about-g-water-text.svg?476a68854636ba7e866760649393cb88");
 
 /***/ }),
 
@@ -29655,6 +29688,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/aboutUs-g-main.jpg?cec141b739dcb866615c3a7b9a53f2ba");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas-s/area-s-1-1.jpg":
+/*!********************************************************!*\
+  !*** ./resources/assets/images/areas-s/area-s-1-1.jpg ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/area-s-1-1.jpg?4d193675ca7c85a196411e7215a9b972");
 
 /***/ }),
 
@@ -29745,6 +29793,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/area-s-6.jpg?47000242ac31baecf7b462c8dbde9dd0");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas-s/area-s-7.jpg":
+/*!******************************************************!*\
+  !*** ./resources/assets/images/areas-s/area-s-7.jpg ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/area-s-7.jpg?052a5ca363bb2845faf827f179277510");
 
 /***/ }),
 
@@ -29909,7 +29972,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-darck.svg?34d3246fd5f28f54932080e9c8429771");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-darck.svg?f3cadb0675d72021ab687179cff8e5de");
 
 /***/ }),
 
@@ -29924,7 +29987,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-link.svg?c48b740a3620a8a51bcc05ebe5253bdb");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-link.svg?938210241c158bd8542a7f8b28d672cd");
 
 /***/ }),
 
@@ -29939,7 +30002,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?02bae0682140f88722059abfc0376dc1");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212");
 
 /***/ }),
 
@@ -29984,7 +30047,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/close.svg?2855e6317fe0e97b677566f1ee2fba5b");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/close.svg?40f036580b6c18960e76c27a387cba94");
 
 /***/ }),
 
@@ -30014,7 +30077,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebook.svg?b7485c04d1d306c6218574a3ac8af002");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebook.svg?54bf56baa5ce9b1b5bd010cd9e02909e");
 
 /***/ }),
 
@@ -30029,7 +30092,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebookGold.svg?a27e5b4dde3c6d3ecf3f28f59983b62d");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebookGold.svg?2ef6ec7b557d1537f9b550eba23e8d1f");
 
 /***/ }),
 
@@ -30059,7 +30122,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-darck.svg?b12f10e8b0ef5b7d9921289b7942c945");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-darck.svg?c361667f2e00cb0a3637e2f975c1cc80");
 
 /***/ }),
 
@@ -30074,7 +30137,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-link.svg?b4a59adf52665650c8ae64f9444650cd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-link.svg?fd94afd0b003f21a26d254ee80e958f2");
 
 /***/ }),
 
@@ -30089,7 +30152,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?4322557835a36f1758bad92f49d6dca9");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca");
 
 /***/ }),
 
@@ -30134,7 +30197,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/info.svg?6c9484336357a780fd96bcef5a715b14");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/info.svg?b47e3582bc4a2656231c960a851e0d0b");
 
 /***/ }),
 
@@ -30149,7 +30212,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagram.svg?63a0b3819ce60d3152e6007738817613");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagram.svg?a21938e086d667a24449c981641902d2");
 
 /***/ }),
 
@@ -30164,7 +30227,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagramGold.svg?5841637642267db63a3c458114907398");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagramGold.svg?56cb837170980da00a05c5fdaf2eee66");
 
 /***/ }),
 
@@ -30194,7 +30257,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-b-water-text-top.svg?e4051e4c2d0b3be44d04b4586d2b2f54");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-b-water-text-top.svg?3c4a8cbe9c9c993ce8805016dbb61aa2");
 
 /***/ }),
 
@@ -30224,7 +30287,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-our-team-water-text.svg?b3bc1a5b892346aba7f4f498b479dd63");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-our-team-water-text.svg?6b9c63279b48909a3c9b2812fd082f9b");
 
 /***/ }),
 
@@ -30269,7 +30332,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-water-text.svg?6ee2cadd0d229a2a8feead3efd3f7472");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-water-text.svg?96ffed6606128a90b9107d563f89bd05");
 
 /***/ }),
 
@@ -30389,7 +30452,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/marker.svg?7ff292b43387a63ea9de772f34f75cfa");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/marker.svg?f3e69856c579d1eca94519018b9d1d74");
 
 /***/ }),
 
@@ -30404,7 +30467,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/menu-close-white.svg?91bd8bef07d7e63dd1e6c4e7b4778c75");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/menu-close-white.svg?51134e345e051967709be96e3ef38ecf");
 
 /***/ }),
 
@@ -30449,7 +30512,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/menu-open.svg?761c80ccaf88f896e093367310cae5ba");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/menu-open.svg?87e74746bd587cbd0c724e573fb0b27a");
 
 /***/ }),
 
@@ -30494,7 +30557,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/rectangle-1.svg?e5b6c711ae755c10eb619cde8698d8b8");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/rectangle-1.svg?572b0668a66b51ba2d0c019cf5872bf5");
 
 /***/ }),
 
@@ -30524,7 +30587,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-darck.svg?82ec9c9a7a09a0c71138a777fea8cffb");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-darck.svg?a27de085c1e6928ac2dd7b9b262582c7");
 
 /***/ }),
 
@@ -30539,7 +30602,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-link.svg?3b6f9f21a9fb0b985be3502ee31e6d0b");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-link.svg?973ebae533ed3dd52f602e3aad341150");
 
 /***/ }),
 
@@ -31184,7 +31247,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/technogym-logo-black.svg?41e9fcde23524c6f008c5c6aa677f53e");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/technogym-logo-black.svg?6e3384e0b81af3319ec84d54c3f183b8");
 
 /***/ }),
 
@@ -31199,7 +31262,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/technogym-logo.svg?b19c87b75ba105dc1de99317eb2b7c3e");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/technogym-logo.svg?58e84d71995a27ba4ec62ad8d48a4fc6");
 
 /***/ }),
 
@@ -31274,7 +31337,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/warning.svg?67b5872f8674f66a316722b146cad9dc");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/warning.svg?83875f065e7638defea28c6ed7e64a48");
 
 /***/ }),
 
@@ -31289,7 +31352,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/youtube.svg?1142378c070c1d6d4c4c76264aa458ab");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/youtube.svg?c1677447c97f633ce596b4c52413efe4");
 
 /***/ }),
 
@@ -31304,7 +31367,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/zoom-img.svg?a7b077eb6c87af5c6b383e8bb2e95e2b");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/zoom-img.svg?e7724d44281f74e3d5d0723bf72fefdb");
 
 /***/ }),
 
@@ -51096,12 +51159,14 @@ var map = {
 	"./images/about-g-water-text.svg": "./resources/assets/images/about-g-water-text.svg",
 	"./images/aboutUs-b-main.jpg": "./resources/assets/images/aboutUs-b-main.jpg",
 	"./images/aboutUs-g-main.jpg": "./resources/assets/images/aboutUs-g-main.jpg",
+	"./images/areas-s/area-s-1-1.jpg": "./resources/assets/images/areas-s/area-s-1-1.jpg",
 	"./images/areas-s/area-s-1.jpg": "./resources/assets/images/areas-s/area-s-1.jpg",
 	"./images/areas-s/area-s-2.jpg": "./resources/assets/images/areas-s/area-s-2.jpg",
 	"./images/areas-s/area-s-3.jpg": "./resources/assets/images/areas-s/area-s-3.jpg",
 	"./images/areas-s/area-s-4.jpg": "./resources/assets/images/areas-s/area-s-4.jpg",
 	"./images/areas-s/area-s-5.jpg": "./resources/assets/images/areas-s/area-s-5.jpg",
 	"./images/areas-s/area-s-6.jpg": "./resources/assets/images/areas-s/area-s-6.jpg",
+	"./images/areas-s/area-s-7.jpg": "./resources/assets/images/areas-s/area-s-7.jpg",
 	"./images/areas/area-1-g.jpg": "./resources/assets/images/areas/area-1-g.jpg",
 	"./images/areas/area-2-g.jpg": "./resources/assets/images/areas/area-2-g.jpg",
 	"./images/areas/area-3-g.jpg": "./resources/assets/images/areas/area-3-g.jpg",

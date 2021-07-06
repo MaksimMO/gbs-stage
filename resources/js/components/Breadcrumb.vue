@@ -36,9 +36,9 @@
 <script>
 
 let breadcrumbs = {
-    g: 'Glevel',
-    b: 'Blevel',
-    s: 'Slevel',
+    g: 'G LEVEL',
+    b: 'B LEVEL',
+    s: 'S LEVEL',
     AboutUsG: 'Про нас',
     AreasG: 'Зонування',
     AreasS: 'Послуги',
