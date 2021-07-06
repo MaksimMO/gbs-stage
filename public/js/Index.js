@@ -18806,22 +18806,46 @@ swiper_core__WEBPACK_IMPORTED_MODULE_0__.default.use([swiper_core__WEBPACK_IMPOR
         imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/academie.jpg */ "./resources/assets/images/TeamB/brandMakeUp/academie.jpg").default
       }, {
         id: 4,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/loreal.jpg */ "./resources/assets/images/TeamB/brandMakeUp/loreal.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/american_crew.jpg */ "./resources/assets/images/TeamB/brandMakeUp/american_crew.jpg").default
       }, {
         id: 5,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/dior.jpg */ "./resources/assets/images/TeamB/brandMakeUp/dior.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/clarins.jpg */ "./resources/assets/images/TeamB/brandMakeUp/clarins.jpg").default
       }, {
         id: 6,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/academie.jpg */ "./resources/assets/images/TeamB/brandMakeUp/academie.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/depot.jpg */ "./resources/assets/images/TeamB/brandMakeUp/depot.jpg").default
       }, {
         id: 7,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/loreal.jpg */ "./resources/assets/images/TeamB/brandMakeUp/loreal.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/helena.jpg */ "./resources/assets/images/TeamB/brandMakeUp/helena.jpg").default
       }, {
         id: 8,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/dior.jpg */ "./resources/assets/images/TeamB/brandMakeUp/dior.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/holy-land-logo-8.jpg */ "./resources/assets/images/TeamB/brandMakeUp/holy-land-logo-8.jpg").default
       }, {
         id: 9,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/academie.jpg */ "./resources/assets/images/TeamB/brandMakeUp/academie.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/kerastase-vector-logo.jpg */ "./resources/assets/images/TeamB/brandMakeUp/kerastase-vector-logo.jpg").default
+      }, {
+        id: 10,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/lancome_paris.jpg */ "./resources/assets/images/TeamB/brandMakeUp/lancome_paris.jpg").default
+      }, {
+        id: 11,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/lebel_Logo.jpg */ "./resources/assets/images/TeamB/brandMakeUp/lebel_Logo.jpg").default
+      }, {
+        id: 12,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/logo_black.jpg */ "./resources/assets/images/TeamB/brandMakeUp/logo_black.jpg").default
+      }, {
+        id: 13,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/luxio.jpg */ "./resources/assets/images/TeamB/brandMakeUp/luxio.jpg").default
+      }, {
+        id: 14,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/napura_black.jpg */ "./resources/assets/images/TeamB/brandMakeUp/napura_black.jpg").default
+      }, {
+        id: 15,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg */ "./resources/assets/images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg").default
+      }, {
+        id: 16,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/Shiseido_logo_red.jpg */ "./resources/assets/images/TeamB/brandMakeUp/Shiseido_logo_red.jpg").default
+      }, {
+        id: 17,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/yonka.jpg */ "./resources/assets/images/TeamB/brandMakeUp/yonka.jpg").default
       }]
     };
   },
@@ -21247,7 +21271,7 @@ var trainers = [{
 
 
 
-var preloadedAssets = [__webpack_require__(/*! ../../assets/images/simulators/vertical_traction.jpg */ "./resources/assets/images/simulators/vertical_traction.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/shoulder_press.jpg */ "./resources/assets/images/simulators/shoulder_press.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/chest_press.jpg */ "./resources/assets/images/simulators/chest_press.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/dual_prectoral_reverse_fly.jpg */ "./resources/assets/images/simulators/dual_prectoral_reverse_fly.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/pull_down.jpg */ "./resources/assets/images/simulators/pull_down.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/low_row.jpg */ "./resources/assets/images/simulators/low_row.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/wide_chest_press.jpg */ "./resources/assets/images/simulators/wide_chest_press.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/incline_chest_press.jpg */ "./resources/assets/images/simulators/incline_chest_press.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/dual_abd.jpg */ "./resources/assets/images/simulators/dual_abd.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/leg_extension.jpg */ "./resources/assets/images/simulators/leg_extension.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/ne_leg_curl.jpg */ "./resources/assets/images/simulators/ne_leg_curl.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/simulator-default.jpg */ "./resources/assets/images/simulators/simulator-default.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/rear_kick.jpg */ "./resources/assets/images/simulators/rear_kick.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/Linear_leg_press.jpg */ "./resources/assets/images/simulators/Linear_leg_press.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/leg_press.jpg */ "./resources/assets/images/simulators/leg_press.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/leg_curl.jpg */ "./resources/assets/images/simulators/leg_curl.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/hack_squat.jpg */ "./resources/assets/images/simulators/hack_squat.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/run_live_500.jpg */ "./resources/assets/images/simulators/run_live_500.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/synchro_live_700.jpg */ "./resources/assets/images/simulators/synchro_live_700.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/bake_live_500.jpg */ "./resources/assets/images/simulators/bake_live_500.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/recline_live_500.jpg */ "./resources/assets/images/simulators/recline_live_500.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/climb_live_500.jpg */ "./resources/assets/images/simulators/climb_live_500.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/group_cycle_connect.jpg */ "./resources/assets/images/simulators/group_cycle_connect.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/dual_adjustable_pulley.png */ "./resources/assets/images/simulators/dual_adjustable_pulley.png").default, __webpack_require__(/*! ../../assets/images/simulators/kneeling_easy_chin_dip.jpg */ "./resources/assets/images/simulators/kneeling_easy_chin_dip.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/cable_stations_connector.jpg */ "./resources/assets/images/simulators/cable_stations_connector.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/universal_storage.jpg */ "./resources/assets/images/simulators/universal_storage.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/pure_strength_olympic_incline_bench.jpg */ "./resources/assets/images/simulators/pure_strength_olympic_incline_bench.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/pure_strength_olympic_flat_bench.jpg */ "./resources/assets/images/simulators/pure_strength_olympic_flat_bench.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/scott_bench.jpg */ "./resources/assets/images/simulators/scott_bench.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/adjustable_bench.jpg */ "./resources/assets/images/simulators/adjustable_bench.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/lower_back_bench.jpg */ "./resources/assets/images/simulators/lower_back_bench.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/ghd_bench.jpg */ "./resources/assets/images/simulators/ghd_bench.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/adjustable_decline_ab_crunch.jpg */ "./resources/assets/images/simulators/adjustable_decline_ab_crunch.jpg").default];
+var preloadedAssets = [__webpack_require__(/*! ../../assets/images/simulators/vertical_traction.jpg */ "./resources/assets/images/simulators/vertical_traction.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/shoulder_press.jpg */ "./resources/assets/images/simulators/shoulder_press.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/chest_press.jpg */ "./resources/assets/images/simulators/chest_press.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/dual_prectoral_reverse_fly.jpg */ "./resources/assets/images/simulators/dual_prectoral_reverse_fly.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/pull_down.jpg */ "./resources/assets/images/simulators/pull_down.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/low_row.jpg */ "./resources/assets/images/simulators/low_row.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/wide_chest_press.jpg */ "./resources/assets/images/simulators/wide_chest_press.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/incline_chest_press.jpg */ "./resources/assets/images/simulators/incline_chest_press.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/dual_abd.jpg */ "./resources/assets/images/simulators/dual_abd.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/leg_extension.jpg */ "./resources/assets/images/simulators/leg_extension.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/ne_leg_curl.jpg */ "./resources/assets/images/simulators/ne_leg_curl.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/lower_boddy_calf.jpg */ "./resources/assets/images/simulators/lower_boddy_calf.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/simulator-default.jpg */ "./resources/assets/images/simulators/simulator-default.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/rear_kick.jpg */ "./resources/assets/images/simulators/rear_kick.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/Linear_leg_press.jpg */ "./resources/assets/images/simulators/Linear_leg_press.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/leg_press.jpg */ "./resources/assets/images/simulators/leg_press.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/leg_curl.jpg */ "./resources/assets/images/simulators/leg_curl.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/hack_squat.jpg */ "./resources/assets/images/simulators/hack_squat.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/run_live_500.jpg */ "./resources/assets/images/simulators/run_live_500.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/synchro_live_700.jpg */ "./resources/assets/images/simulators/synchro_live_700.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/bake_live_500.jpg */ "./resources/assets/images/simulators/bake_live_500.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/recline_live_500.jpg */ "./resources/assets/images/simulators/recline_live_500.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/climb_live_500.jpg */ "./resources/assets/images/simulators/climb_live_500.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/group_cycle_connect.jpg */ "./resources/assets/images/simulators/group_cycle_connect.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/dual_adjustable_pulley.jpg */ "./resources/assets/images/simulators/dual_adjustable_pulley.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/kneeling_easy_chin_dip.jpg */ "./resources/assets/images/simulators/kneeling_easy_chin_dip.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/cable_stations_connector.jpg */ "./resources/assets/images/simulators/cable_stations_connector.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/universal_storage.jpg */ "./resources/assets/images/simulators/universal_storage.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/pure_strength_olympic_incline_bench.jpg */ "./resources/assets/images/simulators/pure_strength_olympic_incline_bench.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/pure_strength_olympic_flat_bench.jpg */ "./resources/assets/images/simulators/pure_strength_olympic_flat_bench.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/scott_bench.jpg */ "./resources/assets/images/simulators/scott_bench.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/adjustable_bench.jpg */ "./resources/assets/images/simulators/adjustable_bench.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/lower_back_bench.jpg */ "./resources/assets/images/simulators/lower_back_bench.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/ghd_bench.jpg */ "./resources/assets/images/simulators/ghd_bench.jpg").default, __webpack_require__(/*! ../../assets/images/simulators/adjustable_decline_ab_crunch.jpg */ "./resources/assets/images/simulators/adjustable_decline_ab_crunch.jpg").default];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -21302,7 +21326,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/simulators/ve
       }, {
         id: 11,
         direction: "lower_boddy",
-        link: __webpack_require__(/*! ../../assets/images/simulators/simulator-default.jpg */ "./resources/assets/images/simulators/simulator-default.jpg").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/lower_boddy_calf.jpg */ "./resources/assets/images/simulators/lower_boddy_calf.jpg").default
       }, {
         id: 12,
         direction: "lower_boddy",
@@ -21354,7 +21378,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/simulators/ve
       }, {
         id: 24,
         direction: "multifunction_simulators",
-        link: __webpack_require__(/*! ../../assets/images/simulators/dual_adjustable_pulley.png */ "./resources/assets/images/simulators/dual_adjustable_pulley.png").default
+        link: __webpack_require__(/*! ../../assets/images/simulators/dual_adjustable_pulley.jpg */ "./resources/assets/images/simulators/dual_adjustable_pulley.jpg").default
       }, {
         id: 25,
         direction: "multifunction_simulators",
@@ -21488,7 +21512,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/simulators/ve
 
 
 var preloadedAssets = [__webpack_require__(/*! ../../assets/images/TeamG/Vladimir_Leskov.jpg */ "./resources/assets/images/TeamG/Vladimir_Leskov.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Depeshko.jpg */ "./resources/assets/images/TeamG/Olga_Depeshko.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Martsenyuk.jpg */ "./resources/assets/images/TeamG/Olga_Martsenyuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Mikhail_Galagan.jpg */ "./resources/assets/images/TeamG/Mikhail_Galagan.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Osadchuk.jpg */ "./resources/assets/images/TeamG/Olga_Osadchuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/valentine.jpg */ "./resources/assets/images/TeamG/valentine.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Melnyk_Serhiy.jpg */ "./resources/assets/images/TeamG/Melnyk_Serhiy.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olena_Semenchuk.jpg */ "./resources/assets/images/TeamG/Olena_Semenchuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Nechko_Vasil.jpg */ "./resources/assets/images/TeamG/Nechko_Vasil.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Gornushkina_Julia.jpg */ "./resources/assets/images/TeamG/Gornushkina_Julia.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Dementieva_Elena.jpg */ "./resources/assets/images/TeamG/Dementieva_Elena.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/image-not-found.jpg */ "./resources/assets/images/TeamG/image-not-found.jpg").default];
-var preloadedVideo = [__webpack_require__(/*! ../../assets/video/Vladimir_Leskov.MOV */ "./resources/assets/video/Vladimir_Leskov.MOV").default, __webpack_require__(/*! ../../assets/video/Olga_Depeshko.MOV */ "./resources/assets/video/Olga_Depeshko.MOV").default, __webpack_require__(/*! ../../assets/video/Olga_Martsenyuk.MOV */ "./resources/assets/video/Olga_Martsenyuk.MOV").default, __webpack_require__(/*! ../../assets/video/Mikhail_Galagan.MOV */ "./resources/assets/video/Mikhail_Galagan.MOV").default, __webpack_require__(/*! ../../assets/video/Olga_Osadchuk.MOV */ "./resources/assets/video/Olga_Osadchuk.MOV").default, __webpack_require__(/*! ../../assets/video/valentine.MOV */ "./resources/assets/video/valentine.MOV").default, __webpack_require__(/*! ../../assets/video/Melnyk_Serhiy.MOV */ "./resources/assets/video/Melnyk_Serhiy.MOV").default, __webpack_require__(/*! ../../assets/video/Olena_Semenchuk.MOV */ "./resources/assets/video/Olena_Semenchuk.MOV").default, __webpack_require__(/*! ../../assets/video/Nechko_Vasil.MOV */ "./resources/assets/video/Nechko_Vasil.MOV").default, __webpack_require__(/*! ../../assets/video/Gornushkina_Julia.MOV */ "./resources/assets/video/Gornushkina_Julia.MOV").default];
+var preloadedVideo = ['Vladimir_Leskov.MOV', 'Olga_Depeshko.MOV', 'Olga_Martsenyuk.MOV', 'Mikhail_Galagan.MOV', 'Olga_Osadchuk.MOV', 'valentine.MOV', 'Melnyk_Serhiy.MOV', 'Olena_Semenchuk.MOV', 'Nechko_Vasil.MOV', 'Gornushkina_Julia.MOV'];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   emits: ['changeOpen'],
   data: function data() {
@@ -21548,7 +21572,7 @@ var preloadedVideo = [__webpack_require__(/*! ../../assets/video/Vladimir_Leskov
   },
   mounted: function mounted() {
     preloadedVideo.map(function (urlVideo) {
-      return (0,_utils_js__WEBPACK_IMPORTED_MODULE_4__.preloadLink)(urlVideo, 'video');
+      return (0,_utils_js__WEBPACK_IMPORTED_MODULE_4__.preloadLinkVideo)(urlVideo, 'video');
     });
   },
   methods: {
@@ -22768,7 +22792,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
         }, ["exact"]), ["esc"]))]
       }, [_hoisted_3], 544
       /* HYDRATE_EVENTS, NEED_PATCH */
-      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\r\n          <a\r\n            href=\"#\"\r\n            @click.prevent=\"setLocale('ru')\"\r\n            @keydown.shift.tab=\"focusPrevious(false)\"\r\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\r\n            @keydown.down.exact.prevent=\"\"\r\n            @keydown.tab.exact=\"hideDropdown\"\r\n            @keydown.esc.exact=\"hideDropdown\"\r\n          >\r\n            <span>RU</span>\r\n          </a>\r\n        </li> ")], 512
+      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\n          <a\n            href=\"#\"\n            @click.prevent=\"setLocale('ru')\"\n            @keydown.shift.tab=\"focusPrevious(false)\"\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\n            @keydown.down.exact.prevent=\"\"\n            @keydown.tab.exact=\"hideDropdown\"\n            @keydown.esc.exact=\"hideDropdown\"\n          >\n            <span>RU</span>\n          </a>\n        </li> ")], 512
       /* NEED_PATCH */
       )), [[_directive_click_away, $options.hideDropdown]]) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
@@ -22883,13 +22907,11 @@ var _hoisted_1 = {
   "class": "main-menu-b"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Наша команда");
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
-
-var _hoisted_5 = {
+var _hoisted_4 = {
   "class": "navigation-mobile"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -22898,7 +22920,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_NavigationMobile = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("NavigationMobile");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("ul", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/main-b"
+    to: "/price-b"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_2];
@@ -22907,7 +22929,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     /* STABLE */
 
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/price-b"
+    to: "/contacts-b"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_3];
@@ -22915,16 +22937,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/contacts-b"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_4];
-    }),
-    _: 1
-    /* STABLE */
-
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)])]);
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)])]);
 }
 
 /***/ }),
@@ -22945,19 +22958,17 @@ var _hoisted_1 = {
   "class": "main-menu-mobile"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Наша команда");
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
-
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "address-mobile"
 }, "ТСК “МАГІГРАНД”, вул. Келецька, 78В", -1
 /* HOISTED */
 );
 
-var _hoisted_6 = {
+var _hoisted_5 = {
   style: {
     "padding": "26px"
   }
@@ -22975,7 +22986,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $data.modalOpen = true;
     })
   }, "Записатися"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/main-b"
+    to: "/price-b"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_2];
@@ -22984,7 +22995,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     /* STABLE */
 
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/price-b"
+    to: "/contacts-b"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_3];
@@ -22992,16 +23003,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/contacts-b"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_4];
-    }),
-    _: 1
-    /* STABLE */
-
-  })])]), _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
+  })])]), _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
     to: "body"
   }, [$data.modalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_MakeOrderPopup, {
     key: 0,
@@ -24043,28 +24045,26 @@ var _hoisted_11 = {
   "class": "line-2"
 };
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Наша команда");
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
 
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
-
-var _hoisted_15 = {
+var _hoisted_14 = {
   key: 2,
   "class": "line-2"
 };
 
-var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Про нас");
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Про нас");
 
-var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Послуги");
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Послуги");
 
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
 
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("hr", null, null, -1
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("hr", null, null, -1
 /* HOISTED */
 );
 
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "line-3"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "text-1"
@@ -24141,7 +24141,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.$root.$data.area == 'b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "link-1",
-    to: "/main-b"
+    to: "/price-b"
   }, {
     "default": _withId(function () {
       return [_hoisted_12];
@@ -24151,7 +24151,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "link-1",
-    to: "/price-b"
+    to: "/contacts-b"
   }, {
     "default": _withId(function () {
       return [_hoisted_13];
@@ -24159,22 +24159,12 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     _: 1
     /* STABLE */
 
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    "class": "link-1",
-    to: "/contacts-b"
-  }, {
-    "default": _withId(function () {
-      return [_hoisted_14];
-    }),
-    _: 1
-    /* STABLE */
-
-  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.$root.$data.area == 's' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.$root.$data.area == 's' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "link-1",
     to: "/about-us-s"
   }, {
     "default": _withId(function () {
-      return [_hoisted_16];
+      return [_hoisted_15];
     }),
     _: 1
     /* STABLE */
@@ -24184,7 +24174,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     to: "/areas-s"
   }, {
     "default": _withId(function () {
-      return [_hoisted_17];
+      return [_hoisted_16];
     }),
     _: 1
     /* STABLE */
@@ -24194,12 +24184,12 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     to: "/contacts-s"
   }, {
     "default": _withId(function () {
-      return [_hoisted_18];
+      return [_hoisted_17];
     }),
     _: 1
     /* STABLE */
 
-  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_19, _hoisted_20]);
+  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_18, _hoisted_19]);
 });
 
 /***/ }),
@@ -24968,7 +24958,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     src: $options.area.imageUrl
   }, null, 8
   /* PROPS */
-  , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"gallery-slider\">\r\n        <GallerySlider :images=\"gallery\" />\r\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+  , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"gallery-slider\">\n        <GallerySlider :images=\"gallery\" />\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $data.isMakeOrderPopupOpen = true;
     })
@@ -26929,15 +26919,23 @@ var i18n = (0,vue_i18n__WEBPACK_IMPORTED_MODULE_2__.createI18n)({
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "preloadLink": () => (/* binding */ preloadLink)
+/* harmony export */   "preloadLink": () => (/* binding */ preloadLink),
+/* harmony export */   "preloadLinkVideo": () => (/* binding */ preloadLinkVideo)
 /* harmony export */ });
 var preloadLink = function preloadLink(url, type) {
   var preloadLink = document.createElement("link");
-  preloadLink.href = url;
+  preloadLink.href = __webpack_require__("./resources/assets sync recursive ^\\.\\/.*$")("./".concat(url))["default"];
+  ;
   preloadLink.rel = "preload";
   preloadLink.as = type;
-  preloadLink.type = "".concat(type, "/mov");
   document.head.appendChild(preloadLink);
+};
+var preloadLinkVideo = function preloadLinkVideo(url, type) {
+  var preloadVideo = document.createElement("link");
+  preloadVideo.href = __webpack_require__("./resources/assets/video sync recursive ^\\.\\/.*$")("./".concat(url))["default"];
+  preloadVideo.rel = "prefetch";
+  preloadVideo.as = type;
+  document.head.appendChild(preloadVideo);
 };
 
 /***/ }),
@@ -28692,6 +28690,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -28706,6 +28705,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -28720,6 +28720,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -28734,6 +28735,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -28748,6 +28750,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -28762,10 +28765,11 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?736193b044696161e2a6e9f91539c73e");
 
 /***/ }),
 
@@ -28776,6 +28780,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -28790,10 +28795,11 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?df90caa4b4466fae2999be366ce12b13");
 
 /***/ }),
 
@@ -28804,6 +28810,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -28818,10 +28825,11 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?d94603bf7c6c5c4b24c3e6245db8ea26");
 
 /***/ }),
 
@@ -28832,6 +28840,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -28846,6 +28855,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -28860,6 +28870,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -28874,10 +28885,26 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slide-3.png?ac93e962dc4d5fb898052049d06cba32");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/Shiseido_logo_red.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/Shiseido_logo_red.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Shiseido_logo_red.jpg?e7f1dafae04fe6ecfe7a374dbba38b4b");
 
 /***/ }),
 
@@ -28888,10 +28915,56 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/academie.jpg?3c3538fa0d91b8c7154758bc45045390");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/american_crew.jpg":
+/*!*********************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/american_crew.jpg ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/american_crew.jpg?dc143b1e72497b25f530fb6b65ab31a9");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/clarins.jpg":
+/*!***************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/clarins.jpg ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/clarins.jpg?a2fea8110f016f313b060ceb0490f4c2");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/depot.jpg":
+/*!*************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/depot.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/depot.jpg?9c71f5bb97f74026c66056a28e79ae5b");
 
 /***/ }),
 
@@ -28902,10 +28975,101 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/dior.jpg?f49016481ae4b4316e231de3857e1220");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/helena.jpg":
+/*!**************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/helena.jpg ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/helena.jpg?f9a396d2af6fb5f07059f96bf4e43adf");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/holy-land-logo-8.jpg":
+/*!************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/holy-land-logo-8.jpg ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/holy-land-logo-8.jpg?1fca168e9468b1bff303159bd6171248");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/kerastase-vector-logo.jpg":
+/*!*****************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/kerastase-vector-logo.jpg ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/kerastase-vector-logo.jpg?0bac8f7fd5083d65c275a5e38d19197d");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/lancome_paris.jpg":
+/*!*********************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/lancome_paris.jpg ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/lancome_paris.jpg?5eaa351ff38f840d8ea3ffd0fd493d14");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/lebel_Logo.jpg":
+/*!******************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/lebel_Logo.jpg ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/lebel_Logo.jpg?d6ce6636bd3fc5c0a712d8e8e71e3da7");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/logo_black.jpg":
+/*!******************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/logo_black.jpg ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo_black.jpg?ff9146466fcfd730292fa6dafd52490e");
 
 /***/ }),
 
@@ -28916,10 +29080,71 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/loreal.jpg?46dd6018308b41d956ef9d66c3074fe6");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/luxio.jpg":
+/*!*************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/luxio.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/luxio.jpg?60d2d4cccc4e7f913ed482c9e3f965a7");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/napura_black.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/napura_black.jpg ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/napura_black.jpg?b4ac50bddf8820c32bc3cd8d77085ccc");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg":
+/*!*******************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/semilac-logo-super_nowe.jpg?2d861a0e8fb9891194dfa5368d455583");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/yonka.jpg":
+/*!*************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/yonka.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/yonka.jpg?f3b2fc4bf40ceee1fd33c820bf6e4dc8");
 
 /***/ }),
 
@@ -28930,6 +29155,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -28944,6 +29170,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -28958,6 +29185,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -28972,6 +29200,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -28986,6 +29215,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29000,6 +29230,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29014,6 +29245,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29028,6 +29260,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29042,6 +29275,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29056,6 +29290,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29070,6 +29305,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29084,6 +29320,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29098,6 +29335,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29112,6 +29350,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29126,6 +29365,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29140,6 +29380,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29154,6 +29395,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29168,6 +29410,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29182,6 +29425,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29196,6 +29440,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29210,6 +29455,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29224,6 +29470,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29238,6 +29485,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29252,6 +29500,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29266,6 +29515,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29280,6 +29530,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29294,6 +29545,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29308,6 +29560,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29322,6 +29575,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29336,6 +29590,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29350,10 +29605,26 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/valentine.jpg?462e2c074e3f6930a27258da98c59dd6");
+
+/***/ }),
+
+/***/ "./resources/assets/images/about-g-water-text.svg":
+/*!********************************************************!*\
+  !*** ./resources/assets/images/about-g-water-text.svg ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/about-g-water-text.svg?59919db3211551399f10fbf94a2c4535");
 
 /***/ }),
 
@@ -29364,6 +29635,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29378,6 +29650,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29392,6 +29665,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29406,6 +29680,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29420,6 +29695,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29434,6 +29710,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29448,6 +29725,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29462,6 +29740,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29476,6 +29755,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29490,6 +29770,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29504,6 +29785,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29518,6 +29800,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29532,6 +29815,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29546,6 +29830,7 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29560,10 +29845,26 @@ var scroll = shortcut('scroll');
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slide3.jpg?e0a0f807c8721cd46ad01dcae257a4ce");
+
+/***/ }),
+
+/***/ "./resources/assets/images/arrow-right-1.svg":
+/*!***************************************************!*\
+  !*** ./resources/assets/images/arrow-right-1.svg ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-1.svg?a18360f468d3079143521a1c7e960c84");
 
 /***/ }),
 
@@ -29582,6 +29883,36 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/b-level-change.svg":
+/*!****************************************************!*\
+  !*** ./resources/assets/images/b-level-change.svg ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-change.svg?b200de3d792593e3ee430599f1879714");
+
+/***/ }),
+
+/***/ "./resources/assets/images/b-level-darck.svg":
+/*!***************************************************!*\
+  !*** ./resources/assets/images/b-level-darck.svg ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-darck.svg?34d3246fd5f28f54932080e9c8429771");
+
+/***/ }),
+
 /***/ "./resources/assets/images/b-level-link.svg":
 /*!**************************************************!*\
   !*** ./resources/assets/images/b-level-link.svg ***!
@@ -29589,10 +29920,11 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-link.svg?938210241c158bd8542a7f8b28d672cd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-link.svg?c48b740a3620a8a51bcc05ebe5253bdb");
 
 /***/ }),
 
@@ -29607,7 +29939,82 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?02bae0682140f88722059abfc0376dc1");
+
+/***/ }),
+
+/***/ "./resources/assets/images/btn-slider-next.svg":
+/*!*****************************************************!*\
+  !*** ./resources/assets/images/btn-slider-next.svg ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/btn-slider-next.svg?9d7a5909b0b5b1bfa38abc497852d845");
+
+/***/ }),
+
+/***/ "./resources/assets/images/btn-slider-prev.svg":
+/*!*****************************************************!*\
+  !*** ./resources/assets/images/btn-slider-prev.svg ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/btn-slider-prev.svg?76e6b361267d549044081690d829ecfd");
+
+/***/ }),
+
+/***/ "./resources/assets/images/close.svg":
+/*!*******************************************!*\
+  !*** ./resources/assets/images/close.svg ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/close.svg?2855e6317fe0e97b677566f1ee2fba5b");
+
+/***/ }),
+
+/***/ "./resources/assets/images/design-logo.svg":
+/*!*************************************************!*\
+  !*** ./resources/assets/images/design-logo.svg ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/design-logo.svg?602aba4728f7af6bc0c0ddbc09c50601");
+
+/***/ }),
+
+/***/ "./resources/assets/images/facebook.svg":
+/*!**********************************************!*\
+  !*** ./resources/assets/images/facebook.svg ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebook.svg?b7485c04d1d306c6218574a3ac8af002");
 
 /***/ }),
 
@@ -29618,10 +30025,11 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebookGold.svg?2ef6ec7b557d1537f9b550eba23e8d1f");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebookGold.svg?a27e5b4dde3c6d3ecf3f28f59983b62d");
 
 /***/ }),
 
@@ -29640,6 +30048,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/g-level-darck.svg":
+/*!***************************************************!*\
+  !*** ./resources/assets/images/g-level-darck.svg ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-darck.svg?b12f10e8b0ef5b7d9921289b7942c945");
+
+/***/ }),
+
 /***/ "./resources/assets/images/g-level-link.svg":
 /*!**************************************************!*\
   !*** ./resources/assets/images/g-level-link.svg ***!
@@ -29647,10 +30070,11 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-link.svg?fd94afd0b003f21a26d254ee80e958f2");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-link.svg?b4a59adf52665650c8ae64f9444650cd");
 
 /***/ }),
 
@@ -29665,7 +30089,67 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?4322557835a36f1758bad92f49d6dca9");
+
+/***/ }),
+
+/***/ "./resources/assets/images/hanger.svg":
+/*!********************************************!*\
+  !*** ./resources/assets/images/hanger.svg ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/hanger.svg?8aa6a3d14ddcb8da6a504dfce9035c61");
+
+/***/ }),
+
+/***/ "./resources/assets/images/heart-beat.svg":
+/*!************************************************!*\
+  !*** ./resources/assets/images/heart-beat.svg ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/heart-beat.svg?ce895dcb58d414e16ff75e83f4cbc96e");
+
+/***/ }),
+
+/***/ "./resources/assets/images/info.svg":
+/*!******************************************!*\
+  !*** ./resources/assets/images/info.svg ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/info.svg?6c9484336357a780fd96bcef5a715b14");
+
+/***/ }),
+
+/***/ "./resources/assets/images/instagram.svg":
+/*!***********************************************!*\
+  !*** ./resources/assets/images/instagram.svg ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagram.svg?63a0b3819ce60d3152e6007738817613");
 
 /***/ }),
 
@@ -29676,10 +30160,11 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagramGold.svg?56cb837170980da00a05c5fdaf2eee66");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagramGold.svg?5841637642267db63a3c458114907398");
 
 /***/ }),
 
@@ -29690,10 +30175,26 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-b-background.jpg?247dccb7382a8d4915d6de3ebe2b5a57");
+
+/***/ }),
+
+/***/ "./resources/assets/images/main-b-water-text-top.svg":
+/*!***********************************************************!*\
+  !*** ./resources/assets/images/main-b-water-text-top.svg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-b-water-text-top.svg?e4051e4c2d0b3be44d04b4586d2b2f54");
 
 /***/ }),
 
@@ -29704,10 +30205,71 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-background.jpg?c720e79bba05967c659436198b9b4c6d");
+
+/***/ }),
+
+/***/ "./resources/assets/images/main-g-our-team-water-text.svg":
+/*!****************************************************************!*\
+  !*** ./resources/assets/images/main-g-our-team-water-text.svg ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-our-team-water-text.svg?b3bc1a5b892346aba7f4f498b479dd63");
+
+/***/ }),
+
+/***/ "./resources/assets/images/main-g-techno-gym-background-320.jpg":
+/*!**********************************************************************!*\
+  !*** ./resources/assets/images/main-g-techno-gym-background-320.jpg ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-techno-gym-background-320.jpg?888c594a09dda61bb684777c8049e5f2");
+
+/***/ }),
+
+/***/ "./resources/assets/images/main-g-techno-gym-background.jpg":
+/*!******************************************************************!*\
+  !*** ./resources/assets/images/main-g-techno-gym-background.jpg ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-techno-gym-background.jpg?1fabe1287886188bc3e69aff0f9ded4a");
+
+/***/ }),
+
+/***/ "./resources/assets/images/main-g-water-text.svg":
+/*!*******************************************************!*\
+  !*** ./resources/assets/images/main-g-water-text.svg ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-water-text.svg?6ee2cadd0d229a2a8feead3efd3f7472");
 
 /***/ }),
 
@@ -29718,6 +30280,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29732,6 +30295,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29746,6 +30310,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29760,6 +30325,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29774,6 +30340,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29788,6 +30355,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29802,10 +30370,101 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/foto-6.jpg?d118b547bc7c1ec70256d4ea6b981731");
+
+/***/ }),
+
+/***/ "./resources/assets/images/marker.svg":
+/*!********************************************!*\
+  !*** ./resources/assets/images/marker.svg ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/marker.svg?7ff292b43387a63ea9de772f34f75cfa");
+
+/***/ }),
+
+/***/ "./resources/assets/images/menu-close-white.svg":
+/*!******************************************************!*\
+  !*** ./resources/assets/images/menu-close-white.svg ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/menu-close-white.svg?91bd8bef07d7e63dd1e6c4e7b4778c75");
+
+/***/ }),
+
+/***/ "./resources/assets/images/menu-close.svg":
+/*!************************************************!*\
+  !*** ./resources/assets/images/menu-close.svg ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/menu-close.svg?6e815017a586c84708ae3b23a699da33");
+
+/***/ }),
+
+/***/ "./resources/assets/images/menu-open-gold.svg":
+/*!****************************************************!*\
+  !*** ./resources/assets/images/menu-open-gold.svg ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/menu-open-gold.svg?65e64eccc4460b4d0a9ee652f775717f");
+
+/***/ }),
+
+/***/ "./resources/assets/images/menu-open.svg":
+/*!***********************************************!*\
+  !*** ./resources/assets/images/menu-open.svg ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/menu-open.svg?761c80ccaf88f896e093367310cae5ba");
+
+/***/ }),
+
+/***/ "./resources/assets/images/phone-icon.svg":
+/*!************************************************!*\
+  !*** ./resources/assets/images/phone-icon.svg ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/phone-icon.svg?6606c30dc31d93744d33a398f4312050");
 
 /***/ }),
 
@@ -29816,10 +30475,26 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/popup-corner.svg?cc99813fe6ea6f302a16e7b4a4e1a7ae");
+
+/***/ }),
+
+/***/ "./resources/assets/images/rectangle-1.svg":
+/*!*************************************************!*\
+  !*** ./resources/assets/images/rectangle-1.svg ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/rectangle-1.svg?e5b6c711ae755c10eb619cde8698d8b8");
 
 /***/ }),
 
@@ -29838,6 +30513,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/s-level-darck.svg":
+/*!***************************************************!*\
+  !*** ./resources/assets/images/s-level-darck.svg ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-darck.svg?82ec9c9a7a09a0c71138a777fea8cffb");
+
+/***/ }),
+
 /***/ "./resources/assets/images/s-level-link.svg":
 /*!**************************************************!*\
   !*** ./resources/assets/images/s-level-link.svg ***!
@@ -29845,10 +30535,11 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-link.svg?973ebae533ed3dd52f602e3aad341150");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-link.svg?3b6f9f21a9fb0b985be3502ee31e6d0b");
 
 /***/ }),
 
@@ -29867,6 +30558,51 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/scroll.svg":
+/*!********************************************!*\
+  !*** ./resources/assets/images/scroll.svg ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/scroll.svg?88f80a994e4d7cebd13ede09ced32003");
+
+/***/ }),
+
+/***/ "./resources/assets/images/scrollTop.svg":
+/*!***********************************************!*\
+  !*** ./resources/assets/images/scrollTop.svg ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/scrollTop.svg?dd678c2f318cab793d32c6d2bad49b76");
+
+/***/ }),
+
+/***/ "./resources/assets/images/scrollTopPng.png":
+/*!**************************************************!*\
+  !*** ./resources/assets/images/scrollTopPng.png ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/scrollTopPng.png?cb1001f967a691a50327b2431c111d47");
+
+/***/ }),
+
 /***/ "./resources/assets/images/simulators/Linear_leg_press.jpg":
 /*!*****************************************************************!*\
   !*** ./resources/assets/images/simulators/Linear_leg_press.jpg ***!
@@ -29874,6 +30610,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29888,6 +30625,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29902,6 +30640,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29916,6 +30655,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29930,6 +30670,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29944,6 +30685,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29958,6 +30700,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29972,6 +30715,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -29979,17 +30723,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/images/simulators/dual_adjustable_pulley.png":
+/***/ "./resources/assets/images/simulators/dual_adjustable_pulley.jpg":
 /*!***********************************************************************!*\
-  !*** ./resources/assets/images/simulators/dual_adjustable_pulley.png ***!
+  !*** ./resources/assets/images/simulators/dual_adjustable_pulley.jpg ***!
   \***********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/dual_adjustable_pulley.png?16fa36697b4d3c1d834a84ec7e0d7ca9");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/dual_adjustable_pulley.jpg?73ffd30aef25c21821307cdf33309c49");
 
 /***/ }),
 
@@ -30000,6 +30745,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30014,6 +30760,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30028,10 +30775,11 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/group_cycle_connect.jpg?841e01cb594217472730085b67f84f71");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/group_cycle_connect.jpg?297ff0922abe0d40fd13985970ec4911");
 
 /***/ }),
 
@@ -30042,6 +30790,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30056,6 +30805,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30070,6 +30820,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30084,6 +30835,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30098,6 +30850,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30112,6 +30865,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30126,6 +30880,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30140,10 +30895,26 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/lower_back_bench.jpg?e7f1401ec67f0d6781742f3d2509807f");
+
+/***/ }),
+
+/***/ "./resources/assets/images/simulators/lower_boddy_calf.jpg":
+/*!*****************************************************************!*\
+  !*** ./resources/assets/images/simulators/lower_boddy_calf.jpg ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/lower_boddy_calf.jpg?af3b355ce28a097efab82003ef7f94a6");
 
 /***/ }),
 
@@ -30154,6 +30925,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30168,6 +30940,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30182,6 +30955,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30196,6 +30970,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30210,6 +30985,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30224,6 +31000,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30238,6 +31015,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30252,6 +31030,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30266,6 +31045,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30280,6 +31060,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30294,6 +31075,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30308,6 +31090,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30322,6 +31105,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30336,10 +31120,41 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/wide_chest_press.jpg?8985e8b84f61348a9c2d67998c88d173");
+
+/***/ }),
+
+/***/ "./resources/assets/images/skew-icon-1.svg":
+/*!*************************************************!*\
+  !*** ./resources/assets/images/skew-icon-1.svg ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/skew-icon-1.svg?f47d0ebf0fe32571ab3cf466ef5ecc18");
+
+/***/ }),
+
+/***/ "./resources/assets/images/smoothie.svg":
+/*!**********************************************!*\
+  !*** ./resources/assets/images/smoothie.svg ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/smoothie.svg?2b3ae712a572592f07b7363c93c65fa6");
 
 /***/ }),
 
@@ -30350,10 +31165,101 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/techno-gym-skew-images.png?d017b787a8ea36e006227962f4ea1731");
+
+/***/ }),
+
+/***/ "./resources/assets/images/technogym-logo-black.svg":
+/*!**********************************************************!*\
+  !*** ./resources/assets/images/technogym-logo-black.svg ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/technogym-logo-black.svg?41e9fcde23524c6f008c5c6aa677f53e");
+
+/***/ }),
+
+/***/ "./resources/assets/images/technogym-logo.svg":
+/*!****************************************************!*\
+  !*** ./resources/assets/images/technogym-logo.svg ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/technogym-logo.svg?b19c87b75ba105dc1de99317eb2b7c3e");
+
+/***/ }),
+
+/***/ "./resources/assets/images/trainers/valentin.jpg":
+/*!*******************************************************!*\
+  !*** ./resources/assets/images/trainers/valentin.jpg ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/valentin.jpg?462e2c074e3f6930a27258da98c59dd6");
+
+/***/ }),
+
+/***/ "./resources/assets/images/trainers/vitaliy.jpg":
+/*!******************************************************!*\
+  !*** ./resources/assets/images/trainers/vitaliy.jpg ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/vitaliy.jpg?e875b170685e131527563d89e2bed545");
+
+/***/ }),
+
+/***/ "./resources/assets/images/trainers/volodimir.jpg":
+/*!********************************************************!*\
+  !*** ./resources/assets/images/trainers/volodimir.jpg ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/volodimir.jpg?4f53d615a31de2a68ce1d25791293d32");
+
+/***/ }),
+
+/***/ "./resources/assets/images/trainers/yuliya.jpg":
+/*!*****************************************************!*\
+  !*** ./resources/assets/images/trainers/yuliya.jpg ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/yuliya.jpg?884a285096170cf1da75b932a0a957a1");
 
 /***/ }),
 
@@ -30364,10 +31270,41 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/warning.svg?83875f065e7638defea28c6ed7e64a48");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/warning.svg?67b5872f8674f66a316722b146cad9dc");
+
+/***/ }),
+
+/***/ "./resources/assets/images/youtube.svg":
+/*!*********************************************!*\
+  !*** ./resources/assets/images/youtube.svg ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/youtube.svg?1142378c070c1d6d4c4c76264aa458ab");
+
+/***/ }),
+
+/***/ "./resources/assets/images/zoom-img.svg":
+/*!**********************************************!*\
+  !*** ./resources/assets/images/zoom-img.svg ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/zoom-img.svg?a7b077eb6c87af5c6b383e8bb2e95e2b");
 
 /***/ }),
 
@@ -30378,6 +31315,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30392,6 +31330,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30406,6 +31345,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30420,6 +31360,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30434,6 +31375,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30448,6 +31390,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30462,6 +31405,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30476,6 +31420,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30490,6 +31435,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -30504,6 +31450,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -50033,6 +50980,263 @@ webpackContext.keys = function webpackContextKeys() {
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
 webpackContext.id = "./resources/assets/images sync recursive ^\\.\\/.*\\-level\\.svg$";
+
+/***/ }),
+
+/***/ "./resources/assets/video sync recursive ^\\.\\/.*$":
+/*!***********************************************!*\
+  !*** ./resources/assets/video/ sync ^\.\/.*$ ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./Gornushkina_Julia.MOV": "./resources/assets/video/Gornushkina_Julia.MOV",
+	"./Melnyk_Serhiy.MOV": "./resources/assets/video/Melnyk_Serhiy.MOV",
+	"./Mikhail_Galagan.MOV": "./resources/assets/video/Mikhail_Galagan.MOV",
+	"./Nechko_Vasil.MOV": "./resources/assets/video/Nechko_Vasil.MOV",
+	"./Olena_Semenchuk.MOV": "./resources/assets/video/Olena_Semenchuk.MOV",
+	"./Olga_Depeshko.MOV": "./resources/assets/video/Olga_Depeshko.MOV",
+	"./Olga_Martsenyuk.MOV": "./resources/assets/video/Olga_Martsenyuk.MOV",
+	"./Olga_Osadchuk.MOV": "./resources/assets/video/Olga_Osadchuk.MOV",
+	"./Vladimir_Leskov.MOV": "./resources/assets/video/Vladimir_Leskov.MOV",
+	"./valentine.MOV": "./resources/assets/video/valentine.MOV"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./resources/assets/video sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
+/***/ "./resources/assets sync recursive ^\\.\\/.*$":
+/*!*****************************************!*\
+  !*** ./resources/assets/ sync ^\.\/.*$ ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./feedBackFormView/background-b.png": "./resources/assets/feedBackFormView/background-b.png",
+	"./feedBackFormView/background-g.png": "./resources/assets/feedBackFormView/background-g.png",
+	"./feedBackFormView/background-s.png": "./resources/assets/feedBackFormView/background-s.png",
+	"./homeView/arrow-right-hover.svg": "./resources/assets/homeView/arrow-right-hover.svg",
+	"./homeView/arrow-right.svg": "./resources/assets/homeView/arrow-right.svg",
+	"./homeView/b-level-title-active.svg": "./resources/assets/homeView/b-level-title-active.svg",
+	"./homeView/b-level-title.svg": "./resources/assets/homeView/b-level-title.svg",
+	"./homeView/g-level-title-active.svg": "./resources/assets/homeView/g-level-title-active.svg",
+	"./homeView/g-level-title.svg": "./resources/assets/homeView/g-level-title.svg",
+	"./homeView/s-level-title-active.svg": "./resources/assets/homeView/s-level-title-active.svg",
+	"./homeView/s-level-title.svg": "./resources/assets/homeView/s-level-title.svg",
+	"./homeView/slide-1.png": "./resources/assets/homeView/slide-1.png",
+	"./homeView/slide-2.png": "./resources/assets/homeView/slide-2.png",
+	"./homeView/slide-3.png": "./resources/assets/homeView/slide-3.png",
+	"./images/TeamB/brandMakeUp/Shiseido_logo_red.jpg": "./resources/assets/images/TeamB/brandMakeUp/Shiseido_logo_red.jpg",
+	"./images/TeamB/brandMakeUp/academie.jpg": "./resources/assets/images/TeamB/brandMakeUp/academie.jpg",
+	"./images/TeamB/brandMakeUp/american_crew.jpg": "./resources/assets/images/TeamB/brandMakeUp/american_crew.jpg",
+	"./images/TeamB/brandMakeUp/clarins.jpg": "./resources/assets/images/TeamB/brandMakeUp/clarins.jpg",
+	"./images/TeamB/brandMakeUp/depot.jpg": "./resources/assets/images/TeamB/brandMakeUp/depot.jpg",
+	"./images/TeamB/brandMakeUp/dior.jpg": "./resources/assets/images/TeamB/brandMakeUp/dior.jpg",
+	"./images/TeamB/brandMakeUp/helena.jpg": "./resources/assets/images/TeamB/brandMakeUp/helena.jpg",
+	"./images/TeamB/brandMakeUp/holy-land-logo-8.jpg": "./resources/assets/images/TeamB/brandMakeUp/holy-land-logo-8.jpg",
+	"./images/TeamB/brandMakeUp/kerastase-vector-logo.jpg": "./resources/assets/images/TeamB/brandMakeUp/kerastase-vector-logo.jpg",
+	"./images/TeamB/brandMakeUp/lancome_paris.jpg": "./resources/assets/images/TeamB/brandMakeUp/lancome_paris.jpg",
+	"./images/TeamB/brandMakeUp/lebel_Logo.jpg": "./resources/assets/images/TeamB/brandMakeUp/lebel_Logo.jpg",
+	"./images/TeamB/brandMakeUp/logo_black.jpg": "./resources/assets/images/TeamB/brandMakeUp/logo_black.jpg",
+	"./images/TeamB/brandMakeUp/loreal.jpg": "./resources/assets/images/TeamB/brandMakeUp/loreal.jpg",
+	"./images/TeamB/brandMakeUp/luxio.jpg": "./resources/assets/images/TeamB/brandMakeUp/luxio.jpg",
+	"./images/TeamB/brandMakeUp/napura_black.jpg": "./resources/assets/images/TeamB/brandMakeUp/napura_black.jpg",
+	"./images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg": "./resources/assets/images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg",
+	"./images/TeamB/brandMakeUp/yonka.jpg": "./resources/assets/images/TeamB/brandMakeUp/yonka.jpg",
+	"./images/TeamB/gallery/photo-1.jpg": "./resources/assets/images/TeamB/gallery/photo-1.jpg",
+	"./images/TeamB/gallery/photo-2.jpg": "./resources/assets/images/TeamB/gallery/photo-2.jpg",
+	"./images/TeamB/gallery/photo-3.jpg": "./resources/assets/images/TeamB/gallery/photo-3.jpg",
+	"./images/TeamG/Dementieva_Elena.jpg": "./resources/assets/images/TeamG/Dementieva_Elena.jpg",
+	"./images/TeamG/Gornushkina_Julia.jpg": "./resources/assets/images/TeamG/Gornushkina_Julia.jpg",
+	"./images/TeamG/Melnyk_Serhiy.jpg": "./resources/assets/images/TeamG/Melnyk_Serhiy.jpg",
+	"./images/TeamG/Mikhail_Galagan.jpg": "./resources/assets/images/TeamG/Mikhail_Galagan.jpg",
+	"./images/TeamG/Nechko_Vasil.jpg": "./resources/assets/images/TeamG/Nechko_Vasil.jpg",
+	"./images/TeamG/Olena_Semenchuk.jpg": "./resources/assets/images/TeamG/Olena_Semenchuk.jpg",
+	"./images/TeamG/Olga_Depeshko.jpg": "./resources/assets/images/TeamG/Olga_Depeshko.jpg",
+	"./images/TeamG/Olga_Martsenyuk.jpg": "./resources/assets/images/TeamG/Olga_Martsenyuk.jpg",
+	"./images/TeamG/Olga_Osadchuk.jpg": "./resources/assets/images/TeamG/Olga_Osadchuk.jpg",
+	"./images/TeamG/Vladimir_Leskov.jpg": "./resources/assets/images/TeamG/Vladimir_Leskov.jpg",
+	"./images/TeamG/certificate/certificate1.png": "./resources/assets/images/TeamG/certificate/certificate1.png",
+	"./images/TeamG/certificate/certificate2.png": "./resources/assets/images/TeamG/certificate/certificate2.png",
+	"./images/TeamG/certificate/certificate3.png": "./resources/assets/images/TeamG/certificate/certificate3.png",
+	"./images/TeamG/gallery/IMG_1540-1_370x370.jpg": "./resources/assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg",
+	"./images/TeamG/gallery/IMG_1548-1_370x370.jpg": "./resources/assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg",
+	"./images/TeamG/gallery/IMG_1620-1_370x370.jpg": "./resources/assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg",
+	"./images/TeamG/gallery/IMG_1627-1_370x370.jpg": "./resources/assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg",
+	"./images/TeamG/gallery/IMG_1635-1_370x370.jpg": "./resources/assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg",
+	"./images/TeamG/gallery/IMG_4574_370x370.jpg": "./resources/assets/images/TeamG/gallery/IMG_4574_370x370.jpg",
+	"./images/TeamG/gallery/IMG_4583_370x370.jpg": "./resources/assets/images/TeamG/gallery/IMG_4583_370x370.jpg",
+	"./images/TeamG/gallery/IMG_4595_370x370.jpg": "./resources/assets/images/TeamG/gallery/IMG_4595_370x370.jpg",
+	"./images/TeamG/gallery/IMG_4608_370x370.jpg": "./resources/assets/images/TeamG/gallery/IMG_4608_370x370.jpg",
+	"./images/TeamG/gallery/IMG_4614_370x370.jpg": "./resources/assets/images/TeamG/gallery/IMG_4614_370x370.jpg",
+	"./images/TeamG/image-not-found.jpg": "./resources/assets/images/TeamG/image-not-found.jpg",
+	"./images/TeamG/tickets/level1.png": "./resources/assets/images/TeamG/tickets/level1.png",
+	"./images/TeamG/tickets/level2.png": "./resources/assets/images/TeamG/tickets/level2.png",
+	"./images/TeamG/tickets/level3.png": "./resources/assets/images/TeamG/tickets/level3.png",
+	"./images/TeamG/valentine.jpg": "./resources/assets/images/TeamG/valentine.jpg",
+	"./images/about-g-water-text.svg": "./resources/assets/images/about-g-water-text.svg",
+	"./images/aboutUs-b-main.jpg": "./resources/assets/images/aboutUs-b-main.jpg",
+	"./images/aboutUs-g-main.jpg": "./resources/assets/images/aboutUs-g-main.jpg",
+	"./images/areas-s/area-s-1.jpg": "./resources/assets/images/areas-s/area-s-1.jpg",
+	"./images/areas-s/area-s-2.jpg": "./resources/assets/images/areas-s/area-s-2.jpg",
+	"./images/areas-s/area-s-3.jpg": "./resources/assets/images/areas-s/area-s-3.jpg",
+	"./images/areas-s/area-s-4.jpg": "./resources/assets/images/areas-s/area-s-4.jpg",
+	"./images/areas-s/area-s-5.jpg": "./resources/assets/images/areas-s/area-s-5.jpg",
+	"./images/areas-s/area-s-6.jpg": "./resources/assets/images/areas-s/area-s-6.jpg",
+	"./images/areas/area-1-g.jpg": "./resources/assets/images/areas/area-1-g.jpg",
+	"./images/areas/area-2-g.jpg": "./resources/assets/images/areas/area-2-g.jpg",
+	"./images/areas/area-3-g.jpg": "./resources/assets/images/areas/area-3-g.jpg",
+	"./images/areas/area-4-g.jpg": "./resources/assets/images/areas/area-4-g.jpg",
+	"./images/areas/slider/slide1.jpg": "./resources/assets/images/areas/slider/slide1.jpg",
+	"./images/areas/slider/slide2.jpg": "./resources/assets/images/areas/slider/slide2.jpg",
+	"./images/areas/slider/slide3.jpg": "./resources/assets/images/areas/slider/slide3.jpg",
+	"./images/arrow-right-1.svg": "./resources/assets/images/arrow-right-1.svg",
+	"./images/b-lavel-inactive.svg": "./resources/assets/images/b-lavel-inactive.svg",
+	"./images/b-level-change.svg": "./resources/assets/images/b-level-change.svg",
+	"./images/b-level-darck.svg": "./resources/assets/images/b-level-darck.svg",
+	"./images/b-level-link.svg": "./resources/assets/images/b-level-link.svg",
+	"./images/b-level.svg": "./resources/assets/images/b-level.svg",
+	"./images/btn-slider-next.svg": "./resources/assets/images/btn-slider-next.svg",
+	"./images/btn-slider-prev.svg": "./resources/assets/images/btn-slider-prev.svg",
+	"./images/close.svg": "./resources/assets/images/close.svg",
+	"./images/design-logo.svg": "./resources/assets/images/design-logo.svg",
+	"./images/facebook.svg": "./resources/assets/images/facebook.svg",
+	"./images/facebookGold.svg": "./resources/assets/images/facebookGold.svg",
+	"./images/g-lavel-inactive.svg": "./resources/assets/images/g-lavel-inactive.svg",
+	"./images/g-level-darck.svg": "./resources/assets/images/g-level-darck.svg",
+	"./images/g-level-link.svg": "./resources/assets/images/g-level-link.svg",
+	"./images/g-level.svg": "./resources/assets/images/g-level.svg",
+	"./images/hanger.svg": "./resources/assets/images/hanger.svg",
+	"./images/heart-beat.svg": "./resources/assets/images/heart-beat.svg",
+	"./images/info.svg": "./resources/assets/images/info.svg",
+	"./images/instagram.svg": "./resources/assets/images/instagram.svg",
+	"./images/instagramGold.svg": "./resources/assets/images/instagramGold.svg",
+	"./images/main-b-background.jpg": "./resources/assets/images/main-b-background.jpg",
+	"./images/main-b-water-text-top.svg": "./resources/assets/images/main-b-water-text-top.svg",
+	"./images/main-g-background.jpg": "./resources/assets/images/main-g-background.jpg",
+	"./images/main-g-our-team-water-text.svg": "./resources/assets/images/main-g-our-team-water-text.svg",
+	"./images/main-g-techno-gym-background-320.jpg": "./resources/assets/images/main-g-techno-gym-background-320.jpg",
+	"./images/main-g-techno-gym-background.jpg": "./resources/assets/images/main-g-techno-gym-background.jpg",
+	"./images/main-g-water-text.svg": "./resources/assets/images/main-g-water-text.svg",
+	"./images/main-s-background.jpg": "./resources/assets/images/main-s-background.jpg",
+	"./images/main-s/foto-1.jpg": "./resources/assets/images/main-s/foto-1.jpg",
+	"./images/main-s/foto-2.jpg": "./resources/assets/images/main-s/foto-2.jpg",
+	"./images/main-s/foto-3.jpg": "./resources/assets/images/main-s/foto-3.jpg",
+	"./images/main-s/foto-4.jpg": "./resources/assets/images/main-s/foto-4.jpg",
+	"./images/main-s/foto-5.jpg": "./resources/assets/images/main-s/foto-5.jpg",
+	"./images/main-s/foto-6.jpg": "./resources/assets/images/main-s/foto-6.jpg",
+	"./images/marker.svg": "./resources/assets/images/marker.svg",
+	"./images/menu-close-white.svg": "./resources/assets/images/menu-close-white.svg",
+	"./images/menu-close.svg": "./resources/assets/images/menu-close.svg",
+	"./images/menu-open-gold.svg": "./resources/assets/images/menu-open-gold.svg",
+	"./images/menu-open.svg": "./resources/assets/images/menu-open.svg",
+	"./images/phone-icon.svg": "./resources/assets/images/phone-icon.svg",
+	"./images/popup-corner.svg": "./resources/assets/images/popup-corner.svg",
+	"./images/rectangle-1.svg": "./resources/assets/images/rectangle-1.svg",
+	"./images/s-lavel-inactive.svg": "./resources/assets/images/s-lavel-inactive.svg",
+	"./images/s-level-darck.svg": "./resources/assets/images/s-level-darck.svg",
+	"./images/s-level-link.svg": "./resources/assets/images/s-level-link.svg",
+	"./images/s-level.svg": "./resources/assets/images/s-level.svg",
+	"./images/scroll.svg": "./resources/assets/images/scroll.svg",
+	"./images/scrollTop.svg": "./resources/assets/images/scrollTop.svg",
+	"./images/scrollTopPng.png": "./resources/assets/images/scrollTopPng.png",
+	"./images/simulators/Linear_leg_press.jpg": "./resources/assets/images/simulators/Linear_leg_press.jpg",
+	"./images/simulators/adjustable_bench.jpg": "./resources/assets/images/simulators/adjustable_bench.jpg",
+	"./images/simulators/adjustable_decline_ab_crunch.jpg": "./resources/assets/images/simulators/adjustable_decline_ab_crunch.jpg",
+	"./images/simulators/bake_live_500.jpg": "./resources/assets/images/simulators/bake_live_500.jpg",
+	"./images/simulators/cable_stations_connector.jpg": "./resources/assets/images/simulators/cable_stations_connector.jpg",
+	"./images/simulators/chest_press.jpg": "./resources/assets/images/simulators/chest_press.jpg",
+	"./images/simulators/climb_live_500.jpg": "./resources/assets/images/simulators/climb_live_500.jpg",
+	"./images/simulators/dual_abd.jpg": "./resources/assets/images/simulators/dual_abd.jpg",
+	"./images/simulators/dual_adjustable_pulley.jpg": "./resources/assets/images/simulators/dual_adjustable_pulley.jpg",
+	"./images/simulators/dual_prectoral_reverse_fly.jpg": "./resources/assets/images/simulators/dual_prectoral_reverse_fly.jpg",
+	"./images/simulators/ghd_bench.jpg": "./resources/assets/images/simulators/ghd_bench.jpg",
+	"./images/simulators/group_cycle_connect.jpg": "./resources/assets/images/simulators/group_cycle_connect.jpg",
+	"./images/simulators/hack_squat.jpg": "./resources/assets/images/simulators/hack_squat.jpg",
+	"./images/simulators/incline_chest_press.jpg": "./resources/assets/images/simulators/incline_chest_press.jpg",
+	"./images/simulators/kneeling_easy_chin_dip.jpg": "./resources/assets/images/simulators/kneeling_easy_chin_dip.jpg",
+	"./images/simulators/leg_curl.jpg": "./resources/assets/images/simulators/leg_curl.jpg",
+	"./images/simulators/leg_extension.jpg": "./resources/assets/images/simulators/leg_extension.jpg",
+	"./images/simulators/leg_press.jpg": "./resources/assets/images/simulators/leg_press.jpg",
+	"./images/simulators/low_row.jpg": "./resources/assets/images/simulators/low_row.jpg",
+	"./images/simulators/lower_back_bench.jpg": "./resources/assets/images/simulators/lower_back_bench.jpg",
+	"./images/simulators/lower_boddy_calf.jpg": "./resources/assets/images/simulators/lower_boddy_calf.jpg",
+	"./images/simulators/ne_leg_curl.jpg": "./resources/assets/images/simulators/ne_leg_curl.jpg",
+	"./images/simulators/pull_down.jpg": "./resources/assets/images/simulators/pull_down.jpg",
+	"./images/simulators/pure_strength_olympic_flat_bench.jpg": "./resources/assets/images/simulators/pure_strength_olympic_flat_bench.jpg",
+	"./images/simulators/pure_strength_olympic_incline_bench.jpg": "./resources/assets/images/simulators/pure_strength_olympic_incline_bench.jpg",
+	"./images/simulators/rear_kick.jpg": "./resources/assets/images/simulators/rear_kick.jpg",
+	"./images/simulators/recline_live_500.jpg": "./resources/assets/images/simulators/recline_live_500.jpg",
+	"./images/simulators/run_live_500.jpg": "./resources/assets/images/simulators/run_live_500.jpg",
+	"./images/simulators/scott_bench.jpg": "./resources/assets/images/simulators/scott_bench.jpg",
+	"./images/simulators/shoulder_press.jpg": "./resources/assets/images/simulators/shoulder_press.jpg",
+	"./images/simulators/simulator-default.jpg": "./resources/assets/images/simulators/simulator-default.jpg",
+	"./images/simulators/synchro_live_700.jpg": "./resources/assets/images/simulators/synchro_live_700.jpg",
+	"./images/simulators/universal_storage.jpg": "./resources/assets/images/simulators/universal_storage.jpg",
+	"./images/simulators/vertical_traction.jpg": "./resources/assets/images/simulators/vertical_traction.jpg",
+	"./images/simulators/wide_chest_press.jpg": "./resources/assets/images/simulators/wide_chest_press.jpg",
+	"./images/skew-icon-1.svg": "./resources/assets/images/skew-icon-1.svg",
+	"./images/smoothie.svg": "./resources/assets/images/smoothie.svg",
+	"./images/techno-gym-skew-images.png": "./resources/assets/images/techno-gym-skew-images.png",
+	"./images/technogym-logo-black.svg": "./resources/assets/images/technogym-logo-black.svg",
+	"./images/technogym-logo.svg": "./resources/assets/images/technogym-logo.svg",
+	"./images/trainers/valentin.jpg": "./resources/assets/images/trainers/valentin.jpg",
+	"./images/trainers/vitaliy.jpg": "./resources/assets/images/trainers/vitaliy.jpg",
+	"./images/trainers/volodimir.jpg": "./resources/assets/images/trainers/volodimir.jpg",
+	"./images/trainers/yuliya.jpg": "./resources/assets/images/trainers/yuliya.jpg",
+	"./images/warning.svg": "./resources/assets/images/warning.svg",
+	"./images/youtube.svg": "./resources/assets/images/youtube.svg",
+	"./images/zoom-img.svg": "./resources/assets/images/zoom-img.svg",
+	"./video/Gornushkina_Julia.MOV": "./resources/assets/video/Gornushkina_Julia.MOV",
+	"./video/Melnyk_Serhiy.MOV": "./resources/assets/video/Melnyk_Serhiy.MOV",
+	"./video/Mikhail_Galagan.MOV": "./resources/assets/video/Mikhail_Galagan.MOV",
+	"./video/Nechko_Vasil.MOV": "./resources/assets/video/Nechko_Vasil.MOV",
+	"./video/Olena_Semenchuk.MOV": "./resources/assets/video/Olena_Semenchuk.MOV",
+	"./video/Olga_Depeshko.MOV": "./resources/assets/video/Olga_Depeshko.MOV",
+	"./video/Olga_Martsenyuk.MOV": "./resources/assets/video/Olga_Martsenyuk.MOV",
+	"./video/Olga_Osadchuk.MOV": "./resources/assets/video/Olga_Osadchuk.MOV",
+	"./video/Vladimir_Leskov.MOV": "./resources/assets/video/Vladimir_Leskov.MOV",
+	"./video/valentine.MOV": "./resources/assets/video/valentine.MOV"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./resources/assets sync recursive ^\\.\\/.*$";
 
 /***/ }),
 

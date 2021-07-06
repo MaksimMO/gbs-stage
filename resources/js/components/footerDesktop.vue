@@ -21,7 +21,6 @@
 
   </div>
   <div v-if="$root.$data.area == 'b'" class="line-2">
-      <router-link class="link-1" to="/main-b">Наша команда</router-link>
       <router-link class="link-1" to="/price-b">Ціни</router-link>
       <router-link class="link-1" to="/contacts-b">Контакти</router-link>
   </div>

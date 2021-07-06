@@ -1,8 +1,15 @@
 export const preloadLink = (url, type) => {
     let preloadLink = document.createElement("link");
-    preloadLink.href = url;
+    preloadLink.href = require(`../assets/${url}`).default;;
     preloadLink.rel = "preload";
     preloadLink.as = type;
-    preloadLink.type = `${type}/mov`;
     document.head.appendChild(preloadLink);
+}
+
+export const preloadLinkVideo = (url, type) => {
+    let preloadVideo = document.createElement("link");
+    preloadVideo.href = require(`../assets/video/${url}`).default;
+    preloadVideo.rel = "prefetch";
+    preloadVideo.as = type;
+    document.head.appendChild(preloadVideo);
 }

@@ -27,7 +27,7 @@ import TrainerList from '../components/TrainersList';
 import Header from '../components/Header.vue';
 import Breadcrumb from '../components/Breadcrumb.vue';
 import Footer from '../components/Footer.vue';
-import { preloadLink } from '../utils.js';
+import { preloadLinkVideo } from '../utils.js';
 let preloadedAssets = [
         require('../../assets/images/TeamG/Vladimir_Leskov.jpg').default,
         require('../../assets/images/TeamG/Olga_Depeshko.jpg').default,
@@ -43,16 +43,16 @@ let preloadedAssets = [
         require('../../assets/images/TeamG/image-not-found.jpg').default
     ]
 let preloadedVideo = [
-        require('../../assets/video/Vladimir_Leskov.MOV').default,
-        require('../../assets/video/Olga_Depeshko.MOV').default,
-        require('../../assets/video/Olga_Martsenyuk.MOV').default,
-        require('../../assets/video/Mikhail_Galagan.MOV').default,
-        require('../../assets/video/Olga_Osadchuk.MOV').default,
-        require('../../assets/video/valentine.MOV').default,
-        require('../../assets/video/Melnyk_Serhiy.MOV').default,
-        require('../../assets/video/Olena_Semenchuk.MOV').default,
-        require('../../assets/video/Nechko_Vasil.MOV').default,
-        require('../../assets/video/Gornushkina_Julia.MOV').default
+        'Vladimir_Leskov.MOV',
+        'Olga_Depeshko.MOV',
+        'Olga_Martsenyuk.MOV',
+        'Mikhail_Galagan.MOV',
+        'Olga_Osadchuk.MOV',
+        'valentine.MOV',
+        'Melnyk_Serhiy.MOV',
+        'Olena_Semenchuk.MOV',
+        'Nechko_Vasil.MOV',
+        'Gornushkina_Julia.MOV'
     ]
 export default {
     emits: ['changeOpen'],
@@ -77,7 +77,7 @@ export default {
         }
     },
     mounted(){
-        preloadedVideo.map(urlVideo => (preloadLink(urlVideo, 'video')));
+        preloadedVideo.map(urlVideo => (preloadLinkVideo(urlVideo, 'video')));
     },
     methods: {
         change(e) {

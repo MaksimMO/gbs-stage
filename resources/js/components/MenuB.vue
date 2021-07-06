@@ -1,9 +1,6 @@
 <template>
   <ul class="main-menu-b">
       <li>
-          <router-link to="/main-b">Наша команда</router-link>
-      </li>
-      <li>
           <router-link to="/price-b">Ціни</router-link>
       </li>
       <li>
