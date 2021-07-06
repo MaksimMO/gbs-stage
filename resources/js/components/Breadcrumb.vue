@@ -1,8 +1,8 @@
 <template>
-    <div class="breadcrumb">
+    <div class="breadcrumb" v-show="$root.$data.area">
         <div v-if="area === undefined">
             <span>
-                Головна
+                <router-link to="/">Головна</router-link>
             </span>
                 /
             <span class="bread-main">
@@ -15,7 +15,7 @@
         </div>
         <div v-else>
             <span>
-                Головна
+                <router-link to="/">Головна</router-link>
             </span>
                 /
             <span class="bread-main">
