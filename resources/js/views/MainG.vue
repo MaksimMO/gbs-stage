@@ -131,18 +131,19 @@ import TeamsSlider from '../components/TeamsSlider.vue';
 
 
            let trainers = [
-                {id: 0, link: "Vladimir_Leskov.jpg"},
-                {id: 1, link: "Irina_Slyusarenko.jpg"},
-                {id: 2, link: "Olga_Depeshko.jpg"},
-                {id: 3, link: "Olga_Martsenyuk.jpg"},
-                {id: 4, link: "Mikhail_Galagan.jpg"},
-                {id: 5, link: "Olga_Osadchuk.jpg"},
-                {id: 6, link: "valentine.jpg"},
-                {id: 7, link: "Melnyk_Serhiy.jpg"},
-                {id: 8, link: "Olena_Semenchuk.jpg"},
-                {id: 9, link: "Nechko_Vasil.jpg"},
-                {id: 10, link: "Gornushkina_Julia.jpg"},
-                {id: 11, link: "Dementieva_Elena.jpg"}
+                {id: 0, link: "Vladimir_Leskov.jpg", linkVideo: "Vladimir_Leskov.MOV"},
+                {id: 1, link: "Olga_Depeshko.jpg", linkVideo: "Olga_Depeshko.MOV"},
+                {id: 2, link: "Olga_Martsenyuk.jpg", linkVideo: "Olga_Martsenyuk.MOV"},
+                {id: 3, link: "Mikhail_Galagan.jpg", linkVideo: "Mikhail_Galagan.MOV"},
+                {id: 4, link: "Olga_Osadchuk.jpg", linkVideo: "Olga_Osadchuk.MOV"},
+                {id: 5, link: "valentine.jpg", linkVideo: "valentine.MOV"},
+                {id: 6, link: "Melnyk_Serhiy.jpg", linkVideo: "Melnyk_Serhiy.MOV"},
+                {id: 7, link: "Olena_Semenchuk.jpg", linkVideo: "Olena_Semenchuk.MOV"},
+                {id: 8, link: "Nechko_Vasil.jpg", linkVideo: "Nechko_Vasil.MOV"},
+                {id: 9, link: "Gornushkina_Julia.jpg", linkVideo: "Gornushkina_Julia.MOV"},
+                {id: 10, link: "Dementieva_Elena.jpg"},
+                {id: 11, link: "image-not-found.jpg"},
+                {id: 12, link: "image-not-found.jpg"}
             ]
 
 

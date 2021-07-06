@@ -30,7 +30,6 @@ import Footer from '../components/Footer.vue';
 import { preloadLink } from '../utils.js';
 let preloadedAssets = [
         require('../../assets/images/TeamG/Vladimir_Leskov.jpg').default,
-        require('../../assets/images/TeamG/Irina_Slyusarenko.jpg').default,
         require('../../assets/images/TeamG/Olga_Depeshko.jpg').default,
         require('../../assets/images/TeamG/Olga_Martsenyuk.jpg').default,
         require('../../assets/images/TeamG/Mikhail_Galagan.jpg').default,
@@ -41,20 +40,19 @@ let preloadedAssets = [
         require('../../assets/images/TeamG/Nechko_Vasil.jpg').default,
         require('../../assets/images/TeamG/Gornushkina_Julia.jpg').default,
         require('../../assets/images/TeamG/Dementieva_Elena.jpg').default,
+        require('../../assets/images/TeamG/image-not-found.jpg').default
     ]
 let preloadedVideo = [
-        require('../../assets/images/TeamG/Vladimir_Leskov.jpg').default,
-        require('../../assets/images/TeamG/Irina_Slyusarenko.jpg').default,
-        require('../../assets/images/TeamG/Olga_Depeshko.jpg').default,
-        require('../../assets/images/TeamG/Olga_Martsenyuk.jpg').default,
-        require('../../assets/images/TeamG/Mikhail_Galagan.jpg').default,
-        require('../../assets/images/TeamG/Olga_Osadchuk.jpg').default,
-        require('../../assets/images/TeamG/valentine.jpg').default,
-        require('../../assets/images/TeamG/Melnyk_Serhiy.jpg').default,
-        require('../../assets/images/TeamG/Olena_Semenchuk.jpg').default,
-        require('../../assets/images/TeamG/Nechko_Vasil.jpg').default,
-        require('../../assets/images/TeamG/Gornushkina_Julia.jpg').default,
-        require('../../assets/images/TeamG/Dementieva_Elena.jpg').default,
+        require('../../assets/video/Vladimir_Leskov.MOV').default,
+        require('../../assets/video/Olga_Depeshko.MOV').default,
+        require('../../assets/video/Olga_Martsenyuk.MOV').default,
+        require('../../assets/video/Mikhail_Galagan.MOV').default,
+        require('../../assets/video/Olga_Osadchuk.MOV').default,
+        require('../../assets/video/valentine.MOV').default,
+        require('../../assets/video/Melnyk_Serhiy.MOV').default,
+        require('../../assets/video/Olena_Semenchuk.MOV').default,
+        require('../../assets/video/Nechko_Vasil.MOV').default,
+        require('../../assets/video/Gornushkina_Julia.MOV').default
     ]
 export default {
     emits: ['changeOpen'],
@@ -63,23 +61,24 @@ export default {
             isOpen: false,
             trainers: [
                 {id: 0, link: "Vladimir_Leskov.jpg", linkVideo: "Vladimir_Leskov.MOV"},
-                {id: 1, link: "Irina_Slyusarenko.jpg", linkVideo: "Irina_Slyusarenko.MOV"},
-                {id: 2, link: "Olga_Depeshko.jpg", linkVideo: "Olga_Depeshko.MOV"},
-                {id: 3, link: "Olga_Martsenyuk.jpg", linkVideo: "Olga_Martsenyuk.MOV"},
-                {id: 4, link: "Mikhail_Galagan.jpg", linkVideo: "Mikhail_Galagan.MOV"},
-                {id: 5, link: "Olga_Osadchuk.jpg", linkVideo: "Olga_Osadchuk.MOV"},
-                {id: 6, link: "valentine.jpg", linkVideo: "valentine.MOV"},
-                {id: 7, link: "Melnyk_Serhiy.jpg", linkVideo: "Melnyk_Serhiy.MOV"},
-                {id: 8, link: "Olena_Semenchuk.jpg", linkVideo: "Olena_Semenchuk.MOV"},
-                {id: 9, link: "Nechko_Vasil.jpg", linkVideo: "Nechko_Vasil.MOV"},
-                {id: 10, link: "Gornushkina_Julia.jpg", linkVideo: "Gornushkina_Julia.MOV"},
-                {id: 11, link: "Dementieva_Elena.jpg"}
+                {id: 1, link: "Olga_Depeshko.jpg", linkVideo: "Olga_Depeshko.MOV"},
+                {id: 2, link: "Olga_Martsenyuk.jpg", linkVideo: "Olga_Martsenyuk.MOV"},
+                {id: 3, link: "Mikhail_Galagan.jpg", linkVideo: "Mikhail_Galagan.MOV"},
+                {id: 4, link: "Olga_Osadchuk.jpg", linkVideo: "Olga_Osadchuk.MOV"},
+                {id: 5, link: "valentine.jpg", linkVideo: "valentine.MOV"},
+                {id: 6, link: "Melnyk_Serhiy.jpg", linkVideo: "Melnyk_Serhiy.MOV"},
+                {id: 7, link: "Olena_Semenchuk.jpg", linkVideo: "Olena_Semenchuk.MOV"},
+                {id: 8, link: "Nechko_Vasil.jpg", linkVideo: "Nechko_Vasil.MOV"},
+                {id: 9, link: "Gornushkina_Julia.jpg", linkVideo: "Gornushkina_Julia.MOV"},
+                {id: 10, link: "Dementieva_Elena.jpg"},
+                {id: 11, link: "image-not-found.jpg"},
+                {id: 12, link: "image-not-found.jpg"}
             ],
         }
     },
-    // mounted(){
-    //   preloadLink('feedBackFormView/background-g.png', 'image');
-    // },
+    mounted(){
+        preloadedVideo.map(urlVideo => (preloadLink(urlVideo, 'video')));
+    },
     methods: {
         change(e) {
             this.isOpen = e;

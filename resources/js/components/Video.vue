@@ -1,10 +1,12 @@
 <template>
     <video
       ref="video"
-      src="https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
+      :src="`../../video/${linkVideo}`"
       @mouseover="playVideo"
       @mouseleave="stopVideo"
       muted
+      loop
+      :poster="`../../images/${linkImage}`"
     />
 </template>
 
@@ -13,6 +15,7 @@ import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   name: "Video",
+  props: ['linkVideo', 'linkImage'],
   setup(props) {
     const video = ref(null);
     const videoElement = ref(null);

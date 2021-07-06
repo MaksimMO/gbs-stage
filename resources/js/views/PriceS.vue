@@ -7,17 +7,17 @@
       </section>
       <section class="price-direction">
         <ul class="direction">
-            <li @click="direction = 'massage'" :class="{'invert-color': direction == 'massage'}">Масаж</li>
-            <li @click="direction = 'author_massage'" :class="{'invert-color': direction == 'author_massage'}">Авторський масаж</li>
-            <li @click="direction = 'facial_treatments'" :class="{'invert-color': direction == 'facial_treatments'}">Процедури для обличчя</li>
-            <li @click="direction = 'body_treatments'" :class="{'invert-color': direction == 'body_treatments'}">Процедури для тіла</li>
+            <li @click="direction = 'massage'" :class="{'invert-color': direction == 'massage'}" key="0">Масаж</li>
+            <li @click="direction = 'author_massage'" :class="{'invert-color': direction == 'author_massage'}" key="1">Авторський масаж</li>
+            <li @click="direction = 'facial_treatments'" :class="{'invert-color': direction == 'facial_treatments'}" key="2">Процедури для обличчя</li>
+            <li @click="direction = 'body_treatments'" :class="{'invert-color': direction == 'body_treatments'}" key="1">Процедури для тіла</li>
         </ul>
 
         <div class="price">
             <transition-group name="list-price-s" tag="ul">
                     <!-- <ul v-for="(price)  in directionCheck" :key="price.id"> -->
-                        <p v-show="directionCheck.duration">{{directionCheck.duration}}</p>
-                        <li v-show="directionCheck.lists"  v-for="(list)  in directionCheck.lists" :key="list.id">
+                        <p v-show="directionCheck.duration" :key="directionCheck.id">{{directionCheck.duration}}</p>
+                        <li v-show="directionCheck.lists"  v-for="list  in directionCheck.lists" :key="list.id">
                             <div>
                                 <div class="type-name">{{list.name}}</div>
                                 <div class="line-dotted"></div>
@@ -25,7 +25,7 @@
                             </div>
                             <div class="list-discrip" v-show="list.discrip">{{list.discrip}}</div>
                         </li>
-                        <span v-show="directionCheck.footnote">{{directionCheck.footnote}}</span>
+                        <span v-show="directionCheck.footnote" :key="directionCheck.id+1">{{directionCheck.footnote}}</span>
                     <!-- </ul> -->
             </transition-group>
         </div>
@@ -45,36 +45,36 @@ export default {
             direction: 'massage',
             prices: [
                 {id: 0, direction: "massage", lists: [
-                    {name: 'Загальний (60хв)', price: '700'},
-                    {name: 'Антицелюлітний (60хв)', price: '530'},
-                    {name: 'Спортивний(60хв)', price: '550'},
-                    {name: 'Лімфодренажний (60)', price: '580'},
-                    {name: 'Масаж стоп(25хв)', price: '280'},
-                    {name: 'Масаж обличчя (30хв)', price: '450'},
-                    {name: 'Масаж голови(25хв)', price: '390'},
-                    {name: 'Масаж спини (30хв)', price: '350'},
-                    {name: 'Масаж з віником (15хв)', price: '290'},
-                    {name: 'Віник (1шт)', price: '30'}
+                    {id: 10, name: 'Загальний (60хв)', price: '700'},
+                    {id: 11, name: 'Антицелюлітний (60хв)', price: '530'},
+                    {id: 12, name: 'Спортивний(60хв)', price: '550'},
+                    {id: 13, name: 'Лімфодренажний (60)', price: '580'},
+                    {id: 14, name: 'Масаж стоп(25хв)', price: '280'},
+                    {id: 15, name: 'Масаж обличчя (30хв)', price: '450'},
+                    {id: 16, name: 'Масаж голови(25хв)', price: '390'},
+                    {id: 17, name: 'Масаж спини (30хв)', price: '350'},
+                    {id: 18, name: 'Масаж з віником (15хв)', price: '290'},
+                    {id: 19, name: 'Віник (1шт)', price: '30'}
                 ]},
                 {id: 1, direction: "author_massage", duration: 'Тривалість: 80 - 90 хв', footnote: '* авторські масажі лише по попередньому запису', lists: [
-                    {name: 'Аюрведичний лімфодренажний', price: '880'},
-                    {name: 'Гавайський масаж Lomi-Lomi Nui', price: '1 250'},
-                    {name: 'Глибоко-м’язовий масаж', price: '880'}
+                    {id: 10, name: 'Аюрведичний лімфодренажний', price: '880'},
+                    {id: 11, name: 'Гавайський масаж Lomi-Lomi Nui', price: '1 250'},
+                    {id: 12, name: 'Глибоко-м’язовий масаж', price: '880'}
                 ]},
                 {id: 2, direction: "facial_treatments", lists: [
-                    {name: 'Intermezzo', price: '870', discrip: 'Ароматичне блаженство, очищення, м’який пілінг і наостанок ароматичне пробудження, 15-20 хв'},
-                    {name: 'Escale Beauty Очищення/Сяяння', price: '870', discrip: 'Ароматичне блаженство, очищення шкіри, м’який пілінг, масаж обличчя та шиї, маска і наостанок ароматичне пробудження, 30хв '},
-                    {name: 'Escale Beauty Зволоження', price: '870', discrip: 'Ароматичне блаженство, очищення шкіри, м’який пілінг, масаж обличчя та шиї, маска і наостанок ароматичне пробудження, 30хв'},
-                    {name: 'Escale Beauty Anti-aging', price: '570', discrip: 'Ароматичне блаженство, очищення шкіри, м’який пілінг, масаж обличчя та шиї, маска і наостанок ароматичне пробудження, 30хв'}
+                    {id: 10, name: 'Intermezzo', price: '870', discrip: 'Ароматичне блаженство, очищення, м’який пілінг і наостанок ароматичне пробудження, 15-20 хв'},
+                    {id: 11, name: 'Escale Beauty Очищення/Сяяння', price: '870', discrip: 'Ароматичне блаженство, очищення шкіри, м’який пілінг, масаж обличчя та шиї, маска і наостанок ароматичне пробудження, 30хв '},
+                    {id: 12, name: 'Escale Beauty Зволоження', price: '870', discrip: 'Ароматичне блаженство, очищення шкіри, м’який пілінг, масаж обличчя та шиї, маска і наостанок ароматичне пробудження, 30хв'},
+                    {id: 13, name: 'Escale Beauty Anti-aging', price: '570', discrip: 'Ароматичне блаженство, очищення шкіри, м’який пілінг, масаж обличчя та шиї, маска і наостанок ароматичне пробудження, 30хв'}
                 ]},
                 {id: 3, direction: "body_treatments", lists: [
-                    {name: 'Aroma-Luxe', price: '680', discrip: '100% розслабляючий ручний масаж з ексклюзивними методиками, 60 хв'},
-                    {name: 'Aroma-Relax', price: '680', discrip: 'Розслабляюча техніка з гарячими вулканічними каменями, компресом на ступні, масажем тіла та ароматичним пробудженням, 60 хв'},
-                    {name: 'Aroma-Sculptant', price: '720', discrip: 'Тонізуючий і скульптурований масаж з використанням бамбукових палочок на ногах, 60 хв'},
-                    {name: 'Phyto-Minceur', price: '1 080', discrip: 'Процедура для схуднення з використанням ароматичного обгортування та спеціальних лімфодренажних технік, 60 хв'},
-                    {name: 'Hydralessence Body', price: '1 190', discrip: 'Процедура глибокого зволоження, а також теплий компрес на ступні, ексфоліація, масаж тіла та ароматичне пробудження, 60 хв'},
-                    {name: 'Phyto-Fermete', price: '1 520', discrip: 'Зміцнююча процедура з використанням ароматичного обгортування і спеціальних ліфтингових технік, 60 хв'},
-                    {name: 'Спа-масаж з маслом свічок Yon-ka', price: '870'}
+                    {id: 10, name: 'Aroma-Luxe', price: '680', discrip: '100% розслабляючий ручний масаж з ексклюзивними методиками, 60 хв'},
+                    {id: 11, name: 'Aroma-Relax', price: '680', discrip: 'Розслабляюча техніка з гарячими вулканічними каменями, компресом на ступні, масажем тіла та ароматичним пробудженням, 60 хв'},
+                    {id: 12, name: 'Aroma-Sculptant', price: '720', discrip: 'Тонізуючий і скульптурований масаж з використанням бамбукових палочок на ногах, 60 хв'},
+                    {id: 13, name: 'Phyto-Minceur', price: '1 080', discrip: 'Процедура для схуднення з використанням ароматичного обгортування та спеціальних лімфодренажних технік, 60 хв'},
+                    {id: 14, name: 'Hydralessence Body', price: '1 190', discrip: 'Процедура глибокого зволоження, а також теплий компрес на ступні, ексфоліація, масаж тіла та ароматичне пробудження, 60 хв'},
+                    {id: 15, name: 'Phyto-Fermete', price: '1 520', discrip: 'Зміцнююча процедура з використанням ароматичного обгортування і спеціальних ліфтингових технік, 60 хв'},
+                    {id: 16, name: 'Спа-масаж з маслом свічок Yon-ka', price: '870'}
                 ]},
             ]
         }
