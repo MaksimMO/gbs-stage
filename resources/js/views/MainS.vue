@@ -42,14 +42,14 @@
       <img class="skew-image-1" src="../../assets/images/popup-corner.svg" alt="">
   </div>
 
-    <div class="seo-text">
+    <!-- <div class="seo-text">
       <div class="title">
         SEO текст
       </div>
       <div class="text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum. Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis. Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum. Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec hendrerit neque...
       </div>
-    </div>
+    </div> -->
   </div>
   <Footer/>
 
@@ -250,7 +250,8 @@ export default {
         position: absolute;
         bottom: 0;
         right: -170px;
-        width: 1545px; //74.8599vw;
+        left:66px;
+        // width: 1545px; //74.8599vw;
         height: 83px;
         background: #916C58;
         opacity: 0.07;
@@ -300,6 +301,7 @@ export default {
     .areas-slider{
       // height: 570px;
       position: relative;
+      margin-bottom: 50px;
 
       .skew-image-1{
         position: absolute;
@@ -435,6 +437,7 @@ export default {
         padding: 0 15px;
     }
     .areas-slider{
+
       .skew-image-1{
         width: 35px;
         height: 30;
@@ -442,19 +445,19 @@ export default {
         right: 15px;
       }
     }
-    .seo-text{
-      padding-top:50px;
+    // .seo-text{
+    //   padding-top:50px;
 
-      .title{
-          font-size: 32px;
-          line-height: 48px;
-      }
-      .text{
-        font-size: 12px;
-        line-height: 18px;
-        padding: 30px 15px 64px;
-      }
-    }
+    //   .title{
+    //       font-size: 32px;
+    //       line-height: 48px;
+    //   }
+    //   .text{
+    //     font-size: 12px;
+    //     line-height: 18px;
+    //     padding: 30px 15px 64px;
+    //   }
+    // }
 }
 
 </style>

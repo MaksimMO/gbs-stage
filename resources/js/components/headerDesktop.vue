@@ -34,6 +34,8 @@ import MenuB from "./MenuB.vue";
 import MenuS from "./MenuS.vue";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 import MakeOrderPopup from './MakeOrderPopup.vue'
+import { preloadLink } from '../utils.js';
+
 
 export default {
   data() {
@@ -74,13 +76,7 @@ export default {
     storeScroll();
 
 
-
-    let preloadLink = document.createElement("link");
-    //todo different images
-    preloadLink.href = require('../../assets/feedBackFormView/background-g.png').default;
-    preloadLink.rel = "preload";
-    preloadLink.as = "image";
-    document.head.appendChild(preloadLink);
+    preloadLink('feedBackFormView/background-g.png', 'image')
   },
 };
 </script>

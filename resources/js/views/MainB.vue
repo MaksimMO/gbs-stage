@@ -50,7 +50,7 @@
     <section class="brand-makeup">
         <h1>Ми довіряємо найкращим</h1>
         <BrandMakeupSlider />
-        <h1>SEO текст</h1>
+        <!-- <h1>SEO текст</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.
@@ -60,7 +60,7 @@
             Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
             Sed nec hendrerit neque...
         </p>
-        <router-link class="link-1" to="/">Більше</router-link>
+        <router-link class="link-1" to="/">Більше</router-link> -->
     </section>
   </div>
   <Footer :level="'b'"/>
@@ -72,7 +72,6 @@ import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 import GallerySlider from '../components/GallerySlider.vue';
 import BrandMakeupSlider from '../components/BrandMakeupSlider.vue';
-import { preloadLink } from '../utils.js';
 
 let preloadedAssets = [
         require('../../assets/images/main-b-background.jpg').default,
@@ -105,12 +104,6 @@ export default {
 
   },
   mounted(){
-      preloadLink('feedBackFormView/background-g.png', 'image')
-    //   let preloadLink = document.createElement("link");
-    //   preloadLink.href = require('../../assets/feedBackFormView/background-g.png').default;
-    //   preloadLink.rel = "preload";
-    //   preloadLink.as = "image";
-    //   document.head.appendChild(preloadLink);
   },
   beforeRouteEnter(to, from, next) {
         const cacheImage = (url) =>{
@@ -251,7 +244,8 @@ export default {
         position: absolute;
         bottom: 0;
         right: -170px;
-        width: 1545px; //74.8599vw;
+        left:66px;
+        // width: 1545px; //74.8599vw;
         height: 83px;
         background: #916C58;
         opacity: 0.07;
@@ -342,6 +336,7 @@ export default {
 
 .brand-makeup {
     background-color: #FFFFFF;
+    margin-bottom: 60px;
     & h1 {
         font-family: Oswald;
         font-style: normal;
@@ -408,9 +403,9 @@ export default {
         .title{
             font-size: 45px;
             margin-bottom: 20px;
-            & .line-background {
-                width: 805px;
-            }
+            // & .line-background {
+            //     width: 805px;
+            // }
         }
         .container-text{
             font-size: 12px;
@@ -498,7 +493,6 @@ export default {
             padding-left: 0;
             padding-bottom: 0;
             & .line-background {
-                width: 110vw;
                 height: 33px;
             }
         }

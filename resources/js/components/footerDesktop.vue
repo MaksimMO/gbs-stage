@@ -5,8 +5,8 @@
       <div :class="`logo ${$root.$data.area}`"></div>
     </router-link>
 
-    <div class="timetable"><span>Пн - Пт з 07:00 до 23:00</span>   <span>Сб - Нд з 08:00 до 23:00</span></div>
-    <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
+    <div class="timetable"><span>Пн - Пт з 07:00 до 23:00</span> <span>Сб - Нд з 08:00 до 23:00</span></div>
+    <div class="address"><span>ТСК “МАГІГРАНД”,</span> <span>вул. Келецька, 78В</span></div>
     <PhoneLink />
     <div class="social-networks">
       <a href="https://www.facebook.com/gbs.level" class="facebook"></a>
@@ -133,7 +133,11 @@ export default {
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.1em;
-    white-space: nowrap;
+    span{
+      white-space:nowrap;
+    }
+
+
   }
   .phone-link{
     flex-shrink: 0;

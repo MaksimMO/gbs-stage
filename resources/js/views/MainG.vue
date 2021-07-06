@@ -15,7 +15,12 @@
   </section>
 
   <div class="about-us">
-    <div class="title">Про нас</div>
+        <div class="title">
+            Про нас
+            <div class="line-background"></div>
+        </div>
+
+
     <div class="columns-container">
       <div class="col-1">
         <div><span class="bold">Тренажерний зал 1700 кв.м.</span> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym </div>
@@ -332,14 +337,31 @@ export default {
 
   .title{
     font-family: Oswald;
+    font-style: normal;
     font-weight: 600;
     font-size: 48px;
+    line-height: 54px;
     letter-spacing: 0.02em;
     font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 96px;
+    padding-bottom: 19px;
+    & .line-background {
+        position: absolute;
+        bottom: 0;
+        right: -170px;
+        left:66px;
+        // width: 1545px; //74.8599vw;
+        height: 83px;
+        background: #916C58;
+        opacity: 0.07;
+        transform: skew(-18deg);
 
-    @media screen and (max-width:767px){
-         font-size: 24px;
-         margin-bottom: 30px;
+        @media screen and (max-width:767px){
+          height: 33px;
+        }
     }
   }
 
