@@ -1,5 +1,5 @@
 <template>
- <component :is="$root.$data.isMobile ? 'footerMobile' : 'footerDesktop'"></component>
+ <component :is="$root.$data.isMobileOnly ? 'footerMobile' : 'footerDesktop'"></component>
 </template>
 
 <script>

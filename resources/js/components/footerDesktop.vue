@@ -74,6 +74,10 @@ export default {
     background-color: #000;
     overflow: hidden;
 
+    @media screen and (min-width:768px) and (max-width:1023px){
+      padding: 17px 50px;
+    }
+
 
 
 .line-1{
@@ -88,6 +92,11 @@ export default {
       width: 89px;
       background-size: contain;
       background-repeat: no-repeat;
+
+    @media screen and (min-width:768px) and (max-width:1023px){
+          height: 23px;
+          width: 48px;
+    }
 
       &.g {
         background-image: url("../../assets/images/g-level.svg");
@@ -110,6 +119,11 @@ export default {
     text-align: center;
     span{
       white-space: nowrap;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1023px){
+      display: none;
+
     }
   }
 
@@ -157,6 +171,10 @@ export default {
     justify-content: center;
     align-items: center;
 
+    @media screen and (min-width:768px) and (max-width:1023px){
+      margin-top: 23px;
+    }
+
     .link-1{
       text-align: center;
 
@@ -173,6 +191,11 @@ export default {
 
       margin-right:60px;
 
+    @media screen and (min-width:768px) and (max-width:1023px){
+      font-size: 11px;
+      line-height: 13px;
+    }
+
       &:last-of-type{
         margin-right: 0;
       }
@@ -188,6 +211,10 @@ hr{
   opacity: 0.15;
   height: 1px;
   margin: 30px 0;
+
+  @media screen and (min-width:768px) and (max-width:1023px){
+    margin: 16px 0;
+  }
 }
   .line-3{
     display: grid;
@@ -205,6 +232,10 @@ hr{
     text-transform: uppercase;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #FFFFFF;
+
+    @media screen and (min-width:768px) and (max-width:1023px){
+      font-size: 10px;
+    }
 
     .text-1{
     }
