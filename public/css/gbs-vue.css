@@ -5573,9 +5573,6 @@ li[data-v-bcffb62e] {
 .tickets .level[data-v-06dcca5f] {
   transition: transform 0.2s ease-in;
 }
-.tickets .level[data-v-06dcca5f]:hover {
-  transform: scale(1.1);
-}
 .tickets p[data-v-06dcca5f] {
   text-transform: uppercase;
   margin: 0;
@@ -5590,12 +5587,20 @@ li[data-v-bcffb62e] {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #916C58;
 }
-.tickets img[data-v-06dcca5f] {
+.tickets .imgDiv[data-v-06dcca5f] {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.tickets .imgDiv img[data-v-06dcca5f] {
   max-width: 321px;
   width: 100%;
   height: auto;
-  margin-bottom: 30px;
   cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+.tickets .imgDiv img[data-v-06dcca5f]:hover {
+  transform: scale(1.3);
 }
 .tickets .detail[data-v-06dcca5f] {
   font-family: Raleway;
@@ -5764,7 +5769,7 @@ li[data-v-bcffb62e] {
     font-size: 22px;
     line-height: 32px;
 }
-.tickets img[data-v-06dcca5f] {
+.tickets > .imgDiv > img[data-v-06dcca5f] {
     max-width: 171px;
     width: 100%;
     height: auto;
@@ -5839,7 +5844,7 @@ li[data-v-bcffb62e] {
     font-size: 18px;
     line-height: 27px;
 }
-.tickets img[data-v-06dcca5f] {
+.tickets > .imgDiv > img[data-v-06dcca5f] {
     max-width: 290px;
     width: 100%;
     height: auto;

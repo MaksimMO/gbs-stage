@@ -16,17 +16,23 @@
       <section class="tickets">
           <div class="level">
               <p>{{tickets[0].level}}</p>
-              <img :src="tickets[0].link" alt="Level 1" @click="openDetail(1)">
+              <div class="imgDiv">
+                  <img :src="tickets[0].link" alt="Level 1" @click="openDetail(1)">
+              </div>
               <div class="detail" @click="openDetail(1)">Детальніше</div>
           </div>
           <div class="level">
               <p>{{tickets[1].level}}</p>
-              <img :src="tickets[1].link" alt="Level 2" @click="openDetail(2)">
+              <div class="imgDiv">
+                <img :src="tickets[1].link" alt="Level 2" @click="openDetail(2)">
+              </div>
               <div class="detail" @click="openDetail(2)" >Детальніше</div>
           </div>
           <div class="level">
               <p>{{tickets[2].level}}</p>
-              <img :src="tickets[2].link" alt="Level 3" @click="openDetail(3)">
+              <div class="imgDiv">
+                <img :src="tickets[2].link" alt="Level 3" @click="openDetail(3)">
+              </div>
               <div class="detail" @click="openDetail(3)">Детальніше</div>
           </div>
       </section>
@@ -230,9 +236,9 @@ export default {
 
         .level{
             transition: transform 0.2s ease-in;
-            &:hover{
-                transform: scale(1.1);
-            }
+            // &:hover{
+            //     transform: scale(1.1);
+            // }
         }
 
         & p {
@@ -249,13 +255,22 @@ export default {
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #916C58;
         }
-        & img {
-            max-width: 321px;
+        & .imgDiv {
             width: 100%;
-            height: auto;
+            overflow: hidden;
             margin-bottom: 30px;
-            cursor: pointer;
+            & img {
+                max-width: 321px;
+                width: 100%;
+                height: auto;
+                cursor: pointer;
+                transition: transform .2s ease-in;
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
         }
+
         & .detail {
             font-family: Raleway;
             font-weight: bold;
@@ -426,7 +441,7 @@ export default {
                 font-size: 22px;
                 line-height: 32px;
             }
-            & img {
+            &>.imgDiv>img {
                 max-width: 171px;
                 width: 100%;
                 height: auto;
@@ -505,7 +520,7 @@ export default {
                 font-size: 18px;
                 line-height: 27px;
             }
-            & img {
+            &>.imgDiv>img {
                 max-width: 290px;
                 width: 100%;
                 height: auto;
