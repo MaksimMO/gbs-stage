@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Lead;
+use Doctrine\DBAL\Connection;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -35,15 +36,22 @@ class HomeController extends Controller
      */
     public function storeLead(Request $request): \Illuminate\Http\JsonResponse
     {
-        $validated = $request->validate([
-            'level' => 'required',
-            'name' => 'required|min:3|max:50',
-            'phone_number' => 'required|min:6|max:20',
-            'email' => 'required|email|min:6|max:20',
-        ]);
+//    	dd($request->all());//$request->validate([
+        $validated = Validator::make($request->all(), [
+			'level' => 'required|string',
+			'name' => 'required|min:3|max:50',
+			'phone_number' => 'required|min:6|max:20',
+			'email' => 'required|email|min:6|max:99',
+		]);
 
-        $lead = Lead::create($validated);
-
-        return response()->json("['code' => 'successfully']");
+        if ($validated->fails())
+		{
+			return response()->json(['code' => 'successfully', 'messages' => $validated->errors()->messages()], 422);
+		}
+        else
+        {
+			$lead = Lead::create($request->all());
+			return response()->json(['code' => 'successfully'], 201);
+		}
     }
 }
