@@ -39,6 +39,7 @@ class HomeController extends Controller
             'level' => 'required',
             'name' => 'required|min:3|max:50',
             'phone_number' => 'required|min:6|max:20',
+            'email' => 'required|email|min:6|max:20',
         ]);
 
         $lead = Lead::create($validated);

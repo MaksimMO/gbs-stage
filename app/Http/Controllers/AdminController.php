@@ -54,6 +54,7 @@ class AdminController extends BaseController
         $lead = Lead::find($id);
         $lead->name = request('name');
         $lead->phone_number = request('phone_number');
+        $lead->email = request('email');
         $lead->level = request('level');
         $lead->called_success = request('called_success');
         $lead->description = request('description');
