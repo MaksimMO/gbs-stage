@@ -10,9 +10,9 @@
         <p class="firstName">{{$i18n.t(`trainers.${trainer.id}.firstName`)}}</p>
         <p class="lastName">{{$i18n.t(`trainers.${trainer.id}.lastName`)}}</p>
     </div>
-    <div v-show="!isSlider" :class="['description', {'description-background': isHovered}]">
+    <div :class="['description', {'description-background': isHovered}]">
         <p class="descriptionTitle">{{$i18n.t(`trainers.${trainer.id}.direction`)}}</p>
-        <p v-show="isSelected">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
+        <p v-show="isSelected && !isSlider">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
     </div>
 </div>
 <div v-else :class="['trainer-item-mobile', {'is-scaled': isSelected && !isSlider}]">
@@ -22,9 +22,9 @@
         <p class="firstName">{{$i18n.t(`trainers.${trainer.id}.firstName`)}}</p>
         <p class="lastName">{{$i18n.t(`trainers.${trainer.id}.lastName`)}}</p>
     </div>
-    <div v-show="!isSlider" :class="['description', {'description-background': isSelected}]">
+    <div :class="['description', {'description-background': isSelected}]">
         <p class="descriptionTitle">{{$i18n.t(`trainers.${trainer.id}.direction`)}}</p>
-        <p v-show="isSelected">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
+        <p v-show="isSelected && !isSlider">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
     </div>
 </div>
 </template>

@@ -104,6 +104,10 @@ export default {
         & div {
             & span {
                 margin: 0 20px;
+                & a {
+                    text-decoration: unset;
+                    color: unset;
+                }
             }
         }
     }
@@ -116,6 +120,10 @@ export default {
         & div {
             & span {
                 margin: 0 20px;
+                & a {
+                    text-decoration: unset;
+                    color: unset;
+                }
             }
         }
     }
