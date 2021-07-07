@@ -1,6 +1,6 @@
 
 <template>
-<swiper :navigation="true" class="mySwiperS">
+<swiper :navigation="true" :loop="true" class="mySwiperS">
   <swiper-slide v-for="slide in slides" :key="slide.id">
     <img :src="slide.imageUrl" />
       <div class="text-block">

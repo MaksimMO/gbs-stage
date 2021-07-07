@@ -8,7 +8,8 @@
     @init="swiperInit"
   >
   <swiper-slide v-for="image in slides" :key="image.id"  >
-      <img :src="image.imageUrl" />
+      <img v-show="!image.imageUrlOverlay" :src="image.imageUrl" />
+      <img v-show="image.imageUrlOverlay" :src="image.imageUrlOverlay" />
   </swiper-slide>
 
       <div class="swiper-navigation-prev-1"> </div>

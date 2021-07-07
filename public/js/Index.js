@@ -18806,46 +18806,22 @@ swiper_core__WEBPACK_IMPORTED_MODULE_0__.default.use([swiper_core__WEBPACK_IMPOR
         imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/academie.jpg */ "./resources/assets/images/TeamB/brandMakeUp/academie.jpg").default
       }, {
         id: 4,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/american_crew.jpg */ "./resources/assets/images/TeamB/brandMakeUp/american_crew.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/loreal.jpg */ "./resources/assets/images/TeamB/brandMakeUp/loreal.jpg").default
       }, {
         id: 5,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/clarins.jpg */ "./resources/assets/images/TeamB/brandMakeUp/clarins.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/dior.jpg */ "./resources/assets/images/TeamB/brandMakeUp/dior.jpg").default
       }, {
         id: 6,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/depot.jpg */ "./resources/assets/images/TeamB/brandMakeUp/depot.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/academie.jpg */ "./resources/assets/images/TeamB/brandMakeUp/academie.jpg").default
       }, {
         id: 7,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/helena.jpg */ "./resources/assets/images/TeamB/brandMakeUp/helena.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/loreal.jpg */ "./resources/assets/images/TeamB/brandMakeUp/loreal.jpg").default
       }, {
         id: 8,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/holy-land-logo-8.jpg */ "./resources/assets/images/TeamB/brandMakeUp/holy-land-logo-8.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/dior.jpg */ "./resources/assets/images/TeamB/brandMakeUp/dior.jpg").default
       }, {
         id: 9,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/kerastase-vector-logo.jpg */ "./resources/assets/images/TeamB/brandMakeUp/kerastase-vector-logo.jpg").default
-      }, {
-        id: 10,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/lancome_paris.jpg */ "./resources/assets/images/TeamB/brandMakeUp/lancome_paris.jpg").default
-      }, {
-        id: 11,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/lebel_Logo.jpg */ "./resources/assets/images/TeamB/brandMakeUp/lebel_Logo.jpg").default
-      }, {
-        id: 12,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/logo_black.jpg */ "./resources/assets/images/TeamB/brandMakeUp/logo_black.jpg").default
-      }, {
-        id: 13,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/luxio.jpg */ "./resources/assets/images/TeamB/brandMakeUp/luxio.jpg").default
-      }, {
-        id: 14,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/napura_black.jpg */ "./resources/assets/images/TeamB/brandMakeUp/napura_black.jpg").default
-      }, {
-        id: 15,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg */ "./resources/assets/images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg").default
-      }, {
-        id: 16,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/Shiseido_logo_red.jpg */ "./resources/assets/images/TeamB/brandMakeUp/Shiseido_logo_red.jpg").default
-      }, {
-        id: 17,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/yonka.jpg */ "./resources/assets/images/TeamB/brandMakeUp/yonka.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/academie.jpg */ "./resources/assets/images/TeamB/brandMakeUp/academie.jpg").default
       }]
     };
   },
@@ -20309,34 +20285,44 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
       }],
       gallery: [{
         id: 1,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg").default
       }, {
         id: 2,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg").default
       }, {
         id: 3,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg").default
       }, {
         id: 4,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg").default
       }, {
         id: 5,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg").default
       }, {
         id: 6,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4574_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4574_370x370.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4574_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4574_370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg").default
       }, {
         id: 7,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4583_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4583_370x370.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4583_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4583_370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default
       }, {
         id: 8,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4595_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4595_370x370.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4595_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4595_370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default
       }, {
         id: 9,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4608_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4608_370x370.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4608_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4608_370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default
       }, {
         id: 10,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4614_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4614_370x370.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4614_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4614_370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default
       }]
     };
   },
@@ -20633,41 +20619,39 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
 
 
 
-var preloadedAssets = [__webpack_require__(/*! ../../assets/images/main-b-background.jpg */ "./resources/assets/images/main-b-background.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/aboutUs-b-main.jpg */ "./resources/assets/images/aboutUs-b-main.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-1.jpg */ "./resources/assets/images/TeamB/gallery/photo-1.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-2.jpg */ "./resources/assets/images/TeamB/gallery/photo-2.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-3.jpg */ "./resources/assets/images/TeamB/gallery/photo-3.jpg").default];
+var preloadedAssets = [__webpack_require__(/*! ../../assets/images/main-b-background.jpg */ "./resources/assets/images/main-b-background.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/aboutUs-b-main.jpg */ "./resources/assets/images/aboutUs-b-main.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-31-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-31-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-34-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-34-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-35-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-35-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-37-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-37-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-38-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-38-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-42-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-42-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-43-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-43-1-370x370.jpg").default];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       isOpen: false,
       gallery: [{
         id: 1,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-1.jpg */ "./resources/assets/images/TeamB/gallery/photo-1.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-43-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-43-1-370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default
       }, {
         id: 2,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-2.jpg */ "./resources/assets/images/TeamB/gallery/photo-2.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-34-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-34-1-370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-34-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-34-1-min.jpg").default
       }, {
         id: 3,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-3.jpg */ "./resources/assets/images/TeamB/gallery/photo-3.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-35-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-35-1-370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-35-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-35-1-min.jpg").default
       }, {
         id: 4,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-1.jpg */ "./resources/assets/images/TeamB/gallery/photo-1.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-37-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-37-1-370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-37-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-37-1-min.jpg").default
       }, {
         id: 5,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-2.jpg */ "./resources/assets/images/TeamB/gallery/photo-2.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-38-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-38-1-370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-38-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-38-1-min.jpg").default
       }, {
         id: 6,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-3.jpg */ "./resources/assets/images/TeamB/gallery/photo-3.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-42-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-42-1-370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-42-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-42-1-min.jpg").default
       }, {
         id: 7,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-1.jpg */ "./resources/assets/images/TeamB/gallery/photo-1.jpg").default
-      }, {
-        id: 8,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-2.jpg */ "./resources/assets/images/TeamB/gallery/photo-2.jpg").default
-      }, {
-        id: 9,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-3.jpg */ "./resources/assets/images/TeamB/gallery/photo-3.jpg").default
-      }, {
-        id: 10,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/photo-1.jpg */ "./resources/assets/images/TeamB/gallery/photo-1.jpg").default
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-31-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-31-1-370x370.jpg").default,
+        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-31-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-31-1-min.jpg").default
       }]
     };
   },
@@ -21565,7 +21549,8 @@ var preloadedVideo = ['Vladimir_Leskov.MOV', 'Olga_Depeshko.MOV', 'Olga_Martseny
         link: "Dementieva_Elena.jpg"
       }, {
         id: 11,
-        link: "image-not-found.jpg"
+        link: "image-not-found.jpg",
+        linkVideo: "Nina_Shevchuk.MOV"
       }, {
         id: 12,
         link: "image-not-found.jpg"
@@ -21804,6 +21789,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     pagination: {
       'type': 'fraction'
     },
+    loop: true,
     "class": "mySwiper"
   }, {
     "default": _withId(function () {
@@ -21895,6 +21881,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_swiper, {
     navigation: true,
+    loop: true,
     "class": "mySwiperS"
   }, {
     "default": _withId(function () {
@@ -22821,7 +22808,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
         }, ["exact"]), ["esc"]))]
       }, [_hoisted_3], 544
       /* HYDRATE_EVENTS, NEED_PATCH */
-      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\r\n          <a\r\n            href=\"#\"\r\n            @click.prevent=\"setLocale('ru')\"\r\n            @keydown.shift.tab=\"focusPrevious(false)\"\r\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\r\n            @keydown.down.exact.prevent=\"\"\r\n            @keydown.tab.exact=\"hideDropdown\"\r\n            @keydown.esc.exact=\"hideDropdown\"\r\n          >\r\n            <span>RU</span>\r\n          </a>\r\n        </li> ")], 512
+      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\n          <a\n            href=\"#\"\n            @click.prevent=\"setLocale('ru')\"\n            @keydown.shift.tab=\"focusPrevious(false)\"\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\n            @keydown.down.exact.prevent=\"\"\n            @keydown.tab.exact=\"hideDropdown\"\n            @keydown.esc.exact=\"hideDropdown\"\n          >\n            <span>RU</span>\n          </a>\n        </li> ")], 512
       /* NEED_PATCH */
       )), [[_directive_click_away, $options.hideDropdown]]) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
@@ -24657,11 +24644,15 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
           key: image.id
         }, {
           "default": _withId(function () {
-            return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+            return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
               src: image.imageUrl
             }, null, 8
             /* PROPS */
-            , ["src"])];
+            , ["src"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, !image.imageUrlOverlay]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+              src: image.imageUrlOverlay
+            }, null, 8
+            /* PROPS */
+            , ["src"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, image.imageUrlOverlay]])];
           }),
           _: 2
           /* DYNAMIC */
@@ -24988,7 +24979,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     src: $options.area.imageUrl
   }, null, 8
   /* PROPS */
-  , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"gallery-slider\">\r\n        <GallerySlider :images=\"gallery\" />\r\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+  , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"gallery-slider\">\n        <GallerySlider :images=\"gallery\" />\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $data.isMakeOrderPopupOpen = true;
     })
@@ -28804,7 +28795,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?736193b044696161e2a6e9f91539c73e");
 
 /***/ }),
 
@@ -28834,7 +28825,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?df90caa4b4466fae2999be366ce12b13");
 
 /***/ }),
 
@@ -28864,7 +28855,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?d94603bf7c6c5c4b24c3e6245db8ea26");
 
 /***/ }),
 
@@ -29183,10 +29174,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/images/TeamB/gallery/photo-1.jpg":
-/*!***********************************************************!*\
-  !*** ./resources/assets/images/TeamB/gallery/photo-1.jpg ***!
-  \***********************************************************/
+/***/ "./resources/assets/images/TeamB/gallery/150-31-1-370x370.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/150-31-1-370x370.jpg ***!
+  \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -29194,14 +29185,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/photo-1.jpg?999c9f24b136c3adee4beb7bb66c01ed");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/150-31-1-370x370.jpg?1c49ad0b4d83219218d5d5aea5a65790");
 
 /***/ }),
 
-/***/ "./resources/assets/images/TeamB/gallery/photo-2.jpg":
-/*!***********************************************************!*\
-  !*** ./resources/assets/images/TeamB/gallery/photo-2.jpg ***!
-  \***********************************************************/
+/***/ "./resources/assets/images/TeamB/gallery/150-34-1-370x370.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/150-34-1-370x370.jpg ***!
+  \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -29209,14 +29200,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/photo-2.jpg?ef52d628b25cfd34cb60bd22cf9889e6");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/150-34-1-370x370.jpg?29a6edf17b76202d13760a43aee421fa");
 
 /***/ }),
 
-/***/ "./resources/assets/images/TeamB/gallery/photo-3.jpg":
-/*!***********************************************************!*\
-  !*** ./resources/assets/images/TeamB/gallery/photo-3.jpg ***!
-  \***********************************************************/
+/***/ "./resources/assets/images/TeamB/gallery/150-35-1-370x370.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/150-35-1-370x370.jpg ***!
+  \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -29224,7 +29215,172 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/photo-3.jpg?7022632314c6bb36d56a10c6cc3020c8");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/150-35-1-370x370.jpg?3c2dddb7eae5a114a9d704373e25840a");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/gallery/150-37-1-370x370.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/150-37-1-370x370.jpg ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/150-37-1-370x370.jpg?83429321a1dd5d572cd59653164dbb1c");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/gallery/150-38-1-370x370.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/150-38-1-370x370.jpg ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/150-38-1-370x370.jpg?c8b1aefb83da3e43d0cc3550a6c6c3cc");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/gallery/150-42-1-370x370.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/150-42-1-370x370.jpg ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/150-42-1-370x370.jpg?21d7ff077b83473c34e7d7b889acfe09");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/gallery/150-43-1-370x370.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/150-43-1-370x370.jpg ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/150-43-1-370x370.jpg?f010669340fee525041466a6a54129c0");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/gallery/overlay/150-31-1-min.jpg":
+/*!************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/overlay/150-31-1-min.jpg ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/150-31-1-min.jpg?056f8267f6f855cdbfbad811ff1022f3");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/gallery/overlay/150-34-1-min.jpg":
+/*!************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/overlay/150-34-1-min.jpg ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/150-34-1-min.jpg?22272a1eee5546586559699ddb01c76b");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/gallery/overlay/150-35-1-min.jpg":
+/*!************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/overlay/150-35-1-min.jpg ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/150-35-1-min.jpg?1cb9a6ec8437bf61eedc670e139fb615");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/gallery/overlay/150-37-1-min.jpg":
+/*!************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/overlay/150-37-1-min.jpg ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/150-37-1-min.jpg?d37dbd40a9932a50a4874949e3361bd7");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/gallery/overlay/150-38-1-min.jpg":
+/*!************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/overlay/150-38-1-min.jpg ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/150-38-1-min.jpg?5c7261c136ba90a7019bb4216a31221b");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/gallery/overlay/150-42-1-min.jpg":
+/*!************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/overlay/150-42-1-min.jpg ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/150-42-1-min.jpg?1ff5a7f0021f06d0877e2995ce8e7502");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/gallery/overlay/150-43-1-min.jpg":
+/*!************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/gallery/overlay/150-43-1-min.jpg ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/150-43-1-min.jpg?9437170cbb612d2e22d0e0a3e2cb6199");
 
 /***/ }),
 
@@ -29255,6 +29411,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Gornushkina_Julia.jpg?884a285096170cf1da75b932a0a957a1");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/Irina_Slyusarenko.jpg":
+/*!*************************************************************!*\
+  !*** ./resources/assets/images/TeamG/Irina_Slyusarenko.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Irina_Slyusarenko.jpg?15b1ddc5185955b70a0415f851defbeb");
 
 /***/ }),
 
@@ -29573,6 +29744,156 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg":
+/*!**************************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_1540-1-min.jpg?46949ade9d9ba8c57482eed9af8991e6");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg":
+/*!**************************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_1548-1-min.jpg?ed514cc7ae292a25cbb3fd00b75a2fd9");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg":
+/*!**************************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_1620-1-min.jpg?f385c88d6b3ebf4b251449027189074a");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg":
+/*!**************************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_1627-1-min.jpg?9d02a90b018bd6cbadee88bc9501b243");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg":
+/*!**************************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_1635-1-min.jpg?c8323e976fbd3b61dcc7e877e92628b7");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg":
+/*!************************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_4574-min.jpg?09bb742904ed80bb6b49604b348d5cd4");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg":
+/*!************************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_4583-min.jpg?0642bbaaf84e2963125b55c611be74b4");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg":
+/*!************************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_4595-min.jpg?5d328aec924d45906d3676ba0212135d");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg":
+/*!************************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_4608-min.jpg?015412272b9999049fbc032f1713fa9f");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg":
+/*!************************************************************************!*\
+  !*** ./resources/assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/IMG_4614-min.jpg?3e95779a6400f6df4c46ddbdc01a850e");
+
+/***/ }),
+
 /***/ "./resources/assets/images/TeamG/image-not-found.jpg":
 /*!***********************************************************!*\
   !*** ./resources/assets/images/TeamG/image-not-found.jpg ***!
@@ -29659,7 +29980,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/about-g-water-text.svg?476a68854636ba7e866760649393cb88");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/about-g-water-text.svg?59919db3211551399f10fbf94a2c4535");
 
 /***/ }),
 
@@ -29974,7 +30295,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-darck.svg?f3cadb0675d72021ab687179cff8e5de");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-darck.svg?34d3246fd5f28f54932080e9c8429771");
 
 /***/ }),
 
@@ -29989,7 +30310,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-link.svg?938210241c158bd8542a7f8b28d672cd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-link.svg?0ad45b1284641413dee51034469dd4ef");
 
 /***/ }),
 
@@ -30004,7 +30325,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?02bae0682140f88722059abfc0376dc1");
 
 /***/ }),
 
@@ -30049,7 +30370,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/close.svg?40f036580b6c18960e76c27a387cba94");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/close.svg?2855e6317fe0e97b677566f1ee2fba5b");
 
 /***/ }),
 
@@ -30079,7 +30400,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebook.svg?54bf56baa5ce9b1b5bd010cd9e02909e");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebook.svg?b7485c04d1d306c6218574a3ac8af002");
 
 /***/ }),
 
@@ -30094,7 +30415,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebookGold.svg?2ef6ec7b557d1537f9b550eba23e8d1f");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebookGold.svg?a27e5b4dde3c6d3ecf3f28f59983b62d");
 
 /***/ }),
 
@@ -30124,7 +30445,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-darck.svg?c361667f2e00cb0a3637e2f975c1cc80");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-darck.svg?b12f10e8b0ef5b7d9921289b7942c945");
 
 /***/ }),
 
@@ -30139,7 +30460,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-link.svg?fd94afd0b003f21a26d254ee80e958f2");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-link.svg?d19efccad46b541f44f381a224e1646d");
 
 /***/ }),
 
@@ -30154,7 +30475,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?4322557835a36f1758bad92f49d6dca9");
 
 /***/ }),
 
@@ -30199,7 +30520,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/info.svg?b47e3582bc4a2656231c960a851e0d0b");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/info.svg?6c9484336357a780fd96bcef5a715b14");
 
 /***/ }),
 
@@ -30214,7 +30535,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagram.svg?a21938e086d667a24449c981641902d2");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagram.svg?63a0b3819ce60d3152e6007738817613");
 
 /***/ }),
 
@@ -30229,7 +30550,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagramGold.svg?56cb837170980da00a05c5fdaf2eee66");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagramGold.svg?5841637642267db63a3c458114907398");
 
 /***/ }),
 
@@ -30259,7 +30580,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-b-water-text-top.svg?3c4a8cbe9c9c993ce8805016dbb61aa2");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-b-water-text-top.svg?e4051e4c2d0b3be44d04b4586d2b2f54");
 
 /***/ }),
 
@@ -30289,7 +30610,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-our-team-water-text.svg?6b9c63279b48909a3c9b2812fd082f9b");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-our-team-water-text.svg?b3bc1a5b892346aba7f4f498b479dd63");
 
 /***/ }),
 
@@ -30334,7 +30655,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-water-text.svg?96ffed6606128a90b9107d563f89bd05");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-water-text.svg?6ee2cadd0d229a2a8feead3efd3f7472");
 
 /***/ }),
 
@@ -30454,7 +30775,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/marker.svg?f3e69856c579d1eca94519018b9d1d74");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/marker.svg?7ff292b43387a63ea9de772f34f75cfa");
 
 /***/ }),
 
@@ -30469,7 +30790,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/menu-close-white.svg?51134e345e051967709be96e3ef38ecf");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/menu-close-white.svg?91bd8bef07d7e63dd1e6c4e7b4778c75");
 
 /***/ }),
 
@@ -30514,7 +30835,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/menu-open.svg?87e74746bd587cbd0c724e573fb0b27a");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/menu-open.svg?761c80ccaf88f896e093367310cae5ba");
 
 /***/ }),
 
@@ -30559,7 +30880,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/rectangle-1.svg?572b0668a66b51ba2d0c019cf5872bf5");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/rectangle-1.svg?e5b6c711ae755c10eb619cde8698d8b8");
 
 /***/ }),
 
@@ -30589,7 +30910,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-darck.svg?a27de085c1e6928ac2dd7b9b262582c7");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-darck.svg?82ec9c9a7a09a0c71138a777fea8cffb");
 
 /***/ }),
 
@@ -30604,7 +30925,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-link.svg?973ebae533ed3dd52f602e3aad341150");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-link.svg?2b953d7f50b609c8c18001964a2c6086");
 
 /***/ }),
 
@@ -31249,7 +31570,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/technogym-logo-black.svg?6e3384e0b81af3319ec84d54c3f183b8");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/technogym-logo-black.svg?41e9fcde23524c6f008c5c6aa677f53e");
 
 /***/ }),
 
@@ -31264,7 +31585,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/technogym-logo.svg?58e84d71995a27ba4ec62ad8d48a4fc6");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/technogym-logo.svg?b19c87b75ba105dc1de99317eb2b7c3e");
 
 /***/ }),
 
@@ -31339,7 +31660,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/warning.svg?83875f065e7638defea28c6ed7e64a48");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/warning.svg?67b5872f8674f66a316722b146cad9dc");
 
 /***/ }),
 
@@ -31354,7 +31675,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/youtube.svg?c1677447c97f633ce596b4c52413efe4");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/youtube.svg?1142378c070c1d6d4c4c76264aa458ab");
 
 /***/ }),
 
@@ -31369,7 +31690,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/zoom-img.svg?e7724d44281f74e3d5d0723bf72fefdb");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/zoom-img.svg?a7b077eb6c87af5c6b383e8bb2e95e2b");
 
 /***/ }),
 
@@ -31430,6 +31751,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Nechko_Vasil.MOV");
+
+/***/ }),
+
+/***/ "./resources/assets/video/Nina_Shevchuk.MOV":
+/*!**************************************************!*\
+  !*** ./resources/assets/video/Nina_Shevchuk.MOV ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Nina_Shevchuk.MOV");
 
 /***/ }),
 
@@ -51059,6 +51395,7 @@ var map = {
 	"./Melnyk_Serhiy.MOV": "./resources/assets/video/Melnyk_Serhiy.MOV",
 	"./Mikhail_Galagan.MOV": "./resources/assets/video/Mikhail_Galagan.MOV",
 	"./Nechko_Vasil.MOV": "./resources/assets/video/Nechko_Vasil.MOV",
+	"./Nina_Shevchuk.MOV": "./resources/assets/video/Nina_Shevchuk.MOV",
 	"./Olena_Semenchuk.MOV": "./resources/assets/video/Olena_Semenchuk.MOV",
 	"./Olga_Depeshko.MOV": "./resources/assets/video/Olga_Depeshko.MOV",
 	"./Olga_Martsenyuk.MOV": "./resources/assets/video/Olga_Martsenyuk.MOV",
@@ -51127,11 +51464,23 @@ var map = {
 	"./images/TeamB/brandMakeUp/napura_black.jpg": "./resources/assets/images/TeamB/brandMakeUp/napura_black.jpg",
 	"./images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg": "./resources/assets/images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg",
 	"./images/TeamB/brandMakeUp/yonka.jpg": "./resources/assets/images/TeamB/brandMakeUp/yonka.jpg",
-	"./images/TeamB/gallery/photo-1.jpg": "./resources/assets/images/TeamB/gallery/photo-1.jpg",
-	"./images/TeamB/gallery/photo-2.jpg": "./resources/assets/images/TeamB/gallery/photo-2.jpg",
-	"./images/TeamB/gallery/photo-3.jpg": "./resources/assets/images/TeamB/gallery/photo-3.jpg",
+	"./images/TeamB/gallery/150-31-1-370x370.jpg": "./resources/assets/images/TeamB/gallery/150-31-1-370x370.jpg",
+	"./images/TeamB/gallery/150-34-1-370x370.jpg": "./resources/assets/images/TeamB/gallery/150-34-1-370x370.jpg",
+	"./images/TeamB/gallery/150-35-1-370x370.jpg": "./resources/assets/images/TeamB/gallery/150-35-1-370x370.jpg",
+	"./images/TeamB/gallery/150-37-1-370x370.jpg": "./resources/assets/images/TeamB/gallery/150-37-1-370x370.jpg",
+	"./images/TeamB/gallery/150-38-1-370x370.jpg": "./resources/assets/images/TeamB/gallery/150-38-1-370x370.jpg",
+	"./images/TeamB/gallery/150-42-1-370x370.jpg": "./resources/assets/images/TeamB/gallery/150-42-1-370x370.jpg",
+	"./images/TeamB/gallery/150-43-1-370x370.jpg": "./resources/assets/images/TeamB/gallery/150-43-1-370x370.jpg",
+	"./images/TeamB/gallery/overlay/150-31-1-min.jpg": "./resources/assets/images/TeamB/gallery/overlay/150-31-1-min.jpg",
+	"./images/TeamB/gallery/overlay/150-34-1-min.jpg": "./resources/assets/images/TeamB/gallery/overlay/150-34-1-min.jpg",
+	"./images/TeamB/gallery/overlay/150-35-1-min.jpg": "./resources/assets/images/TeamB/gallery/overlay/150-35-1-min.jpg",
+	"./images/TeamB/gallery/overlay/150-37-1-min.jpg": "./resources/assets/images/TeamB/gallery/overlay/150-37-1-min.jpg",
+	"./images/TeamB/gallery/overlay/150-38-1-min.jpg": "./resources/assets/images/TeamB/gallery/overlay/150-38-1-min.jpg",
+	"./images/TeamB/gallery/overlay/150-42-1-min.jpg": "./resources/assets/images/TeamB/gallery/overlay/150-42-1-min.jpg",
+	"./images/TeamB/gallery/overlay/150-43-1-min.jpg": "./resources/assets/images/TeamB/gallery/overlay/150-43-1-min.jpg",
 	"./images/TeamG/Dementieva_Elena.jpg": "./resources/assets/images/TeamG/Dementieva_Elena.jpg",
 	"./images/TeamG/Gornushkina_Julia.jpg": "./resources/assets/images/TeamG/Gornushkina_Julia.jpg",
+	"./images/TeamG/Irina_Slyusarenko.jpg": "./resources/assets/images/TeamG/Irina_Slyusarenko.jpg",
 	"./images/TeamG/Melnyk_Serhiy.jpg": "./resources/assets/images/TeamG/Melnyk_Serhiy.jpg",
 	"./images/TeamG/Mikhail_Galagan.jpg": "./resources/assets/images/TeamG/Mikhail_Galagan.jpg",
 	"./images/TeamG/Nechko_Vasil.jpg": "./resources/assets/images/TeamG/Nechko_Vasil.jpg",
@@ -51153,6 +51502,16 @@ var map = {
 	"./images/TeamG/gallery/IMG_4595_370x370.jpg": "./resources/assets/images/TeamG/gallery/IMG_4595_370x370.jpg",
 	"./images/TeamG/gallery/IMG_4608_370x370.jpg": "./resources/assets/images/TeamG/gallery/IMG_4608_370x370.jpg",
 	"./images/TeamG/gallery/IMG_4614_370x370.jpg": "./resources/assets/images/TeamG/gallery/IMG_4614_370x370.jpg",
+	"./images/TeamG/gallery/overlay/IMG_1540-1-min.jpg": "./resources/assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg",
+	"./images/TeamG/gallery/overlay/IMG_1548-1-min.jpg": "./resources/assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg",
+	"./images/TeamG/gallery/overlay/IMG_1620-1-min.jpg": "./resources/assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg",
+	"./images/TeamG/gallery/overlay/IMG_1627-1-min.jpg": "./resources/assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg",
+	"./images/TeamG/gallery/overlay/IMG_1635-1-min.jpg": "./resources/assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg",
+	"./images/TeamG/gallery/overlay/IMG_4574-min.jpg": "./resources/assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg",
+	"./images/TeamG/gallery/overlay/IMG_4583-min.jpg": "./resources/assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg",
+	"./images/TeamG/gallery/overlay/IMG_4595-min.jpg": "./resources/assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg",
+	"./images/TeamG/gallery/overlay/IMG_4608-min.jpg": "./resources/assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg",
+	"./images/TeamG/gallery/overlay/IMG_4614-min.jpg": "./resources/assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg",
 	"./images/TeamG/image-not-found.jpg": "./resources/assets/images/TeamG/image-not-found.jpg",
 	"./images/TeamG/tickets/level1.png": "./resources/assets/images/TeamG/tickets/level1.png",
 	"./images/TeamG/tickets/level2.png": "./resources/assets/images/TeamG/tickets/level2.png",
@@ -51277,6 +51636,7 @@ var map = {
 	"./video/Melnyk_Serhiy.MOV": "./resources/assets/video/Melnyk_Serhiy.MOV",
 	"./video/Mikhail_Galagan.MOV": "./resources/assets/video/Mikhail_Galagan.MOV",
 	"./video/Nechko_Vasil.MOV": "./resources/assets/video/Nechko_Vasil.MOV",
+	"./video/Nina_Shevchuk.MOV": "./resources/assets/video/Nina_Shevchuk.MOV",
 	"./video/Olena_Semenchuk.MOV": "./resources/assets/video/Olena_Semenchuk.MOV",
 	"./video/Olga_Depeshko.MOV": "./resources/assets/video/Olga_Depeshko.MOV",
 	"./video/Olga_Martsenyuk.MOV": "./resources/assets/video/Olga_Martsenyuk.MOV",

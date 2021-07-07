@@ -22,11 +22,6 @@ mix.webpackConfig({
                     }
                 ]
             }]
-    },
-    resolve: {
-        alias: {
-            'videojs': path.resolve(__dirname, 'node_modules/video.js/dist/video.min.js'),
-        }
     }
 });
 
@@ -36,5 +31,4 @@ mix.js('resources/js/Index.js', 'public/js/Index.js')
         extractStyles:'public/css/gbs-vue.css'
     })
     .sass('resources/sass/app.scss', 'public/css').version();
-mix.js('node_modules/video.js/dist/video.min.js', 'public/js/video.js')
 

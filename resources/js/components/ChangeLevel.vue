@@ -66,6 +66,7 @@ export default {
     left: 62px;
     top: 600px;
     z-index: 115;
+    mix-blend-mode: difference;
     & .g{
         width: 21px;
         display: block;

@@ -71,7 +71,7 @@ export default {
                 {id: 8, link: "Nechko_Vasil.jpg", linkVideo: "Nechko_Vasil.MOV"},
                 {id: 9, link: "Gornushkina_Julia.jpg", linkVideo: "Gornushkina_Julia.MOV"},
                 {id: 10, link: "Dementieva_Elena.jpg"},
-                {id: 11, link: "image-not-found.jpg"},
+                {id: 11, link: "image-not-found.jpg", linkVideo: "Nina_Shevchuk.MOV"},
                 {id: 12, link: "image-not-found.jpg"}
             ],
         }

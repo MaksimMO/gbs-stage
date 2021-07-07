@@ -116,16 +116,16 @@ export default {
                 {id: 12, link: "image-not-found.jpg"}
             ],
             gallery: [
-                { id: 1, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default },
-                { id: 2, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default },
-                { id: 3, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default },
-                { id: 4, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default },
-                { id: 5, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg").default },
-                { id: 6, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4574_370x370.jpg").default },
-                { id: 7, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4583_370x370.jpg").default },
-                { id: 8, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4595_370x370.jpg").default },
-                { id: 9, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4608_370x370.jpg").default },
-                { id: 10, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4614_370x370.jpg").default }
+                { id: 1, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg").default},
+                { id: 2, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg").default },
+                { id: 3, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg").default },
+                { id: 4, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg").default },
+                { id: 5, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg").default },
+                { id: 6, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4574_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg").default },
+                { id: 7, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4583_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default },
+                { id: 8, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4595_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default },
+                { id: 9, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4608_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default },
+                { id: 10, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4614_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default }
             ]
         }
     },
