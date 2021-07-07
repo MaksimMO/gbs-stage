@@ -220,6 +220,7 @@ export default {
         text-decoration:none;
         width: max-content;
         color:#fff;
+        padding: 3px;
         transition: all 0.2s linear;
         position: relative;
         cursor: pointer;
@@ -590,6 +591,9 @@ export default {
       text-transform: uppercase;
       display: block;
       color: #000000;
+      &:hover {
+          color: #916C58;
+      }
 
       @media screen and (max-width:767px){
         margin-bottom: 0;

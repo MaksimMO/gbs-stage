@@ -172,6 +172,7 @@ export default {
         text-decoration: none;
         width: max-content;
         color: #fff;
+        padding: 3px;
         transition: all 0.2s linear;
         position: relative;
         cursor: pointer;

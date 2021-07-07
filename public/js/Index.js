@@ -19835,18 +19835,16 @@ swiper_core__WEBPACK_IMPORTED_MODULE_1__.default.use([swiper_core__WEBPACK_IMPOR
       this.isSelected = false;
     },
     isShow: function isShow() {
-      if (!this.isOpen) {
-        console.log('isShow');
-        this.$emit('isShow', true);
-        this.isSelected = true;
-      }
+      // if(!this.isOpen) {
+      //     console.log('isShow')
+      this.$emit('isShow', true);
+      this.isSelected = true; // }
     },
     isClosed: function isClosed() {
-      if (this.isOpen && this.isSelected) {
-        console.log('isClosed');
-        this.$emit('isClosed', false);
-        this.isSelected = false;
-      }
+      // if(this.isOpen && this.isSelected) {
+      console.log('isClosed');
+      this.$emit('isClosed', false);
+      this.isSelected = false; // }
     }
   },
   components: {
@@ -23656,12 +23654,12 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
     "class": "scrollTop",
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $options.scrollToTop();
     })
-  }, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img src=\"../../assets/images/scrollTop.svg\" alt=\"scroll\"> "), _hoisted_2]);
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"scroll-text\">Догори</div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img src=\"../../assets/images/scrollTop.svg\" alt=\"scroll\"> "), _hoisted_2])]);
 });
 
 /***/ }),
@@ -23808,7 +23806,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   return !_ctx.$root.$data.isMobile ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
     key: 0,
     "class": ['trainer-item', {
-      'is-scaled': $data.isHovered && !$props.isSlider
+      'is-scaled': $data.isHovered && $data.isSelected
     }],
     onMouseenter: _cache[1] || (_cache[1] = function () {
       return $options.enter && $options.enter.apply($options, arguments);
@@ -23840,7 +23838,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   /* TEXT */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("trainers.".concat($props.trainer.id, ".description"))), 513
   /* TEXT, NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.isSelected && !$props.isSlider]])], 2
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.isSelected]])], 2
   /* CLASS */
   )], 34
   /* CLASS, HYDRATE_EVENTS */
@@ -24058,31 +24056,35 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNod
 
 var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("тренажери");
 
-var _hoisted_11 = {
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Абонементи");
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+
+var _hoisted_13 = {
   key: 1,
   "class": "line-2"
 };
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
 
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
 
-var _hoisted_14 = {
+var _hoisted_16 = {
   key: 2,
   "class": "line-2"
 };
 
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Послуги");
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Послуги");
 
-var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
 
-var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
 
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("hr", null, null, -1
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("hr", null, null, -1
 /* HOISTED */
 );
 
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "line-3"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "text-1"
@@ -24157,12 +24159,32 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     _: 1
     /* STABLE */
 
-  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.$root.$data.area == 'b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "link-1",
+    to: "/tickets-g"
+  }, {
+    "default": _withId(function () {
+      return [_hoisted_11];
+    }),
+    _: 1
+    /* STABLE */
+
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "link-1",
+    to: "/contacts-g"
+  }, {
+    "default": _withId(function () {
+      return [_hoisted_12];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.$root.$data.area == 'b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "link-1",
     to: "/price-b"
   }, {
     "default": _withId(function () {
-      return [_hoisted_12];
+      return [_hoisted_14];
     }),
     _: 1
     /* STABLE */
@@ -24172,17 +24194,17 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     to: "/contacts-b"
   }, {
     "default": _withId(function () {
-      return [_hoisted_13];
+      return [_hoisted_15];
     }),
     _: 1
     /* STABLE */
 
-  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.$root.$data.area == 's' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.$root.$data.area == 's' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "link-1",
     to: "/areas-s"
   }, {
     "default": _withId(function () {
-      return [_hoisted_15];
+      return [_hoisted_17];
     }),
     _: 1
     /* STABLE */
@@ -24192,7 +24214,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     to: "/price-s"
   }, {
     "default": _withId(function () {
-      return [_hoisted_16];
+      return [_hoisted_18];
     }),
     _: 1
     /* STABLE */
@@ -24202,12 +24224,12 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     to: "/contacts-s"
   }, {
     "default": _withId(function () {
-      return [_hoisted_17];
+      return [_hoisted_19];
     }),
     _: 1
     /* STABLE */
 
-  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_18, _hoisted_19]);
+  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_20, _hoisted_21]);
 });
 
 /***/ }),
@@ -24751,6 +24773,18 @@ var _hoisted_10 = {
   "class": "teams-slider"
 };
 
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+  "class": "certificate-title"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Нагороди та сертифікати"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum. Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam. Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est. ")], -1
+/* HOISTED */
+);
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+  "class": "certificate-description"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum. Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis. Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum. Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec hendrerit neque... ")], -1
+/* HOISTED */
+);
+
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
@@ -24763,6 +24797,8 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
 
   var _component_TeamsSlider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("TeamsSlider");
+
+  var _component_CertificateSlider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("CertificateSlider");
 
   var _component_Footer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Footer");
 
@@ -24790,7 +24826,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   }, null, 8
   /* PROPS */
-  , ["trainers", "isOpen"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"certificate-title\">\r\n        <h1>Нагороди та сертифікати</h1>\r\n        <p>\r\n            Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.\r\n            Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam.\r\n            Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est.\r\n        </p>\r\n    </section>\r\n    <CertificateSlider />\r\n    <section class=\"certificate-description\">\r\n        <p>\r\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.\r\n            Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.\r\n            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.\r\n            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n            Sed nec hendrerit neque...\r\n        </p>\r\n    </section> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  , ["trainers", "isOpen"])])]), _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CertificateSlider), _hoisted_12]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 });
@@ -25222,7 +25258,7 @@ var _hoisted_4 = {
   "class": "location-contact"
 };
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"contact-address\" data-v-cf61fa1c><p data-v-cf61fa1c>м. Вінниця, вул. Келецька, 78В ТСК «Магігранд», 3 поверх</p></div><div class=\"contact-phone\" data-v-cf61fa1c><p data-v-cf61fa1c>0800 355 555</p></div><div class=\"work-period\" data-v-cf61fa1c><p class=\"work-title\" data-v-cf61fa1c>Години роботи:</p><p class=\"work-time\" data-v-cf61fa1c>Пн - Пт з 07:00 до 23:00</p><p class=\"work-time\" data-v-cf61fa1c>Сб - Нд з 08:00 до 23:00</p></div>", 3);
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"contact-address\" data-v-cf61fa1c><p data-v-cf61fa1c><span data-v-cf61fa1c>м. Вінниця, вул. Келецька, 78В ТСК «Магігранд», 3 поверх</span></p></div><div class=\"contact-phone\" data-v-cf61fa1c><a href=\"tel:0800355555\" data-v-cf61fa1c>0800 355 555</a></div><div class=\"work-period\" data-v-cf61fa1c><p class=\"work-title\" data-v-cf61fa1c>Години роботи:</p><p class=\"work-time\" data-v-cf61fa1c>Пн - Пт з 07:00 до 23:00</p><p class=\"work-time\" data-v-cf61fa1c>Сб - Нд з 08:00 до 23:00</p></div>", 3);
 
 var _hoisted_8 = {
   "class": "contact-social-networks"
@@ -25233,6 +25269,7 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 );
 
 var _hoisted_10 = {
+  target: "_blank",
   href: "https://www.facebook.com/gbs.level",
   "class": "facebookGold"
 };
@@ -25245,6 +25282,7 @@ var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 );
 
 var _hoisted_12 = {
+  target: "_blank",
   href: "https://www.facebook.com/blevel.gbs",
   "class": "facebookGold"
 };
@@ -25257,6 +25295,7 @@ var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 );
 
 var _hoisted_14 = {
+  target: "_blank",
   href: "https://www.instagram.com/gbs.level",
   "class": "instagramGold"
 };
@@ -25269,6 +25308,7 @@ var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 );
 
 var _hoisted_16 = {
+  target: "_blank",
   href: "https://www.instagram.com/blevel.gbs",
   "class": "instagramGold"
 };
@@ -25681,7 +25721,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   }, null, 8
   /* PROPS */
-  , ["trainers", "isOpen"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AreasSliderG), _hoisted_20]), _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("\r\n    <div class=\"seo-text\">\r\n      <div class=\"title\">\r\n        SEO текст\r\n      </div>\r\n      <div class=\"text\">\r\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum. Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis. Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum. Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec hendrerit neque...\r\n      </div>\r\n    </div> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  , ["trainers", "isOpen"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AreasSliderG), _hoisted_20]), _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("\n    <div class=\"seo-text\">\n      <div class=\"title\">\n        SEO текст\n      </div>\n      <div class=\"text\">\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum. Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis. Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum. Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec hendrerit neque...\n      </div>\n    </div> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 });

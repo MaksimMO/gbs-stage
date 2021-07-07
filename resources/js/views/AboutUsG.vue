@@ -53,7 +53,7 @@
             />
         </div>
     </section>
-    <!-- <section class="certificate-title">
+    <section class="certificate-title">
         <h1>Нагороди та сертифікати</h1>
         <p>
             Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.
@@ -70,7 +70,7 @@
             Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
             Sed nec hendrerit neque...
         </p>
-    </section> -->
+    </section>
   </div>
 <Footer/>
 </template>
@@ -305,14 +305,20 @@ export default {
             }
         }
         .all-our-trainers-link{
-            margin: 0;
+            background-color: #fff;
+            margin: 56px 83px 76px 0;
             font-weight: bold;
             font-size: 12px;
             line-height: 14px;
             text-align: right;
             letter-spacing: 0.05em;
-            color: #000000;
+            -webkit-text-decoration-line: underline;
             text-transform: uppercase;
+            display: block;
+            color: #000000;
+            &:hover {
+                color: #916C58;
+            }
         }
 
         .trainers-container .trainer-item:nth-of-type(even) {

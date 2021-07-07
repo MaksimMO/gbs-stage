@@ -376,6 +376,7 @@ export default {
         list-style: none;
         padding: 0;
         padding-left: 1em;
+        background: rgba(244,240,238, .05);
         & li {
             font-family: Raleway;
             font-style: normal;

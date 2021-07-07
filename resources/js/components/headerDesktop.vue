@@ -197,6 +197,7 @@ export default {
         line-height: 16px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
+        padding: 3px;
         // width: 138px;
         text-align: center;
         transition: all 0.6s linear;

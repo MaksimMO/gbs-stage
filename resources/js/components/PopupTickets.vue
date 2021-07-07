@@ -27,7 +27,7 @@ export default {
     width: 100%;
     top: 0;
     overflow: auto;
-    z-index: 125;
+    z-index: 260;
     background-color: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);

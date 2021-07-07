@@ -1,5 +1,5 @@
 <template>
-<div :class="['trainer-item', {'is-scaled':isHovered && !isSlider}]"
+<div :class="['trainer-item', {'is-scaled':isHovered && isSelected}]"
     @mouseenter="enter"
     @mouseleave="leave"
     v-if="!$root.$data.isMobile"
@@ -12,7 +12,7 @@
     </div>
     <div :class="['description', {'description-background': isHovered}]">
         <p class="descriptionTitle">{{$i18n.t(`trainers.${trainer.id}.direction`)}}</p>
-        <p v-show="isSelected && !isSlider">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
+        <p v-show="isSelected">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
     </div>
 </div>
 <div v-else :class="['trainer-item-mobile', {'is-scaled': isSelected && !isSlider}]">
@@ -50,19 +50,19 @@ export default {
             this.isSelected = false;
         },
         isShow(){
-            if(!this.isOpen) {
-                console.log('isShow')
+            // if(!this.isOpen) {
+            //     console.log('isShow')
                 this.$emit('isShow', true);
                 this.isSelected = true;
-            }
+            // }
 
         },
         isClosed(){
-            if(this.isOpen && this.isSelected) {
+            // if(this.isOpen && this.isSelected) {
                 console.log('isClosed')
                 this.$emit('isClosed', false);
                 this.isSelected = false;
-            }
+            // }
 
         }
     },
@@ -199,6 +199,7 @@ Video{
     line-height: 28px;
     color: #000000;
 
+
     & p {
         margin: 0;
         // max-height: 95px;
@@ -217,7 +218,7 @@ Video{
 }
 
 .description-background {
-    background-color: #ffffff;
+    background-color: #F4F0EE;
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {

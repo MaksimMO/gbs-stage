@@ -8,10 +8,10 @@
       <section class="location">
         <div class="location-contact">
             <div class="contact-address">
-                <p>м. Вінниця, вул. Келецька, 78В ТСК «Магігранд», 3 поверх</p>
+                <p><span>м. Вінниця, вул. Келецька, 78В ТСК «Магігранд», 3 поверх</span></p>
             </div>
             <div class="contact-phone">
-                <p>0800 355 555</p>
+                <a href="tel:0800355555">0800 355 555</a>
             </div>
             <div class="work-period">
                 <p class="work-title">Години роботи:</p>
@@ -21,16 +21,16 @@
             <div class="contact-social-networks">
                 <p>Ми у соц.мережах: </p>
                 <span>
-                    <a v-show="$root.$data.area == 'g' || $root.$data.area == 's'" href="https://www.facebook.com/gbs.level" class="facebookGold">
+                    <a target="_blank" v-show="$root.$data.area == 'g' || $root.$data.area == 's'" href="https://www.facebook.com/gbs.level" class="facebookGold">
                         <img src="../../assets/images/facebookGold.svg"  alt="facebook"/>
                     </a>
-                    <a v-show="$root.$data.area == 'b'" href="https://www.facebook.com/blevel.gbs" class="facebookGold">
+                    <a target="_blank" v-show="$root.$data.area == 'b'" href="https://www.facebook.com/blevel.gbs" class="facebookGold">
                         <img src="../../assets/images/facebookGold.svg"  alt="facebook"/>
                     </a>
-                    <a v-show="$root.$data.area == 'g' || $root.$data.area == 's'" href="https://www.instagram.com/gbs.level" class="instagramGold">
+                    <a target="_blank" v-show="$root.$data.area == 'g' || $root.$data.area == 's'" href="https://www.instagram.com/gbs.level" class="instagramGold">
                         <img src="../../assets/images/instagramGold.svg" alt="instagram"/>
                     </a>
-                    <a v-show="$root.$data.area == 'b'" href="https://www.instagram.com/blevel.gbs" class="instagramGold">
+                    <a target="_blank" v-show="$root.$data.area == 'b'" href="https://www.instagram.com/blevel.gbs" class="instagramGold">
                         <img src="../../assets/images/instagramGold.svg" alt="instagram"/>
                     </a>
                 </span>
@@ -102,7 +102,7 @@ export default {
         color: #000000;
     }
     .location {
-        padding: 0 9.81vw;
+        padding: 0 58px 0 9.81vw;
         margin-bottom: 60px;
         display: flex;
         & .location-contact {
@@ -120,13 +120,12 @@ export default {
             & .contact-address {
                 margin-bottom: 30px;
                 display: flex;
-                & p {
+                & p span {
                     margin: 0;
                     width: 90%;
                 }
-            }
-            & .contact-address::before{
-                    background-color: rgba(145, 08, 88, .15);
+                & p::before{
+                    background-color: rgba(145, 108, 88, .15);
                     border-radius: 50%;
                     display: inline-block;
                     content: url('../../assets/images/marker.svg');
@@ -135,13 +134,16 @@ export default {
                     text-align: center;
                     margin-right: 20px;
                 }
+            }
             & .contact-phone {
                 margin-bottom: 30px;
-                & p {
+                & a {
                     margin: 0;
+                    text-decoration: none;
+                    color: unset;
                 }
-                & p::before{
-                    background-color: rgba(145, 08, 88, .15);
+                & a::before{
+                    background-color: rgba(145, 108, 88, .15);
                     border-radius: 50%;
                     display: inline-block;
                     content: url('../../assets/images/phone-icon.svg');
@@ -286,7 +288,7 @@ export default {
                 margin-bottom: 30px;
                 .contact-address {
                     & p {
-                        line-height: 18px;
+                        // line-height: 18px;
                     }
                 }
 
