@@ -77,7 +77,7 @@
                 </li>
 {{--            @endcan--}}
             <li class="nav-item">
-                <a href="{{ url("calendar.index") }}" class="nav-link {{ request()->is('admin/calendar') || request()->is('admin/calendar/*') ? 'active' : '' }}">
+                <a href="{{ route("calendar.index") }}" class="nav-link {{ request()->is('calendar') || request()->is('calendar/*') ? 'active' : '' }}">
                     <i class="fa-fw fas fa-calendar nav-icon">
 
                     </i>

@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Lesson;
+use App\Models\Lesson;
 use Carbon\Carbon;
 
 class CalendarService

@@ -22,47 +22,36 @@
                         <th width="10">
 
                         </th>
-                        <th>
-                            {{ trans('cruds.user.fields.id') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.user.fields.name') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.user.fields.email') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.user.fields.email_verified_at') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.user.fields.roles') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.user.fields.class') }}
-                        </th>
-                        <th>
-                            &nbsp;
-                        </th>
+                        <th>{{ trans('cruds.user.fields.id') }}</th>
+                        <th>Ім'я</th>
+{{--                        <th>--}}
+{{--                            {{ trans('cruds.user.fields.email') }}--}}
+{{--                        </th>--}}
+{{--                        <th>--}}
+{{--                            {{ trans('cruds.user.fields.email_verified_at') }}--}}
+{{--                        </th>--}}
+                        <th>Роль</th>
+                        <th>Заняття</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach($users as $key => $user)
+                        @if($user->roles->count())
                         <tr data-entry-id="{{ $user->id }}">
-                            <td>
-
-                            </td>
+                            <td></td>
                             <td>
                                 {{ $user->id ?? '' }}
                             </td>
                             <td>
                                 {{ $user->name ?? '' }}
                             </td>
-                            <td>
-                                {{ $user->email ?? '' }}
-                            </td>
-                            <td>
-                                {{ $user->email_verified_at ?? '' }}
-                            </td>
+{{--                            <td>--}}
+{{--                                {{ $user->email ?? '' }}--}}
+{{--                            </td>--}}
+{{--                            <td>--}}
+{{--                                {{ $user->email_verified_at ?? '' }}--}}
+{{--                            </td>--}}
                             <td>
                                 @foreach($user->roles as $key => $item)
                                     <span class="badge badge-info">{{ $item->title }}</span>
@@ -72,29 +61,30 @@
                                 {{ $user->class->name ?? '' }}
                             </td>
                             <td>
-                                @can('user_show')
-                                    <a class="btn btn-xs btn-primary" href="{{ route('admin.users.show', $user->id) }}">
+{{--                                @can('user_show')--}}
+                                    <a class="btn btn-xs btn-primary" href="{{ route('users.show', $user->id) }}">
                                         {{ trans('global.view') }}
                                     </a>
-                                @endcan
+{{--                                @endcan--}}
 
-                                @can('user_edit')
-                                    <a class="btn btn-xs btn-info" href="{{ route('admin.users.edit', $user->id) }}">
+{{--                                @can('user_edit')--}}
+                                    <a class="btn btn-xs btn-info" href="{{ route('users.edit', $user->id) }}">
                                         {{ trans('global.edit') }}
                                     </a>
-                                @endcan
+{{--                                @endcan--}}
 
-                                @can('user_delete')
-                                    <form action="{{ route('admin.users.destroy', $user->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
+{{--                                @can('user_delete')--}}
+                                    <form action="{{ route('users.destroy', $user->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                         <input type="submit" class="btn btn-xs btn-danger" value="{{ trans('global.delete') }}">
                                     </form>
-                                @endcan
+{{--                                @endcan--}}
 
                             </td>
 
                         </tr>
+                        @endif
                     @endforeach
                 </tbody>
             </table>

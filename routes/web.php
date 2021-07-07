@@ -36,17 +36,19 @@ Route::put('/update-data/{id}', [App\Http\Controllers\AdminController::class, 'u
  */
 //Route::get('/schedule', [App\Http\Controllers\ScheduleController::class, 'index'])->name('list');
 
-	// Users
-	Route::delete('users/destroy', 'App\Http\Controllers\Admin\UsersController@massDestroy')->name('users.massDestroy');
-	Route::resource('users', 'App\Http\Controllers\Admin\UsersController');
+// Users
+Route::delete('users/destroy', 'App\Http\Controllers\Admin\UsersController@massDestroy')->name('users.massDestroy');
+Route::resource('users', 'App\Http\Controllers\Admin\UsersController');
 
-	// Lessons
-	Route::delete('schedule/destroy', 'App\Http\Controllers\Admin\LessonsController@massDestroy')->name('schedule.massDestroy');
-	Route::resource('schedule', 'App\Http\Controllers\Admin\LessonsController');
+// Lessons
+Route::delete('schedule/destroy', 'App\Http\Controllers\Admin\LessonsController@massDestroy')->name('schedule.massDestroy');
+Route::resource('schedule', 'App\Http\Controllers\Admin\LessonsController');
 
-	// School Classes
-	Route::delete('workouts/destroy', 'App\Http\Controllers\Admin\SchoolClassesController@massDestroy')->name('workouts.massDestroy');
-	Route::resource('workouts', 'App\Http\Controllers\Admin\SchoolClassesController');
+// School Classes
+Route::delete('workouts/destroy', 'App\Http\Controllers\Admin\SchoolClassesController@massDestroy')->name('workouts.massDestroy');
+Route::resource('workouts', 'App\Http\Controllers\Admin\SchoolClassesController');
+
+Route::get('calendar', 'App\Http\Controllers\Admin\CalendarController@index')->name('calendar.index');
 
 // Redirect on registration
 /*Route::get('/register', function() {

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Lesson;
+use App\Models\Lesson;
 use App\Services\CalendarService;
 
 class CalendarController extends Controller
