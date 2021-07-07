@@ -49,6 +49,7 @@ Route::delete('workouts/destroy', 'App\Http\Controllers\Admin\SchoolClassesContr
 Route::resource('workouts', 'App\Http\Controllers\Admin\SchoolClassesController');
 
 Route::get('calendar', 'App\Http\Controllers\Admin\CalendarController@index')->name('calendar.index');
+Route::get('show-schedule', 'App\Http\Controllers\Admin\CalendarController@showSchedule')->name('calendar.showSchedule');
 
 // Redirect on registration
 /*Route::get('/register', function() {

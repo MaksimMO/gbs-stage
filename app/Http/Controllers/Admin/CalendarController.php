@@ -15,4 +15,12 @@ class CalendarController extends Controller
 
         return view('admin.calendar', compact('weekDays', 'calendarData'));
     }
+
+    public function showSchedule(CalendarService $calendarService)
+	{
+		$weekDays     = Lesson::WEEK_DAYS;
+		$calendarData = $calendarService->generateCalendarData($weekDays);
+
+		return view('admin.calendar', compact('weekDays', 'calendarData'));
+	}
 }

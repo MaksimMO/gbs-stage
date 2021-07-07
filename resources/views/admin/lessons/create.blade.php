@@ -3,14 +3,14 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.create') }} {{ trans('cruds.lesson.title_singular') }}
+        Додати тренування
     </div>
 
     <div class="card-body">
-        <form method="POST" action="{{ route("admin.lessons.store") }}" enctype="multipart/form-data">
+        <form method="POST" action="{{ route("schedule.store") }}" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
-                <label class="required" for="class_id">{{ trans('cruds.lesson.fields.class') }}</label>
+                <label class="required" for="class_id">Тип тренування</label>
                 <select class="form-control select2 {{ $errors->has('class') ? 'is-invalid' : '' }}" name="class_id" id="class_id" required>
                     @foreach($classes as $id => $class)
                         <option value="{{ $id }}" {{ old('class_id') == $id ? 'selected' : '' }}>{{ $class }}</option>
@@ -35,11 +35,20 @@
                         {{ $errors->first('teacher') }}
                     </div>
                 @endif
-                <span class="help-block">{{ trans('cruds.lesson.fields.teacher_helper') }}</span>
+                <span class="help-block">Тренер</span>
             </div>
             <div class="form-group">
-                <label class="required" for="weekday">{{ trans('cruds.lesson.fields.weekday') }}</label>
-                <input class="form-control {{ $errors->has('weekday') ? 'is-invalid' : '' }}" type="number" name="weekday" id="weekday" value="{{ old('weekday') }}" step="1" required>
+                <label class="required" for="weekday">День тижня</label>
+                <select class="form-control select2 {{ $errors->has('teacher') ? 'is-invalid' : '' }}" name="weekday" id="weekday" required>
+                    <option value="1">Понеділок</option>
+                    <option value="2">Вівторок</option>
+                    <option value="3">Середа</option>
+                    <option value="4">Четвер</option>
+                    <option value="5">П'ятниця</option>
+                    <option value="6">Субота</option>
+                    <option value="7">Неділя</option>
+                </select>
+{{--                <input class="form-control {{ $errors->has('weekday') ? 'is-invalid' : '' }}" type="number" name="weekday" id="weekday" value="{{ old('weekday') }}" step="1" required>--}}
                 @if($errors->has('weekday'))
                     <div class="invalid-feedback">
                         {{ $errors->first('weekday') }}
@@ -48,14 +57,14 @@
                 <span class="help-block">{{ trans('cruds.lesson.fields.weekday_helper') }}</span>
             </div>
             <div class="form-group">
-                <label class="required" for="start_time">{{ trans('cruds.lesson.fields.start_time') }}</label>
+                <label class="required" for="start_time">Час початку заняття</label>
                 <input class="form-control lesson-timepicker {{ $errors->has('start_time') ? 'is-invalid' : '' }}" type="text" name="start_time" id="start_time" value="{{ old('start_time') }}" required>
                 @if($errors->has('start_time'))
                     <div class="invalid-feedback">
                         {{ $errors->first('start_time') }}
                     </div>
                 @endif
-                <span class="help-block">{{ trans('cruds.lesson.fields.start_time_helper') }}</span>
+                <span class="help-block">Час закінчення заняття</span>
             </div>
             <div class="form-group">
                 <label class="required" for="end_time">{{ trans('cruds.lesson.fields.end_time') }}</label>

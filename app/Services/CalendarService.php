@@ -38,6 +38,7 @@ class CalendarService
 
 			$calendarData[] = $record;
 		}
-		return json_encode($calendarData);
+		dd($calendarData);
+		return $calendarData;
 	}
 }

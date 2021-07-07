@@ -1,14 +1,14 @@
 @extends('layouts.admin')
 @section('content')
-@can('lesson_create')
+{{--@can('lesson_create')--}}
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
-            <a class="btn btn-success" href="{{ route("admin.lessons.create") }}">
+            <a class="btn btn-success" href="{{ route("schedule.create") }}">
                 {{ trans('global.add') }} {{ trans('cruds.lesson.title_singular') }}
             </a>
         </div>
     </div>
-@endcan
+{{--@endcan--}}
 <div class="card">
     <div class="card-header">
         {{ trans('cruds.lesson.title_singular') }} {{ trans('global.list') }}
@@ -70,25 +70,25 @@
                                 {{ $lesson->end_time ?? '' }}
                             </td>
                             <td>
-                                @can('lesson_show')
-                                    <a class="btn btn-xs btn-primary" href="{{ route('admin.lessons.show', $lesson->id) }}">
+{{--                                @can('lesson_show')--}}
+                                    <a class="btn btn-xs btn-primary" href="{{ route('schedule.show', $lesson->id) }}">
                                         {{ trans('global.view') }}
                                     </a>
-                                @endcan
+{{--                                @endcan--}}
 
-                                @can('lesson_edit')
-                                    <a class="btn btn-xs btn-info" href="{{ route('admin.lessons.edit', $lesson->id) }}">
+{{--                                @can('lesson_edit')--}}
+                                    <a class="btn btn-xs btn-info" href="{{ route('schedule.edit', $lesson->id) }}">
                                         {{ trans('global.edit') }}
                                     </a>
-                                @endcan
+{{--                                @endcan--}}
 
-                                @can('lesson_delete')
-                                    <form action="{{ route('admin.lessons.destroy', $lesson->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
+{{--                                @can('lesson_delete')--}}
+                                    <form action="{{ route('schedule.destroy', $lesson->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                         <input type="submit" class="btn btn-xs btn-danger" value="{{ trans('global.delete') }}">
                                     </form>
-                                @endcan
+{{--                                @endcan--}}
 
                             </td>
 
@@ -108,11 +108,11 @@
 <script>
     $(function () {
   let dtButtons = $.extend(true, [], $.fn.dataTable.defaults.buttons)
-@can('lesson_delete')
+{{--@can('lesson_delete')--}}
   let deleteButtonTrans = '{{ trans('global.datatables.delete') }}'
   let deleteButton = {
     text: deleteButtonTrans,
-    url: "{{ route('admin.lessons.massDestroy') }}",
+    url: "{{ route('schedule.massDestroy') }}",
     className: 'btn-danger',
     action: function (e, dt, node, config) {
       var ids = $.map(dt.rows({ selected: true }).nodes(), function (entry) {
@@ -136,11 +136,14 @@
     }
   }
   dtButtons.push(deleteButton)
-@endcan
+{{--@endcan--}}
 
   $.extend(true, $.fn.dataTable.defaults, {
     order: [[ 1, 'desc' ]],
     pageLength: 100,
+    language: {
+        url: 'https://cdn.datatables.net/plug-ins/1.10.24/i18n/Ukrainian.json'
+    }
   });
   $('.datatable-Lesson:not(.ajaxTable)').DataTable({ buttons: dtButtons })
     $('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
