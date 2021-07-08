@@ -9,8 +9,8 @@
     <div class="address"><span>ТСК “МАГІГРАНД”,</span> <span>вул. Келецька, 78В</span></div>
     <PhoneLink />
     <div class="social-networks">
-      <a href="https://www.facebook.com/gbs.level" class="facebook"></a>
-      <a href="https://www.instagram.com/gbs.level" class="instagram"></a>
+      <a href="https://www.facebook.com/gbs.level" class="facebook" target="_blank"></a>
+      <a href="https://www.instagram.com/gbs.level" class="instagram" target="_blank"></a>
     </div>
   </div>
   <div v-if="$root.$data.area == 'g'" class="line-2">
@@ -116,7 +116,10 @@ export default {
     font-style: normal;
     font-weight: 600;
     letter-spacing: 0.1em;
-    text-align: center;
+    display: flex;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
     span{
       white-space: nowrap;
     }
