@@ -265,7 +265,7 @@ export default {
                     margin-bottom: 10px;
                     & .line-dotted {
                         flex: 1 0;
-                        border-bottom: 1px dotted #000;
+                        border-bottom: 2px dotted #000;
                         height: 20px;
                         margin: 0 .4em;
                     }

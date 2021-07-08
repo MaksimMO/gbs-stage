@@ -6024,7 +6024,7 @@ li[data-v-5d9f7d78] {
 }
 .price-direction .price > .left > ul > li .line-dotted[data-v-5d9f7d78], .price-direction .price > .left > ul > .subtitle > li .line-dotted[data-v-5d9f7d78], .price-direction .price > .right > ul > li .line-dotted[data-v-5d9f7d78], .price-direction .price > .right > ul > .subtitle > li .line-dotted[data-v-5d9f7d78] {
   flex: 1 0;
-  border-bottom: 1px dotted #000;
+  border-bottom: 2px dotted #000;
   height: 20px;
   margin: 0 0.4em;
 }
@@ -6239,7 +6239,7 @@ li[data-v-5d9f7d78] {
 }
 .price-s .price-direction .price > ul > li > div .line-dotted[data-v-5e8f0d09] {
   flex: 1 0;
-  border-bottom: 1px dotted #000;
+  border-bottom: 2px dotted #000;
   height: 20px;
   margin: 0 0.4em;
 }
