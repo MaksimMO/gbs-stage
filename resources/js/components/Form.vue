@@ -11,23 +11,31 @@
         <label for="phone">Телефон</label>
         <div :style="{opacity: (phone.length === 0 && isShowValidationMessage) ? 1 : 0}" class="error-message">Дане поле заповнене не коректно</div>
     </div>
+    <div class="input-wrapper">
+        <input autocomplete="off" v-model="email" id="email" name="email" placeholder=" ">
+        <label for="email">E-mail</label>
+        <div :style="{opacity: (email.length === 0 && isShowValidationMessage) ? 1 : 0}" class="error-message">Дане поле заповнене не коректно</div>
+    </div>
         <button type="submit"><span>Залишити заявку</span></button>
     </form>
 
     <teleport to="body">
-        <popup v-if="modalOpen"/>
+            <popup v-if="modalOpen"/>
     </teleport>
 </template>
 
 <script>
 import popup from './Popup.vue'
+
+
 export default {
-    props:['level'],
+    props:['level', 'choiceLevel'],
     data(){
         return {
             csrf_token: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
             name:'',
             phone:'',
+            email:'',
             modalOpen:false,
             isShowValidationMessage: false,
         }
@@ -41,11 +49,18 @@ export default {
             let body = new FormData();
             body.append('name', this.name);
             body.append('phone_number', this.phone);
+            body.append('email', this.email);
             body.append('level', this.level);
             body.append('_token', this.csrf_token);
+            body.append('description', `Абонимент ${this.choiceLevel}`);
 
             fetch('/feedback-form', {method:'POST', body}).finally(()=>{
-                this.modalOpen=true;
+                if(this.level==='g'){
+                    this.$emit('submitSuccess');
+                }else{
+                    this.modalOpen=true;
+                }
+
             });
 
         },
@@ -55,7 +70,6 @@ export default {
         }
     },
     computed:{
-
     },
     components:{
         popup
@@ -73,8 +87,9 @@ button{
 form{
     display: flex;
     flex-direction: column;
+
     @media screen and (max-width: 767px) {
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -83,7 +98,7 @@ form{
     width: 370px;
     height: 69px;
     position: relative;
-    
+
     @media screen and (max-width: 767px) {
         width: unset;
         height: 50px;
@@ -150,6 +165,7 @@ input{
 }
 
  label {
+    font-family: Raleway;
     position: absolute;
     top: -26px;
     font-weight: 500;
@@ -158,7 +174,7 @@ input{
     color: #FFFFFF;
     opacity: 0.55;
     transition:all .2s ease-out;
-    
+
     @media screen and (max-width: 767px) {
         font-size: 16px;
         line-height: 18px;

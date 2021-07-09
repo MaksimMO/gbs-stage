@@ -1,15 +1,40 @@
 <template>
-    <loader />
+    <Loader />
+    <ChangeLevel v-show="$root.$data.area != undefined"/>
     <router-view />
+    <Scroll v-show="visible"/>
 </template>
 
 <script>
-import Loader from './components/loader.vue'
+import Header from './components/Header.vue'
+import Loader from './components/Loader.vue'
+import Footer from './components/Footer.vue'
+import Scroll from './components/ScrollTop.vue';
+import ChangeLevel from './components/ChangeLevel.vue';
 
 export default {
-
+    data() {
+        return {
+            visible: false
+        }
+    },
+    methods: {
+        scrollListener (e) {
+            this.visible = window.scrollY > 500
+        },
+    },
+    mounted: function () {
+        window.addEventListener('scroll', this.scrollListener)
+    },
+    beforeUnmount: function () {
+        window.removeEventListener('scroll', this.scrollListener)
+    },
     components:{
-        Loader
+        Loader,
+        Header,
+        Footer,
+        Scroll,
+        ChangeLevel,
     }
 }
 </script>
@@ -18,16 +43,13 @@ export default {
 html, body {
     height: 100%;
     margin: 0;
+    padding:0;
 }
 
 #gbslevel-app {
     height: 100%;
-    /* height: 702px; */
     font-family: 'Raleway';
     font-feature-settings: 'pnum' on, 'lnum' on;
-    background-color: #000000;
-    /* height: 100vh; */
-    /* min-height: 100vh; */
-    overflow: auto;
+    /* background-color: #000000; */
 }
 </style>
