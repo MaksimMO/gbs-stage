@@ -4888,16 +4888,16 @@ Video[data-v-6a0f304d] {
 .view-areas-g .container-areas .area .text-block .link-2[data-v-1c2b00e0]:before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
   left: -8px;
   width: calc(100% + 16px);
-  height: 50%;
+  height: calc(50% + 3px);
   background: #916c58;
   z-index: -1;
   transition: all 0.2s linear;
 }
 .view-areas-g .container-areas .area .text-block .link-2[data-v-1c2b00e0]:hover:before {
-  height: 100%;
+  height: calc(100% + 6px);
 }
 .view-areas-g .container-areas .area .text-block .link-2[data-v-1c2b00e0]:active {
   color: #000;
@@ -5055,16 +5055,16 @@ Video[data-v-6a0f304d] {
 .view-areas-s .container-areas .area .text-block .link-2[data-v-1cd41aec]:before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
   left: -8px;
   width: calc(100% + 16px);
-  height: 50%;
+  height: calc(50% + 3px);
   background: #916c58;
   z-index: -1;
   transition: all 0.2s linear;
 }
 .view-areas-s .container-areas .area .text-block .link-2[data-v-1cd41aec]:hover:before {
-  height: 100%;
+  height: calc(100% + 6px);
 }
 .view-areas-s .container-areas .area .text-block .link-2[data-v-1cd41aec]:active {
   color: #000;

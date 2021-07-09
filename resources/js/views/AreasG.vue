@@ -138,16 +138,17 @@ export default {
           &:before {
             content: "";
             position: absolute;
-            bottom: 0;
+            bottom: -3px;
             left: -8px;
             width: calc(100% + 16px);
-            height: 50%;
+            height: calc(50% + 3px);
             background: #916c58;
             z-index: -1;
             transition: all 0.2s linear;
           }
+
           &:hover:before {
-            height: 100%;
+            height: calc(100% + 6px);
           }
           &:active {
             color: #000;
