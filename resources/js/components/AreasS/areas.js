@@ -11,7 +11,10 @@ export default
     { "id": 5, "imageUrl": require("../../../assets/images/areas-s/area-s-5.jpg").default,
     "title":"Крижаний пілінг", "description":"Охолоджуючі процедури - це частина програми відновлення організму в нашому SPA – комплексі."},
     { "id": 6, "imageUrl": require("../../../assets/images/areas-s/area-s-6.jpg").default,
+
+    "titleBanner":"Душ вражень",
     "title":"За враженнями в Душ!",
+    "descriptionBanner":" ",
     "description":
     `<b>Програма 1: Тропічний дощ з ароматом</b>
     <br>

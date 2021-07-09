@@ -1,6 +1,7 @@
 
 <template>
   <swiper
+    :loop="true"
     :navigation="true"
     :slidesPerView="2"
     :spaceBetween="15"
@@ -32,16 +33,14 @@
             @isShow="(e) => change(e)"
             @isClosed="(e) => change(e)"/>
     </swiper-slide>
-    <swiper-slide></swiper-slide>
+    <!-- <swiper-slide></swiper-slide> -->
   </swiper>
 </template>
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import TrainerItem from '../components/TrainerItem.vue'
 
-import SwiperCore, {
-  Navigation
-} from 'swiper/core';
+import SwiperCore, {Navigation} from 'swiper/core';
 
 SwiperCore.use([Navigation]);
 
@@ -196,11 +195,11 @@ export default {
         }
     }
 
-    .swiper-slide-next + .swiper-slide{
-        transition: all .2s ease-in;
-        pointer-events: none;
-        opacity: 0;
-    }
+    // .swiper-slide-next + .swiper-slide{
+    //     transition: all .2s ease-in;
+    //     pointer-events: none;
+    //     opacity: 0;
+    // }
   }
 
 </style>>

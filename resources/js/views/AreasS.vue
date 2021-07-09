@@ -8,7 +8,7 @@
       <div class="area" v-for="area in areas" :key="area.id"  @click="$router.push(`/areas-g/${area.id}`)">
         <img :src="area.imageUrl" />
         <div class="text-block">
-          <div class="title">{{ area.title }}</div>
+          <div class="title">{{ area.titleBanner || area.title }}</div>
           <div class="description" v-html="area.description"></div>
           <router-link :to="`/areas-s/${area.id}`" class="link-2"
             >Переглянути</router-link

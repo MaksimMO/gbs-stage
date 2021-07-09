@@ -1,12 +1,17 @@
 
 <template>
-<swiper :navigation="true" :loop="true" class="mySwiperS">
+<swiper
+  :navigation="true"
+  :pagination="{'type': 'fraction'}"
+  :loop="true"
+  :autoplay='{"delay": 2500,"disableOnInteraction": false}'
+  class="mySwiperS"
+>
   <swiper-slide v-for="slide in slides" :key="slide.id">
     <img :src="slide.imageUrl" />
       <div class="text-block">
-        <div class="current-slide-number-s">{{slide.id}}/{{slides.length}}</div>
-        <div class="title">{{slide.title}}</div>
-        <div class="description">{{slide.description}}</div>
+        <div class="title">{{slide.titleBanner || slide.title }}</div>
+        <div class="description">{{slide.descriptionBanner || slide.description}}</div>
         <router-link  :to="`/areas-s/${slide.id}`" class="link-2">Переглянути</router-link>
 
 
@@ -22,10 +27,10 @@ import areas from './areas.js';
 
 
 import SwiperCore, {
-  Navigation
+  Navigation, Pagination, Autoplay
 } from 'swiper/core';
 
-SwiperCore.use([Navigation]);
+SwiperCore.use([Autoplay, Navigation, Pagination]);
 
 
 export default {
@@ -48,29 +53,47 @@ export default {
 .mySwiperS {
   width: 100%;
 
-    ::v-deep(.swiper-button-prev),
-    ::v-deep(.swiper-button-next) {
-        --swiper-navigation-size: 25px;
-        --swiper-navigation-color: #fff;
-        opacity: 0.45;
-    }
 
-  :v-deep(.swiper-button-prev) {
+  ::v-deep(.swiper-button-prev),
+  ::v-deep(.swiper-button-next) {
+    --swiper-navigation-size: 25px;
+    --swiper-navigation-color: #fff;
+    opacity: 0.45;
+  }
+
+  ::v-deep(.swiper-button-prev) {
     left: 60px !important;
 
-    //   @media screen and (max-width:767px){
-    //     left: calc(100% - 80px) !important;
-    //     top: 25px;
-    //   }
+      @media screen and (max-width:767px){
+        left: calc(100% - 80px) !important;
+        top: 35px;
+      }
   }
 
   ::v-deep(.swiper-button-next) {
     right: 60px !important;
 
-    //   @media screen and (max-width:767px){
-    //     right: 15px !important;
-    //     top: 25px;
-    //   }
+      @media screen and (max-width:767px){
+        right: 15px !important;
+        top: 35px;
+      }
+  }
+
+    ::v-deep(.swiper-pagination-fraction){
+      position: absolute;
+      left: 120px;
+      top: 25px;
+      font-family: Raleway;
+      font-size: 24px;
+      letter-spacing: 0.05em;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #ffffff;
+      opacity: 0.45;
+      z-index: 2;
+
+      @media screen and (max-width:767px){
+        left: 15px;
+      }
   }
 
   .swiper-slide {
@@ -94,19 +117,6 @@ export default {
       }
     }
 
-    .current-slide-number-s {
-      align-self: end;
-      text-align: left;
-      font-family: Raleway;
-      font-size: 24px;
-      letter-spacing: 0.05em;
-      font-feature-settings: "pnum" on, "lnum" on;
-      color: #ffffff;
-      opacity: 0.45;
-
-      @media screen and (max-width:767px){
-       align-self: flex-start;      }
-    }
 
     .text-block {
       position: absolute;
@@ -115,11 +125,13 @@ export default {
       width: 65%;
       height: 100%;
       padding: 0 0 64px 120px;
-      display: grid;
-      grid-template-rows: minmax(min-content, 92px) 1fr 1fr min-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
 
       @media screen and (max-width:767px){
-        padding: 40px 15px;
+        padding: 0 15px 0 15px;
         width: 100%;
       }
 
@@ -168,6 +180,7 @@ export default {
         text-decoration: none;
         width: max-content;
         color: #fff;
+        padding: 3px;
         transition: all 0.2s linear;
         position: relative;
         cursor: pointer;
@@ -194,91 +207,6 @@ export default {
       }
     }
   }
-}
-
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-    .mySwiperS {
-        ::v-deep(.swiper-button-prev),
-        ::v-deep(.swiper-button-next) {
-            --swiper-navigation-size: 15px;
-        }
-        ::v-deep(.swiper-button-prev) {
-            left: 15px !important;
-        }
-
-        ::v-deep(.swiper-button-next) {
-            right: 15px !important;
-        }
-
-        .swiper-slide {
-            .current-slide-number-s {
-                font-size: 12.8px;
-                line-height: 14.93px;
-            }
-
-            .text-block {
-                padding: 0 0 34px 50px;
-                .title {
-                    font-size: 45px;
-                    line-height: 54px;
-                    margin-bottom: 20px;
-                }
-                .description {
-                    font-size: 12px;
-                    line-height: 22px;
-                }
-
-                .link-2 {
-                    margin-top: 5px;
-                }
-            }
-        }
-    }
-
-}
-
-@media screen and (max-width: 767px) {
-    .mySwiperS {
-        // ::v-deep(.swiper-button-prev),
-        // ::v-deep(.swiper-button-next) {
-        //     --swiper-navigation-size: 15px;
-        // }
-        ::v-deep(.swiper-button-prev) {
-            left: calc(100% - 80px) !important;
-            top: 25px;
-        }
-
-        ::v-deep(.swiper-button-next) {
-            right: 15px !important;
-            top: 25px;
-        }
-
-        .swiper-slide {
-            .current-slide-number-s {
-                font-size: 18px;
-                line-height: 28px;
-            }
-
-            .text-block {
-                padding: 0 0 64px 15px;
-                height: auto;
-                .title {
-                    font-size: 36px;
-                    line-height: 54px;
-                    margin-bottom: 30px;
-                }
-                .description {
-                    font-size: 12px;
-                    line-height: 18px;
-                }
-
-                .link-2 {
-                    margin-top: 5px;
-                }
-            }
-        }
-    }
-
 }
 
 </style>

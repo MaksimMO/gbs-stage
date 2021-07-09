@@ -59,9 +59,14 @@
         <p class="top-text">Професіонали</p>
         <p class="down-text">своєї справи</p>
     </div>
-    <div class="our-team-container_header">
-      G LEVEL TEAM
+
+      <div class="our-team-container_header">
+          G LEVEL TEAM
+        <div class="line-background"></div>
     </div>
+    <!-- <div class="our-team-container_header">
+      G LEVEL TEAM
+    </div> -->
 
 
     <router-link class="all-our-trainers-link" to="/team-g">Переглянути всіх</router-link>
@@ -555,33 +560,55 @@ export default {
     }
 
     .our-team-container_header{
-      font-family: 'Oswald';
-      height: 83px;
-      background: url('../../assets/images/rectangle-1.svg') no-repeat ;
-      color: #000000;
+      text-align: right;
+      font-family: Oswald;
       font-weight: 600;
       font-size: 48px;
-
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      // top: 217px;
+      line-height: 83px;
+      letter-spacing: 0.02em;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #000000;
       position: relative;
-      padding-right: 150px;
-      top: -40px;
+      padding-right: 96px;
 
-      @media screen and (max-width:767px){
-        height: 36px;
-        padding-right: 25px;
-        font-size: 24px;
-        top: initial;
-        background-position: calc(100% - 50px);
+      .line-background{
+          position: absolute;
+          bottom: 0;
+          left: -170px;
+          right: 66px;
+          height: 83px;
+          background: #916C58;
+          opacity: 0.07;
+          transform: skew(-18deg);
       }
+
+      // font-family: 'Oswald';
+      // height: 83px;
+      // background: url('../../assets/images/rectangle-1.svg') no-repeat ;
+      // color: #000000;
+      // font-weight: 600;
+      // font-size: 48px;
+
+      // display: flex;
+      // align-items: center;
+      // justify-content: flex-end;
+      // // top: 217px;
+      // position: relative;
+      // padding-right: 150px;
+      // top: -40px;
+
+      // @media screen and (max-width:767px){
+      //   height: 36px;
+      //   padding-right: 25px;
+      //   font-size: 24px;
+      //   top: initial;
+      //   background-position: calc(100% - 50px);
+      // }
     }
 
     .all-our-trainers-link{
-      background-color: #fff;
-      margin: 56px 83px 76px 0;
+      display:block;
+      margin: 24px 143px 0 0;
       font-weight: bold;
       font-size: 12px;
       line-height: 14px;
@@ -589,7 +616,6 @@ export default {
       letter-spacing: 0.05em;
       -webkit-text-decoration-line: underline;
       text-transform: uppercase;
-      display: block;
       color: #000000;
       &:hover {
           color: #916C58;
@@ -610,7 +636,7 @@ export default {
 
     .teams-slider {
         position: relative;
-        padding: 60px 7.81vw;
+        padding: 60px 3vw;
         z-index: 2;
 
       @media screen and (max-width:767px){

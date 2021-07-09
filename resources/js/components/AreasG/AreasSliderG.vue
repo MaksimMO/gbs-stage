@@ -1,10 +1,15 @@
 
 <template>
-<swiper :navigation="true" :pagination="{'type': 'fraction'}" :loop="true" class="mySwiper">
+<swiper
+  :navigation="true"
+  :pagination="{'type': 'fraction'}"
+  :loop="true"
+  :autoplay='{"delay": 2500,"disableOnInteraction": false}'
+  class="mySwiper"
+>
   <swiper-slide v-for="slide in slides" :key="slide.id">
     <img :src="slide.imageUrl" />
       <div class="text-block">
-        <!-- <div class="current-slide-number">{{slide.id}}/{{slides.length}}</div> -->
         <div class="title">{{slide.title}}</div>
         <div class="description">{{slide.description}}</div>
         <router-link  :to="`/areas-g/${slide.id}`" class="link-2">Переглянути</router-link>
@@ -22,10 +27,10 @@ import areas from './areas.js';
 
 
 import SwiperCore, {
-  Navigation, Pagination
+  Navigation, Pagination, Autoplay
 } from 'swiper/core';
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Autoplay, Navigation, Pagination]);
 
 
 export default {
@@ -118,9 +123,12 @@ export default {
       box-sizing: border-box;
       left: 0;
       width: 65%;
-      padding: 0 0 0 120px;
-      display: grid;
-      grid-template-rows: minmax(min-content, 92px) 1fr min-content;
+      height: 100%;
+      padding: 0 0 64px 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
 
       @media screen and (max-width:767px){
         padding: 0 15px 0 15px;

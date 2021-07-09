@@ -1,6 +1,8 @@
 
 <template>
   <swiper
+  @init="setAspectRatio"
+  @resize="setAspectRatio"
   @click="onModalOpen"
     :navigation="true"
     :slidesPerView="2"
@@ -62,6 +64,11 @@ export default {
     };
   },
   methods: {
+    setAspectRatio(swiper){
+      const widthOfSlider = swiper.slidesSizesGrid[1];
+      swiper.el.style.height=`${widthOfSlider}px`
+
+    },
     onModalOpen(e){
       if (e.clickedIndex !== undefined){
         this.modalOpen=true;
