@@ -517,6 +517,9 @@ label[data-v-8048fca2] {
   top: 30px;
   right: 0;
   transition: opacity 0.2s ease-out;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 14px;
 }
 .modal-overlay[data-v-59334e22] {
   z-index: 150;
@@ -826,7 +829,7 @@ label[data-v-8048fca2] {
   color: #000;
 }
 .main .menu-open[data-v-46ab9914] {
-  background-image: url(/images/menu-open.svg?87e74746bd587cbd0c724e573fb0b27a);
+  background-image: url(/images/menu-open.svg?761c80ccaf88f896e093367310cae5ba);
   width: 38px;
   height: 21px;
 }
@@ -1254,7 +1257,7 @@ label[data-v-8048fca2] {
   background-size: contain;
 }
 .main .menu-open[data-v-79315c4c] {
-  background-image: url(/images/menu-open.svg?87e74746bd587cbd0c724e573fb0b27a);
+  background-image: url(/images/menu-open.svg?761c80ccaf88f896e093367310cae5ba);
   width: 30px;
   height: 21px;
 }
@@ -1465,10 +1468,10 @@ to {
   height: 16px;
 }
 .footer .line-1 .social-networks > a.facebook[data-v-7ce6f146] {
-  background-image: url(/images/facebook.svg?54bf56baa5ce9b1b5bd010cd9e02909e);
+  background-image: url(/images/facebook.svg?b7485c04d1d306c6218574a3ac8af002);
 }
 .footer .line-1 .social-networks > a.instagram[data-v-7ce6f146] {
-  background-image: url(/images/instagram.svg?a21938e086d667a24449c981641902d2);
+  background-image: url(/images/instagram.svg?63a0b3819ce60d3152e6007738817613);
 }
 .footer .line-2[data-v-7ce6f146] {
   margin-top: 40px;
@@ -1588,10 +1591,10 @@ to {
   height: 16px;
 }
 .footer .social-networks > a.facebook[data-v-75b1a930] {
-  background-image: url(/images/facebook.svg?54bf56baa5ce9b1b5bd010cd9e02909e);
+  background-image: url(/images/facebook.svg?b7485c04d1d306c6218574a3ac8af002);
 }
 .footer .social-networks > a.instagram[data-v-75b1a930] {
-  background-image: url(/images/instagram.svg?a21938e086d667a24449c981641902d2);
+  background-image: url(/images/instagram.svg?63a0b3819ce60d3152e6007738817613);
 }
 .footer .line-2[data-v-75b1a930] {
   margin-top: 40px;
@@ -2591,7 +2594,7 @@ Video[data-v-6a0f304d] {
 }
 }
 .techno-gym-container .col-1 .logo[data-v-6918511f] {
-  background-image: url(/images/technogym-logo.svg?58e84d71995a27ba4ec62ad8d48a4fc6);
+  background-image: url(/images/technogym-logo.svg?b19c87b75ba105dc1de99317eb2b7c3e);
   background-repeat: no-repeat;
   background-size: contain;
   height: 48px;
@@ -2687,7 +2690,7 @@ Video[data-v-6a0f304d] {
 .our-team-container .our-team-container_header[data-v-6918511f] {
   font-family: "Oswald";
   height: 83px;
-  background: url(/images/rectangle-1.svg?572b0668a66b51ba2d0c019cf5872bf5) no-repeat;
+  background: url(/images/rectangle-1.svg?e5b6c711ae755c10eb619cde8698d8b8) no-repeat;
   color: #000000;
   font-weight: 600;
   font-size: 48px;

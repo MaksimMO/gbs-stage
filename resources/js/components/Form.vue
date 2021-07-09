@@ -188,6 +188,10 @@ input{
     top: 30px;
     right:0;
     transition: opacity .2s ease-out;
+
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 14px;
 }
 </style>
 
