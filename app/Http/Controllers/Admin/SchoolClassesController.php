@@ -36,34 +36,34 @@ class SchoolClassesController extends Controller
         return redirect()->route('workouts.index');
     }
 
-    public function edit(SchoolClass $schoolClass)
+    public function edit(SchoolClass $workout)
     {
         //abort_if(Gate::denies('school_class_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return view('admin.schoolClasses.edit', compact('schoolClass'));
+        return view('admin.schoolClasses.edit', compact('workout'));
     }
 
-    public function update(UpdateSchoolClassRequest $request, SchoolClass $schoolClass)
+    public function update(UpdateSchoolClassRequest $request, SchoolClass $workouts)
     {
-        $schoolClass->update($request->all());
+		$workouts->update($request->all());
 
         return redirect()->route('workouts');
     }
 
-    public function show(SchoolClass $schoolClass)
+    public function show(SchoolClass $workout)
     {
         //abort_if(Gate::denies('school_class_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $schoolClass->load('classLessons', 'classUsers');
+        $workout->load('classLessons', 'classUsers');
 
-        return view('admin.schoolClasses.show', compact('schoolClass'));
+        return view('admin.schoolClasses.show', compact('workout'));
     }
 
-    public function destroy(SchoolClass $schoolClass)
+    public function destroy(SchoolClass $workouts)
     {
         //abort_if(Gate::denies('school_class_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $schoolClass->delete();
+        $workouts->delete();
 
         return back();
     }

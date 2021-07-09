@@ -4,14 +4,14 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("schedule.create") }}">
-                {{ trans('global.add') }} {{ trans('cruds.lesson.title_singular') }}
+                Додати тренування
             </a>
         </div>
     </div>
 {{--@endcan--}}
 <div class="card">
     <div class="card-header">
-        {{ trans('cruds.lesson.title_singular') }} {{ trans('global.list') }}
+        Список тренувань
     </div>
 
     <div class="card-body">
@@ -26,19 +26,19 @@
                             {{ trans('cruds.lesson.fields.id') }}
                         </th>
                         <th>
-                            {{ trans('cruds.lesson.fields.class') }}
+                            Тип тренування
                         </th>
                         <th>
-                            {{ trans('cruds.lesson.fields.teacher') }}
+                            Тренер
                         </th>
                         <th>
-                            {{ trans('cruds.lesson.fields.weekday') }}
+                            День тижня
                         </th>
                         <th>
-                            {{ trans('cruds.lesson.fields.start_time') }}
+                            Час початку
                         </th>
                         <th>
-                            {{ trans('cruds.lesson.fields.end_time') }}
+                            Час закінчення
                         </th>
                         <th>
                             &nbsp;

@@ -1,16 +1,16 @@
-@can('user_create')
+{{--@can('user_create')--}}
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
-            <a class="btn btn-success" href="{{ route("admin.users.create") }}">
-                {{ trans('global.add') }} {{ trans('cruds.user.title_singular') }}
+            <a class="btn btn-success" href="{{ route("users.create") }}">
+                Додати тренера
             </a>
         </div>
     </div>
-@endcan
+{{--@endcan--}}
 
 <div class="card">
     <div class="card-header">
-        {{ trans('cruds.user.title_singular') }} {{ trans('global.list') }}
+        Список тренерів
     </div>
 
     <div class="card-body">
@@ -25,18 +25,18 @@
                             {{ trans('cruds.user.fields.id') }}
                         </th>
                         <th>
-                            {{ trans('cruds.user.fields.name') }}
+                            Ім'я
                         </th>
                         <th>
                             {{ trans('cruds.user.fields.email') }}
                         </th>
-                        <th>
-                            {{ trans('cruds.user.fields.email_verified_at') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.user.fields.roles') }}
-                        </th>
-                        <th>
+{{--                        <th>--}}
+{{--                            {{ trans('cruds.user.fields.email_verified_at') }}--}}
+{{--                        </th>--}}
+{{--                        <th>--}}
+{{--                            {{ trans('cruds.user.fields.roles') }}--}}
+{{--                        </th>--}}
+{{--                        <th>--}}
                             {{ trans('cruds.user.fields.class') }}
                         </th>
                         <th>
@@ -59,37 +59,37 @@
                             <td>
                                 {{ $user->email ?? '' }}
                             </td>
-                            <td>
-                                {{ $user->email_verified_at ?? '' }}
-                            </td>
-                            <td>
-                                @foreach($user->roles as $key => $item)
-                                    <span class="badge badge-info">{{ $item->title }}</span>
-                                @endforeach
-                            </td>
+{{--                            <td>--}}
+{{--                                {{ $user->email_verified_at ?? '' }}--}}
+{{--                            </td>--}}
+{{--                            <td>--}}
+{{--                                @foreach($user->roles as $key => $item)--}}
+{{--                                    <span class="badge badge-info">{{ $item->title }}</span>--}}
+{{--                                @endforeach--}}
+{{--                            </td>--}}
                             <td>
                                 {{ $user->class->name ?? '' }}
                             </td>
                             <td>
-                                @can('user_show')
-                                    <a class="btn btn-xs btn-primary" href="{{ route('admin.users.show', $user->id) }}">
+{{--                                @can('user_show')--}}
+                                    <a class="btn btn-xs btn-primary" href="{{ route('users.show', $user->id) }}">
                                         {{ trans('global.view') }}
                                     </a>
-                                @endcan
+{{--                                @endcan--}}
 
-                                @can('user_edit')
-                                    <a class="btn btn-xs btn-info" href="{{ route('admin.users.edit', $user->id) }}">
+{{--                                @can('user_edit')--}}
+                                    <a class="btn btn-xs btn-info" href="{{ route('users.edit', $user->id) }}">
                                         {{ trans('global.edit') }}
                                     </a>
-                                @endcan
+{{--                                @endcan--}}
 
-                                @can('user_delete')
-                                    <form action="{{ route('admin.users.destroy', $user->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
+{{--                                @can('user_delete')--}}
+                                    <form action="{{ route('users.destroy', $user->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                         <input type="submit" class="btn btn-xs btn-danger" value="{{ trans('global.delete') }}">
                                     </form>
-                                @endcan
+{{--                                @endcan--}}
 
                             </td>
 
@@ -106,11 +106,11 @@
 <script>
     $(function () {
   let dtButtons = $.extend(true, [], $.fn.dataTable.defaults.buttons)
-@can('user_delete')
+{{--@can('user_delete')--}}
   let deleteButtonTrans = '{{ trans('global.datatables.delete') }}'
   let deleteButton = {
     text: deleteButtonTrans,
-    url: "{{ route('admin.users.massDestroy') }}",
+    url: "{{ route('users.massDestroy') }}",
     className: 'btn-danger',
     action: function (e, dt, node, config) {
       var ids = $.map(dt.rows({ selected: true }).nodes(), function (entry) {
@@ -134,7 +134,7 @@
     }
   }
   dtButtons.push(deleteButton)
-@endcan
+{{--@endcan--}}
 
   $.extend(true, $.fn.dataTable.defaults, {
     order: [[ 1, 'desc' ]],

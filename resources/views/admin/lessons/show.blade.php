@@ -3,14 +3,14 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.show') }} {{ trans('cruds.lesson.title') }}
+        Інформація про тренування
     </div>
 
     <div class="card-body">
         <div class="form-group">
             <div class="form-group">
-                <a class="btn btn-default" href="{{ route('admin.lessons.index') }}">
-                    {{ trans('global.back_to_list') }}
+                <a class="btn btn-default" href="{{ route('schedule.index') }}">
+                    Назад до списку
                 </a>
             </div>
             <table class="table table-bordered table-striped">
@@ -20,54 +20,54 @@
                             {{ trans('cruds.lesson.fields.id') }}
                         </th>
                         <td>
-                            {{ $lesson->id }}
+                            {{ $schedule->id }}
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.lesson.fields.class') }}
+                           Тип тренування
                         </th>
                         <td>
-                            {{ $lesson->class->name ?? '' }}
+                            {{ $schedule->class->name ?? '' }}
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.lesson.fields.teacher') }}
+                            Тренар
                         </th>
                         <td>
-                            {{ $lesson->teacher->name ?? '' }}
+                            {{ $schedule->teacher->name ?? '' }}
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.lesson.fields.weekday') }}
+                            День тижня
                         </th>
                         <td>
-                            {{ $lesson->weekday }}
+                            {{ $schedule->weekday }}
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.lesson.fields.start_time') }}
+                            Час початку
                         </th>
                         <td>
-                            {{ $lesson->start_time }}
+                            {{ $schedule->start_time }}
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.lesson.fields.end_time') }}
+                            Час завершення
                         </th>
                         <td>
-                            {{ $lesson->end_time }}
+                            {{ $schedule->end_time }}
                         </td>
                     </tr>
                 </tbody>
             </table>
             <div class="form-group">
-                <a class="btn btn-default" href="{{ route('admin.lessons.index') }}">
-                    {{ trans('global.back_to_list') }}
+                <a class="btn btn-default" href="{{ route('schedule.index') }}">
+                    Назад до списку
                 </a>
             </div>
         </div>

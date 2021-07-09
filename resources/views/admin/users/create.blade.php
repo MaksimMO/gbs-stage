@@ -21,7 +21,7 @@
             </div>
             <div class="form-group" style="display: none;">
                 <label class="required" for="email">{{ trans('cruds.user.fields.email') }}</label>
-                <input class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}" type="text" name="email" id="email" value="email@email.test" required>
+                <input class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}" type="text" name="email" id="email" value="email-{{ rand(4, 90) }}-{{ rand(10, 100000) }}@email.test" required>
                 @if($errors->has('email'))
                     <div class="invalid-feedback">
                         {{ $errors->first('email') }}

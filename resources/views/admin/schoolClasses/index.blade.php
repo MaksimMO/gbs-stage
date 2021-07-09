@@ -26,7 +26,7 @@
                             {{ trans('cruds.schoolClass.fields.id') }}
                         </th>
                         <th>
-                            {{ trans('cruds.schoolClass.fields.name') }}
+                            Назва типу заняття
                         </th>
 <!--                        <th>
                             Schedule
@@ -59,13 +59,13 @@
 {{--                                @endcan--}}
 
 {{--                                @can('school_class_edit')--}}
-                                    <a class="btn btn-xs btn-info" href="{{-- route('admin.school-classes.edit', $schoolClass->id) --}}">
+                                    <a class="btn btn-xs btn-info" href="{{ route('workouts.edit', $schoolClass->id) }}">
                                         {{ trans('global.edit') }}
                                     </a>
 {{--                                @endcan--}}
 
 {{--                                @can('school_class_delete')--}}
-                                    <form action="{{-- route('admin.school-classes.destroy', $schoolClass->id) --}}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
+                                    <form action="{{ route('workouts.destroy', $schoolClass->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                         <input type="submit" class="btn btn-xs btn-danger" value="{{ trans('global.delete') }}">

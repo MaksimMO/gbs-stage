@@ -37,12 +37,13 @@ class LessonsController extends Controller
 
     public function store(StoreLessonRequest $request)
     {
+    	//dd($request->all());
         $lesson = Lesson::create($request->all());
 
-        return redirect()->route('admin.lessons.index');
+        return redirect()->route('schedule.index');
     }
 
-    public function edit(Lesson $lesson)
+    public function edit(Lesson $schedule)
     {
         //abort_if(Gate::denies('lesson_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
@@ -50,32 +51,32 @@ class LessonsController extends Controller
 
         $teachers = User::all()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
 
-        $lesson->load('class', 'teacher');
+        $schedule->load('class', 'teacher');
 
-        return view('admin.lessons.edit', compact('classes', 'teachers', 'lesson'));
+        return view('admin.lessons.edit', compact('classes', 'teachers', 'schedule'));
     }
 
-    public function update(UpdateLessonRequest $request, Lesson $lesson)
+    public function update(UpdateLessonRequest $request, Lesson $schedule)
     {
-        $lesson->update($request->all());
+		$schedule->update($request->all());
 
-        return redirect()->route('admin.lessons.index');
+        return redirect()->route('schedule.index');
     }
 
-    public function show(Lesson $lesson)
+    public function show(Lesson $schedule)
     {
         //abort_if(Gate::denies('lesson_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $lesson->load('class', 'teacher');
+		$schedule->load('class', 'teacher');
 
-        return view('admin.lessons.show', compact('lesson'));
+        return view('admin.lessons.show', compact('schedule'));
     }
 
-    public function destroy(Lesson $lesson)
+    public function destroy(Lesson $schedule)
     {
         //abort_if(Gate::denies('lesson_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $lesson->delete();
+		$schedule->delete();
 
         return back();
     }

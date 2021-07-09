@@ -10,7 +10,7 @@
         <div class="form-group">
             <div class="form-group">
                 <a class="btn btn-default" href="{{ route("workouts.index") }}">
-                    {{ trans('global.back_to_list') }}
+                    Назад до списку
                 </a>
             </div>
             <table class="table table-bordered table-striped">
@@ -20,7 +20,7 @@
                             {{ trans('cruds.schoolClass.fields.id') }}
                         </th>
                         <td>
-                            {{ $schoolClass->id }}
+                            {{ $workout->id }}
                         </td>
                     </tr>
                     <tr>
@@ -28,14 +28,14 @@
                             {{ trans('cruds.schoolClass.fields.name') }}
                         </th>
                         <td>
-                            {{ $schoolClass->name }}
+                            {{ $workout->name }}
                         </td>
                     </tr>
                 </tbody>
             </table>
             <div class="form-group">
                 <a class="btn btn-default" href="{{ route("workouts.index") }}">
-                    {{ trans('global.back_to_list') }}
+                    Назад до списку
                 </a>
             </div>
         </div>
@@ -44,26 +44,26 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.relatedData') }}
+        Додатково
     </div>
     <ul class="nav nav-tabs" role="tablist" id="relationship-tabs">
         <li class="nav-item">
             <a class="nav-link" href="#class_lessons" role="tab" data-toggle="tab">
-                {{ trans('cruds.lesson.title') }}
+                Тренування
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#class_users" role="tab" data-toggle="tab">
-                {{ trans('cruds.user.title') }}
+                Тренери
             </a>
         </li>
     </ul>
     <div class="tab-content">
         <div class="tab-pane" role="tabpanel" id="class_lessons">
-            @includeIf('admin.schoolClasses.relationships.classLessons', ['lessons' => $schoolClass->classLessons])
+            @includeIf('admin.schoolClasses.relationships.classLessons', ['lessons' => $workout->classLessons])
         </div>
         <div class="tab-pane" role="tabpanel" id="class_users">
-            @includeIf('admin.schoolClasses.relationships.classUsers', ['users' => $schoolClass->classUsers])
+            @includeIf('admin.schoolClasses.relationships.classUsers', ['users' => $workout->classUsers])
         </div>
     </div>
 </div>

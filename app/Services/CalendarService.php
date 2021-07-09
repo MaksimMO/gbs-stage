@@ -38,7 +38,7 @@ class CalendarService
 
 			$calendarData[] = $record;
 		}
-		dd($calendarData);
+
 		return $calendarData;
 	}
 }
