@@ -251,7 +251,7 @@ export default {
     }
     .teams-slider {
         position: relative;
-        padding: 60px 7.81vw;
+        padding: 60px 3vw;
     }
     .about-us-g-description {
         overflow: visible;
@@ -305,7 +305,6 @@ export default {
             }
         }
         .all-our-trainers-link{
-            background-color: #fff;
             margin: 56px 83px 76px 0;
             font-weight: bold;
             font-size: 12px;
@@ -314,10 +313,15 @@ export default {
             letter-spacing: 0.05em;
             -webkit-text-decoration-line: underline;
             text-transform: uppercase;
-            display: block;
+            // display: block;
+            display:inline-block;
             color: #000000;
             &:hover {
                 color: #916C58;
+            }
+
+            @media screen and (max-width:767px){
+
             }
         }
 
@@ -565,6 +569,37 @@ export default {
         }
         .teams-slider {
             padding: 37px 0 37px 15px;
+
+
+            ::v-deep(.swiper-button-prev){
+                @media screen and (max-width:767px){
+                    background-image: url('../../assets/images/btn-slider-prev.svg');
+                    top: -25px;
+                    left: calc(100% - 155px) !important;
+                    display: initial;
+                    width: 66px;
+                    height: 46px;
+
+                    &::after{
+                    display: none;
+                    }
+                }
+            }
+
+            ::v-deep(.swiper-button-next){
+                @media screen and (max-width:767px){
+                background-image: url('../../assets/images/btn-slider-next.svg');
+                top: -25px;
+                display: initial;
+                width: 66px;
+                height: 46px;
+
+                    &::after{
+                    display: none;
+                    }
+                }
+            }
+
         }
          .certificate-title {
             padding: 0 15px;
