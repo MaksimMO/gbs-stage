@@ -4821,6 +4821,7 @@ Video[data-v-6a0f304d] {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .view-areas-g .container-areas .area + .area[data-v-1c2b00e0] {
   margin-top: 30px;
@@ -4839,9 +4840,9 @@ Video[data-v-6a0f304d] {
   width: 65%;
   height: 100%;
   padding: 0 0 64px 120px;
-  display: grid;
-  grid-template-rows: 1fr 1fr -webkit-min-content;
-  grid-template-rows: 1fr 1fr min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .view-areas-g .container-areas .area .text-block .title[data-v-1c2b00e0] {
   font-family: Oswald;
@@ -4987,6 +4988,7 @@ Video[data-v-6a0f304d] {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .view-areas-s .container-areas .area + .area[data-v-1cd41aec] {
   margin-top: 30px;
@@ -5006,9 +5008,9 @@ Video[data-v-6a0f304d] {
   width: 65%;
   height: 100%;
   padding: 0 0 64px 120px;
-  display: grid;
-  grid-template-rows: 1fr 1fr -webkit-min-content;
-  grid-template-rows: 1fr 1fr min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .view-areas-s .container-areas .area .text-block .title[data-v-1cd41aec] {
   font-family: Oswald;

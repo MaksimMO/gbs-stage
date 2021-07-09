@@ -5,7 +5,7 @@
     <div class="title">Зонування</div>
 
     <div class="container-areas">
-      <div class="area" v-for="area in areas" :key="area.id">
+      <div class="area" v-for="area in areas" :key="area.id" @click="$router.push(`/areas-g/${area.id}`)">
         <img :src="area.imageUrl" />
         <div class="text-block">
           <div class="title">{{ area.title }}</div>
@@ -69,6 +69,7 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
 
       & + .area {
         margin-top: 30px;
@@ -88,8 +89,9 @@ export default {
         width: 65%;
         height: 100%;
         padding: 0 0 64px 120px;
-        display: grid;
-        grid-template-rows: 1fr 1fr min-content;
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-end;
 
         .title {
           font-family: Oswald;
