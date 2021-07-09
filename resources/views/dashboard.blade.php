@@ -14,6 +14,7 @@
                         <th scope="col">Level</th>
                         <th scope="col">Ім'я</th>
                         <th scope="col">Телефон</th>
+                        <th scope="col">Email</th>
                         <th scope="col">Результат дзвінка</th>
                         <th scope="col">Коментар</th>
                         <th scope="col">Дата останніх змін</th>
@@ -26,6 +27,7 @@
                         <th scope="row">{{ strtoupper($lead['level']) }}</th>
                         <td>{{ $lead['name'] }}</td>
                         <td>{{ $lead['phone_number'] }}</td>
+                        <td>{{ $lead['email'] }}</td>
                         <td data-order="{{ $lead['called_success'] }}"
                             @if ($lead['called_success'] == 0)
                                 style="background-color:#fff;"

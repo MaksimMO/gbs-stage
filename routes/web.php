@@ -18,6 +18,53 @@ Route::get('/{level?}', function () {
 })->where('level', 'level\-[g|b|s|]');
 
 
+Route::get('/{main?}', function () {
+    return view('index');
+})->where('main', 'main\-[g|b|s|]');
+
+Route::get('/team-g', function () {
+    return view('index');
+});
+
+Route::get('/about-us-g', function () {
+    return view('index');
+});
+
+Route::get('/simulators-g', function () {
+    return view('index');
+});
+Route::get('/tickets-g', function () {
+    return view('index');
+});
+
+Route::get('/contacts-g', function () {
+    return view('index');
+});
+Route::get('/contacts-b', function () {
+    return view('index');
+});
+Route::get('/contacts-s', function () {
+    return view('index');
+});
+
+
+Route::get('/areas-g/{id?}', function () {
+    return view('index');
+})->where('id', '[1|2|3|4]');
+
+Route::get('/areas-s/{id?}', function () {
+    return view('index');
+})->where('id', '[1|2|3|4|5|6]');
+
+Route::get('/price-b', function () {
+    return view('index');
+});
+Route::get('/price-s', function () {
+    return view('index');
+});
+
+
+
 Auth::routes();
 
 Route::post('/feedback-form',[App\Http\Controllers\HomeController::class, 'storeLead']);

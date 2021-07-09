@@ -115,7 +115,7 @@ export default {
     width:70px;
     height:60px;
     position: absolute;
-    background: url('../../assets/popup-corner.svg') no-repeat;
+    background: url('../../assets/images/popup-corner.svg') no-repeat;
     background-size: cover;
 }
 
