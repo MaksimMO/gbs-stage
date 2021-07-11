@@ -520,7 +520,7 @@ export default {
     // padding-top: 210px;
     // box-sizing: border-box;
     background-color: #ffff;
-    padding-bottom: 110px;
+    // padding-bottom: 110px;
     // background: url('../../assets/images/main-g-our-team-water-text.svg') no-repeat 50px 50px, #fff;
       @media screen and (max-width:767px){
         padding-bottom: 0;
@@ -608,7 +608,7 @@ export default {
 
     .all-our-trainers-link{
       display:block;
-      margin: 24px 143px 0 0;
+      margin: 24px 143px 24px 0;
       font-weight: bold;
       font-size: 12px;
       line-height: 14px;
@@ -617,6 +617,7 @@ export default {
       -webkit-text-decoration-line: underline;
       text-transform: uppercase;
       color: #000000;
+      
       &:hover {
           color: #916C58;
       }
@@ -636,7 +637,7 @@ export default {
 
     .teams-slider {
         position: relative;
-        padding: 60px 3vw;
+        padding: 0 30px;
         z-index: 2;
 
       @media screen and (max-width:767px){

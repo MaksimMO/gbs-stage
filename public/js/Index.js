@@ -21768,17 +21768,21 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-67e40df3");
 
-var _hoisted_1 = {
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Всі напрямки", -1
+/* HOISTED */
+);
+
+var _hoisted_2 = {
   "class": "text-block"
 };
-var _hoisted_2 = {
+var _hoisted_3 = {
   "class": "title"
 };
-var _hoisted_3 = {
+var _hoisted_4 = {
   "class": "description"
 };
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Переглянути");
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Переглянути");
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
@@ -21790,14 +21794,10 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   var _component_swiper = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("swiper");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_swiper, {
+    loop: true,
     navigation: true,
     pagination: {
       'type': 'fraction'
-    },
-    loop: true,
-    autoplay: {
-      "delay": 2500,
-      "disableOnInteraction": false
     },
     "class": "mySwiper"
   }, {
@@ -21811,16 +21811,20 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
               src: slide.imageUrl
             }, null, 8
             /* PROPS */
-            , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(slide.title), 1
+            , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+              onClick: _cache[1] || (_cache[1] = function ($event) {
+                return _ctx.$router.push("/areas-g");
+              })
+            }, [_hoisted_1]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(slide.title), 1
             /* TEXT */
-            ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(slide.description), 1
+            ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(slide.description), 1
             /* TEXT */
             ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
               to: "/areas-g/".concat(slide.id),
               "class": "link-2"
             }, {
               "default": _withId(function () {
-                return [_hoisted_4];
+                return [_hoisted_5];
               }),
               _: 2
               /* DYNAMIC */
@@ -21864,17 +21868,21 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-c1387d1a");
 
-var _hoisted_1 = {
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Всі напрямки", -1
+/* HOISTED */
+);
+
+var _hoisted_2 = {
   "class": "text-block"
 };
-var _hoisted_2 = {
+var _hoisted_3 = {
   "class": "title"
 };
-var _hoisted_3 = {
+var _hoisted_4 = {
   "class": "description"
 };
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Переглянути");
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Переглянути");
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
@@ -21891,10 +21899,6 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       'type': 'fraction'
     },
     loop: true,
-    autoplay: {
-      "delay": 2500,
-      "disableOnInteraction": false
-    },
     "class": "mySwiperS"
   }, {
     "default": _withId(function () {
@@ -21907,16 +21911,20 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
               src: slide.imageUrl
             }, null, 8
             /* PROPS */
-            , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(slide.titleBanner || slide.title), 1
+            , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+              onClick: _cache[1] || (_cache[1] = function ($event) {
+                return _ctx.$router.push("/areas-s");
+              })
+            }, [_hoisted_1]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(slide.titleBanner || slide.title), 1
             /* TEXT */
-            ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(slide.descriptionBanner || slide.description), 1
+            ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(slide.descriptionBanner || slide.description), 1
             /* TEXT */
             ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
               to: "/areas-s/".concat(slide.id),
               "class": "link-2"
             }, {
               "default": _withId(function () {
-                return [_hoisted_4];
+                return [_hoisted_5];
               }),
               _: 2
               /* DYNAMIC */
@@ -28830,7 +28838,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-hover.svg?87b43b62664da17195421bbf0a4be9aa");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-hover.svg?6de6297fc0175501f65ca02aea303c25");
 
 /***/ }),
 
@@ -28845,7 +28853,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1");
 
 /***/ }),
 
@@ -28860,7 +28868,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?736193b044696161e2a6e9f91539c73e");
 
 /***/ }),
 
@@ -28890,7 +28898,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?df90caa4b4466fae2999be366ce12b13");
 
 /***/ }),
 
@@ -28920,7 +28928,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?d94603bf7c6c5c4b24c3e6245db8ea26");
 
 /***/ }),
 
@@ -30915,7 +30923,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/phone-icon.svg?6606c30dc31d93744d33a398f4312050");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/phone-icon.svg?9db9d2eacac8d28d2f4402782aae721e");
 
 /***/ }),
 

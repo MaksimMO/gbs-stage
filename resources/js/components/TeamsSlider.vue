@@ -84,13 +84,13 @@ export default {
         --swiper-navigation-size: 20px;
         --swiper-navigation-color: #000;
         opacity: 1;
-        left: 20px !important;
+        // left: 20px !important;
     }
     ::v-deep(.swiper-button-next) {
         --swiper-navigation-size: 20px;
         --swiper-navigation-color: #000;
         opacity: 1;
-        right: 20px !important;
+        // right: 20px !important;
     }
 }
 

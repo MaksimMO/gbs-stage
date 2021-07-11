@@ -1,19 +1,21 @@
 
 <template>
 <swiper
+  :loop="true"
   :navigation="true"
   :pagination="{'type': 'fraction'}"
-  :loop="true"
-  :autoplay='{"delay": 2500,"disableOnInteraction": false}'
+
   class="mySwiper"
 >
   <swiper-slide v-for="slide in slides" :key="slide.id">
     <img :src="slide.imageUrl" />
+     <button @click="$router.push(`/areas-g`)"><span>Всі напрямки</span></button>
       <div class="text-block">
         <div class="title">{{slide.title}}</div>
         <div class="description">{{slide.description}}</div>
         <router-link  :to="`/areas-g/${slide.id}`" class="link-2">Переглянути</router-link>
-
+        
+       
 
 
     </div>
@@ -115,6 +117,12 @@ export default {
       @media screen and (max-width:767px){
         height: 446px;
       }
+    }
+
+    button{
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
     }
 
 

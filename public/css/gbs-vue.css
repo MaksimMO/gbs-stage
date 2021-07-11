@@ -37,7 +37,7 @@
   color: #916C58;
 }
 .phone-link[data-v-100dbea6]::before {
-  background: url(/images/phone-icon.svg?6606c30dc31d93744d33a398f4312050) no-repeat center;
+  background: url(/images/phone-icon.svg?9db9d2eacac8d28d2f4402782aae721e) no-repeat center;
   content: "";
   width: 21px;
   height: 21px;
@@ -1267,7 +1267,7 @@ label[data-v-8048fca2] {
   background-image: url(/images/menu-open-gold.svg?65e64eccc4460b4d0a9ee652f775717f);
 }
 .main .close-opened[data-v-79315c4c] {
-  background-image: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f);
+  background-image: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -1276,7 +1276,7 @@ label[data-v-8048fca2] {
 }
 .main .close-opened[data-v-79315c4c]:hover {
   cursor: pointer;
-  background-image: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f);
+  background-image: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1);
 }
 .menu-mobile-enter-active[data-v-79315c4c],
 .menu-mobile-leave-active[data-v-79315c4c] {
@@ -1933,6 +1933,11 @@ html, body {
     height: 446px;
 }
 }
+.mySwiper .swiper-slide button[data-v-67e40df3] {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
 .mySwiper .swiper-slide .text-block[data-v-67e40df3] {
   position: absolute;
   box-sizing: border-box;
@@ -2250,13 +2255,11 @@ Video[data-v-6a0f304d] {
   --swiper-navigation-size: 20px;
   --swiper-navigation-color: #000;
   opacity: 1;
-  left: 20px !important;
 }
 .swiper-container[data-v-004dd59c] .swiper-button-next {
   --swiper-navigation-size: 20px;
   --swiper-navigation-color: #000;
   opacity: 1;
-  right: 20px !important;
 }
 .swiper-slide[data-v-004dd59c] {
   font-size: 18px;
@@ -2358,7 +2361,7 @@ Video[data-v-6a0f304d] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
+  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
   margin-left: 15px;
 }
 .link-2[data-v-6918511f] {
@@ -2648,7 +2651,6 @@ Video[data-v-6a0f304d] {
 }
 .our-team-container[data-v-6918511f] {
   background-color: #ffff;
-  padding-bottom: 110px;
 }
 @media screen and (max-width: 767px) {
 .our-team-container[data-v-6918511f] {
@@ -2707,7 +2709,7 @@ Video[data-v-6a0f304d] {
 }
 .our-team-container .all-our-trainers-link[data-v-6918511f] {
   display: block;
-  margin: 24px 143px 0 0;
+  margin: 24px 143px 24px 0;
   font-weight: bold;
   font-size: 12px;
   line-height: 14px;
@@ -2731,7 +2733,7 @@ Video[data-v-6a0f304d] {
 }
 .our-team-container .teams-slider[data-v-6918511f] {
   position: relative;
-  padding: 60px 3vw;
+  padding: 0 30px;
   z-index: 2;
 }
 @media screen and (max-width: 767px) {
@@ -3392,7 +3394,7 @@ Video[data-v-6a0f304d] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
+  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
   margin-left: 15px;
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -3612,6 +3614,11 @@ Video[data-v-6a0f304d] {
     height: 446px;
 }
 }
+.mySwiperS .swiper-slide button[data-v-c1387d1a] {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
 .mySwiperS .swiper-slide .text-block[data-v-c1387d1a] {
   position: absolute;
   box-sizing: border-box;
@@ -3720,7 +3727,7 @@ Video[data-v-6a0f304d] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
+  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
   margin-left: 15px;
 }
 .link-2[data-v-69c16b2b] {
@@ -5618,7 +5625,7 @@ li[data-v-bcffb62e] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
+  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
   margin-left: 15px;
 }
 .ticket-title[data-v-06dcca5f] {
@@ -6392,7 +6399,7 @@ li[data-v-5d9f7d78] {
   background-color: rgba(145, 108, 88, 0.15);
   border-radius: 50%;
   display: inline-block;
-  content: url(/images/phone-icon.svg?6606c30dc31d93744d33a398f4312050);
+  content: url(/images/phone-icon.svg?9db9d2eacac8d28d2f4402782aae721e);
   width: 46px;
   height: 46px;
   text-align: center;
@@ -6641,7 +6648,7 @@ div.slide img {
     line-height: 27px;
 }
 .your-level-go {
-    background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat right;
+    background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat right;
     width: 86px;
     margin-top: 40px;
     font-family: "Raleway";
@@ -6653,7 +6660,7 @@ div.slide img {
     transition: opacity .6s ease-in-out;
 }
 .your-level-go:hover {
-    background: url(/images/arrow-right-hover.svg?87b43b62664da17195421bbf0a4be9aa) no-repeat right
+    background: url(/images/arrow-right-hover.svg?6de6297fc0175501f65ca02aea303c25) no-repeat right
 }
 .your-level-go a {
     color: #FFFFFF;
