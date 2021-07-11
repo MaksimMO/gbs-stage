@@ -6,6 +6,7 @@
  import Root from './Root.vue'
  import FeedBackView from './components/FeedBackView.vue'
  import MainG from './views/MainG.vue'
+ import ScheduleG from './views/ScheduleG.vue'
  import MainB from './views/MainB.vue'
  import MainS from './views/MainS.vue'
  import TeamG from './views/TeamG.vue'
@@ -121,6 +122,11 @@
             path: '/areas-s/:id',
             component:AreaS,
             meta: { area: 's' }
+        },
+        {
+            path: '/schedule',
+            component:ScheduleG,
+            meta: { area: 'g' }
         },
 
 

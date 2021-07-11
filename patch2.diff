@@ -1,0 +1,165 @@
+diff --git a/resources/js/Index.js b/resources/js/Index.js
+index 44d03f5..7826a0b 100644
+--- a/resources/js/Index.js
++++ b/resources/js/Index.js
+@@ -6,6 +6,7 @@
+  import Root from './Root.vue'
+  import FeedBackView from './components/FeedBackView.vue'
+  import MainG from './views/MainG.vue'
++ import ScheduleG from './views/ScheduleG.vue'
+  import MainB from './views/MainB.vue'
+  import MainS from './views/MainS.vue'
+  import TeamG from './views/TeamG.vue'
+@@ -122,6 +123,11 @@
+             component:AreaS,
+             meta: { area: 's' }
+         },
++        {
++            path: '/schedule',
++            component:ScheduleG,
++            meta: { area: 'g' }
++        },
+ 
+ 
+     ],
+diff --git a/resources/js/components/ScheduleItem.vue b/resources/js/components/ScheduleItem.vue
+new file mode 100644
+index 0000000..af8a184
+--- /dev/null
++++ b/resources/js/components/ScheduleItem.vue
+@@ -0,0 +1,21 @@
++<template>
++  <div class="schedule-item">
++      <div class="time-range">{{timeStart}} - {{timeEnd}}, {{duration}}хв.</div>
++      <div class="title-workout">{{titleWorkout}}</div>
++      <div class="trainer-name">тренер: {{trainerName}}</div>
++  </div>
++</template>
++
++<script>
++export default {
++props:['timeStart', 'timeEnd', 'duration', 'titleWorkout', 'trainerName']
++
++
++}
++
++</script>
++
++
++<style>
++
++</style>
+\ No newline at end of file
+diff --git a/resources/js/views/ScheduleG.vue b/resources/js/views/ScheduleG.vue
+new file mode 100644
+index 0000000..fa27656
+--- /dev/null
++++ b/resources/js/views/ScheduleG.vue
+@@ -0,0 +1,47 @@
++<template>
++<div class="schedule-g-view">
++    <div class="title">Розклад</div>
++    <div class="main-container">
++            <div class="header-item" v-for="(item, index) in scheduleData.ma" :key="index">
++                {{item.day}}
++            </div>
++
++            <!-- <ScheduleItem :timeStart="" /> -->
++        <template v-for="(item, index) in timeIntervals" :key="index" >
++            <div class="time-interval-header">{{item}}</div>
++
++
++        </template>
++    </div>
++  </div>
++</template>
++
++<script>
++import ScheduleItem from '../components/ScheduleItem.vue';
++import scheduleMock from './scheduleMock.json';
++
++
++const timeIntervals = [7,8,9,10,11,12,13,14,15,16,17,18,19,20]
++
++export default {
++    data(){
++        return {
++
++            scheduleData: scheduleMock.days.map((day)=> day.workouts. ),
++            timeIntervals
++        }
++    },
++    components:{
++        ScheduleItem
++    }
++
++}
++
++</script>
++
++<style scoped>
++    .title {
++        padding: 0 7.81vw;
++        margin-bottom: 60px;
++    }
++</style>
+\ No newline at end of file
+diff --git a/resources/js/views/scheduleMock.json b/resources/js/views/scheduleMock.json
+new file mode 100644
+index 0000000..4ca1bd5
+--- /dev/null
++++ b/resources/js/views/scheduleMock.json
+@@ -0,0 +1,52 @@
++{
++    "days": [
++        {
++            "date": "24.05.21р.",
++            "day": "mon",
++            "workouts": [
++                {
++                    "type": "Yoga",
++                    "trainer": "John Doe",
++                    "timeStart": "7:15",
++                    "timeEnd": "8:05"
++                },
++                {
++                    "type": "Pilates",
++                    "trainer": "Ivan",
++                    "timeStart": "7:15",
++                    "timeEnd": "8:05"
++                },
++                {
++                    "type": "Faiting",
++                    "trainer": "Galya",
++                    "timeStart": "7:15",
++                    "timeEnd": "8:05"
++                }
++            ]
++        },
++        {
++            "date": "25.05.21р.",
++            "day": "tue",
++            "workouts": [
++                {
++                    "type": "Yoga",
++                    "trainer": "John Doe",
++                    "timeStart": "7:15",
++                    "timeEnd": "8:05"
++                },
++                {
++                    "type": "Pilates",
++                    "trainer": "Ivan",
++                    "timeStart": "7:15",
++                    "timeEnd": "8:05"
++                },
++                {
++                    "type": "Faiting",
++                    " ": "Galya",
++                    "timeStart": "7:15",
++                    "timeEnd": "8:05"
++                }
++            ]
++        }
++    ]
++}
+\ No newline at end of file

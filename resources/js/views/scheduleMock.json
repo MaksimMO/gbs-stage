@@ -1,0 +1,52 @@
+{
+    "days": [
+        {
+            "date": "24.05.21р.",
+            "day": "mon",
+            "workouts": [
+                {
+                    "type": "Yoga",
+                    "trainer": "John Doe",
+                    "timeStart": "7:15",
+                    "timeEnd": "8:05"
+                },
+                {
+                    "type": "Pilates",
+                    "trainer": "Ivan",
+                    "timeStart": "7:15",
+                    "timeEnd": "8:05"
+                },
+                {
+                    "type": "Faiting",
+                    "trainer": "Galya",
+                    "timeStart": "7:15",
+                    "timeEnd": "8:05"
+                }
+            ]
+        },
+        {
+            "date": "25.05.21р.",
+            "day": "tue",
+            "workouts": [
+                {
+                    "type": "Yoga",
+                    "trainer": "John Doe",
+                    "timeStart": "7:15",
+                    "timeEnd": "8:05"
+                },
+                {
+                    "type": "Pilates",
+                    "trainer": "Ivan",
+                    "timeStart": "7:15",
+                    "timeEnd": "8:05"
+                },
+                {
+                    "type": "Faiting",
+                    " ": "Galya",
+                    "timeStart": "7:15",
+                    "timeEnd": "8:05"
+                }
+            ]
+        }
+    ]
+}
