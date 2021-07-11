@@ -1,9 +1,6 @@
 <template>
   <ul class="main-menu-b">
       <li>
-          <router-link to="/main-b">Наша команда</router-link>
-      </li>
-      <li>
           <router-link to="/price-b">Ціни</router-link>
       </li>
       <li>
@@ -62,6 +59,7 @@ export default {
     }
     @media screen and (max-width: 1023px) and (min-width: 768px){
         .main-menu-b {
+            height: 100vh;
             display: block;
             padding: 1.87rem 0 0 0;
             li{

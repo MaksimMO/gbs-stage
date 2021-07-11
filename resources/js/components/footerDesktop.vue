@@ -5,12 +5,12 @@
       <div :class="`logo ${$root.$data.area}`"></div>
     </router-link>
 
-    <div class="timetable"><span>Пн - Пт з 07:00 до 23:00</span>   <span>Сб - Нд з 08:00 до 23:00</span></div>
-    <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
+    <div class="timetable"><span>Пн - Пт з 07:00 до 23:00</span> <span>Сб - Нд з 08:00 до 23:00</span></div>
+    <div class="address"><span>ТСК “МАГІГРАНД”,</span> <span>вул. Келецька, 78В</span></div>
     <PhoneLink />
     <div class="social-networks">
-      <a href="https://www.facebook.com/gbs.level" class="facebook"></a>
-      <a href="https://www.instagram.com/gbs.level" class="instagram"></a>
+      <a href="https://www.facebook.com/gbs.level" class="facebook" target="_blank"></a>
+      <a href="https://www.instagram.com/gbs.level" class="instagram" target="_blank"></a>
     </div>
   </div>
   <div v-if="$root.$data.area == 'g'" class="line-2">
@@ -18,17 +18,17 @@
       <router-link class="link-1" to="/areas-g">Зонування</router-link>
       <router-link class="link-1" to="/team-g">Наша команда</router-link>
       <router-link class="link-1" to="/simulators-g">тренажери</router-link>
-
+      <router-link class="link-1" to="/tickets-g">Абонементи</router-link>
+      <router-link class="link-1" to="/contacts-g">Контакти</router-link>
   </div>
   <div v-if="$root.$data.area == 'b'" class="line-2">
-      <router-link class="link-1" to="/main-b">Наша команда</router-link>
       <router-link class="link-1" to="/price-b">Ціни</router-link>
       <router-link class="link-1" to="/contacts-b">Контакти</router-link>
   </div>
 
   <div v-if="$root.$data.area == 's'" class="line-2">
-      <router-link class="link-1" to="/about-us-s">Про нас</router-link>
       <router-link class="link-1" to="/areas-s">Послуги</router-link>
+      <router-link class="link-1" to="/price-s">Ціни</router-link>
       <router-link class="link-1" to="/contacts-s">Контакти</router-link>
   </div>
 
@@ -72,6 +72,11 @@ export default {
     padding: 30px 150px;
     color: #fff;
     background-color: #000;
+    overflow: hidden;
+
+    @media screen and (min-width:768px) and (max-width:1023px){
+      padding: 17px 50px;
+    }
 
 
 
@@ -87,6 +92,11 @@ export default {
       width: 89px;
       background-size: contain;
       background-repeat: no-repeat;
+
+    @media screen and (min-width:768px) and (max-width:1023px){
+          height: 23px;
+          width: 48px;
+    }
 
       &.g {
         background-image: url("../../assets/images/g-level.svg");
@@ -106,9 +116,17 @@ export default {
     font-style: normal;
     font-weight: 600;
     letter-spacing: 0.1em;
-    text-align: center;
+    display: flex;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
     span{
       white-space: nowrap;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1023px){
+      display: none;
+
     }
   }
 
@@ -118,7 +136,11 @@ export default {
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.1em;
-    white-space: nowrap;
+    span{
+      white-space:nowrap;
+    }
+
+
   }
   .phone-link{
     flex-shrink: 0;
@@ -156,6 +178,10 @@ export default {
     justify-content: center;
     align-items: center;
 
+    @media screen and (min-width:768px) and (max-width:1023px){
+      margin-top: 23px;
+    }
+
     .link-1{
       text-align: center;
 
@@ -172,6 +198,11 @@ export default {
 
       margin-right:60px;
 
+    @media screen and (min-width:768px) and (max-width:1023px){
+      font-size: 11px;
+      line-height: 13px;
+    }
+
       &:last-of-type{
         margin-right: 0;
       }
@@ -187,6 +218,10 @@ hr{
   opacity: 0.15;
   height: 1px;
   margin: 30px 0;
+
+  @media screen and (min-width:768px) and (max-width:1023px){
+    margin: 16px 0;
+  }
 }
   .line-3{
     display: grid;
@@ -204,6 +239,10 @@ hr{
     text-transform: uppercase;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #FFFFFF;
+
+    @media screen and (min-width:768px) and (max-width:1023px){
+      font-size: 10px;
+    }
 
     .text-1{
     }

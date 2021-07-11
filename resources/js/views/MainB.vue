@@ -29,7 +29,7 @@
             </p>
         </div>
         <div class="about-us-warning">
-            <img class="top-image" src="../../assets/images/warning.svg" alt="">
+            <img class="top-image-warning" src="../../assets/images/warning.svg" alt="">
             <p>
                 Салон відкритий як для членів клубу, так і для гостей без клубних карт.
             </p>
@@ -50,7 +50,7 @@
     <section class="brand-makeup">
         <h1>Ми довіряємо найкращим</h1>
         <BrandMakeupSlider />
-        <h1>SEO текст</h1>
+        <!-- <h1>SEO текст</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.
@@ -60,7 +60,7 @@
             Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
             Sed nec hendrerit neque...
         </p>
-        <router-link class="link-1" to="/">Більше</router-link>
+        <router-link class="link-1" to="/">Більше</router-link> -->
     </section>
   </div>
   <Footer :level="'b'"/>
@@ -78,9 +78,13 @@ let preloadedAssets = [
         require('../../assets/images/popup-corner.svg').default,
         require('../../assets/images/aboutUs-b-main.jpg').default,
         require('../../assets/images/popup-corner.svg').default,
-        require('../../assets/images/TeamB/gallery/photo-1.jpg').default,
-        require('../../assets/images/TeamB/gallery/photo-2.jpg').default,
-        require("../../assets/images/TeamB/gallery/photo-3.jpg").default,
+        require('../../assets/images/TeamB/gallery/150-31-1-370x370.jpg').default,
+        require('../../assets/images/TeamB/gallery/150-34-1-370x370.jpg').default,
+        require("../../assets/images/TeamB/gallery/150-35-1-370x370.jpg").default,
+        require("../../assets/images/TeamB/gallery/150-37-1-370x370.jpg").default,
+        require("../../assets/images/TeamB/gallery/150-38-1-370x370.jpg").default,
+        require("../../assets/images/TeamB/gallery/150-42-1-370x370.jpg").default,
+        require("../../assets/images/TeamB/gallery/150-43-1-370x370.jpg").default,
     ];
 
 export default {
@@ -89,26 +93,18 @@ export default {
     return{
       isOpen: false,
       gallery: [
-            { id: 1, imageUrl: require("../../assets/images/TeamB/gallery/photo-1.jpg").default },
-            { id: 2, imageUrl: require("../../assets/images/TeamB/gallery/photo-2.jpg").default },
-            { id: 3, imageUrl: require("../../assets/images/TeamB/gallery/photo-3.jpg").default },
-            { id: 4, imageUrl: require("../../assets/images/TeamB/gallery/photo-1.jpg").default },
-            { id: 5, imageUrl: require("../../assets/images/TeamB/gallery/photo-2.jpg").default },
-            { id: 6, imageUrl: require("../../assets/images/TeamB/gallery/photo-3.jpg").default },
-            { id: 7, imageUrl: require("../../assets/images/TeamB/gallery/photo-1.jpg").default },
-            { id: 8, imageUrl: require("../../assets/images/TeamB/gallery/photo-2.jpg").default },
-            { id: 9, imageUrl: require("../../assets/images/TeamB/gallery/photo-3.jpg").default },
-            { id: 10, imageUrl: require("../../assets/images/TeamB/gallery/photo-1.jpg").default }
+            { id: 1, imageUrl: require("../../assets/images/TeamB/gallery/150-43-1-370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default },
+            { id: 2, imageUrl: require("../../assets/images/TeamB/gallery/150-34-1-370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamB/gallery/overlay/150-34-1-min.jpg").default },
+            { id: 3, imageUrl: require("../../assets/images/TeamB/gallery/150-35-1-370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamB/gallery/overlay/150-35-1-min.jpg").default },
+            { id: 4, imageUrl: require("../../assets/images/TeamB/gallery/150-37-1-370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamB/gallery/overlay/150-37-1-min.jpg").default },
+            { id: 5, imageUrl: require("../../assets/images/TeamB/gallery/150-38-1-370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamB/gallery/overlay/150-38-1-min.jpg").default },
+            { id: 6, imageUrl: require("../../assets/images/TeamB/gallery/150-42-1-370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamB/gallery/overlay/150-42-1-min.jpg").default },
+            { id: 7, imageUrl: require("../../assets/images/TeamB/gallery/150-31-1-370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamB/gallery/overlay/150-31-1-min.jpg").default }
         ]
     }
 
   },
   mounted(){
-      let preloadLink = document.createElement("link");
-      preloadLink.href = require('../../assets/feedBackFormView/background-g.png').default;
-      preloadLink.rel = "preload";
-      preloadLink.as = "image";
-      document.head.appendChild(preloadLink);
   },
   beforeRouteEnter(to, from, next) {
         const cacheImage = (url) =>{
@@ -249,7 +245,8 @@ export default {
         position: absolute;
         bottom: 0;
         right: -170px;
-        width: 1545px; //74.8599vw;
+        left:66px;
+        // width: 1545px; //74.8599vw;
         height: 83px;
         background: #916C58;
         opacity: 0.07;
@@ -340,6 +337,7 @@ export default {
 
 .brand-makeup {
     background-color: #FFFFFF;
+    margin-bottom: 60px;
     & h1 {
         font-family: Oswald;
         font-style: normal;
@@ -388,6 +386,183 @@ export default {
             height:16px;
             background: url("../../assets/homeView/arrow-right.svg") no-repeat;
             margin-left: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .top-image-container{
+        .skew-image-1{
+            left: 32px;
+            bottom: -16px;
+            width: 37px;
+            height: 32px;
+        }
+    }
+    .about-us{
+        padding: 80px 50px 50px;
+        .title{
+            font-size: 45px;
+            margin-bottom: 20px;
+            // & .line-background {
+            //     width: 805px;
+            // }
+        }
+        .container-text{
+            font-size: 12px;
+            line-height: 22px;
+        }
+        .about-us-warning {
+            font-size: 12px;
+            line-height: 22px;
+            & p{
+                margin: 0;
+                margin-left: 18px;
+            }
+            & .top-image-warning{
+                height: 19px;
+            }
+        }
+
+    }
+    .image-container-aboutUs{
+        margin-bottom: 50px;
+        padding-left: 107px;
+
+        .image{
+            width: 100%;
+            max-height: 316px;
+        }
+
+        .skew-image{
+            width: 52px;
+            height: 45px;
+            right: 25px;
+        }
+
+        .text-image{
+            position: absolute;
+            left: -25px;
+            bottom: 20px;
+            width: 506px;//67.3%
+            height: 56px;//83px
+            font-size: 18px;//36px
+            &>p{
+                line-height: 56px;//83px
+                margin-right: 30px;
+            }
+        }
+    }
+    .gallery-slider {
+        padding: 0 50px;
+    }
+
+    .brand-makeup {
+        & h1 {
+            font-size: 45px;
+            color: #000000;
+            margin: 50px 0 30px 0;
+        }
+        & p {
+            font-size: 12px;
+            line-height: 22px;
+            padding: 0 50px;
+        }
+        .link-1{
+            font-size: 10px;
+            margin-bottom: 50px;
+            padding: 0 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .top-image-container{
+        .skew-image-1{
+            left: 15px;
+            bottom: -15px;
+            width: 35px;
+            height: 30px;
+        }
+    }
+    .about-us{
+        padding: 54px 15px 50px;
+        .title{
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 30px;
+            padding-left: 0;
+            padding-bottom: 0;
+            & .line-background {
+                height: 33px;
+            }
+        }
+        .container-text{
+            font-size: 12px;
+            line-height: 22px;
+        }
+        .about-us-warning {
+            font-size: 12px;
+            line-height: 22px;
+            & p{
+                margin: 0;
+                margin-left: 18px;
+            }
+            & .top-image-warning{
+                height: 19px;
+            }
+        }
+
+    }
+    .image-container-aboutUs{
+        margin-bottom: 73px;
+        padding: 0;
+
+        .image{
+            width: 100%;
+            max-height: 214px;
+        }
+
+        .skew-image{
+            width: 35px;
+            height: 30px;
+            right: 15px;
+            bottom: -15px;
+        }
+
+        .text-image{
+            text-align: left;
+            bottom: -35px;
+            width: 57.3%;//67.3%
+            height: auto;//83px
+            font-size: 18px;//36px
+            &>p{
+                line-height: 24px;
+                margin-left: 45px;
+                margin-right: 0;
+            }
+        }
+    }
+    .gallery-slider {
+        padding: 0 15px;
+    }
+
+    .brand-makeup {
+        & h1 {
+            font-size: 24px;
+            line-height: 36px;
+            color: #000000;
+            margin: 50px 0 20px 0;
+        }
+        & p {
+            font-size: 12px;
+            line-height: 18px;
+            padding: 0 15px;
+        }
+        .link-1{
+            font-size: 10px;
+            margin-bottom: 50px;
+            padding: 0 15px;
         }
     }
 }

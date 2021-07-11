@@ -59,6 +59,9 @@ Route::get('/areas-s/{id?}', function () {
 Route::get('/price-b', function () {
     return view('index');
 });
+Route::get('/price-s', function () {
+    return view('index');
+});
 
 
 

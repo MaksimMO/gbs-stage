@@ -1,5 +1,6 @@
 <template>
 <Header class="header-invert"/>
+    <Breadcrumb />
   <div class="view-about-us-g">
     <section class="title">
         <h1>Про нас</h1>
@@ -8,6 +9,21 @@
             Культура Спорту G LEVEL, краса В LEVEL та естетика S LEVEL поєднані у єдиний
             комплекс із найпрогресивнішим обладненням, стильним дизайном та неперевершеним комфортом.
         </p>
+    </section>
+    <section class="about-us-g-description">
+        <ul class="first">
+            <li><b>Тренажерний зал 1700 кв.м.</b> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym</li>
+            <li>Простора стилізована <b>зона єдиноборств</b> з професійним рингом</li>
+            <li>Окрема <b>студія для сайкл-тренування</b> з надсучасною світло- звуковою системою</li>
+            <li><b>Інноваційна</b> зона функціонального тренінгу та кросфіту</li>
+        </ul>
+        <ul class="second">
+            <li><b>Студія Barre</b> на основі балету</li>
+            <!-- <li>Мед кабінет, <b>консультація лікаря</b></li> -->
+            <li>Власна <b>пральня</b></li>
+            <li>Система вентиляції та кондиціонування  функцією <b>очищення повітря</b></li>
+            <li><b>Високий</b> рівень сервісу</li>
+        </ul>
     </section>
     <section class="image-container-aboutUs">
         <img class="image" src="../../assets/images/aboutUs-g-main.jpg" alt="">
@@ -21,21 +37,7 @@
     <section class="gallery-slider">
         <GallerySlider :images="gallery" />
     </section>
-    <section class="aboutUs-g-description">
-        <ul class="first">
-            <li><b>Тренажерний зал 1700 кв.м.</b> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym</li>
-            <li>Простора стилізована <b>зона єдиноборств</b> з професійним рингом</li>
-            <li>Окрема <b>студія для сайкл-тренування</b> з надсучасною світло- звуковою системою</li>
-            <li><b>Інноваційна</b> зона функціонального тренінгу та кросфіту</li>
-        </ul>
-        <ul class="second">
-            <li><b>Студія Barre</b> на основі балету</li>
-            <li>Мед кабінет, <b>консультація лікаря</b></li>
-            <li>Власна <b>пральня</b></li>
-            <li>Система вентиляції та кондиціонування  функцією <b>очищення повітря</b></li>
-            <li><b>Високий</b> рівень сервісу</li>
-        </ul>
-    </section>
+
     <section class="our-team-aboutUs-container">
         <div class="our-team-container_header">
             <p>Наша команда</p>
@@ -51,7 +53,7 @@
             />
         </div>
     </section>
-    <!-- <section class="certificate-title">
+    <section class="certificate-title">
         <h1>Нагороди та сертифікати</h1>
         <p>
             Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.
@@ -68,7 +70,7 @@
             Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
             Sed nec hendrerit neque...
         </p>
-    </section> -->
+    </section>
   </div>
 <Footer/>
 </template>
@@ -79,12 +81,12 @@ import Footer from '../components/Footer.vue';
 import CertificateSlider from '../components/CertificateSlider.vue';
 import GallerySlider from '../components/GallerySlider.vue';
 import TeamsSlider from '../components/TeamsSlider.vue';
+import Breadcrumb from '../components/Breadcrumb.vue';
 
 let preloadedAssets = [
         require('../../assets/images/aboutUs-g-main.jpg').default,
         require('../../assets/images/popup-corner.svg').default,
         require('../../assets/images/TeamG/Vladimir_Leskov.jpg').default,
-        require('../../assets/images/TeamG/Irina_Slyusarenko.jpg').default,
         require('../../assets/images/TeamG/Olga_Depeshko.jpg').default,
         require('../../assets/images/TeamG/Olga_Martsenyuk.jpg').default,
         require("../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default,
@@ -99,30 +101,31 @@ export default {
         return {
             isOpen: false,
             trainers: [
-                {id: 0, link: "Vladimir_Leskov.jpg"},
-                {id: 1, link: "Irina_Slyusarenko.jpg"},
-                {id: 2, link: "Olga_Depeshko.jpg"},
-                {id: 3, link: "Olga_Martsenyuk.jpg"},
-                {id: 4, link: "Mikhail_Galagan.jpg"},
-                {id: 5, link: "Olga_Osadchuk.jpg"},
-                {id: 6, link: "valentine.jpg"},
-                {id: 7, link: "Melnyk_Serhiy.jpg"},
-                {id: 8, link: "Olena_Semenchuk.jpg"},
-                {id: 9, link: "Nechko_Vasil.jpg"},
-                {id: 10, link: "Gornushkina_Julia.jpg"},
-                {id: 11, link: "Dementieva_Elena.jpg"}
+                {id: 0, link: "Vladimir_Leskov.jpg", linkVideo: "Vladimir_Leskov.MOV"},
+                {id: 1, link: "Olga_Depeshko.jpg", linkVideo: "Olga_Depeshko.MOV"},
+                {id: 2, link: "Olga_Martsenyuk.jpg", linkVideo: "Olga_Martsenyuk.MOV"},
+                {id: 3, link: "Mikhail_Galagan.jpg", linkVideo: "Mikhail_Galagan.MOV"},
+                {id: 4, link: "Olga_Osadchuk.jpg", linkVideo: "Olga_Osadchuk.MOV"},
+                {id: 5, link: "valentine.jpg", linkVideo: "valentine.MOV"},
+                {id: 6, link: "Melnyk_Serhiy.jpg", linkVideo: "Melnyk_Serhiy.MOV"},
+                {id: 7, link: "Olena_Semenchuk.jpg", linkVideo: "Olena_Semenchuk.MOV"},
+                {id: 8, link: "Nechko_Vasil.jpg", linkVideo: "Nechko_Vasil.MOV"},
+                {id: 9, link: "Gornushkina_Julia.jpg", linkVideo: "Gornushkina_Julia.MOV"},
+                {id: 10, link: "Dementieva_Elena.jpg"},
+                {id: 11, link: "image-not-found.jpg"},
+                {id: 12, link: "image-not-found.jpg"}
             ],
             gallery: [
-                { id: 1, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default },
-                { id: 2, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default },
-                { id: 3, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default },
-                { id: 4, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default },
-                { id: 5, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg").default },
-                { id: 6, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4574_370x370.jpg").default },
-                { id: 7, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4583_370x370.jpg").default },
-                { id: 8, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4595_370x370.jpg").default },
-                { id: 9, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4608_370x370.jpg").default },
-                { id: 10, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4614_370x370.jpg").default }
+                { id: 1, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg").default},
+                { id: 2, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg").default },
+                { id: 3, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg").default },
+                { id: 4, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg").default },
+                { id: 5, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg").default },
+                { id: 6, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4574_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg").default },
+                { id: 7, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4583_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default },
+                { id: 8, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4595_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default },
+                { id: 9, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4608_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default },
+                { id: 10, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4614_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default }
             ]
         }
     },
@@ -155,6 +158,7 @@ export default {
     },
     components: {
         Header,
+        Breadcrumb,
         GallerySlider,
         TeamsSlider,
         CertificateSlider,
@@ -249,7 +253,7 @@ export default {
         position: relative;
         padding: 60px 7.81vw;
     }
-    .aboutUs-g-description {
+    .about-us-g-description {
         overflow: visible;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 15px;
@@ -301,14 +305,20 @@ export default {
             }
         }
         .all-our-trainers-link{
-            margin: 0;
+            background-color: #fff;
+            margin: 56px 83px 76px 0;
             font-weight: bold;
             font-size: 12px;
             line-height: 14px;
             text-align: right;
             letter-spacing: 0.05em;
-            color: #000000;
+            -webkit-text-decoration-line: underline;
             text-transform: uppercase;
+            display: block;
+            color: #000000;
+            &:hover {
+                color: #916C58;
+            }
         }
 
         .trainers-container .trainer-item:nth-of-type(even) {
@@ -416,7 +426,7 @@ export default {
         .gallery-slider {
             padding: 0 50px;
         }
-        .aboutUs-g-description {
+        .about-us-g-description {
             padding: 0 50px;
             margin-bottom: 50px;
             & ul {
@@ -520,7 +530,7 @@ export default {
         .gallery-slider {
             padding: 0 15px;
         }
-        .aboutUs-g-description {
+        .about-us-g-description {
             padding: 0 15px;
             grid-template-columns: repeat(1, 1fr);
             margin-bottom: 50px;

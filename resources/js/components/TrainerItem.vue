@@ -1,43 +1,37 @@
 <template>
-<div :class="['trainer-item', {'is-scaled':isHovered||isSelected}]"
+<div :class="['trainer-item', {'is-scaled':isHovered && isSelected}]"
     @mouseenter="enter"
     @mouseleave="leave"
     v-if="!$root.$data.isMobile"
 >
     <div style="position: relative; z-index: 99;">
-        <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="!isOpen ? isShow() : isClosed()">
-        <div v-show="isHovered && !isOpen || isSelected" class="info">
-            <template v-if="!isSlider">
-                <img v-if="!isSelected" src="../../assets/images/info.svg" alt="info" class="info-show" @click="isShow">
-                <img v-if="isSelected" src="../../assets/images/close.svg" alt="info" class="info-close" @click="isClosed">
-            </template>
-        </div>
+        <img v-if="!isHovered" :src="`../../images/${trainer.link}`" :alt="trainer.firstName">
+        <Video v-else :linkVideo="trainer.linkVideo" :linkImage="trainer.link"/>
         <p class="firstName">{{$i18n.t(`trainers.${trainer.id}.firstName`)}}</p>
         <p class="lastName">{{$i18n.t(`trainers.${trainer.id}.lastName`)}}</p>
     </div>
-    <div :class="['description', {'description-background': isSelected}]">
+    <div :class="['description', {'description-background': isHovered}]">
         <p class="descriptionTitle">{{$i18n.t(`trainers.${trainer.id}.direction`)}}</p>
         <p v-show="isSelected">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
     </div>
 </div>
-<div v-else :class="['trainer-item-mobile', {'is-scaled': isSelected}]">
+<div v-else :class="['trainer-item-mobile', {'is-scaled': isSelected && !isSlider}]">
     <div style="position: relative; z-index: 99;">
-        <img :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="!isOpen ? isShow() : isClosed()">
-        <div v-show="isHovered && !isOpen || isSelected" class="info">
-            <img v-if="!isSelected" src="../../assets/images/info.svg" alt="info" class="info-show" @click="isShow">
-            <img v-if="isSelected" src="../../assets/images/close.svg" alt="info" class="info-close" @click="isClosed">
-        </div>
+        <img v-if="!isSelected" :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="!isOpen ? isShow() : isClosed()">
+        <VideoMobile v-else :isSelected="isSelected" :linkVideo="trainer.linkVideo" :linkImage="trainer.link" @click="!isOpen ? isShow() : isClosed()"/>
         <p class="firstName">{{$i18n.t(`trainers.${trainer.id}.firstName`)}}</p>
         <p class="lastName">{{$i18n.t(`trainers.${trainer.id}.lastName`)}}</p>
     </div>
     <div :class="['description', {'description-background': isSelected}]">
         <p class="descriptionTitle">{{$i18n.t(`trainers.${trainer.id}.direction`)}}</p>
-        <p v-show="isSelected">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
+        <p v-show="isSelected && !isSlider">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
     </div>
 </div>
 </template>
 
 <script>
+import Video from '../components/Video.vue';
+import VideoMobile from '../components/VideoMobile.vue';
 export default {
     props: ['trainer', 'isOpen', 'isSlider'],
     data(){
@@ -47,30 +41,35 @@ export default {
         }
     },
     methods:{
-    enter(){
-        if(!this.isOpen && !this.isSlider) {
+        enter(){
             this.isHovered = true;
-        }
-    },
-    leave(){
-        if(!this.isOpen && !this.isSlider) {
-            this.isHovered = false;
-        }
-    },
-    isShow(){
-
-        if(!this.isSlider){
-            this.$emit('isShow', true);
             this.isSelected = true;
+        },
+        leave(){
+            this.isHovered = false;
+            this.isSelected = false;
+        },
+        isShow(){
+            // if(!this.isOpen) {
+            //     console.log('isShow')
+                this.$emit('isShow', true);
+                this.isSelected = true;
+            // }
+
+        },
+        isClosed(){
+            // if(this.isOpen && this.isSelected) {
+                console.log('isClosed')
+                this.$emit('isClosed', false);
+                this.isSelected = false;
+            // }
+
         }
     },
-    isClosed(){
-        if(this.isOpen && this.isSelected && !this.isSlider) {
-            this.$emit('isClosed', false);
-            this.isSelected = false;
-        }
+    components: {
+        Video,
+        VideoMobile
     }
-}
 }
 </script>
 
@@ -128,6 +127,13 @@ img{
     cursor: pointer;
     width:100%;
 }
+
+Video{
+    display:block;
+    cursor: pointer;
+    width: 100%;
+}
+
 
 .firstName{
     display: flex;
@@ -193,6 +199,7 @@ img{
     line-height: 28px;
     color: #000000;
 
+
     & p {
         margin: 0;
         // max-height: 95px;
@@ -211,7 +218,7 @@ img{
 }
 
 .description-background {
-    background-color: #ffffff;
+    background-color: #F4F0EE;
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {

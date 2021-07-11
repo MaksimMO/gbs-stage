@@ -143,6 +143,89 @@ export default {
     object-fit: cover;
   }
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .swiper-container {
+        ::v-deep(.swiper-button-prev) {
+            display: none;
+        }
+        ::v-deep(.swiper-button-next) {
+            display: none;
+        }
+        ::v-deep(.swiper-wrapper) {
+            left: 200px;
+        }
+    }
+    .swiper-slide-next + .swiper-slide {
+        pointer-events: none;
+        &::after {
+            content: '';
+            position: unset;
+            background-color: unset;
+            width: unset;
+            height: unset;
+            display: none;
+        }
+        & img{
+            opacity: 0.5;
+        }
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    .swiper-container {
+        ::v-deep(.swiper-button-prev) {
+            display: none;
+        }
+        ::v-deep(.swiper-button-next) {
+            display: none;
+        }
+        ::v-deep(.swiper-wrapper) {
+            left: 150px;
+        }
+    }
+    .swiper-slide-next + .swiper-slide {
+        pointer-events: none;
+        &::after {
+            content: '';
+            position: unset;
+            background-color: unset;
+            width: unset;
+            height: unset;
+            display: none;
+        }
+        & img{
+            opacity: 0.5;
+        }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .swiper-container {
+        ::v-deep(.swiper-button-prev) {
+            display: none;
+        }
+        ::v-deep(.swiper-button-next) {
+            display: none;
+        }
+        ::v-deep(.swiper-wrapper) {
+            left: 130px;
+        }
+    }
+    .swiper-slide-next {
+        pointer-events: none;
+        &::after {
+            content: '';
+            position: unset;
+            background-color: unset;
+            width: unset;
+            height: unset;
+            display: none;
+        }
+        & img{
+            opacity: 0.5;
+        }
+    }
+  }
 
 
 </style>

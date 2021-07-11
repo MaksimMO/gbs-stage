@@ -8,7 +8,8 @@
     @init="swiperInit"
   >
   <swiper-slide v-for="image in slides" :key="image.id"  >
-      <img :src="image.imageUrl" />
+      <img v-show="!image.imageUrlOverlay" :src="image.imageUrl" />
+      <img v-show="image.imageUrlOverlay" :src="image.imageUrlOverlay" />
   </swiper-slide>
 
       <div class="swiper-navigation-prev-1"> </div>
@@ -64,15 +65,21 @@ export default {
     align-items: center;
 
 .swiper-container {
-    width: 80%;
-    height: 70%;
+    // margin: 0 30px;
+    // box-sizing: border-box;
+    // width: 80%;
+    // height: 70%;
 
     @media screen and (max-width: 767px) {
-      width: initial;
-      height: 80%;
+      // width: initial;
+      // height: 80%;
       // height: initial;
     }
 }
+
+// ::v-deep(.swiper-wrapper){
+//   width:80%;
+// }
 
 
 .swiper-navigation-prev-1,
@@ -88,14 +95,14 @@ export default {
   }
 
   .swiper-navigation-prev-1 {
-    left: 0;
+    left: 15px;
     height: 8px;
     width: 31px;
     background: url("../../assets/images/arrow-right-1.svg") no-repeat;
     transform: rotate(180deg);
   }
   .swiper-navigation-next-1{
-    right: 0;
+    right: 15px;
     height: 8px;
     width: 31px;
     background: url("../../assets/images/arrow-right-1.svg") no-repeat;
@@ -106,19 +113,23 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80vh;
+
+  padding: 0 60px;
+  box-sizing:border-box;
+  @media screen and (max-width: 767px) {
+      padding: 0;
+    }
 }
 
 .swiper-slide img {
-  // display: block;
-  // width: 100%;
+  width: 100%;
   height: 100%;
-
-
-  // object-fit: cover;
-    @media screen and (max-width: 767px) {
-          height: initial;
-          width: 100%
-    }
+  object-fit: contain;
+    // @media screen and (max-width: 767px) {
+    //       height: initial;
+    //       width: 100%
+    // }
 }
 
   .close {

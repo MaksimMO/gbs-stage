@@ -99,9 +99,9 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: solid 2px #F3EFEC;
-    border-right: solid 2px #F3EFEC;
-    padding: 0 39px 0 39px;
+    border-left: solid 1px #F3EFEC;
+    border-right: solid 1px #F3EFEC;
+    padding: 40px;
     max-width: 18.7vw !important;
     height: auto;
     &::after {

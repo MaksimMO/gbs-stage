@@ -1,5 +1,6 @@
 <template>
 <Header class="header-invert" />
+<Breadcrumb />
   <div class="simulator-g">
       <section class="title">
           <h1>Тренажери</h1>
@@ -45,8 +46,10 @@
 
 <script>
 import Header from '../components/Header.vue';
+import Breadcrumb from '../components/Breadcrumb.vue';
 import Footer from '../components/Footer.vue';
-import PopupDetail from '../components/PopupDetail.vue'
+import PopupDetail from '../components/PopupDetail.vue';
+
 let preloadedAssets = [
         require("../../assets/images/simulators/vertical_traction.jpg").default,
         require("../../assets/images/simulators/shoulder_press.jpg").default,
@@ -59,6 +62,7 @@ let preloadedAssets = [
         require("../../assets/images/simulators/dual_abd.jpg").default,
         require("../../assets/images/simulators/leg_extension.jpg").default,
         require("../../assets/images/simulators/ne_leg_curl.jpg").default,
+        require("../../assets/images/simulators/lower_boddy_calf.jpg").default,
         require("../../assets/images/simulators/simulator-default.jpg").default,
         require("../../assets/images/simulators/rear_kick.jpg").default,
         require("../../assets/images/simulators/Linear_leg_press.jpg").default,
@@ -71,7 +75,7 @@ let preloadedAssets = [
         require("../../assets/images/simulators/recline_live_500.jpg").default,
         require("../../assets/images/simulators/climb_live_500.jpg").default,
         require("../../assets/images/simulators/group_cycle_connect.jpg").default,
-        require("../../assets/images/simulators/dual_adjustable_pulley.png").default,
+        require("../../assets/images/simulators/dual_adjustable_pulley.jpg").default,
         require("../../assets/images/simulators/kneeling_easy_chin_dip.jpg").default,
         require("../../assets/images/simulators/cable_stations_connector.jpg").default,
         require("../../assets/images/simulators/universal_storage.jpg").default,
@@ -102,7 +106,7 @@ export default {
                 {id: 8, direction: "lower_boddy", link: require("../../assets/images/simulators/dual_abd.jpg").default},
                 {id: 9, direction: "lower_boddy", link: require("../../assets/images/simulators/leg_extension.jpg").default},
                 {id: 10, direction: "lower_boddy", link: require("../../assets/images/simulators/ne_leg_curl.jpg").default},
-                {id: 11, direction: "lower_boddy", link: require("../../assets/images/simulators/simulator-default.jpg").default},
+                {id: 11, direction: "lower_boddy", link: require("../../assets/images/simulators/lower_boddy_calf.jpg").default},
                 {id: 12, direction: "lower_boddy", link: require("../../assets/images/simulators/rear_kick.jpg").default},
                 {id: 13, direction: "lower_boddy", link: require("../../assets/images/simulators/Linear_leg_press.jpg").default},
                 {id: 14, direction: "lower_boddy", link: require("../../assets/images/simulators/leg_press.jpg").default},
@@ -115,7 +119,7 @@ export default {
                 {id: 21, direction: "cardio", link: require("../../assets/images/simulators/climb_live_500.jpg").default},
                 {id: 22, direction: "cardio", link: require("../../assets/images/simulators/group_cycle_connect.jpg").default},
                 {id: 23, direction: "multifunction_simulators", link: require("../../assets/images/simulators/simulator-default.jpg").default},
-                {id: 24, direction: "multifunction_simulators", link: require("../../assets/images/simulators/dual_adjustable_pulley.png").default},
+                {id: 24, direction: "multifunction_simulators", link: require("../../assets/images/simulators/dual_adjustable_pulley.jpg").default},
                 {id: 25, direction: "multifunction_simulators", link: require("../../assets/images/simulators/kneeling_easy_chin_dip.jpg").default},
                 {id: 26, direction: "multifunction_simulators", link: require("../../assets/images/simulators/cable_stations_connector.jpg").default},
                 {id: 27, direction: "free_weights", link: require("../../assets/images/simulators/simulator-default.jpg").default},
@@ -172,6 +176,7 @@ export default {
     },
     components: {
         Header,
+        Breadcrumb,
         PopupDetail,
         Footer
     }

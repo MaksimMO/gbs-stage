@@ -1,6 +1,6 @@
 
 <template>
-<swiper :navigation="true" :pagination="{'type': 'fraction'}" class="mySwiper">
+<swiper :navigation="true" :pagination="{'type': 'fraction'}" :loop="true" class="mySwiper">
   <swiper-slide v-for="slide in slides" :key="slide.id">
     <img :src="slide.imageUrl" />
       <div class="text-block">
@@ -172,6 +172,7 @@ export default {
         text-decoration: none;
         width: max-content;
         color: #fff;
+        padding: 3px;
         transition: all 0.2s linear;
         position: relative;
         cursor: pointer;

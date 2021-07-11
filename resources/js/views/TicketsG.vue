@@ -1,10 +1,11 @@
 <template>
 <Header class="header-invert"/>
+<Breadcrumb />
   <div class="team-g">
       <section class="title">
           <h1>Абонементи</h1>
           <p>
-            GBS Level – це три види клубних карт.
+            GBS LEVEL – це три види клубних карт.
             Естетичні, емоційні, хардкорні, стримані, релаксуючі, автентичні,  максималістичні та вдночас мінімалістичні.
             Створені в колаборації з Нашими Клієнтами
           </p>
@@ -15,17 +16,23 @@
       <section class="tickets">
           <div class="level">
               <p>{{tickets[0].level}}</p>
-              <img :src="tickets[0].link" alt="Level 1" @click="openDetail(1)">
+              <div class="imgDiv">
+                  <img :src="tickets[0].link" alt="Level 1" @click="openDetail(1)">
+              </div>
               <div class="detail" @click="openDetail(1)">Детальніше</div>
           </div>
           <div class="level">
               <p>{{tickets[1].level}}</p>
-              <img :src="tickets[1].link" alt="Level 2" @click="openDetail(2)">
+              <div class="imgDiv">
+                <img :src="tickets[1].link" alt="Level 2" @click="openDetail(2)">
+              </div>
               <div class="detail" @click="openDetail(2)" >Детальніше</div>
           </div>
           <div class="level">
               <p>{{tickets[2].level}}</p>
-              <img :src="tickets[2].link" alt="Level 3" @click="openDetail(3)">
+              <div class="imgDiv">
+                <img :src="tickets[2].link" alt="Level 3" @click="openDetail(3)">
+              </div>
               <div class="detail" @click="openDetail(3)">Детальніше</div>
           </div>
       </section>
@@ -62,9 +69,17 @@
 
 <script>
 import Header from '../components/Header.vue';
+import Breadcrumb from '../components/Breadcrumb.vue';
 import Footer from '../components/Footer.vue';
 import PopupTickets from '../components/PopupTickets.vue';
 import MakeOrderPopup from '../components/MakeOrderPopup.vue';
+
+let preloadedAssets = [
+        require('../../assets/images/TeamG/tickets/level1.png').default,
+        require('../../assets/images/TeamG/tickets/level2.png').default,
+        require('../../assets/images/TeamG/tickets/level3.png').default
+    ]
+
 export default {
     data() {
         return {
@@ -75,7 +90,7 @@ export default {
             tickets: [
                 {id: 1, level: 'level 1', link: require("../../assets/images/TeamG/tickets/level1.png").default,
                     period: { time1: 'пн-пт: 07:00 - 23:00', time2: 'сб-нд: 08:00 - 23:00', dayOff: '45 днів'},
-                    price: '28 000',
+                    price: '30 000',
                     details: [
                         'Безліміт на самостійне відвідування спортивного залу.',
                         '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона).',
@@ -90,7 +105,7 @@ export default {
                 },
                 {id: 2, level: 'level 2', link: require("../../assets/images/TeamG/tickets/level2.png").default,
                     period: { time1: 'пн-пт: 07:00 - 23:00', dayOff: '30 днів'},
-                    price: '18 000',
+                    price: '20 000',
                     details: [
                         'Безліміт на самостійне відвідування спортивного залу.',
                         '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 2 рази на місяць протягом терміну дії клубної карти.',
@@ -105,7 +120,7 @@ export default {
                 },
                 {id: 3, level: 'level 3',link: require("../../assets/images/TeamG/tickets/level3.png").default,
                     period: { time1: 'пн-пт: 07:00 - 1:00', dayOff: '30 днів'},
-                    price: '12 000',
+                    price: '13 000',
                     details: [
                         'Безліміт на самостійне відвідування спортивного залу.',
                         '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 1 рази на місяць протягом терміну дії клубної карти.',
@@ -131,8 +146,31 @@ export default {
             this.choiceLevel = level;
         }
     },
+    beforeRouteEnter(to, from, next) {
+        const cacheImage = (url) =>{
+            return new Promise((resolve, reject) => {
+                let img = new Image()
+                img.onload = resolve;
+                img.src = url;
+            });
+        }
+        let postponeTimelId = setTimeout(()=>{
+            window.vm.$data.isLoading=true
+        },600);
+
+
+        Promise.all(preloadedAssets.map((urlImg) => (cacheImage(urlImg)))).finally(()=>{
+
+            clearTimeout(postponeTimelId);
+            if (window.vm.$data.isLoading){
+                window.vm.$data.isLoading=false;
+            }
+            next();
+        });
+    },
     components: {
         Header,
+        Breadcrumb,
         Footer,
         PopupTickets,
         MakeOrderPopup
@@ -194,6 +232,15 @@ export default {
         display: grid;
         justify-content: center;
         padding: 0 7.81vw;
+        transition: transform .2s ease-in;
+
+        .level{
+            transition: transform 0.2s ease-in;
+            // &:hover{
+            //     transform: scale(1.1);
+            // }
+        }
+
         & p {
             text-transform: uppercase;
             margin: 0;
@@ -208,13 +255,22 @@ export default {
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #916C58;
         }
-        & img {
-            max-width: 321px;
+        & .imgDiv {
             width: 100%;
-            height: auto;
+            overflow: hidden;
             margin-bottom: 30px;
-            cursor: pointer;
+            & img {
+                max-width: 321px;
+                width: 100%;
+                height: auto;
+                cursor: pointer;
+                transition: transform .2s ease-in;
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
         }
+
         & .detail {
             font-family: Raleway;
             font-weight: bold;
@@ -320,6 +376,7 @@ export default {
         list-style: none;
         padding: 0;
         padding-left: 1em;
+        background: rgba(244,240,238, .05);
         & li {
             font-family: Raleway;
             font-style: normal;
@@ -385,7 +442,7 @@ export default {
                 font-size: 22px;
                 line-height: 32px;
             }
-            & img {
+            &>.imgDiv>img {
                 max-width: 171px;
                 width: 100%;
                 height: auto;
@@ -464,7 +521,7 @@ export default {
                 font-size: 18px;
                 line-height: 27px;
             }
-            & img {
+            &>.imgDiv>img {
                 max-width: 290px;
                 width: 100%;
                 height: auto;

@@ -11,11 +11,13 @@
         <label for="phone">Телефон</label>
         <div :style="{opacity: (phone.length === 0 && isShowValidationMessage) ? 1 : 0}" class="error-message">Дане поле заповнене не коректно</div>
     </div>
+    <div class="input-wrapper">
+        <input autocomplete="off" v-model="email" id="email" name="email" placeholder=" ">
+        <label for="email">E-mail</label>
+        <div :style="{opacity: (email.length === 0 && isShowValidationMessage) ? 1 : 0}" class="error-message">Дане поле заповнене не коректно</div>
+    </div>
         <button type="submit"><span>Залишити заявку</span></button>
     </form>
-
-
-
 
     <teleport to="body">
             <popup v-if="modalOpen"/>
@@ -33,6 +35,7 @@ export default {
             csrf_token: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
             name:'',
             phone:'',
+            email:'',
             modalOpen:false,
             isShowValidationMessage: false,
         }
@@ -46,6 +49,7 @@ export default {
             let body = new FormData();
             body.append('name', this.name);
             body.append('phone_number', this.phone);
+            body.append('email', this.email);
             body.append('level', this.level);
             body.append('_token', this.csrf_token);
             body.append('description', `Абонимент ${this.choiceLevel}`);

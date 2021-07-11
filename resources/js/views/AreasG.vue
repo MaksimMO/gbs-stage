@@ -1,10 +1,11 @@
 <template>
   <Header class="header-invert" />
+  <Breadcrumb />
   <div class="view-areas-g">
     <div class="title">Зонування</div>
 
     <div class="container-areas">
-      <div class="area" v-for="area in areas" :key="area.id">
+      <div class="area" v-for="area in areas" :key="area.id" @click="$router.push(`/areas-g/${area.id}`)">
         <img :src="area.imageUrl" />
         <div class="text-block">
           <div class="title">{{ area.title }}</div>
@@ -23,6 +24,7 @@
 import areas from "../components/AreasG/areas.js";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+import Breadcrumb from '../components/Breadcrumb.vue';
 
 export default {
   data() {
@@ -33,6 +35,7 @@ export default {
   props: ["id"],
   components: {
     Header,
+    Breadcrumb,
     Footer,
   },
 };
@@ -66,6 +69,7 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
 
       & + .area {
         margin-top: 30px;
@@ -85,8 +89,9 @@ export default {
         width: 65%;
         height: 100%;
         padding: 0 0 64px 120px;
-        display: grid;
-        grid-template-rows: 1fr 1fr min-content;
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-end;
 
         .title {
           font-family: Oswald;
@@ -96,7 +101,7 @@ export default {
           letter-spacing: 0.01em;
           font-feature-settings: "pnum" on, "lnum" on;
           color: #ffffff;
-
+          text-transform: uppercase;
           opacity: 0.8;
 
           text-align: left;
@@ -123,6 +128,7 @@ export default {
           text-decoration: none;
           width: max-content;
           color: #fff;
+          padding: 3px;
           transition: all 0.2s linear;
           position: relative;
           cursor: pointer;
@@ -132,16 +138,17 @@ export default {
           &:before {
             content: "";
             position: absolute;
-            bottom: 0;
+            bottom: -3px;
             left: -8px;
             width: calc(100% + 16px);
-            height: 50%;
+            height: calc(50% + 3px);
             background: #916c58;
             z-index: -1;
             transition: all 0.2s linear;
           }
+
           &:hover:before {
-            height: 100%;
+            height: calc(100% + 6px);
           }
           &:active {
             color: #000;

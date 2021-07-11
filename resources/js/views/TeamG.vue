@@ -1,5 +1,6 @@
 <template>
 <Header class="header-invert"/>
+<Breadcrumb />
   <div :class="{'team-g': !$root.$data.isMobile, 'team-g-mobile': $root.$data.isMobile}">
       <section class="title">
           <h1>Наша команда</h1>
@@ -8,7 +9,7 @@
             під керівництвом яких ви досягнете вражаючих результатів в найбільш оптимальні строки без ризику для здоров'я.
           </p>
           <b>
-            Це ті, хто вас мотивує і знущається, а ще робить вас здоровими та красивими!
+            Це ті, хто вас мотивує і знущається, а ще робить здоровими та красивими!
           </b>
       </section>
       <section>
@@ -24,10 +25,11 @@
 <script>
 import TrainerList from '../components/TrainersList';
 import Header from '../components/Header.vue';
+import Breadcrumb from '../components/Breadcrumb.vue';
 import Footer from '../components/Footer.vue';
+import { preloadLinkVideo } from '../utils.js';
 let preloadedAssets = [
         require('../../assets/images/TeamG/Vladimir_Leskov.jpg').default,
-        require('../../assets/images/TeamG/Irina_Slyusarenko.jpg').default,
         require('../../assets/images/TeamG/Olga_Depeshko.jpg').default,
         require('../../assets/images/TeamG/Olga_Martsenyuk.jpg').default,
         require('../../assets/images/TeamG/Mikhail_Galagan.jpg').default,
@@ -38,6 +40,19 @@ let preloadedAssets = [
         require('../../assets/images/TeamG/Nechko_Vasil.jpg').default,
         require('../../assets/images/TeamG/Gornushkina_Julia.jpg').default,
         require('../../assets/images/TeamG/Dementieva_Elena.jpg').default,
+        require('../../assets/images/TeamG/image-not-found.jpg').default
+    ]
+let preloadedVideo = [
+        'Vladimir_Leskov.MOV',
+        'Olga_Depeshko.MOV',
+        'Olga_Martsenyuk.MOV',
+        'Mikhail_Galagan.MOV',
+        'Olga_Osadchuk.MOV',
+        'valentine.MOV',
+        'Melnyk_Serhiy.MOV',
+        'Olena_Semenchuk.MOV',
+        'Nechko_Vasil.MOV',
+        'Gornushkina_Julia.MOV'
     ]
 export default {
     emits: ['changeOpen'],
@@ -45,20 +60,24 @@ export default {
         return {
             isOpen: false,
             trainers: [
-                {id: 0, link: "Vladimir_Leskov.jpg"},
-                {id: 1, link: "Irina_Slyusarenko.jpg"},
-                {id: 2, link: "Olga_Depeshko.jpg"},
-                {id: 3, link: "Olga_Martsenyuk.jpg"},
-                {id: 4, link: "Mikhail_Galagan.jpg"},
-                {id: 5, link: "Olga_Osadchuk.jpg"},
-                {id: 6, link: "valentine.jpg"},
-                {id: 7, link: "Melnyk_Serhiy.jpg"},
-                {id: 8, link: "Olena_Semenchuk.jpg"},
-                {id: 9, link: "Nechko_Vasil.jpg"},
-                {id: 10, link: "Gornushkina_Julia.jpg"},
-                {id: 11, link: "Dementieva_Elena.jpg"}
+                {id: 0, link: "Vladimir_Leskov.jpg", linkVideo: "Vladimir_Leskov.MOV"},
+                {id: 1, link: "Olga_Depeshko.jpg", linkVideo: "Olga_Depeshko.MOV"},
+                {id: 2, link: "Olga_Martsenyuk.jpg", linkVideo: "Olga_Martsenyuk.MOV"},
+                {id: 3, link: "Mikhail_Galagan.jpg", linkVideo: "Mikhail_Galagan.MOV"},
+                {id: 4, link: "Olga_Osadchuk.jpg", linkVideo: "Olga_Osadchuk.MOV"},
+                {id: 5, link: "valentine.jpg", linkVideo: "valentine.MOV"},
+                {id: 6, link: "Melnyk_Serhiy.jpg", linkVideo: "Melnyk_Serhiy.MOV"},
+                {id: 7, link: "Olena_Semenchuk.jpg", linkVideo: "Olena_Semenchuk.MOV"},
+                {id: 8, link: "Nechko_Vasil.jpg", linkVideo: "Nechko_Vasil.MOV"},
+                {id: 9, link: "Gornushkina_Julia.jpg", linkVideo: "Gornushkina_Julia.MOV"},
+                {id: 10, link: "Dementieva_Elena.jpg"},
+                {id: 11, link: "image-not-found.jpg", linkVideo: "Nina_Shevchuk.MOV"},
+                {id: 12, link: "image-not-found.jpg"}
             ],
         }
+    },
+    mounted(){
+        preloadedVideo.map(urlVideo => (preloadLinkVideo(urlVideo, 'video')));
     },
     methods: {
         change(e) {
@@ -80,19 +99,7 @@ export default {
         },600);
 
 
-        Promise.all(
-            [cacheImage(preloadedAssets[0]),
-            cacheImage(preloadedAssets[1]),
-            cacheImage(preloadedAssets[2]),
-            cacheImage(preloadedAssets[3]),
-            cacheImage(preloadedAssets[4]),
-            cacheImage(preloadedAssets[5]),
-            cacheImage(preloadedAssets[6]),
-            cacheImage(preloadedAssets[7]),
-            cacheImage(preloadedAssets[8]),
-            cacheImage(preloadedAssets[9]),
-            cacheImage(preloadedAssets[10]),
-            cacheImage(preloadedAssets[11])]).finally(()=>{
+        Promise.all(preloadedAssets.map((urlImg) => (cacheImage(urlImg)))).finally(()=>{
 
             clearTimeout(postponeTimelId);
             if (window.vm.$data.isLoading){
@@ -105,6 +112,7 @@ export default {
     components: {
         TrainerList,
         Header,
+        Breadcrumb,
         Footer
     }
 }

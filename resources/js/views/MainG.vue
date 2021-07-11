@@ -15,7 +15,12 @@
   </section>
 
   <div class="about-us">
-    <div class="title">Про нас</div>
+        <div class="title">
+            Про нас
+            <div class="line-background"></div>
+        </div>
+
+
     <div class="columns-container">
       <div class="col-1">
         <div><span class="bold">Тренажерний зал 1700 кв.м.</span> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym </div>
@@ -25,7 +30,7 @@
       </div>
       <div class="col-2">
         <div><span class="bold">Студія Barre </span>на основі балету</div>
-        <div>Мед кабінет, <span class="bold">консультація лікаря</span></div>
+        <!-- <div>Мед кабінет, <span class="bold">консультація лікаря</span></div> -->
         <div>Власна <span class="bold">пральня</span></div>
         <div>Система вентиляції та кондиціонування  функцією <span class="bold">очищення повітря</span></div>
         <div><span class="bold">Високий</span> рівень сервісу</div>
@@ -45,7 +50,7 @@
         спортсменів, які досягають найвищих спортивних результатів. А відтепер і ви
         зможете відчути їх унікальність.
       </div>
-      <router-link class="link-2" to="/about-us-g">Детальніше</router-link>
+      <router-link class="link-2" to="/simulators-g">Детальніше</router-link>
     </div>
       <img class="skew-image-1" src="../../assets/images/techno-gym-skew-images.png" alt="">
   </div>
@@ -55,7 +60,7 @@
         <p class="down-text">своєї справи</p>
     </div>
     <div class="our-team-container_header">
-      Наша команда
+      G LEVEL TEAM
     </div>
 
 
@@ -94,7 +99,7 @@
           Безпека
         </div>
         <div class="description">
-          Тренажерний зал обладнаний усім необхідним для правильних та результативних тренувань, які тільки на користь здоров’ю та фізичній формі. Медична кваліфікована допомога та професійна консультація не по виклику, а як стандарт нашої турботи про клієнта.
+          Тренажерний зал обладнаний усім необхідним для правильних та результативних тренувань, які тільки на користь здоров’ю та фізичній формі. Вентиляція із системою очищення повітря подбає про те, щоб під час тренувань ваші легені наповнювались тільки правильним повітрям. Цілодобова охорона та персональні міні сейфи для вашого спокою та збереження цінних для вас речей.
         </div>
       </div>
       <div class="order">
@@ -131,18 +136,19 @@ import TeamsSlider from '../components/TeamsSlider.vue';
 
 
            let trainers = [
-                {id: 0, link: "Vladimir_Leskov.jpg"},
-                {id: 1, link: "Irina_Slyusarenko.jpg"},
-                {id: 2, link: "Olga_Depeshko.jpg"},
-                {id: 3, link: "Olga_Martsenyuk.jpg"},
-                {id: 4, link: "Mikhail_Galagan.jpg"},
-                {id: 5, link: "Olga_Osadchuk.jpg"},
-                {id: 6, link: "valentine.jpg"},
-                {id: 7, link: "Melnyk_Serhiy.jpg"},
-                {id: 8, link: "Olena_Semenchuk.jpg"},
-                {id: 9, link: "Nechko_Vasil.jpg"},
-                {id: 10, link: "Gornushkina_Julia.jpg"},
-                {id: 11, link: "Dementieva_Elena.jpg"}
+                {id: 0, link: "Vladimir_Leskov.jpg", linkVideo: "Vladimir_Leskov.MOV"},
+                {id: 1, link: "Olga_Depeshko.jpg", linkVideo: "Olga_Depeshko.MOV"},
+                {id: 2, link: "Olga_Martsenyuk.jpg", linkVideo: "Olga_Martsenyuk.MOV"},
+                {id: 3, link: "Mikhail_Galagan.jpg", linkVideo: "Mikhail_Galagan.MOV"},
+                {id: 4, link: "Olga_Osadchuk.jpg", linkVideo: "Olga_Osadchuk.MOV"},
+                {id: 5, link: "valentine.jpg", linkVideo: "valentine.MOV"},
+                {id: 6, link: "Melnyk_Serhiy.jpg", linkVideo: "Melnyk_Serhiy.MOV"},
+                {id: 7, link: "Olena_Semenchuk.jpg", linkVideo: "Olena_Semenchuk.MOV"},
+                {id: 8, link: "Nechko_Vasil.jpg", linkVideo: "Nechko_Vasil.MOV"},
+                {id: 9, link: "Gornushkina_Julia.jpg", linkVideo: "Gornushkina_Julia.MOV"},
+                {id: 10, link: "Dementieva_Elena.jpg"},
+                {id: 11, link: "image-not-found.jpg"},
+                {id: 12, link: "image-not-found.jpg"}
             ]
 
 
@@ -214,6 +220,7 @@ export default {
         text-decoration:none;
         width: max-content;
         color:#fff;
+        padding: 3px;
         transition: all 0.2s linear;
         position: relative;
         cursor: pointer;
@@ -331,14 +338,31 @@ export default {
 
   .title{
     font-family: Oswald;
+    font-style: normal;
     font-weight: 600;
     font-size: 48px;
+    line-height: 54px;
     letter-spacing: 0.02em;
     font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 96px;
+    padding-bottom: 19px;
+    & .line-background {
+        position: absolute;
+        bottom: 0;
+        right: -170px;
+        left:66px;
+        // width: 1545px; //74.8599vw;
+        height: 83px;
+        background: #916C58;
+        opacity: 0.07;
+        transform: skew(-18deg);
 
-    @media screen and (max-width:767px){
-         font-size: 24px;
-         margin-bottom: 30px;
+        @media screen and (max-width:767px){
+          height: 33px;
+        }
     }
   }
 
@@ -567,6 +591,9 @@ export default {
       text-transform: uppercase;
       display: block;
       color: #000000;
+      &:hover {
+          color: #916C58;
+      }
 
       @media screen and (max-width:767px){
         margin-bottom: 0;

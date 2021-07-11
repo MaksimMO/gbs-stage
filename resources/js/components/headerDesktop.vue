@@ -8,7 +8,7 @@
 
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink :class="{'is-open':isOpen}"/>
-    <div class="appointment" @click="modalOpen=true">Записатися</div>
+    <div class="appointment" @click="modalOpen=true">Залишити заявку</div>
     <teleport to="body">
       <MakeOrderPopup v-if="modalOpen" @closePopup="modalOpen=false"/>
     </teleport>
@@ -21,6 +21,9 @@
   <transition name="slide-fade">
     <MenuB v-show="isOpen && $root.$data.area == 'b'" />
   </transition>
+  <transition name="slide-fade">
+    <MenuS v-show="isOpen && $root.$data.area == 's'" />
+  </transition>
 </div>
 </template>
 
@@ -28,8 +31,11 @@
 import PhoneLink from "./PhoneLink.vue";
 import MenuG from "./MenuG.vue";
 import MenuB from "./MenuB.vue";
+import MenuS from "./MenuS.vue";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 import MakeOrderPopup from './MakeOrderPopup.vue'
+import { preloadLink } from '../utils.js';
+
 
 export default {
   data() {
@@ -43,11 +49,11 @@ export default {
     PhoneLink,
     MenuG,
     MenuB,
+    MenuS,
     LanguageSwitcher,
     MakeOrderPopup
   },
   mounted(){
-    console.log('$root.$data.isMobile', this.$root.$data.isMobile)
     const debounce = (fn) => {
       let frame;
 
@@ -70,14 +76,7 @@ export default {
     storeScroll();
 
 
-
-    let preloadLink = document.createElement("link");
-    //todo different images
-    preloadLink.href = require('../../assets/feedBackFormView/background-g.png').default;
-    preloadLink.rel = "preload";
-    preloadLink.as = "image";
-    document.head.appendChild(preloadLink);
-    // console.log('background cached')
+    preloadLink('feedBackFormView/background-g.png', 'image')
   },
 };
 </script>
@@ -94,24 +93,7 @@ export default {
     background-color: transparent;
     transition: all 0.6s ease-in;
 }
-// .is-mobile{
-//     padding: 30px 15px 30px 15px !important;
-//     transition: all 0.6s ease-in;
-//     & .main {
-//         &>a>.logo {
-//             width: 50px;
-//             height: 23px;
-//         }
-//         & .menu-open{
-//             width: 30px;
-//         }
-//         & .close-opened {
-//             background-image: url("../../assets/homeView/arrow-right.svg");
-//             width: 30px;
-//             height: 21px;
-//         }
-//     }
-// }
+
 .header-invert {
     color: #000 !important;
     & .phone-link{
@@ -139,6 +121,10 @@ export default {
       background: url("../../assets/images/b-level-darck.svg") no-repeat;
       background-size: contain;
     }
+    & .main>a>.logo.s {
+      background: url("../../assets/images/s-level-darck.svg") no-repeat;
+      background-size: contain;
+    }
 }
 .is-open{
    background-color: #000 !important;
@@ -161,6 +147,10 @@ export default {
         background: url("../../assets/images/b-level.svg") no-repeat;
         background-size: contain;
     }
+    & .main>a>.logo.s {
+        background: url("../../assets/images/s-level.svg") no-repeat;
+        background-size: contain;
+    }
 }
 
 .main {
@@ -172,14 +162,6 @@ export default {
         width: 178px;
         height: 84px;
         transition: all 0.6s ease-in;
-
-    // @media screen and (max-width: 767px) {
-    //   width: 90px;
-    //   height: 42px;
-    //   background-size: 92px 42px;
-    //   flex-grow: unset;
-    // }
-
     &.g {
       background: url("../../assets/images/g-level.svg") no-repeat;
       background-size: contain;
@@ -215,7 +197,8 @@ export default {
         line-height: 16px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        width: 138px;
+        padding: 3px;
+        // width: 138px;
         text-align: center;
         transition: all 0.6s linear;
         position: relative;
@@ -226,8 +209,8 @@ export default {
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
-            width: 100%;
+            left: -2%;
+            width: 104%;
             height: 50%;
             background: #916C58;
             z-index: -1;
@@ -310,6 +293,10 @@ export default {
         }
         &.b {
             background: url("../../assets/images/b-level.svg") no-repeat;
+            background-size: contain;
+        }
+        &.s {
+            background: url("../../assets/images/s-level.svg") no-repeat;
             background-size: contain;
         }
     }

@@ -26,7 +26,7 @@ export default {
     mounted: function () {
         window.addEventListener('scroll', this.scrollListener)
     },
-    beforeDestroy: function () {
+    beforeUnmount: function () {
         window.removeEventListener('scroll', this.scrollListener)
     },
     components:{

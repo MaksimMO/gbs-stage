@@ -142,6 +142,7 @@ export default {
 
   @media screen and (max-width: 1023px) and (min-width: 768px) {
       .swiper-container {
+        margin-bottom: 110px;
         ::v-deep(.swiper-button-prev) {
             left: 20px !important;
         }
@@ -154,12 +155,19 @@ export default {
 
   @media screen and (max-width: 767px) {
       .swiper-container {
+          margin-bottom: 110px;
         ::v-deep(.swiper-button-prev) {
-            display: none;
+            top: unset;
+            bottom: -50px;
+            left: 40% !important;
+            font-weight: 900;
         }
 
         ::v-deep(.swiper-button-next) {
-            display: none;
+            top: unset;
+            bottom: -50px;
+            right: 40% !important;
+            font-weight: 900;
         }
     }
   }
