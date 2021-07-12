@@ -78,13 +78,13 @@ let preloadedAssets = [
         require('../../assets/images/popup-corner.svg').default,
         require('../../assets/images/aboutUs-b-main.jpg').default,
         require('../../assets/images/popup-corner.svg').default,
-        require('../../assets/images/TeamB/gallery/150-31-1-370x370.jpg').default,
-        require('../../assets/images/TeamB/gallery/150-34-1-370x370.jpg').default,
-        require("../../assets/images/TeamB/gallery/150-35-1-370x370.jpg").default,
-        require("../../assets/images/TeamB/gallery/150-37-1-370x370.jpg").default,
-        require("../../assets/images/TeamB/gallery/150-38-1-370x370.jpg").default,
-        require("../../assets/images/TeamB/gallery/150-42-1-370x370.jpg").default,
-        require("../../assets/images/TeamB/gallery/150-43-1-370x370.jpg").default,
+        require("../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default,
+        require("../../assets/images/TeamB/gallery/overlay/150-34-1-min.jpg").default,
+        require("../../assets/images/TeamB/gallery/overlay/150-35-1-min.jpg").default,
+        require("../../assets/images/TeamB/gallery/overlay/150-37-1-min.jpg").default,
+        require("../../assets/images/TeamB/gallery/overlay/150-38-1-min.jpg").default,
+        require("../../assets/images/TeamB/gallery/overlay/150-42-1-min.jpg").default,
+        require("../../assets/images/TeamB/gallery/overlay/150-31-1-min.jpg").default
     ];
 
 export default {
@@ -93,13 +93,13 @@ export default {
     return{
       isOpen: false,
       gallery: [
-            { id: 1, imageUrl: require("../../assets/images/TeamB/gallery/150-43-1-370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default },
-            { id: 2, imageUrl: require("../../assets/images/TeamB/gallery/150-34-1-370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamB/gallery/overlay/150-34-1-min.jpg").default },
-            { id: 3, imageUrl: require("../../assets/images/TeamB/gallery/150-35-1-370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamB/gallery/overlay/150-35-1-min.jpg").default },
-            { id: 4, imageUrl: require("../../assets/images/TeamB/gallery/150-37-1-370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamB/gallery/overlay/150-37-1-min.jpg").default },
-            { id: 5, imageUrl: require("../../assets/images/TeamB/gallery/150-38-1-370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamB/gallery/overlay/150-38-1-min.jpg").default },
-            { id: 6, imageUrl: require("../../assets/images/TeamB/gallery/150-42-1-370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamB/gallery/overlay/150-42-1-min.jpg").default },
-            { id: 7, imageUrl: require("../../assets/images/TeamB/gallery/150-31-1-370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamB/gallery/overlay/150-31-1-min.jpg").default }
+            require("../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default,
+            require("../../assets/images/TeamB/gallery/overlay/150-34-1-min.jpg").default,
+            require("../../assets/images/TeamB/gallery/overlay/150-35-1-min.jpg").default,
+            require("../../assets/images/TeamB/gallery/overlay/150-37-1-min.jpg").default,
+            require("../../assets/images/TeamB/gallery/overlay/150-38-1-min.jpg").default,
+            require("../../assets/images/TeamB/gallery/overlay/150-42-1-min.jpg").default,
+            require("../../assets/images/TeamB/gallery/overlay/150-31-1-min.jpg").default
         ]
     }
 
