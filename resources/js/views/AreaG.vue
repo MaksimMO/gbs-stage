@@ -8,8 +8,8 @@
     <div class="description">{{area.description}}</div>
     <img class="big-image" :src="area.imageUrl" />
 
-    <section class="gallery-slider">
-        <GallerySlider :images="gallery" />
+    <section class="gallery-slider" v-if="area.photos?.length">
+        <GallerySlider :images="area.photos" />
     </section>
 
     <div class="open-popup-container">
@@ -54,11 +54,11 @@ export default {
             areas,
             modalOpen:false,
             isMakeOrderPopupOpen:false,
-            gallery: [
-                { id: 1, imageUrl: require("../../assets/images/areas/slider/slide1.jpg").default },
-                { id: 2, imageUrl: require("../../assets/images/areas/slider/slide2.jpg").default },
-                { id: 3, imageUrl: require("../../assets/images/areas/slider/slide3.jpg").default },
-            ]
+            // gallery: [
+            //     { id: 1, imageUrl: require("../../assets/images/areas/slider/slide1.jpg").default },
+            //     { id: 2, imageUrl: require("../../assets/images/areas/slider/slide2.jpg").default },
+            //     { id: 3, imageUrl: require("../../assets/images/areas/slider/slide3.jpg").default },
+            // ]
         }
 
     },

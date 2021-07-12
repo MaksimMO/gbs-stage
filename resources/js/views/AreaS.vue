@@ -54,11 +54,11 @@ export default {
             areas,
             modalOpen:false,
             isMakeOrderPopupOpen:false,
-            gallery: [
-                { id: 1, imageUrl: require("../../assets/images/areas/slider/slide1.jpg").default },
-                { id: 2, imageUrl: require("../../assets/images/areas/slider/slide2.jpg").default },
-                { id: 3, imageUrl: require("../../assets/images/areas/slider/slide3.jpg").default },
-            ]
+            // gallery: [
+            //     { id: 1, imageUrl: require("../../assets/images/areas/slider/slide1.jpg").default },
+            //     { id: 2, imageUrl: require("../../assets/images/areas/slider/slide2.jpg").default },
+            //     { id: 3, imageUrl: require("../../assets/images/areas/slider/slide3.jpg").default },
+            // ]
         }
 
     },

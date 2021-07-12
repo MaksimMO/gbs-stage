@@ -7,9 +7,10 @@
     :navigation="{ nextEl: '.swiper-navigation-next-1', prevEl: '.swiper-navigation-prev-1'}"
     @init="swiperInit"
   >
-  <swiper-slide v-for="image in slides" :key="image.id"  >
-      <img v-show="!image.imageUrlOverlay" :src="image.imageUrl" />
-      <img v-show="image.imageUrlOverlay" :src="image.imageUrlOverlay" />
+  <swiper-slide v-for="(imageUrl, index) in slides" :key="index"  >
+      <!-- <img v-show="!image.imageUrlOverlay" :src="image.imageUrl" /> -->
+      <!-- <img v-show="image.imageUrlOverlay" :src="image.imageUrlOverlay" /> -->
+      <img :src="imageUrl" />
   </swiper-slide>
 
       <div class="swiper-navigation-prev-1"> </div>
@@ -77,8 +78,12 @@ export default {
     }
 }
 
+// ::v-deep(.swiper-container) {
+//   align-items: center;
+// }
+
 // ::v-deep(.swiper-wrapper){
-//   width:80%;
+//   align-items: center;
 // }
 
 

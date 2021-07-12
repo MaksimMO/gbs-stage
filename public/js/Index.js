@@ -20401,17 +20401,12 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
     return {
       areas: _components_AreasG_areas_js__WEBPACK_IMPORTED_MODULE_0__.default,
       modalOpen: false,
-      isMakeOrderPopupOpen: false,
-      gallery: [{
-        id: 1,
-        imageUrl: __webpack_require__(/*! ../../assets/images/areas/slider/slide1.jpg */ "./resources/assets/images/areas/slider/slide1.jpg").default
-      }, {
-        id: 2,
-        imageUrl: __webpack_require__(/*! ../../assets/images/areas/slider/slide2.jpg */ "./resources/assets/images/areas/slider/slide2.jpg").default
-      }, {
-        id: 3,
-        imageUrl: __webpack_require__(/*! ../../assets/images/areas/slider/slide3.jpg */ "./resources/assets/images/areas/slider/slide3.jpg").default
-      }]
+      isMakeOrderPopupOpen: false // gallery: [
+      //     { id: 1, imageUrl: require("../../assets/images/areas/slider/slide1.jpg").default },
+      //     { id: 2, imageUrl: require("../../assets/images/areas/slider/slide2.jpg").default },
+      //     { id: 3, imageUrl: require("../../assets/images/areas/slider/slide3.jpg").default },
+      // ]
+
     };
   },
   props: ['id'],
@@ -20465,17 +20460,12 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
     return {
       areas: _components_AreasS_areas_js__WEBPACK_IMPORTED_MODULE_0__.default,
       modalOpen: false,
-      isMakeOrderPopupOpen: false,
-      gallery: [{
-        id: 1,
-        imageUrl: __webpack_require__(/*! ../../assets/images/areas/slider/slide1.jpg */ "./resources/assets/images/areas/slider/slide1.jpg").default
-      }, {
-        id: 2,
-        imageUrl: __webpack_require__(/*! ../../assets/images/areas/slider/slide2.jpg */ "./resources/assets/images/areas/slider/slide2.jpg").default
-      }, {
-        id: 3,
-        imageUrl: __webpack_require__(/*! ../../assets/images/areas/slider/slide3.jpg */ "./resources/assets/images/areas/slider/slide3.jpg").default
-      }]
+      isMakeOrderPopupOpen: false // gallery: [
+      //     { id: 1, imageUrl: require("../../assets/images/areas/slider/slide1.jpg").default },
+      //     { id: 2, imageUrl: require("../../assets/images/areas/slider/slide2.jpg").default },
+      //     { id: 3, imageUrl: require("../../assets/images/areas/slider/slide3.jpg").default },
+      // ]
+
     };
   },
   props: ['id'],
@@ -22615,13 +22605,13 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     }
   }, {
     "default": _withId(function () {
-      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.images, function (image) {
+      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.images, function (imageUrl, index) {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_swiper_slide, {
-          key: image.id
+          key: index
         }, {
           "default": _withId(function () {
             return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-              src: image.imageUrl
+              src: imageUrl
             }, null, 8
             /* PROPS */
             , ["src"])];
@@ -24687,20 +24677,16 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     onInit: $options.swiperInit
   }, {
     "default": _withId(function () {
-      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.slides, function (image) {
+      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.slides, function (imageUrl, index) {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_swiper_slide, {
-          key: image.id
+          key: index
         }, {
           "default": _withId(function () {
-            return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-              src: image.imageUrl
+            return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img v-show=\"!image.imageUrlOverlay\" :src=\"image.imageUrl\" /> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img v-show=\"image.imageUrlOverlay\" :src=\"image.imageUrlOverlay\" /> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+              src: imageUrl
             }, null, 8
             /* PROPS */
-            , ["src"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, !image.imageUrlOverlay]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-              src: image.imageUrlOverlay
-            }, null, 8
-            /* PROPS */
-            , ["src"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, image.imageUrlOverlay]])];
+            , ["src"])];
           }),
           _: 2
           /* DYNAMIC */
@@ -24883,6 +24869,7 @@ var _hoisted_2 = {
   "class": "description"
 };
 var _hoisted_3 = {
+  key: 0,
   "class": "gallery-slider"
 };
 var _hoisted_4 = {
@@ -24908,6 +24895,8 @@ var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  var _$options$area$photos;
+
   var _component_Header = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Header");
 
   var _component_Breadcrumb = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Breadcrumb");
@@ -24937,11 +24926,11 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     src: $options.area.imageUrl
   }, null, 8
   /* PROPS */
-  , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_GallerySlider, {
-    images: $data.gallery
+  , ["src"]), (_$options$area$photos = $options.area.photos) !== null && _$options$area$photos !== void 0 && _$options$area$photos.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("section", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_GallerySlider, {
+    images: $options.area.photos
   }, null, 8
   /* PROPS */
-  , ["images"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [_hoisted_5, _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+  , ["images"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [_hoisted_5, _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $data.isMakeOrderPopupOpen = true;
     })
@@ -26910,22 +26899,26 @@ window.vm = app.mount('#gbslevel-app'); // if(isMobile){
   "id": 1,
   "imageUrl": __webpack_require__(/*! ../../../assets/images/areas/area-1-g.jpg */ "./resources/assets/images/areas/area-1-g.jpg").default,
   "title": "Зона єдиноборств",
-  "description": "Простора ЗОНА ЄДИНОБОРСТВ з професійним рингом, індивідуальними та груповими заняттями по боксу у найкращих тренерів порадує як любителів боксу, так і новачків, які давно мріяли опанувати легендарний удар Брюса Лі."
+  "description": "Простора ЗОНА ЄДИНОБОРСТВ з професійним рингом, індивідуальними та груповими заняттями по боксу у найкращих тренерів порадує як любителів боксу, так і новачків, які давно мріяли опанувати легендарний удар Брюса Лі.",
+  "photos": [__webpack_require__(/*! ../../../assets/images/areas/slider-area-1/slider-area-1-1.jpg */ "./resources/assets/images/areas/slider-area-1/slider-area-1-1.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-1/slider-area-1-2.jpg */ "./resources/assets/images/areas/slider-area-1/slider-area-1-2.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-1/slider-area-1-3.jpg */ "./resources/assets/images/areas/slider-area-1/slider-area-1-3.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-1/slider-area-1-4.jpg */ "./resources/assets/images/areas/slider-area-1/slider-area-1-4.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-1/slider-area-1-5.jpg */ "./resources/assets/images/areas/slider-area-1/slider-area-1-5.jpg").default]
 }, {
   "id": 2,
   "imageUrl": __webpack_require__(/*! ../../../assets/images/areas/area-2-g.jpg */ "./resources/assets/images/areas/area-2-g.jpg").default,
   "title": "Зонa функціонального тренінгу та кросфіту",
-  "description": "ЇЇ оснащено надсучасними тренажерами, такими як гребля від Concept2, велотренажери Rogue fitness echo Bike та біговою доріжкою Assault Air Runner AS2, що є найновішим технічним рішенням від американських інженерів."
+  "description": "ЇЇ оснащено надсучасними тренажерами, такими як гребля від Concept2, велотренажери Rogue fitness echo Bike та біговою доріжкою Assault Air Runner AS2, що є найновішим технічним рішенням від американських інженерів.",
+  "photos": [__webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-1.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-1.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-2.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-2.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-3.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-3.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-4.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-4.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-5.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-5.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-6.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-6.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-7.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-7.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-8.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-8.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-9.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-9.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-10.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-10.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-11.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-11.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-12.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-12.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-13.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-13.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-14.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-14.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-2/slider-area-2-15.jpg */ "./resources/assets/images/areas/slider-area-2/slider-area-2-15.jpg").default]
 }, {
   "id": 3,
   "imageUrl": __webpack_require__(/*! ../../../assets/images/areas/area-3-g.jpg */ "./resources/assets/images/areas/area-3-g.jpg").default,
   "title": "Кардіотренування cycle",
-  "description": "Унікальне супер емоційне кардіотренування CYCLE зі світло- звуковим супроводом на велотренажерах бренду TechnoGym в високотехнологічній кімнаті – це повноцінна вело-гонка з приголомшливими відчуттями та точним відстеженням результатів."
+  "description": "Унікальне супер емоційне кардіотренування CYCLE зі світло- звуковим супроводом на велотренажерах бренду TechnoGym в високотехнологічній кімнаті – це повноцінна вело-гонка з приголомшливими відчуттями та точним відстеженням результатів.",
+  "photos": [__webpack_require__(/*! ../../../assets/images/areas/slider-area-3/slider-area-3-1.jpg */ "./resources/assets/images/areas/slider-area-3/slider-area-3-1.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-3/slider-area-3-2.jpg */ "./resources/assets/images/areas/slider-area-3/slider-area-3-2.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-3/slider-area-3-3.jpg */ "./resources/assets/images/areas/slider-area-3/slider-area-3-3.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-3/slider-area-3-4.jpg */ "./resources/assets/images/areas/slider-area-3/slider-area-3-4.jpg").default]
 }, {
   "id": 4,
   "imageUrl": __webpack_require__(/*! ../../../assets/images/areas/area-4-g.jpg */ "./resources/assets/images/areas/area-4-g.jpg").default,
   "title": "Студія barre, йоги та пілатесу",
-  "description": "Трендовий напрям BARRE - тонке поєднання балетних вправ та силового тренування. Найбільш граційне тренування, що подарує струнке підтягнуте тіло та красиву поставу."
+  "description": "Трендовий напрям BARRE - тонке поєднання балетних вправ та силового тренування. Найбільш граційне тренування, що подарує струнке підтягнуте тіло та красиву поставу.",
+  "photos": [__webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-1.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-1.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-2.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-2.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-3.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-3.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-4.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-4.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-5.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-5.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-6.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-6.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-7.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-7.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-8.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-8.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-9.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-9.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-10.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-10.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-11.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-11.jpg").default]
 }]);
 
 /***/ }),
@@ -30267,10 +30260,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/images/areas/slider/slide1.jpg":
-/*!*********************************************************!*\
-  !*** ./resources/assets/images/areas/slider/slide1.jpg ***!
-  \*********************************************************/
+/***/ "./resources/assets/images/areas/slider-area-1/slider-area-1-1.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-1/slider-area-1-1.jpg ***!
+  \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -30278,14 +30271,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slide1.jpg?f81f17c6a2c1808d33e0d8f13a54f70b");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-1-1.jpg?a01efe679013a9928ca78e0c01c80079");
 
 /***/ }),
 
-/***/ "./resources/assets/images/areas/slider/slide2.jpg":
-/*!*********************************************************!*\
-  !*** ./resources/assets/images/areas/slider/slide2.jpg ***!
-  \*********************************************************/
+/***/ "./resources/assets/images/areas/slider-area-1/slider-area-1-2.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-1/slider-area-1-2.jpg ***!
+  \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -30293,14 +30286,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slide2.jpg?599fcc71e9379c9b3da731706fdac1dd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-1-2.jpg?21666c2e28ff57d8ca45cdf332936740");
 
 /***/ }),
 
-/***/ "./resources/assets/images/areas/slider/slide3.jpg":
-/*!*********************************************************!*\
-  !*** ./resources/assets/images/areas/slider/slide3.jpg ***!
-  \*********************************************************/
+/***/ "./resources/assets/images/areas/slider-area-1/slider-area-1-3.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-1/slider-area-1-3.jpg ***!
+  \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -30308,7 +30301,487 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slide3.jpg?e0a0f807c8721cd46ad01dcae257a4ce");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-1-3.jpg?4d795e43690437be00c999c1430c0324");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-1/slider-area-1-4.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-1/slider-area-1-4.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-1-4.jpg?ec08e7f9dcfa6fb0dbdc2a9c9b96e318");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-1/slider-area-1-5.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-1/slider-area-1-5.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-1-5.jpg?6b1c2fe8962e4bfe1d39ae24325c1d50");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-1.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-1.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-1.jpg?03ccfba9e047ef9bb4ef72eb15f11467");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-10.jpg":
+/*!**************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-10.jpg ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-10.jpg?897d00ad541206452ab6b17e4d79b47c");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-11.jpg":
+/*!**************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-11.jpg ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-11.jpg?88fb3b7172ac5709a76ed7b68313a405");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-12.jpg":
+/*!**************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-12.jpg ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-12.jpg?32a61c8fdefe4e2153a91baa9d0d3284");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-13.jpg":
+/*!**************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-13.jpg ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-13.jpg?73c8e2c9fe87fa922523d57c1065922b");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-14.jpg":
+/*!**************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-14.jpg ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-14.jpg?9bc9087ddc86d5bda8d12acfc0461254");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-15.jpg":
+/*!**************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-15.jpg ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-15.jpg?406e255caaf7b55be753350ff74fa402");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-2.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-2.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-2.jpg?5fda0aa0bbe3993f6b83b67350f182de");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-3.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-3.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-3.jpg?4938e7c94c10bf587c53816a7455594c");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-4.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-4.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-4.jpg?e294a3b54f7257cafd3e2ea8783f1424");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-5.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-5.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-5.jpg?8cf5964a6c75d3490bc4b471306a6269");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-6.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-6.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-6.jpg?bd2ca0b0216cc9e9600821086f407807");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-7.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-7.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-7.jpg?da833e56b552bafc3d5761798e39fd95");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-8.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-8.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-8.jpg?3635b7bb1482a30b42926236a3e2fac7");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-2/slider-area-2-9.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-2/slider-area-2-9.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-2-9.jpg?634765fe2636d02c896af1e77628935b");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-3/slider-area-3-1.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-3/slider-area-3-1.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-3-1.jpg?95f4b45183b82292de05182d59f69e78");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-3/slider-area-3-2.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-3/slider-area-3-2.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-3-2.jpg?da27459f9acbd9844fa92da2346d0c4a");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-3/slider-area-3-3.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-3/slider-area-3-3.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-3-3.jpg?95c63a034b0247a16056d414c3e46180");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-3/slider-area-3-4.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-3/slider-area-3-4.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-3-4.jpg?ec4b7d0aad2722617b668eb0abe2f8a4");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-4/slider-area-4-1.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-4/slider-area-4-1.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-4-1.jpg?e07d6637c651b6cc9700e209ee8c658c");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-4/slider-area-4-10.jpg":
+/*!**************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-4/slider-area-4-10.jpg ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-4-10.jpg?831012652784ac5d78b448168e0f4e3d");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-4/slider-area-4-11.jpg":
+/*!**************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-4/slider-area-4-11.jpg ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-4-11.jpg?10d7d3354cb43467e81e6c1994bbdf87");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-4/slider-area-4-2.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-4/slider-area-4-2.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-4-2.jpg?7f07f1aac272bd615f41a511e2a5ceea");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-4/slider-area-4-3.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-4/slider-area-4-3.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-4-3.jpg?3a5a00eb8fb699e79f12eb1aa9752094");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-4/slider-area-4-4.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-4/slider-area-4-4.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-4-4.jpg?86d4f91a7c540cd93beac023ab17cb00");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-4/slider-area-4-5.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-4/slider-area-4-5.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-4-5.jpg?3cabcc2cd7ed088f799d9283dcd4a467");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-4/slider-area-4-6.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-4/slider-area-4-6.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-4-6.jpg?735868fa5d9050d1d195a28e60dccb23");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-4/slider-area-4-7.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-4/slider-area-4-7.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-4-7.jpg?06c37e5626209c4b2f17ab558e70245e");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-4/slider-area-4-8.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-4/slider-area-4-8.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-4-8.jpg?0ba114daead91aad71b2ce88f5228b67");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/slider-area-4/slider-area-4-9.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/areas/slider-area-4/slider-area-4-9.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-4-9.jpg?7d96ec8df390c3bd103c7121a97c2078");
 
 /***/ }),
 
@@ -51800,9 +52273,41 @@ var map = {
 	"./images/areas/area-2-g.jpg": "./resources/assets/images/areas/area-2-g.jpg",
 	"./images/areas/area-3-g.jpg": "./resources/assets/images/areas/area-3-g.jpg",
 	"./images/areas/area-4-g.jpg": "./resources/assets/images/areas/area-4-g.jpg",
-	"./images/areas/slider/slide1.jpg": "./resources/assets/images/areas/slider/slide1.jpg",
-	"./images/areas/slider/slide2.jpg": "./resources/assets/images/areas/slider/slide2.jpg",
-	"./images/areas/slider/slide3.jpg": "./resources/assets/images/areas/slider/slide3.jpg",
+	"./images/areas/slider-area-1/slider-area-1-1.jpg": "./resources/assets/images/areas/slider-area-1/slider-area-1-1.jpg",
+	"./images/areas/slider-area-1/slider-area-1-2.jpg": "./resources/assets/images/areas/slider-area-1/slider-area-1-2.jpg",
+	"./images/areas/slider-area-1/slider-area-1-3.jpg": "./resources/assets/images/areas/slider-area-1/slider-area-1-3.jpg",
+	"./images/areas/slider-area-1/slider-area-1-4.jpg": "./resources/assets/images/areas/slider-area-1/slider-area-1-4.jpg",
+	"./images/areas/slider-area-1/slider-area-1-5.jpg": "./resources/assets/images/areas/slider-area-1/slider-area-1-5.jpg",
+	"./images/areas/slider-area-2/slider-area-2-1.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-1.jpg",
+	"./images/areas/slider-area-2/slider-area-2-10.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-10.jpg",
+	"./images/areas/slider-area-2/slider-area-2-11.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-11.jpg",
+	"./images/areas/slider-area-2/slider-area-2-12.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-12.jpg",
+	"./images/areas/slider-area-2/slider-area-2-13.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-13.jpg",
+	"./images/areas/slider-area-2/slider-area-2-14.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-14.jpg",
+	"./images/areas/slider-area-2/slider-area-2-15.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-15.jpg",
+	"./images/areas/slider-area-2/slider-area-2-2.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-2.jpg",
+	"./images/areas/slider-area-2/slider-area-2-3.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-3.jpg",
+	"./images/areas/slider-area-2/slider-area-2-4.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-4.jpg",
+	"./images/areas/slider-area-2/slider-area-2-5.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-5.jpg",
+	"./images/areas/slider-area-2/slider-area-2-6.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-6.jpg",
+	"./images/areas/slider-area-2/slider-area-2-7.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-7.jpg",
+	"./images/areas/slider-area-2/slider-area-2-8.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-8.jpg",
+	"./images/areas/slider-area-2/slider-area-2-9.jpg": "./resources/assets/images/areas/slider-area-2/slider-area-2-9.jpg",
+	"./images/areas/slider-area-3/slider-area-3-1.jpg": "./resources/assets/images/areas/slider-area-3/slider-area-3-1.jpg",
+	"./images/areas/slider-area-3/slider-area-3-2.jpg": "./resources/assets/images/areas/slider-area-3/slider-area-3-2.jpg",
+	"./images/areas/slider-area-3/slider-area-3-3.jpg": "./resources/assets/images/areas/slider-area-3/slider-area-3-3.jpg",
+	"./images/areas/slider-area-3/slider-area-3-4.jpg": "./resources/assets/images/areas/slider-area-3/slider-area-3-4.jpg",
+	"./images/areas/slider-area-4/slider-area-4-1.jpg": "./resources/assets/images/areas/slider-area-4/slider-area-4-1.jpg",
+	"./images/areas/slider-area-4/slider-area-4-10.jpg": "./resources/assets/images/areas/slider-area-4/slider-area-4-10.jpg",
+	"./images/areas/slider-area-4/slider-area-4-11.jpg": "./resources/assets/images/areas/slider-area-4/slider-area-4-11.jpg",
+	"./images/areas/slider-area-4/slider-area-4-2.jpg": "./resources/assets/images/areas/slider-area-4/slider-area-4-2.jpg",
+	"./images/areas/slider-area-4/slider-area-4-3.jpg": "./resources/assets/images/areas/slider-area-4/slider-area-4-3.jpg",
+	"./images/areas/slider-area-4/slider-area-4-4.jpg": "./resources/assets/images/areas/slider-area-4/slider-area-4-4.jpg",
+	"./images/areas/slider-area-4/slider-area-4-5.jpg": "./resources/assets/images/areas/slider-area-4/slider-area-4-5.jpg",
+	"./images/areas/slider-area-4/slider-area-4-6.jpg": "./resources/assets/images/areas/slider-area-4/slider-area-4-6.jpg",
+	"./images/areas/slider-area-4/slider-area-4-7.jpg": "./resources/assets/images/areas/slider-area-4/slider-area-4-7.jpg",
+	"./images/areas/slider-area-4/slider-area-4-8.jpg": "./resources/assets/images/areas/slider-area-4/slider-area-4-8.jpg",
+	"./images/areas/slider-area-4/slider-area-4-9.jpg": "./resources/assets/images/areas/slider-area-4/slider-area-4-9.jpg",
 	"./images/arrow-right-1.svg": "./resources/assets/images/arrow-right-1.svg",
 	"./images/b-lavel-inactive.svg": "./resources/assets/images/b-lavel-inactive.svg",
 	"./images/b-level-change.svg": "./resources/assets/images/b-level-change.svg",

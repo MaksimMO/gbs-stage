@@ -26,8 +26,8 @@
         }
     }"
   >
-    <swiper-slide v-for="image in images" :key="image.id"  >
-        <img :src="image.imageUrl"  />
+    <swiper-slide v-for="(imageUrl, index) in images" :key="index"  >
+        <img :src="imageUrl"  />
     </swiper-slide>
     <!-- <swiper-slide></swiper-slide> -->
   </swiper>
