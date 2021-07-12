@@ -1,23 +1,29 @@
 <template>
-  <Header class="header-invert" />
-  <Breadcrumb />
-  <div class="view-areas-g">
-    <div class="title">Зонування</div>
+    <Header class="header-invert" />
+    <Breadcrumb />
+    <div class="view-areas-g">
+        <div class="title">Зонування</div>
 
-    <div class="container-areas">
-      <div class="area" v-for="area in areas" :key="area.id" @click="$router.push(`/areas-g/${area.id}`)">
-        <img :src="area.imageUrl" />
-        <div class="text-block">
-          <div class="title">{{ area.title }}</div>
-          <div class="description">{{ area.description }}</div>
-          <router-link :to="`/areas-g/${area.id}`" class="link-2"
-            >Переглянути</router-link
-          >
+        <div class="container-areas">
+            <div class="area" v-for="area in areas" :key="area.id" @click="$router.push(`/areas-g/${area.id}`)">
+                <!--        <img :src="area.imageUrl" />-->
+                <video-background
+                    :src="area.videoUrl"
+                    :poster="area.imageUrl"
+                    class="area-video"
+                >
+                </video-background>
+
+                <div class="text-block">
+                    <div class="title">{{ area.title }}</div>
+                    <router-link :to="`/areas-g/${area.id}`" class="link-2"
+                    >Переглянути</router-link
+                    >
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <Footer />
+    <Footer />
 </template>
 
 <script>
@@ -25,137 +31,140 @@ import areas from "../components/AreasG/areas.js";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import Breadcrumb from '../components/Breadcrumb.vue';
+import VideoBackground from 'vue-responsive-video-background-player';
 
 export default {
-  data() {
-    return {
-      areas,
-    };
-  },
-  props: ["id"],
-  components: {
-    Header,
-    Breadcrumb,
-    Footer,
-  },
+    data() {
+        return {
+            areas,
+            videos:['/video/area-video-1-C0011.mp4', '/video/area-video-2-C0043_4.mp4', '/video/area-video-3-vg7mt-z1gtv.mp4', '/video/area-video-4-s-level.mp4']
+        };
+    },
+    props: ["id"],
+    components: {
+        Header,
+        Breadcrumb,
+        Footer,
+        VideoBackground
+    },
 };
 </script>
 
 <style lang='scss' scoped>
 .view-areas-g {
-  background-color: #fff;
-  padding: 208px 30px 60px;
+    background-color: #fff;
+    padding: 208px 30px 60px;
 
-  & > .title {
-    font-family: Oswald;
-    font-weight: 600;
-    font-size: 52px;
-    line-height: 54px;
-    letter-spacing: 0.02em;
-    font-feature-settings: "pnum" on, "lnum" on;
-    color: #000000;
-    margin-bottom: 30px;
-    margin-left: 216px;
-  }
-
-  .container-areas {
-
-    .area {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      position: relative;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-
-      & + .area {
-        margin-top: 30px;
-      }
-
-      img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .text-block {
-        position: absolute;
-        box-sizing: border-box;
-        left: 0;
-        width: 65%;
-        height: 100%;
-        padding: 0 0 64px 120px;
-        display: flex;
-        flex-direction:column;
-        justify-content: flex-end;
-
-        .title {
-          font-family: Oswald;
-          font-weight: 600;
-          font-size: 64px;
-          line-height: 96px;
-          letter-spacing: 0.01em;
-          font-feature-settings: "pnum" on, "lnum" on;
-          color: #ffffff;
-          text-transform: uppercase;
-          opacity: 0.8;
-
-          text-align: left;
-          align-self: end;
-          margin-bottom: 30px;
-        }
-
-        .description {
-          font-family: Raleway;
-          text-align: left;
-          font-size: 14px;
-          line-height: 28px;
-          letter-spacing: 0.05em;
-          font-feature-settings: "pnum" on, "lnum" on;
-          color: #ffffff;
-        }
-
-        .link-2 {
-          font-family: Raleway;
-          font-weight: 800;
-          font-size: 14px;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          text-decoration: none;
-          width: max-content;
-          color: #fff;
-          padding: 3px;
-          transition: all 0.2s linear;
-          position: relative;
-          cursor: pointer;
-          z-index: 1;
-          margin-top: 30px;
-
-          &:before {
-            content: "";
-            position: absolute;
-            bottom: -3px;
-            left: -8px;
-            width: calc(100% + 16px);
-            height: calc(50% + 3px);
-            background: #916c58;
-            z-index: -1;
-            transition: all 0.2s linear;
-          }
-
-          &:hover:before {
-            height: calc(100% + 6px);
-          }
-          &:active {
-            color: #000;
-          }
-        }
-      }
+    & > .title {
+        font-family: Oswald;
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 54px;
+        letter-spacing: 0.02em;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+        margin-bottom: 30px;
+        margin-left: 216px;
     }
-  }
+
+    .container-areas {
+
+        .area {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            & + .area {
+                margin-top: 30px;
+            }
+
+            img, .area-video {
+                display: block;
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+            }
+
+            .text-block {
+                position: absolute;
+                box-sizing: border-box;
+                left: 0;
+                width: 65%;
+                height: 100%;
+                padding: 0 0 64px 120px;
+                display: flex;
+                flex-direction:column;
+                justify-content: flex-end;
+
+                .title {
+                    font-family: Oswald;
+                    font-weight: 600;
+                    font-size: 64px;
+                    line-height: 96px;
+                    letter-spacing: 0.01em;
+                    font-feature-settings: "pnum" on, "lnum" on;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    opacity: 0.8;
+
+                    text-align: left;
+                    align-self: end;
+                    margin-bottom: 30px;
+                }
+
+                .description {
+                    font-family: Raleway;
+                    text-align: left;
+                    font-size: 14px;
+                    line-height: 28px;
+                    letter-spacing: 0.05em;
+                    font-feature-settings: "pnum" on, "lnum" on;
+                    color: #ffffff;
+                }
+
+                .link-2 {
+                    font-family: Raleway;
+                    font-weight: 800;
+                    font-size: 14px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    width: max-content;
+                    color: #fff;
+                    padding: 3px;
+                    transition: all 0.2s linear;
+                    position: relative;
+                    cursor: pointer;
+                    z-index: 1;
+                    margin-top: 30px;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        bottom: -3px;
+                        left: -8px;
+                        width: calc(100% + 16px);
+                        height: calc(50% + 3px);
+                        background: #916c58;
+                        z-index: -1;
+                        transition: all 0.2s linear;
+                    }
+
+                    &:hover:before {
+                        height: calc(100% + 6px);
+                    }
+                    &:active {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
 }
 </style>>
