@@ -5,12 +5,12 @@
 <div :class="['view-area-s', `area-s-${area.id}`]">
 
     <div class="title">{{area.title}}</div>
-    <div class="description">{{area.description}}</div>
+    <div class="description" v-html="area.description"></div>
     <img class="big-image" :src="area.imageUrl" />
 
-    <!-- <section class="gallery-slider">
-        <GallerySlider :images="gallery" />
-    </section> -->
+    <section class="gallery-slider">
+        <GallerySlider :images="area.photos" />
+    </section>
 
     <div class="open-popup-container">
         <div class="open-popup-title">
@@ -54,11 +54,6 @@ export default {
             areas,
             modalOpen:false,
             isMakeOrderPopupOpen:false,
-            // gallery: [
-            //     { id: 1, imageUrl: require("../../assets/images/areas/slider/slide1.jpg").default },
-            //     { id: 2, imageUrl: require("../../assets/images/areas/slider/slide2.jpg").default },
-            //     { id: 3, imageUrl: require("../../assets/images/areas/slider/slide3.jpg").default },
-            // ]
         }
 
     },

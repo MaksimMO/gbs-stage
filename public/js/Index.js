@@ -20401,12 +20401,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
     return {
       areas: _components_AreasG_areas_js__WEBPACK_IMPORTED_MODULE_0__.default,
       modalOpen: false,
-      isMakeOrderPopupOpen: false // gallery: [
-      //     { id: 1, imageUrl: require("../../assets/images/areas/slider/slide1.jpg").default },
-      //     { id: 2, imageUrl: require("../../assets/images/areas/slider/slide2.jpg").default },
-      //     { id: 3, imageUrl: require("../../assets/images/areas/slider/slide3.jpg").default },
-      // ]
-
+      isMakeOrderPopupOpen: false
     };
   },
   props: ['id'],
@@ -20460,12 +20455,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
     return {
       areas: _components_AreasS_areas_js__WEBPACK_IMPORTED_MODULE_0__.default,
       modalOpen: false,
-      isMakeOrderPopupOpen: false // gallery: [
-      //     { id: 1, imageUrl: require("../../assets/images/areas/slider/slide1.jpg").default },
-      //     { id: 2, imageUrl: require("../../assets/images/areas/slider/slide2.jpg").default },
-      //     { id: 3, imageUrl: require("../../assets/images/areas/slider/slide3.jpg").default },
-      // ]
-
+      isMakeOrderPopupOpen: false
     };
   },
   props: ['id'],
@@ -25005,7 +24995,7 @@ var _hoisted_1 = {
   "class": "title"
 };
 var _hoisted_2 = {
-  "class": "description"
+  "class": "gallery-slider"
 };
 var _hoisted_3 = {
   "class": "open-popup-container"
@@ -25034,6 +25024,8 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   var _component_Breadcrumb = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Breadcrumb");
 
+  var _component_GallerySlider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("GallerySlider");
+
   var _component_Footer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Footer");
 
   var _component_MakeOrderPopup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("MakeOrderPopup");
@@ -25050,14 +25042,21 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     "class": ['view-area-s', "area-s-".concat($options.area.id)]
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.area.title), 1
   /* TEXT */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.area.description), 1
-  /* TEXT */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+    "class": "description",
+    innerHTML: $options.area.description
+  }, null, 8
+  /* PROPS */
+  , ["innerHTML"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
     "class": "big-image",
     src: $options.area.imageUrl
   }, null, 8
   /* PROPS */
-  , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"gallery-slider\">\r\n        <GallerySlider :images=\"gallery\" />\r\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+  , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_GallerySlider, {
+    images: $options.area.photos
+  }, null, 8
+  /* PROPS */
+  , ["images"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $data.isMakeOrderPopupOpen = true;
     })
@@ -25328,7 +25327,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       "class": "area",
       key: area.id,
       onClick: function onClick($event) {
-        return _ctx.$router.push("/areas-g/".concat(area.id));
+        return _ctx.$router.push("/areas-s/".concat(area.id));
       }
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
       src: area.imageUrl
@@ -25338,7 +25337,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     /* TEXT */
     ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
       "class": "description",
-      innerHTML: area.description
+      innerHTML: area.descriptionBanner || area.description
     }, null, 8
     /* PROPS */
     , ["innerHTML"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
@@ -27120,7 +27119,9 @@ window.vm = app.mount('#gbslevel-app'); // if(isMobile){
   "id": 7,
   "imageUrl": __webpack_require__(/*! ../../../assets/images/areas-s/area-s-7.jpg */ "./resources/assets/images/areas-s/area-s-7.jpg").default,
   "title": "Масаж",
-  "description": "Стилізований масажний кабінет, запаморочливі аромати та спеціалісти по естетиці тіла «розкажуть» Вам про усю філософію релаксу, оздоровлення та зарядження енергією."
+  "descriptionBanner": "Стилізований масажний кабінет, запаморочливі аромати та спеціалісти по естетиці тіла «розкажуть» Вам про усю філософію релаксу, оздоровлення та зарядження енергією.",
+  "description": "<h4>\u041C\u0430\u0441\u0430\u0436 \u2013 \u0446\u0435 \u0441\u044C\u043E\u043C\u0438\u0439 LEVEL relax \u043F\u0440\u043E\u0446\u0435\u0434\u0443\u0440 SPA \u0437\u043E\u043D\u0438.</h4>\n    <p>\u0421\u0442\u0438\u043B\u0456\u0437\u043E\u0432\u0430\u043D\u0438\u0439 \u043C\u0430\u0441\u0430\u0436\u043D\u0438\u0439 \u043A\u0430\u0431\u0456\u043D\u0435\u0442, \u0437\u0430\u043F\u0430\u043C\u043E\u0440\u043E\u0447\u043B\u0438\u0432\u0456 \u0430\u0440\u043E\u043C\u0430\u0442\u0438 \u0442\u0430 \u0441\u043F\u0435\u0446\u0456\u0430\u043B\u0456\u0441\u0442\u0438 \u043F\u043E \u0435\u0441\u0442\u0435\u0442\u0438\u0446\u0456 \u0442\u0456\u043B\u0430 \xAB\u0440\u043E\u0437\u043A\u0430\u0436\u0443\u0442\u044C\xBB \u0412\u0430\u043C \u043F\u0440\u043E \u0443\u0441\u044E \u0444\u0456\u043B\u043E\u0441\u043E\u0444\u0456\u044E \u0440\u0435\u043B\u0430\u043A\u0441\u0443, \u043E\u0437\u0434\u043E\u0440\u043E\u0432\u043B\u0435\u043D\u043D\u044F \u0442\u0430 \u0437\u0430\u0440\u044F\u0434\u0436\u0435\u043D\u043D\u044F \u0435\u043D\u0435\u0440\u0433\u0456\u0454\u044E.</p>\n\n    <p>S LEVEL \u043F\u0440\u043E\u043F\u043E\u043D\u0443\u0454 \u0448\u0438\u0440\u043E\u043A\u0438\u0439 \u0441\u043F\u0435\u043A\u0442\u0440 \u043C\u0430\u0441\u0430\u0436\u0456\u0432, \u0430\u0432\u0442\u043E\u0440\u0441\u044C\u043A\u0438\u0445 \u043C\u0430\u0441\u0430\u0436\u0456\u0432, \u043F\u0440\u043E\u0446\u0435\u0434\u0443\u0440 \u0434\u043B\u044F \u043E\u0431\u043B\u0438\u0447\u0447\u044F \u0442\u0430 \u0442\u0456\u043B\u0430.\n    \u041F\u0440\u043E\u0444\u0435\u0441\u0456\u0439\u043D\u0456 \u043C\u0430\u0441\u0430\u0436\u0438\u0441\u0442\u0438 \u043F\u0456\u0434\u0431\u0435\u0440\u0443\u0442\u044C \u0442\u0443 \u043F\u0440\u043E\u0446\u0435\u0434\u0443\u0440\u0443, \u044F\u043A\u0430 \u043D\u0430\u0439\u0431\u0456\u043B\u044C\u0448 \u043F\u043E\u0442\u0440\u0456\u0431\u043D\u0430 \u0432\u0430\u0448\u043E\u043C\u0443 \u0442\u0456\u043B\u0443 \u0442\u0430 \u0434\u0443\u0448\u0456.</p>\n\n    <p>\u041C\u0430\u0433\u0456\u044F \u043F\u0440\u043E\u0446\u0435\u0434\u0443\u0440 \u0434\u043B\u044F \u0442\u0456\u043B\u0430 \u0442\u0430 \u043E\u0431\u043B\u0438\u0447\u0447\u044F \u0441\u0442\u0430\u0454 \u0437\u043D\u0430\u0447\u043D\u043E \u043E\u0441\u043E\u0431\u043B\u0438\u0432\u043E\u044E \u0437\u0430\u0432\u0434\u044F\u043A\u0438 \u043A\u043E\u0441\u043C\u0435\u0442\u0438\u0446\u0456 \u0444\u0440\u0430\u043D\u0446\u0443\u0437\u044C\u043A\u043E\u0433\u043E \u0431\u0440\u0435\u043D\u0434\u0443 YON-KA.</p>",
+  "photos": [__webpack_require__(/*! ../../../assets/images/areas-s/slider-area-7/slider-area-7-1.jpg */ "./resources/assets/images/areas-s/slider-area-7/slider-area-7-1.jpg").default, __webpack_require__(/*! ../../../assets/images/areas-s/slider-area-7/slider-area-7-2.jpg */ "./resources/assets/images/areas-s/slider-area-7/slider-area-7-2.jpg").default, __webpack_require__(/*! ../../../assets/images/areas-s/slider-area-7/slider-area-7-3.jpg */ "./resources/assets/images/areas-s/slider-area-7/slider-area-7-3.jpg").default]
 }]);
 
 /***/ }),
@@ -30348,6 +30349,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/area-s-7.jpg?7398fb21a3a929bc5b4b9accaf62d0b7");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas-s/slider-area-7/slider-area-7-1.jpg":
+/*!***************************************************************************!*\
+  !*** ./resources/assets/images/areas-s/slider-area-7/slider-area-7-1.jpg ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-7-1.jpg?8b53d3a151fef7a46c2c66c164a158a9");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas-s/slider-area-7/slider-area-7-2.jpg":
+/*!***************************************************************************!*\
+  !*** ./resources/assets/images/areas-s/slider-area-7/slider-area-7-2.jpg ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-7-2.jpg?75656c8351406cd5c169b5f6caa425b9");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas-s/slider-area-7/slider-area-7-3.jpg":
+/*!***************************************************************************!*\
+  !*** ./resources/assets/images/areas-s/slider-area-7/slider-area-7-3.jpg ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-7-3.jpg?50606538558e2b7c85249ff66bfd625b");
 
 /***/ }),
 
@@ -56959,6 +57005,9 @@ var map = {
 	"./images/areas-s/area-s-5.jpg": "./resources/assets/images/areas-s/area-s-5.jpg",
 	"./images/areas-s/area-s-6.jpg": "./resources/assets/images/areas-s/area-s-6.jpg",
 	"./images/areas-s/area-s-7.jpg": "./resources/assets/images/areas-s/area-s-7.jpg",
+	"./images/areas-s/slider-area-7/slider-area-7-1.jpg": "./resources/assets/images/areas-s/slider-area-7/slider-area-7-1.jpg",
+	"./images/areas-s/slider-area-7/slider-area-7-2.jpg": "./resources/assets/images/areas-s/slider-area-7/slider-area-7-2.jpg",
+	"./images/areas-s/slider-area-7/slider-area-7-3.jpg": "./resources/assets/images/areas-s/slider-area-7/slider-area-7-3.jpg",
 	"./images/areas/area-1-g.jpg": "./resources/assets/images/areas/area-1-g.jpg",
 	"./images/areas/area-2-g.jpg": "./resources/assets/images/areas/area-2-g.jpg",
 	"./images/areas/area-3-g.jpg": "./resources/assets/images/areas/area-3-g.jpg",

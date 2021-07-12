@@ -5,11 +5,11 @@
     <div class="title">Зонування</div>
 
     <div class="container-areas">
-      <div class="area" v-for="area in areas" :key="area.id"  @click="$router.push(`/areas-g/${area.id}`)">
+      <div class="area" v-for="area in areas" :key="area.id"  @click="$router.push(`/areas-s/${area.id}`)">
         <img :src="area.imageUrl" />
         <div class="text-block">
           <div class="title">{{ area.titleBanner || area.title }}</div>
-          <div class="description" v-html="area.description"></div>
+          <div class="description" v-html="area.descriptionBanner || area.description"></div>
           <router-link :to="`/areas-s/${area.id}`" class="link-2"
             >Переглянути</router-link
           >
