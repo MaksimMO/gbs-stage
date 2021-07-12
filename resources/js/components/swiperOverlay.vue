@@ -100,16 +100,16 @@ export default {
   }
 
   .swiper-navigation-prev-1 {
-    left: 15px;
-    height: 8px;
-    width: 31px;
+    left: 40px;
+    height: 24px;
+    width: 32px;
     background: url("../../assets/images/arrow-right-1.svg") no-repeat;
     transform: rotate(180deg);
   }
   .swiper-navigation-next-1{
-    right: 15px;
-    height: 8px;
-    width: 31px;
+    right: 40px;
+    height: 24px;
+    width: 32px;
     background: url("../../assets/images/arrow-right-1.svg") no-repeat;
   }
 

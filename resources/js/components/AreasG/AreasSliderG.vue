@@ -14,10 +14,6 @@
         <div class="title">{{slide.title}}</div>
         <div class="description">{{slide.description}}</div>
         <router-link  :to="`/areas-g/${slide.id}`" class="link-2">Переглянути</router-link>
-        
-       
-
-
     </div>
   </swiper-slide>
   </swiper>
