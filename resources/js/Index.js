@@ -11,6 +11,7 @@
  import TeamG from './views/TeamG.vue'
  import AboutUsG from './views/AboutUsG.vue'
  import AreasG from './views/AreasG.vue'
+ import AreasGold from './views/AreasG-old.vue'
  import AreaG from './views/AreaG.vue'
  import AreasS from './views/AreasS.vue'
  import AreaS from './views/AreaS.vue'
@@ -63,6 +64,12 @@
             path: '/areas-g',
             component: AreasG,
             name: 'AreasG',
+            meta: { area: 'g' }
+        },
+        {
+            path: '/areas-g-old', // TODO Remove if version with video is OK.
+            component: AreasGold,
+            name: 'AreasG-old',
             meta: { area: 'g' }
         },
         {

@@ -2,7 +2,13 @@
   <Header />
   <div class="view-main-s">
   <section class="top-image-container">
-    <img class="top-image" src="../../assets/images/main-s-background.jpg" alt="">
+<!--    <img class="top-image" src="../../assets/images/main-s-background.jpg" alt="">-->
+      <video-background
+          src="/video/area-video-4-s-level.mp4"
+          poster="/images/main-s-background.jpg"
+          class="top-image"
+      >
+      </video-background>
     <img class="skew-image-1" src="../../assets/images/popup-corner.svg" alt="">
     <div class="water-text">
         <p class="top-text">Твій рівень</p>
@@ -60,7 +66,7 @@ import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import AreasSlider from '../components/AreasS/AreasSliderS.vue'
 import GallerySlider from '../components/GallerySlider.vue';
-
+import VideoBackground from 'vue-responsive-video-background-player';
 
 export default {
 
@@ -82,7 +88,8 @@ export default {
     Header,
     Footer,
     AreasSlider,
-    GallerySlider
+    GallerySlider,
+    VideoBackground
   },
   methods: {
       change(e) {
@@ -165,7 +172,7 @@ export default {
 
   .top-image{
     width: 100%;
-
+    height: 100vh;
     //reset inline mode for image
     display: block;
   }
