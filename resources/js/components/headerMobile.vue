@@ -4,7 +4,7 @@
     <router-link :to="`/main-${$root.$data.area}`" v-show="!isOpen">
     <div :class="`logo ${$root.$data.area}`"></div>
     </router-link>
-    <LanguageSwitcher :class="{'is-open':isOpen}" v-show="isOpen"/>
+    <!-- <LanguageSwitcher :class="{'is-open':isOpen}" v-show="isOpen"/> -->
     <PhoneLink :class="{'is-open':isOpen}"/>
     <div :class="{'close-opened':isOpen, 'menu-open': !isOpen}" @click="isOpen = !isOpen"></div>
   </div>

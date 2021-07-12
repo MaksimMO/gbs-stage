@@ -221,12 +221,12 @@ export default {
         & > p {
             font-weight: 400;
             font-style: normal;
-            font-size: 14px;
+            font-size: 18px;
             margin-bottom: 10px;
             font-family: Raleway;
             font-style: normal;
             font-weight: normal;
-            line-height: 28px;
+            line-height: 32px;
             letter-spacing: 0.05em;
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #000000;
@@ -304,6 +304,20 @@ export default {
         }
     }
     @media screen and (max-width: 1023px) and (min-width: 768px){
+        .title {
+            padding: 0 15px;
+            margin-bottom: 20px;
+            & > h1 {
+                font-size: 49px;
+                margin-left: 50px;
+                margin-bottom: 20px;
+                line-height: 54px;
+            }
+            & > p {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
         .simulator-direction {
             font-size: 14px;
             padding: 0 15px;
@@ -348,8 +362,8 @@ export default {
                 line-height: 48px;
             }
             & > p {
-                font-size: 12px;
-                line-height: 18px;
+                font-size: 14px;
+                line-height: 22px;
             }
         }
       .simulator-direction {

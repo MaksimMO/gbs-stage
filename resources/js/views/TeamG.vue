@@ -143,23 +143,23 @@ export default {
         .title > p {
             font-weight: 400;
             font-style: normal;
-            font-size: 14px;
+            font-size: 18px;
             margin-bottom: 10px;
             font-family: 'Raleway';
             font-style: normal;
             font-weight: normal;
-            line-height: 28px;
+            line-height: 32px;
             letter-spacing: 0.05em;
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #000000;
         }
         .title > b {
             font-style: normal;
-            font-size: 14px;
+            font-size: 18px;
             font-family: 'Raleway';
             font-style: normal;
             font-weight: bold;
-            line-height: 28px;
+            line-height: 32px;
             letter-spacing: 0.05em;
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #000000;
@@ -178,13 +178,13 @@ export default {
                 line-height: 54px;
             }
             .title > p {
-                font-size: 12px;
+                font-size: 16px;
                 margin-bottom: 15px;
-                line-height: 22px;
+                line-height: 26px;
             }
             .title > b {
-                font-size: 12px;
-                line-height: 22px;
+                font-size: 16px;
+                line-height: 26px;
             }
         }
     }
@@ -201,13 +201,13 @@ export default {
                 line-height: 48px;
             }
             .title > p {
-                font-size: 12px;
+                font-size: 14px;
                 margin-bottom: 10px;
-                line-height: 18px;
+                line-height: 22px;
             }
             .title > b {
-                font-size: 12px;
-                line-height: 18px;
+                font-size: 14px;
+                line-height: 22px;
             }
         }
     }

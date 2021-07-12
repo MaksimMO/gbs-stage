@@ -258,8 +258,8 @@ export default {
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 32px;
     letter-spacing: 0.05em;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #000000;
@@ -272,8 +272,8 @@ export default {
         font-family: Raleway;
         font-style: normal;
         font-weight: bold;
-        font-size: 14px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 32px;
         letter-spacing: 0.05em;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #000000;
@@ -409,12 +409,12 @@ export default {
             // }
         }
         .container-text{
-            font-size: 12px;
-            line-height: 22px;
+            font-size: 16px;
+            line-height: 26px;
         }
         .about-us-warning {
-            font-size: 12px;
-            line-height: 22px;
+            font-size: 16px;
+            line-height: 26px;
             & p{
                 margin: 0;
                 margin-left: 18px;
@@ -498,11 +498,11 @@ export default {
             }
         }
         .container-text{
-            font-size: 12px;
+            font-size: 14px;
             line-height: 22px;
         }
         .about-us-warning {
-            font-size: 12px;
+            font-size: 14px;
             line-height: 22px;
             & p{
                 margin: 0;

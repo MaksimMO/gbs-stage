@@ -18909,40 +18909,20 @@ swiper_core__WEBPACK_IMPORTED_MODULE_1__.default.use([swiper_core__WEBPACK_IMPOR
       isOpacity: false,
       modalOpen: false,
       indexToShowFrom: undefined,
-      images: [{
-        id: 1,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate1.png */ "./resources/assets/images/TeamG/certificate/certificate1.png").default
-      }, {
-        id: 2,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate2.png */ "./resources/assets/images/TeamG/certificate/certificate2.png").default
-      }, {
-        id: 3,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default
-      }, {
-        id: 4,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate1.png */ "./resources/assets/images/TeamG/certificate/certificate1.png").default
-      }, {
-        id: 5,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate2.png */ "./resources/assets/images/TeamG/certificate/certificate2.png").default
-      }, {
-        id: 6,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default
-      }, {
-        id: 7,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate1.png */ "./resources/assets/images/TeamG/certificate/certificate1.png").default
-      }, {
-        id: 8,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate2.png */ "./resources/assets/images/TeamG/certificate/certificate2.png").default
-      }, {
-        id: 9,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default
-      }, {
-        id: 10,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default
-      }, {
-        id: 11,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default
-      }]
+      //   images: [
+      //     { id: 1, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
+      //     { id: 2, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
+      //     { id: 3, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+      //     { id: 4, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
+      //     { id: 5, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
+      //     { id: 6, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+      //     { id: 7, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
+      //     { id: 8, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
+      //     { id: 9, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+      //     { id: 10, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+      //     { id: 11, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+      //   ],
+      images: [__webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate1.png */ "./resources/assets/images/TeamG/certificate/certificate1.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate2.png */ "./resources/assets/images/TeamG/certificate/certificate2.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate1.png */ "./resources/assets/images/TeamG/certificate/certificate1.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate2.png */ "./resources/assets/images/TeamG/certificate/certificate2.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate1.png */ "./resources/assets/images/TeamG/certificate/certificate1.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate2.png */ "./resources/assets/images/TeamG/certificate/certificate2.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default]
     };
   },
   methods: {
@@ -20232,7 +20212,7 @@ swiper_core__WEBPACK_IMPORTED_MODULE_1__.default.use([swiper_core__WEBPACK_IMPOR
 
 
 
-var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-main.jpg */ "./resources/assets/images/aboutUs-g-main.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/TeamG/Vladimir_Leskov.jpg */ "./resources/assets/images/TeamG/Vladimir_Leskov.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Depeshko.jpg */ "./resources/assets/images/TeamG/Olga_Depeshko.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Martsenyuk.jpg */ "./resources/assets/images/TeamG/Olga_Martsenyuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default];
+var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-main.jpg */ "./resources/assets/images/aboutUs-g-main.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/TeamG/Vladimir_Leskov.jpg */ "./resources/assets/images/TeamG/Vladimir_Leskov.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Depeshko.jpg */ "./resources/assets/images/TeamG/Olga_Depeshko.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Martsenyuk.jpg */ "./resources/assets/images/TeamG/Olga_Martsenyuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   emits: ['changeOpen'],
   data: function data() {
@@ -20288,47 +20268,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
         id: 12,
         link: "image-not-found.jpg"
       }],
-      gallery: [{
-        id: 1,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg").default
-      }, {
-        id: 2,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg").default
-      }, {
-        id: 3,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg").default
-      }, {
-        id: 4,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg").default
-      }, {
-        id: 5,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg").default
-      }, {
-        id: 6,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4574_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4574_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg").default
-      }, {
-        id: 7,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4583_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4583_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default
-      }, {
-        id: 8,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4595_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4595_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default
-      }, {
-        id: 9,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4608_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4608_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default
-      }, {
-        id: 10,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4614_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4614_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default
-      }]
+      gallery: [__webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default]
     };
   },
   methods: {
@@ -20653,40 +20593,12 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
 
 
 
-var preloadedAssets = [__webpack_require__(/*! ../../assets/images/main-b-background.jpg */ "./resources/assets/images/main-b-background.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/aboutUs-b-main.jpg */ "./resources/assets/images/aboutUs-b-main.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-31-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-31-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-34-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-34-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-35-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-35-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-37-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-37-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-38-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-38-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-42-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-42-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-43-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-43-1-370x370.jpg").default];
+var preloadedAssets = [__webpack_require__(/*! ../../assets/images/main-b-background.jpg */ "./resources/assets/images/main-b-background.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/aboutUs-b-main.jpg */ "./resources/assets/images/aboutUs-b-main.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-34-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-34-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-35-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-35-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-37-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-37-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-38-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-38-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-42-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-42-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-31-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-31-1-min.jpg").default];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       isOpen: false,
-      gallery: [{
-        id: 1,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-43-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-43-1-370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default
-      }, {
-        id: 2,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-34-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-34-1-370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-34-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-34-1-min.jpg").default
-      }, {
-        id: 3,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-35-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-35-1-370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-35-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-35-1-min.jpg").default
-      }, {
-        id: 4,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-37-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-37-1-370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-37-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-37-1-min.jpg").default
-      }, {
-        id: 5,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-38-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-38-1-370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-38-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-38-1-min.jpg").default
-      }, {
-        id: 6,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-42-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-42-1-370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-42-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-42-1-min.jpg").default
-      }, {
-        id: 7,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-31-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-31-1-370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-31-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-31-1-min.jpg").default
-      }]
+      gallery: [__webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-34-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-34-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-35-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-35-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-37-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-37-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-38-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-38-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-42-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-42-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-31-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-31-1-min.jpg").default]
     };
   },
   mounted: function mounted() {},
@@ -22176,13 +22088,13 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     onClick: $options.onModalOpen
   }, {
     "default": _withId(function () {
-      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.images, function (image) {
+      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.images, function (imageUrl, index) {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_swiper_slide, {
-          key: image.id
+          key: index
         }, {
           "default": _withId(function () {
             return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-              src: image.imageUrl
+              src: imageUrl
             }, null, 8
             /* PROPS */
             , ["src"])];
@@ -22844,7 +22756,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
         }, ["exact"]), ["esc"]))]
       }, [_hoisted_3], 544
       /* HYDRATE_EVENTS, NEED_PATCH */
-      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\r\n          <a\r\n            href=\"#\"\r\n            @click.prevent=\"setLocale('ru')\"\r\n            @keydown.shift.tab=\"focusPrevious(false)\"\r\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\r\n            @keydown.down.exact.prevent=\"\"\r\n            @keydown.tab.exact=\"hideDropdown\"\r\n            @keydown.esc.exact=\"hideDropdown\"\r\n          >\r\n            <span>RU</span>\r\n          </a>\r\n        </li> ")], 512
+      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\n          <a\n            href=\"#\"\n            @click.prevent=\"setLocale('ru')\"\n            @keydown.shift.tab=\"focusPrevious(false)\"\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\n            @keydown.down.exact.prevent=\"\"\n            @keydown.tab.exact=\"hideDropdown\"\n            @keydown.esc.exact=\"hideDropdown\"\n          >\n            <span>RU</span>\n          </a>\n        </li> ")], 512
       /* NEED_PATCH */
       )), [[_directive_click_away, $options.hideDropdown]]) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
@@ -22908,7 +22820,30 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-2d0d2092");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  width: "28",
+  height: "28",
+  viewBox: "0 0 28 28",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("g", {
+  opacity: "0.45"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  y: "26.8701",
+  width: "38",
+  height: "1",
+  transform: "rotate(-45 0 26.8701)",
+  fill: "white"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  width: "38",
+  height: "1",
+  transform: "matrix(-0.707107 -0.707107 -0.707107 0.707107 27.5771 26.8701)",
+  fill: "white"
+})])], -1
+/* HOISTED */
+);
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "text-1"
 }, "Залиште свій телефон і ми зателефонуємо Вам", -1
 /* HOISTED */
@@ -22922,15 +22857,15 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   var _component_popup_success = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("popup-success");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
-    "class": "make-order-popup ".concat($data.level)
+    "class": "make-order-popup ".concat(_ctx.$root.$data.area)
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
     "class": "close",
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return _ctx.$emit('closePopup');
     })
-  }), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FeedBackForm, {
+  }, [_hoisted_1]), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FeedBackForm, {
     onSubmitSuccess: $options.submitSuccess,
-    level: $data.level,
+    level: _ctx.$root.$data.area,
     choiceLevel: $props.choiceLevel
   }, null, 8
   /* PROPS */
@@ -24080,14 +24015,31 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   width: "16",
   height: "16",
   viewBox: "0 0 16 16",
+  fill: "none",
   xmlns: "http://www.w3.org/2000/svg"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
-  d: "M9 5.5V3.5C9 2.948 9.448 2.5 10 2.5H11V0H9C7.343 0 6 1.343 6 3V5.5H4V8H6V16H9V8H11L12 5.5H9Z"
+  d: "M9 5.5V3.5C9 2.948 9.448 2.5 10 2.5H11V0H9C7.343 0 6 1.343 6 3V5.5H4V8H6V16H9V8H11L12 5.5H9Z",
+  fill: "white"
 })])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
   href: "https://www.instagram.com/gbs.level",
   "class": "instagram",
   target: "_blank"
-})], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  width: "16",
+  height: "16",
+  viewBox: "0 0 16 16",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  d: "M11 0H5C2.239 0 0 2.239 0 5V11C0 13.761 2.239 16 5 16H11C13.761 16 16 13.761 16 11V5C16 2.239 13.761 0 11 0ZM14.5 11C14.5 12.93 12.93 14.5 11 14.5H5C3.07 14.5 1.5 12.93 1.5 11V5C1.5 3.07 3.07 1.5 5 1.5H11C12.93 1.5 14.5 3.07 14.5 5V11Z",
+  fill: "white"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  d: "M8 4C5.791 4 4 5.791 4 8C4 10.209 5.791 12 8 12C10.209 12 12 10.209 12 8C12 5.791 10.209 4 8 4ZM8 10.5C6.622 10.5 5.5 9.378 5.5 8C5.5 6.621 6.622 5.5 8 5.5C9.378 5.5 10.5 6.621 10.5 8C10.5 9.378 9.378 10.5 8 10.5Z",
+  fill: "white"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  d: "M12.3 4.23298C12.5944 4.23298 12.833 3.99435 12.833 3.69999C12.833 3.40562 12.5944 3.16699 12.3 3.16699C12.0057 3.16699 11.767 3.40562 11.767 3.69999C11.767 3.99435 12.0057 4.23298 12.3 4.23298Z",
+  fill: "white"
+})])])], -1
 /* HOISTED */
 );
 
@@ -24365,8 +24317,6 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   var _component_MakeOrderPopup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("MakeOrderPopup");
 
-  var _component_LanguageSwitcher = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("LanguageSwitcher");
-
   var _component_MenuG = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("MenuG");
 
   var _component_MenuB = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("MenuB");
@@ -24412,13 +24362,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     onClosePopup: _cache[2] || (_cache[2] = function ($event) {
       return $data.modalOpen = false;
     })
-  })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_LanguageSwitcher, {
-    "class": {
-      'is-open': $data.isOpen
-    }
-  }, null, 8
-  /* PROPS */
-  , ["class"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <LanguageSwitcher :class=\"{'is-open':isOpen}\"/> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
     "class": {
       'close-opened': $data.isOpen,
       'menu-open': !$data.isOpen
@@ -24494,8 +24438,6 @@ var _hoisted_1 = {
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
 
-  var _component_LanguageSwitcher = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("LanguageSwitcher");
-
   var _component_PhoneLink = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("PhoneLink");
 
   var _component_MenuGmobile = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("MenuGmobile");
@@ -24524,13 +24466,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   }, 8
   /* PROPS */
-  , ["to"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, !$data.isOpen]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_LanguageSwitcher, {
-    "class": {
-      'is-open': $data.isOpen
-    }
-  }, null, 8
-  /* PROPS */
-  , ["class"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.isOpen]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PhoneLink, {
+  , ["to"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, !$data.isOpen]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <LanguageSwitcher :class=\"{'is-open':isOpen}\" v-show=\"isOpen\"/> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PhoneLink, {
     "class": {
       'is-open': $data.isOpen
     }
@@ -24772,16 +24708,6 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 );
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
-  "class": "about-us-g-description"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
-  "class": "first"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Тренажерний зал 1700 кв.м."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Простора стилізована "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "зона єдиноборств"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з професійним рингом")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Окрема "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "студія для сайкл-тренування"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з надсучасною світло- звуковою системою")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Інноваційна"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" зона функціонального тренінгу та кросфіту")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
-  "class": "second"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Студія Barre"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" на основі балету")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>Мед кабінет, <b>консультація лікаря</b></li> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Власна "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "пральня")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Система вентиляції та кондиціонування функцією "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "очищення повітря")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Високий"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" рівень сервісу")])])], -1
-/* HOISTED */
-);
-
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
   "class": "image-container-aboutUs"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   "class": "image",
@@ -24797,9 +24723,20 @@ var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 /* HOISTED */
 );
 
-var _hoisted_5 = {
+var _hoisted_4 = {
   "class": "gallery-slider"
 };
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+  "class": "about-us-g-description"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
+  "class": "first"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Тренажерний зал 1700 кв.м."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Простора стилізована "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "зона єдиноборств"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з професійним рингом")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Окрема "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "студія для сайкл-тренування"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з надсучасною світло- звуковою системою")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Інноваційна"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" зона функціонального тренінгу та кросфіту")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
+  "class": "second"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Студія Barre"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" на основі балету")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>Мед кабінет, <b>консультація лікаря</b></li> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Власна "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "пральня")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Система вентиляції та кондиціонування функцією "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "очищення повітря")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Високий"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" рівень сервісу")])])], -1
+/* HOISTED */
+);
+
 var _hoisted_6 = {
   "class": "our-team-aboutUs-container"
 };
@@ -24848,11 +24785,11 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header, {
     "class": "header-invert"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Breadcrumb), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, _hoisted_3, _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_GallerySlider, {
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Breadcrumb), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_GallerySlider, {
     images: $data.gallery
   }, null, 8
   /* PROPS */
-  , ["images"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  , ["images"])]), _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "all-our-trainers-link",
     to: "/team-g"
   }, {
@@ -25642,7 +25579,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     images: $data.gallery
   }, null, 8
   /* PROPS */
-  , ["images"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_BrandMakeupSlider), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h1>SEO текст</h1>\r\n        <p>\r\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n            Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.\r\n            Pellentesque a tortor vitae arcu dictum faucibus.\r\n            Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.\r\n            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.\r\n            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n            Sed nec hendrerit neque...\r\n        </p>\r\n        <router-link class=\"link-1\" to=\"/\">Більше</router-link> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer, {
+  , ["images"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_BrandMakeupSlider), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h1>SEO текст</h1>\n        <p>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n            Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.\n            Pellentesque a tortor vitae arcu dictum faucibus.\n            Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.\n            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.\n            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n            Sed nec hendrerit neque...\n        </p>\n        <router-link class=\"link-1\" to=\"/\">Більше</router-link> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer, {
     level: 'b'
   })], 64
   /* STABLE_FRAGMENT */
@@ -29017,7 +28954,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?736193b044696161e2a6e9f91539c73e");
 
 /***/ }),
 
@@ -29047,7 +28984,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?df90caa4b4466fae2999be366ce12b13");
 
 /***/ }),
 
@@ -29077,7 +29014,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?d94603bf7c6c5c4b24c3e6245db8ea26");
 
 /***/ }),
 
@@ -30202,7 +30139,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/about-g-water-text.svg?476a68854636ba7e866760649393cb88");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/about-g-water-text.svg?59919db3211551399f10fbf94a2c4535");
 
 /***/ }),
 
@@ -30997,7 +30934,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-darck.svg?f3cadb0675d72021ab687179cff8e5de");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-darck.svg?34d3246fd5f28f54932080e9c8429771");
 
 /***/ }),
 
@@ -31027,7 +30964,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?02bae0682140f88722059abfc0376dc1");
 
 /***/ }),
 
@@ -31072,7 +31009,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/close.svg?40f036580b6c18960e76c27a387cba94");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/close.svg?2855e6317fe0e97b677566f1ee2fba5b");
 
 /***/ }),
 
@@ -31117,7 +31054,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebookGold.svg?2ef6ec7b557d1537f9b550eba23e8d1f");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebookGold.svg?a27e5b4dde3c6d3ecf3f28f59983b62d");
 
 /***/ }),
 
@@ -31147,7 +31084,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-darck.svg?c361667f2e00cb0a3637e2f975c1cc80");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-darck.svg?b12f10e8b0ef5b7d9921289b7942c945");
 
 /***/ }),
 
@@ -31177,7 +31114,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?4322557835a36f1758bad92f49d6dca9");
 
 /***/ }),
 
@@ -31222,7 +31159,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/info.svg?b47e3582bc4a2656231c960a851e0d0b");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/info.svg?6c9484336357a780fd96bcef5a715b14");
 
 /***/ }),
 
@@ -31237,7 +31174,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagram.svg?63a0b3819ce60d3152e6007738817613");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagram.svg?32290d32312a938ccb6381a6931c3439");
 
 /***/ }),
 
@@ -31252,7 +31189,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagramGold.svg?56cb837170980da00a05c5fdaf2eee66");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagramGold.svg?5841637642267db63a3c458114907398");
 
 /***/ }),
 
@@ -31282,7 +31219,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-b-water-text-top.svg?3c4a8cbe9c9c993ce8805016dbb61aa2");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-b-water-text-top.svg?e4051e4c2d0b3be44d04b4586d2b2f54");
 
 /***/ }),
 
@@ -31477,7 +31414,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/marker.svg?f3e69856c579d1eca94519018b9d1d74");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/marker.svg?7ff292b43387a63ea9de772f34f75cfa");
 
 /***/ }),
 
@@ -31492,7 +31429,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/menu-close-white.svg?51134e345e051967709be96e3ef38ecf");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/menu-close-white.svg?91bd8bef07d7e63dd1e6c4e7b4778c75");
 
 /***/ }),
 
@@ -31612,7 +31549,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-darck.svg?a27de085c1e6928ac2dd7b9b262582c7");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-darck.svg?82ec9c9a7a09a0c71138a777fea8cffb");
 
 /***/ }),
 
@@ -32272,7 +32209,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/technogym-logo-black.svg?6e3384e0b81af3319ec84d54c3f183b8");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/technogym-logo-black.svg?41e9fcde23524c6f008c5c6aa677f53e");
 
 /***/ }),
 
@@ -32362,7 +32299,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/warning.svg?83875f065e7638defea28c6ed7e64a48");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/warning.svg?67b5872f8674f66a316722b146cad9dc");
 
 /***/ }),
 
@@ -32392,7 +32329,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/zoom-img.svg?e7724d44281f74e3d5d0723bf72fefdb");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/zoom-img.svg?a7b077eb6c87af5c6b383e8bb2e95e2b");
 
 /***/ }),
 
