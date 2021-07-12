@@ -58,7 +58,7 @@ export default {
     left: 71px;
     top: 173px;
     z-index: 115;
-    border-left: solid 2px #FFFFFF;
+    border-left: solid 1px #FFFFFF;
     mix-blend-mode: difference;
 }
 .left-navigation{

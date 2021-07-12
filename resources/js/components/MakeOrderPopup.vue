@@ -1,8 +1,15 @@
 <template>
-<div :class="`make-order-popup ${level}`">
-    <div class="close" @click="$emit('closePopup')" ></div>
+<div :class="`make-order-popup ${$root.$data.area}`">
+    <div class="close" @click="$emit('closePopup')" >
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.45">
+                <rect y="26.8701" width="38" height="1" transform="rotate(-45 0 26.8701)" fill="white"/>
+                <rect width="38" height="1" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27.5771 26.8701)" fill="white"/>
+            </g>
+        </svg>
+    </div>
     <div class="text-1">Залиште свій телефон і ми зателефонуємо Вам</div>
-    <FeedBackForm @submitSuccess="submitSuccess" :level="level" :choiceLevel="choiceLevel"/>
+    <FeedBackForm @submitSuccess="submitSuccess" :level="$root.$data.area" :choiceLevel="choiceLevel"/>
 
 
     <popup-success v-if="modalOpen"/>
@@ -84,16 +91,16 @@ export default {
 
 
     &.g{
-        background:url('../../assets/feedBackFormView/background-g.png') no-repeat center;
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets/feedBackFormView/background-g.png') no-repeat center;
          background-size: cover;
     }
 
     &.b{
-        background:url('../../assets/feedBackFormView/background-b.png') no-repeat center;
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets/feedBackFormView/background-b.png') no-repeat center;
          background-size: cover;
     }
     &.s{
-        background:url('../../assets/feedBackFormView/background-s.png') no-repeat center;
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets/feedBackFormView/background-s.png') no-repeat center;
          background-size: cover;
     }
 
@@ -192,8 +199,8 @@ export default {
 
 
   .close {
-    background-image: url("../../assets/images/menu-close.svg");
-    background-repeat: no-repeat;
+    // background-image: url("../../assets/images/menu-close.svg");
+    // background-repeat: no-repeat;
     width: 26px;
     height: 26px;
     position: absolute;
@@ -201,7 +208,10 @@ export default {
     top: 60px;
     &:hover {
         cursor: pointer;
-        filter: brightness(1);
+        & svg > g{
+            opacity: 1;
+        }
+        // filter: brightness(1);
     }
 
     @media screen and (max-width:767px){

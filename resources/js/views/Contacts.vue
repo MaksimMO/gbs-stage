@@ -152,6 +152,10 @@ export default {
                     text-align: center;
                     margin-right: 20px;
                 }
+                & a:hover{
+                    color: #916C58;
+                }
+
             }
             & .contact-social-networks {
                 margin-left: 66px;

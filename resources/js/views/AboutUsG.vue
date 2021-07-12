@@ -10,6 +10,18 @@
             комплекс із найпрогресивнішим обладненням, стильним дизайном та неперевершеним комфортом.
         </p>
     </section>
+    <section class="image-container-aboutUs">
+        <img class="image" src="../../assets/images/aboutUs-g-main.jpg" alt="">
+        <img class="skew-image" src="../../assets/images/popup-corner.svg" alt="">
+        <div class="text-image">
+            <p>
+                Nulla sed augue vehicula, feugiat nisi sed, commodo dolor.
+            </p>
+        </div>
+    </section>
+    <section class="gallery-slider">
+        <GallerySlider :images="gallery" />
+    </section>
     <section class="about-us-g-description">
         <ul class="first">
             <li><b>Тренажерний зал 1700 кв.м.</b> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym</li>
@@ -25,19 +37,6 @@
             <li><b>Високий</b> рівень сервісу</li>
         </ul>
     </section>
-    <section class="image-container-aboutUs">
-        <img class="image" src="../../assets/images/aboutUs-g-main.jpg" alt="">
-        <img class="skew-image" src="../../assets/images/popup-corner.svg" alt="">
-        <div class="text-image">
-            <p>
-                Nulla sed augue vehicula, feugiat nisi sed, commodo dolor.
-            </p>
-        </div>
-    </section>
-    <section class="gallery-slider">
-        <GallerySlider :images="gallery" />
-    </section>
-
     <section class="our-team-aboutUs-container">
         <div class="our-team-container_header">
             <p>Наша команда</p>
@@ -89,10 +88,16 @@ let preloadedAssets = [
         require('../../assets/images/TeamG/Vladimir_Leskov.jpg').default,
         require('../../assets/images/TeamG/Olga_Depeshko.jpg').default,
         require('../../assets/images/TeamG/Olga_Martsenyuk.jpg').default,
-        require("../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default,
-        require("../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default,
-        require("../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default,
-        require("../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default,
+        require("../../assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg").default,
+        require("../../assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg").default,
+        require("../../assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg").default,
+        require("../../assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg").default,
+        require("../../assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg").default,
+        require("../../assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg").default,
+        require("../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default,
+        require("../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default,
+        require("../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default,
+        require("../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default
     ]
 
 export default {
@@ -116,16 +121,16 @@ export default {
                 {id: 12, link: "image-not-found.jpg"}
             ],
             gallery: [
-                { id: 1, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg").default},
-                { id: 2, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg").default },
-                { id: 3, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg").default },
-                { id: 4, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg").default },
-                { id: 5, imageUrl: require("../../assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg").default },
-                { id: 6, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4574_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg").default },
-                { id: 7, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4583_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default },
-                { id: 8, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4595_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default },
-                { id: 9, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4608_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default },
-                { id: 10, imageUrl: require("../../assets/images/TeamG/gallery/IMG_4614_370x370.jpg").default, imageUrlOverlay: require("../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default }
+                require("../../assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg").default,
+                require("../../assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg").default,
+                require("../../assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg").default,
+                require("../../assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg").default,
+                require("../../assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg").default,
+                require("../../assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg").default,
+                require("../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default,
+                require("../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default,
+                require("../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default,
+                require("../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default
             ]
         }
     },
@@ -194,12 +199,12 @@ export default {
     .title > p {
         font-weight: 400;
         font-style: normal;
-        font-size: 14px;
+        font-size: 18px;
         margin-bottom: 10px;
         font-family: Raleway;
         font-style: normal;
         font-weight: normal;
-        line-height: 28px;
+        line-height: 32px;
         letter-spacing: 0.05em;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #000000;
@@ -268,8 +273,9 @@ export default {
                 font-family: 'Raleway';
                 font-style: normal;
                 font-weight: normal;
-                font-size: 14px;
-                line-height: 28px;
+                margin-bottom: 20px;
+                font-size: 18px;
+                line-height: 32px;
                 letter-spacing: 0.05em;
                 font-feature-settings: 'pnum' on, 'lnum' on;
             }
@@ -330,9 +336,6 @@ export default {
         }
     }
     .certificate-title {
-        // width: 80%;
-        // margin-left: auto;
-        // margin-right: auto;
         padding: 0 7.81vw;
         margin-bottom: 60px;
         padding-top: 60px;
@@ -352,12 +355,12 @@ export default {
         p {
             font-weight: 400;
             font-style: normal;
-            font-size: 14px;
+            font-size: 18px;
             margin: 0;
             font-family: Raleway;
             font-style: normal;
             font-weight: normal;
-            line-height: 28px;
+            line-height: 32px;
             letter-spacing: 0.05em;
             text-align: center;
             font-feature-settings: 'pnum' on, 'lnum' on;
@@ -375,8 +378,8 @@ export default {
             font-family: Raleway;
             font-style: normal;
             font-weight: normal;
-            font-size: 14px;
-            line-height: 28px;
+            font-size: 18px;
+            line-height: 32px;
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #000000;
         }
@@ -396,8 +399,8 @@ export default {
             margin-bottom: 20px;
         }
         .title > p {
-            font-size: 12px;
-            line-height: 22px;
+            font-size: 16px;
+            line-height: 26px;
         }
          .image-container-aboutUs{
             margin-bottom: 50px;
@@ -436,8 +439,9 @@ export default {
             & ul {
                 padding-left: 0.7em;
                 & li {
-                    font-size: 12px;
-                    line-height: 18px;
+                    font-size: 16px;
+                    line-height: 26px;
+                    margin-bottom: 15px;
                 }
                 & li::before {
                     font-size: 8px;
@@ -467,11 +471,11 @@ export default {
             margin-bottom: 30px;
             padding-top: 50px;
             h1 {
-                font-size: 45px;
+                font-size: 49px;
                 margin-bottom: 30px;;
             }
             p {
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 22px;
             }
         }
@@ -480,7 +484,7 @@ export default {
             padding-bottom: 50px;
             padding-top: 50px;
             p {
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 22px;
             }
         }
@@ -499,8 +503,8 @@ export default {
             margin-bottom: 20px;
         }
         .title > p {
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 14px;
+            line-height: 22px;
         }
          .image-container-aboutUs{
             margin-bottom: 73px;
@@ -542,8 +546,8 @@ export default {
                 margin: 0;
                 padding-left: 0.7em;
                 & li {
-                    font-size: 12px;
-                    line-height: 18px;
+                    font-size: 14px;
+                    line-height: 22px;
                 }
                 & li::before {
                     font-size: 8px;
@@ -606,12 +610,13 @@ export default {
             margin-bottom: 20px;
             padding-top: 50px;
             h1 {
-                font-size: 24px;
+                font-size: 32px;
+                line-height: 48px;
                 margin-bottom: 20px;;
             }
             p {
-                font-size: 12px;
-                line-height: 18px;
+                font-size: 14px;
+                line-height: 22px;
             }
         }
         .certificate-description {
@@ -619,8 +624,8 @@ export default {
             padding-bottom: 50px;
             padding-top: 50px;
             p {
-                font-size: 12px;
-                line-height: 18px;
+                font-size: 14px;
+                line-height: 22px;
             }
         }
     }

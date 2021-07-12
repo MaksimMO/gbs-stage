@@ -10,11 +10,17 @@
     <PhoneLink />
     <div class="social-networks">
       <a href="https://www.facebook.com/gbs.level" class="facebook" target="_blank">
-        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9 5.5V3.5C9 2.948 9.448 2.5 10 2.5H11V0H9C7.343 0 6 1.343 6 3V5.5H4V8H6V16H9V8H11L12 5.5H9Z" />
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 5.5V3.5C9 2.948 9.448 2.5 10 2.5H11V0H9C7.343 0 6 1.343 6 3V5.5H4V8H6V16H9V8H11L12 5.5H9Z" fill="white"/>
         </svg>
       </a>
-      <a href="https://www.instagram.com/gbs.level" class="instagram" target="_blank"></a>
+      <a href="https://www.instagram.com/gbs.level" class="instagram" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 0H5C2.239 0 0 2.239 0 5V11C0 13.761 2.239 16 5 16H11C13.761 16 16 13.761 16 11V5C16 2.239 13.761 0 11 0ZM14.5 11C14.5 12.93 12.93 14.5 11 14.5H5C3.07 14.5 1.5 12.93 1.5 11V5C1.5 3.07 3.07 1.5 5 1.5H11C12.93 1.5 14.5 3.07 14.5 5V11Z" fill="white"/>
+            <path d="M8 4C5.791 4 4 5.791 4 8C4 10.209 5.791 12 8 12C10.209 12 12 10.209 12 8C12 5.791 10.209 4 8 4ZM8 10.5C6.622 10.5 5.5 9.378 5.5 8C5.5 6.621 6.622 5.5 8 5.5C9.378 5.5 10.5 6.621 10.5 8C10.5 9.378 9.378 10.5 8 10.5Z" fill="white"/>
+            <path d="M12.3 4.23298C12.5944 4.23298 12.833 3.99435 12.833 3.69999C12.833 3.40562 12.5944 3.16699 12.3 3.16699C12.0057 3.16699 11.767 3.40562 11.767 3.69999C11.767 3.99435 12.0057 4.23298 12.3 4.23298Z" fill="white"/>
+        </svg>
+      </a>
     </div>
   </div>
   <div v-if="$root.$data.area == 'g'" class="line-2">
@@ -162,11 +168,17 @@ export default {
       height:16px;
 
       &.facebook{
-        background-image: url("../../assets/images/facebook.svg");
+        // background-image: url("../../assets/images/facebook.svg");
+        &:hover svg > path {
+            fill: #916C58;
+        }
       }
 
       &.instagram{
-        background-image: url("../../assets/images/instagram.svg");
+        // background-image: url("../../assets/images/instagram.svg");
+        &:hover svg > path {
+            fill: #916C58;
+        }
       }
 
 

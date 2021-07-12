@@ -187,6 +187,7 @@ export default {
 <style lang="scss" scoped>
     .view-main-g{
         overflow: hidden;
+        background: #FFFFFF;
     }
 
 
@@ -617,7 +618,7 @@ export default {
       -webkit-text-decoration-line: underline;
       text-transform: uppercase;
       color: #000000;
-      
+
       &:hover {
           color: #916C58;
       }

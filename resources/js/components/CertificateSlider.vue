@@ -1,8 +1,8 @@
 
 <template>
   <swiper :navigation="true" :slidesPerView="'auto'" @click="onModalOpen">
-    <swiper-slide v-for="image in images" :key="image.id" >
-        <img :src="image.imageUrl"/>
+    <swiper-slide v-for="(imageUrl, index) in images" :key="index" >
+        <img :src="imageUrl"/>
     </swiper-slide>
     <swiper-slide></swiper-slide>
   </swiper>
@@ -32,18 +32,31 @@ export default {
       isOpacity: false,
       modalOpen:false,
       indexToShowFrom:undefined,
+    //   images: [
+    //     { id: 1, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
+    //     { id: 2, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
+    //     { id: 3, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+    //     { id: 4, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
+    //     { id: 5, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
+    //     { id: 6, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+    //     { id: 7, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
+    //     { id: 8, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
+    //     { id: 9, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+    //     { id: 10, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+    //     { id: 11, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+    //   ],
       images: [
-        { id: 1, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
-        { id: 2, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
-        { id: 3, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
-        { id: 4, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
-        { id: 5, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
-        { id: 6, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
-        { id: 7, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
-        { id: 8, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
-        { id: 9, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
-        { id: 10, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
-        { id: 11, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+        require("../../assets/images/TeamG/certificate/certificate1.png").default,
+        require("../../assets/images/TeamG/certificate/certificate2.png").default,
+        require("../../assets/images/TeamG/certificate/certificate3.png").default,
+        require("../../assets/images/TeamG/certificate/certificate1.png").default,
+        require("../../assets/images/TeamG/certificate/certificate2.png").default,
+        require("../../assets/images/TeamG/certificate/certificate3.png").default,
+        require("../../assets/images/TeamG/certificate/certificate1.png").default,
+        require("../../assets/images/TeamG/certificate/certificate2.png").default,
+        require("../../assets/images/TeamG/certificate/certificate3.png").default,
+        require("../../assets/images/TeamG/certificate/certificate3.png").default,
+        require("../../assets/images/TeamG/certificate/certificate3.png").default,
       ],
     };
   },

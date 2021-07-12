@@ -18909,40 +18909,20 @@ swiper_core__WEBPACK_IMPORTED_MODULE_1__.default.use([swiper_core__WEBPACK_IMPOR
       isOpacity: false,
       modalOpen: false,
       indexToShowFrom: undefined,
-      images: [{
-        id: 1,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate1.png */ "./resources/assets/images/TeamG/certificate/certificate1.png").default
-      }, {
-        id: 2,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate2.png */ "./resources/assets/images/TeamG/certificate/certificate2.png").default
-      }, {
-        id: 3,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default
-      }, {
-        id: 4,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate1.png */ "./resources/assets/images/TeamG/certificate/certificate1.png").default
-      }, {
-        id: 5,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate2.png */ "./resources/assets/images/TeamG/certificate/certificate2.png").default
-      }, {
-        id: 6,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default
-      }, {
-        id: 7,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate1.png */ "./resources/assets/images/TeamG/certificate/certificate1.png").default
-      }, {
-        id: 8,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate2.png */ "./resources/assets/images/TeamG/certificate/certificate2.png").default
-      }, {
-        id: 9,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default
-      }, {
-        id: 10,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default
-      }, {
-        id: 11,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default
-      }]
+      //   images: [
+      //     { id: 1, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
+      //     { id: 2, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
+      //     { id: 3, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+      //     { id: 4, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
+      //     { id: 5, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
+      //     { id: 6, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+      //     { id: 7, imageUrl: require("../../assets/images/TeamG/certificate/certificate1.png").default },
+      //     { id: 8, imageUrl: require("../../assets/images/TeamG/certificate/certificate2.png").default },
+      //     { id: 9, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+      //     { id: 10, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+      //     { id: 11, imageUrl: require("../../assets/images/TeamG/certificate/certificate3.png").default },
+      //   ],
+      images: [__webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate1.png */ "./resources/assets/images/TeamG/certificate/certificate1.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate2.png */ "./resources/assets/images/TeamG/certificate/certificate2.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate1.png */ "./resources/assets/images/TeamG/certificate/certificate1.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate2.png */ "./resources/assets/images/TeamG/certificate/certificate2.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate1.png */ "./resources/assets/images/TeamG/certificate/certificate1.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate2.png */ "./resources/assets/images/TeamG/certificate/certificate2.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default, __webpack_require__(/*! ../../assets/images/TeamG/certificate/certificate3.png */ "./resources/assets/images/TeamG/certificate/certificate3.png").default]
     };
   },
   methods: {
@@ -20232,7 +20212,7 @@ swiper_core__WEBPACK_IMPORTED_MODULE_1__.default.use([swiper_core__WEBPACK_IMPOR
 
 
 
-var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-main.jpg */ "./resources/assets/images/aboutUs-g-main.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/TeamG/Vladimir_Leskov.jpg */ "./resources/assets/images/TeamG/Vladimir_Leskov.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Depeshko.jpg */ "./resources/assets/images/TeamG/Olga_Depeshko.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Martsenyuk.jpg */ "./resources/assets/images/TeamG/Olga_Martsenyuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default];
+var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-main.jpg */ "./resources/assets/images/aboutUs-g-main.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/TeamG/Vladimir_Leskov.jpg */ "./resources/assets/images/TeamG/Vladimir_Leskov.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Depeshko.jpg */ "./resources/assets/images/TeamG/Olga_Depeshko.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Martsenyuk.jpg */ "./resources/assets/images/TeamG/Olga_Martsenyuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   emits: ['changeOpen'],
   data: function data() {
@@ -20288,47 +20268,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
         id: 12,
         link: "image-not-found.jpg"
       }],
-      gallery: [{
-        id: 1,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1540-1_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg").default
-      }, {
-        id: 2,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1548-1_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg").default
-      }, {
-        id: 3,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1620-1_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg").default
-      }, {
-        id: 4,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1627-1_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg").default
-      }, {
-        id: 5,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_1635-1_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg").default
-      }, {
-        id: 6,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4574_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4574_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg").default
-      }, {
-        id: 7,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4583_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4583_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default
-      }, {
-        id: 8,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4595_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4595_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default
-      }, {
-        id: 9,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4608_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4608_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default
-      }, {
-        id: 10,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamG/gallery/IMG_4614_370x370.jpg */ "./resources/assets/images/TeamG/gallery/IMG_4614_370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default
-      }]
+      gallery: [__webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default]
     };
   },
   methods: {
@@ -20638,40 +20578,12 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
 
 
 
-var preloadedAssets = [__webpack_require__(/*! ../../assets/images/main-b-background.jpg */ "./resources/assets/images/main-b-background.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/aboutUs-b-main.jpg */ "./resources/assets/images/aboutUs-b-main.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-31-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-31-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-34-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-34-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-35-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-35-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-37-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-37-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-38-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-38-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-42-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-42-1-370x370.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-43-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-43-1-370x370.jpg").default];
+var preloadedAssets = [__webpack_require__(/*! ../../assets/images/main-b-background.jpg */ "./resources/assets/images/main-b-background.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/aboutUs-b-main.jpg */ "./resources/assets/images/aboutUs-b-main.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-34-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-34-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-35-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-35-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-37-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-37-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-38-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-38-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-42-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-42-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-31-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-31-1-min.jpg").default];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       isOpen: false,
-      gallery: [{
-        id: 1,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-43-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-43-1-370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default
-      }, {
-        id: 2,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-34-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-34-1-370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-34-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-34-1-min.jpg").default
-      }, {
-        id: 3,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-35-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-35-1-370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-35-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-35-1-min.jpg").default
-      }, {
-        id: 4,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-37-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-37-1-370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-37-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-37-1-min.jpg").default
-      }, {
-        id: 5,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-38-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-38-1-370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-38-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-38-1-min.jpg").default
-      }, {
-        id: 6,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-42-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-42-1-370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-42-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-42-1-min.jpg").default
-      }, {
-        id: 7,
-        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/gallery/150-31-1-370x370.jpg */ "./resources/assets/images/TeamB/gallery/150-31-1-370x370.jpg").default,
-        imageUrlOverlay: __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-31-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-31-1-min.jpg").default
-      }]
+      gallery: [__webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-34-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-34-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-35-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-35-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-37-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-37-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-38-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-38-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-42-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-42-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-31-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-31-1-min.jpg").default]
     };
   },
   mounted: function mounted() {},
@@ -22161,13 +22073,13 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     onClick: $options.onModalOpen
   }, {
     "default": _withId(function () {
-      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.images, function (image) {
+      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.images, function (imageUrl, index) {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_swiper_slide, {
-          key: image.id
+          key: index
         }, {
           "default": _withId(function () {
             return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-              src: image.imageUrl
+              src: imageUrl
             }, null, 8
             /* PROPS */
             , ["src"])];
@@ -22893,7 +22805,30 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-2d0d2092");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  width: "28",
+  height: "28",
+  viewBox: "0 0 28 28",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("g", {
+  opacity: "0.45"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  y: "26.8701",
+  width: "38",
+  height: "1",
+  transform: "rotate(-45 0 26.8701)",
+  fill: "white"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  width: "38",
+  height: "1",
+  transform: "matrix(-0.707107 -0.707107 -0.707107 0.707107 27.5771 26.8701)",
+  fill: "white"
+})])], -1
+/* HOISTED */
+);
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "text-1"
 }, "Залиште свій телефон і ми зателефонуємо Вам", -1
 /* HOISTED */
@@ -22907,15 +22842,15 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   var _component_popup_success = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("popup-success");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
-    "class": "make-order-popup ".concat($data.level)
+    "class": "make-order-popup ".concat(_ctx.$root.$data.area)
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
     "class": "close",
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return _ctx.$emit('closePopup');
     })
-  }), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FeedBackForm, {
+  }, [_hoisted_1]), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FeedBackForm, {
     onSubmitSuccess: $options.submitSuccess,
-    level: $data.level,
+    level: _ctx.$root.$data.area,
     choiceLevel: $props.choiceLevel
   }, null, 8
   /* PROPS */
@@ -24065,14 +24000,31 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   width: "16",
   height: "16",
   viewBox: "0 0 16 16",
+  fill: "none",
   xmlns: "http://www.w3.org/2000/svg"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
-  d: "M9 5.5V3.5C9 2.948 9.448 2.5 10 2.5H11V0H9C7.343 0 6 1.343 6 3V5.5H4V8H6V16H9V8H11L12 5.5H9Z"
+  d: "M9 5.5V3.5C9 2.948 9.448 2.5 10 2.5H11V0H9C7.343 0 6 1.343 6 3V5.5H4V8H6V16H9V8H11L12 5.5H9Z",
+  fill: "white"
 })])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
   href: "https://www.instagram.com/gbs.level",
   "class": "instagram",
   target: "_blank"
-})], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  width: "16",
+  height: "16",
+  viewBox: "0 0 16 16",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  d: "M11 0H5C2.239 0 0 2.239 0 5V11C0 13.761 2.239 16 5 16H11C13.761 16 16 13.761 16 11V5C16 2.239 13.761 0 11 0ZM14.5 11C14.5 12.93 12.93 14.5 11 14.5H5C3.07 14.5 1.5 12.93 1.5 11V5C1.5 3.07 3.07 1.5 5 1.5H11C12.93 1.5 14.5 3.07 14.5 5V11Z",
+  fill: "white"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  d: "M8 4C5.791 4 4 5.791 4 8C4 10.209 5.791 12 8 12C10.209 12 12 10.209 12 8C12 5.791 10.209 4 8 4ZM8 10.5C6.622 10.5 5.5 9.378 5.5 8C5.5 6.621 6.622 5.5 8 5.5C9.378 5.5 10.5 6.621 10.5 8C10.5 9.378 9.378 10.5 8 10.5Z",
+  fill: "white"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  d: "M12.3 4.23298C12.5944 4.23298 12.833 3.99435 12.833 3.69999C12.833 3.40562 12.5944 3.16699 12.3 3.16699C12.0057 3.16699 11.767 3.40562 11.767 3.69999C11.767 3.99435 12.0057 4.23298 12.3 4.23298Z",
+  fill: "white"
+})])])], -1
 /* HOISTED */
 );
 
@@ -24350,8 +24302,6 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   var _component_MakeOrderPopup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("MakeOrderPopup");
 
-  var _component_LanguageSwitcher = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("LanguageSwitcher");
-
   var _component_MenuG = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("MenuG");
 
   var _component_MenuB = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("MenuB");
@@ -24397,13 +24347,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     onClosePopup: _cache[2] || (_cache[2] = function ($event) {
       return $data.modalOpen = false;
     })
-  })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_LanguageSwitcher, {
-    "class": {
-      'is-open': $data.isOpen
-    }
-  }, null, 8
-  /* PROPS */
-  , ["class"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <LanguageSwitcher :class=\"{'is-open':isOpen}\"/> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
     "class": {
       'close-opened': $data.isOpen,
       'menu-open': !$data.isOpen
@@ -24479,8 +24423,6 @@ var _hoisted_1 = {
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
 
-  var _component_LanguageSwitcher = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("LanguageSwitcher");
-
   var _component_PhoneLink = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("PhoneLink");
 
   var _component_MenuGmobile = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("MenuGmobile");
@@ -24509,13 +24451,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   }, 8
   /* PROPS */
-  , ["to"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, !$data.isOpen]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_LanguageSwitcher, {
-    "class": {
-      'is-open': $data.isOpen
-    }
-  }, null, 8
-  /* PROPS */
-  , ["class"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.isOpen]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PhoneLink, {
+  , ["to"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, !$data.isOpen]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <LanguageSwitcher :class=\"{'is-open':isOpen}\" v-show=\"isOpen\"/> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PhoneLink, {
     "class": {
       'is-open': $data.isOpen
     }
@@ -24757,16 +24693,6 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 );
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
-  "class": "about-us-g-description"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
-  "class": "first"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Тренажерний зал 1700 кв.м."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Простора стилізована "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "зона єдиноборств"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з професійним рингом")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Окрема "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "студія для сайкл-тренування"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з надсучасною світло- звуковою системою")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Інноваційна"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" зона функціонального тренінгу та кросфіту")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
-  "class": "second"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Студія Barre"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" на основі балету")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>Мед кабінет, <b>консультація лікаря</b></li> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Власна "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "пральня")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Система вентиляції та кондиціонування функцією "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "очищення повітря")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Високий"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" рівень сервісу")])])], -1
-/* HOISTED */
-);
-
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
   "class": "image-container-aboutUs"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   "class": "image",
@@ -24782,9 +24708,20 @@ var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 /* HOISTED */
 );
 
-var _hoisted_5 = {
+var _hoisted_4 = {
   "class": "gallery-slider"
 };
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+  "class": "about-us-g-description"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
+  "class": "first"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Тренажерний зал 1700 кв.м."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Простора стилізована "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "зона єдиноборств"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з професійним рингом")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Окрема "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "студія для сайкл-тренування"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" з надсучасною світло- звуковою системою")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Інноваційна"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" зона функціонального тренінгу та кросфіту")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
+  "class": "second"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Студія Barre"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" на основі балету")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>Мед кабінет, <b>консультація лікаря</b></li> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Власна "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "пральня")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Система вентиляції та кондиціонування функцією "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "очищення повітря")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "Високий"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" рівень сервісу")])])], -1
+/* HOISTED */
+);
+
 var _hoisted_6 = {
   "class": "our-team-aboutUs-container"
 };
@@ -24833,11 +24770,11 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header, {
     "class": "header-invert"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Breadcrumb), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, _hoisted_3, _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_GallerySlider, {
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Breadcrumb), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_GallerySlider, {
     images: $data.gallery
   }, null, 8
   /* PROPS */
-  , ["images"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  , ["images"])]), _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "all-our-trainers-link",
     to: "/team-g"
   }, {
@@ -31278,7 +31215,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagram.svg?63a0b3819ce60d3152e6007738817613");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagram.svg?32290d32312a938ccb6381a6931c3439");
 
 /***/ }),
 
