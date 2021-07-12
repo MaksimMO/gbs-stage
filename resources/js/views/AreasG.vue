@@ -6,13 +6,8 @@
 
         <div class="container-areas">
             <div class="area" v-for="area in areas" :key="area.id" @click="$router.push(`/areas-g/${area.id}`)">
-                <!--        <img :src="area.imageUrl" />-->
-                <video-background
-                    :src="area.videoUrl"
-                    :poster="area.imageUrl"
-                    class="area-video"
-                >
-                </video-background>
+                <video autoplay loop muted :src="area.videoUrl" :poster="area.imageUrl" >
+                </video>
 
                 <div class="text-block">
                     <div class="title">{{ area.title }}</div>
@@ -31,13 +26,13 @@ import areas from "../components/AreasG/areas.js";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import Breadcrumb from '../components/Breadcrumb.vue';
-import VideoBackground from 'vue-responsive-video-background-player';
 
 export default {
+
+
     data() {
         return {
-            areas,
-            videos:['/video/area-video-1-C0011.mp4', '/video/area-video-2-C0043_4.mp4', '/video/area-video-3-vg7mt-z1gtv.mp4', '/video/area-video-4-s-level.mp4']
+            areas
         };
     },
     props: ["id"],
@@ -45,7 +40,6 @@ export default {
         Header,
         Breadcrumb,
         Footer,
-        VideoBackground
     },
 };
 </script>
@@ -84,11 +78,8 @@ export default {
                 margin-top: 30px;
             }
 
-            img, .area-video {
-                display: block;
+            video{
                 width: 100%;
-                height: 100vh;
-                object-fit: cover;
             }
 
             .text-block {

@@ -118,7 +118,7 @@ export default {
     button{
       position: absolute;
       right: 50px;
-      bottom: 50px;
+      bottom: 70px;
     }
 
 
