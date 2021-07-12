@@ -67,12 +67,12 @@ export default {
   data(){
     return{
       gallery: [
-          { id: 1, imageUrl: require("../../assets/images/main-s/foto-1.jpg").default },
-          { id: 2, imageUrl: require("../../assets/images/main-s/foto-2.jpg").default },
-          { id: 3, imageUrl: require("../../assets/images/main-s/foto-3.jpg").default },
-          { id: 4, imageUrl: require("../../assets/images/main-s/foto-4.jpg").default },
-          { id: 5, imageUrl: require("../../assets/images/main-s/foto-5.jpg").default },
-          { id: 6, imageUrl: require("../../assets/images/main-s/foto-6.jpg").default },
+           require("../../assets/images/main-s/foto-1.jpg").default,
+           require("../../assets/images/main-s/foto-2.jpg").default,
+           require("../../assets/images/main-s/foto-3.jpg").default,
+           require("../../assets/images/main-s/foto-4.jpg").default,
+           require("../../assets/images/main-s/foto-5.jpg").default,
+           require("../../assets/images/main-s/foto-6.jpg").default
       ]
     }
 
