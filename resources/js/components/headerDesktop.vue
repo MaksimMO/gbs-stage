@@ -12,7 +12,7 @@
     <teleport to="body">
       <MakeOrderPopup v-if="modalOpen" @closePopup="modalOpen=false"/>
     </teleport>
-    <LanguageSwitcher :class="{'is-open':isOpen}"/>
+    <!-- <LanguageSwitcher :class="{'is-open':isOpen}"/> -->
     <div :class="{'close-opened':isOpen, 'menu-open': !isOpen}" @click="isOpen = !isOpen"></div>
   </div>
   <transition name="slide-fade">
