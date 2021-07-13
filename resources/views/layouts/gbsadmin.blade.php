@@ -50,6 +50,11 @@
                     @endif
                     @else
                         <li class="nav-item">
+                            <a class="nav-link" href="{{ route("calendar.index") }}?role=3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                Календар
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ route("users.index") }}?role=3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 Тренери
                             </a>
