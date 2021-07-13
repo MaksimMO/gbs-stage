@@ -20574,6 +20574,9 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
 /* harmony import */ var _components_Footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Footer.vue */ "./resources/js/components/Footer.vue");
 /* harmony import */ var _components_GallerySlider_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/GallerySlider.vue */ "./resources/js/components/GallerySlider.vue");
 /* harmony import */ var _components_BrandMakeupSlider_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/BrandMakeupSlider.vue */ "./resources/js/components/BrandMakeupSlider.vue");
+/* harmony import */ var vue_responsive_video_background_player__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-responsive-video-background-player */ "./node_modules/vue-responsive-video-background-player/dist/index.common.js");
+/* harmony import */ var vue_responsive_video_background_player__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(vue_responsive_video_background_player__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -20618,7 +20621,8 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/main-b-backgr
     Header: _components_Header_vue__WEBPACK_IMPORTED_MODULE_0__.default,
     Footer: _components_Footer_vue__WEBPACK_IMPORTED_MODULE_1__.default,
     GallerySlider: _components_GallerySlider_vue__WEBPACK_IMPORTED_MODULE_2__.default,
-    BrandMakeupSlider: _components_BrandMakeupSlider_vue__WEBPACK_IMPORTED_MODULE_3__.default
+    BrandMakeupSlider: _components_BrandMakeupSlider_vue__WEBPACK_IMPORTED_MODULE_3__.default,
+    VideoBackground: (vue_responsive_video_background_player__WEBPACK_IMPORTED_MODULE_4___default())
   },
   methods: {
     change: function change(e) {
@@ -24704,7 +24708,7 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   alt: ""
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "text-image"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Nulla sed augue vehicula, feugiat nisi sed, commodo dolor. ")])], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Твій рівень спорту! ")])], -1
 /* HOISTED */
 );
 
@@ -24739,18 +24743,6 @@ var _hoisted_10 = {
   "class": "teams-slider"
 };
 
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
-  "class": "certificate-title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Нагороди та сертифікати"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum. Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam. Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est. ")], -1
-/* HOISTED */
-);
-
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
-  "class": "certificate-description"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum. Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis. Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum. Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec hendrerit neque... ")], -1
-/* HOISTED */
-);
-
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
@@ -24763,8 +24755,6 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
 
   var _component_TeamsSlider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("TeamsSlider");
-
-  var _component_CertificateSlider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("CertificateSlider");
 
   var _component_Footer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Footer");
 
@@ -24792,7 +24782,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   }, null, 8
   /* PROPS */
-  , ["trainers", "isOpen"])])]), _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CertificateSlider), _hoisted_12]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  , ["trainers", "isOpen"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("<section class=\"certificate-title\">\r\n        <h1>Нагороди та сертифікати</h1>\r\n        <p>\r\n            Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.\r\n            Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam.\r\n            Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est.\r\n        </p>\r\n    </section>\r\n    <CertificateSlider />\r\n    <section class=\"certificate-description\">\r\n        <p>\r\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.\r\n            Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.\r\n            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.\r\n            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n            Sed nec hendrerit neque...\r\n        </p>\r\n    </section> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 });
@@ -25177,6 +25167,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       autoplay: "",
       loop: "",
       muted: "",
+      playsinline: "",
       src: area.videoUrl,
       poster: area.imageUrl
     }, null, 8
@@ -25469,11 +25460,9 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 /* harmony export */   "render": () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _assets_images_main_b_background_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/main-b-background.jpg */ "./resources/assets/images/main-b-background.jpg");
-/* harmony import */ var _assets_images_popup_corner_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg");
-/* harmony import */ var _assets_images_warning_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/warning.svg */ "./resources/assets/images/warning.svg");
-/* harmony import */ var _assets_images_aboutUs_b_main_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/aboutUs-b-main.jpg */ "./resources/assets/images/aboutUs-b-main.jpg");
-
+/* harmony import */ var _assets_images_popup_corner_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg");
+/* harmony import */ var _assets_images_warning_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/warning.svg */ "./resources/assets/images/warning.svg");
+/* harmony import */ var _assets_images_aboutUs_b_main_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/aboutUs-b-main.jpg */ "./resources/assets/images/aboutUs-b-main.jpg");
 
 
 
@@ -25486,34 +25475,47 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 var _hoisted_1 = {
   "class": "view-main-b"
 };
-
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+var _hoisted_2 = {
   "class": "top-image-container"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  "class": "top-image",
-  src: _assets_images_main_b_background_jpg__WEBPACK_IMPORTED_MODULE_1__.default,
-  alt: ""
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+};
+
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   "class": "skew-image-1",
-  src: _assets_images_popup_corner_svg__WEBPACK_IMPORTED_MODULE_2__.default,
+  src: _assets_images_popup_corner_svg__WEBPACK_IMPORTED_MODULE_1__.default,
   alt: ""
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "water-text"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
   "class": "top-text"
 }, "Твій рівень"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
   "class": "down-text"
-}, "краси")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "vector1"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "vector2"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "vector3"
-})], -1
+}, "краси")], -1
 /* HOISTED */
 );
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "vector1"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "vector2"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "vector3"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
   "class": "about-us"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "title"
@@ -25525,36 +25527,36 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   "class": "about-us-warning"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   "class": "top-image-warning",
-  src: _assets_images_warning_svg__WEBPACK_IMPORTED_MODULE_3__.default,
+  src: _assets_images_warning_svg__WEBPACK_IMPORTED_MODULE_2__.default,
   alt: ""
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Салон відкритий як для членів клубу, так і для гостей без клубних карт. ")])], -1
 /* HOISTED */
 );
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
   "class": "image-container-aboutUs"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   "class": "image",
-  src: _assets_images_aboutUs_b_main_jpg__WEBPACK_IMPORTED_MODULE_4__.default,
+  src: _assets_images_aboutUs_b_main_jpg__WEBPACK_IMPORTED_MODULE_3__.default,
   alt: ""
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   "class": "skew-image",
-  src: _assets_images_popup_corner_svg__WEBPACK_IMPORTED_MODULE_2__.default,
+  src: _assets_images_popup_corner_svg__WEBPACK_IMPORTED_MODULE_1__.default,
   alt: ""
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "text-image"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Nulla sed augue vehicula, feugiat nisi sed, commodo dolor. ")])], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " B LEVEL - be beauty! ")])], -1
 /* HOISTED */
 );
 
-var _hoisted_5 = {
+var _hoisted_10 = {
   "class": "gallery-slider"
 };
-var _hoisted_6 = {
+var _hoisted_11 = {
   "class": "brand-makeup"
 };
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Ми довіряємо найкращим", -1
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Ми довіряємо найкращим", -1
 /* HOISTED */
 );
 
@@ -25563,17 +25565,23 @@ var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Header = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Header");
 
+  var _component_video_background = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("video-background");
+
   var _component_GallerySlider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("GallerySlider");
 
   var _component_BrandMakeupSlider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("BrandMakeupSlider");
 
   var _component_Footer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Footer");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, _hoisted_3, _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_GallerySlider, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img class=\"top-image\" src=\"../../assets/images/main-b-background.jpg\" alt=\"\"> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_video_background, {
+    src: "/video/b-level-main.mp4",
+    poster: "../../assets/images/main-b-background.jpg",
+    "class": "top-image"
+  }), _hoisted_3, _hoisted_4, _hoisted_5, _hoisted_6, _hoisted_7]), _hoisted_8, _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_GallerySlider, {
     images: $data.gallery
   }, null, 8
   /* PROPS */
-  , ["images"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_BrandMakeupSlider), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h1>SEO текст</h1>\r\n        <p>\r\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n            Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.\r\n            Pellentesque a tortor vitae arcu dictum faucibus.\r\n            Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.\r\n            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.\r\n            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n            Sed nec hendrerit neque...\r\n        </p>\r\n        <router-link class=\"link-1\" to=\"/\">Більше</router-link> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer, {
+  , ["images"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_11, [_hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_BrandMakeupSlider), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h1>SEO текст</h1>\r\n        <p>\r\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n            Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.\r\n            Pellentesque a tortor vitae arcu dictum faucibus.\r\n            Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.\r\n            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.\r\n            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n            Sed nec hendrerit neque...\r\n        </p>\r\n        <router-link class=\"link-1\" to=\"/\">Більше</router-link> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer, {
     level: 'b'
   })], 64
   /* STABLE_FRAGMENT */
@@ -31234,6 +31242,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/main-b-background-320.jpg":
+/*!***********************************************************!*\
+  !*** ./resources/assets/images/main-b-background-320.jpg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-b-background-320.jpg?27ae3bd74a0fd95458a0bb9accc8cce5");
+
+/***/ }),
+
 /***/ "./resources/assets/images/main-b-background.jpg":
 /*!*******************************************************!*\
   !*** ./resources/assets/images/main-b-background.jpg ***!
@@ -31261,6 +31284,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-b-water-text-top.svg?3c4a8cbe9c9c993ce8805016dbb61aa2");
+
+/***/ }),
+
+/***/ "./resources/assets/images/main-g-background-768.jpg":
+/*!***********************************************************!*\
+  !*** ./resources/assets/images/main-g-background-768.jpg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/main-g-background-768.jpg?2db9494ae41f013729ca543bd9e6fbea");
 
 /***/ }),
 
@@ -32611,6 +32649,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-5-C0067.mp4");
+
+/***/ }),
+
+/***/ "./resources/assets/video/b-level-main.mp4":
+/*!*************************************************!*\
+  !*** ./resources/assets/video/b-level-main.mp4 ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/b-level-main.mp4");
 
 /***/ }),
 
@@ -56815,6 +56868,7 @@ var map = {
 	"./area-video-3-vg7mt-z1gtv.mp4": "./resources/assets/video/area-video-3-vg7mt-z1gtv.mp4",
 	"./area-video-4-s-level.mp4": "./resources/assets/video/area-video-4-s-level.mp4",
 	"./area-video-5-C0067.mp4": "./resources/assets/video/area-video-5-C0067.mp4",
+	"./b-level-main.mp4": "./resources/assets/video/b-level-main.mp4",
 	"./valentine.MOV": "./resources/assets/video/valentine.MOV"
 };
 
@@ -57005,8 +57059,10 @@ var map = {
 	"./images/info.svg": "./resources/assets/images/info.svg",
 	"./images/instagram.svg": "./resources/assets/images/instagram.svg",
 	"./images/instagramGold.svg": "./resources/assets/images/instagramGold.svg",
+	"./images/main-b-background-320.jpg": "./resources/assets/images/main-b-background-320.jpg",
 	"./images/main-b-background.jpg": "./resources/assets/images/main-b-background.jpg",
 	"./images/main-b-water-text-top.svg": "./resources/assets/images/main-b-water-text-top.svg",
+	"./images/main-g-background-768.jpg": "./resources/assets/images/main-g-background-768.jpg",
 	"./images/main-g-background.jpg": "./resources/assets/images/main-g-background.jpg",
 	"./images/main-g-our-team-water-text.svg": "./resources/assets/images/main-g-our-team-water-text.svg",
 	"./images/main-g-techno-gym-background-320.jpg": "./resources/assets/images/main-g-techno-gym-background-320.jpg",
@@ -57096,6 +57152,7 @@ var map = {
 	"./video/area-video-3-vg7mt-z1gtv.mp4": "./resources/assets/video/area-video-3-vg7mt-z1gtv.mp4",
 	"./video/area-video-4-s-level.mp4": "./resources/assets/video/area-video-4-s-level.mp4",
 	"./video/area-video-5-C0067.mp4": "./resources/assets/video/area-video-5-C0067.mp4",
+	"./video/b-level-main.mp4": "./resources/assets/video/b-level-main.mp4",
 	"./video/valentine.MOV": "./resources/assets/video/valentine.MOV"
 };
 

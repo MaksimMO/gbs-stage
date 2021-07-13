@@ -3,7 +3,7 @@
   <div class="view-main-g">
 
   <section class="top-image-container">
-   <img class="top-image" src="../../assets/images/main-g-background.jpg" alt="">
+    <img class="top-image" src="../../assets/images/main-g-background.jpg" alt="">
     <img class="skew-image-1" src="../../assets/images/popup-corner.svg" alt="">
     <div class="water-text">
         <p class="top-text">Твій рівень</p>
@@ -139,6 +139,11 @@ import Footer from '../components/Footer.vue'
 import AreasSliderG from '../components/AreasG/AreasSliderG.vue'
 import TeamsSlider from '../components/TeamsSlider.vue';
 
+            let preloadedAssets = [
+                require('../../assets/images/main-g-techno-gym-background.jpg').default,
+                require('../../assets/images/techno-gym-skew-images.png').default,
+                require('../../assets/images/areas/area-1-g.jpg').default,
+            ];
 
            let trainers = [
                 {id: 0, link: "Vladimir_Leskov.jpg", linkVideo: "Vladimir_Leskov.MOV"},
@@ -160,6 +165,7 @@ import TeamsSlider from '../components/TeamsSlider.vue';
 export default {
 
   data(){
+    preloadedAssets.push(this.$root.$data.isMobile ? require('../../assets/images/main-g-background-768.jpg').default : require('../../assets/images/main-g-background.jpg').default);
     return{
       isOpen: false,
       trainers
@@ -169,6 +175,31 @@ export default {
   mounted(){
 
   },
+  beforeRouteEnter(to, from, next) {
+        const cacheImage = (url) =>{
+            return new Promise((resolve, reject) => {
+                let img = new Image()
+                img.onload = resolve;
+                img.src = url;
+            });
+        }
+        console.log("wait to show loader for 0.6s")
+        let postponeTimelId = setTimeout(()=>{
+            console.log("show loader")
+            window.vm.$data.isLoading=true
+        },600);
+
+
+        Promise.all(preloadedAssets.map((urlImg) => (cacheImage(urlImg)))).finally(()=>{
+
+            clearTimeout(postponeTimelId);
+            if (window.vm.$data.isLoading){
+                console.log("hide loader")
+                window.vm.$data.isLoading=false;
+            }
+            next();
+        });
+    },
   components:{
     Header,
     Footer,
@@ -263,9 +294,12 @@ export default {
     width: 100%;
     display: block;
 
+
     @media screen and (max-width:767px){
-      height: 446px;
-      object-fit: cover;
+    //   height: 568px;
+      max-height: 80vh;
+    //   object-fit: cover;
+      content: url('../../assets/images/main-g-background-768.jpg');
     }
   }
 

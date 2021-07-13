@@ -68,6 +68,15 @@ import AreasSlider from '../components/AreasS/AreasSliderS.vue'
 import GallerySlider from '../components/GallerySlider.vue';
 import VideoBackground from 'vue-responsive-video-background-player';
 
+let preloadedAssets = [
+        require('../../assets/images/areas-s/area-s-1-1.jpg').default,
+        require("../../assets/images/main-s/foto-1.jpg").default,
+        require("../../assets/images/main-s/foto-2.jpg").default,
+        require("../../assets/images/main-s/foto-3.jpg").default,
+        require("../../assets/images/main-s/foto-4.jpg").default,
+        require("../../assets/images/main-s/foto-5.jpg").default,
+        require("../../assets/images/main-s/foto-6.jpg").default
+    ];
 export default {
 
   data(){
@@ -83,6 +92,32 @@ export default {
     }
 
   },
+
+  beforeRouteEnter(to, from, next) {
+        const cacheImage = (url) =>{
+            return new Promise((resolve, reject) => {
+                let img = new Image()
+                img.onload = resolve;
+                img.src = url;
+            });
+        }
+        console.log("wait to show loader for 0.6s")
+        let postponeTimelId = setTimeout(()=>{
+            console.log("show loader")
+            window.vm.$data.isLoading=true
+        },600);
+
+
+        Promise.all(preloadedAssets.map((urlImg) => (cacheImage(urlImg)))).finally(()=>{
+
+            clearTimeout(postponeTimelId);
+            if (window.vm.$data.isLoading){
+                console.log("hide loader")
+                window.vm.$data.isLoading=false;
+            }
+            next();
+        });
+    },  
 
   components:{
     Header,

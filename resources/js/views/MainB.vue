@@ -2,7 +2,13 @@
   <Header />
   <div class="view-main-b">
   <section class="top-image-container">
-    <img class="top-image" src="../../assets/images/main-b-background.jpg" alt="">
+    <!-- <img class="top-image" src="../../assets/images/main-b-background.jpg" alt=""> -->
+    <video-background
+          src="/video/b-level-main.mp4"
+          poster="../../assets/images/main-b-background.jpg"
+          class="top-image"
+      >
+      </video-background>
     <img class="skew-image-1" src="../../assets/images/popup-corner.svg" alt="">
     <div class="water-text">
         <p class="top-text">Твій рівень</p>
@@ -40,7 +46,7 @@
         <img class="skew-image" src="../../assets/images/popup-corner.svg" alt="">
         <div class="text-image">
             <p>
-                Nulla sed augue vehicula, feugiat nisi sed, commodo dolor.
+               B LEVEL - be beauty!
             </p>
         </div>
     </section>
@@ -72,9 +78,9 @@ import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 import GallerySlider from '../components/GallerySlider.vue';
 import BrandMakeupSlider from '../components/BrandMakeupSlider.vue';
+import VideoBackground from 'vue-responsive-video-background-player';
 
 let preloadedAssets = [
-        require('../../assets/images/main-b-background.jpg').default,
         require('../../assets/images/popup-corner.svg').default,
         require('../../assets/images/aboutUs-b-main.jpg').default,
         require('../../assets/images/popup-corner.svg').default,
@@ -90,7 +96,9 @@ let preloadedAssets = [
 export default {
 
   data(){
+    preloadedAssets.push(this.$root.$data.isMobile ? require('../../assets/images/main-b-background-320.jpg').default : require('../../assets/images/main-b-background.jpg').default);
     return{
+        
       isOpen: false,
       gallery: [
             require("../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default,
@@ -135,7 +143,8 @@ export default {
     Header,
     Footer,
     GallerySlider,
-    BrandMakeupSlider
+    BrandMakeupSlider,
+    VideoBackground
   },
   methods: {
       change(e) {
@@ -160,6 +169,7 @@ export default {
 
   .top-image{
     width: 100%;
+    height:100vh;
 
     //reset inline mode for image
     display: block;
@@ -478,6 +488,10 @@ export default {
 
 @media screen and (max-width: 767px){
     .top-image-container{
+        // .top-image{
+        //     max-height: 80vh;
+        //     content: url('../../assets/images/main-b-background-320.jpg');
+        // }
         .skew-image-1{
             left: 15px;
             bottom: -15px;
