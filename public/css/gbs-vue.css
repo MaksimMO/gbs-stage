@@ -3472,10 +3472,6 @@ Video[data-v-6a0f304d] {
 }
 }
 @media screen and (max-width: 767px) {
-.top-image-container .top-image[data-v-68d1db9a] {
-    max-height: 80vh;
-    content: url(/images/main-b-background-320.jpg?27ae3bd74a0fd95458a0bb9accc8cce5);
-}
 .top-image-container .skew-image-1[data-v-68d1db9a] {
     left: 15px;
     bottom: -15px;

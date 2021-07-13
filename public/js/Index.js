@@ -25181,6 +25181,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       autoplay: "",
       loop: "",
       muted: "",
+      playsinline: "",
       src: area.videoUrl,
       poster: area.imageUrl
     }, null, 8
