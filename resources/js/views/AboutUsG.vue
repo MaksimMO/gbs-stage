@@ -15,7 +15,7 @@
         <img class="skew-image" src="../../assets/images/popup-corner.svg" alt="">
         <div class="text-image">
             <p>
-                Nulla sed augue vehicula, feugiat nisi sed, commodo dolor.
+                Твій рівень спорту!
             </p>
         </div>
     </section>
