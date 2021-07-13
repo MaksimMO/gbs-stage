@@ -2,7 +2,13 @@
   <Header />
   <div class="view-main-b">
   <section class="top-image-container">
-    <img class="top-image" src="../../assets/images/main-b-background.jpg" alt="">
+    <!-- <img class="top-image" src="../../assets/images/main-b-background.jpg" alt=""> -->
+    <video-background
+          src="/video/b-level-main.mp4"
+          poster="../../assets/images/main-b-background.jpg"
+          class="top-image"
+      >
+      </video-background>
     <img class="skew-image-1" src="../../assets/images/popup-corner.svg" alt="">
     <div class="water-text">
         <p class="top-text">Твій рівень</p>
@@ -72,6 +78,7 @@ import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 import GallerySlider from '../components/GallerySlider.vue';
 import BrandMakeupSlider from '../components/BrandMakeupSlider.vue';
+import VideoBackground from 'vue-responsive-video-background-player';
 
 let preloadedAssets = [
         require('../../assets/images/main-b-background.jpg').default,
@@ -135,7 +142,8 @@ export default {
     Header,
     Footer,
     GallerySlider,
-    BrandMakeupSlider
+    BrandMakeupSlider,
+    VideoBackground
   },
   methods: {
       change(e) {
@@ -160,6 +168,7 @@ export default {
 
   .top-image{
     width: 100%;
+    height:100vh;
 
     //reset inline mode for image
     display: block;
