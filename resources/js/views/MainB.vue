@@ -81,7 +81,6 @@ import BrandMakeupSlider from '../components/BrandMakeupSlider.vue';
 import VideoBackground from 'vue-responsive-video-background-player';
 
 let preloadedAssets = [
-        require('../../assets/images/main-b-background.jpg').default,
         require('../../assets/images/popup-corner.svg').default,
         require('../../assets/images/aboutUs-b-main.jpg').default,
         require('../../assets/images/popup-corner.svg').default,
@@ -97,7 +96,9 @@ let preloadedAssets = [
 export default {
 
   data(){
+    preloadedAssets.push(this.$root.$data.isMobile ? require('../../assets/images/main-b-background-320.jpg').default : require('../../assets/images/main-b-background.jpg').default);
     return{
+        
       isOpen: false,
       gallery: [
             require("../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default,
