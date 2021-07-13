@@ -19926,6 +19926,23 @@ swiper_core__WEBPACK_IMPORTED_MODULE_1__.default.use([swiper_core__WEBPACK_IMPOR
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/WorkoutItem.vue?vue&type=script&lang=js":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/WorkoutItem.vue?vue&type=script&lang=js ***!
+  \*****************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "WorkoutItem",
+  props: ['timeStart', 'type', 'trainer', 'timeEnd', 'duration']
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/footerDesktop.vue?vue&type=script&lang=js":
 /*!*******************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/footerDesktop.vue?vue&type=script&lang=js ***!
@@ -20581,9 +20598,10 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
 
 
 
-var preloadedAssets = [__webpack_require__(/*! ../../assets/images/main-b-background.jpg */ "./resources/assets/images/main-b-background.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/aboutUs-b-main.jpg */ "./resources/assets/images/aboutUs-b-main.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-34-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-34-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-35-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-35-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-37-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-37-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-38-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-38-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-42-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-42-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-31-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-31-1-min.jpg").default];
+var preloadedAssets = [__webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/aboutUs-b-main.jpg */ "./resources/assets/images/aboutUs-b-main.jpg").default, __webpack_require__(/*! ../../assets/images/popup-corner.svg */ "./resources/assets/images/popup-corner.svg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-34-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-34-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-35-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-35-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-37-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-37-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-38-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-38-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-42-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-42-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-31-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-31-1-min.jpg").default];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
+    preloadedAssets.push(this.$root.$data.isMobile ? __webpack_require__(/*! ../../assets/images/main-b-background-320.jpg */ "./resources/assets/images/main-b-background-320.jpg").default : __webpack_require__(/*! ../../assets/images/main-b-background.jpg */ "./resources/assets/images/main-b-background.jpg").default);
     return {
       isOpen: false,
       gallery: [__webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-34-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-34-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-35-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-35-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-37-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-37-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-38-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-38-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-42-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-42-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamB/gallery/overlay/150-31-1-min.jpg */ "./resources/assets/images/TeamB/gallery/overlay/150-31-1-min.jpg").default]
@@ -20651,6 +20669,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/main-b-backgr
 
 
 
+var preloadedAssets = [__webpack_require__(/*! ../../assets/images/main-g-techno-gym-background.jpg */ "./resources/assets/images/main-g-techno-gym-background.jpg").default, __webpack_require__(/*! ../../assets/images/techno-gym-skew-images.png */ "./resources/assets/images/techno-gym-skew-images.png").default, __webpack_require__(/*! ../../assets/images/areas/area-1-g.jpg */ "./resources/assets/images/areas/area-1-g.jpg").default];
 var trainers = [{
   id: 0,
   link: "Vladimir_Leskov.jpg",
@@ -20703,12 +20722,40 @@ var trainers = [{
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
+    preloadedAssets.push(this.$root.$data.isMobile ? __webpack_require__(/*! ../../assets/images/main-g-background-768.jpg */ "./resources/assets/images/main-g-background-768.jpg").default : __webpack_require__(/*! ../../assets/images/main-g-background.jpg */ "./resources/assets/images/main-g-background.jpg").default);
     return {
       isOpen: false,
       trainers: trainers
     };
   },
   mounted: function mounted() {},
+  beforeRouteEnter: function beforeRouteEnter(to, from, next) {
+    var cacheImage = function cacheImage(url) {
+      return new Promise(function (resolve, reject) {
+        var img = new Image();
+        img.onload = resolve;
+        img.src = url;
+      });
+    };
+
+    console.log("wait to show loader for 0.6s");
+    var postponeTimelId = setTimeout(function () {
+      console.log("show loader");
+      window.vm.$data.isLoading = true;
+    }, 600);
+    Promise.all(preloadedAssets.map(function (urlImg) {
+      return cacheImage(urlImg);
+    }))["finally"](function () {
+      clearTimeout(postponeTimelId);
+
+      if (window.vm.$data.isLoading) {
+        console.log("hide loader");
+        window.vm.$data.isLoading = false;
+      }
+
+      next();
+    });
+  },
   components: {
     Header: _components_Header_vue__WEBPACK_IMPORTED_MODULE_0__.default,
     Footer: _components_Footer_vue__WEBPACK_IMPORTED_MODULE_1__.default,
@@ -20745,11 +20792,39 @@ var trainers = [{
 
 
 
+var preloadedAssets = [__webpack_require__(/*! ../../assets/images/areas-s/area-s-1-1.jpg */ "./resources/assets/images/areas-s/area-s-1-1.jpg").default, __webpack_require__(/*! ../../assets/images/main-s/foto-1.jpg */ "./resources/assets/images/main-s/foto-1.jpg").default, __webpack_require__(/*! ../../assets/images/main-s/foto-2.jpg */ "./resources/assets/images/main-s/foto-2.jpg").default, __webpack_require__(/*! ../../assets/images/main-s/foto-3.jpg */ "./resources/assets/images/main-s/foto-3.jpg").default, __webpack_require__(/*! ../../assets/images/main-s/foto-4.jpg */ "./resources/assets/images/main-s/foto-4.jpg").default, __webpack_require__(/*! ../../assets/images/main-s/foto-5.jpg */ "./resources/assets/images/main-s/foto-5.jpg").default, __webpack_require__(/*! ../../assets/images/main-s/foto-6.jpg */ "./resources/assets/images/main-s/foto-6.jpg").default];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       gallery: [__webpack_require__(/*! ../../assets/images/main-s/foto-1.jpg */ "./resources/assets/images/main-s/foto-1.jpg").default, __webpack_require__(/*! ../../assets/images/main-s/foto-2.jpg */ "./resources/assets/images/main-s/foto-2.jpg").default, __webpack_require__(/*! ../../assets/images/main-s/foto-3.jpg */ "./resources/assets/images/main-s/foto-3.jpg").default, __webpack_require__(/*! ../../assets/images/main-s/foto-4.jpg */ "./resources/assets/images/main-s/foto-4.jpg").default, __webpack_require__(/*! ../../assets/images/main-s/foto-5.jpg */ "./resources/assets/images/main-s/foto-5.jpg").default, __webpack_require__(/*! ../../assets/images/main-s/foto-6.jpg */ "./resources/assets/images/main-s/foto-6.jpg").default]
     };
+  },
+  beforeRouteEnter: function beforeRouteEnter(to, from, next) {
+    var cacheImage = function cacheImage(url) {
+      return new Promise(function (resolve, reject) {
+        var img = new Image();
+        img.onload = resolve;
+        img.src = url;
+      });
+    };
+
+    console.log("wait to show loader for 0.6s");
+    var postponeTimelId = setTimeout(function () {
+      console.log("show loader");
+      window.vm.$data.isLoading = true;
+    }, 600);
+    Promise.all(preloadedAssets.map(function (urlImg) {
+      return cacheImage(urlImg);
+    }))["finally"](function () {
+      clearTimeout(postponeTimelId);
+
+      if (window.vm.$data.isLoading) {
+        console.log("hide loader");
+        window.vm.$data.isLoading = false;
+      }
+
+      next();
+    });
   },
   components: {
     Header: _components_Header_vue__WEBPACK_IMPORTED_MODULE_0__.default,
@@ -21155,6 +21230,187 @@ var trainers = [{
     Header: _components_Header_vue__WEBPACK_IMPORTED_MODULE_0__.default,
     Footer: _components_Footer_vue__WEBPACK_IMPORTED_MODULE_1__.default,
     Breadcrumb: _components_Breadcrumb_vue__WEBPACK_IMPORTED_MODULE_2__.default
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/Schedule.vue?vue&type=script&lang=js":
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/Schedule.vue?vue&type=script&lang=js ***!
+  \*********************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _components_Header_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Header.vue */ "./resources/js/components/Header.vue");
+/* harmony import */ var _components_Breadcrumb_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Breadcrumb.vue */ "./resources/js/components/Breadcrumb.vue");
+/* harmony import */ var _components_Footer_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Footer.vue */ "./resources/js/components/Footer.vue");
+/* harmony import */ var _components_WorkoutItem_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/WorkoutItem.vue */ "./resources/js/components/WorkoutItem.vue");
+
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      jsonStr: '[{"day":"Monday","date":"05.07.21","workouts":[{"type":"Yoga","trainer":"Арсьонова  І. В.","timeStart":"07:00","timeEnd":"08:00"},{"type":"Cycle","trainer":"Подзігун  Т. І.","timeStart":"08:00","timeEnd":"09:00"},{"type":"Pilates","trainer":"Дементьєва О. О.","timeStart":"08:00","timeEnd":"09:00"}]},{"day":"Tuesday","date":"06.07.21","workouts":[{"type":"Fighting","trainer":"Teacher 2","timeStart":"08:00","timeEnd":"10:00"},{"type":"Fighting","trainer":"Teacher 4","timeStart":"10:00","timeEnd":"12:00"},{"type":"Fighting","trainer":"Teacher 3","timeStart":"12:00","timeEnd":"14:00"}]},{"day":"Wednesday","date":"07.07.21","workouts":[{"type":"Fighting","trainer":"Teacher 5","timeStart":"10:00","timeEnd":"12:00"},{"type":"Fighting","trainer":"Teacher","timeStart":"12:00","timeEnd":"14:00"},{"type":"Fighting","trainer":"Teacher 2","timeStart":"14:00","timeEnd":"16:00"}]},{"day":"Thursday","date":"08.07.21","workouts":[{"type":"Fighting","trainer":"Teacher","timeStart":"10:00","timeEnd":"12:00"},{"type":"Fighting","trainer":"Teacher 2","timeStart":"12:00","timeEnd":"14:00"},{"type":"Fighting","trainer":"Teacher 3","timeStart":"14:00","timeEnd":"16:00"}]},{"day":"Friday","date":"09.07.21","workouts":[{"type":"Fighting","trainer":"Teacher 2","timeStart":"08:00","timeEnd":"09:00"},{"type":"Fighting","trainer":"Teacher","timeStart":"08:00","timeEnd":"09:00"},{"type":"Fighting","trainer":"Teacher 5","timeStart":"09:00","timeEnd":"10:30"},{"type":"Yoga","trainer":"Teacher 3","timeStart":"08:00","timeEnd":"09:00"},{"type":"Pilates","trainer":"Teacher","timeStart":"17:00","timeEnd":"18:00"},{"type":"Yoga","trainer":"Teacher 2","timeStart":"17:00","timeEnd":"18:00"}]},{"day":"Saturday","date":"10.07.21","workouts":[{"type":"Pilates","trainer":"Teacher","timeStart":"10:00","timeEnd":"11:00"}]},{"day":"Sunday","date":"11.07.21","workouts":[{"type":"Fighting","trainer":"Teacher 2","timeStart":"09:00","timeEnd":"10:00"},{"type":"Pilates","trainer":"Teacher 3","timeStart":"09:00","timeEnd":"10:00"},{"type":"Fighting","trainer":"Teacher 5","timeStart":"14:00","timeEnd":"15:00"}]}]',
+      scheduleJson: window.vm.$data.scheduleJson,
+      hours: [{
+        start: '07',
+        title: '07:00'
+      }, {
+        'start': '08',
+        title: '08:00'
+      }, {
+        'start': '09',
+        title: '09:00'
+      }, {
+        'start': '10',
+        title: '10:00'
+      }, {
+        'start': '11',
+        title: '11:00'
+      }, {
+        'start': '12',
+        title: '12:00'
+      }, {
+        'start': '13',
+        title: '13:00'
+      }, {
+        'start': '14',
+        title: '14:00'
+      }, {
+        'start': '15',
+        title: '16:00'
+      }, {
+        'start': '17',
+        title: '17:00'
+      }, {
+        'start': '18',
+        title: '18:00'
+      }, {
+        'start': '19',
+        title: '19:00'
+      }, {
+        'start': '20',
+        title: '20:00'
+      }],
+      hourNotes: [],
+      postponeTimelId: null
+    };
+  },
+  components: {
+    Header: _components_Header_vue__WEBPACK_IMPORTED_MODULE_0__.default,
+    Breadcrumb: _components_Breadcrumb_vue__WEBPACK_IMPORTED_MODULE_1__.default,
+    Footer: _components_Footer_vue__WEBPACK_IMPORTED_MODULE_2__.default,
+    WorkoutItem: _components_WorkoutItem_vue__WEBPACK_IMPORTED_MODULE_3__.default
+  },
+  created: function created() {},
+  beforeRouteEnter: function beforeRouteEnter(to, from, next) {
+    window.vm.$data.isLoading = true;
+    fetch("/show-schedule").then(function (response) {
+      return response.json();
+    }).then(function (data) {
+      //todo use global state ala vuex
+      window.vm.$data.scheduleJson = data.data;
+    })["finally"](function () {
+      if (window.vm.$data.isLoading) {
+        window.vm.$data.isLoading = false;
+      }
+
+      next();
+    });
+  },
+  computed: {
+    /**
+     * week days and dates
+     * @returns {*[]}
+     */
+    scheduleHeaderDays: function scheduleHeaderDays() {
+      var list = [];
+
+      if (this.scheduleJson) {
+        for (var listKey in this.scheduleJson) {
+          if (this.scheduleJson[listKey].day !== 'Sunday') list.push({
+            'title': this.$i18n.t("days.".concat(this.scheduleJson[listKey].day)),
+            'date': this.scheduleJson[listKey].date
+          });
+        }
+      }
+
+      return list;
+    },
+
+    /**
+     * return all notes
+     * @returns {*[]}
+     */
+    hourNotes: function hourNotes() {
+      var list = [];
+
+      for (var h in this.hours) {
+        var hour = this.hours[h];
+        var hourNote = {
+          'title': hour.title,
+          'start': hour.start,
+          display: false,
+          days: {
+            'Monday': [],
+            'Tuesday': [],
+            'Wednesday': [],
+            'Thursday': [],
+            'Friday': [],
+            'Saturday': []
+          }
+        };
+        list.push(hourNote);
+      }
+
+      if (this.scheduleJson) {
+        for (var listKey in this.scheduleJson) {
+          if (this.scheduleJson[listKey].day == 'Sunday') {
+            continue;
+          } // loop days
+
+
+          for (var ik in list) {
+            // loop workouts
+            for (var ikW in this.scheduleJson[listKey].workouts) {
+              var startArr = this.scheduleJson[listKey].workouts[ikW].timeStart.split(':');
+              var start = startArr[0];
+
+              if (list[ik].start == start) {
+                // add workouts for time and day
+                list[ik].days[this.scheduleJson[listKey].day].push(this.scheduleJson[listKey].workouts[ikW]);
+              }
+            }
+          }
+        }
+      } // check if we have any workouts for start time
+
+
+      for (var i in list) {
+        for (var iKey in list[i].days) {
+          var notes = list[i].days[iKey];
+
+          if (notes.length > 0) {
+            list[i].display = true;
+          }
+        }
+      } // Return only hours with workouts
+
+
+      var result = [];
+
+      for (var _i in list) {
+        if (list[_i].display) result.push(list[_i]);
+      }
+
+      return result;
+    }
   }
 });
 
@@ -22885,9 +23141,11 @@ var _hoisted_1 = {
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Розклад");
 
-var _hoisted_4 = {
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+
+var _hoisted_5 = {
   "class": "navigation-mobile"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -22905,7 +23163,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     /* STABLE */
 
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/contacts-b"
+    to: "/schedule-gbs"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_3];
@@ -22913,7 +23171,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)])]);
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    to: "/contacts-b"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_4];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)])]);
 }
 
 /***/ }),
@@ -22936,15 +23203,17 @@ var _hoisted_1 = {
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Розклад");
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "address-mobile"
 }, "ТСК “МАГІГРАНД”, вул. Келецька, 78В", -1
 /* HOISTED */
 );
 
-var _hoisted_5 = {
+var _hoisted_6 = {
   style: {
     "padding": "26px"
   }
@@ -22971,7 +23240,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     /* STABLE */
 
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/contacts-b"
+    to: "/schedule-gbs"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_3];
@@ -22979,7 +23248,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  })])]), _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    to: "/contacts-b"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_4];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])]), _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
     to: "body"
   }, [$data.modalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_MakeOrderPopup, {
     key: 0,
@@ -23017,9 +23295,11 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNod
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Абонементи");
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Розклад");
 
-var _hoisted_8 = {
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+
+var _hoisted_9 = {
   "class": "navigation-mobile"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -23073,7 +23353,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     /* STABLE */
 
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/contacts-g"
+    to: "/schedule-gbs"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_7];
@@ -23081,7 +23361,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)])]);
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    to: "/contacts-g"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_8];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)])]);
 }
 
 /***/ }),
@@ -23112,15 +23401,17 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNod
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Абонементи");
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Розклад");
 
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "address-mobile"
 }, "ТСК “МАГІГРАНД”, вул. Келецька, 78В", -1
 /* HOISTED */
 );
 
-var _hoisted_9 = {
+var _hoisted_10 = {
   style: {
     "padding": "26px"
   }
@@ -23183,7 +23474,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     /* STABLE */
 
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/contacts-g"
+    to: "/schedule-gbs"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_7];
@@ -23191,7 +23482,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  })])]), _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    to: "/contacts-g"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_8];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])]), _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
     to: "body"
   }, [$data.modalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_MakeOrderPopup, {
     key: 0,
@@ -23223,9 +23523,11 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNod
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Розклад");
 
-var _hoisted_5 = {
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+
+var _hoisted_6 = {
   "class": "navigation-mobile"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -23252,7 +23554,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     /* STABLE */
 
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/contacts-s"
+    to: "/schedule-gbs"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_4];
@@ -23260,7 +23562,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)])]);
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    to: "/contacts-s"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_5];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)])]);
 }
 
 /***/ }),
@@ -23958,6 +24269,50 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/WorkoutItem.vue?vue&type=template&id=8bb92396&scoped=true":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/WorkoutItem.vue?vue&type=template&id=8bb92396&scoped=true ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("data-v-8bb92396");
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-8bb92396");
+
+var _hoisted_1 = {
+  "class": "schedule-day-note"
+};
+var _hoisted_2 = {
+  "class": "time"
+};
+var _hoisted_3 = {
+  "class": "type"
+};
+var _hoisted_4 = {
+  "class": "trainer"
+};
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
+
+var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.timeStart) + " - " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.timeEnd) + ", " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.duration) + " хв", 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.type), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_4, "тренер: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.trainer), 1
+  /* TEXT */
+  )]);
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/footerDesktop.vue?vue&type=template&id=7ce6f146&scoped=true":
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/footerDesktop.vue?vue&type=template&id=7ce6f146&scoped=true ***!
@@ -24047,33 +24402,35 @@ var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNo
 
 var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Абонементи");
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Розклад");
 
-var _hoisted_13 = {
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+
+var _hoisted_14 = {
   key: 1,
   "class": "line-2"
 };
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
 
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
 
-var _hoisted_16 = {
+var _hoisted_17 = {
   key: 2,
   "class": "line-2"
 };
 
-var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Послуги");
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Послуги");
 
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
 
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
 
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("hr", null, null, -1
+var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("hr", null, null, -1
 /* HOISTED */
 );
 
-var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "line-3"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "text-1"
@@ -24160,7 +24517,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "link-1",
-    to: "/contacts-g"
+    to: "/schedule-gbs"
   }, {
     "default": _withId(function () {
       return [_hoisted_12];
@@ -24168,12 +24525,22 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     _: 1
     /* STABLE */
 
-  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.$root.$data.area == 'b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "link-1",
+    to: "/contacts-g"
+  }, {
+    "default": _withId(function () {
+      return [_hoisted_13];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.$root.$data.area == 'b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "link-1",
     to: "/price-b"
   }, {
     "default": _withId(function () {
-      return [_hoisted_14];
+      return [_hoisted_15];
     }),
     _: 1
     /* STABLE */
@@ -24183,24 +24550,14 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     to: "/contacts-b"
   }, {
     "default": _withId(function () {
-      return [_hoisted_15];
+      return [_hoisted_16];
     }),
     _: 1
     /* STABLE */
 
-  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.$root.$data.area == 's' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.$root.$data.area == 's' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "link-1",
     to: "/areas-s"
-  }, {
-    "default": _withId(function () {
-      return [_hoisted_17];
-    }),
-    _: 1
-    /* STABLE */
-
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    "class": "link-1",
-    to: "/price-s"
   }, {
     "default": _withId(function () {
       return [_hoisted_18];
@@ -24210,7 +24567,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "link-1",
-    to: "/contacts-s"
+    to: "/price-s"
   }, {
     "default": _withId(function () {
       return [_hoisted_19];
@@ -24218,7 +24575,17 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     _: 1
     /* STABLE */
 
-  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_20, _hoisted_21]);
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "link-1",
+    to: "/contacts-s"
+  }, {
+    "default": _withId(function () {
+      return [_hoisted_20];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_21, _hoisted_22]);
 });
 
 /***/ }),
@@ -26325,6 +26692,127 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/Schedule.vue?vue&type=template&id=df451994&scoped=true":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/Schedule.vue?vue&type=template&id=df451994&scoped=true ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("data-v-df451994");
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-df451994");
+
+var _hoisted_1 = {
+  "class": "schedule"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+  "class": "title"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Розклад")], -1
+/* HOISTED */
+);
+
+var _hoisted_3 = {
+  "class": "schedule-wrapper"
+};
+var _hoisted_4 = {
+  "class": "schedule-table"
+};
+var _hoisted_5 = {
+  "class": "schedule-table-head calendar-days"
+};
+var _hoisted_6 = {
+  "class": "schedule-table-row"
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "schedule-table-column"
+}, "Час", -1
+/* HOISTED */
+);
+
+var _hoisted_8 = {
+  "class": "schedule-table-column"
+};
+var _hoisted_9 = {
+  "class": "day-date"
+};
+var _hoisted_10 = {
+  "class": "schedule-table-body"
+};
+var _hoisted_11 = {
+  "class": "schedule-table-row"
+};
+var _hoisted_12 = {
+  "class": "schedule-table-column"
+};
+var _hoisted_13 = {
+  "class": "schedule-day-time"
+};
+var _hoisted_14 = {
+  "class": "time"
+};
+var _hoisted_15 = {
+  "class": "schedule-table-column"
+};
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
+
+var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_Header = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Header");
+
+  var _component_Breadcrumb = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Breadcrumb");
+
+  var _component_workout_item = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("workout-item");
+
+  var _component_Footer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Footer");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header, {
+    "class": "header-invert"
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Breadcrumb), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [_hoisted_7, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.scheduleHeaderDays, function (oneDay) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(oneDay.title) + " ", 1
+    /* TEXT */
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(oneDay.date) + "р.", 1
+    /* TEXT */
+    )]);
+  }), 256
+  /* UNKEYED_FRAGMENT */
+  ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.hourNotes, function (hourNote) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(hourNote.title), 1
+    /* TEXT */
+    )])]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(hourNote.days, function (hourNotesDay) {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_15, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(hourNotesDay, function (workout) {
+        return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_workout_item, {
+          timeStart: workout.timeStart,
+          timeEnd: workout.timeEnd,
+          type: workout.type,
+          trainer: workout.trainer,
+          duration: workout.duration
+        }, null, 8
+        /* PROPS */
+        , ["timeStart", "timeEnd", "type", "trainer", "duration"]);
+      }), 256
+      /* UNKEYED_FRAGMENT */
+      ))]);
+    }), 256
+    /* UNKEYED_FRAGMENT */
+    ))]);
+  }), 256
+  /* UNKEYED_FRAGMENT */
+  ))])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  /* STABLE_FRAGMENT */
+  );
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/SimulatorsG.vue?vue&type=template&id=bcffb62e&scoped=true":
 /*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/SimulatorsG.vue?vue&type=template&id=bcffb62e&scoped=true ***!
@@ -26756,7 +27244,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
 "use strict";
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
 /* harmony import */ var _fawmi_vue_google_maps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fawmi/vue-google-maps */ "./node_modules/@fawmi/vue-google-maps/src/main.js");
 /* harmony import */ var _Root_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Root.vue */ "./resources/js/Root.vue");
 /* harmony import */ var _components_FeedBackView_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/FeedBackView.vue */ "./resources/js/components/FeedBackView.vue");
@@ -26775,11 +27263,12 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 /* harmony import */ var _views_PriceB_vue__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./views/PriceB.vue */ "./resources/js/views/PriceB.vue");
 /* harmony import */ var _views_PriceS_vue__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./views/PriceS.vue */ "./resources/js/views/PriceS.vue");
 /* harmony import */ var _views_Contacts_vue__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./views/Contacts.vue */ "./resources/js/views/Contacts.vue");
-/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/Home */ "./resources/js/components/Home.vue");
-/* harmony import */ var _components_MakeOrderPopup_vue__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/MakeOrderPopup.vue */ "./resources/js/components/MakeOrderPopup.vue");
-/* harmony import */ var _plugins_i18n_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./plugins/i18n.js */ "./resources/js/plugins/i18n.js");
-/* harmony import */ var mobile_device_detect__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! mobile-device-detect */ "./node_modules/mobile-device-detect/dist/index.js");
-/* harmony import */ var mobile_device_detect__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(mobile_device_detect__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _views_Schedule_vue__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./views/Schedule.vue */ "./resources/js/views/Schedule.vue");
+/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/Home */ "./resources/js/components/Home.vue");
+/* harmony import */ var _components_MakeOrderPopup_vue__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/MakeOrderPopup.vue */ "./resources/js/components/MakeOrderPopup.vue");
+/* harmony import */ var _plugins_i18n_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./plugins/i18n.js */ "./resources/js/plugins/i18n.js");
+/* harmony import */ var mobile_device_detect__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! mobile-device-detect */ "./node_modules/mobile-device-detect/dist/index.js");
+/* harmony import */ var mobile_device_detect__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(mobile_device_detect__WEBPACK_IMPORTED_MODULE_23__);
 // require('./bootstrap');
 
 
@@ -26805,11 +27294,12 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
 
 
-var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_23__.createRouter)({
-  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_23__.createWebHistory)(),
+
+var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_24__.createRouter)({
+  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_24__.createWebHistory)(),
   routes: [{
     path: '/',
-    component: _components_Home__WEBPACK_IMPORTED_MODULE_19__.default,
+    component: _components_Home__WEBPACK_IMPORTED_MODULE_20__.default,
     name: 'home'
   }, {
     path: '/level-:level',
@@ -26843,6 +27333,10 @@ var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_23__.createRouter)({
     meta: {
       area: 'g'
     }
+  }, {
+    path: '/schedule-gbs',
+    component: _views_Schedule_vue__WEBPACK_IMPORTED_MODULE_19__.default,
+    name: 'Schedule'
   }, {
     path: '/areas-g-old',
     // TODO Remove if version with video is OK.
@@ -26944,13 +27438,14 @@ var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_23__.createRouter)({
 });
 var _data = {
   isLoading: false,
-  isMobile: mobile_device_detect__WEBPACK_IMPORTED_MODULE_22__.isMobile,
-  isMobileOnly: mobile_device_detect__WEBPACK_IMPORTED_MODULE_22__.isMobileOnly,
-  area: ''
+  isMobile: mobile_device_detect__WEBPACK_IMPORTED_MODULE_23__.isMobile,
+  isMobileOnly: mobile_device_detect__WEBPACK_IMPORTED_MODULE_23__.isMobileOnly,
+  area: '',
+  scheduleJson: {}
 };
 router.beforeEach(function (to, from, next) {
   window.vm.$data.area = to.meta.area;
-  window.vm.$data.isMobile = mobile_device_detect__WEBPACK_IMPORTED_MODULE_22__.isMobile;
+  window.vm.$data.isMobile = mobile_device_detect__WEBPACK_IMPORTED_MODULE_23__.isMobile;
   next();
 });
 var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
@@ -26963,7 +27458,7 @@ var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
   }
 });
 app.use(router);
-app.use(_plugins_i18n_js__WEBPACK_IMPORTED_MODULE_21__.i18n);
+app.use(_plugins_i18n_js__WEBPACK_IMPORTED_MODULE_22__.i18n);
 app.use(_fawmi_vue_google_maps__WEBPACK_IMPORTED_MODULE_1__.default, {
   load: {
     key: 'AIzaSyAtPFNu4yHiJm6G2QgLQ2eZs2tFnMkJoTU' // key: 'AIzaSyBJ2TlWNjUrKtlb098kaEn-LiKjmApa-sM',
@@ -46324,6 +46819,34 @@ _VideoMobile_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__
 
 /***/ }),
 
+/***/ "./resources/js/components/WorkoutItem.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/WorkoutItem.vue ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _WorkoutItem_vue_vue_type_template_id_8bb92396_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./WorkoutItem.vue?vue&type=template&id=8bb92396&scoped=true */ "./resources/js/components/WorkoutItem.vue?vue&type=template&id=8bb92396&scoped=true");
+/* harmony import */ var _WorkoutItem_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./WorkoutItem.vue?vue&type=script&lang=js */ "./resources/js/components/WorkoutItem.vue?vue&type=script&lang=js");
+
+
+
+
+;
+_WorkoutItem_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _WorkoutItem_vue_vue_type_template_id_8bb92396_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render
+_WorkoutItem_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__scopeId = "data-v-8bb92396"
+/* hot reload */
+if (false) {}
+
+_WorkoutItem_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/components/WorkoutItem.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_WorkoutItem_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
 /***/ "./resources/js/components/footerDesktop.vue":
 /*!***************************************************!*\
   !*** ./resources/js/components/footerDesktop.vue ***!
@@ -46825,6 +47348,34 @@ if (false) {}
 _PriceS_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/views/PriceS.vue"
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_PriceS_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
+/***/ "./resources/js/views/Schedule.vue":
+/*!*****************************************!*\
+  !*** ./resources/js/views/Schedule.vue ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Schedule_vue_vue_type_template_id_df451994_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Schedule.vue?vue&type=template&id=df451994&scoped=true */ "./resources/js/views/Schedule.vue?vue&type=template&id=df451994&scoped=true");
+/* harmony import */ var _Schedule_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Schedule.vue?vue&type=script&lang=js */ "./resources/js/views/Schedule.vue?vue&type=script&lang=js");
+
+
+
+
+;
+_Schedule_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _Schedule_vue_vue_type_template_id_df451994_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render
+_Schedule_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__scopeId = "data-v-df451994"
+/* hot reload */
+if (false) {}
+
+_Schedule_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/views/Schedule.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_Schedule_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
 
 /***/ }),
 
@@ -47407,6 +47958,21 @@ _TicketsG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__fil
 
 /***/ }),
 
+/***/ "./resources/js/components/WorkoutItem.vue?vue&type=script&lang=js":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/WorkoutItem.vue?vue&type=script&lang=js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_WorkoutItem_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_WorkoutItem_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./WorkoutItem.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/WorkoutItem.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/components/footerDesktop.vue?vue&type=script&lang=js":
 /*!***************************************************************************!*\
   !*** ./resources/js/components/footerDesktop.vue?vue&type=script&lang=js ***!
@@ -47673,6 +48239,21 @@ _TicketsG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__fil
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_PriceS_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_PriceS_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./PriceS.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/PriceS.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/views/Schedule.vue?vue&type=script&lang=js":
+/*!*****************************************************************!*\
+  !*** ./resources/js/views/Schedule.vue?vue&type=script&lang=js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Schedule_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Schedule_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Schedule.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/Schedule.vue?vue&type=script&lang=js");
  
 
 /***/ }),
@@ -48217,6 +48798,21 @@ _TicketsG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__fil
 
 /***/ }),
 
+/***/ "./resources/js/components/WorkoutItem.vue?vue&type=template&id=8bb92396&scoped=true":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/WorkoutItem.vue?vue&type=template&id=8bb92396&scoped=true ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_WorkoutItem_vue_vue_type_template_id_8bb92396_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_WorkoutItem_vue_vue_type_template_id_8bb92396_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./WorkoutItem.vue?vue&type=template&id=8bb92396&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/WorkoutItem.vue?vue&type=template&id=8bb92396&scoped=true");
+
+
+/***/ }),
+
 /***/ "./resources/js/components/footerDesktop.vue?vue&type=template&id=7ce6f146&scoped=true":
 /*!*********************************************************************************************!*\
   !*** ./resources/js/components/footerDesktop.vue?vue&type=template&id=7ce6f146&scoped=true ***!
@@ -48483,6 +49079,21 @@ _TicketsG_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__fil
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_PriceS_vue_vue_type_template_id_5e8f0d09_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_PriceS_vue_vue_type_template_id_5e8f0d09_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./PriceS.vue?vue&type=template&id=5e8f0d09&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/PriceS.vue?vue&type=template&id=5e8f0d09&scoped=true");
+
+
+/***/ }),
+
+/***/ "./resources/js/views/Schedule.vue?vue&type=template&id=df451994&scoped=true":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/views/Schedule.vue?vue&type=template&id=df451994&scoped=true ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Schedule_vue_vue_type_template_id_df451994_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Schedule_vue_vue_type_template_id_df451994_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Schedule.vue?vue&type=template&id=df451994&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/Schedule.vue?vue&type=template&id=df451994&scoped=true");
 
 
 /***/ }),
@@ -57185,7 +57796,7 @@ webpackContext.id = "./resources/assets sync recursive ^\\.\\/.*$";
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"trainers":[{"firstName":"Володимир","lastName":"Лєсков","direction":"Cycle, Games, персональні тренування","description":"Самий позитивний тренер G level, який одночасно вміє бути ніжним, але і досить вимогливим! Його групові тренування наповнені шаленою енергією та пристрастю. Володимир кваліфікований персональний тренер, який власним прикладом мотивує своїх клієнтів. Отримав кубок України WABBA  за I місце в категорії «Men\'sPhysique» та  I місце в абсолютній категорії «Men\'sPhysique» (2020 р.) та входить в топ VI «Mг.Universe» WABBA (Португалія, 2020р.). А ще він обожнює готувати, так як в минулому – кондитер, тому звертайтесь за рецептами правильного харчування.)"},{"firstName":"Ірина","lastName":"Слюсаренко","direction":"CrossFit","description":"Ірина – тренер, від погляду якої серце починає битись швидше, а твої спортивні досягнення  - рости з кожною хвилиною, тому що з нею ви зробите те, про що навіть і не мріяли : 100 віджимань, 50 бурпі чи 20 підтягувань… З Іриною – запросто! Вона - наша королева мотивації! А її досягнення являються підтвердженням цього факту: Майстер спорту з веслування, Майстер спорту з важкої атлетики, КМС з плавання, Чемпіон і призер України з веслування, 8 місце, Чемпіонат Світу з веслування, 2 місце CrossFit на звання «Найбільш підготовлена людина країни», 3 місце CrossFit banda Open в категорії Elite 8 місце CrossFit Games Open."},{"firstName":"Ольга","lastName":"Депешко","direction":"Персональні тренування","description":"Ззовні дуже тендітна Ольга, проведе вас через всі випробування і буде поруч з вами на кожному кроці. Вона подбає про те, щоб ви отримували максимум задоволення від кожного тренування. Також Ольга нутриціолог з восьмирічним досвідом роботи, сама багато навчається і вас обіцяє навчити їсти смачно та здорово. Вона працює не тільки з тілом, а із внутрішнім світом. Діюча учасниця змагання в категорії – бікіні."},{"firstName":"Ольга","lastName":"Марценюк","direction":"Barre, Пілатес","description":"Тренер, який зачаровує своєю посмішкою з першої хвилини знайомства! Ольга не вірить в обмеження і знає, як вам розкрити свій потенціал на максимум. Вас чекають фантастичні пліє, релєве, рівна осанка та неймовірно приємна крепатура! Її тренування приносять моральне задоволення та формують неймовірне тіло!"},{"firstName":"Віталій","lastName":"Каськун","direction":"Персональні тренування","description":"Професійний спортсмен, кваліфікований пауерліфтер, персональний тренер, з яким не лише корисно, але й дуже захопливо тренуватись! Він знає, як знайти підхід до кожного, як правильно ставити спортивні  цілі, та як вас стимулювати до їх досягнення! Кредо Віталія: « Не зупинятися на досягнутому та підкорювати нові вершини». Підготував чимало призерів в чемпіонатах України та здобув повагу і прихильність в професійному колі, а ще виховує двух прекрасних синочків!"},{"firstName":"Михайло","lastName":"Галаган","direction":"Fighting, Тхеквондо","description":"Тренер-викладач з єдиноборств та авторської програми Fit-Fight. Михайло - володар Чорного Пояси 3-го дану з Тхеквондо. Виховав не одного чемпіона України та Європи. Завдяки своєму десятирічному стажу, він знає, як поставити удар, розвинути взривну силу, швидкість та витривалість, спалити калорії та виплеснути всю агресію. Відчуйте себе чемпіоном! Ви покинете файтинг зону неймовірно стомленим, але точно захочете повернутися ще раз. Тренування з Михайлом – найкрутіша антистрес-терапія."},{"firstName":"Ольга","lastName":"Осадчук","direction":"Персональні тренування","description":"Ольга  - сертифікований персональний тренер, який дуже швидко стане вашим близьким другом та наставником! Вона чемпіонка України з літнього біатлону.  Тому для неї – це не просто спорт, а сенс життя – допомогти людям, і це не стосується тільки тіла, а насамперед - вашого здоров’я та щоденного самопочуття. На кожному тренуванні вона віддається повністю та веде вас щодня до цілі! І будьте впевнені, на її тренуванні у вас не вийде відпочити, її шалена енергія змусить вас дізнатись, на що ви здатні!"},{"firstName":"Тетяна","lastName":"Подзигун","direction":"Cycle, Games, персональні тренування","description":"Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba,ufbf-official,fbbu, вона розуміє, як довести себе та вас до крайності як фізично, так і розумово. Повірте, вона знає, як «вичавити» з вас всі соки!) Так швидко та емоційно ви ще не крутили педалі…)"},{"firstName":"Валентин","lastName":"Шпильчук","direction":"Персональні тренування","description":"Персональний тренер з дев’ятирічним досвідом. Валентин володіє електричною енергією, якою заряджає всіх клієнтів на результат! Філософія його тренувань: максимум комфорту та прогресу. Роблячи акцент на функціональному та спортивному фітнесі, Валентин наблизить вас до вашої мрії! Ви ніколи не дізнаєтесь своїх меж, поки не досягнете їх!"},{"firstName":"Сергій","lastName":"Мельник","direction":"Персональні тренування","description":"Майстер спорту з важкої атлетики, тричі призер юніороского чемпіонату України з важкої атлетики. Сергій спокійно та без крику заставить вас піднімати більше, бігти швидше та качати активніше! І повірте, ви не пропустите жодного заняття! З ним успіх гарантований!"},{"firstName":"Олена","lastName":"Семенчук","direction":"Йога","description":"Психолог за освітою, Олена познайомилась з йогою – і зрозуміла, що це її життя! Вона викладач Кундаліні-Йоги. Протягом багатьох століть ця практика була перевагою для обраних і зберігалася у великому секреті. Але сьогодні  вже кожен може знахойти в ній щось для себе. Хтось прагне зміцнити фізичне здоров\'я,  хтось хоче впоратися зі стресом, хтось націлений на роботу з енергією, а хтось любить співати мантри. Олена буде найкращим провідником в світ гармонії на пізнання себе! Навчить вас ОШО медитації, віппассані (класичній медитації) та холотропному диханню. А ще Олена грає на бандурі та малює картини, як бачила – йога ще відкриває ваш творчий потенціал."},{"firstName":"Василь","lastName":"Нечко","direction":"Персональні тренування","description":"Майстер спорту міжнародного класу, чемпіон світу та рекордсмен України – все це про Василя. А ще це наш старший персональний тренер, який з перших хвилин знайомства вразить вас своєю харизмою та впевненістю. Бунтар з безліччю талантів. Він вважає, що фітнес повинен бути приємним, але таким же складним, як і життя. Його заняття зосереджені на ефективних вправах, які кидають виклик вашому тілу."},{"firstName":"Юля","lastName":"Горнушкіна","direction":"Персональні тренування","description":"Юля з професійної сторони точно знає, що потрібно робити, щоб почувати себе здорово та при цьому мати рельєфне тіло. В минулому лікар, учасниця медичних конференцій, а також сертифікований дієтолог- нутриціолог. Мотивація, гарний настрій і потужна енергія тренера змусять вас працювати на максимум! Готуйтесь, це будуть спекотні тренування!"},{"firstName":"Олена","lastName":"Дементьєва","direction":"Barre, Пілатес","description":"Олена з 6 років у професійному спорті, КМС з спортивно-бальних танців, представляла Україну в численних міжнародних змаганнях. Фітнес кар’єру розпочала в Італії, сертифікований фітнес тренер. Олена дуже ніжна, тендітна та виважена дівчина, але, водночас, супер енергійний та вимоглевий викладач! Як тільки заходиш в зал, то одразу вирівнюєщ осанку та тягенш нососочки! Її креативні заняття здивують навіть спортивних гуманів!"}]}');
+module.exports = JSON.parse('{"trainers":[{"firstName":"Володимир","lastName":"Лєсков","direction":"Cycle, Games, персональні тренування","description":"Самий позитивний тренер G level, який одночасно вміє бути ніжним, але і досить вимогливим! Його групові тренування наповнені шаленою енергією та пристрастю. Володимир кваліфікований персональний тренер, який власним прикладом мотивує своїх клієнтів. Отримав кубок України WABBA  за I місце в категорії «Men\'sPhysique» та  I місце в абсолютній категорії «Men\'sPhysique» (2020 р.) та входить в топ VI «Mг.Universe» WABBA (Португалія, 2020р.). А ще він обожнює готувати, так як в минулому – кондитер, тому звертайтесь за рецептами правильного харчування.)"},{"firstName":"Ірина","lastName":"Слюсаренко","direction":"CrossFit","description":"Ірина – тренер, від погляду якої серце починає битись швидше, а твої спортивні досягнення  - рости з кожною хвилиною, тому що з нею ви зробите те, про що навіть і не мріяли : 100 віджимань, 50 бурпі чи 20 підтягувань… З Іриною – запросто! Вона - наша королева мотивації! А її досягнення являються підтвердженням цього факту: Майстер спорту з веслування, Майстер спорту з важкої атлетики, КМС з плавання, Чемпіон і призер України з веслування, 8 місце, Чемпіонат Світу з веслування, 2 місце CrossFit на звання «Найбільш підготовлена людина країни», 3 місце CrossFit banda Open в категорії Elite 8 місце CrossFit Games Open."},{"firstName":"Ольга","lastName":"Депешко","direction":"Персональні тренування","description":"Ззовні дуже тендітна Ольга, проведе вас через всі випробування і буде поруч з вами на кожному кроці. Вона подбає про те, щоб ви отримували максимум задоволення від кожного тренування. Також Ольга нутриціолог з восьмирічним досвідом роботи, сама багато навчається і вас обіцяє навчити їсти смачно та здорово. Вона працює не тільки з тілом, а із внутрішнім світом. Діюча учасниця змагання в категорії – бікіні."},{"firstName":"Ольга","lastName":"Марценюк","direction":"Barre, Пілатес","description":"Тренер, який зачаровує своєю посмішкою з першої хвилини знайомства! Ольга не вірить в обмеження і знає, як вам розкрити свій потенціал на максимум. Вас чекають фантастичні пліє, релєве, рівна осанка та неймовірно приємна крепатура! Її тренування приносять моральне задоволення та формують неймовірне тіло!"},{"firstName":"Віталій","lastName":"Каськун","direction":"Персональні тренування","description":"Професійний спортсмен, кваліфікований пауерліфтер, персональний тренер, з яким не лише корисно, але й дуже захопливо тренуватись! Він знає, як знайти підхід до кожного, як правильно ставити спортивні  цілі, та як вас стимулювати до їх досягнення! Кредо Віталія: « Не зупинятися на досягнутому та підкорювати нові вершини». Підготував чимало призерів в чемпіонатах України та здобув повагу і прихильність в професійному колі, а ще виховує двух прекрасних синочків!"},{"firstName":"Михайло","lastName":"Галаган","direction":"Fighting, Тхеквондо","description":"Тренер-викладач з єдиноборств та авторської програми Fit-Fight. Михайло - володар Чорного Пояси 3-го дану з Тхеквондо. Виховав не одного чемпіона України та Європи. Завдяки своєму десятирічному стажу, він знає, як поставити удар, розвинути взривну силу, швидкість та витривалість, спалити калорії та виплеснути всю агресію. Відчуйте себе чемпіоном! Ви покинете файтинг зону неймовірно стомленим, але точно захочете повернутися ще раз. Тренування з Михайлом – найкрутіша антистрес-терапія."},{"firstName":"Ольга","lastName":"Осадчук","direction":"Персональні тренування","description":"Ольга  - сертифікований персональний тренер, який дуже швидко стане вашим близьким другом та наставником! Вона чемпіонка України з літнього біатлону.  Тому для неї – це не просто спорт, а сенс життя – допомогти людям, і це не стосується тільки тіла, а насамперед - вашого здоров’я та щоденного самопочуття. На кожному тренуванні вона віддається повністю та веде вас щодня до цілі! І будьте впевнені, на її тренуванні у вас не вийде відпочити, її шалена енергія змусить вас дізнатись, на що ви здатні!"},{"firstName":"Тетяна","lastName":"Подзигун","direction":"Cycle, Games, персональні тренування","description":"Найголовніше, чого прагне Таня, це те, щоб ви вийшли з студії щасливими! Будучи багаторазовою призеркою у категорії фітнес бікіні 35+ у федерації wabba,ufbf-official,fbbu, вона розуміє, як довести себе та вас до крайності як фізично, так і розумово. Повірте, вона знає, як «вичавити» з вас всі соки!) Так швидко та емоційно ви ще не крутили педалі…)"},{"firstName":"Валентин","lastName":"Шпильчук","direction":"Персональні тренування","description":"Персональний тренер з дев’ятирічним досвідом. Валентин володіє електричною енергією, якою заряджає всіх клієнтів на результат! Філософія його тренувань: максимум комфорту та прогресу. Роблячи акцент на функціональному та спортивному фітнесі, Валентин наблизить вас до вашої мрії! Ви ніколи не дізнаєтесь своїх меж, поки не досягнете їх!"},{"firstName":"Сергій","lastName":"Мельник","direction":"Персональні тренування","description":"Майстер спорту з важкої атлетики, тричі призер юніороского чемпіонату України з важкої атлетики. Сергій спокійно та без крику заставить вас піднімати більше, бігти швидше та качати активніше! І повірте, ви не пропустите жодного заняття! З ним успіх гарантований!"},{"firstName":"Олена","lastName":"Семенчук","direction":"Йога","description":"Психолог за освітою, Олена познайомилась з йогою – і зрозуміла, що це її життя! Вона викладач Кундаліні-Йоги. Протягом багатьох століть ця практика була перевагою для обраних і зберігалася у великому секреті. Але сьогодні  вже кожен може знахойти в ній щось для себе. Хтось прагне зміцнити фізичне здоров\'я,  хтось хоче впоратися зі стресом, хтось націлений на роботу з енергією, а хтось любить співати мантри. Олена буде найкращим провідником в світ гармонії на пізнання себе! Навчить вас ОШО медитації, віппассані (класичній медитації) та холотропному диханню. А ще Олена грає на бандурі та малює картини, як бачила – йога ще відкриває ваш творчий потенціал."},{"firstName":"Василь","lastName":"Нечко","direction":"Персональні тренування","description":"Майстер спорту міжнародного класу, чемпіон світу та рекордсмен України – все це про Василя. А ще це наш старший персональний тренер, який з перших хвилин знайомства вразить вас своєю харизмою та впевненістю. Бунтар з безліччю талантів. Він вважає, що фітнес повинен бути приємним, але таким же складним, як і життя. Його заняття зосереджені на ефективних вправах, які кидають виклик вашому тілу."},{"firstName":"Юля","lastName":"Горнушкіна","direction":"Персональні тренування","description":"Юля з професійної сторони точно знає, що потрібно робити, щоб почувати себе здорово та при цьому мати рельєфне тіло. В минулому лікар, учасниця медичних конференцій, а також сертифікований дієтолог- нутриціолог. Мотивація, гарний настрій і потужна енергія тренера змусять вас працювати на максимум! Готуйтесь, це будуть спекотні тренування!"},{"firstName":"Олена","lastName":"Дементьєва","direction":"Barre, Пілатес","description":"Олена з 6 років у професійному спорті, КМС з спортивно-бальних танців, представляла Україну в численних міжнародних змаганнях. Фітнес кар’єру розпочала в Італії, сертифікований фітнес тренер. Олена дуже ніжна, тендітна та виважена дівчина, але, водночас, супер енергійний та вимоглевий викладач! Як тільки заходиш в зал, то одразу вирівнюєщ осанку та тягенш нососочки! Її креативні заняття здивують навіть спортивних гуманів!"}],"days":{"Monday":"Понедельник","Tuesday":"Вторник","Wednesday":"Среда","Thursday":"Четверг","Friday":"Пятница","Sunday":"Суббота"}}');
 
 /***/ }),
 
@@ -57196,7 +57807,7 @@ module.exports = JSON.parse('{"trainers":[{"firstName":"Володимир","las
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"trainers":[{"firstName":"Володимир","lastName":"Лєсков","direction":"Cycle, Games, персональні тренування","description":"Самий позитивний тренер G Level, який водночас і ніжний, і надзвичайно вимогливий! Його групові тренування шалені, енергійні та пристрасні. Володимир кваліфікований персональний тренер, який власним прикладом мотивує своїх клієнтів. Володар кубку України WABBA за I місце в категорії «Men\'sPhysique» та I місце в абсолютній категорії «Men\'sPhysique» (2020 р.), входить в топ VI «Mr.Universe» WABBA (Португалія, 2020 р.). А ще він обожнює готувати, так як в минулому – кондитер, тому звертайтесь за рецептами правильного харчування."},{"firstName":"Ольга","lastName":"Депешко","direction":"Персональні тренування","description":"Ззовні дуже тендітна Ольга проведе вас через всі випробування і буде поруч з вами на кожному, навіть найменшому кроці. Вона створить таку атмосферу, щоб ви отримали максимум задоволення від кожного тренування. Також Ольга нутриціолог з восьмирічним досвідом роботи, сама багато навчається і вас обіцяє навчити їсти смачно та здорово. Вона працює не тільки з тілом, а із внутрішнім світом. Діюча учасниця змагання в категорії – бікіні."},{"firstName":"Ольга","lastName":"Марценюк","direction":"Barre, Пілатес","description":"Тренер, який зачаровує своєю посмішкою з першої хвилини знайомства! Ольга не вірить в обмеження і знає, як розкрити ваш потенціал на максимум. Вас чекають вражаючі пліє, релєве, рівна осанка та неймовірно приємна крепатура! Її тренування приносять моральне задоволення та формують фантастичне тіло!"},{"firstName":"Михайло","lastName":"Галаган","direction":"Fighting, Тхеквондо","description":"Тренер-викладач з єдиноборств та авторської програми Fit-Fight. Михайло - володар Чорного Поясу 3-го дану з Тхеквондо. Виховав не одного чемпіона України та Європи. Завдяки своєму десятирічному стажу він знає, як поставити удар, розвинути вибухову силу, швидкість та витривалість, спалити калорії та виплеснути всю агресію. Відчуй себе чемпіоном! Ви покинете файтинг зону неймовірно стомленим, але точно захочете повернутися ще раз. Тренування з Михайлом – найкрутіша антистрес-терапія."},{"firstName":"Ольга","lastName":"Осадчук","direction":"Персональні тренування","description":"Ольга  - сертифікований персональний тренер, який дуже швидко стане вашим близьким другом та наставником! Вона - чемпіонка України з літнього біатлону. Для неї – це не просто спорт, а сенс життя – допомогти людям. Розмова не лише про тіло, а насамперед - ваше здоров’я та щоденне самопочуття. На кожному тренуванні вона віддається повністю та веде вас щодня до цілі! Будьте впевнені, що на її тренуванні у вас не вийде відпочити, її шалена енергія змусить відкрити усе на що здатні саме Ви!"},{"firstName":"Валентин","lastName":"Шпильчук","direction":"Персональні тренування","description":"Ольга  - сертифікований персональний тренер, який дуже швидко стане вашим близьким другом та наставником! Вона - чемпіонка України з літнього біатлону. Для неї – це не просто спорт, а сенс життя – допомогти людям. Розмова не лише про тіло, а насамперед - ваше здоров’я та щоденне самопочуття. На кожному тренуванні вона віддається повністю та веде вас щодня до цілі! Будьте впевнені, що на її тренуванні у вас не вийде відпочити, її шалена енергія змусить відкрити усе на що здатні саме Ви!"},{"firstName":"Сергій","lastName":"Мельник","direction":"Персональні тренування","description":"Майстер спорту з важкої атлетики, тричі призер юніорского чемпіонату України з важкої атлетики. Сергій спокійно та без крику заставить вас піднімати більше, бігти швидше та качати активніше! І повірте, ви не пропустите жодного заняття! З ним успіх гарантований!"},{"firstName":"Олена","lastName":"Семенчук","direction":"Йога","description":"Психолог за освітою, Олена познайомилась з йогою – і зрозуміла, що це її життя! Вона викладач Кундаліні-Йоги. Протягом багатьох століть ця практика була перевагою для обраних і зберігалася у великому секреті. Але сьогодні кожен може знайти в ній щось для себе. Хтось прагне зміцнити фізичне здоров\'я,  хтось хоче впоратися зі стресом, хтось націлений на роботу з енергією, а хтось любить співати мантри. Олена буде найкращим провідником в світ гармонії на пізнання себе! Навчить вас ОШО медитації, віппассані (класичній медитації) та холотропному диханню. А ще Олена грає на бандурі та малює картини. Як бачите– йога ще відкриває ваш творчий потенціал."},{"firstName":"Василь","lastName":"Нечко","direction":"Персональні тренування","description":"Майстер спорту міжнародного класу, чемпіон світу та рекордсмен України – все це про Василя. А ще він наш старший персональний тренер, який з перших хвилин знайомства вразить вас своєю харизмою та впевненістю. Бунтар з безліччю талантів. Він вважає, що фітнес повинен бути приємним, але таким же складним, як і життя. Його заняття зосереджені на ефективних вправах, які кидають виклик вашому тілу."},{"firstName":"Юля","lastName":"Горнушкіна","direction":"Персональні тренування","description":"Юля з професійної сторони точно знає, що потрібно робити, щоб почувати себе здорово та при цьому мати рельєфне тіло. В минулому лікар, учасниця медичних конференцій, а також сертифікований дієтолог- нутриціолог. Мотивація, гарний настрій і потужна енергія тренера змусять вас працювати на максимум! Готуйтесь, це будуть спекотні тренування!"},{"firstName":"Олена","lastName":"Дементьєва","direction":"Barre, Пілатес","description":"Олена з 6 років у професійному спорті, КМС з спортивно-бальних танців, представляла Україну в численних міжнародних змаганнях. Фітнес кар’єру розпочала в Італії, сертифікований фітнес тренер. Олена дуже ніжна, тендітна та виважена дівчина, але, водночас, супер енергійний та вимогливий викладач! Як тільки заходиш в зал, то одразу вирівнюєш осанку та тягнеш носочки! Її креативні заняття здивують навіть спортивних гурманів!"},{"firstName":"Ніна ","lastName":"Шевчук","direction":"Персональні тренування","description":"Персональний тренер з восьмирічним досвідом роботи. Її спеціалізація - силовий фітнес, функціональні тренування, TRX та заняття з вагітними. Ніна врахує ваші можливості та бажання, зробить тренування максимально комфортними і результативними. Після занять ви відчуєте, що живете на повну! А ще Ніна захоплюється кулінарією та багато подорожує! Тож ласкаво запрошує вас у мандрівку по вашому вдосконаленню!"},{"firstName":"Інна ","lastName":"Арсьонова","direction":"Йога","description":"Інструктор з хатха-йоги, вчитель 1-го рівня Кундаліні йоги. Інна практикує вже понад 15 років, а досвід викладання - близько 10 років. Хатха йога відноситься до того напрямку йоги, де основною метою практики є фізичне здоров\'я людини. Стан повного здоров\'я як ніколи наближає особистість до вищих істин і гармонії. Практикуючи йогу з Інною, ви станете на шлях набуття рівноваги і духовного зростання."}],"simulators":[{"name":"Тренажер «вертикальна тяга» Vertical Traction","description":"Тренажер Vertical Traction призначений для розвитку найбільших м\'язів верхньої частини тіла - найширших м\'язів спини."},{"name":"Тренажер «жим від плеча вгору» Shoulder Press","description":"Тренажер Shoulder Press дозволяє виконувати базове для дельтоподібних м\'язів вправа - «армійський жим» в положенні сидячи."},{"name":"Тренажер «жим від грудей» Chest Press","description":"Тренажер Chest Press дає можливість виконувати базова вправа для грудних м\'язів - жим від грудей."},{"name":"Багатофункціональний тренажер Dual Pec/Rev Fly","description":"Тренажер Dual Pectoral / Reverse Fly призначений для виконання двох вправ - «зведення рук» зміцнює м\'язи грудей, додаткове навантаження отримують передній пучок дельтоподібних м\'язів і біцепс плеча; «Розведення рук» зміцнює задній пучок дельтоподібних м\'язів, додаткове навантаження отримують ромбовидні і трапецієподібні м\'язи."},{"name":"Тренажер PULLDOWN N «вертикальна тяга» з дисковим навантаженням","description":"Тренажер призначений для вертикальної тяги до грудей в положенні сидячи. Вправа розвиває найширші м\'язи спини, додаткове навантаження отримує біцепс плеча."},{"name":"Тренажер «гребна тяга» Low Row","description":"Тренажер Low Row дозволяє зміцнити найширші м\'язи спини, виконуючи одне з базових вправ - горизонтальну тягу."},{"name":"Тренажер «жим від грудей з широким хватом» з дисковим навантаженням","description":"Wide Chest Press - тренажер дозволяє виконувати вправи, що нагадують руху на підйом гантелей, лежачи на лаві з негативним нахилом із задіянням нижній частині грудних м\'язів."},{"name":"Тренажер Incline chest press «жим від грудей під кутом» з дисковим навантаженням","description":"Incline Chest Press - тренажер повторює рухи на відведення гантелей на похилій лаві з залученням м\'язів верхньої частини грудей."},{"name":"Багатофункціональний тренажер для ніг Dual Abd","description":"Тренажер Dual Abductor / Adductor дозволяє виконувати дві вправи - «зведення ніг» зміцнює що приводять м\'язи стегна; «Розведення ніг» навантажує сідничні м\'язи"},{"name":"Тренажер «розгинання ніг» Leg Extension","description":"Тренажер Leg Extension дає можливість виконувати вправу «розгинання ніг в положенні сидячи» для розвитку найбільших м\'язів ніг - квадріцепсов"},{"name":"Тренажер «згинання ніг лежачи» Ne Leg Curl","description":"Тренажер для тренування задньої поверхні стегна. Легко налаштовується для використання атлетами різного зросту."},{"name":"Тренажер Calf для литкових м’язів з дисковим навантаженням","description":"Опрацювання литкових м\'язів на цьому тренажері можлива без навантаження на хребетний стовп. Ефективність вправ настільки ж висока, як і при заняттях у вільній вазі завдяки використанню атлетичних дисків. Матеріал BODY PRINT приймає форму фігури спортсмена, роблячи заняття гранично комфортними."},{"name":"Тренажер REAR KICK для сідничних м’язів з дисковим навантаженням","description":"Широка амплітуда вправи дозволяє тренувати сідниці в максимально природних умовах і для ефективного результату"},{"name":"Тренажер LINEAR LEG PRESS «жим ногами» з дисковим навантаженням","description":""},{"name":"Тренажер LEG PRESS","description":"Ця модель тренажера дозволяє ефективно опрацювати всі м\'язи ніг від сідниць до литкових."},{"name":"Тренажер LEG CURL","description":"Тренажер серії SELECTION 700 для цільових тренувань м`язів задньої поверхні стегна."},{"name":"Тренажер Hack Squat","description":"Тренажер «Гакк-присідання» для тренування м\'язів ніг і сідничних м\'язів"},{"name":"Бігова доріжка Run Live 500","description":"У біговій доріжці Excite Live Run немає нічого, що може зашкодити вашому бігу. Низьке бігове полотно зручно для заходу на тренажер. Бічні ручки вкорочені і не утрудняють рухів руками. Біжіть вільно, як по доріжці в парку."},{"name":"Орбітрек Synchro Live 700","description":"Excite Live Synchro - тренажер, який захоплює тренуваннями і кожен день знаходить нові приводи для натхнення і прогресу. Регульована рампа від 5 до 33 градусів дозволяє опрацювати м\'язи ніг і сідничні м\'язи. Сучасна консоль поєднує масу програм тренувань і додатків для розваги. Плавні махові руху без ривків і ударного навантаження на суглоби з довжиною кроку до 67 см - це новий орбітрек Excite Live Synchro. Високі платформи і мінімум деталей з боків дарують відчуття свободи і ефективного тренування без зусиль."},{"name":"Велотренажер Bake Live 500","description":"Неймовірно реалістичний вертикальний велотренажер Excite Live Bike для кардіотренувань. Зручне кермо з кількома хватами, широка і низька рама, прості регулювання. Екран консолі, кермо, сидіння і педалі розташовані максимально природно для правильного положення тіла і різних типів тренування."},{"name":"Велотренажер Recline live 500","description":"Велотренажер Excite Live Recline для кардиотренировок в зручному положенні сидячи. Широкий отвір для простий посадки, сенсорний кермо для контролю пульсу, технологічна консоль з програмами тренувань і розвагами для прогресу і мотивації."},{"name":"Кросс-тренажер Climb Live 500","description":"Тренажер високих досягнень для кардиотренировки «підйом по сходах». Допомагає набути впевненості в собі, вийти за межі своїх можливостей і досягати нових результатів. Поєднує компактність, безпечну конструкцію, різноманітні програми тренувань і розваги. Підніміть свої тренування на новий рівень з конструкцією тренажера Excite Live Climb, яка максимально навантажує цільові сідничні м\'язи і м\'язи ніг. Тренуйтеся з комфортом і видимим результатом."},{"name":"Спинбайк Group Cycle Connect","description":"Group Cycle Connect це перший в світі і єдиний велотренажер для закритих приміщень, який відстежує результати тренувань і забезпечує підтримку користувачів для поліпшення результатів за допомогою тренувань з повним зануренням у віртуальне середовище. У ньому поєднується унікальний дизайн з новітньою технологією зв\'язку, приголомшливі відчуття і не має аналогів простота використання."},{"name":"Багатофункціональний тренажер Multipower","description":"MULTIPOWER - мультистанция для силових тренувань у вільній вазі і фіксованою траєкторією руху, на якій можна виконувати базові та ізолюючі вправи."},{"name":"Багатофункціональний тренажер Dual Adjustable Pulley","description":"DUAL ADJUSTABLE PULLEY є самою останньою новинкою в лінійці силових тренажерів Element +. Завдяки ергономічному дизайну і передової біомеханіки, новий тросовий тренажер дозволяє користувачам виконувати толкательние вправи для максимального збільшення сили, потужності і швидкості руху."},{"name":"Багатофункціональний  тренажер Kneeling Easy Chin Dip","description":"Це обладнання призначене для вправ з власною вагою, а також вправ з ваговими стеками під керівництвом тренера."},{"name":"Багатофункціональний тренажер Cable Stations Connector","description":"Можлива тренування одночасно п\'яти чоловік з незалежним використанням вагового стека і одну людину з застосуванням вправ на мостовому з\'єднанні."},{"name":"Комбінована стійка CHIN UP DIP LEG RAISE","description":"Турнік Chin Up Dip Leg Raise дає можливість задіяти в роботі фактично всі м\'язові групи верхній частині тіла: підтягування широким і вузьким хватом для найширших м\'язів спини, дельт, біцепсів; віджимання на брусах для трицепсів і грудних м\'язів; бічні скручування для косих м\'язів живота; прямі скручування, підйом ніг з упором на ліктях і підйом ніг у висі для м\'язів преса."},{"name":"Універсальна стійка","description":"Підставка спеціально розроблена для зберігання штанг, грифів і канатних аксесуарів. Включає 3 опори під штанги, додаткові гачки для канатних аксесуарів і верхню платформу, що витримує вагу до 50 кг."},{"name":"Олімпійська жимова лавка від грудей під кутом","description":""},{"name":"Олімпійська жимова лавка від грудей","description":""},{"name":"Лавка Скотта Scott Bench","description":"Багатофункціональна лава для спеціального опрацювання рук з балансиром."},{"name":"Лавка Adjustable Bench","description":""},{"name":"Лавка для спини Lower Back Bench","description":""},{"name":"Горизонтальна лавка для спини/GHD Bench","description":"Універсальний тренажер для розвитку м\'язів задньої поверхні стегна. Також навантаження отримують м\'язи низу спини, хребта, сідничні м\'язи і частково литкові м\'язи. Glute Ham Developer швидко зміцнює м\'язи ніг, дає можливість відпрацювати обидві основні функції м\'язів задньої поверхні стегна - згинання ноги в коліні і розгинання стегна."},{"name":"Лавка для пресу Adjust Decline/Abdomin. Crunch","description":""},{"name":"Гантелі з уритановим покриттям","description":"Гантелі з уритановим покриттям"},{"name":"Гантелі хромовані","description":"Нова лінія хромованих гантелей компанії Technogym. Вагові категорії гантелей: 1 - 10 кг. "}]}');
+module.exports = JSON.parse('{"trainers":[{"firstName":"Володимир","lastName":"Лєсков","direction":"Cycle, Games, персональні тренування","description":"Самий позитивний тренер G Level, який водночас і ніжний, і надзвичайно вимогливий! Його групові тренування шалені, енергійні та пристрасні. Володимир кваліфікований персональний тренер, який власним прикладом мотивує своїх клієнтів. Володар кубку України WABBA за I місце в категорії «Men\'sPhysique» та I місце в абсолютній категорії «Men\'sPhysique» (2020 р.), входить в топ VI «Mr.Universe» WABBA (Португалія, 2020 р.). А ще він обожнює готувати, так як в минулому – кондитер, тому звертайтесь за рецептами правильного харчування."},{"firstName":"Ольга","lastName":"Депешко","direction":"Персональні тренування","description":"Ззовні дуже тендітна Ольга проведе вас через всі випробування і буде поруч з вами на кожному, навіть найменшому кроці. Вона створить таку атмосферу, щоб ви отримали максимум задоволення від кожного тренування. Також Ольга нутриціолог з восьмирічним досвідом роботи, сама багато навчається і вас обіцяє навчити їсти смачно та здорово. Вона працює не тільки з тілом, а із внутрішнім світом. Діюча учасниця змагання в категорії – бікіні."},{"firstName":"Ольга","lastName":"Марценюк","direction":"Barre, Пілатес","description":"Тренер, який зачаровує своєю посмішкою з першої хвилини знайомства! Ольга не вірить в обмеження і знає, як розкрити ваш потенціал на максимум. Вас чекають вражаючі пліє, релєве, рівна осанка та неймовірно приємна крепатура! Її тренування приносять моральне задоволення та формують фантастичне тіло!"},{"firstName":"Михайло","lastName":"Галаган","direction":"Fighting, Тхеквондо","description":"Тренер-викладач з єдиноборств та авторської програми Fit-Fight. Михайло - володар Чорного Поясу 3-го дану з Тхеквондо. Виховав не одного чемпіона України та Європи. Завдяки своєму десятирічному стажу він знає, як поставити удар, розвинути вибухову силу, швидкість та витривалість, спалити калорії та виплеснути всю агресію. Відчуй себе чемпіоном! Ви покинете файтинг зону неймовірно стомленим, але точно захочете повернутися ще раз. Тренування з Михайлом – найкрутіша антистрес-терапія."},{"firstName":"Ольга","lastName":"Осадчук","direction":"Персональні тренування","description":"Ольга  - сертифікований персональний тренер, який дуже швидко стане вашим близьким другом та наставником! Вона - чемпіонка України з літнього біатлону. Для неї – це не просто спорт, а сенс життя – допомогти людям. Розмова не лише про тіло, а насамперед - ваше здоров’я та щоденне самопочуття. На кожному тренуванні вона віддається повністю та веде вас щодня до цілі! Будьте впевнені, що на її тренуванні у вас не вийде відпочити, її шалена енергія змусить відкрити усе на що здатні саме Ви!"},{"firstName":"Валентин","lastName":"Шпильчук","direction":"Персональні тренування","description":"Ольга  - сертифікований персональний тренер, який дуже швидко стане вашим близьким другом та наставником! Вона - чемпіонка України з літнього біатлону. Для неї – це не просто спорт, а сенс життя – допомогти людям. Розмова не лише про тіло, а насамперед - ваше здоров’я та щоденне самопочуття. На кожному тренуванні вона віддається повністю та веде вас щодня до цілі! Будьте впевнені, що на її тренуванні у вас не вийде відпочити, її шалена енергія змусить відкрити усе на що здатні саме Ви!"},{"firstName":"Сергій","lastName":"Мельник","direction":"Персональні тренування","description":"Майстер спорту з важкої атлетики, тричі призер юніорского чемпіонату України з важкої атлетики. Сергій спокійно та без крику заставить вас піднімати більше, бігти швидше та качати активніше! І повірте, ви не пропустите жодного заняття! З ним успіх гарантований!"},{"firstName":"Олена","lastName":"Семенчук","direction":"Йога","description":"Психолог за освітою, Олена познайомилась з йогою – і зрозуміла, що це її життя! Вона викладач Кундаліні-Йоги. Протягом багатьох століть ця практика була перевагою для обраних і зберігалася у великому секреті. Але сьогодні кожен може знайти в ній щось для себе. Хтось прагне зміцнити фізичне здоров\'я,  хтось хоче впоратися зі стресом, хтось націлений на роботу з енергією, а хтось любить співати мантри. Олена буде найкращим провідником в світ гармонії на пізнання себе! Навчить вас ОШО медитації, віппассані (класичній медитації) та холотропному диханню. А ще Олена грає на бандурі та малює картини. Як бачите– йога ще відкриває ваш творчий потенціал."},{"firstName":"Василь","lastName":"Нечко","direction":"Персональні тренування","description":"Майстер спорту міжнародного класу, чемпіон світу та рекордсмен України – все це про Василя. А ще він наш старший персональний тренер, який з перших хвилин знайомства вразить вас своєю харизмою та впевненістю. Бунтар з безліччю талантів. Він вважає, що фітнес повинен бути приємним, але таким же складним, як і життя. Його заняття зосереджені на ефективних вправах, які кидають виклик вашому тілу."},{"firstName":"Юля","lastName":"Горнушкіна","direction":"Персональні тренування","description":"Юля з професійної сторони точно знає, що потрібно робити, щоб почувати себе здорово та при цьому мати рельєфне тіло. В минулому лікар, учасниця медичних конференцій, а також сертифікований дієтолог- нутриціолог. Мотивація, гарний настрій і потужна енергія тренера змусять вас працювати на максимум! Готуйтесь, це будуть спекотні тренування!"},{"firstName":"Олена","lastName":"Дементьєва","direction":"Barre, Пілатес","description":"Олена з 6 років у професійному спорті, КМС з спортивно-бальних танців, представляла Україну в численних міжнародних змаганнях. Фітнес кар’єру розпочала в Італії, сертифікований фітнес тренер. Олена дуже ніжна, тендітна та виважена дівчина, але, водночас, супер енергійний та вимогливий викладач! Як тільки заходиш в зал, то одразу вирівнюєш осанку та тягнеш носочки! Її креативні заняття здивують навіть спортивних гурманів!"},{"firstName":"Ніна ","lastName":"Шевчук","direction":"Персональні тренування","description":"Персональний тренер з восьмирічним досвідом роботи. Її спеціалізація - силовий фітнес, функціональні тренування, TRX та заняття з вагітними. Ніна врахує ваші можливості та бажання, зробить тренування максимально комфортними і результативними. Після занять ви відчуєте, що живете на повну! А ще Ніна захоплюється кулінарією та багато подорожує! Тож ласкаво запрошує вас у мандрівку по вашому вдосконаленню!"},{"firstName":"Інна ","lastName":"Арсьонова","direction":"Йога","description":"Інструктор з хатха-йоги, вчитель 1-го рівня Кундаліні йоги. Інна практикує вже понад 15 років, а досвід викладання - близько 10 років. Хатха йога відноситься до того напрямку йоги, де основною метою практики є фізичне здоров\'я людини. Стан повного здоров\'я як ніколи наближає особистість до вищих істин і гармонії. Практикуючи йогу з Інною, ви станете на шлях набуття рівноваги і духовного зростання."}],"simulators":[{"name":"Тренажер «вертикальна тяга» Vertical Traction","description":"Тренажер Vertical Traction призначений для розвитку найбільших м\'язів верхньої частини тіла - найширших м\'язів спини."},{"name":"Тренажер «жим від плеча вгору» Shoulder Press","description":"Тренажер Shoulder Press дозволяє виконувати базове для дельтоподібних м\'язів вправа - «армійський жим» в положенні сидячи."},{"name":"Тренажер «жим від грудей» Chest Press","description":"Тренажер Chest Press дає можливість виконувати базова вправа для грудних м\'язів - жим від грудей."},{"name":"Багатофункціональний тренажер Dual Pec/Rev Fly","description":"Тренажер Dual Pectoral / Reverse Fly призначений для виконання двох вправ - «зведення рук» зміцнює м\'язи грудей, додаткове навантаження отримують передній пучок дельтоподібних м\'язів і біцепс плеча; «Розведення рук» зміцнює задній пучок дельтоподібних м\'язів, додаткове навантаження отримують ромбовидні і трапецієподібні м\'язи."},{"name":"Тренажер PULLDOWN N «вертикальна тяга» з дисковим навантаженням","description":"Тренажер призначений для вертикальної тяги до грудей в положенні сидячи. Вправа розвиває найширші м\'язи спини, додаткове навантаження отримує біцепс плеча."},{"name":"Тренажер «гребна тяга» Low Row","description":"Тренажер Low Row дозволяє зміцнити найширші м\'язи спини, виконуючи одне з базових вправ - горизонтальну тягу."},{"name":"Тренажер «жим від грудей з широким хватом» з дисковим навантаженням","description":"Wide Chest Press - тренажер дозволяє виконувати вправи, що нагадують руху на підйом гантелей, лежачи на лаві з негативним нахилом із задіянням нижній частині грудних м\'язів."},{"name":"Тренажер Incline chest press «жим від грудей під кутом» з дисковим навантаженням","description":"Incline Chest Press - тренажер повторює рухи на відведення гантелей на похилій лаві з залученням м\'язів верхньої частини грудей."},{"name":"Багатофункціональний тренажер для ніг Dual Abd","description":"Тренажер Dual Abductor / Adductor дозволяє виконувати дві вправи - «зведення ніг» зміцнює що приводять м\'язи стегна; «Розведення ніг» навантажує сідничні м\'язи"},{"name":"Тренажер «розгинання ніг» Leg Extension","description":"Тренажер Leg Extension дає можливість виконувати вправу «розгинання ніг в положенні сидячи» для розвитку найбільших м\'язів ніг - квадріцепсов"},{"name":"Тренажер «згинання ніг лежачи» Ne Leg Curl","description":"Тренажер для тренування задньої поверхні стегна. Легко налаштовується для використання атлетами різного зросту."},{"name":"Тренажер Calf для литкових м’язів з дисковим навантаженням","description":"Опрацювання литкових м\'язів на цьому тренажері можлива без навантаження на хребетний стовп. Ефективність вправ настільки ж висока, як і при заняттях у вільній вазі завдяки використанню атлетичних дисків. Матеріал BODY PRINT приймає форму фігури спортсмена, роблячи заняття гранично комфортними."},{"name":"Тренажер REAR KICK для сідничних м’язів з дисковим навантаженням","description":"Широка амплітуда вправи дозволяє тренувати сідниці в максимально природних умовах і для ефективного результату"},{"name":"Тренажер LINEAR LEG PRESS «жим ногами» з дисковим навантаженням","description":""},{"name":"Тренажер LEG PRESS","description":"Ця модель тренажера дозволяє ефективно опрацювати всі м\'язи ніг від сідниць до литкових."},{"name":"Тренажер LEG CURL","description":"Тренажер серії SELECTION 700 для цільових тренувань м`язів задньої поверхні стегна."},{"name":"Тренажер Hack Squat","description":"Тренажер «Гакк-присідання» для тренування м\'язів ніг і сідничних м\'язів"},{"name":"Бігова доріжка Run Live 500","description":"У біговій доріжці Excite Live Run немає нічого, що може зашкодити вашому бігу. Низьке бігове полотно зручно для заходу на тренажер. Бічні ручки вкорочені і не утрудняють рухів руками. Біжіть вільно, як по доріжці в парку."},{"name":"Орбітрек Synchro Live 700","description":"Excite Live Synchro - тренажер, який захоплює тренуваннями і кожен день знаходить нові приводи для натхнення і прогресу. Регульована рампа від 5 до 33 градусів дозволяє опрацювати м\'язи ніг і сідничні м\'язи. Сучасна консоль поєднує масу програм тренувань і додатків для розваги. Плавні махові руху без ривків і ударного навантаження на суглоби з довжиною кроку до 67 см - це новий орбітрек Excite Live Synchro. Високі платформи і мінімум деталей з боків дарують відчуття свободи і ефективного тренування без зусиль."},{"name":"Велотренажер Bake Live 500","description":"Неймовірно реалістичний вертикальний велотренажер Excite Live Bike для кардіотренувань. Зручне кермо з кількома хватами, широка і низька рама, прості регулювання. Екран консолі, кермо, сидіння і педалі розташовані максимально природно для правильного положення тіла і різних типів тренування."},{"name":"Велотренажер Recline live 500","description":"Велотренажер Excite Live Recline для кардиотренировок в зручному положенні сидячи. Широкий отвір для простий посадки, сенсорний кермо для контролю пульсу, технологічна консоль з програмами тренувань і розвагами для прогресу і мотивації."},{"name":"Кросс-тренажер Climb Live 500","description":"Тренажер високих досягнень для кардиотренировки «підйом по сходах». Допомагає набути впевненості в собі, вийти за межі своїх можливостей і досягати нових результатів. Поєднує компактність, безпечну конструкцію, різноманітні програми тренувань і розваги. Підніміть свої тренування на новий рівень з конструкцією тренажера Excite Live Climb, яка максимально навантажує цільові сідничні м\'язи і м\'язи ніг. Тренуйтеся з комфортом і видимим результатом."},{"name":"Спинбайк Group Cycle Connect","description":"Group Cycle Connect це перший в світі і єдиний велотренажер для закритих приміщень, який відстежує результати тренувань і забезпечує підтримку користувачів для поліпшення результатів за допомогою тренувань з повним зануренням у віртуальне середовище. У ньому поєднується унікальний дизайн з новітньою технологією зв\'язку, приголомшливі відчуття і не має аналогів простота використання."},{"name":"Багатофункціональний тренажер Multipower","description":"MULTIPOWER - мультистанция для силових тренувань у вільній вазі і фіксованою траєкторією руху, на якій можна виконувати базові та ізолюючі вправи."},{"name":"Багатофункціональний тренажер Dual Adjustable Pulley","description":"DUAL ADJUSTABLE PULLEY є самою останньою новинкою в лінійці силових тренажерів Element +. Завдяки ергономічному дизайну і передової біомеханіки, новий тросовий тренажер дозволяє користувачам виконувати толкательние вправи для максимального збільшення сили, потужності і швидкості руху."},{"name":"Багатофункціональний  тренажер Kneeling Easy Chin Dip","description":"Це обладнання призначене для вправ з власною вагою, а також вправ з ваговими стеками під керівництвом тренера."},{"name":"Багатофункціональний тренажер Cable Stations Connector","description":"Можлива тренування одночасно п\'яти чоловік з незалежним використанням вагового стека і одну людину з застосуванням вправ на мостовому з\'єднанні."},{"name":"Комбінована стійка CHIN UP DIP LEG RAISE","description":"Турнік Chin Up Dip Leg Raise дає можливість задіяти в роботі фактично всі м\'язові групи верхній частині тіла: підтягування широким і вузьким хватом для найширших м\'язів спини, дельт, біцепсів; віджимання на брусах для трицепсів і грудних м\'язів; бічні скручування для косих м\'язів живота; прямі скручування, підйом ніг з упором на ліктях і підйом ніг у висі для м\'язів преса."},{"name":"Універсальна стійка","description":"Підставка спеціально розроблена для зберігання штанг, грифів і канатних аксесуарів. Включає 3 опори під штанги, додаткові гачки для канатних аксесуарів і верхню платформу, що витримує вагу до 50 кг."},{"name":"Олімпійська жимова лавка від грудей під кутом","description":""},{"name":"Олімпійська жимова лавка від грудей","description":""},{"name":"Лавка Скотта Scott Bench","description":"Багатофункціональна лава для спеціального опрацювання рук з балансиром."},{"name":"Лавка Adjustable Bench","description":""},{"name":"Лавка для спини Lower Back Bench","description":""},{"name":"Горизонтальна лавка для спини/GHD Bench","description":"Універсальний тренажер для розвитку м\'язів задньої поверхні стегна. Також навантаження отримують м\'язи низу спини, хребта, сідничні м\'язи і частково литкові м\'язи. Glute Ham Developer швидко зміцнює м\'язи ніг, дає можливість відпрацювати обидві основні функції м\'язів задньої поверхні стегна - згинання ноги в коліні і розгинання стегна."},{"name":"Лавка для пресу Adjust Decline/Abdomin. Crunch","description":""},{"name":"Гантелі з уритановим покриттям","description":"Гантелі з уритановим покриттям"},{"name":"Гантелі хромовані","description":"Нова лінія хромованих гантелей компанії Technogym. Вагові категорії гантелей: 1 - 10 кг. "}],"days":{"Monday":"Понеділок","Tuesday":"Вівторок","Wednesday":"Середа","Thursday":"Четвер","Friday":"Пʼятниця","Saturday":"Субота"}}');
 
 /***/ })
 
