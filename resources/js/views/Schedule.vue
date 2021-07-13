@@ -44,7 +44,7 @@ export default {
     data() {
         return {
             jsonStr: '[{"day":"Monday","date":"05.07.21","workouts":[{"type":"Yoga","trainer":"Арсьонова  І. В.","timeStart":"07:00","timeEnd":"08:00"},{"type":"Cycle","trainer":"Подзігун  Т. І.","timeStart":"08:00","timeEnd":"09:00"},{"type":"Pilates","trainer":"Дементьєва О. О.","timeStart":"08:00","timeEnd":"09:00"}]},{"day":"Tuesday","date":"06.07.21","workouts":[{"type":"Fighting","trainer":"Teacher 2","timeStart":"08:00","timeEnd":"10:00"},{"type":"Fighting","trainer":"Teacher 4","timeStart":"10:00","timeEnd":"12:00"},{"type":"Fighting","trainer":"Teacher 3","timeStart":"12:00","timeEnd":"14:00"}]},{"day":"Wednesday","date":"07.07.21","workouts":[{"type":"Fighting","trainer":"Teacher 5","timeStart":"10:00","timeEnd":"12:00"},{"type":"Fighting","trainer":"Teacher","timeStart":"12:00","timeEnd":"14:00"},{"type":"Fighting","trainer":"Teacher 2","timeStart":"14:00","timeEnd":"16:00"}]},{"day":"Thursday","date":"08.07.21","workouts":[{"type":"Fighting","trainer":"Teacher","timeStart":"10:00","timeEnd":"12:00"},{"type":"Fighting","trainer":"Teacher 2","timeStart":"12:00","timeEnd":"14:00"},{"type":"Fighting","trainer":"Teacher 3","timeStart":"14:00","timeEnd":"16:00"}]},{"day":"Friday","date":"09.07.21","workouts":[{"type":"Fighting","trainer":"Teacher 2","timeStart":"08:00","timeEnd":"09:00"},{"type":"Fighting","trainer":"Teacher","timeStart":"08:00","timeEnd":"09:00"},{"type":"Fighting","trainer":"Teacher 5","timeStart":"09:00","timeEnd":"10:30"},{"type":"Yoga","trainer":"Teacher 3","timeStart":"08:00","timeEnd":"09:00"},{"type":"Pilates","trainer":"Teacher","timeStart":"17:00","timeEnd":"18:00"},{"type":"Yoga","trainer":"Teacher 2","timeStart":"17:00","timeEnd":"18:00"}]},{"day":"Saturday","date":"10.07.21","workouts":[{"type":"Pilates","trainer":"Teacher","timeStart":"10:00","timeEnd":"11:00"}]},{"day":"Sunday","date":"11.07.21","workouts":[{"type":"Fighting","trainer":"Teacher 2","timeStart":"09:00","timeEnd":"10:00"},{"type":"Pilates","trainer":"Teacher 3","timeStart":"09:00","timeEnd":"10:00"},{"type":"Fighting","trainer":"Teacher 5","timeStart":"14:00","timeEnd":"15:00"}]}]',
-            scheduleJson: [],
+            scheduleJson: window.vm.$data.scheduleJson,
             hours: [{start: '07', title: '07:00'}, {'start': '08', title: '08:00'}, { 'start': '09', title: '09:00'}, {'start': '10', title: '10:00'}, {'start': '11', title: '11:00'}, { 'start': '12', title: '12:00' }, {'start': '13', title: '13:00'}, {'start': '14', title: '14:00'}, { 'start': '15', title: '16:00' }, {'start': '17', title: '17:00'}, {'start': '18', title: '18:00'}, { 'start': '19', title: '19:00' }, {'start': '20', title: '20:00'}],
             hourNotes: [],
             postponeTimelId: null
@@ -57,15 +57,24 @@ export default {
         WorkoutItem
     },
     created() {
+    },
+    beforeRouteEnter(to, from, next) {
         window.vm.$data.isLoading=true
-        // Simple GET request using fetch
+
         fetch("/show-schedule")
             .then(response => response.json())
-            .then(data => (this.scheduleJson = data.data));
+            .then(data => {
+                //todo use global state ala vuex
+                window.vm.$data.scheduleJson = data.data
+            })
+        .finally(()=>{
 
-        let postponeTimelId = setTimeout(()=>{
-            window.vm.$data.isLoading=false;
-        },800);
+            if (window.vm.$data.isLoading){
+                window.vm.$data.isLoading=false;
+            }
+            next();
+        });
+
     },
     computed: {
         /**

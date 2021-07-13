@@ -165,6 +165,7 @@ let data = {
     isMobile,
     isMobileOnly,
     area: '',
+    scheduleJson:{}
 }
 
 
