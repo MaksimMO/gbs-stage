@@ -52,7 +52,8 @@
             />
         </div>
     </section>
-    <section class="certificate-title">
+
+    <!--<section class="certificate-title">
         <h1>Нагороди та сертифікати</h1>
         <p>
             Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.
@@ -69,7 +70,7 @@
             Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
             Sed nec hendrerit neque...
         </p>
-    </section>
+    </section> -->
   </div>
 <Footer/>
 </template>
