@@ -3,7 +3,7 @@
   <div class="view-main-g">
 
   <section class="top-image-container">
-   <img class="top-image" src="../../assets/images/main-g-background.jpg" alt="">
+    <img class="top-image" src="../../assets/images/main-g-background.jpg" alt="">
     <img class="skew-image-1" src="../../assets/images/popup-corner.svg" alt="">
     <div class="water-text">
         <p class="top-text">Твій рівень</p>
@@ -263,9 +263,12 @@ export default {
     width: 100%;
     display: block;
 
+
     @media screen and (max-width:767px){
-      height: 446px;
-      object-fit: cover;
+    //   height: 568px;
+      max-height: 80vh;
+    //   object-fit: cover;
+      content: url('../../assets/images/main-g-background-768.jpg');
     }
   }
 

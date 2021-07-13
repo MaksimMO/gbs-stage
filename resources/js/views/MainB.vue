@@ -478,6 +478,10 @@ export default {
 
 @media screen and (max-width: 767px){
     .top-image-container{
+        .top-image{
+            max-height: 80vh;
+            content: url('../../assets/images/main-b-background-320.jpg');
+        }
         .skew-image-1{
             left: 15px;
             bottom: -15px;
