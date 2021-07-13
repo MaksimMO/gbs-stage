@@ -66,5 +66,6 @@
         {"name": "Лавка для пресу Adjust Decline/Abdomin. Crunch", "description": ""},
         {"name": "Гантелі з уритановим покриттям", "description": "Гантелі з уритановим покриттям"},
         {"name": "Гантелі хромовані", "description": "Нова лінія хромованих гантелей компанії Technogym. Вагові категорії гантелей: 1 - 10 кг. "}
-    ]
+    ],
+    "days": {"Monday": "Понеділок", "Tuesday": "Вівторок", "Wednesday": "Середа", "Thursday": "Четвер", "Friday": "Пʼятниця", "Saturday": "Субота"}
 }

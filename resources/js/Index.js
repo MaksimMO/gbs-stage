@@ -20,6 +20,7 @@
  import PriceB from './views/PriceB.vue'
  import PriceS from './views/PriceS.vue'
  import Contacts from './views/Contacts.vue'
+ import Schedule from './views/Schedule.vue'
  import Home from './components/Home'
  import MakeOrderPopup from './components/MakeOrderPopup.vue'
  import {i18n} from './plugins/i18n.js'
@@ -65,6 +66,11 @@
             component: AreasG,
             name: 'AreasG',
             meta: { area: 'g' }
+        },
+        {
+            path: '/schedule-gbs',
+            component: Schedule,
+            name: 'Schedule',
         },
         {
             path: '/areas-g-old', // TODO Remove if version with video is OK.

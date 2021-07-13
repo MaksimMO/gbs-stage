@@ -46,6 +46,9 @@ Route::get('/contacts-b', function () {
 Route::get('/contacts-s', function () {
     return view('index');
 });
+Route::get('/schedule-gbs', function () {
+    return view('index');
+});
 
 
 Route::get('/areas-g/{id?}', function () {
