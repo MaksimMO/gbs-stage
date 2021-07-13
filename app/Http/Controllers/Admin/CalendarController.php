@@ -27,6 +27,6 @@ class CalendarController extends Controller
 		$weekDays     = Lesson::WEEK_DAYS;
 		$calendarData = $calendarService->generateCalendarData($weekDays);
 
-		return json_encode($calendarData);
+		return response()->json(['data' => $calendarData], 201)->header('Content-Type', 'application/json');
 	}
 }

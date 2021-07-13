@@ -27,11 +27,16 @@ class CalendarService
 
 			foreach ($workouts as $item)
 			{
+				$start = Carbon::parse($item->start_time);
+				$end = Carbon::parse($item->end_time);
+				$duration = $start->diffInMinutes($end);
+
 				$items[] = [
 					'type' => $item->class->name,
 					'trainer' => $item->teacher->name,
 					'timeStart' => $item->start_time,
 					'timeEnd' => $item->end_time,
+					'duration' => $duration,
 				];
 			}
 			$record['workouts'] = $items;
