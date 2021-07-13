@@ -6,7 +6,9 @@
 
         <div class="container-areas">
             <div class="area" v-for="area in areas" :key="area.id" @click="$router.push(`/areas-g/${area.id}`)">
-                <video autoplay loop muted playsinline :src="area.videoUrl" :poster="area.imageUrl"  >
+
+            <!-- <img :src="area.videoPoster"> -->
+                <video autoplay loop muted playsinline :src="area.videoUrl" :poster="area.videoPoster"  >
                 </video>
 
                 <div class="text-block">

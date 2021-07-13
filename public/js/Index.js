@@ -25530,13 +25530,13 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       onClick: function onClick($event) {
         return _ctx.$router.push("/areas-g/".concat(area.id));
       }
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("video", {
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img :src=\"area.videoPoster\"> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("video", {
       autoplay: "",
       loop: "",
       muted: "",
       playsinline: "",
       src: area.videoUrl,
-      poster: area.imageUrl
+      poster: area.videoPoster
     }, null, 8
     /* PROPS */
     , ["src", "poster"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(area.title), 1
@@ -27485,12 +27485,14 @@ window.vm = app.mount('#gbslevel-app'); // if(isMobile){
   "id": 1,
   "imageUrl": __webpack_require__(/*! ../../../assets/images/areas/area-1-g.jpg */ "./resources/assets/images/areas/area-1-g.jpg").default,
   "videoUrl": __webpack_require__(/*! ../../../assets/video/area-video-3-vg7mt-z1gtv.mp4 */ "./resources/assets/video/area-video-3-vg7mt-z1gtv.mp4").default,
+  "videoPoster": __webpack_require__(/*! ../../../assets/images/areas/area-1-g-poster.jpg */ "./resources/assets/images/areas/area-1-g-poster.jpg").default,
   "title": "Зона єдиноборств",
   "description": "Простора ЗОНА ЄДИНОБОРСТВ з професійним рингом, індивідуальними та груповими заняттями по боксу у найкращих тренерів порадує як любителів боксу, так і новачків, які давно мріяли опанувати легендарний удар Брюса Лі.",
   "photos": [__webpack_require__(/*! ../../../assets/images/areas/slider-area-1/slider-area-1-1.jpg */ "./resources/assets/images/areas/slider-area-1/slider-area-1-1.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-1/slider-area-1-2.jpg */ "./resources/assets/images/areas/slider-area-1/slider-area-1-2.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-1/slider-area-1-3.jpg */ "./resources/assets/images/areas/slider-area-1/slider-area-1-3.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-1/slider-area-1-4.jpg */ "./resources/assets/images/areas/slider-area-1/slider-area-1-4.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-1/slider-area-1-5.jpg */ "./resources/assets/images/areas/slider-area-1/slider-area-1-5.jpg").default]
 }, {
   "id": 2,
   "videoUrl": __webpack_require__(/*! ../../../assets/video/area-video-2-C0043_4.mp4 */ "./resources/assets/video/area-video-2-C0043_4.mp4").default,
+  "videoPoster": __webpack_require__(/*! ../../../assets/images/areas/area-2-g-poster.jpg */ "./resources/assets/images/areas/area-2-g-poster.jpg").default,
   "imageUrl": __webpack_require__(/*! ../../../assets/images/areas/area-2-g.jpg */ "./resources/assets/images/areas/area-2-g.jpg").default,
   "title": "Зонa функціонального тренінгу та кросфіту",
   "description": "ЇЇ оснащено надсучасними тренажерами, такими як гребля від Concept2, велотренажери Rogue fitness echo Bike та біговою доріжкою Assault Air Runner AS2, що є найновішим технічним рішенням від американських інженерів.",
@@ -27499,6 +27501,7 @@ window.vm = app.mount('#gbslevel-app'); // if(isMobile){
   "id": 3,
   "imageUrl": __webpack_require__(/*! ../../../assets/images/areas/area-3-g.jpg */ "./resources/assets/images/areas/area-3-g.jpg").default,
   "videoUrl": __webpack_require__(/*! ../../../assets/video/area-video-5-C0067.mp4 */ "./resources/assets/video/area-video-5-C0067.mp4").default,
+  "videoPoster": __webpack_require__(/*! ../../../assets/images/areas/area-3-g-poster.jpg */ "./resources/assets/images/areas/area-3-g-poster.jpg").default,
   "title": "Кардіотренування cycle",
   "description": "Унікальне супер емоційне кардіотренування CYCLE зі світло- звуковим супроводом на велотренажерах бренду TechnoGym в високотехнологічній кімнаті – це повноцінна вело-гонка з приголомшливими відчуттями та точним відстеженням результатів.",
   "photos": [__webpack_require__(/*! ../../../assets/images/areas/slider-area-3/slider-area-3-1.jpg */ "./resources/assets/images/areas/slider-area-3/slider-area-3-1.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-3/slider-area-3-2.jpg */ "./resources/assets/images/areas/slider-area-3/slider-area-3-2.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-3/slider-area-3-3.jpg */ "./resources/assets/images/areas/slider-area-3/slider-area-3-3.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-3/slider-area-3-4.jpg */ "./resources/assets/images/areas/slider-area-3/slider-area-3-4.jpg").default]
@@ -27506,6 +27509,7 @@ window.vm = app.mount('#gbslevel-app'); // if(isMobile){
   "id": 4,
   "imageUrl": __webpack_require__(/*! ../../../assets/images/areas/area-4-g.jpg */ "./resources/assets/images/areas/area-4-g.jpg").default,
   "videoUrl": __webpack_require__(/*! ../../../assets/video/area-video-1-C0011.mp4 */ "./resources/assets/video/area-video-1-C0011.mp4").default,
+  "videoPoster": __webpack_require__(/*! ../../../assets/images/areas/area-4-g-poster.jpg */ "./resources/assets/images/areas/area-4-g-poster.jpg").default,
   "title": "Студія barre, йоги та пілатесу",
   "description": "Трендовий напрям BARRE - тонке поєднання балетних вправ та силового тренування. Найбільш граційне тренування, що подарує струнке підтягнуте тіло та красиву поставу.",
   "photos": [__webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-1.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-1.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-2.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-2.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-3.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-3.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-4.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-4.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-5.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-5.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-6.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-6.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-7.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-7.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-8.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-8.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-9.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-9.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-10.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-10.jpg").default, __webpack_require__(/*! ../../../assets/images/areas/slider-area-4/slider-area-4-11.jpg */ "./resources/assets/images/areas/slider-area-4/slider-area-4-11.jpg").default]
@@ -30837,6 +30841,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/areas/area-1-g-poster.jpg":
+/*!***********************************************************!*\
+  !*** ./resources/assets/images/areas/area-1-g-poster.jpg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/area-1-g-poster.jpg?fda3e510ad04c4d9d9dcfc7fbf7a10d9");
+
+/***/ }),
+
 /***/ "./resources/assets/images/areas/area-1-g.jpg":
 /*!****************************************************!*\
   !*** ./resources/assets/images/areas/area-1-g.jpg ***!
@@ -30849,6 +30868,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/area-1-g.jpg?d0f664a9a053153112bf71d5777c8658");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/area-2-g-poster.jpg":
+/*!***********************************************************!*\
+  !*** ./resources/assets/images/areas/area-2-g-poster.jpg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/area-2-g-poster.jpg?80bfadb034cb3ef8bc52a776a508a20d");
 
 /***/ }),
 
@@ -30867,6 +30901,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/areas/area-3-g-poster.jpg":
+/*!***********************************************************!*\
+  !*** ./resources/assets/images/areas/area-3-g-poster.jpg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/area-3-g-poster.jpg?7f3d7ae2ed252150f702a508a3bdf9a1");
+
+/***/ }),
+
 /***/ "./resources/assets/images/areas/area-3-g.jpg":
 /*!****************************************************!*\
   !*** ./resources/assets/images/areas/area-3-g.jpg ***!
@@ -30879,6 +30928,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/area-3-g.jpg?d0ff51d6986f4cf2b152ed9c4c57218e");
+
+/***/ }),
+
+/***/ "./resources/assets/images/areas/area-4-g-poster.jpg":
+/*!***********************************************************!*\
+  !*** ./resources/assets/images/areas/area-4-g-poster.jpg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/area-4-g-poster.jpg?bf29e7a37bd335b850c0f8274f389b1b");
 
 /***/ }),
 
@@ -57610,9 +57674,13 @@ var map = {
 	"./images/areas-s/slider-area-7/slider-area-7-1.jpg": "./resources/assets/images/areas-s/slider-area-7/slider-area-7-1.jpg",
 	"./images/areas-s/slider-area-7/slider-area-7-2.jpg": "./resources/assets/images/areas-s/slider-area-7/slider-area-7-2.jpg",
 	"./images/areas-s/slider-area-7/slider-area-7-3.jpg": "./resources/assets/images/areas-s/slider-area-7/slider-area-7-3.jpg",
+	"./images/areas/area-1-g-poster.jpg": "./resources/assets/images/areas/area-1-g-poster.jpg",
 	"./images/areas/area-1-g.jpg": "./resources/assets/images/areas/area-1-g.jpg",
+	"./images/areas/area-2-g-poster.jpg": "./resources/assets/images/areas/area-2-g-poster.jpg",
 	"./images/areas/area-2-g.jpg": "./resources/assets/images/areas/area-2-g.jpg",
+	"./images/areas/area-3-g-poster.jpg": "./resources/assets/images/areas/area-3-g-poster.jpg",
 	"./images/areas/area-3-g.jpg": "./resources/assets/images/areas/area-3-g.jpg",
+	"./images/areas/area-4-g-poster.jpg": "./resources/assets/images/areas/area-4-g-poster.jpg",
 	"./images/areas/area-4-g.jpg": "./resources/assets/images/areas/area-4-g.jpg",
 	"./images/areas/slider-area-1/slider-area-1-1.jpg": "./resources/assets/images/areas/slider-area-1/slider-area-1-1.jpg",
 	"./images/areas/slider-area-1/slider-area-1-2.jpg": "./resources/assets/images/areas/slider-area-1/slider-area-1-2.jpg",
