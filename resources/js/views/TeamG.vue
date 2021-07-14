@@ -77,7 +77,7 @@ export default {
         }
     },
     mounted(){
-        preloadedVideo.map(urlVideo => (preloadLinkVideo(urlVideo, 'video')));
+        preloadedVideo.map(urlVideo => (preloadLinkVideo(require(`../../assets/video/${urlVideo}`).default, 'video')));
     },
     methods: {
         change(e) {

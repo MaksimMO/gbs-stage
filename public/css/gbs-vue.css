@@ -5612,19 +5612,24 @@ li[data-v-bcffb62e] {
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+.modal-overlay[data-v-893619f4] {
+    align-items: stretch;
+}
 }
 .modal[data-v-893619f4] {
   font-family: Raleway;
   width: 756px;
-  max-height: 981px;
   background-color: #fff;
   padding: 20px;
   box-sizing: border-box;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.3);
   opacity: 0;
+  position: relative;
+  margin: auto;
 }
 .close[data-v-893619f4] {
   background-image: url(/images/menu-close.svg?6e815017a586c84708ae3b23a699da33);
@@ -5649,19 +5654,10 @@ li[data-v-bcffb62e] {
 @media screen and (max-width: 767px) {
 .modal[data-v-893619f4] {
     width: 100%;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    transform: unset;
-}
-.modal-overlay .modal[data-v-893619f4] {
-    transform: unset !important;
 }
 }
 .modal-overlay .modal[data-v-893619f4] {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-  filter: unset;
 }
 @charset "UTF-8";
 .team-g[data-v-06dcca5f] {

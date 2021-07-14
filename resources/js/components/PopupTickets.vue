@@ -33,20 +33,30 @@ export default {
     background-color: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 767px){
+        align-items: stretch;
+    }
+
 }
 
 .modal{
     font-family: Raleway;
     width: 756px;
-    max-height: 981px;
+    // max-height: 981px;
     background-color: #fff;
     padding: 20px;
     box-sizing: border-box;
-    position: fixed;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%) scale(1.3);
+    // position: fixed;
+    // top: 50%;
+    // left:50%;
+    // transform: translate(-50%, -50%) scale(1.3);
     opacity: 0;
+    position: relative;
+    //trick for centering if content is bigger than screen
+    margin: auto;
 }
 .close {
     background-image: url("../../assets/images/menu-close.svg");
@@ -73,21 +83,21 @@ export default {
 @media screen and (max-width: 767px){
     .modal{
         width: 100%;
-        overflow: hidden;
-        top: 0;
-        left: 0;
-        transform: unset;
+        // overflow: hidden;
+        // top: 0;
+        // left: 0;
+        // transform: unset;
 
     }
     .modal-overlay  .modal{
-        transform: unset !important;
+        // transform: unset !important;
     }
 }
 
 .modal-overlay  .modal{
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    filter: unset;
+    // transform: translate(-50%, -50%) scale(1);
+    // filter: unset;
 }
 
 </style>

@@ -40,6 +40,7 @@
 <script>
 import SwiperOverlay from '../components/swiperOverlay.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
+import { preloadLink } from '../utils.js';
 
 
 // import SwiperCore, {
@@ -62,6 +63,9 @@ export default {
       modalOpen:false,
       indexToShowFrom:undefined
     };
+  },
+  mounted(){
+      preloadLink(require(`../../assets/images/zoom-img.svg`).default, 'image');
   },
   methods: {
     setAspectRatio(swiper){
