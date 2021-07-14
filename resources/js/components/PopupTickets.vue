@@ -33,7 +33,7 @@ export default {
     background-color: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     @media screen and (max-width: 767px){
@@ -55,6 +55,8 @@ export default {
     // transform: translate(-50%, -50%) scale(1.3);
     opacity: 0;
     position: relative;
+    //trick for centering if content is bigger than screen
+    margin: auto;
 }
 .close {
     background-image: url("../../assets/images/menu-close.svg");

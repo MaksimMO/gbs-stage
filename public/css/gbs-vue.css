@@ -5612,7 +5612,7 @@ li[data-v-bcffb62e] {
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -5629,6 +5629,7 @@ li[data-v-bcffb62e] {
   box-sizing: border-box;
   opacity: 0;
   position: relative;
+  margin: auto;
 }
 .close[data-v-893619f4] {
   background-image: url(/images/menu-close.svg?6e815017a586c84708ae3b23a699da33);
