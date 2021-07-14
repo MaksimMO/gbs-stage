@@ -17,7 +17,7 @@
             Не зволікай, <br> запишись вже сьогодні
         </div>
         <div class="open-popup-text">
-            Програма YClientS може забезпечити швидку організацію онлайн залах
+           Обери свій рівень!
         </div>
         <button @click="isMakeOrderPopupOpen=true"><span>Записатись</span></button>
     </div>
