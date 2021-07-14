@@ -25505,6 +25505,8 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 /* harmony export */   "render": () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _assets_images_link_button_1_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/link-button-1.svg */ "./resources/assets/images/link-button-1.svg");
+
 
 
 var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("data-v-1c2b00e0");
@@ -25531,7 +25533,11 @@ var _hoisted_5 = {
   "class": "title"
 };
 
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Переглянути");
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  src: _assets_images_link_button_1_svg__WEBPACK_IMPORTED_MODULE_1__.default
+}, null, -1
+/* HOISTED */
+);
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
@@ -25566,7 +25572,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     /* TEXT */
     ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
       to: "/areas-g/".concat(area.id),
-      "class": "link-2"
+      "class": "link-button-1"
     }, {
       "default": _withId(function () {
         return [_hoisted_6];
@@ -31785,6 +31791,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagramGold.svg?56cb837170980da00a05c5fdaf2eee66");
+
+/***/ }),
+
+/***/ "./resources/assets/images/link-button-1.svg":
+/*!***************************************************!*\
+  !*** ./resources/assets/images/link-button-1.svg ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/link-button-1.svg?b56062a7fc5663f3dd176c3944eca839");
 
 /***/ }),
 
@@ -57740,6 +57761,7 @@ var map = {
 	"./images/info.svg": "./resources/assets/images/info.svg",
 	"./images/instagram.svg": "./resources/assets/images/instagram.svg",
 	"./images/instagramGold.svg": "./resources/assets/images/instagramGold.svg",
+	"./images/link-button-1.svg": "./resources/assets/images/link-button-1.svg",
 	"./images/main-b-background-320.jpg": "./resources/assets/images/main-b-background-320.jpg",
 	"./images/main-b-background.jpg": "./resources/assets/images/main-b-background.jpg",
 	"./images/main-b-water-text-top.svg": "./resources/assets/images/main-b-water-text-top.svg",

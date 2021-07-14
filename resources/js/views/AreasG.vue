@@ -13,9 +13,10 @@
 
                 <div class="text-block">
                     <div class="title">{{ area.title }}</div>
-                    <router-link :to="`/areas-g/${area.id}`" class="link-2"
-                    >Переглянути</router-link
-                    >
+
+                    <router-link :to="`/areas-g/${area.id}`" class="link-button-1">
+                    <img src="../../assets/images/link-button-1.svg">
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -86,74 +87,57 @@ export default {
 
             .text-block {
                 position: absolute;
-                box-sizing: border-box;
-                left: 0;
-                width: 65%;
-                height: 100%;
-                padding: 0 0 64px 120px;
+                bottom: 0;
+                width: 100%;
                 display: flex;
-                flex-direction:column;
-                justify-content: flex-end;
+                align-items: center;
+                padding: 0 60px 50px 120px;
+                box-sizing: border-box;
+
+                @media screen and (max-width: 1023px) and (min-width: 768px) {
+                   padding: 0 50px 30px 50px;
+                }
+
+                @media screen and (max-width: 767px){
+                    padding:  7px 20px 15px;
+                }
 
                 .title {
+                    text-align: left;
                     font-family: Oswald;
                     font-weight: 600;
                     font-size: 64px;
                     line-height: 96px;
                     letter-spacing: 0.01em;
-                    font-feature-settings: "pnum" on, "lnum" on;
-                    color: #ffffff;
-                    text-transform: uppercase;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                    color: #FFFFFF;
                     opacity: 0.8;
+                    width: min-content;
+                    flex: 1 0 auto;
 
-                    text-align: left;
-                    align-self: end;
-                    margin-bottom: 30px;
-                }
-
-                .description {
-                    font-family: Raleway;
-                    text-align: left;
-                    font-size: 14px;
-                    line-height: 28px;
-                    letter-spacing: 0.05em;
-                    font-feature-settings: "pnum" on, "lnum" on;
-                    color: #ffffff;
-                }
-
-                .link-2 {
-                    font-family: Raleway;
-                    font-weight: 800;
-                    font-size: 14px;
-                    letter-spacing: 0.1em;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    width: max-content;
-                    color: #fff;
-                    padding: 3px;
-                    transition: all 0.2s linear;
-                    position: relative;
-                    cursor: pointer;
-                    z-index: 1;
-                    margin-top: 30px;
-
-                    &:before {
-                        content: "";
-                        position: absolute;
-                        bottom: -3px;
-                        left: -8px;
-                        width: calc(100% + 16px);
-                        height: calc(50% + 3px);
-                        background: #916c58;
-                        z-index: -1;
-                        transition: all 0.2s linear;
+                    @media screen and (max-width: 1023px) and (min-width: 768px) {
+                        font-size: 45px;
+                        line-height: 54px;
                     }
 
-                    &:hover:before {
-                        height: calc(100% + 6px);
+                    @media screen and (max-width: 767px){
+                        font-size: 18px;
+                        line-height: 27px;
                     }
-                    &:active {
-                        color: #000;
+                }
+
+
+                a.link-button-1{
+                    align-self: flex-end;
+
+                    img{
+                        @media screen and (max-width: 1023px) and (min-width: 768px) {
+                            height: 45px;
+                        }
+
+                        @media screen and (max-width: 767px){
+                            height: 32px;
+                        }
                     }
                 }
             }
