@@ -71,6 +71,7 @@
             path: '/schedule-gbs',
             component: Schedule,
             name: 'Schedule',
+            meta: { area: 'g' }
         },
         {
             path: '/areas-g-old', // TODO Remove if version with video is OK.
