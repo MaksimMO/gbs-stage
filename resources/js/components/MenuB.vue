@@ -1,5 +1,5 @@
 <template>
-  <ul class="main-menu-b">
+  <ul class="main-menu-b" @click="$emit('setOnCloseFalse')">
       <li>
           <router-link to="/price-b">Ціни</router-link>
       </li>
@@ -18,6 +18,7 @@
 <script>
 import NavigationMobile from './navigationMobile.vue';
 export default {
+    emits: [ 'setOnCloseFalse' ],
     components: {
         NavigationMobile
     },

@@ -16,13 +16,13 @@
     <div :class="{'close-opened':isOpen, 'menu-open': !isOpen}" @click="isOpen = !isOpen"></div>
   </div>
   <transition name="slide-fade">
-    <MenuG v-show="isOpen && $root.$data.area == 'g'" />
+    <MenuG @setOnCloseFalse="isOpen = false" v-show="isOpen && $root.$data.area == 'g'" />
   </transition>
   <transition name="slide-fade">
-    <MenuB v-show="isOpen && $root.$data.area == 'b'" />
+    <MenuB @setOnCloseFalse="isOpen = false" v-show="isOpen && $root.$data.area == 'b'" />
   </transition>
   <transition name="slide-fade">
-    <MenuS v-show="isOpen && $root.$data.area == 's'" />
+    <MenuS @setOnCloseFalse="isOpen = false" v-show="isOpen && $root.$data.area == 's'" />
   </transition>
 </div>
 </template>

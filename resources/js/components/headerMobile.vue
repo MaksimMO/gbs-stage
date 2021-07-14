@@ -9,13 +9,13 @@
     <div :class="{'close-opened':isOpen, 'menu-open': !isOpen}" @click="isOpen = !isOpen"></div>
   </div>
   <transition name="menu-mobile">
-    <MenuGmobile v-show="isOpen && $root.$data.area == 'g'" />
+    <MenuGmobile @setOnCloseFalse="isOpen = false" v-show="isOpen && $root.$data.area == 'g'" />
   </transition>
   <transition name="menu-mobile">
-    <MenuBmobile v-show="isOpen && $root.$data.area == 'b'" />
+    <MenuBmobile @setOnCloseFalse="isOpen = false" v-show="isOpen && $root.$data.area == 'b'" />
   </transition>
   <transition name="menu-mobile">
-    <MenuSmobile v-show="isOpen && $root.$data.area == 's'" />
+    <MenuSmobile @setOnCloseFalse="isOpen = false" v-show="isOpen && $root.$data.area == 's'" />
   </transition>
 </div>
 

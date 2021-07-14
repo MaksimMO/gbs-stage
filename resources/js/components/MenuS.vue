@@ -1,5 +1,5 @@
 <template>
-  <ul class="main-menu-s">
+  <ul class="main-menu-s" @click="$emit('setOnCloseFalse')">
       <li>
           <router-link to="/areas-s">Послуги</router-link>
       </li>
@@ -21,6 +21,7 @@
 <script>
 import NavigationMobile from './navigationMobile.vue';
 export default {
+    emits: [ 'setOnCloseFalse' ],
     components: {
         NavigationMobile
     },

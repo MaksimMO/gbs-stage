@@ -1,7 +1,7 @@
 <template>
     <div class="main-menu-mobile">
         <div class="appointment-mobile" @click="modalOpen=true">Залишити заявку</div>
-        <ul >
+        <ul @click="$emit('setOnCloseFalse')">
             <li>
                 <router-link to="/areas-s">Послуги</router-link>
             </li>
@@ -31,6 +31,7 @@ export default {
             modalOpen:false
         };
     },
+    emits: [ 'setOnCloseFalse' ],
     components: {
         MakeOrderPopup,
         NavigationMobile

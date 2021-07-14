@@ -1,5 +1,5 @@
 <template>
-  <ul class="main-menu-g">
+  <ul class="main-menu-g" @click="$emit('setOnCloseFalse')">
       <li>
           <router-link to="/about-us-g">Про нас</router-link>
       </li>
@@ -30,9 +30,10 @@
 <script>
 import NavigationMobile from './navigationMobile.vue';
 export default {
+    emits: [ 'setOnCloseFalse' ],
     components: {
         NavigationMobile
-    },
+    }
 };
 </script>
 
