@@ -98,7 +98,7 @@ export default {
   data(){
     preloadedAssets.push(this.$root.$data.isMobile ? require('../../assets/images/main-b-background-320.jpg').default : require('../../assets/images/main-b-background.jpg').default);
     return{
-        
+
       isOpen: false,
       gallery: [
             require("../../assets/images/TeamB/gallery/overlay/150-43-1-min.jpg").default,
@@ -488,10 +488,6 @@ export default {
 
 @media screen and (max-width: 767px){
     .top-image-container{
-        // .top-image{
-        //     max-height: 80vh;
-        //     content: url('../../assets/images/main-b-background-320.jpg');
-        // }
         .skew-image-1{
             left: 15px;
             bottom: -15px;

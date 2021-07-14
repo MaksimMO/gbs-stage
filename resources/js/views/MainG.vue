@@ -296,10 +296,13 @@ export default {
 
 
     @media screen and (max-width:767px){
-    //   height: 568px;
-      max-height: 80vh;
-    //   object-fit: cover;
+      height: 80vh;
       content: url('../../assets/images/main-g-background-768.jpg');
+    }
+
+    @media screen and (max-width:425px){
+      height: 60vh;
+      content: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url('../../assets/images/main-g-background-320.jpg');
     }
   }
 
