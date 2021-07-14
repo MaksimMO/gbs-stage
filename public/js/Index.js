@@ -25218,7 +25218,7 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "open-popup-text"
-}, " Програма YClientS може забезпечити швидку організацію онлайн залах ", -1
+}, " Обери свій рівень! ", -1
 /* HOISTED */
 );
 
