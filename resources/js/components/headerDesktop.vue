@@ -34,6 +34,7 @@ import MenuB from "./MenuB.vue";
 import MenuS from "./MenuS.vue";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 import MakeOrderPopup from './MakeOrderPopup.vue'
+import { preloadLink } from '../utils.js';
 
 
 export default {
@@ -73,6 +74,9 @@ export default {
     }
     document.addEventListener('scroll', debounce(storeScroll), { passive: true });
     storeScroll();
+
+    preloadLink(require(`../../assets/feedBackFormView/background-${this.$root.$data.area}.png`).default, 'image')
+
   },
 };
 </script>

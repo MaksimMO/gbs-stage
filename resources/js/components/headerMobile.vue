@@ -29,6 +29,7 @@ import MenuGmobile from "./MenuGmobile.vue";
 import MenuBmobile from "./MenuBmobile.vue";
 import MenuSmobile from "./MenuSmobile.vue";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
+import { preloadLink } from '../utils.js';
 
 export default {
   data() {
@@ -68,12 +69,14 @@ export default {
 
 
 
-    let preloadLink = document.createElement("link");
+    preloadLink(require(`../../assets/feedBackFormView/background-${this.$root.$data.area}.png`).default)
+
+    // let preloadLink = document.createElement("link");
     //todo different images
-    preloadLink.href = require('../../assets/feedBackFormView/background-g.png').default;
-    preloadLink.rel = "preload";
-    preloadLink.as = "image";
-    document.head.appendChild(preloadLink);
+    // preloadLink.href = require('../../assets/feedBackFormView/background-g.png').default;
+    // preloadLink.rel = "preload";
+    // preloadLink.as = "image";
+    // document.head.appendChild(preloadLink);
     // console.log('background cached')
   },
 };
