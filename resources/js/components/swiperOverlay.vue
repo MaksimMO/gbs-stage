@@ -2,14 +2,18 @@
 <template>
 <div class="overlay-swiper">
 
-<div class="close" @click="$emit('closePopup')" ></div>
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="close" @click="$emit('closePopup')">
+      <g >
+          <rect y="26.8701" width="38" height="1" transform="rotate(-45 0 26.8701)" fill="white"/>
+          <rect width="38" height="1" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27.5771 26.8701)" fill="white"/>
+      </g>
+  </svg>
+
   <swiper
     :navigation="{ nextEl: '.swiper-navigation-next-1', prevEl: '.swiper-navigation-prev-1'}"
     @init="swiperInit"
   >
   <swiper-slide v-for="(imageUrl, index) in slides" :key="index"  >
-      <!-- <img v-show="!image.imageUrlOverlay" :src="image.imageUrl" /> -->
-      <!-- <img v-show="image.imageUrlOverlay" :src="image.imageUrlOverlay" /> -->
       <img :src="imageUrl" />
   </swiper-slide>
 
@@ -62,6 +66,7 @@ export default {
     z-index: 999;
     background-color: black;
     display: flex;
+    // flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -138,21 +143,14 @@ export default {
 }
 
   .close {
-    background-image: url("../../assets/images/menu-close.svg");
-    background-repeat: no-repeat;
-    width: 26px;
-    height: 26px;
     position: absolute;
-    right: 60px;
-    top: 60px;
+    right: 30px;
+    top: 30px;
+    opacity: .5;
+    transition: opacity 100ms ease-in;
+    cursor:pointer;
     &:hover {
-        cursor: pointer;
-        filter: brightness(1);
-    }
-
-    @media screen and (max-width: 767px) {
-      right: 20px;
-      top: 20px;
+            opacity: 1;
     }
   }
 
