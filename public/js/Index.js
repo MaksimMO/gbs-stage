@@ -20014,8 +20014,6 @@ swiper_core__WEBPACK_IMPORTED_MODULE_1__.default.use([swiper_core__WEBPACK_IMPOR
 /* harmony import */ var _MenuS_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MenuS.vue */ "./resources/js/components/MenuS.vue");
 /* harmony import */ var _LanguageSwitcher_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LanguageSwitcher.vue */ "./resources/js/components/LanguageSwitcher.vue");
 /* harmony import */ var _MakeOrderPopup_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./MakeOrderPopup.vue */ "./resources/js/components/MakeOrderPopup.vue");
-/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils.js */ "./resources/js/utils.js");
-
 
 
 
@@ -20067,7 +20065,6 @@ swiper_core__WEBPACK_IMPORTED_MODULE_1__.default.use([swiper_core__WEBPACK_IMPOR
       passive: true
     });
     storeScroll();
-    (0,_utils_js__WEBPACK_IMPORTED_MODULE_6__.preloadLink)('feedBackFormView/background-g.png', 'image');
   }
 });
 
@@ -23933,12 +23930,12 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"scroll-text\">Догори</div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
     "class": "scrollTop",
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $options.scrollToTop();
     })
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"scroll-text\">Догори</div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img src=\"../../assets/images/scrollTop.svg\" alt=\"scroll\"> "), _hoisted_2])]);
+  }, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img src=\"../../assets/images/scrollTop.svg\" alt=\"scroll\"> "), _hoisted_2])]);
 });
 
 /***/ }),
@@ -26422,43 +26419,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     }
   }, "Cosmetology", 2
   /* CLASS */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
-    onClick: _cache[2] || (_cache[2] = function ($event) {
-      return $data.direction = 'hair';
-    }),
-    "class": {
-      'invert-color': $data.direction == 'hair'
-    }
-  }, "Hair", 2
-  /* CLASS */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
-    onClick: _cache[3] || (_cache[3] = function ($event) {
-      return $data.direction = 'nails';
-    }),
-    "class": {
-      'invert-color': $data.direction == 'nails'
-    }
-  }, "Nails", 2
-  /* CLASS */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
-    onClick: _cache[4] || (_cache[4] = function ($event) {
-      return $data.direction = 'care_yon_ka';
-    }),
-    "class": {
-      'invert-color': $data.direction == 'care_yon_ka'
-    }
-  }, "Догляд Yon-Ka", 2
-  /* CLASS */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
-    onClick: _cache[5] || (_cache[5] = function ($event) {
-      return $data.direction = 'make_up_brows';
-    }),
-    "class": {
-      'invert-color': $data.direction == 'make_up_brows'
-    }
-  }, "Make Up & Brows", 2
-  /* CLASS */
-  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.TransitionGroup, {
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li @click=\"direction = 'hair'\" :class=\"{'invert-color': direction == 'hair'}\">Hair</li>\n            <li @click=\"direction = 'nails'\" :class=\"{'invert-color': direction == 'nails'}\">Nails</li>\n            <li @click=\"direction = 'care_yon_ka'\" :class=\"{'invert-color': direction == 'care_yon_ka'}\">Догляд Yon-Ka</li>\n            <li @click=\"direction = 'make_up_brows'\" :class=\"{'invert-color': direction == 'make_up_brows'}\">Make Up &#38; Brows</li> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.TransitionGroup, {
     name: "list-price"
   }, {
     "default": _withId(function () {
@@ -27613,9 +27574,9 @@ var i18n = (0,vue_i18n__WEBPACK_IMPORTED_MODULE_2__.createI18n)({
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "preloadLink": () => (/* binding */ preloadLink),
 /* harmony export */   "preloadLinkVideo": () => (/* binding */ preloadLinkVideo)
 /* harmony export */ });
+/* unused harmony export preloadLink */
 var preloadLink = function preloadLink(url, type) {
   var preloadLink = document.createElement("link");
   preloadLink.href = __webpack_require__("./resources/assets sync recursive ^\\.\\/.*$")("./".concat(url))["default"];

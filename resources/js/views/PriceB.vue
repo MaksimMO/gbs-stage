@@ -8,10 +8,10 @@
       <section class="price-direction">
           <ul class="direction">
             <li @click="direction = 'cosmetology'" :class="{'invert-color': direction == 'cosmetology'}">Cosmetology</li>
-            <li @click="direction = 'hair'" :class="{'invert-color': direction == 'hair'}">Hair</li>
+            <!-- <li @click="direction = 'hair'" :class="{'invert-color': direction == 'hair'}">Hair</li>
             <li @click="direction = 'nails'" :class="{'invert-color': direction == 'nails'}">Nails</li>
             <li @click="direction = 'care_yon_ka'" :class="{'invert-color': direction == 'care_yon_ka'}">Догляд Yon-Ka</li>
-            <li @click="direction = 'make_up_brows'" :class="{'invert-color': direction == 'make_up_brows'}">Make Up &#38; Brows</li>
+            <li @click="direction = 'make_up_brows'" :class="{'invert-color': direction == 'make_up_brows'}">Make Up &#38; Brows</li> -->
         </ul>
 
         <div class="price">

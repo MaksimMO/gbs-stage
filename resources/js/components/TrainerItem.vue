@@ -238,11 +238,13 @@ Video{
         }
     }
     .firstName{
+        bottom: 4px;
         font-size: 10px;
         width: 75.17px;
         height: 13.88px;
     }
     .lastName{
+        bottom: -17px;
         font-size: 10px;
         width: 75.17px;
         height: 13.88px;
@@ -275,11 +277,13 @@ Video{
         }
     }
     .firstName{
+        bottom: 4px;
         font-size: 10px;
         width: 75.17px;
         height: 13.88px;
     }
     .lastName{
+        bottom: -15px;
         font-size: 10px;
         width: 75.17px;
         height: 13.88px;

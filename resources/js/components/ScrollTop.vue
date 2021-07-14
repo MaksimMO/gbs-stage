@@ -1,8 +1,8 @@
 <template>
     <div>
-    <div class="scroll-text">Догори</div>
+    <!-- <div class="scroll-text">Догори</div> -->
     <div class="scrollTop" @click="scrollToTop()">
-        <!-- <div class="scroll-text">Догори</div> -->
+        <div class="scroll-text">Догори</div>
         <!-- <img src="../../assets/images/scrollTop.svg" alt="scroll"> -->
         <svg width="16" height="61" viewBox="0 0 16 61" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g style="mix-blend-mode:difference">
@@ -31,20 +31,20 @@
         right: 10px;
         mix-blend-mode: difference;
 
-        // &>.scroll-text{
-        //     font-family: Raleway;
-        //     font-style: normal;
-        //     font-weight: 500;
-        //     font-size: 12px;
-        //     line-height: 14px;
-        //     position: absolute;
-        //     color: #FFFFFF;
-        //     bottom: 18px;
-        //     right: -20px;
-        //     margin: 0;
-        //     transform: translateX(-50%) rotate(-90deg);
+        &>.scroll-text{
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            position: absolute;
+            color: #FFFFFF;
+            bottom: 18px;
+            right: -20px;
+            margin: 0;
+            transform: translateX(-50%) rotate(-90deg);
 
-        // }
+        }
 
         &>svg{
             height: 61px;
@@ -61,20 +61,20 @@
             transform-origin: bottom;
         }
     }
-    .scroll-text{
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 14px;
-        position: absolute;
-        color: #000000;
-        z-index: 250;
-        position: fixed;
-        bottom: 95px;
-        right: -10px;
-        margin: 0;
-        transform: translateX(-50%) rotate(-90deg);
-    }
+    // .scroll-text{
+    //     font-family: Raleway;
+    //     font-style: normal;
+    //     font-weight: 500;
+    //     font-size: 12px;
+    //     line-height: 14px;
+    //     position: absolute;
+    //     color: #000000;
+    //     z-index: 250;
+    //     position: fixed;
+    //     bottom: 95px;
+    //     right: -10px;
+    //     margin: 0;
+    //     transform: translateX(-50%) rotate(-90deg);
+    // }
 
 </style>
