@@ -99,7 +99,31 @@ export default {
     }
     .left-navigation {
         left: 16px;
-        top: 302px;
+        top: 302px !important;
+        & .g{
+            height: 30px;
+            margin-bottom: 20px;
+        }
+
+        & .b{
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        & .s{
+            height: 30px;
+        }
+    }
+}
+@media screen and (max-height: 728px){
+    .block-background{
+        width: 149px;
+        height: 400px;
+    }
+    .line{
+        height: 190px;
+    }
+    .left-navigation {
+        top: 402px;
         & .g{
             height: 30px;
             margin-bottom: 20px;

@@ -1,5 +1,5 @@
 <template>
-<div class="modal-overlay">
+<div class="modal-overlay" @click="$emit('closePopup')">
         <div class="modal">
             <div class="close" @click="$emit('closePopup')" ></div>
             <img :src="simulatorDetail.link" :alt="$i18n.t(`simulators.${simulatorDetail.id}.name`)">
@@ -16,9 +16,11 @@ export default {
     props: ['simulatorDetail'],
     mounted() {
         document.body.classList.add('overfllow-hidden');
+        document.getElementById('gbslevel-app').style.filter = 'blur(10px)';
     },
     unmounted(){
         document.body.classList.remove('overfllow-hidden');
+        document.getElementById('gbslevel-app').style.filter = 'unset';
     }
 }
 </script>
@@ -160,6 +162,22 @@ export default {
     .close {
         width: 10px;
         height: 10px;
+    }
+}
+ @media screen and (max-height: 590px){
+    .modal{
+        width: 100%;
+        max-width: unset;
+        top: 0;
+        left: 0;
+        transform: unset;
+
+    }
+    .modal-overlay{
+        overflow: auto;
+    }
+    .modal-overlay  .modal{
+        transform: unset !important;
     }
 }
 

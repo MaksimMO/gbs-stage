@@ -11,9 +11,11 @@
 export default {
     mounted() {
         document.body.classList.add('overfllow-hidden');
+        document.getElementById('gbslevel-app').style.filter = 'blur(10px)';
     },
     unmounted(){
         document.body.classList.remove('overfllow-hidden');
+        document.getElementById('gbslevel-app').style.filter = 'unset';
     }
 }
 </script>
