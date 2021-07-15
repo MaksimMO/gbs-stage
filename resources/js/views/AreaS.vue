@@ -58,6 +58,11 @@ export default {
 
     },
     props:['id'],
+    mounted() {
+        if (areas.find((item)=> item.id === Number(this.id)).photos === undefined) {
+            document.querySelector('.gallery-slider').style.display = 'none';
+        }
+    },
 
     computed:{
         area(){
