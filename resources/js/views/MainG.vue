@@ -715,6 +715,14 @@ export default {
 
   }
     .combat-area{
+.skew-image-1{
+        width: 35px;
+        height: 30;
+        bottom: -15px;
+        right: 15px;
+      }
+
+
       position: relative;
 
       .skew-image-1{
@@ -724,6 +732,11 @@ export default {
         z-index: 1;
 
           @media screen and (max-width:767px){
+            width: 35px;
+            bottom: -14px;
+            right: 15px;
+          }
+          @media screen and (max-width: 1023px) and (min-width: 768px) {
             width: 35px;
             bottom: -14px;
             right: 15px;
@@ -921,7 +934,6 @@ export default {
       }
 
     }
-
 }
 
 </style>
