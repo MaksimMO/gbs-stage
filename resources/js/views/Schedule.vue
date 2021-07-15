@@ -294,10 +294,6 @@ $color-gold-light2: #ebe4e1;
             grid-template-rows: 30px 16px;
             position: relative;
 
-            //&:first-child{
-            //    grid-template-rows: auto;
-            //}
-
             > .day-date {
                 display: block;
                 text-transform: lowercase;
@@ -312,8 +308,8 @@ $color-gold-light2: #ebe4e1;
 
         .schedule-table-column {
             text-align: center;
-            //display: grid;
             align-items: center;
+            padding-right: 1px;
         }
     }
 

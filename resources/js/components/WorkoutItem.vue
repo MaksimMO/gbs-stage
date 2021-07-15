@@ -33,7 +33,7 @@ $color-gold: #916C58;
         align-self: end;
     }
     .type {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bold;
         text-transform: uppercase;
         color: $color-gold;

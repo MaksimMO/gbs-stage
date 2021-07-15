@@ -7012,7 +7012,7 @@ li[data-v-5d9f7d78] {
   align-self: end;
 }
 .schedule-day-note .type[data-v-8bb92396] {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   color: #916C58;
@@ -7089,6 +7089,7 @@ li[data-v-5d9f7d78] {
 .schedule-wrapper .schedule-table-row .schedule-table-column[data-v-df451994] {
   text-align: center;
   align-items: center;
+  padding-right: 1px;
 }
 .schedule-wrapper .schedule-table-body .schedule-table-row[data-v-df451994] {
   border-bottom: 1px solid #000;
