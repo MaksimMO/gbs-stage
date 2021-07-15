@@ -297,7 +297,7 @@ export default {
         // padding-bottom: 220px;
         .our-team-container_header{
             font-family: 'Oswald';
-            height: 83px;
+            height: 85px;
             color: #000000;
             font-weight: 600;
             font-size: 48px;
@@ -309,6 +309,9 @@ export default {
             padding-right: 150px;
             p {
                 margin: 0;
+                @media screen and (max-width:767px){
+                        align-self: flex-end;
+                }
             }
         }
         .all-our-trainers-link{
@@ -328,6 +331,7 @@ export default {
             }
 
             @media screen and (max-width:767px){
+                margin: unset;
 
             }
         }
@@ -560,13 +564,13 @@ export default {
             padding-top: 50px;
             .our-team-container_header{
                 font-size: 24px;
-                display: inline-block;
+                display: flex;
+                flex-direction: column;
                 padding-left: 37px;
                 padding-right: 15px;
-                width: 90%;
-                & p {
-                    text-align: right;
-                }
+                // & p {
+                //     text-align: right;
+                // }
             }
             .trainers-container .trainer-item:nth-of-type(even) {
                 margin-top:25px;
