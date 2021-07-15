@@ -7135,6 +7135,9 @@ li[data-v-5d9f7d78] {
 }
 }
 @media screen and (max-width: 767px) {
+.schedule-page[data-v-df451994] {
+    padding-top: 120px;
+}
 .schedule-table.schedule-table-mobile[data-v-df451994] {
     display: grid;
 }

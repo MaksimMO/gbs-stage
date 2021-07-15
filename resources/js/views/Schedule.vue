@@ -381,6 +381,11 @@ $color-gold-light2: #ebe4e1;
 }
 
 @media screen and (max-width: 767px) {
+
+    .schedule-page{
+        padding-top: 120px;
+    }
+
     .schedule-table.schedule-table-mobile{
         display: grid;
     }
