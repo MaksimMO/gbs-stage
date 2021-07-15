@@ -81,10 +81,10 @@ export default {
   background-color: #fff;
   padding: 208px 0 60px;
   @media screen and (max-width:767px){
-            padding: 149px 0 60px;
+            padding: 110px 0 60px;
         }
         @media screen and (max-width: 1023px) and (min-width: 768px) {
-
+            padding: 110px 0 60px;
         }  
 
     .title{
@@ -136,10 +136,9 @@ export default {
             margin-left: unset;
             margin-top: 50px;
             margin-bottom: 30px;
-            width: calc(100% - 30px);
+            width: 100%;
             font-size: 12px;
             line-height: 18px;
-            padding: 0 15px;
         }
         @media screen and (max-width: 1023px) and (min-width: 768px) {
 
@@ -172,7 +171,8 @@ export default {
                 line-height: 36px;
             }
             @media screen and (max-width: 1023px) and (min-width: 768px) {
-
+                font-size: 45px;
+                line-height: 54px;
             }
         }
 

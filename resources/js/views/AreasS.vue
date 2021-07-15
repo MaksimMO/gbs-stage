@@ -44,7 +44,7 @@ export default {
 <style lang='scss' scoped>
 .view-areas-s {
   background-color: #fff;
-  padding: 208px 30px 60px;
+  padding: 110px 30px 60px;
 
   & > .title {
     font-family: Oswald;

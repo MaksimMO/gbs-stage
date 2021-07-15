@@ -127,7 +127,7 @@ export default {
         bottom: 40px;
       }
       @media screen and (max-width: 1023px) and (min-width: 768px) {
-        bottom: 35px;
+        bottom: 20px;
       }
     }
 

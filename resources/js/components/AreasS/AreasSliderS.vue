@@ -153,7 +153,7 @@ export default {
       }
       @media screen and (max-width: 1023px) and (min-width: 768px) {
        width: 85%;
-       //padding-bottom: 30px;
+       padding-bottom: 40px;
       }
 
       .title {
