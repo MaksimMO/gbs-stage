@@ -122,6 +122,11 @@ export default {
       position: absolute;
       right: 50px;
       bottom: 70px;
+      z-index: 1;
+      @media screen and (max-width:767px){
+        right: unset;
+        bottom: 40px;
+      }
     }
 
 
@@ -136,10 +141,11 @@ export default {
       flex-direction: column;
       justify-content: flex-end;
 
-
       @media screen and (max-width:767px){
         padding: 0 15px 0 15px;
         width: 100%;
+        justify-content: unset;
+        margin-top: 142px;
       }
 
       .title {
