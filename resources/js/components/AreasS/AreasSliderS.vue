@@ -125,7 +125,11 @@ export default {
       z-index: 1;
       @media screen and (max-width:767px){
         right: unset;
+        left: calc(50% - 120px);
         bottom: 40px;
+      }
+      @media screen and (max-width: 1023px) and (min-width: 768px) {
+        bottom: 20px;
       }
     }
 
@@ -134,6 +138,7 @@ export default {
       position: absolute;
       box-sizing: border-box;
       left: 0;
+      bottom: 0;
       width: 65%;
       height: 100%;
       padding: 0 0 64px 120px;
@@ -144,8 +149,11 @@ export default {
       @media screen and (max-width:767px){
         padding: 0 15px 0 15px;
         width: 100%;
-        justify-content: unset;
-        margin-top: 142px;
+        padding-bottom: 124px;
+      }
+      @media screen and (max-width: 1023px) and (min-width: 768px) {
+       width: 85%;
+       //padding-bottom: 30px;
       }
 
       .title {
@@ -167,6 +175,11 @@ export default {
           font-size: 36px;
           line-height: 54px;
         }
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+          font-size: 45px;
+          line-height: 54px;      
+          margin-bottom: 20px;
+        }
       }
 
       .description {
@@ -181,6 +194,10 @@ export default {
         @media screen and (max-width:767px){
           font-size: 12px;
           line-height: 18px;
+        }
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+          font-size: 12px;
+          line-height: 22px;      
         }
       }
 
@@ -199,6 +216,10 @@ export default {
         cursor: pointer;
         z-index: 1;
         margin-top: 30px;
+
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+          margin-top: 20px;     
+        }
 
         &:before {
           content: "";
