@@ -4960,6 +4960,13 @@ Video[data-v-6a0f304d] {
   margin-bottom: 30px;
   margin-left: 216px;
 }
+@media screen and (max-width: 767px) {
+.view-areas-g > .title[data-v-1c2b00e0] {
+    font-size: 32px;
+    line-height: 48px;
+    margin-left: 65px;
+}
+}
 .view-areas-g .container-areas .area[data-v-1c2b00e0] {
   text-align: center;
   font-size: 18px;

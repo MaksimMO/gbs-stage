@@ -62,6 +62,11 @@ export default {
         color: #000000;
         margin-bottom: 30px;
         margin-left: 216px;
+        @media screen and (max-width:767px){
+            font-size: 32px;
+            line-height: 48px;
+            margin-left: 65px;
+        }
     }
 
     .container-areas {
