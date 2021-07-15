@@ -907,15 +907,11 @@ export default {
       .orders{
         grid-column-gap: 40px;
         .order{
-          .icon{
-            height: 34px;
-          }
           .title{
             font-size: 18px;
             line-height: 26.68px;
             margin: 5px 0 10px;
           }
-
           .description{
             font-size: 12px;
             line-height: 22px;

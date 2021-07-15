@@ -2349,8 +2349,7 @@ Video[data-v-6a0f304d] {
 .swiper-slide-active .trainer-item[data-v-004dd59c] {
   transform-origin: left;
 }
-.swiper-slide .swiper-slide-duplicate .swiper-slide-prev[data-v-004dd59c],
-.swiper-slide-prev[data-v-004dd59c] {
+[data-v-004dd59c] .swiper-slide-prev {
   transition: all 0.2s ease-in;
   pointer-events: none;
   opacity: 0;
@@ -2993,9 +2992,6 @@ Video[data-v-6a0f304d] {
 }
 .also-for-you-container .orders[data-v-6918511f] {
     grid-column-gap: 40px;
-}
-.also-for-you-container .orders .order .icon[data-v-6918511f] {
-    height: 34px;
 }
 .also-for-you-container .orders .order .title[data-v-6918511f] {
     font-size: 18px;

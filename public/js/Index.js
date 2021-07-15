@@ -20295,10 +20295,11 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
         linkVideo: "Gornushkina_Julia.MOV"
       }, {
         id: 10,
-        link: "Dementieva_Elena.jpg"
+        link: "image-not-found.jpg"
       }, {
         id: 11,
-        link: "image-not-found.jpg"
+        link: "Nina_Shevchuk.jpg",
+        linkVideo: "Nina_Shevchuk.MOV"
       }, {
         id: 12,
         link: "image-not-found.jpg"
@@ -25239,7 +25240,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   }, null, 8
   /* PROPS */
-  , ["trainers", "isOpen"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("<section class=\"certificate-title\">\r\n        <h1>Нагороди та сертифікати</h1>\r\n        <p>\r\n            Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.\r\n            Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam.\r\n            Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est.\r\n        </p>\r\n    </section>\r\n    <CertificateSlider />\r\n    <section class=\"certificate-description\">\r\n        <p>\r\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.\r\n            Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.\r\n            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.\r\n            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n            Sed nec hendrerit neque...\r\n        </p>\r\n    </section> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  , ["trainers", "isOpen"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("<section class=\"certificate-title\">\n        <h1>Нагороди та сертифікати</h1>\n        <p>\n            Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.\n            Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam.\n            Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est.\n        </p>\n    </section>\n    <CertificateSlider />\n    <section class=\"certificate-description\">\n        <p>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.\n            Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.\n            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.\n            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n            Sed nec hendrerit neque...\n        </p>\n    </section> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 });
