@@ -124,18 +124,18 @@ export default {
     }
     .left-navigation {
         top: 402px;
-        & .g{
-            height: 30px;
-            margin-bottom: 20px;
-        }
+        // & .g{
+        //     height: 30px;
+        //     margin-bottom: 20px;
+        // }
 
-        & .b{
-            height: 30px;
-            margin-bottom: 20px;
-        }
-        & .s{
-            height: 30px;
-        }
+        // & .b{
+        //     height: 30px;
+        //     margin-bottom: 20px;
+        // }
+        // & .s{
+        //     height: 30px;
+        // }
     }
 }
 @media screen and (max-width: 767px) {

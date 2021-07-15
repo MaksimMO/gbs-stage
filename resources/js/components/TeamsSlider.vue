@@ -140,6 +140,7 @@ export default {
         transform-origin: left;
     }
 }
+.swiper-slide .swiper-slide-duplicate .swiper-slide-prev,
 .swiper-slide-prev {
     transition: all .2s ease-in;
     pointer-events: none;
