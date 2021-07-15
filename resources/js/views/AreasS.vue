@@ -2,7 +2,7 @@
   <Header class="header-invert" />
   <Breadcrumb />
   <div class="view-areas-s">
-    <div class="title">Зонування</div>
+    <div class="title">Послуги</div>
 
     <div class="container-areas">
       <div class="area" v-for="area in areas" :key="area.id"  @click="$router.push(`/areas-s/${area.id}`)">
@@ -56,6 +56,11 @@ export default {
     color: #000000;
     margin-bottom: 30px;
     margin-left: 216px;
+    @media screen and (max-width:767px){
+        font-size: 32px;
+        line-height: 48px;
+        margin-left: 65px;
+    }
   }
 
   .container-areas {
@@ -70,6 +75,14 @@ export default {
       justify-content: center;
       align-items: center;
       cursor: pointer;
+
+      @media screen and (max-width:767px){
+        height: 505px;
+      }
+      @media screen and (max-width: 1023px) and (min-width: 768px) {
+
+      }
+      
 
       & + .area {
         margin-top: 30px;
@@ -87,9 +100,9 @@ export default {
         position: absolute;
         box-sizing: border-box;
         left: 0;
-        width: 65%;
+        width: 100%;
         height: 100%;
-        padding: 0 0 64px 120px;
+        padding: 0 15px 50px 15px;
         display: flex;
         flex-direction:column;
         justify-content: flex-end;
@@ -108,6 +121,14 @@ export default {
           text-align: left;
           align-self: end;
           margin-bottom: 30px;
+          @media screen and (max-width:767px){
+            font-size: 36px;
+            line-height: 54px;
+          }
+          @media screen and (max-width: 1023px) and (min-width: 768px) {
+            font-size: 36px;
+            line-height: 54px;
+          }
         }
 
         .description {
@@ -134,6 +155,9 @@ export default {
           cursor: pointer;
           z-index: 1;
           margin-top: 30px;
+          @media screen and (max-width:767px){
+            left: 30px;
+          }
 
           &:before {
             content: "";

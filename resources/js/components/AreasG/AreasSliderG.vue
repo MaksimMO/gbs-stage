@@ -127,7 +127,7 @@ export default {
         bottom: 40px;
       }
       @media screen and (max-width: 1023px) and (min-width: 768px) {
-        bottom: 20px;
+        bottom: 35px;
       }
     }
 
@@ -151,7 +151,7 @@ export default {
       }
       @media screen and (max-width: 1023px) and (min-width: 768px) {
        width: 85%;
-       padding-bottom: 30px;
+       padding-bottom: 40px;
       }
 
       .title {
