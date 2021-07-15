@@ -398,6 +398,9 @@ $color-gold-light2: #ebe4e1;
                 .schedule-table-row{
                     grid-template-columns: auto;
                     .schedule-table-column{
+                        .day-date{
+                            margin-top: 5px;
+                        }
                         text-align: left;
 
                         .open-icon{

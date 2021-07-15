@@ -7150,6 +7150,9 @@ li[data-v-5d9f7d78] {
 .schedule-wrapper.schedule-wrapper-mobile .schedule-table.schedule-table-mobile .schedule-table-head .schedule-table-row .schedule-table-column[data-v-df451994] {
     text-align: left;
 }
+.schedule-wrapper.schedule-wrapper-mobile .schedule-table.schedule-table-mobile .schedule-table-head .schedule-table-row .schedule-table-column .day-date[data-v-df451994] {
+    margin-top: 5px;
+}
 .schedule-wrapper.schedule-wrapper-mobile .schedule-table.schedule-table-mobile .schedule-table-head .schedule-table-row .schedule-table-column .open-icon[data-v-df451994] {
     position: absolute;
     top: 25px;
