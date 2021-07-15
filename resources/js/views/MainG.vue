@@ -156,8 +156,8 @@ import TeamsSlider from '../components/TeamsSlider.vue';
                 {id: 7, link: "Olena_Semenchuk.jpg", linkVideo: "Olena_Semenchuk.MOV"},
                 {id: 8, link: "Nechko_Vasil.jpg", linkVideo: "Nechko_Vasil.MOV"},
                 {id: 9, link: "Gornushkina_Julia.jpg", linkVideo: "Gornushkina_Julia.MOV"},
-                {id: 10, link: "Dementieva_Elena.jpg"},
-                {id: 11, link: "image-not-found.jpg"},
+                {id: 10, link: "image-not-found.jpg"},
+                {id: 11, link: "Nina_Shevchuk.jpg", linkVideo: "Nina_Shevchuk.MOV"},
                 {id: 12, link: "image-not-found.jpg"}
             ]
 
@@ -293,6 +293,7 @@ export default {
   .top-image{
     width: 100%;
     display: block;
+    object-fit: cover;
 
 
     @media screen and (max-width:767px){
@@ -300,10 +301,6 @@ export default {
       content: url('../../assets/images/main-g-background-768.jpg');
     }
 
-    @media screen and (max-width:425px){
-      height: 60vh;
-      content: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url('../../assets/images/main-g-background-320.jpg');
-    }
   }
 
   .skew-image-1{
@@ -839,5 +836,92 @@ export default {
           }
       }
     }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .about-us{
+        padding: 80px 50px 50px;
+        .title{
+            font-size: 48px;
+            line-height: 54px;
+            margin-bottom: 30px;
+            padding-left: 57px;
+            padding-bottom: 0;
+            & .line-background {
+                height: 54px;
+            }
+        }
+        .columns-container{
+            grid-column-gap: 15px;
+            font-size: 16px;
+            line-height: 26px;
+
+            .col-1 > div,.col-2 > div {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .techno-gym-container{
+        height: 354px;
+        .col-1{
+            padding: 30px 0 64px 50px;
+            .logo{
+                height: 28px;
+            }
+            .title{
+                font-size: 45px;
+            }
+            .text{
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            .link-2{
+                margin-top: 20px;
+
+            }
+
+        }
+
+        img{
+            height: 189px;
+            margin-bottom: -32px;
+        }
+
+    }
+    .our-team-container{
+        .water-text{
+            margin-top: 32px;
+            margin-left: 50px;
+        }
+    }
+    .also-for-you-container{
+      padding: 30px 50px 40px;
+      background-color: #fff;
+
+      &>.title{
+        font-size: 48px;
+        line-height: 54px;
+        margin-bottom: 26px;
+      }
+
+      .orders{
+        grid-column-gap: 40px;
+        .order{
+          .title{
+            font-size: 18px;
+            line-height: 26.68px;
+            margin: 5px 0 10px;
+          }
+          .description{
+            font-size: 12px;
+            line-height: 22px;
+          }
+        }
+
+      }
+
+    }
+
+}
 
 </style>

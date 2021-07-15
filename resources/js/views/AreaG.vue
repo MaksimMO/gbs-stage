@@ -80,6 +80,12 @@ export default {
 .view-area-g{
   background-color: #fff;
   padding: 208px 0 60px;
+  @media screen and (max-width:767px){
+            padding: 149px 0 60px;
+        }
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+
+        }  
 
     .title{
         font-family: Oswald;
@@ -91,6 +97,16 @@ export default {
         color: #000000;
         margin-bottom: 30px;
         margin-left: 216px;
+        @media screen and (max-width:767px){
+            margin-bottom: 20px;
+            font-size: 32px;
+            line-height: 48px;
+            margin-left: 65px;
+        }
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+            font-size: 45px;
+            line-height: 54px;
+        }
     }
     .description{
         padding: 0 150px;
@@ -100,14 +116,34 @@ export default {
         letter-spacing: 0.05em;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #000000;
+        @media screen and (max-width:767px){
+            font-size: 12px;
+            line-height: 18px;
+            padding: 0 15px;
+        }
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+
+        }
     }
 
     .big-image{
-        width:88%;
+        width: 88%;
         margin-left: auto;
         display: block;
         margin-top: 60px;
         margin-bottom: 60px;
+        @media screen and (max-width:767px){
+            margin-left: unset;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            width: calc(100% - 30px);
+            font-size: 12px;
+            line-height: 18px;
+            padding: 0 15px;
+        }
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+
+        }
     }
 
     .gallery-slider {
@@ -131,6 +167,13 @@ export default {
             letter-spacing: 0.02em;
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #000000;
+            @media screen and (max-width:767px){
+                font-size: 30px;
+                line-height: 36px;
+            }
+            @media screen and (max-width: 1023px) and (min-width: 768px) {
+
+            }
         }
 
         .open-popup-text{
