@@ -188,19 +188,15 @@ export default {
     methods:{
         goto(idEl){
             var element = document.getElementById(idEl);
-            var top = element.offsetTop - 90;
+            // element.scrollIntoView({behavior: 'smooth'});
+            var top = element.offsetTop - 100;
             window.scrollTo(0, top);
-            // setTimeout(function (){
-            //     window.scrollTo(0, top);
-            // }, 500);
-
         },
         actionOpenDay(day)
         {
+            this.goto('mobile-day-'+day);
             if(this.openedDay == day) this.openedDay = null;
             else this.openedDay = day;
-
-            this.goto('mobile-day-'+day);
         },
         isOpenDay(day){
             if(this.openedDay == day) return true;
@@ -238,11 +234,14 @@ $color-gold-light2: #ebe4e1;
     padding-top: 208px;
     background-color: #FFFFFF !important;
     margin-bottom: 60px;
+    padding-left: 7.81vw;
+    padding-right: 7.81vw;
 }
 .schedule-section {
     overflow-x: auto;
     padding: 0 15px;
 }
+
 
 .title {
     padding: 0 7.81vw;
@@ -267,7 +266,7 @@ $color-gold-light2: #ebe4e1;
     display: none;
 }
 .schedule-table.schedule-table-desktop{
-    display: block;
+    display: grid;
 }
 
 .schedule-wrapper {
@@ -377,14 +376,14 @@ $color-gold-light2: #ebe4e1;
         display: none;
     }
     .schedule-table.schedule-table-desktop{
-        display: block;
+        display: grid;
     }
 
 }
 
 @media screen and (max-width: 767px) {
     .schedule-table.schedule-table-mobile{
-        display: block;
+        display: grid;
     }
     .schedule-table.schedule-table-desktop{
         display: none;
