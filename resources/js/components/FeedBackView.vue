@@ -12,11 +12,11 @@
 import FeedBackForm from './Form.vue';
 
 let preloadedAssets = {
-    g: [require('../../assets/feedBackFormView/background-g.png').default,
+    g: [require('../../assets/feedBackFormView/background-g.jpg').default,
         require('../../assets/images/g-level.svg').default],
-    b: [require('../../assets/feedBackFormView/background-b.png').default,
+    b: [require('../../assets/feedBackFormView/background-b.jpg').default,
         require('../../assets/images/b-level.svg').default],
-    s: [require('../../assets/feedBackFormView/background-s.png').default,
+    s: [require('../../assets/feedBackFormView/background-s.jpg').default,
         require('../../assets/images/s-level.svg').default]
     }
 
@@ -60,16 +60,16 @@ export default {
 
 .feed_back_view{
     &.g{
-        background:url('../../assets/feedBackFormView/background-g.png') no-repeat center;
+        background:url('../../assets/feedBackFormView/background-g.jpg') no-repeat center;
          background-size: cover;
     }
 
     &.b{
-        background:url('../../assets/feedBackFormView/background-b.png') no-repeat center;
+        background:url('../../assets/feedBackFormView/background-b.jpg') no-repeat center;
          background-size: cover;
     }
     &.s{
-        background:url('../../assets/feedBackFormView/background-s.png') no-repeat center;
+        background:url('../../assets/feedBackFormView/background-s.jpg') no-repeat center;
          background-size: cover;
     }
 

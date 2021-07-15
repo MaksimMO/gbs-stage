@@ -23,16 +23,15 @@ import FeedBackForm from './Form.vue'
 import popupSuccess from './PopupSuccess.vue'
 
 let preloadedAssets = {
-        g: [require('../../assets/feedBackFormView/background-g.png').default],
-        b: [require('../../assets/feedBackFormView/background-b.png').default],
-        s: [require('../../assets/feedBackFormView/background-s.png').default]
+        g: [require('../../assets/feedBackFormView/background-g.jpg').default],
+        b: [require('../../assets/feedBackFormView/background-b.jpg').default],
+        s: [require('../../assets/feedBackFormView/background-s.jpg').default]
     }
 
 export default {
     props: ['choiceLevel'],
     data(){
         return{
-            level:'g',
             modalOpen:false
         }
 
@@ -91,16 +90,16 @@ export default {
 
 
     &.g{
-        background:linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets/feedBackFormView/background-g.png') no-repeat center;
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets/feedBackFormView/background-g.jpg') no-repeat center;
          background-size: cover;
     }
 
     &.b{
-        background:linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets/feedBackFormView/background-b.png') no-repeat center;
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets/feedBackFormView/background-b.jpg') no-repeat center;
          background-size: cover;
     }
     &.s{
-        background:linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets/feedBackFormView/background-s.png') no-repeat center;
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets/feedBackFormView/background-s.jpg') no-repeat center;
          background-size: cover;
     }
 

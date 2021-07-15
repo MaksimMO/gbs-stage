@@ -140,10 +140,13 @@ import AreasSliderG from '../components/AreasG/AreasSliderG.vue'
 import TeamsSlider from '../components/TeamsSlider.vue';
 
             let preloadedAssets = [
+                require('../../assets/images/main-g-background.jpg').default,
                 require('../../assets/images/main-g-techno-gym-background.jpg').default,
                 require('../../assets/images/techno-gym-skew-images.png').default,
                 require('../../assets/images/areas/area-1-g.jpg').default,
             ];
+
+
 
            let trainers = [
                 {id: 0, link: "Vladimir_Leskov.jpg", linkVideo: "Vladimir_Leskov.MOV"},
@@ -165,7 +168,7 @@ import TeamsSlider from '../components/TeamsSlider.vue';
 export default {
 
   data(){
-    preloadedAssets.push(this.$root.$data.isMobile ? require('../../assets/images/main-g-background-768.jpg').default : require('../../assets/images/main-g-background.jpg').default);
+    preloadedAssets.push(window.vm.$data.isMobile ? require('../../assets/images/main-g-background-768.jpg').default : require('../../assets/images/main-g-background.jpg').default);
     return{
       isOpen: false,
       trainers
@@ -176,6 +179,7 @@ export default {
 
   },
   beforeRouteEnter(to, from, next) {
+
         const cacheImage = (url) =>{
             return new Promise((resolve, reject) => {
                 let img = new Image()

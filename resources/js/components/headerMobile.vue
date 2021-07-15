@@ -69,15 +69,7 @@ export default {
 
 
 
-    preloadLink(require(`../../assets/feedBackFormView/background-${this.$root.$data.area}.png`).default)
-
-    // let preloadLink = document.createElement("link");
-    //todo different images
-    // preloadLink.href = require('../../assets/feedBackFormView/background-g.png').default;
-    // preloadLink.rel = "preload";
-    // preloadLink.as = "image";
-    // document.head.appendChild(preloadLink);
-    // console.log('background cached')
+    preloadLink(require(`../../assets/feedBackFormView/background-${this.$root.$data.area}.jpg`).default)
   },
 };
 </script>

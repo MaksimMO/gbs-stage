@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="onSubmit">
+  <form @submit.prevent="onSubmit" :class="$attrs.class" >
 
     <div class="input-wrapper">
         <input autocomplete="off" v-model="name" type="text" id="name" name="name" placeholder=" ">
@@ -29,7 +29,14 @@ import popup from './Popup.vue'
 
 
 export default {
-    props:['level', 'choiceLevel'],
+    props:{
+        level:String,
+        choiceLevel:String,
+        successPopup:{
+            type:Boolean,
+            default:true
+        }
+     },
     data(){
         return {
             csrf_token: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
@@ -55,11 +62,17 @@ export default {
             body.append('description', `Абонимент ${this.choiceLevel}`);
 
             fetch('/feedback-form', {method:'POST', body}).finally(()=>{
-                if(this.level==='g'){
-                    this.$emit('submitSuccess');
-                }else{
+                if(this.successPopup){
                     this.modalOpen=true;
                 }
+
+                this.$emit('submitSuccess');
+
+                // if(this.level==='g'){
+                //     this.$emit('submitSuccess');
+                // }else{
+                //     this.modalOpen=true;
+                // }
 
             });
 
@@ -162,6 +175,24 @@ input{
         font-size: 14px;
     }
 
+}
+
+.invert{
+
+    input{
+
+
+        color: #000;
+        border-bottom: 2px solid rgba(0,0,0, .25);
+
+        &:focus {
+            border-bottom: 2px solid rgba(0,0,0, .78);
+        }
+    }
+
+    label{
+        color:rgba(0,0,0, .55);
+    }
 }
 
  label {

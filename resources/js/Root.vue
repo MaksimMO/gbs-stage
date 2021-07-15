@@ -3,6 +3,7 @@
     <ChangeLevel v-show="$root.$data.area != undefined"/>
     <router-view />
     <Scroll v-show="visible"/>
+    <HighlightedPopup v-if="highlightedPopup.isVisible" @closePopup="highlightedPopup.isVisible=false"/>
 </template>
 
 <script>
@@ -11,20 +12,33 @@ import Loader from './components/Loader.vue'
 import Footer from './components/Footer.vue'
 import Scroll from './components/ScrollTop.vue';
 import ChangeLevel from './components/ChangeLevel.vue';
+import HighlightedPopup from './components/HighlightedPopup.vue';
 
 export default {
     data() {
         return {
-            visible: false
+            visible: false,
+            highlightedPopup:{
+                isVisible:false
+            }
+
         }
     },
     methods: {
         scrollListener (e) {
             this.visible = window.scrollY > 500
         },
+        handlerHighlightedPopup(){
+            setTimeout(()=>{
+                //todo hendle different overlays
+                this.highlightedPopup.isVisible=true;
+            },25000)
+
+        }
     },
     mounted: function () {
         window.addEventListener('scroll', this.scrollListener)
+        this.handlerHighlightedPopup();
     },
     beforeUnmount: function () {
         window.removeEventListener('scroll', this.scrollListener)
@@ -35,6 +49,7 @@ export default {
         Footer,
         Scroll,
         ChangeLevel,
+        HighlightedPopup
     }
 }
 </script>

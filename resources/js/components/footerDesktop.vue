@@ -52,7 +52,7 @@
 
     <div class="design-text">
       Дизайн:
-      <div class="design-logo"> </div>
+      <a href="https://www.instagram.com/malina_studio_lviv/?utm_medium=copy_link" target="_blank" class="design-logo"> </a>
     </div>
 
 
@@ -271,6 +271,7 @@ hr{
       justify-self: end;
 
       .design-logo{
+        display: block;
         margin-left: 12px;
         height: 23px;
         width: 71px;

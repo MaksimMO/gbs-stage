@@ -1,7 +1,7 @@
 <template>
 <div class="footer">
     <NavigationMobile />
-    <div class="timetable">Години роботи</div>
+    <!-- <div class="timetable">Години роботи</div> -->
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink />
     <div class="social-networks">
@@ -15,7 +15,7 @@
 
   <div class="design-text">
     Дизайн:
-    <div class="design-logo"> </div>
+    <a href="https://www.instagram.com/malina_studio_lviv/?utm_medium=copy_link" target="_blank" class="design-logo"> </a>
   </div>
 </div>
 </template>
@@ -77,14 +77,14 @@ export default {
   //   }
   // }
 
-  .timetable {
-    margin-top: 40px;
-    font-family: Raleway;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-  }
+  // .timetable {
+  //   margin-top: 40px;
+  //   font-family: Raleway;
+  //   font-size: 14px;
+  //   font-style: normal;
+  //   font-weight: 600;
+  //   letter-spacing: 0.1em;
+  // }
 
   .address {
     margin-top: 30px;
@@ -171,6 +171,7 @@ hr{
       justify-self: end;
 
       .design-logo{
+        display: block;
         margin-left: 12px;
         height: 23px;
         width: 71px;

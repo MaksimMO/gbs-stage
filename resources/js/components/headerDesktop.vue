@@ -75,7 +75,7 @@ export default {
     document.addEventListener('scroll', debounce(storeScroll), { passive: true });
     storeScroll();
 
-    preloadLink(require(`../../assets/feedBackFormView/background-${this.$root.$data.area}.png`).default, 'image')
+    preloadLink(require(`../../assets/feedBackFormView/background-${this.$root.$data.area}.jpg`).default, 'image')
 
   },
 };

@@ -104,7 +104,7 @@ export default {
                     ]
                 },
                 {id: 2, level: 'level 2', link: require("../../assets/images/TeamG/tickets/level2.png").default,
-                    period: { time1: 'пн-пт: 07:00 - 23:00', dayOff: '30 днів'},
+                    period: { time1: 'пн-пт: 07:00 - 23:00', time2: 'сб-нд: 08:00 - 23:00', dayOff: '30 днів'},
                     price: '20 000',
                     details: [
                         'Безліміт на самостійне відвідування спортивного залу.',
@@ -119,7 +119,7 @@ export default {
                     ]
                 },
                 {id: 3, level: 'level 3',link: require("../../assets/images/TeamG/tickets/level3.png").default,
-                    period: { time1: 'пн-пт: 07:00 - 1:00', dayOff: '30 днів'},
+                    period: { time1: 'пн-пт: 07:00 - 17:00', dayOff: '30 днів'},
                     price: '13 000',
                     details: [
                         'Безліміт на самостійне відвідування спортивного залу.',
