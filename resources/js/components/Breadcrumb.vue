@@ -51,7 +51,8 @@ let breadcrumbs = {
     AreaG: "Зонування",
     AreaS: "Послуги",
     PriceB: "Прайс",
-    PriceS: "Прайс"
+    PriceS: "Прайс",
+    Schedule: "Розклад",
 }
 
 export default {
