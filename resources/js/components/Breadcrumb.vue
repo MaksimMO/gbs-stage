@@ -83,6 +83,7 @@ export default {
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #000000;
     opacity: 0.75;
+    z-index: 100;
     & div {
         & span {
             margin: 0 30px;

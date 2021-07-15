@@ -4235,6 +4235,7 @@ Video[data-v-6a0f304d] {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
   opacity: 0.75;
+  z-index: 100;
 }
 .breadcrumb div span[data-v-c259b9a4] {
   margin: 0 30px;
@@ -7043,7 +7044,6 @@ li[data-v-5d9f7d78] {
   font-family: "Oswald";
   font-size: 52px;
   margin: 0;
-  margin-left: 96px;
   margin-bottom: 30px;
   line-height: 54px;
   letter-spacing: 0.02em;

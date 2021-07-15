@@ -254,7 +254,6 @@ $color-gold-light2: #ebe4e1;
     font-family: 'Oswald';
     font-size: 52px;
     margin: 0;
-    margin-left: 96px;
     margin-bottom: 30px;
     line-height: 54px;
     letter-spacing: 0.02em;
