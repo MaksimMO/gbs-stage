@@ -110,6 +110,15 @@ export default {
     transition: all .5s ease-in-out;
     filter: blur(10px);
 
+    // @media screen and (max-width: 1023px) and (min-width: 768px) {
+
+    // }
+
+    @media screen and (max-width: 767px){
+        height: 90vh;
+        width: 90vw;
+    }
+
 }
 
 
@@ -152,6 +161,11 @@ export default {
     position: absolute;
     background: url('../../assets/images/popup-corner.svg') no-repeat;
     background-size: cover;
+
+    @media screen and (max-width: 767px){
+        width: 35px;
+        height: 30px
+    }
 }
 
 

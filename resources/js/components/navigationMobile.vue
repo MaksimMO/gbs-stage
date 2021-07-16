@@ -21,7 +21,7 @@ export default {
         return require(`../../assets/images/${currentArea}-level.svg`).default
 
       }else{
-        return require(`../../assets/images/${area}-lavel-inactive.svg`).default
+        return require(`../../assets/images/${area}-lavel-mob-inactive.svg`).default
       }
 
     }
