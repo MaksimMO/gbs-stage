@@ -52,7 +52,7 @@
 
     <div class="design-text">
       Дизайн:
-      <a href="https://www.instagram.com/malina_studio_lviv/?utm_medium=copy_link" target="_blank" class="design-logo"> </a>
+      <a href="https://www.instagram.com/malina_studio_lviv" target="_blank" class="design-logo"> </a>
     </div>
 
 

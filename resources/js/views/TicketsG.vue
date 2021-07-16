@@ -46,8 +46,8 @@
                     <div class="ticket-period">
                         <p>Термін дії: <b>1 рік</b></p>
                         <p>Час відвідування:</p>
-                        <p v-show="ticketDetail.period.time1"><b>{{ticketDetail.period.time1}}</b></p>
-                        <p v-show="ticketDetail.period.time2"><b>{{ticketDetail.period.time1}}</b></p>
+                        <p v-if="ticketDetail.period.time1"><b>{{ticketDetail.period.time1}}</b></p>
+                        <p v-if="ticketDetail.period.time2"><b>{{ticketDetail.period.time2}}</b></p>
                         <p>Призупинення дії: <b>{{ticketDetail.period.dayOff}}</b></p>
                         <div class="ticket-period-price">
                             <p>{{ticketDetail.price}} грн</p>

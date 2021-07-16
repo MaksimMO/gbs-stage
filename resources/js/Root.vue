@@ -28,11 +28,21 @@ export default {
         scrollListener (e) {
             this.visible = window.scrollY > 500
         },
+
+
+
         handlerHighlightedPopup(){
-            setTimeout(()=>{
-                //todo hendle different overlays
-                this.highlightedPopup.isVisible=true;
-            },25000)
+
+            const isHightlightedPopupWasShown = Boolean(sessionStorage.getItem('isHightlightedPopupWasShown'));
+
+            if(!isHightlightedPopupWasShown)
+            {
+                setTimeout(()=>{
+                    //todo hendle different overlays
+                    this.highlightedPopup.isVisible=true;
+                    sessionStorage.setItem('isHightlightedPopupWasShown', true)
+                },25000)
+            }
 
         }
     },
