@@ -18822,13 +18822,49 @@ swiper_core__WEBPACK_IMPORTED_MODULE_0__.default.use([swiper_core__WEBPACK_IMPOR
       }, {
         id: 3,
         imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/academie.jpg */ "./resources/assets/images/TeamB/brandMakeUp/academie.jpg").default
-      } // { id: 4, imageUrl: require("../../assets/images/TeamB/brandMakeUp/loreal.jpg").default },
-      // { id: 5, imageUrl: require("../../assets/images/TeamB/brandMakeUp/dior.jpg").default },
-      // { id: 6, imageUrl: require("../../assets/images/TeamB/brandMakeUp/academie.jpg").default },
-      // { id: 7, imageUrl: require("../../assets/images/TeamB/brandMakeUp/loreal.jpg").default },
-      // { id: 8, imageUrl: require("../../assets/images/TeamB/brandMakeUp/dior.jpg").default },
-      // { id: 9, imageUrl: require("../../assets/images/TeamB/brandMakeUp/academie.jpg").default },
-      ]
+      }, {
+        id: 4,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/american_crew.jpg */ "./resources/assets/images/TeamB/brandMakeUp/american_crew.jpg").default
+      }, {
+        id: 5,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/clarins.jpg */ "./resources/assets/images/TeamB/brandMakeUp/clarins.jpg").default
+      }, {
+        id: 6,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/depot.jpg */ "./resources/assets/images/TeamB/brandMakeUp/depot.jpg").default
+      }, {
+        id: 7,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/helena.jpg */ "./resources/assets/images/TeamB/brandMakeUp/helena.jpg").default
+      }, {
+        id: 8,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/holy-land-logo-8.jpg */ "./resources/assets/images/TeamB/brandMakeUp/holy-land-logo-8.jpg").default
+      }, {
+        id: 9,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/kerastase-vector-logo.jpg */ "./resources/assets/images/TeamB/brandMakeUp/kerastase-vector-logo.jpg").default
+      }, {
+        id: 10,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/lancome_paris.jpg */ "./resources/assets/images/TeamB/brandMakeUp/lancome_paris.jpg").default
+      }, {
+        id: 11,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/lebel_Logo.jpg */ "./resources/assets/images/TeamB/brandMakeUp/lebel_Logo.jpg").default
+      }, {
+        id: 12,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/logo_black.jpg */ "./resources/assets/images/TeamB/brandMakeUp/logo_black.jpg").default
+      }, {
+        id: 13,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/luxio.jpg */ "./resources/assets/images/TeamB/brandMakeUp/luxio.jpg").default
+      }, {
+        id: 14,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/napura_black.jpg */ "./resources/assets/images/TeamB/brandMakeUp/napura_black.jpg").default
+      }, {
+        id: 15,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg */ "./resources/assets/images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg").default
+      }, {
+        id: 16,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/Shiseido_logo_red.jpg */ "./resources/assets/images/TeamB/brandMakeUp/Shiseido_logo_red.jpg").default
+      }, {
+        id: 17,
+        imageUrl: __webpack_require__(/*! ../../assets/images/TeamB/brandMakeUp/yonka.jpg */ "./resources/assets/images/TeamB/brandMakeUp/yonka.jpg").default
+      }]
     };
   },
   methods: {
@@ -23228,7 +23264,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
         }, ["exact"]), ["esc"]))]
       }, [_hoisted_3], 544
       /* HYDRATE_EVENTS, NEED_PATCH */
-      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\r\n          <a\r\n            href=\"#\"\r\n            @click.prevent=\"setLocale('ru')\"\r\n            @keydown.shift.tab=\"focusPrevious(false)\"\r\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\r\n            @keydown.down.exact.prevent=\"\"\r\n            @keydown.tab.exact=\"hideDropdown\"\r\n            @keydown.esc.exact=\"hideDropdown\"\r\n          >\r\n            <span>RU</span>\r\n          </a>\r\n        </li> ")], 512
+      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li>\n          <a\n            href=\"#\"\n            @click.prevent=\"setLocale('ru')\"\n            @keydown.shift.tab=\"focusPrevious(false)\"\n            @keydown.up.exact.prevent=\"focusPrevious(true)\"\n            @keydown.down.exact.prevent=\"\"\n            @keydown.tab.exact=\"hideDropdown\"\n            @keydown.esc.exact=\"hideDropdown\"\n          >\n            <span>RU</span>\n          </a>\n        </li> ")], 512
       /* NEED_PATCH */
       )), [[_directive_click_away, $options.hideDropdown]]) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
@@ -25436,7 +25472,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   }, null, 8
   /* PROPS */
-  , ["trainers", "isOpen"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("<section class=\"certificate-title\">\r\n        <h1>Нагороди та сертифікати</h1>\r\n        <p>\r\n            Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.\r\n            Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam.\r\n            Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est.\r\n        </p>\r\n    </section>\r\n    <CertificateSlider />\r\n    <section class=\"certificate-description\">\r\n        <p>\r\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.\r\n            Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.\r\n            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.\r\n            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n            Sed nec hendrerit neque...\r\n        </p>\r\n    </section> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  , ["trainers", "isOpen"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"certificate-title\">\n        <h1>Нагороди та сертифікати</h1> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>\n            Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.\n            Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam.\n            Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est.\n        </p> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" </section>\n    <CertificateSlider />\n    <section class=\"certificate-description\"> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.\n            Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.\n            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.\n            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n            Sed nec hendrerit neque...\n        </p> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" </section> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 });
@@ -26241,7 +26277,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     images: $data.gallery
   }, null, 8
   /* PROPS */
-  , ["images"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_11, [_hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_BrandMakeupSlider), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h1>SEO текст</h1>\r\n        <p>\r\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n            Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.\r\n            Pellentesque a tortor vitae arcu dictum faucibus.\r\n            Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.\r\n            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.\r\n            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n            Sed nec hendrerit neque...\r\n        </p>\r\n        <router-link class=\"link-1\" to=\"/\">Більше</router-link> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer, {
+  , ["images"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_11, [_hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_BrandMakeupSlider), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h1>SEO текст</h1>\n        <p>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n            Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.\n            Pellentesque a tortor vitae arcu dictum faucibus.\n            Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.\n            Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.\n            Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n            Sed nec hendrerit neque...\n        </p>\n        <router-link class=\"link-1\" to=\"/\">Більше</router-link> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer, {
     level: 'b'
   })], 64
   /* STABLE_FRAGMENT */
@@ -26709,7 +26745,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     }
   }, "Cosmetology", 2
   /* CLASS */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li @click=\"direction = 'hair'\" :class=\"{'invert-color': direction == 'hair'}\">Hair</li>\r\n            <li @click=\"direction = 'nails'\" :class=\"{'invert-color': direction == 'nails'}\">Nails</li>\r\n            <li @click=\"direction = 'care_yon_ka'\" :class=\"{'invert-color': direction == 'care_yon_ka'}\">Догляд Yon-Ka</li>\r\n            <li @click=\"direction = 'make_up_brows'\" :class=\"{'invert-color': direction == 'make_up_brows'}\">Make Up &#38; Brows</li> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.TransitionGroup, {
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li @click=\"direction = 'hair'\" :class=\"{'invert-color': direction == 'hair'}\">Hair</li>\n            <li @click=\"direction = 'nails'\" :class=\"{'invert-color': direction == 'nails'}\">Nails</li>\n            <li @click=\"direction = 'care_yon_ka'\" :class=\"{'invert-color': direction == 'care_yon_ka'}\">Догляд Yon-Ka</li>\n            <li @click=\"direction = 'make_up_brows'\" :class=\"{'invert-color': direction == 'make_up_brows'}\">Make Up &#38; Brows</li> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.TransitionGroup, {
     name: "list-price"
   }, {
     "default": _withId(function () {
@@ -29920,6 +29956,20 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/TeamB/brandMakeUp/Shiseido_logo_red.jpg":
+/*!*************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/Shiseido_logo_red.jpg ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Shiseido_logo_red.jpg?e7f1dafae04fe6ecfe7a374dbba38b4b");
+
+/***/ }),
+
 /***/ "./resources/assets/images/TeamB/brandMakeUp/academie.jpg":
 /*!****************************************************************!*\
   !*** ./resources/assets/images/TeamB/brandMakeUp/academie.jpg ***!
@@ -29931,6 +29981,48 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/academie.jpg?3c3538fa0d91b8c7154758bc45045390");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/american_crew.jpg":
+/*!*********************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/american_crew.jpg ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/american_crew.jpg?dc143b1e72497b25f530fb6b65ab31a9");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/clarins.jpg":
+/*!***************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/clarins.jpg ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/clarins.jpg?a2fea8110f016f313b060ceb0490f4c2");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/depot.jpg":
+/*!*************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/depot.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/depot.jpg?9c71f5bb97f74026c66056a28e79ae5b");
 
 /***/ }),
 
@@ -29948,6 +30040,90 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/TeamB/brandMakeUp/helena.jpg":
+/*!**************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/helena.jpg ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/helena.jpg?f9a396d2af6fb5f07059f96bf4e43adf");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/holy-land-logo-8.jpg":
+/*!************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/holy-land-logo-8.jpg ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/holy-land-logo-8.jpg?1fca168e9468b1bff303159bd6171248");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/kerastase-vector-logo.jpg":
+/*!*****************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/kerastase-vector-logo.jpg ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/kerastase-vector-logo.jpg?0bac8f7fd5083d65c275a5e38d19197d");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/lancome_paris.jpg":
+/*!*********************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/lancome_paris.jpg ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/lancome_paris.jpg?5eaa351ff38f840d8ea3ffd0fd493d14");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/lebel_Logo.jpg":
+/*!******************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/lebel_Logo.jpg ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/lebel_Logo.jpg?d6ce6636bd3fc5c0a712d8e8e71e3da7");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/logo_black.jpg":
+/*!******************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/logo_black.jpg ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo_black.jpg?ff9146466fcfd730292fa6dafd52490e");
+
+/***/ }),
+
 /***/ "./resources/assets/images/TeamB/brandMakeUp/loreal.jpg":
 /*!**************************************************************!*\
   !*** ./resources/assets/images/TeamB/brandMakeUp/loreal.jpg ***!
@@ -29959,6 +30135,62 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/loreal.jpg?46dd6018308b41d956ef9d66c3074fe6");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/luxio.jpg":
+/*!*************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/luxio.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/luxio.jpg?60d2d4cccc4e7f913ed482c9e3f965a7");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/napura_black.jpg":
+/*!********************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/napura_black.jpg ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/napura_black.jpg?b4ac50bddf8820c32bc3cd8d77085ccc");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg":
+/*!*******************************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/semilac-logo-super_nowe.jpg?2d861a0e8fb9891194dfa5368d455583");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamB/brandMakeUp/yonka.jpg":
+/*!*************************************************************!*\
+  !*** ./resources/assets/images/TeamB/brandMakeUp/yonka.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/yonka.jpg?f3b2fc4bf40ceee1fd33c820bf6e4dc8");
 
 /***/ }),
 
@@ -31262,7 +31494,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level.svg?02bae0682140f88722059abfc0376dc1");
 
 /***/ }),
 
@@ -31276,7 +31508,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebookGold.svg?2ef6ec7b557d1537f9b550eba23e8d1f");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/facebookGold.svg?a27e5b4dde3c6d3ecf3f28f59983b62d");
 
 /***/ }),
 
@@ -31320,7 +31552,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level.svg?4322557835a36f1758bad92f49d6dca9");
 
 /***/ }),
 
@@ -31334,7 +31566,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagramGold.svg?56cb837170980da00a05c5fdaf2eee66");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagramGold.svg?5841637642267db63a3c458114907398");
 
 /***/ }),
 
@@ -32078,7 +32310,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/warning.svg?83875f065e7638defea28c6ed7e64a48");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/warning.svg?67b5872f8674f66a316722b146cad9dc");
 
 /***/ }),
 
@@ -32092,7 +32324,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/zoom-img.svg?e7724d44281f74e3d5d0723bf72fefdb");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/zoom-img.svg?a7b077eb6c87af5c6b383e8bb2e95e2b");
 
 /***/ }),
 
