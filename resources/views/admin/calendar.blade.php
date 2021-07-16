@@ -32,41 +32,13 @@
                                         <td>
                                             @foreach($days['workouts'] as $workout)
                                                 @if($workout['timeStart'] == \Carbon\Carbon::createFromTime($time)->format("H:i"))
-                                                    <b>{{ $workout['trainer'] }}</b>, {{ $workout['type'] }}, {{ $workout['timeStart'] }} - {{ $workout['timeEnd'] }}<br>
+                                                    <b>{{ $workout['type'] }}</b>, {{ $workout['trainer'] }},<br> {{ $workout['timeStart'] }} - {{ $workout['timeEnd'] }}<br>
                                                 @endif
                                             @endforeach
                                         </td>
                                     @endforeach
                                 </tr>
                             @endfor
-{{--                            @foreach($calendarData as $time => $days)--}}
-{{--                                @for($time = $start->hour; $time < $end->hour; $time++)--}}
-{{--                                    <tr>--}}
-{{--                                        <td>--}}
-{{--                                            {{ $time }}:00--}}
-{{--                                        </td>--}}
-
-{{--                                        <td>workouts</td>--}}
-
-{{--                                    </tr>--}}
-{{--                                @endfor--}}
-{{--                                <tr>--}}
-{{--                                    <td>--}}
-{{--                                        {{ $time }}--}}
-{{--                                    </td>--}}
-{{--                                    @foreach($days['workouts'] as $key => $value)--}}
-{{--                                        @if (is_array($value))--}}
-{{--                                            <?php echo '<pre>';print_r($value); ?>--}}
-{{--                                            <td rowspan="" class="align-middle text-center" style="background-color:#f0f0f0">--}}
-{{--                                                {{ $value['type'] }}<br>--}}
-{{--                                                Teacher: {{ $value['trainer'] }}--}}
-{{--                                            </td>--}}
-{{--                                        @else--}}
-{{--                                            <td></td>--}}
-{{--                                        @endif--}}
-{{--                                    @endforeach--}}
-{{--                                </tr>--}}
-{{--                            @endforeach--}}
                         </tbody>
                     </table>
                 </div>
