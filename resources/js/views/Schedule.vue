@@ -6,7 +6,7 @@
             <h1>Розклад</h1>
         </section>
         <section class="schedule-section">
-            <div class="schedule-wrapper schedule-wrapper-mobile">
+            <div class="schedule-wrapper schedule-wrapper-mobile" id="schedule-wrapper-mobile">
                 <div class="schedule-table schedule-table-mobile">
                     <div class="schedule-day" v-for="oneDay in scheduleHeaderDays">
                         <div class="schedule-table-head calendar-days">
@@ -84,7 +84,9 @@ export default {
             scheduleJson: window.vm.$data.scheduleJson,
             hours: [{start: '07', title: '07:00'}, {'start': '08', title: '08:00'}, { 'start': '09', title: '09:00'}, {'start': '10', title: '10:00'}, {'start': '11', title: '11:00'}, { 'start': '12', title: '12:00' }, {'start': '13', title: '13:00'}, {'start': '14', title: '14:00'}, { 'start': '15', title: '15:00' }, { 'start': '16', title: '16:00' }, {'start': '17', title: '17:00'}, {'start': '18', title: '18:00'}, { 'start': '19', title: '19:00' }, {'start': '20', title: '20:00'}],
             postponeTimelId: null,
-            isMobile:isMobile
+            isMobile:isMobile,
+            resizeObserver:null,
+            mobileWrapperHeight:0,
         }
     },
     components: {
@@ -92,6 +94,20 @@ export default {
         Breadcrumb,
         Footer,
         WorkoutItem
+    },
+    mounted() {
+        const scheduleWrapperMobile = document.getElementById('schedule-wrapper-mobile');
+        scheduleWrapperMobile.he
+       this.resizeObserver = new ResizeObserver(this.onResize);
+        this.resizeObserver.observe(scheduleWrapperMobile);
+
+    },
+    updated() {
+
+        if(this.mobileWrapperHeight < 1){
+            const scheduleWrapperMobile = document.getElementById('schedule-wrapper-mobile');
+            this.mobileWrapperHeight = scheduleWrapperMobile.scrollHeight;
+        }
     },
     beforeRouteEnter(to, from, next) {
         window.vm.$data.isLoading=true
@@ -186,6 +202,12 @@ export default {
         },
     },
     methods:{
+        onResize(entries, observer){
+            const scheduleWrapperMobile = document.getElementById('schedule-wrapper-mobile');
+            if(this.mobileWrapperHeight != scheduleWrapperMobile.scrollHeight){
+                this.goto('mobile-day-'+this.openedDay);
+            }
+        },
         goto(idEl){
             var element = document.getElementById(idEl);
             // element.scrollIntoView({behavior: 'smooth'});
