@@ -10,6 +10,19 @@
         <form method="POST" action="{{ route("schedule.store") }}" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
+                <label class="required" for="teacher_id">Тренер</label>
+                <select class="form-control select2 {{ $errors->has('teacher') ? 'is-invalid' : '' }}" name="teacher_id" id="teacher_id" required>
+                    @foreach($teachers as $id => $teacher)
+                        <option value="{{ $id }}" {{ old('teacher_id') == $id ? 'selected' : '' }}>{{ $teacher }}</option>
+                    @endforeach
+                </select>
+                @if($errors->has('teacher'))
+                    <div class="invalid-feedback">
+                        {{ $errors->first('teacher') }}
+                    </div>
+                @endif
+            </div>
+            <div class="form-group">
                 <label class="required" for="class_id">Тип тренування</label>
                 <select class="form-control select2 {{ $errors->has('class') ? 'is-invalid' : '' }}" name="class_id" id="class_id" required>
                     @foreach($classes as $id => $class)
@@ -24,31 +37,13 @@
                 <span class="help-block">{{ trans('cruds.lesson.fields.class_helper') }}</span>
             </div>
             <div class="form-group">
-                <label class="required" for="teacher_id">{{ trans('cruds.lesson.fields.teacher') }}</label>
-                <select class="form-control select2 {{ $errors->has('teacher') ? 'is-invalid' : '' }}" name="teacher_id" id="teacher_id" required>
-                    @foreach($teachers as $id => $teacher)
-                        <option value="{{ $id }}" {{ old('teacher_id') == $id ? 'selected' : '' }}>{{ $teacher }}</option>
-                    @endforeach
-                </select>
-                @if($errors->has('teacher'))
-                    <div class="invalid-feedback">
-                        {{ $errors->first('teacher') }}
+                <div><label class="required" for="weekday">День тижня</label></div>
+                @foreach($daysUa as $key => $day)
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="{{ $key }}" id="flexCheck{{ $key }}" name="weekdays[]">
+                        <label class="form-check-label" for="flexCheck{{ $key }}">{{ $day }}</label>
                     </div>
-                @endif
-                <span class="help-block">Тренер</span>
-            </div>
-            <div class="form-group">
-                <label class="required" for="weekday">День тижня</label>
-                <select class="form-control select2 {{ $errors->has('teacher') ? 'is-invalid' : '' }}" name="weekday" id="weekday" required>
-                    <option value="1">Понеділок</option>
-                    <option value="2">Вівторок</option>
-                    <option value="3">Середа</option>
-                    <option value="4">Четвер</option>
-                    <option value="5">П'ятниця</option>
-                    <option value="6">Субота</option>
-                    <option value="7">Неділя</option>
-                </select>
-{{--                <input class="form-control {{ $errors->has('weekday') ? 'is-invalid' : '' }}" type="number" name="weekday" id="weekday" value="{{ old('weekday') }}" step="1" required>--}}
+                @endforeach
                 @if($errors->has('weekday'))
                     <div class="invalid-feedback">
                         {{ $errors->first('weekday') }}
@@ -64,10 +59,10 @@
                         {{ $errors->first('start_time') }}
                     </div>
                 @endif
-                <span class="help-block">Час закінчення заняття</span>
+                <span class="help-block">{{ trans('cruds.lesson.fields.start_time_helper') }}</span>
             </div>
             <div class="form-group">
-                <label class="required" for="end_time">{{ trans('cruds.lesson.fields.end_time') }}</label>
+                <label class="required" for="end_time">Час закінчення заняття</label>
                 <input class="form-control lesson-timepicker {{ $errors->has('end_time') ? 'is-invalid' : '' }}" type="text" name="end_time" id="end_time" value="{{ old('end_time') }}" required>
                 @if($errors->has('end_time'))
                     <div class="invalid-feedback">

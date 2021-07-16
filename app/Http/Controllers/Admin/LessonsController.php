@@ -21,39 +21,53 @@ class LessonsController extends Controller
 
         $lessons = Lesson::all();
 
+        $lessons->each(function ($lesson){
+        	$lesson->weekday = Lesson::WEEK_DAYS_UA[$lesson->weekday];
+		});
+
         return view('admin.lessons.index', compact('lessons'));
     }
 
-    public function create()
-    {
-        //abort_if(Gate::denies('lesson_create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+	public function create()
+	{
+		//abort_if(Gate::denies('lesson_create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $classes = SchoolClass::all()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
+		$classes = SchoolClass::all()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
+		$teachers = User::all()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
+		$daysUa = Lesson::WEEK_DAYS_UA;
 
-        $teachers = User::all()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
+		return view('admin.lessons.create', compact('classes', 'teachers', 'daysUa'));
+	}
 
-        return view('admin.lessons.create', compact('classes', 'teachers'));
-    }
+	public function store(StoreLessonRequest $request)
+	{
+		//dd($request->all());
+		$lesson = [
+			'class_id' => $request->class_id,
+			'teacher_id' => $request->teacher_id,
+			'start_time' => $request->start_time,
+			'end_time' => $request->end_time
+		];
 
-    public function store(StoreLessonRequest $request)
-    {
-    	//dd($request->all());
-        $lesson = Lesson::create($request->all());
+		foreach($request->weekdays as $weekday){
+			$lesson['weekday'] = $weekday;
 
-        return redirect()->route('schedule.index');
-    }
+			Lesson::create($lesson);
+		}
+
+		return redirect()->route('schedule.index');
+	}
 
     public function edit(Lesson $schedule)
     {
         //abort_if(Gate::denies('lesson_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         $classes = SchoolClass::all()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
-
         $teachers = User::all()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
-
         $schedule->load('class', 'teacher');
+		$daysUa = Lesson::WEEK_DAYS_UA;
 
-        return view('admin.lessons.edit', compact('classes', 'teachers', 'schedule'));
+        return view('admin.lessons.edit', compact('classes', 'teachers', 'schedule', 'daysUa'));
     }
 
     public function update(UpdateLessonRequest $request, Lesson $schedule)

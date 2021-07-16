@@ -47,8 +47,8 @@
                     <span class="btn btn-info btn-xs deselect-all" style="border-radius: 0">{{ trans('global.deselect_all') }}</span>
                 </div>
                 <select class="form-control select2 {{ $errors->has('roles') ? 'is-invalid' : '' }}" name="roles[]" id="roles" multiple required>
-                    @foreach($roles as $id => $roles)
-                        <option value="{{ $id }}" {{ (in_array($id, old('roles', [])) || $user->roles->contains($id)) ? 'selected' : '' }}>{{ $roles }}</option>
+                    @foreach($roles as $id => $role)
+                        <option value="{{ $id }}" {{ (in_array($id, old('roles', [])) || $user->roles->contains($id)) ? 'selected' : '' }}>{{ $role }}</option>
                     @endforeach
                 </select>
                 @if($errors->has('roles'))
@@ -60,9 +60,10 @@
             </div>
             <div class="form-group">
                 <label for="class_id">{{ trans('cruds.user.fields.class') }}</label>
-                <select class="form-control select2 {{ $errors->has('class') ? 'is-invalid' : '' }}" name="class_id" id="class_id">
+                <select class="form-control select2 {{ $errors->has('class') ? 'is-invalid' : '' }}" name="classes[]" id="class_id" multiple required>
                     @foreach($classes as $id => $class)
-                        <option value="{{ $id }}" {{ ($user->class ? $user->class->id : old('class_id')) == $id ? 'selected' : '' }}>{{ $class }}</option>
+                        <option value="{{ $id }}" {{ (in_array($id, old('classes', [])) || $user->schoolClasses->contains($id)) ? 'selected' : '' }}>{{ $class }}</option>
+{{--                        <option value="{{ $id }}" {{ ($user->class ? $user->class->id : old('class_id')) == $id ? 'selected' : '' }}>{{ $class }}</option>--}}
                     @endforeach
                 </select>
                 @if($errors->has('class'))

@@ -3,7 +3,7 @@
 
         <ul class="nav">
             <li class="nav-item">
-                <a href="{{ url("gbs-user-admin") }}" class="nav-link">
+                <a href="{{ route("dashboard") }}" class="nav-link">
                     <i class="nav-icon fas fa-fw fa-tachometer-alt"></i>
                     Головна
                 </a>

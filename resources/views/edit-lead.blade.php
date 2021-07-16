@@ -12,11 +12,16 @@
             </div>
             <div>
 
-                {{ Form::open(['url' => "/update-data/".$lead['id'], 'method' => 'put']) }}
+                {{ Form::open(['route' => ["update-lead", $lead['id']], 'method' => 'put']) }}
 
                 <div class="form-group">
                     {{ Form::label('name', 'Ім\'я') }}
                     {{ Form::text('name', $lead['name'], array('class' => 'form-control')) }}
+                </div>
+
+                <div class="form-group">
+                    {{ Form::label('email', 'Email') }}
+                    {{ Form::text('email', $lead['email'], array('class' => 'form-control')) }}
                 </div>
 
                 <div class="form-group">

@@ -62,7 +62,11 @@
                             Тренування
                         </th>
                         <td>
-                            {{ $user->class->name ?? '' }}
+                            @if($user->schoolClasses->count())
+                                @foreach($user->schoolClasses as $class)
+                                    <span class="badge badge-info">{{ $class->name }}</span>
+                                @endforeach
+                            @endif
                         </td>
                     </tr>
                 </tbody>

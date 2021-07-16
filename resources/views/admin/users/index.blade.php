@@ -54,11 +54,18 @@
 {{--                            </td>--}}
                             <td>
                                 @foreach($user->roles as $key => $item)
-                                    <span class="badge badge-info">{{ $item->title }}</span>
+                                    @if($item->title == 'Teacher')
+                                        @php $roleName = 'Тренер' @endphp
+                                    @endif
+                                    <span class="badge badge-info">{{ $roleName }}</span>
                                 @endforeach
                             </td>
                             <td>
-                                {{ $user->class->name ?? '' }}
+                                @if($user->schoolClasses->count())
+                                    @foreach($user->schoolClasses as $class)
+                                        <span class="badge badge-info">{{ $class->name }}</span>
+                                    @endforeach
+                                @endif
                             </td>
                             <td>
 {{--                                @can('user_show')--}}

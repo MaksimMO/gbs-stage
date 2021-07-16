@@ -23,7 +23,7 @@
 <div id="gbs">
     <nav class="navbar navbar-nav navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/gbs-user-admin') }}">
+            <a class="navbar-brand" href="{{ route("dashboard") }}">
                 {{ strtoupper(config('app.name', 'Laravel')) }} User Admin
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
