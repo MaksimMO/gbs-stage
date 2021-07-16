@@ -77,7 +77,7 @@ Auth::routes();
 
 Route::post('/feedback-form',[App\Http\Controllers\HomeController::class, 'storeLead']);
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'gbs-admin'], function () {
 	/**
 	 * Leads routes
 	 */

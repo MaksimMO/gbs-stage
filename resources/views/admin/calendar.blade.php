@@ -15,7 +15,6 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    {{--{{ dd(\Carbon\Carbon::createFromTime(7)->format("H:i")) }}--}}
                     <table class="table table-bordered">
                         <thead>
                             <th width="125">Time</th>
@@ -33,7 +32,7 @@
                                         <td>
                                             @foreach($days['workouts'] as $workout)
                                                 @if($workout['timeStart'] == \Carbon\Carbon::createFromTime($time)->format("H:i"))
-                                                    {{ $workout['type'] }}, {{ $workout['trainer'] }}, {{ $workout['timeStart'] }} - {{ $workout['timeEnd'] }}<br>
+                                                    <b>{{ $workout['trainer'] }}</b>, {{ $workout['type'] }}, {{ $workout['timeStart'] }} - {{ $workout['timeEnd'] }}<br>
                                                 @endif
                                             @endforeach
                                         </td>
