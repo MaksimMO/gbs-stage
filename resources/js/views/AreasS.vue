@@ -44,7 +44,13 @@ export default {
 <style lang='scss' scoped>
 .view-areas-s {
   background-color: #fff;
-  padding: 110px 30px 60px;
+  padding: 210px 30px 60px;
+  @media screen and (max-width:767px){
+        padding: 110px 30px 60px;
+      }
+      @media screen and (max-width: 1023px) and (min-width: 768px) {
+        padding: 110px 30px 60px;
+      }
 
   & > .title {
     font-family: Oswald;
@@ -102,10 +108,17 @@ export default {
         left: 0;
         width: 100%;
         height: 100%;
-        padding: 0 15px 50px 15px;
+        padding: 0 60px 50px 120px;
         display: flex;
         flex-direction:column;
         justify-content: flex-end;
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+                   padding: 0 50px 30px 50px;
+                }
+
+                @media screen and (max-width: 767px){
+                    padding:  7px 20px 15px;
+                }
 
         .title {
           font-family: Oswald;

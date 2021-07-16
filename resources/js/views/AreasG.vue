@@ -50,7 +50,13 @@ export default {
 <style lang='scss' scoped>
 .view-areas-g {
     background-color: #fff;
-    padding: 110px 30px 60px;
+    padding: 210px 30px 60px;
+    @media screen and (max-width:767px){
+        padding: 110px 30px 60px;
+      }
+      @media screen and (max-width: 1023px) and (min-width: 768px) {
+        padding: 110px 30px 60px;
+      }
 
     & > .title {
         font-family: Oswald;

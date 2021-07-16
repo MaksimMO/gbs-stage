@@ -5108,7 +5108,17 @@ Video[data-v-6a0f304d] {
 }
 .view-areas-g[data-v-1c2b00e0] {
   background-color: #fff;
-  padding: 110px 30px 60px;
+  padding: 210px 30px 60px;
+}
+@media screen and (max-width: 767px) {
+.view-areas-g[data-v-1c2b00e0] {
+    padding: 110px 30px 60px;
+}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+.view-areas-g[data-v-1c2b00e0] {
+    padding: 110px 30px 60px;
+}
 }
 .view-areas-g > .title[data-v-1c2b00e0] {
   font-family: Oswald;
@@ -5425,7 +5435,17 @@ Video[data-v-6a0f304d] {
 }
 .view-areas-s[data-v-1cd41aec] {
   background-color: #fff;
-  padding: 110px 30px 60px;
+  padding: 210px 30px 60px;
+}
+@media screen and (max-width: 767px) {
+.view-areas-s[data-v-1cd41aec] {
+    padding: 110px 30px 60px;
+}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+.view-areas-s[data-v-1cd41aec] {
+    padding: 110px 30px 60px;
+}
 }
 .view-areas-s > .title[data-v-1cd41aec] {
   font-family: Oswald;
@@ -5477,10 +5497,20 @@ Video[data-v-6a0f304d] {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 0 15px 50px 15px;
+  padding: 0 60px 50px 120px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+.view-areas-s .container-areas .area .text-block[data-v-1cd41aec] {
+    padding: 0 50px 30px 50px;
+}
+}
+@media screen and (max-width: 767px) {
+.view-areas-s .container-areas .area .text-block[data-v-1cd41aec] {
+    padding: 7px 20px 15px;
+}
 }
 .view-areas-s .container-areas .area .text-block .title[data-v-1cd41aec] {
   font-family: Oswald;
