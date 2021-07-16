@@ -53,24 +53,24 @@
         </div>
     </section>
 
-    <!--<section class="certificate-title">
-        <h1>Нагороди та сертифікати</h1>
-        <p>
+    <!-- <section class="certificate-title">
+        <h1>Нагороди та сертифікати</h1> -->
+        <!-- <p>
             Sed a leo sagittis, tincidunt lorem venenatis, congue sem. Sed id velit quis augue luctus dictum.
             Suspendisse id vestibulum augue. Suspendisse convallis metus non erat finibus tempus. Fusce eu lobortis quam.
             Maecenas blandit varius magna. Phasellus eget rutrum ex. Suspendisse velit est, convallis vitae maximus et, sodales a est.
-        </p>
-    </section>
+        </p> -->
+    <!-- </section>
     <CertificateSlider />
-    <section class="certificate-description">
-        <p>
+    <section class="certificate-description"> -->
+        <!-- <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo ut lacus commodo dignissim quis ut ipsum.
             Pellentesque a tortor vitae arcu dictum faucibus. Cras ornare ex in mattis egestas. Nulla lobortis nisi in turpis feugiat, at rutrum elit sagittis.
             Ut consequat finibus metus id consectetur. Suspendisse nisl erat, condimentum sit amet luctus eu, luctus ut ipsum.
             Ut tempus rhoncus lectus, nec porttitor diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
             Sed nec hendrerit neque...
-        </p>
-    </section> -->
+        </p> -->
+    <!-- </section> -->
   </div>
 <Footer/>
 </template>

@@ -1,6 +1,9 @@
 
 <template>
-  <swiper :navigation="true" :slidesPerView="'auto'" >
+  <swiper
+    :navigation="true"
+    :slidesPerView="'auto'"
+  >
     <swiper-slide v-for="image in images" :key="image.id" @click="checkClick">
         <img :src="image.imageUrl"/>
     </swiper-slide>
@@ -30,12 +33,20 @@ export default {
         { id: 1, imageUrl: require("../../assets/images/TeamB/brandMakeUp/loreal.jpg").default },
         { id: 2, imageUrl: require("../../assets/images/TeamB/brandMakeUp/dior.jpg").default },
         { id: 3, imageUrl: require("../../assets/images/TeamB/brandMakeUp/academie.jpg").default },
-        // { id: 4, imageUrl: require("../../assets/images/TeamB/brandMakeUp/loreal.jpg").default },
-        // { id: 5, imageUrl: require("../../assets/images/TeamB/brandMakeUp/dior.jpg").default },
-        // { id: 6, imageUrl: require("../../assets/images/TeamB/brandMakeUp/academie.jpg").default },
-        // { id: 7, imageUrl: require("../../assets/images/TeamB/brandMakeUp/loreal.jpg").default },
-        // { id: 8, imageUrl: require("../../assets/images/TeamB/brandMakeUp/dior.jpg").default },
-        // { id: 9, imageUrl: require("../../assets/images/TeamB/brandMakeUp/academie.jpg").default },
+        { id: 4, imageUrl: require("../../assets/images/TeamB/brandMakeUp/american_crew.jpg").default },
+        { id: 5, imageUrl: require("../../assets/images/TeamB/brandMakeUp/clarins.jpg").default },
+        { id: 6, imageUrl: require("../../assets/images/TeamB/brandMakeUp/depot.jpg").default },
+        { id: 7, imageUrl: require("../../assets/images/TeamB/brandMakeUp/helena.jpg").default },
+        { id: 8, imageUrl: require("../../assets/images/TeamB/brandMakeUp/holy-land-logo-8.jpg").default },
+        { id: 9, imageUrl: require("../../assets/images/TeamB/brandMakeUp/kerastase-vector-logo.jpg").default },
+        { id: 10, imageUrl: require("../../assets/images/TeamB/brandMakeUp/lancome_paris.jpg").default },
+        { id: 11, imageUrl: require("../../assets/images/TeamB/brandMakeUp/lebel_Logo.jpg").default },
+        { id: 12, imageUrl: require("../../assets/images/TeamB/brandMakeUp/logo_black.jpg").default },
+        { id: 13, imageUrl: require("../../assets/images/TeamB/brandMakeUp/luxio.jpg").default },
+        { id: 14, imageUrl: require("../../assets/images/TeamB/brandMakeUp/napura_black.jpg").default },
+        { id: 15, imageUrl: require("../../assets/images/TeamB/brandMakeUp/semilac-logo-super_nowe.jpg").default },
+        { id: 16, imageUrl: require("../../assets/images/TeamB/brandMakeUp/Shiseido_logo_red.jpg").default },
+        { id: 17, imageUrl: require("../../assets/images/TeamB/brandMakeUp/yonka.jpg").default }
       ],
     };
   },
@@ -72,7 +83,7 @@ export default {
         right: 58px !important;
     }
     ::v-deep(.swiper-wrapper) {
-        left: 250px;
+        left: 150px;
     }
 }
 
@@ -85,8 +96,8 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: solid 2px #F3EFEC;
-    border-right: solid 2px #F3EFEC;
+    border-left: solid 1px #F3EFEC;
+    border-right: solid 1px #F3EFEC;
     padding: 40px 39px;
     max-width: 18.7vw !important;
     height: auto;
@@ -145,12 +156,12 @@ export default {
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .swiper-container {
-        ::v-deep(.swiper-button-prev) {
-            display: none;
-        }
-        ::v-deep(.swiper-button-next) {
-            display: none;
-        }
+        // ::v-deep(.swiper-button-prev) {
+        //     // display: none;
+        // }
+        // ::v-deep(.swiper-button-next) {
+        //     // display: none;
+        // }
         ::v-deep(.swiper-wrapper) {
             left: 200px;
         }
@@ -173,14 +184,28 @@ export default {
 
 @media screen and (max-width: 767px) {
     .swiper-container {
+        overflow: unset;
         ::v-deep(.swiper-button-prev) {
             display: none;
         }
         ::v-deep(.swiper-button-next) {
             display: none;
         }
+        // ::v-deep(.swiper-button-prev) {
+        //     top: unset;
+        //     bottom: -35px;
+        //     left: 40% !important;
+        //     font-weight: 900;
+        // }
+
+        // ::v-deep(.swiper-button-next) {
+        //     top: unset;
+        //     bottom: -35px;
+        //     right: 40% !important;
+        //     font-weight: 900;
+        // }
         ::v-deep(.swiper-wrapper) {
-            left: 150px;
+            left: 75px;
         }
     }
     .swiper-slide-next + .swiper-slide {
@@ -201,6 +226,20 @@ export default {
 
   @media screen and (max-width: 425px) {
     .swiper-container {
+        // overflow: unset;
+        // ::v-deep(.swiper-button-prev) {
+        //     top: unset;
+        //     bottom: -35px;
+        //     left: 40% !important;
+        //     font-weight: 900;
+        // }
+
+        // ::v-deep(.swiper-button-next) {
+        //     top: unset;
+        //     bottom: -35px;
+        //     right: 40% !important;
+        //     font-weight: 900;
+        // }
         ::v-deep(.swiper-button-prev) {
             display: none;
         }
@@ -208,7 +247,7 @@ export default {
             display: none;
         }
         ::v-deep(.swiper-wrapper) {
-            left: 130px;
+            left: 85px;
         }
     }
     .swiper-slide-next {
@@ -223,6 +262,22 @@ export default {
         }
         & img{
             opacity: 0.5;
+        }
+    }
+    .swiper-slide {
+        width: 210px !important;
+        padding: 20px 0 !important;
+        max-width: unset !important;
+    }
+    .swiper-slide img {
+        max-width: 170px !important;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .swiper-container {
+        ::v-deep(.swiper-wrapper) {
+            left: 40px;
         }
     }
   }

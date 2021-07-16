@@ -99,7 +99,7 @@ export default {
         right: 58px !important;
     }
     ::v-deep(.swiper-wrapper) {
-        left: 250px;
+        left: 150px;
     }
 }
 
@@ -176,26 +176,54 @@ export default {
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .swiper-container {
+        overflow: unset;
+        // ::v-deep(.swiper-button-prev) {
+        //     display: none;
+        // }
+        // ::v-deep(.swiper-button-next) {
+        //     display: none;
+        // }
         ::v-deep(.swiper-button-prev) {
-            display: none;
+            top: unset;
+            bottom: -45px;
+            left: 40% !important;
+            font-weight: 900;
         }
+
         ::v-deep(.swiper-button-next) {
-            display: none;
+            top: unset;
+            bottom: -45px;
+            right: 40% !important;
+            font-weight: 900;
         }
         ::v-deep(.swiper-wrapper) {
-            left: 100px;
+            left: 70px;
         }
     }
   }
 
 @media screen and (max-width: 767px) {
     .swiper-container {
+        overflow: unset;
         ::v-deep(.swiper-button-prev) {
-            display: none;
+            top: unset;
+            bottom: -45px;
+            left: 40% !important;
+            font-weight: 900;
         }
+
         ::v-deep(.swiper-button-next) {
-            display: none;
+            top: unset;
+            bottom: -45px;
+            right: 40% !important;
+            font-weight: 900;
         }
+        // ::v-deep(.swiper-button-prev) {
+        //     display: none;
+        // }
+        // ::v-deep(.swiper-button-next) {
+        //     display: none;
+        // }
         ::v-deep(.swiper-wrapper) {
             left: 100px;
         }
