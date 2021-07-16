@@ -87,8 +87,8 @@ class User extends Authenticatable
 		return $this->belongsToMany(Role::class);
 	}
 
-	function class()
+	public function schoolClasses()
 	{
-		return $this->belongsTo(SchoolClass::class, 'class_id');
+		return $this->belongsToMany(SchoolClass::class);
 	}
 }

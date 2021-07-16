@@ -60,6 +60,6 @@ class AdminController extends BaseController
         $lead->description = request('description');
         $lead->save();
 
-        return redirect('/gbs-user-admin')->with('success', 'Data Updated');
+        return redirect()->route('dashboard')->with('success', 'Data Updated');
     }
 }

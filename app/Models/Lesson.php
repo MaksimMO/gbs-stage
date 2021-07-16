@@ -39,6 +39,16 @@ class Lesson extends Model
         '7' => 'Sunday',
     ];
 
+    const WEEK_DAYS_UA = [
+        '1' => 'Понеділок',
+        '2' => 'Вівторок',
+        '3' => 'Середа',
+        '4' => 'Четвер',
+        '5' => 'П\'ятниця',
+        '6' => 'Субота',
+        '7' => 'Неділя',
+    ];
+
     public function getDifferenceAttribute()
     {
         return Carbon::parse($this->end_time)->diffInMinutes($this->start_time);

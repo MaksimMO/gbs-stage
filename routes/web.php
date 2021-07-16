@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Admin\UsersController;
+use App\Http\Controllers\Admin\LessonsController;
+use App\Http\Controllers\Admin\SchoolClassesController;
+use App\Http\Controllers\Admin\CalendarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -72,34 +77,33 @@ Auth::routes();
 
 Route::post('/feedback-form',[App\Http\Controllers\HomeController::class, 'storeLead']);
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+Route::group(['prefix' => 'admin'], function () {
+	/**
+	 * Leads routes
+	 */
+	Route::get('/', [AdminController::class, 'index'])->name('dashboard');
+	Route::get('/update-data/{id}', [AdminController::class, 'checkLead'])->name('edit-lead');
+	Route::put('/update-data/{id}', [AdminController::class, 'updateLead'])->name('update-lead');
 
-/**
- * Leads routes
- */
-Route::get('/gbs-user-admin', [App\Http\Controllers\AdminController::class, 'index'])->name('dashboard');
-Route::get('/update-data/{id}', [App\Http\Controllers\AdminController::class, 'checkLead'])->name('edit-lead');
-Route::put('/update-data/{id}', [App\Http\Controllers\AdminController::class, 'updateLead'])->name('update-lead');
-
-/**
- * Schedule routes
- */
-//Route::get('/schedule', [App\Http\Controllers\ScheduleController::class, 'index'])->name('list');
-
+	/**
+	 * Schedule routes
+	 */
 // Users
-Route::delete('users/destroy', 'App\Http\Controllers\Admin\UsersController@massDestroy')->name('users.massDestroy');
-Route::resource('users', 'App\Http\Controllers\Admin\UsersController');
+	Route::delete('users/destroy', [UsersController::class, 'massDestroy'])->name('users.massDestroy');
+	Route::resource('users', UsersController::class);
 
 // Lessons
-Route::delete('schedule/destroy', 'App\Http\Controllers\Admin\LessonsController@massDestroy')->name('schedule.massDestroy');
-Route::resource('schedule', 'App\Http\Controllers\Admin\LessonsController');
+	Route::delete('schedule/destroy', [LessonsController::class, 'massDestroy'])->name('schedule.massDestroy');
+	Route::resource('schedule', LessonsController::class);
 
 // School Classes
-Route::delete('workouts/destroy', 'App\Http\Controllers\Admin\SchoolClassesController@massDestroy')->name('workouts.massDestroy');
-Route::resource('workouts', 'App\Http\Controllers\Admin\SchoolClassesController');
+	Route::delete('workouts/destroy', [SchoolClassesController::class, 'massDestroy'])->name('workouts.massDestroy');
+	Route::resource('workouts', SchoolClassesController::class);
 
-Route::get('calendar', 'App\Http\Controllers\Admin\CalendarController@index')->name('calendar.index');
-Route::get('show-schedule', 'App\Http\Controllers\Admin\CalendarController@showSchedule')->name('calendar.showSchedule');
+	Route::get('calendar', [CalendarController::class, 'index'])->name('calendar.index');
+});
+
+Route::get('show-schedule', [CalendarController::class, 'showSchedule'])->name('calendar.showSchedule');
 
 // Redirect on registration
 /*Route::get('/register', function() {

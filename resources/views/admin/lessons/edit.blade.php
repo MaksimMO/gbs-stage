@@ -11,20 +11,6 @@
             @method('PUT')
             @csrf
             <div class="form-group">
-                <label class="required" for="class_id">Тип тренування</label>
-                <select class="form-control select2 {{ $errors->has('class') ? 'is-invalid' : '' }}" name="class_id" id="class_id" required>
-                    @foreach($classes as $id => $class)
-                        <option value="{{ $id }}" {{ ($schedule->class ? $schedule->class->id : old('class_id')) == $id ? 'selected' : '' }}>{{ $class }}</option>
-                    @endforeach
-                </select>
-                @if($errors->has('class'))
-                    <div class="invalid-feedback">
-                        {{ $errors->first('class') }}
-                    </div>
-                @endif
-                <span class="help-block">{{ trans('cruds.lesson.fields.class_helper') }}</span>
-            </div>
-            <div class="form-group">
                 <label class="required" for="teacher_id">Тренер</label>
                 <select class="form-control select2 {{ $errors->has('teacher') ? 'is-invalid' : '' }}" name="teacher_id" id="teacher_id" required>
                     @foreach($teachers as $id => $teacher)
@@ -39,8 +25,27 @@
                 <span class="help-block">{{ trans('cruds.lesson.fields.teacher_helper') }}</span>
             </div>
             <div class="form-group">
-                <label class="required" for="weekday">День тижня (порядковий номер дня в тижні)</label>
-                <input class="form-control {{ $errors->has('weekday') ? 'is-invalid' : '' }}" type="number" name="weekday" id="weekday" value="{{ old('weekday', $schedule->weekday) }}" step="1" required>
+                <label class="required" for="class_id">Тип тренування</label>
+                <select class="form-control select2 {{ $errors->has('class') ? 'is-invalid' : '' }}" name="class_id" id="class_id" required>
+                    @foreach($classes as $id => $class)
+                        <option value="{{ $id }}" {{ ($schedule->class ? $schedule->class->id : old('class_id')) == $id ? 'selected' : '' }}>{{ $class }}</option>
+                    @endforeach
+                </select>
+                @if($errors->has('class'))
+                    <div class="invalid-feedback">
+                        {{ $errors->first('class') }}
+                    </div>
+                @endif
+                <span class="help-block">{{ trans('cruds.lesson.fields.class_helper') }}</span>
+            </div>
+            <div class="form-group">
+                <div><label class="required" for="weekday">День тижня</label></div>
+                @foreach($daysUa as $key => $day)
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="{{ $key }}" id="flexCheck{{ $key }}" name="weekdays[]">
+                        <label class="form-check-label" for="flexCheck{{ $key }}">{{ $day }}</label>
+                    </div>
+                @endforeach
                 @if($errors->has('weekday'))
                     <div class="invalid-feedback">
                         {{ $errors->first('weekday') }}

@@ -51,7 +51,7 @@
                         </td>
                         <td>{{ isset($lead['description']) ? $lead['description'] : "" }}</td>
                         <td>{{ $lead['updated_at'] }}</td>
-                        <td><a href="{{ URL::to('update-data/'.$lead['id']) }}">Змінити</a></td>
+                        <td><a href="{{ route('edit-lead', $lead['id']) }}">Змінити</a></td>
                     </tr>
                     @endforeach
                     </tbody>

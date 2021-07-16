@@ -33,7 +33,7 @@
                     </tr>
                     <tr>
                         <th>
-                            Тренар
+                            Тренер
                         </th>
                         <td>
                             {{ $schedule->teacher->name ?? '' }}

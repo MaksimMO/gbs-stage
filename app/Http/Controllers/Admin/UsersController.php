@@ -44,6 +44,7 @@ class UsersController extends Controller
     {
         $user = User::create($request->all());
         $user->roles()->sync($request->input('roles', []));
+		$user->schoolClasses()->sync($request->input('classes', []));
 
         return redirect()->route('users.index');
     }
@@ -56,24 +57,25 @@ class UsersController extends Controller
 
         $classes = SchoolClass::all()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
 
-        $user->load('roles', 'class');
+        $user->load('roles', 'schoolClasses');
 
         return view('admin.users.edit', compact('roles', 'classes', 'user'));
     }
 
     public function update(UpdateUserRequest $request, User $user)
     {
-        $user->update($request->all());
-        $user->roles()->sync($request->input('roles', []));
+		$user->update($request->all());
+		$user->roles()->sync($request->input('roles', []));
+		$user->schoolClasses()->sync($request->input('classes', []));
 
-        return redirect()->route('admin.users.index');
+        return redirect()->route('users.index');
     }
 
     public function show(User $user)
     {
         //abort_if(Gate::denies('user_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $user->load('roles', 'class', 'teacherLessons');
+        $user->load('roles', 'schoolClasses', 'teacherLessons');
 
         return view('admin.users.show', compact('user'));
     }

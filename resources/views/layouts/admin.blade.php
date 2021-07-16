@@ -29,7 +29,7 @@
         <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="{{ url("gbs-user-admin") }}">
+        <a class="navbar-brand" href="{{ route("dashboard") }}">
             <span class="navbar-brand-full">Головна</span>
             <span class="navbar-brand-minimized">Головна</span>
         </a>
