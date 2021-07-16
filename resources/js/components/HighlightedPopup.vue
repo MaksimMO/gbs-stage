@@ -115,8 +115,12 @@ export default {
     // }
 
     @media screen and (max-width: 767px){
+        padding: 30px ;
         height: 90vh;
         width: 90vw;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
     }
 
 }
