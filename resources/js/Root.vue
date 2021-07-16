@@ -32,7 +32,7 @@ export default {
             setTimeout(()=>{
                 //todo hendle different overlays
                 this.highlightedPopup.isVisible=true;
-            },3000)
+            },25000)
 
         }
     },

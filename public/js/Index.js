@@ -18696,7 +18696,7 @@ const getGlobalThis = () => {
       setTimeout(function () {
         //todo hendle different overlays
         _this.highlightedPopup.isVisible = true;
-      }, 3000);
+      }, 25000);
     }
   },
   mounted: function mounted() {
