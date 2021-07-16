@@ -27982,7 +27982,7 @@ window.vm = app.mount('#gbslevel-app'); // if(isMobile){
   "title": "Масаж",
   "descriptionBanner": "Стилізований масажний кабінет, запаморочливі аромати та спеціалісти по естетиці тіла «розкажуть» Вам про усю філософію релаксу, оздоровлення та зарядження енергією.",
   "description": "<h4>\u041C\u0430\u0441\u0430\u0436 \u2013 \u0446\u0435 \u0441\u044C\u043E\u043C\u0438\u0439 LEVEL relax \u043F\u0440\u043E\u0446\u0435\u0434\u0443\u0440 SPA \u0437\u043E\u043D\u0438.</h4>\n    <p>\u0421\u0442\u0438\u043B\u0456\u0437\u043E\u0432\u0430\u043D\u0438\u0439 \u043C\u0430\u0441\u0430\u0436\u043D\u0438\u0439 \u043A\u0430\u0431\u0456\u043D\u0435\u0442, \u0437\u0430\u043F\u0430\u043C\u043E\u0440\u043E\u0447\u043B\u0438\u0432\u0456 \u0430\u0440\u043E\u043C\u0430\u0442\u0438 \u0442\u0430 \u0441\u043F\u0435\u0446\u0456\u0430\u043B\u0456\u0441\u0442\u0438 \u043F\u043E \u0435\u0441\u0442\u0435\u0442\u0438\u0446\u0456 \u0442\u0456\u043B\u0430 \xAB\u0440\u043E\u0437\u043A\u0430\u0436\u0443\u0442\u044C\xBB \u0412\u0430\u043C \u043F\u0440\u043E \u0443\u0441\u044E \u0444\u0456\u043B\u043E\u0441\u043E\u0444\u0456\u044E \u0440\u0435\u043B\u0430\u043A\u0441\u0443, \u043E\u0437\u0434\u043E\u0440\u043E\u0432\u043B\u0435\u043D\u043D\u044F \u0442\u0430 \u0437\u0430\u0440\u044F\u0434\u0436\u0435\u043D\u043D\u044F \u0435\u043D\u0435\u0440\u0433\u0456\u0454\u044E.</p>\n\n    <p>S LEVEL \u043F\u0440\u043E\u043F\u043E\u043D\u0443\u0454 \u0448\u0438\u0440\u043E\u043A\u0438\u0439 \u0441\u043F\u0435\u043A\u0442\u0440 \u043C\u0430\u0441\u0430\u0436\u0456\u0432, \u0430\u0432\u0442\u043E\u0440\u0441\u044C\u043A\u0438\u0445 \u043C\u0430\u0441\u0430\u0436\u0456\u0432, \u043F\u0440\u043E\u0446\u0435\u0434\u0443\u0440 \u0434\u043B\u044F \u043E\u0431\u043B\u0438\u0447\u0447\u044F \u0442\u0430 \u0442\u0456\u043B\u0430.\n    \u041F\u0440\u043E\u0444\u0435\u0441\u0456\u0439\u043D\u0456 \u043C\u0430\u0441\u0430\u0436\u0438\u0441\u0442\u0438 \u043F\u0456\u0434\u0431\u0435\u0440\u0443\u0442\u044C \u0442\u0443 \u043F\u0440\u043E\u0446\u0435\u0434\u0443\u0440\u0443, \u044F\u043A\u0430 \u043D\u0430\u0439\u0431\u0456\u043B\u044C\u0448 \u043F\u043E\u0442\u0440\u0456\u0431\u043D\u0430 \u0432\u0430\u0448\u043E\u043C\u0443 \u0442\u0456\u043B\u0443 \u0442\u0430 \u0434\u0443\u0448\u0456.</p>\n\n    <p>\u041C\u0430\u0433\u0456\u044F \u043F\u0440\u043E\u0446\u0435\u0434\u0443\u0440 \u0434\u043B\u044F \u0442\u0456\u043B\u0430 \u0442\u0430 \u043E\u0431\u043B\u0438\u0447\u0447\u044F \u0441\u0442\u0430\u0454 \u0437\u043D\u0430\u0447\u043D\u043E \u043E\u0441\u043E\u0431\u043B\u0438\u0432\u043E\u044E \u0437\u0430\u0432\u0434\u044F\u043A\u0438 \u043A\u043E\u0441\u043C\u0435\u0442\u0438\u0446\u0456 \u0444\u0440\u0430\u043D\u0446\u0443\u0437\u044C\u043A\u043E\u0433\u043E \u0431\u0440\u0435\u043D\u0434\u0443 YON-KA.</p>",
-  "photos": [__webpack_require__(/*! ../../../assets/images/areas-s/slider-area-7/slider-area-7-1.jpg */ "./resources/assets/images/areas-s/slider-area-7/slider-area-7-1.jpg").default, __webpack_require__(/*! ../../../assets/images/areas-s/slider-area-7/slider-area-7-2.jpg */ "./resources/assets/images/areas-s/slider-area-7/slider-area-7-2.jpg").default, __webpack_require__(/*! ../../../assets/images/areas-s/slider-area-7/slider-area-7-3.jpg */ "./resources/assets/images/areas-s/slider-area-7/slider-area-7-3.jpg").default]
+  "photos": [__webpack_require__(/*! ../../../assets/images/areas-s/slider-area-7/slider-area-7-1.jpg */ "./resources/assets/images/areas-s/slider-area-7/slider-area-7-1.jpg").default, __webpack_require__(/*! ../../../assets/images/areas-s/slider-area-7/slider-area-7-2.jpg */ "./resources/assets/images/areas-s/slider-area-7/slider-area-7-2.jpg").default]
 }]);
 
 /***/ }),
@@ -30850,7 +30850,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-7-1.jpg?8b53d3a151fef7a46c2c66c164a158a9");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-7-1.jpg?807ada247d109da431f9a3868f853a26");
 
 /***/ }),
 
@@ -30864,21 +30864,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-7-2.jpg?75656c8351406cd5c169b5f6caa425b9");
-
-/***/ }),
-
-/***/ "./resources/assets/images/areas-s/slider-area-7/slider-area-7-3.jpg":
-/*!***************************************************************************!*\
-  !*** ./resources/assets/images/areas-s/slider-area-7/slider-area-7-3.jpg ***!
-  \***************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-7-3.jpg?50606538558e2b7c85249ff66bfd625b");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/slider-area-7-2.jpg?7caa531bd5a23f8df4e92ad4d62af4c8");
 
 /***/ }),
 

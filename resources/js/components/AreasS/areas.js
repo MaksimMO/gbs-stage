@@ -38,7 +38,6 @@ export default
     "photos":[
       require("../../../assets/images/areas-s/slider-area-7/slider-area-7-1.jpg").default,
       require("../../../assets/images/areas-s/slider-area-7/slider-area-7-2.jpg").default,
-      require("../../../assets/images/areas-s/slider-area-7/slider-area-7-3.jpg").default,
     ]
   }
 
