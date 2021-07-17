@@ -46,7 +46,7 @@
         <img class="skew-image" src="../../assets/images/popup-corner.svg" alt="">
         <div class="text-image">
             <p>
-               B LEVEL - be beauty!
+               B LEVEL - BE BEAUTIFUL!
             </p>
         </div>
     </section>

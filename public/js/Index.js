@@ -22008,34 +22008,38 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/TeamG/tickets
         id: 1,
         level: 'level 1',
         link: __webpack_require__(/*! ../../assets/images/TeamG/tickets/level1.png */ "./resources/assets/images/TeamG/tickets/level1.png").default,
+        ticketTitle: 'Тип клубної карти <span style="font-weight:bold">LEVEL 1</span>',
         period: {
           time1: 'пн-пт: 07:00 - 23:00',
           time2: 'сб-нд: 08:00 - 23:00',
           dayOff: '45 днів'
         },
         price: '30 000',
-        details: ['Безліміт на самостійне відвідування спортивного залу.', '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона).', '<b>Гостьове відвідування</b> – 7 рази протягом терміну дії клубної карти.', 'Брендові рушники, брендові халати для відвідування SPA комплексу.', 'Користування шафами покращеного формату.', '<b>Групові тренування</b> – 42 занятя* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 6 рази протягом терміну дії клубної карти.</b>', '<b>Масаж класичний</b> – 2 послуги.', 'Знижка 10 % на послуги “B Level”.', '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>2 послуги</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>2 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>2 послуги</b><br> або нігтьовий сервіс – <b>2 послуги</b>.</p>']
+        details: ['Безліміт на самостійне відвідування спортивного залу.', '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона).', '<b>Гостьове відвідування</b> – 7 разів протягом терміну дії клубної карти.', 'Брендові рушники, брендові халати для відвідування SPA комплексу.', 'Користування шафами покращеного формату.', '<b>Групові тренування</b> – 42 занятя* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 6 рази протягом терміну дії клубної карти.</b>', '<b>Масаж класичний</b> – 2 послуги.', 'Знижка 10 % на послуги “B Level”.', '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>2 послуги.</b><br>Нігтьовий сервіс (класичний манікюр без покриття) – <b>2 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>2 послуги.</b><br>Нігтьовий сервіс – <b>2 послуги</b>.</p>']
       }, {
         id: 2,
         level: 'level 2',
         link: __webpack_require__(/*! ../../assets/images/TeamG/tickets/level2.png */ "./resources/assets/images/TeamG/tickets/level2.png").default,
+        ticketTitle: 'Тип клубної карти <span style="font-weight:bold">LEVEL 2</span>',
         period: {
           time1: 'пн-пт: 07:00 - 23:00',
           time2: 'сб-нд: 08:00 - 23:00',
           dayOff: '30 днів'
         },
         price: '20 000',
-        details: ['Безліміт на самостійне відвідування спортивного залу.', '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 2 рази на місяць протягом терміну дії клубної карти.', '<b>Гостьове відвідування</b> – 5 рази протягом терміну дії клубної карти.', 'Брендові рушники, брендові халати для відвідування SPA комплексу.', 'Користування шафами покращеного формату.', '<b>Групові тренування</b> – 21 занятя* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 3 рази протягом терміну дії клубної карти.</b>', '<b>Масаж класичний</b> – 2 послуги.', 'Знижка 7 % на послуги “B Level”.', '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>1 послуги</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>1 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>1 послуги</b><br> або нігтьовий сервіс – <b>1 послуги</b>.</p>']
+        details: ['Безліміт на самостійне відвідування спортивного залу.', '<b>Відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 2 рази на місяць протягом терміну дії клубної карти.', '<b>Гостьове відвідування</b> – 5 рази протягом терміну дії клубної карти.', 'Брендові рушники, брендові халати для відвідування SPA комплексу.', '<b>Групові тренування</b> – 21 заняття* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 3 рази протягом терміну дії клубної карти.</b>', '<b>Масаж класичний</b> – 1 послуга.', 'Знижка 7 % на послуги “B Level”.', '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>1 послуга</b><br>Нігтьовий сервіс (класичний манікюр без покриття) – <b>1 послуга</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>1 послуга</b><br>Нігтьовий сервіс – <b>1 послуга</b>.</p>']
       }, {
         id: 3,
         level: 'level 3',
         link: __webpack_require__(/*! ../../assets/images/TeamG/tickets/level3.png */ "./resources/assets/images/TeamG/tickets/level3.png").default,
+        ticketTitle: '<span style="font-weight:bold">LEVEL 3</span>',
+        typeClubCard: 'Тип клубної карти: <span style="font-weight:bold">DAY</span>',
         period: {
           time1: 'пн-пт: 07:00 - 17:00',
-          dayOff: '30 днів'
+          dayOff: '15 днів'
         },
         price: '13 000',
-        details: ['Безліміт на самостійне відвідування спортивного залу.', '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 1 рази на місяць протягом терміну дії клубної карти.', '<b>Гостьове відвідування</b> – 2 рази протягом терміну дії клубної карти.', 'Брендові рушники, брендові халати для відвідування SPA комплексу.', 'Користування шафами покращеного формату.', '<b>Групові тренування</b> – 14 занятя* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 2 рази протягом терміну дії клубної карти.</b>', 'Знижка 5 % на послуги “B Level”.', '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>1 послуги</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>1 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>1 послуги</b><br> або нігтьовий сервіс – <b>1 послуги</b>.</p>']
+        details: ['Безліміт на самостійне відвідування спортивного залу.', '<b>Відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 1 раз на місяць протягом терміну дії клубної карти.', '<b>Гостьове відвідування</b> – 2 рази протягом терміну дії клубної карти.', 'Брендові рушники, брендові халати для відвідування SPA комплексу.', 'Користування шафами покращеного формату.', '<b>Групові тренування</b> – 14 заняття* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 2 рази протягом терміну дії клубної карти.</b>', 'Знижка 5 % на послуги “B Level”.', '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>1 послуга</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>1 послуга</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>1 послуга</b><br> або нігтьовий сервіс – <b>1 послуга</b>.</p>']
       }]
     };
   },
@@ -22968,6 +22972,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     onInit: $options.setAspectRatio,
     onResize: $options.setAspectRatio,
     onClick: $options.onModalOpen,
+    watchOverflow: true,
     navigation: true,
     slidesPerView: 2,
     spaceBetween: 15,
@@ -26267,7 +26272,7 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   alt: ""
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "text-image"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " B LEVEL - be beauty! ")])], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " B LEVEL - BE BEAUTIFUL! ")])], -1
 /* HOISTED */
 );
 
@@ -26764,6 +26769,33 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     "class": "header-invert"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Breadcrumb), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
     onClick: _cache[1] || (_cache[1] = function ($event) {
+      return $data.direction = 'nails';
+    }),
+    "class": {
+      'invert-color': $data.direction == 'nails'
+    }
+  }, "Nails", 2
+  /* CLASS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
+    onClick: _cache[2] || (_cache[2] = function ($event) {
+      return $data.direction = 'hair';
+    }),
+    "class": {
+      'invert-color': $data.direction == 'hair'
+    }
+  }, "Hair", 2
+  /* CLASS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
+    onClick: _cache[3] || (_cache[3] = function ($event) {
+      return $data.direction = 'make_up_brows';
+    }),
+    "class": {
+      'invert-color': $data.direction == 'make_up_brows'
+    }
+  }, "Make Up & Brows", 2
+  /* CLASS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
+    onClick: _cache[4] || (_cache[4] = function ($event) {
       return $data.direction = 'cosmetology';
     }),
     "class": {
@@ -26771,7 +26803,16 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     }
   }, "Cosmetology", 2
   /* CLASS */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li @click=\"direction = 'hair'\" :class=\"{'invert-color': direction == 'hair'}\">Hair</li>\r\n            <li @click=\"direction = 'nails'\" :class=\"{'invert-color': direction == 'nails'}\">Nails</li>\r\n            <li @click=\"direction = 'care_yon_ka'\" :class=\"{'invert-color': direction == 'care_yon_ka'}\">Догляд Yon-Ka</li>\r\n            <li @click=\"direction = 'make_up_brows'\" :class=\"{'invert-color': direction == 'make_up_brows'}\">Make Up &#38; Brows</li> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.TransitionGroup, {
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
+    onClick: _cache[5] || (_cache[5] = function ($event) {
+      return $data.direction = 'care_yon_ka';
+    }),
+    "class": {
+      'invert-color': $data.direction == 'care_yon_ka'
+    }
+  }, "Догляд Yon-Ka", 2
+  /* CLASS */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.TransitionGroup, {
     name: "list-price"
   }, {
     "default": _withId(function () {
@@ -27481,44 +27522,38 @@ var _hoisted_9 = {
   "class": "imgDiv"
 };
 var _hoisted_10 = {
-  "class": "ticket-title"
-};
-
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Тип клубної карти: ");
-
-var _hoisted_12 = {
   "class": "ticket-discript"
 };
-var _hoisted_13 = {
+var _hoisted_11 = {
   "class": "ticket-period"
 };
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Термін дії: "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "1 рік")], -1
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Термін дії: "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, "1 рік")], -1
 /* HOISTED */
 );
 
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Час відвідування:", -1
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Час відвідування:", -1
 /* HOISTED */
 );
 
-var _hoisted_16 = {
-  key: 0
-};
-var _hoisted_17 = {
+var _hoisted_14 = {
   key: 1
 };
+var _hoisted_15 = {
+  key: 2
+};
 
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Призупинення дії: ");
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Призупинення дії: ");
 
-var _hoisted_19 = {
+var _hoisted_17 = {
   "class": "ticket-period-price"
 };
 
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Замовити", -1
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Замовити", -1
 /* HOISTED */
 );
 
-var _hoisted_21 = {
+var _hoisted_19 = {
   "class": "ticket-detail"
 };
 
@@ -27595,26 +27630,34 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
         })
       }, {
         "default": _withId(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.level), 1
-          /* TEXT */
-          )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
+            "class": "ticket-title",
+            innerHTML: $data.ticketDetail.ticketTitle
+          }, null, 8
+          /* PROPS */
+          , ["innerHTML"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
             src: $data.ticketDetail.link,
             alt: $data.ticketDetail.level
           }, null, 8
           /* PROPS */
-          , ["src", "alt"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, [_hoisted_14, _hoisted_15, $data.ticketDetail.period.time1 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.time1), 1
+          , ["src", "alt"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, [$data.ticketDetail.typeClubCard ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", {
+            key: 0,
+            innerHTML: $data.ticketDetail.typeClubCard
+          }, null, 8
+          /* PROPS */
+          , ["innerHTML"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_12, _hoisted_13, $data.ticketDetail.period.time1 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.time1), 1
           /* TEXT */
-          )])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.ticketDetail.period.time2 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.time2), 1
+          )])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.ticketDetail.period.time2 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.time2), 1
           /* TEXT */
-          )])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.dayOff), 1
+          )])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [_hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.dayOff), 1
           /* TEXT */
-          )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.price) + " грн", 1
+          )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.price) + " грн", 1
           /* TEXT */
           ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
             onClick: _cache[7] || (_cache[7] = function ($event) {
               return $options.openOrder($data.ticketDetail.level);
             })
-          }, [_hoisted_20])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_21, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.ticketDetail.details, function (detail, idx) {
+          }, [_hoisted_18])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_19, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.ticketDetail.details, function (detail, idx) {
             return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", {
               key: idx,
               innerHTML: detail
@@ -29842,7 +29885,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-hover.svg?87b43b62664da17195421bbf0a4be9aa");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-hover.svg?6de6297fc0175501f65ca02aea303c25");
 
 /***/ }),
 
@@ -29856,7 +29899,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1");
 
 /***/ }),
 
@@ -29870,7 +29913,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?736193b044696161e2a6e9f91539c73e");
 
 /***/ }),
 
@@ -29898,7 +29941,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?df90caa4b4466fae2999be366ce12b13");
 
 /***/ }),
 
@@ -29926,7 +29969,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?d94603bf7c6c5c4b24c3e6245db8ea26");
 
 /***/ }),
 
@@ -31596,7 +31639,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/link-button-1.svg?b56062a7fc5663f3dd176c3944eca839");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/link-button-1.svg?f0436fae4285ac841c786452e43844ba");
 
 /***/ }),
 

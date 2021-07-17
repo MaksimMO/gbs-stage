@@ -4,6 +4,7 @@
   @init="setAspectRatio"
   @resize="setAspectRatio"
   @click="onModalOpen"
+  :watchOverflow="true"
     :navigation="true"
     :slidesPerView="2"
     :spaceBetween="15"

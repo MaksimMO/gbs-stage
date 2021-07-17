@@ -40,10 +40,11 @@
     <teleport to="body">
         <transition name="popup-tickets">
             <PopupTickets v-if="isModalOpen"  @closePopup="isModalOpen = false">
-                <h1 class="ticket-title">Тип клубної карти: <span>{{ticketDetail.level}}</span></h1>
+                <h1 class="ticket-title" v-html="ticketDetail.ticketTitle"></h1>
                 <div class="ticket-discript">
                     <img :src="ticketDetail.link" :alt="ticketDetail.level">
                     <div class="ticket-period">
+                        <p v-if="ticketDetail.typeClubCard" v-html="ticketDetail.typeClubCard"></p>
                         <p>Термін дії: <b>1 рік</b></p>
                         <p>Час відвідування:</p>
                         <p v-if="ticketDetail.period.time1"><b>{{ticketDetail.period.time1}}</b></p>
@@ -89,47 +90,50 @@ export default {
             choiceLevel: null,
             tickets: [
                 {id: 1, level: 'level 1', link: require("../../assets/images/TeamG/tickets/level1.png").default,
+                    ticketTitle:'Тип клубної карти <span style="font-weight:bold">LEVEL 1</span>',
                     period: { time1: 'пн-пт: 07:00 - 23:00', time2: 'сб-нд: 08:00 - 23:00', dayOff: '45 днів'},
                     price: '30 000',
                     details: [
                         'Безліміт на самостійне відвідування спортивного залу.',
                         '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона).',
-                        '<b>Гостьове відвідування</b> – 7 рази протягом терміну дії клубної карти.',
+                        '<b>Гостьове відвідування</b> – 7 разів протягом терміну дії клубної карти.',
                         'Брендові рушники, брендові халати для відвідування SPA комплексу.',
                         'Користування шафами покращеного формату.',
                         '<b>Групові тренування</b> – 42 занятя* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 6 рази протягом терміну дії клубної карти.</b>',
                         '<b>Масаж класичний</b> – 2 послуги.',
                         'Знижка 10 % на послуги “B Level”.',
-                        '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>2 послуги</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>2 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>2 послуги</b><br> або нігтьовий сервіс – <b>2 послуги</b>.</p>'
+                        '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>2 послуги.</b><br>Нігтьовий сервіс (класичний манікюр без покриття) – <b>2 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>2 послуги.</b><br>Нігтьовий сервіс – <b>2 послуги</b>.</p>'
                     ]
                 },
                 {id: 2, level: 'level 2', link: require("../../assets/images/TeamG/tickets/level2.png").default,
+                    ticketTitle:'Тип клубної карти <span style="font-weight:bold">LEVEL 2</span>',
                     period: { time1: 'пн-пт: 07:00 - 23:00', time2: 'сб-нд: 08:00 - 23:00', dayOff: '30 днів'},
                     price: '20 000',
                     details: [
                         'Безліміт на самостійне відвідування спортивного залу.',
-                        '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 2 рази на місяць протягом терміну дії клубної карти.',
+                        '<b>Відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 2 рази на місяць протягом терміну дії клубної карти.',
                         '<b>Гостьове відвідування</b> – 5 рази протягом терміну дії клубної карти.',
                         'Брендові рушники, брендові халати для відвідування SPA комплексу.',
-                        'Користування шафами покращеного формату.',
-                        '<b>Групові тренування</b> – 21 занятя* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 3 рази протягом терміну дії клубної карти.</b>',
-                        '<b>Масаж класичний</b> – 2 послуги.',
+                        '<b>Групові тренування</b> – 21 заняття* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 3 рази протягом терміну дії клубної карти.</b>',
+                        '<b>Масаж класичний</b> – 1 послуга.',
                         'Знижка 7 % на послуги “B Level”.',
-                        '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>1 послуги</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>1 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>1 послуги</b><br> або нігтьовий сервіс – <b>1 послуги</b>.</p>'
+                        '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>1 послуга</b><br>Нігтьовий сервіс (класичний манікюр без покриття) – <b>1 послуга</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>1 послуга</b><br>Нігтьовий сервіс – <b>1 послуга</b>.</p>'
                     ]
                 },
                 {id: 3, level: 'level 3',link: require("../../assets/images/TeamG/tickets/level3.png").default,
-                    period: { time1: 'пн-пт: 07:00 - 17:00', dayOff: '30 днів'},
+                    ticketTitle:'<span style="font-weight:bold">LEVEL 3</span>',
+                    typeClubCard:'Тип клубної карти: <span style="font-weight:bold">DAY</span>',
+                    period: { time1: 'пн-пт: 07:00 - 17:00', dayOff: '15 днів'},
                     price: '13 000',
                     details: [
                         'Безліміт на самостійне відвідування спортивного залу.',
-                        '<b>Безліміт на відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 1 рази на місяць протягом терміну дії клубної карти.',
+                        '<b>Відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 1 раз на місяць протягом терміну дії клубної карти.',
                         '<b>Гостьове відвідування</b> – 2 рази протягом терміну дії клубної карти.',
                         'Брендові рушники, брендові халати для відвідування SPA комплексу.',
                         'Користування шафами покращеного формату.',
-                        '<b>Групові тренування</b> – 14 занятя* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 2 рази протягом терміну дії клубної карти.</b>',
+                        '<b>Групові тренування</b> – 14 заняття* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 2 рази протягом терміну дії клубної карти.</b>',
                         'Знижка 5 % на послуги “B Level”.',
-                        '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>1 послуги</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>1 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>1 послуги</b><br> або нігтьовий сервіс – <b>1 послуги</b>.</p>'
+                        '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>1 послуга</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>1 послуга</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>1 послуга</b><br> або нігтьовий сервіс – <b>1 послуга</b>.</p>'
                     ]
                 }
             ]
