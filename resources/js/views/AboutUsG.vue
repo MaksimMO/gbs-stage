@@ -415,7 +415,8 @@ export default {
 
             .image{
                 width: 100%;
-                max-height: 316px;
+                // max-height: 316px;
+                object-fit: cover;
             }
 
             .skew-image{
@@ -519,7 +520,8 @@ export default {
 
             .image{
                 width: 100%;
-                max-height: 214px;
+                // max-height: 214px;
+                object-fit: cover;
             }
 
             .skew-image{
@@ -531,7 +533,7 @@ export default {
 
             .text-image{
                 text-align: left;
-                bottom: -35px;
+                // bottom: -35px;
                 width: 57.3%;//67.3%
                 height: auto;//83px
                 font-size: 18px;//36px
