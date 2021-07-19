@@ -19948,16 +19948,22 @@ swiper_core__WEBPACK_IMPORTED_MODULE_1__.default.use([swiper_core__WEBPACK_IMPOR
       this.isSelected = false;
     },
     isShow: function isShow() {
-      // if(!this.isOpen) {
-      //     console.log('isShow')
-      this.$emit('isShow', true);
-      this.isSelected = true; // }
+      if (!this.isOpen) {
+        console.log('isShow');
+        this.$emit('isShow', true);
+        this.isSelected = true;
+      }
     },
     isClosed: function isClosed() {
-      // if(this.isOpen && this.isSelected) {
-      console.log('isClosed');
-      this.$emit('isClosed', false);
-      this.isSelected = false; // }
+      if (this.isOpen && this.isSelected) {
+        console.log('isClosed');
+        this.$emit('isClosed', false);
+        this.isSelected = false;
+      }
+    },
+    mobileOpen: function mobileOpen() {
+      this.$emit('isClosed', !this.isOpen);
+      this.isSelected = !this.isSelected;
     }
   },
   components: {
@@ -24852,7 +24858,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     src: "../../images/".concat($props.trainer.link),
     alt: $props.trainer.firstName,
     onClick: _cache[3] || (_cache[3] = function ($event) {
-      return !$props.isOpen ? $options.isShow() : $options.isClosed();
+      return $props.isSlider ? $options.mobileOpen() : !$props.isOpen ? $options.isShow() : $options.isClosed();
     })
   }, null, 8
   /* PROPS */
@@ -24862,7 +24868,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     linkVideo: $props.trainer.linkVideo,
     linkImage: $props.trainer.link,
     onClick: _cache[4] || (_cache[4] = function ($event) {
-      return !$props.isOpen ? $options.isShow() : $options.isClosed();
+      return $props.isSlider ? $options.mobileOpen() : !$props.isOpen ? $options.isShow() : $options.isClosed();
     })
   }, null, 8
   /* PROPS */
