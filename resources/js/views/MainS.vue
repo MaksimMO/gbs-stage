@@ -3,9 +3,10 @@
   <div class="view-main-s">
   <section class="top-image-container">
 <!--    <img class="top-image" src="../../assets/images/main-s-background.jpg" alt="">-->
+ <!-- poster="require('../../assets/images/main-s-background.jpg').default" -->
       <video-background
-          src="/video/area-video-4-s-level.mp4"
-          poster="/images/main-s-background.jpg"
+          :src="require('../../assets/video/area-video-4-s-level.mp4').default"
+          :poster="require('../../assets/images/main-s-background.jpg').default"
           class="top-image"
       >
       </video-background>
@@ -69,7 +70,7 @@ import GallerySlider from '../components/GallerySlider.vue';
 import VideoBackground from 'vue-responsive-video-background-player';
 
 let preloadedAssets = [
-        require('../../assets/images/areas-s/area-s-1-1.jpg').default,
+        require("../../assets/images/main-s-background.jpg").default,
         require("../../assets/images/main-s/foto-1.jpg").default,
         require("../../assets/images/main-s/foto-2.jpg").default,
         require("../../assets/images/main-s/foto-3.jpg").default,

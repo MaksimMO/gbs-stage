@@ -4,8 +4,8 @@
   <section class="top-image-container">
     <!-- <img class="top-image" src="../../assets/images/main-b-background.jpg" alt=""> -->
     <video-background
-          src="/video/b-level-main.mp4"
-          poster="../../assets/images/main-b-background.jpg"
+          :src="require('../../assets/video/b-level-main.mp4').default"
+          :poster="require('../../assets/images/main-b-background.jpg').default"
           class="top-image"
       >
       </video-background>
@@ -81,6 +81,7 @@ import BrandMakeupSlider from '../components/BrandMakeupSlider.vue';
 import VideoBackground from 'vue-responsive-video-background-player';
 
 let preloadedAssets = [
+        require('../../assets/images/main-b-background.jpg').default,
         require('../../assets/images/popup-corner.svg').default,
         require('../../assets/images/aboutUs-b-main.jpg').default,
         require('../../assets/images/popup-corner.svg').default,
