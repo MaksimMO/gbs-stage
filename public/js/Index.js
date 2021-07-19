@@ -21007,7 +21007,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/main-s-backgr
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      direction: 'cosmetology',
+      direction: 'nails',
       prices: [{
         id: 0,
         direction: "cosmetology",
@@ -21187,6 +21187,400 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/main-s-backgr
             name: 'Очі',
             price: '2 500'
           }]
+        }]
+      }, {
+        id: 7,
+        direction: "nails",
+        side: 'left',
+        level: 'Майстер/Топ-Майстер',
+        lists: [{
+          name: 'Манікюр та покриття гель-лаком',
+          price: '400/450'
+        }, {
+          name: 'Манікюр',
+          price: '200/300'
+        }, {
+          name: 'Покриття гель-лаком',
+          price: '250/300'
+        }, {
+          name: 'Нарощення нігтів',
+          price: '550/600'
+        }, {
+          name: 'Зняття гель-лаку',
+          price: '50'
+        }, {
+          name: 'Зняття нарощених нігтів',
+          price: '100'
+        }, {
+          name: 'Довжина',
+          price: '30'
+        }, {
+          name: 'Ремонт нігтя',
+          price: '50'
+        }, {
+          name: 'Частковий ремонт нігтя',
+          price: '10'
+        }, {
+          name: 'Укріплення гелем/ акрігелем',
+          price: '50'
+        }, {
+          name: 'Стемпінг, акварель, наклейка, каміння (1 палець)',
+          price: '15'
+        }, {
+          name: 'Фрацузький, лунний манікюр',
+          price: '50'
+        }, {
+          name: 'Дизайн аерографом',
+          price: '100'
+        }, {
+          name: 'Педикюр та покриття гель-лаком',
+          price: '500/550'
+        }, {
+          name: 'Педикюр без обробки стоп',
+          price: '300/350'
+        }, {
+          name: 'Педикюр без покриття',
+          price: '250/300'
+        }, {
+          name: 'Чоловічий манікюр',
+          price: '250/300'
+        }, {
+          name: 'Чоловічий педикюр «Clearance»',
+          price: '500/550'
+        }]
+      }, {
+        id: 8,
+        direction: "make_up_brows",
+        side: 'left',
+        lists: [{
+          name: 'Експрес макіяж',
+          price: '400'
+        }, {
+          name: 'Денний макіяж',
+          price: '500'
+        }, {
+          name: 'Вечірній макіяж',
+          price: '650'
+        }, {
+          name: 'Весільний макіяж',
+          price: '800'
+        }, {
+          name: 'Накладні вії',
+          price: '100'
+        }, {
+          name: 'Корекція брів',
+          price: '150'
+        }, {
+          name: 'Проріджування брів',
+          price: '100'
+        }, {
+          name: 'Корекція та фарбування брів',
+          price: '250'
+        }, {
+          name: 'Ламінування брів',
+          price: '500'
+        }, {
+          name: 'Ламінування вій + Ботокс',
+          price: '800'
+        }, {
+          name: 'Фарбування вій',
+          price: '150'
+        }, {
+          name: 'Ламінування, корекція та фарбування брів',
+          price: '800'
+        }, {
+          name: 'Епіляція верхньої губи',
+          price: '100'
+        }, {
+          name: 'Чоловіча корекція брів',
+          price: '300'
+        }, {
+          name: 'Епіляція вух та носу',
+          price: '150'
+        }]
+      }, {
+        id: 9,
+        direction: "hair",
+        side: 'left',
+        сhapter: 'Hair Coloring',
+        subtiteles: [{
+          name: 'Napura',
+          lists: [{
+            name: 'Фарбування',
+            price: 'Від 670'
+          }, {
+            name: 'Складне фарбування ',
+            price: 'Від 2000'
+          }]
+        }, {
+          name: 'Loreal',
+          lists: [{
+            name: 'Фарбування',
+            price: 'Від 550'
+          }, {
+            name: 'Складне фарбування',
+            price: 'Від 1900'
+          }]
+        }]
+      }, {
+        id: 10,
+        direction: "hair",
+        side: 'left',
+        сhapter: 'Hair Care',
+        subtiteles: [{
+          name: 'Kerastase',
+          lists: [{
+            name: 'Ритуал для волосся Fusio-Dose',
+            price: 'Від 850'
+          }]
+        }, {
+          name: 'Napura',
+          lists: [{
+            name: 'Біологічне очищення',
+            price: '900'
+          }, {
+            name: 'Стимуляція росту волосся',
+            price: '670'
+          }, {
+            name: 'Волосся Е!',
+            price: '850'
+          }, {
+            name: 'Ні лупі',
+            price: '1450'
+          }, {
+            name: 'Спасіння блондинок',
+            price: '1100'
+          }, {
+            name: 'Швидка допомога 1 довжина',
+            price: '1500'
+          }]
+        }, {
+          name: 'Paul Mitchell',
+          lists: [{
+            name: 'Ламінування волосся Awapuhi 1 довжина',
+            price: '900'
+          }, {
+            name: 'Ламінування волосся Awapuhi 2 довжина',
+            price: '1150'
+          }, {
+            name: 'Ламінування волосся Awapuhi 3 довжина',
+            price: '1400'
+          }, {
+            name: 'Ламінування волосся Awapuhi 4 довжина',
+            price: '1600'
+          }, {
+            name: 'HydraTriplex 1 довжина',
+            price: '500'
+          }, {
+            name: 'HydraTriplex 2 довжина',
+            price: '580'
+          }, {
+            name: 'HydraTriplex 3 довжина',
+            price: '1350'
+          }, {
+            name: 'HydraTriplex 4 довжина',
+            price: '1500'
+          }, {
+            name: 'KeraTriplex 1 довжина',
+            price: '500'
+          }, {
+            name: 'KeraTriplex 2 довжина',
+            price: '850'
+          }, {
+            name: 'KeraTriplex 3 довжина',
+            price: '1350'
+          }, {
+            name: 'KeraTriplex 4 довжина',
+            price: '1500'
+          }, {
+            name: 'HydraTriplex та KeraTriplex 1 довжина',
+            price: '900'
+          }, {
+            name: 'HydraTriplex та KeraTriplex 2 довжина',
+            price: '1500'
+          }, {
+            name: 'HydraTriplex та KeraTriplex 3 довжина',
+            price: '2000'
+          }, {
+            name: 'HydraTriplex та KeraTriplex 4 довжина',
+            price: '2400'
+          }]
+        }, {
+          name: 'Luxliss',
+          lists: [{
+            name: 'Кератинове вирівнювання чолки',
+            price: '220'
+          }, {
+            name: 'Кератинове вирівнювання 2 довжина',
+            price: '2300'
+          }, {
+            name: 'Кератинове вирівнювання 3 довжина',
+            price: '2800'
+          }, {
+            name: 'Кератинове вирівнювання 4 довжина',
+            price: '3300'
+          }, {
+            name: 'Ботокс 2 довжина',
+            price: '800'
+          }, {
+            name: 'Ботокс 3 довжина',
+            price: '1100'
+          }, {
+            name: 'Ботокс 4 довжина',
+            price: '1400'
+          }]
+        }, {
+          name: 'Lebel',
+          lists: [{
+            name: 'Абсолютне щастя 1 довжина',
+            price: '700'
+          }, {
+            name: 'Абсолютне щастя 2 довжина',
+            price: '1100'
+          }, {
+            name: 'Абсолютне щастя 3 довжина',
+            price: '1750'
+          }, {
+            name: 'Абсолютне щастя 4 довжина',
+            price: '2300'
+          }]
+        }]
+      }, {
+        id: 11,
+        direction: "hair",
+        side: 'right',
+        сhapter: 'Hair',
+        lists: [{
+          name: 'Миття волосся Loreal',
+          price: 'Від 75'
+        }, {
+          name: 'Миття волосся Paul Mitchell',
+          price: 'Від 80'
+        }, {
+          name: 'Миття волосся Napura',
+          price: 'Від 90'
+        }, {
+          name: 'Миття волосся Kerastase',
+          price: 'Від 100'
+        }, {
+          name: 'Сушіння волосся',
+          price: 'Від 100'
+        }, {
+          name: 'Вирівнювання волосся',
+          price: 'Від 150'
+        }, {
+          name: 'Вирівнювання волосся Steampod',
+          price: 'Від 300'
+        }, {
+          name: 'Укладання волосся',
+          price: '200'
+        }, {
+          name: 'Укладання волосся на браш',
+          price: 'Від 300'
+        }, {
+          name: 'Локони',
+          price: 'Від 300'
+        }, {
+          name: 'Стрижка',
+          price: '250'
+        }, {
+          name: 'Стрижка кінчиків',
+          price: '150'
+        }, {
+          name: 'Стрижка чолки',
+          price: '100'
+        }, {
+          name: 'Прикорніве гофре',
+          price: '100'
+        }, {
+          name: 'Плетіння кіс',
+          price: 'Від 50'
+        }, {
+          name: 'Зачіска вечірня',
+          price: '600'
+        }, {
+          name: 'Зачіска для нареченої',
+          price: '800'
+        }, {
+          name: 'Дитяча зачіска',
+          price: '250'
+        }]
+      }, {
+        id: 12,
+        direction: "hair",
+        side: 'right',
+        сhapter: 'Men’s Hair',
+        level: 'Майстер/Топ-Майстер',
+        lists: [{
+          name: 'Стрижка класична',
+          price: '200/300'
+        }, {
+          name: 'Стрижка модельна',
+          price: '250/300'
+        }, {
+          name: 'Стрижка під насадку',
+          price: '150'
+        }, {
+          name: 'Стрижка бороди',
+          price: '100'
+        }, {
+          name: 'Камуфлювання сивини',
+          price: '250'
+        }, {
+          name: 'Окантовка',
+          price: '100'
+        }, {
+          name: 'Миття волосся',
+          price: '50'
+        }]
+      }, {
+        id: 13,
+        direction: "care_yon_ka",
+        side: 'left',
+        lists: [{
+          name: 'Intermezzo Аромаспалах',
+          price: '900',
+          discrip: 'Знайомство з брендом (30 хв.)'
+        }, {
+          name: 'Escale Beaute',
+          price: '1000',
+          discrip: 'Очищеня, Зволоженя та Anti-Age (60 хв.)'
+        }, {
+          name: 'Alpha Vital Ефект «нової шкіри»',
+          price: '1400',
+          discrip: 'Сяяння та відновлення шкіри з AHA з альгінатною маскою (90 хв.)'
+        }, {
+          name: 'Alpha Vital Ефект «нової шкіри»',
+          price: '1500',
+          discrip: 'Сяяння та відновлення шкіри з AHA з глиняною маскою (90 хв.)'
+        }, {
+          name: 'Vital Defense',
+          price: '1500',
+          discrip: 'Детоксикація, подолання впливу шкідливих радикалів та забруднюючих речовин (60 хв.)'
+        }, {
+          name: 'Age Correction Elastine (35-45 років)',
+          price: '1400',
+          discrip: 'Корекція вікових змін (90 хв.)'
+        }, {
+          name: 'Age Correction Time Resist (45-55 років)',
+          price: '1500',
+          discrip: 'Корекція вікових змін (90 хв.)'
+        }, {
+          name: 'Age Correction Optimizer (45-55 років)',
+          price: '1600',
+          discrip: 'Корекція вікових змін (90 хв.)'
+        }, {
+          name: 'Sensitive',
+          price: '1200',
+          discrip: 'Заспокійливий ефект, відчуття комфорту (60 хв.)'
+        }, {
+          name: 'Essential White',
+          price: '1350',
+          discrip: 'Ефект освітлення або корекція пігментних плям (30 хв.)'
+        }, {
+          name: 'Essential White',
+          price: '1400',
+          discrip: 'Ефект освітлення або корекція пігментних плям (60 хв.)'
         }]
       }]
     };
@@ -26717,64 +27111,58 @@ var _hoisted_6 = {
   "class": "left"
 };
 var _hoisted_7 = {
-  "class": "сhapter"
-};
-var _hoisted_8 = {
   "class": "type-name"
 };
 
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "line-dotted"
 }, null, -1
 /* HOISTED */
 );
 
+var _hoisted_9 = {
+  "class": "type-price"
+};
 var _hoisted_10 = {
-  "class": "type-price"
-};
-var _hoisted_11 = {
   "class": "type-name"
 };
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "line-dotted"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_13 = {
+var _hoisted_12 = {
   "class": "type-price"
 };
-var _hoisted_14 = {
+var _hoisted_13 = {
   "class": "right"
 };
-var _hoisted_15 = {
-  "class": "сhapter"
-};
-var _hoisted_16 = {
+var _hoisted_14 = {
   "class": "type-name"
 };
 
-var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "line-dotted"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_18 = {
+var _hoisted_16 = {
   "class": "type-price"
 };
-var _hoisted_19 = {
+var _hoisted_17 = {
   "class": "type-name"
 };
 
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "line-dotted"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_21 = {
+var _hoisted_19 = {
   "class": "type-price"
 };
 
@@ -26841,9 +27229,15 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.directionCheckLeft, function (price) {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("ul", {
           key: price.id
-        }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(price.сhapter), 1
-        /* TEXT */
-        ), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(price.subtiteles, function (subtitel, idx) {
+        }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+          "class": "сhapter"
+        }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(price.сhapter), 513
+        /* TEXT, NEED_PATCH */
+        ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, price.сhapter]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+          "class": "level"
+        }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(price.level), 513
+        /* TEXT, NEED_PATCH */
+        ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, price.level]]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(price.subtiteles, function (subtitel, idx) {
           return (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)(((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
             "class": "subtitle",
             key: idx
@@ -26852,11 +27246,11 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
           ), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(subtitel.lists, function (list) {
             return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", {
               key: list.id
-            }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.name), 1
+            }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.name), 1
             /* TEXT */
-            ), _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.price) + " грн", 1
+            ), _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.price) + " грн", 1
             /* TEXT */
-            )]);
+            )])]);
           }), 128
           /* KEYED_FRAGMENT */
           ))], 512
@@ -26867,11 +27261,15 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
         )), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(price.lists, function (list) {
           return (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)(((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", {
             key: list.id
-          }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.name), 1
+          }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.name), 1
           /* TEXT */
-          ), _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.price) + " грн", 1
+          ), _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.price) + " грн", 1
           /* TEXT */
-          )], 512
+          )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+            "class": "list-discrip"
+          }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.discrip), 513
+          /* TEXT, NEED_PATCH */
+          ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, list.discrip]])], 512
           /* NEED_PATCH */
           )), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, price.lists]]);
         }), 128
@@ -26879,12 +27277,18 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
         ))]);
       }), 128
       /* KEYED_FRAGMENT */
-      ))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.directionCheckRight, function (price) {
+      ))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.directionCheckRight, function (price) {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("ul", {
           key: price.id
-        }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(price.сhapter), 1
-        /* TEXT */
-        ), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(price.subtiteles, function (subtitel, idx) {
+        }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+          "class": "сhapter"
+        }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(price.сhapter), 513
+        /* TEXT, NEED_PATCH */
+        ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, price.сhapter]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+          "class": "level"
+        }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(price.level), 513
+        /* TEXT, NEED_PATCH */
+        ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, price.level]]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(price.subtiteles, function (subtitel, idx) {
           return (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)(((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
             "class": "subtitle",
             key: idx
@@ -26893,11 +27297,15 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
           ), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(subtitel.lists, function (list) {
             return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", {
               key: list.id
-            }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.name), 1
+            }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.name), 1
             /* TEXT */
-            ), _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.price) + " грн", 1
+            ), _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.price) + " грн", 1
             /* TEXT */
-            )]);
+            )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+              "class": "list-discrip"
+            }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.discrip), 513
+            /* TEXT, NEED_PATCH */
+            ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, list.discrip]])]);
           }), 128
           /* KEYED_FRAGMENT */
           ))], 512
@@ -26908,11 +27316,11 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
         )), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(price.lists, function (list) {
           return (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)(((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", {
             key: list.id
-          }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.name), 1
+          }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.name), 1
           /* TEXT */
-          ), _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.price) + " грн", 1
+          ), _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(list.price) + " грн", 1
           /* TEXT */
-          )], 512
+          )])], 512
           /* NEED_PATCH */
           )), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, price.lists]]);
         }), 128
