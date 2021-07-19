@@ -147,7 +147,7 @@ export default {
     opacity: 0;
 }
 
-.swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide{
+::v-deep(.swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide){
     transition: all .2s ease-in;
     pointer-events: none;
     opacity: 0;

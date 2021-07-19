@@ -37,7 +37,7 @@
   color: #916C58;
 }
 .phone-link[data-v-100dbea6]::before {
-  background: url(/images/phone-icon.svg?9db9d2eacac8d28d2f4402782aae721e) no-repeat center;
+  background: url(/images/phone-icon.svg?6606c30dc31d93744d33a398f4312050) no-repeat center;
   content: "";
   width: 21px;
   height: 21px;
@@ -731,15 +731,15 @@ label[data-v-8048fca2] {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(105%);
 }
 .header-invert .main > a > .logo.g[data-v-46ab9914] {
-  background: url(/images/g-level-darck.svg?c361667f2e00cb0a3637e2f975c1cc80) no-repeat;
+  background: url(/images/g-level-darck.svg?b12f10e8b0ef5b7d9921289b7942c945) no-repeat;
   background-size: contain;
 }
 .header-invert .main > a > .logo.b[data-v-46ab9914] {
-  background: url(/images/b-level-darck.svg?f3cadb0675d72021ab687179cff8e5de) no-repeat;
+  background: url(/images/b-level-darck.svg?34d3246fd5f28f54932080e9c8429771) no-repeat;
   background-size: contain;
 }
 .header-invert .main > a > .logo.s[data-v-46ab9914] {
-  background: url(/images/s-level-darck.svg?a27de085c1e6928ac2dd7b9b262582c7) no-repeat;
+  background: url(/images/s-level-darck.svg?82ec9c9a7a09a0c71138a777fea8cffb) no-repeat;
   background-size: contain;
 }
 .is-open[data-v-46ab9914] {
@@ -757,11 +757,11 @@ label[data-v-8048fca2] {
   color: #fff;
 }
 .is-open .main > a > .logo.g[data-v-46ab9914] {
-  background: url(/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca) no-repeat;
+  background: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9) no-repeat;
   background-size: contain;
 }
 .is-open .main > a > .logo.b[data-v-46ab9914] {
-  background: url(/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212) no-repeat;
+  background: url(/images/b-level.svg?02bae0682140f88722059abfc0376dc1) no-repeat;
   background-size: contain;
 }
 .is-open .main > a > .logo.s[data-v-46ab9914] {
@@ -780,11 +780,11 @@ label[data-v-8048fca2] {
   transition: all 0.6s ease-in;
 }
 .main > a > .logo.g[data-v-46ab9914] {
-  background: url(/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca) no-repeat;
+  background: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9) no-repeat;
   background-size: contain;
 }
 .main > a > .logo.b[data-v-46ab9914] {
-  background: url(/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212) no-repeat;
+  background: url(/images/b-level.svg?02bae0682140f88722059abfc0376dc1) no-repeat;
   background-size: contain;
 }
 .main > a > .logo.s[data-v-46ab9914] {
@@ -858,7 +858,7 @@ label[data-v-8048fca2] {
 }
 .main .close-opened[data-v-46ab9914]:hover {
   cursor: pointer;
-  background-image: url(/images/menu-close-white.svg?51134e345e051967709be96e3ef38ecf);
+  background-image: url(/images/menu-close-white.svg?91bd8bef07d7e63dd1e6c4e7b4778c75);
 }
 .slide-fade-enter-active[data-v-46ab9914] {
   -webkit-animation: show-in-46ab9914 0.6s;
@@ -912,11 +912,11 @@ label[data-v-8048fca2] {
   height: 38px;
 }
 .isScroll .main > a > .logo.g[data-v-46ab9914] {
-  background: url(/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca) no-repeat;
+  background: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9) no-repeat;
   background-size: contain;
 }
 .isScroll .main > a > .logo.b[data-v-46ab9914] {
-  background: url(/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212) no-repeat;
+  background: url(/images/b-level.svg?02bae0682140f88722059abfc0376dc1) no-repeat;
   background-size: contain;
 }
 .isScroll .main > a > .logo.s[data-v-46ab9914] {
@@ -1205,15 +1205,15 @@ label[data-v-8048fca2] {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(105%);
 }
 .header-invert .main > a > .logo.g[data-v-79315c4c] {
-  background: url(/images/g-level-darck.svg?c361667f2e00cb0a3637e2f975c1cc80) no-repeat;
+  background: url(/images/g-level-darck.svg?b12f10e8b0ef5b7d9921289b7942c945) no-repeat;
   background-size: contain;
 }
 .header-invert .main > a > .logo.b[data-v-79315c4c] {
-  background: url(/images/b-level-darck.svg?f3cadb0675d72021ab687179cff8e5de) no-repeat;
+  background: url(/images/b-level-darck.svg?34d3246fd5f28f54932080e9c8429771) no-repeat;
   background-size: contain;
 }
 .header-invert .main > a > .logo.s[data-v-79315c4c] {
-  background: url(/images/s-level-darck.svg?a27de085c1e6928ac2dd7b9b262582c7) no-repeat;
+  background: url(/images/s-level-darck.svg?82ec9c9a7a09a0c71138a777fea8cffb) no-repeat;
   background-size: contain;
 }
 .is-open[data-v-79315c4c] {
@@ -1232,11 +1232,11 @@ label[data-v-8048fca2] {
   color: #fff;
 }
 .is-open .main > a > .logo.g[data-v-79315c4c] {
-  background: url(/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca) no-repeat;
+  background: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9) no-repeat;
   background-size: contain;
 }
 .is-open .main > a > .logo.b[data-v-79315c4c] {
-  background: url(/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212) no-repeat;
+  background: url(/images/b-level.svg?02bae0682140f88722059abfc0376dc1) no-repeat;
   background-size: contain;
 }
 .is-open .main > a > .logo.s[data-v-79315c4c] {
@@ -1255,11 +1255,11 @@ label[data-v-8048fca2] {
   transition: all 0.6s ease-in;
 }
 .main > a > .logo.g[data-v-79315c4c] {
-  background: url(/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca) no-repeat;
+  background: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9) no-repeat;
   background-size: contain;
 }
 .main > a > .logo.b[data-v-79315c4c] {
-  background: url(/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212) no-repeat;
+  background: url(/images/b-level.svg?02bae0682140f88722059abfc0376dc1) no-repeat;
   background-size: contain;
 }
 .main > a > .logo.s[data-v-79315c4c] {
@@ -1277,7 +1277,7 @@ label[data-v-8048fca2] {
   background-image: url(/images/menu-open-gold.svg?65e64eccc4460b4d0a9ee652f775717f);
 }
 .main .close-opened[data-v-79315c4c] {
-  background-image: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1);
+  background-image: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -1286,7 +1286,7 @@ label[data-v-8048fca2] {
 }
 .main .close-opened[data-v-79315c4c]:hover {
   cursor: pointer;
-  background-image: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1);
+  background-image: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f);
 }
 .menu-mobile-enter-active[data-v-79315c4c],
 .menu-mobile-leave-active[data-v-79315c4c] {
@@ -1322,11 +1322,11 @@ label[data-v-8048fca2] {
   height: 23px;
 }
 .isScroll .main > a > .logo.g[data-v-79315c4c] {
-  background: url(/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca) no-repeat;
+  background: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9) no-repeat;
   background-size: contain;
 }
 .isScroll .main > a > .logo.b[data-v-79315c4c] {
-  background: url(/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212) no-repeat;
+  background: url(/images/b-level.svg?02bae0682140f88722059abfc0376dc1) no-repeat;
   background-size: contain;
 }
 .isScroll .main > a > .logo.s[data-v-79315c4c] {
@@ -1425,10 +1425,10 @@ to {
 }
 }
 .footer .line-1 .logo-link-wrapper .logo.g[data-v-7ce6f146] {
-  background-image: url(/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca);
+  background-image: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9);
 }
 .footer .line-1 .logo-link-wrapper .logo.b[data-v-7ce6f146] {
-  background-image: url(/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212);
+  background-image: url(/images/b-level.svg?02bae0682140f88722059abfc0376dc1);
 }
 .footer .line-1 .logo-link-wrapper .logo.s[data-v-7ce6f146] {
   background-image: url(/images/s-level.svg?66970d48e594fdfc781d762fd2e8de1c);
@@ -1949,10 +1949,10 @@ html, body {
 }
 }
 .feed_back_view .logo.g[data-v-28c122d5] {
-  background-image: url(/images/g-level.svg?f19b32e9e0f9c5d3f8fe906677ac37ca);
+  background-image: url(/images/g-level.svg?4322557835a36f1758bad92f49d6dca9);
 }
 .feed_back_view .logo.b[data-v-28c122d5] {
-  background-image: url(/images/b-level.svg?58917191a02c51bff0d2f1482b6c0212);
+  background-image: url(/images/b-level.svg?02bae0682140f88722059abfc0376dc1);
 }
 .feed_back_view .logo.s[data-v-28c122d5] {
   background-image: url(/images/s-level.svg?66970d48e594fdfc781d762fd2e8de1c);
@@ -2465,7 +2465,7 @@ Video[data-v-6a0f304d] {
   pointer-events: none;
   opacity: 0;
 }
-.swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide[data-v-004dd59c] {
+[data-v-004dd59c] .swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide {
   transition: all 0.2s ease-in;
   pointer-events: none;
   opacity: 0;
@@ -2526,7 +2526,7 @@ Video[data-v-6a0f304d] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
+  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
   margin-left: 15px;
 }
 .link-2[data-v-6918511f] {
@@ -3223,7 +3223,7 @@ Video[data-v-6a0f304d] {
   height: auto;
 }
 .swiper-slide[data-v-a1dfde10]::after {
-  content: url(/images/zoom-img.svg?e7724d44281f74e3d5d0723bf72fefdb);
+  content: url(/images/zoom-img.svg?a7b077eb6c87af5c6b383e8bb2e95e2b);
   display: none;
   position: absolute;
   width: 100%;
@@ -3647,7 +3647,7 @@ Video[data-v-6a0f304d] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
+  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
   margin-left: 15px;
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -4019,7 +4019,7 @@ Video[data-v-6a0f304d] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
+  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
   margin-left: 15px;
 }
 .link-2[data-v-69c16b2b] {
@@ -4565,7 +4565,7 @@ Video[data-v-6a0f304d] {
   height: auto;
 }
 .swiper-slide[data-v-4a2d3a7d]::after {
-  content: url(/images/zoom-img.svg?e7724d44281f74e3d5d0723bf72fefdb);
+  content: url(/images/zoom-img.svg?a7b077eb6c87af5c6b383e8bb2e95e2b);
   display: none;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.1);
@@ -5851,7 +5851,7 @@ Video[data-v-6a0f304d] {
   background-color: #FFFFFF !important;
 }
 .simulator-g .logo[data-v-bcffb62e] {
-  background-image: url(/images/technogym-logo-black.svg?6e3384e0b81af3319ec84d54c3f183b8);
+  background-image: url(/images/technogym-logo-black.svg?41e9fcde23524c6f008c5c6aa677f53e);
   background-repeat: no-repeat;
   background-size: contain;
   height: 84px;
@@ -6234,7 +6234,7 @@ li[data-v-bcffb62e] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
+  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
   margin-left: 15px;
 }
 .ticket-title[data-v-06dcca5f] {
@@ -6990,7 +6990,7 @@ li[data-v-5d9f7d78] {
   background-color: rgba(145, 108, 88, 0.15);
   border-radius: 50%;
   display: inline-block;
-  content: url(/images/marker.svg?f3e69856c579d1eca94519018b9d1d74);
+  content: url(/images/marker.svg?7ff292b43387a63ea9de772f34f75cfa);
   width: 46px;
   height: 46px;
   text-align: center;
@@ -7008,7 +7008,7 @@ li[data-v-5d9f7d78] {
   background-color: rgba(145, 108, 88, 0.15);
   border-radius: 50%;
   display: inline-block;
-  content: url(/images/phone-icon.svg?9db9d2eacac8d28d2f4402782aae721e);
+  content: url(/images/phone-icon.svg?6606c30dc31d93744d33a398f4312050);
   width: 46px;
   height: 46px;
   text-align: center;
@@ -7471,7 +7471,7 @@ div.slide img {
     line-height: 27px;
 }
 .your-level-go {
-    background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat right;
+    background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat right;
     width: 86px;
     margin-top: 40px;
     font-family: "Raleway";
@@ -7483,7 +7483,7 @@ div.slide img {
     transition: opacity .6s ease-in-out;
 }
 .your-level-go:hover {
-    background: url(/images/arrow-right-hover.svg?6de6297fc0175501f65ca02aea303c25) no-repeat right
+    background: url(/images/arrow-right-hover.svg?87b43b62664da17195421bbf0a4be9aa) no-repeat right
 }
 .your-level-go a {
     color: #FFFFFF;

@@ -119,7 +119,9 @@ export default {
                 {id: 9, link: "Gornushkina_Julia.jpg", linkVideo: "Gornushkina_Julia.MOV"},
                 {id: 10, link: "image-not-found.jpg"},
                 {id: 11, link: "Nina_Shevchuk.jpg", linkVideo: "Nina_Shevchuk.MOV"},
-                {id: 12, link: "image-not-found.jpg"}
+                {id: 12, link: "image-not-found.jpg"},
+                {id: 13, link: "image-not-found.jpg"},
+                {id: 14, link: "image-not-found.jpg"}
             ],
             gallery: [
                 require("../../assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg").default,
