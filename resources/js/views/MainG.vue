@@ -258,7 +258,7 @@ export default {
       .link-2{
         font-family: Raleway;
         font-weight: 800;
-        font-size: 14px;
+        font-size: 18px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
         text-decoration:none;
@@ -271,7 +271,7 @@ export default {
         z-index: 1;
 
         @media screen and (max-width:767px){
-          font-size: 12px;
+          font-size: 14px;
         }
 
         &:before{
@@ -387,7 +387,7 @@ export default {
     font-family: Oswald;
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 52px;
     line-height: 54px;
     letter-spacing: 0.02em;
     font-feature-settings: 'pnum' on, 'lnum' on;
@@ -415,7 +415,9 @@ export default {
         transform: skew(-18deg);
 
         @media screen and (max-width:767px){
-          height: 40px;
+          height: 33px;
+          font-size: 32px;
+          line-height: 48px;
         }
     }
   }
@@ -781,7 +783,7 @@ export default {
 
           .title{
             font-family: Oswald;
-            font-size: 24px;
+            font-size: 28px;
             line-height: 54px;
             font-weight: 600;
             letter-spacing: 0.02em;
@@ -838,16 +840,16 @@ export default {
       }
       .text{
         font-family: Raleway;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 400;
-        line-height: 28px;
+        line-height: 32px;
         letter-spacing: 0.05em;
         padding: 30px 94px 150px;
 
           @media screen and (max-width:767px){
             padding: 30px 15px 30px;
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 14px;
+            line-height: 22px;
           }
       }
     }
@@ -856,7 +858,7 @@ export default {
     .about-us{
         padding: 80px 50px 50px;
         .title{
-            font-size: 48px;
+            font-size: 49px;
             line-height: 54px;
             margin-bottom: 30px;
             // padding-left: 57px;
@@ -928,8 +930,8 @@ export default {
             margin: 5px 0 10px;
           }
           .description{
-            font-size: 12px;
-            line-height: 22px;
+            font-size: 16px;
+            line-height: 26px;
           }
         }
 

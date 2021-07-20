@@ -2532,7 +2532,7 @@ Video[data-v-6a0f304d] {
 .link-2[data-v-6918511f] {
   font-family: Raleway;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
@@ -2548,7 +2548,7 @@ Video[data-v-6a0f304d] {
 }
 @media screen and (max-width: 767px) {
 .link-2[data-v-6918511f] {
-    font-size: 12px;
+    font-size: 14px;
 }
 }
 .link-2[data-v-6918511f]:before {
@@ -2659,7 +2659,7 @@ Video[data-v-6a0f304d] {
   font-family: Oswald;
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 52px;
   line-height: 54px;
   letter-spacing: 0.02em;
   font-feature-settings: "pnum" on, "lnum" on;
@@ -2688,7 +2688,9 @@ Video[data-v-6a0f304d] {
 }
 @media screen and (max-width: 767px) {
 .about-us .title .line-background[data-v-6918511f] {
-    height: 40px;
+    height: 33px;
+    font-size: 32px;
+    line-height: 48px;
 }
 }
 .about-us .columns-container[data-v-6918511f] {
@@ -2990,7 +2992,7 @@ Video[data-v-6a0f304d] {
 }
 .also-for-you-container .orders .order .title[data-v-6918511f] {
   font-family: Oswald;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 54px;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -3038,17 +3040,17 @@ Video[data-v-6a0f304d] {
 }
 .seo-text .text[data-v-6918511f] {
   font-family: Raleway;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 32px;
   letter-spacing: 0.05em;
   padding: 30px 94px 150px;
 }
 @media screen and (max-width: 767px) {
 .seo-text .text[data-v-6918511f] {
     padding: 30px 15px 30px;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 22px;
 }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -3056,7 +3058,7 @@ Video[data-v-6a0f304d] {
     padding: 80px 50px 50px;
 }
 .about-us .title[data-v-6918511f] {
-    font-size: 48px;
+    font-size: 49px;
     line-height: 54px;
     margin-bottom: 30px;
     padding-bottom: 0;
@@ -3117,8 +3119,8 @@ Video[data-v-6a0f304d] {
     margin: 5px 0 10px;
 }
 .also-for-you-container .orders .order .description[data-v-6918511f] {
-    font-size: 12px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 26px;
 }
 }
 .overlay-swiper[data-v-c9fc0706] {
