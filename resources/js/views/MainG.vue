@@ -144,6 +144,7 @@ import TeamsSlider from '../components/TeamsSlider.vue';
                 require('../../assets/images/main-g-techno-gym-background.jpg').default,
                 require('../../assets/images/techno-gym-skew-images.png').default,
                 require('../../assets/images/areas/area-1-g.jpg').default,
+                require('../../assets/images/popup-corner.svg').default,
             ];
 
 
@@ -395,6 +396,13 @@ export default {
     margin-bottom: 30px;
     padding-left: 96px;
     padding-bottom: 19px;
+
+     @media screen and (max-width:767px){
+       padding-bottom:unset;
+       line-height: unset;
+       font-size: 30px;
+     }
+
     & .line-background {
         position: absolute;
         bottom: 0;
@@ -407,7 +415,7 @@ export default {
         transform: skew(-18deg);
 
         @media screen and (max-width:767px){
-          height: 33px;
+          height: 40px;
         }
     }
   }
@@ -420,15 +428,15 @@ export default {
     font-family: Raleway;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 32px;
     letter-spacing: 0.05em;
     font-feature-settings: 'pnum' on, 'lnum' on;
 
     @media screen and (max-width:767px){
         display: block;
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 22px;
     }
 
     .col-1 > div,.col-2 > div {
@@ -523,14 +531,14 @@ export default {
       .text{
         font-family: Raleway;
         font-weight: bold;
-        font-size: 14px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 32px;
         letter-spacing: 0.1em;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #FFFFFF;
           @media screen and (max-width:767px){
-              font-size: 12px;
-              line-height: 18px;
+              font-size: 14px;
+              line-height: 22px;
           }
       }
 
@@ -720,33 +728,16 @@ export default {
     }
 
   }
-    .combat-area{
-.skew-image-1{
-        width: 35px;
-        height: 30;
-        bottom: -15px;
-        right: 15px;
-      }
-
+.combat-area{
 
       position: relative;
-
       .skew-image-1{
         position: absolute;
-        bottom: -28px;
-        right: 115px;
         z-index: 1;
-
-          @media screen and (max-width:767px){
-            width: 35px;
-            bottom: -14px;
-            right: 15px;
-          }
-          @media screen and (max-width: 1023px) and (min-width: 768px) {
-            width: 35px;
-            bottom: -14px;
-            right: 15px;
-          }
+        width: 4vw;
+        min-width: 35px;
+        right: 6vw;
+        transform: translateY(-50%);
       }
     }
 
@@ -799,10 +790,15 @@ export default {
 
           .description{
             font-family: Raleway;
-            font-size: 14px;
-            line-height: 28px;
+            font-size: 18px;
+            line-height: 32px;
             letter-spacing: 0.05em;
             font-feature-settings: 'pnum' on, 'lnum' on;
+
+            @media screen and (max-width:767px){
+                font-size: 14px;
+                line-height: 22px;
+            }
           }
 
           &:nth-of-type(1) .icon {
@@ -863,7 +859,7 @@ export default {
             font-size: 48px;
             line-height: 54px;
             margin-bottom: 30px;
-            padding-left: 57px;
+            // padding-left: 57px;
             padding-bottom: 0;
             & .line-background {
                 height: 54px;
