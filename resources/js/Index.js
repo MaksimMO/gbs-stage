@@ -80,8 +80,8 @@
             meta: { area: 'g' }
         },
         {
-            props:true,
             path: '/areas-g/:id',
+            props:true,
             component: AreaG,
             name: 'AreaG',
             meta: { area: 'g' }
@@ -141,8 +141,8 @@
             meta: { area: 's' }
         },
         {
-            props:true,
             path: '/areas-s/:id',
+            props:true,
             component: AreaS,
             name: 'AreaS',
             meta: { area: 's' }
