@@ -99,7 +99,7 @@ export default {
                         '<b>Гостьове відвідування</b> – 7 разів протягом терміну дії клубної карти.',
                         'Брендові рушники, брендові халати для відвідування SPA комплексу.',
                         'Користування шафами покращеного формату.',
-                        '<b>Групові тренування</b> – 42 занятя* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 6 рази протягом терміну дії клубної карти.</b>',
+                        '<b>Групові тренування</b> – 42 занятя* <div class="groupTraining"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 6 рази протягом терміну дії клубної карти.</b>',
                         '<b>Масаж класичний</b> – 2 послуги.',
                         'Знижка 10 % на послуги “B Level”.',
                         '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>2 послуги.</b><br>Нігтьовий сервіс (класичний манікюр без покриття) – <b>2 послуги</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>2 послуги.</b><br>Нігтьовий сервіс – <b>2 послуги</b>.</p>'
@@ -114,7 +114,7 @@ export default {
                         '<b>Відвідування SPA комплексу</b> (римська сольова парова, римський арома грот, російська баня, фінська сауна, лаундж зона) 2 рази на місяць протягом терміну дії клубної карти.',
                         '<b>Гостьове відвідування</b> – 5 рази протягом терміну дії клубної карти.',
                         'Брендові рушники, брендові халати для відвідування SPA комплексу.',
-                        '<b>Групові тренування</b> – 21 заняття* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 3 рази протягом терміну дії клубної карти.</b>',
+                        '<b>Групові тренування</b> – 21 заняття* <div class="groupTraining"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 3 рази протягом терміну дії клубної карти.</b>',
                         '<b>Масаж класичний</b> – 1 послуга.',
                         'Знижка 7 % на послуги “B Level”.',
                         '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>1 послуга</b><br>Нігтьовий сервіс (класичний манікюр без покриття) – <b>1 послуга</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>1 послуга</b><br>Нігтьовий сервіс – <b>1 послуга</b>.</p>'
@@ -131,7 +131,7 @@ export default {
                         '<b>Гостьове відвідування</b> – 2 рази протягом терміну дії клубної карти.',
                         'Брендові рушники, брендові халати для відвідування SPA комплексу.',
                         'Користування шафами покращеного формату.',
-                        '<b>Групові тренування</b> – 14 заняття* <div style="display: grid; grid-template-columns: repeat(4, 1fr); padding-left: 50px;"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 2 рази протягом терміну дії клубної карти.</b>',
+                        '<b>Групові тренування</b> – 14 заняття* <div class="groupTraining"><p style="margin: 0;">Файтинг</p><p style="margin: 0;">Йога</p><p style="margin: 0;">Cross Fit</p><p style="margin: 0;">Барре</p><p style="margin: 0;">Сайкл</p><p style="margin: 0;">Пілатес</p><p style="margin: 0;">Games</p></div> <b>*7 видів тренувань по 2 рази протягом терміну дії клубної карти.</b>',
                         'Знижка 5 % на послуги “B Level”.',
                         '<b>Послуги салону краси:</b> <p style="margin: 0;"><b>Women:</b> Послуги стиліста-перукаря (стрижка або укладка) – <b>1 послуга</b><br> або нігтьовий сервіс (класичний манікюр без покриття) – <b>1 послуга</b>.</p><p style="margin: 0;"><b>Men:</b> Послуги перукаря (стрижка) – <b>1 послуга</b><br> або нігтьовий сервіс – <b>1 послуга</b>.</p>'
                     ]
@@ -402,6 +402,11 @@ export default {
             margin-left: -1.5em;
         }
     }
+    ::v-deep(.groupTraining){
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-left: 50px;
+    }
 
     .popup-tickets-enter-active,
     .popup-tickets-leave-active {
@@ -577,6 +582,16 @@ export default {
             }
             & li::before {
                 font-size: 8px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 475px) {
+        ::v-deep(.groupTraining){
+            grid-template-columns: repeat(2, 1fr);
+            padding-left: 45px;
+            & p{
+                margin: 10px 0 !important;
             }
         }
     }

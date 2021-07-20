@@ -73,7 +73,11 @@ export default {
         cursor: pointer;
     }
   }
-
+// ::v-deep(.groupTraining){
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     padding-left: 50px;
+// }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .modal{
         width: 668px;

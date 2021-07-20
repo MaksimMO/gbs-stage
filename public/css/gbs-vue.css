@@ -6371,6 +6371,11 @@ li[data-v-bcffb62e] {
   width: 1.5em;
   margin-left: -1.5em;
 }
+[data-v-06dcca5f] .groupTraining {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 50px;
+}
 .popup-tickets-enter-active[data-v-06dcca5f],
 .popup-tickets-leave-active[data-v-06dcca5f] {
   transition: all 0.2s ease;
@@ -6540,6 +6545,15 @@ li[data-v-bcffb62e] {
 }
 .ticket-detail li[data-v-06dcca5f]::before {
     font-size: 8px;
+}
+}
+@media screen and (max-width: 475px) {
+[data-v-06dcca5f] .groupTraining {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 45px;
+}
+[data-v-06dcca5f] .groupTraining p {
+    margin: 10px 0 !important;
 }
 }
 @charset "UTF-8";
