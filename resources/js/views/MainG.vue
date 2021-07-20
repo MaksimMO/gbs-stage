@@ -854,6 +854,25 @@ export default {
       }
     }
 
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+    .techno-gym-container{
+        .col-1{
+            padding: 46px 0 54px 120px;
+        }
+    }
+    .also-for-you-container{
+      padding: 90px 90px 60px;
+      .orders{
+        grid-column-gap:25px;
+      }
+
+    }
+    .about-us{
+        padding: 80px 90px 60px;
+    }
+
+}
+
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .about-us{
         padding: 80px 50px 50px;
