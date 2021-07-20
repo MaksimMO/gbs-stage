@@ -182,8 +182,8 @@ export default {
                         font-family: Raleway;
                         font-weight: normal;
                         width: 100%;
-                        font-size: 14px;
-                        line-height: 28px;
+                        font-size: 18px;
+                        line-height: 32px;
                         letter-spacing: 0.05em;
                         justify-content: space-between;
                         margin-bottom: 10px;
@@ -243,6 +243,23 @@ export default {
                     text-align: left;
                     display: block;
                     width: 50%;
+                    &>ul {
+                        &>li {
+                            font-size: 16px;
+                            line-height: 26px;
+                            &>.list-discrip {
+                                font-size: 10px;
+                                line-height: 14px;
+                                max-width: 370px;
+                            }
+                            &>div{
+                                display: flex;
+                                & .line-dotted {
+                                    height: 14px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -277,11 +294,11 @@ export default {
                     display: block;
                     width: 100%;
                     &>ul {
-                        font-size: 12px;
-                        line-height: 18px;
+                        font-size: 14px;
+                        line-height: 22px;
                         &>li {
-                            font-size: 12px;
-                            line-height: 18px;
+                            font-size: 14px;
+                            line-height: 22px;
                             &>.list-discrip {
                                 font-size: 10px;
                                 line-height: 14px;

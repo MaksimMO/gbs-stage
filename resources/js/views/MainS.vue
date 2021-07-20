@@ -118,7 +118,7 @@ export default {
             }
             next();
         });
-    },  
+    },
 
   components:{
     Header,
@@ -280,7 +280,7 @@ export default {
     font-family: Oswald;
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 52px;
     line-height: 54px;
     letter-spacing: 0.02em;
     font-feature-settings: 'pnum' on, 'lnum' on;
@@ -306,8 +306,8 @@ export default {
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 32px;
     letter-spacing: 0.05em;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #000000;
@@ -320,8 +320,8 @@ export default {
         font-family: Raleway;
         font-style: normal;
         font-weight: bold;
-        font-size: 16px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 32px;
         letter-spacing: 0.05em;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #000000;
@@ -368,9 +368,9 @@ export default {
       }
       .text{
         font-family: Raleway;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 400;
-        line-height: 28px;
+        line-height: 32px;
         letter-spacing: 0.05em;
         padding: 30px 94px 150px;
       }

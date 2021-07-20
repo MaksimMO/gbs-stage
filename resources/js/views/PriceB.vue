@@ -370,8 +370,8 @@ export default {
             color: #000000;
             font-feature-settings: 'pnum' on, 'lnum' on;
             font-style: normal;
-            grid-template-columns: repeat(2, 444px);
-            grid-column-gap: 134px;
+            grid-template-columns: repeat(2, 2fr);
+            grid-column-gap: 94px;
             display: grid;
             min-height: 47.8vh;
             &>.left>ul,
@@ -404,8 +404,8 @@ export default {
                     &>p {
                         font-family: Raleway;
                         font-weight: 600;
-                        font-size: 14px;
-                        line-height: 28px;
+                        font-size: 18px;
+                        line-height: 32px;
                         letter-spacing: 0.05em;
                         margin: 0;
                         margin-bottom: 10px;
@@ -416,15 +416,15 @@ export default {
                     font-family: Raleway;
                     font-weight: normal;
                     width: 100%;
-                    font-size: 14px;
-                    line-height: 28px;
+                    font-size: 18px;
+                    line-height: 32px;
                     letter-spacing: 0.05em;
                     display: inline-block;
                     justify-content: space-between;
                     margin-bottom: 10px;
                     &>.list-discrip {
-                        font-size: 12px;
-                        line-height: 14px;
+                        font-size: 14px;
+                        line-height: 18px;
                         width: 80%;
                     }
                     &>div {
@@ -490,7 +490,25 @@ export default {
             & .price{
                 text-align: left;
                 display: block;
-                width: 50%;
+                width: 60%;
+                &>.left>ul,
+                &>.right>ul {
+                    &>.сhapter{
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                    &>.subtitle {
+                        &>p {
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+                    &>li,
+                    &>.subtitle>li{
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
             }
         }
     }
@@ -525,19 +543,24 @@ export default {
                 &>.left>ul,
                 &>.right>ul {
                     &>.сhapter{
-                        font-size: 12px;
-                        line-height: 18px;
+                        font-size: 14px;
+                        line-height: 22px;
                     }
                     &>.subtitle {
                         &>p {
-                            font-size: 10px;
-                            line-height: 18px;
+                            font-size: 12px;
+                            line-height: 22px;
                         }
                     }
                     &>li,
                     &>.subtitle>li{
-                        font-size: 12px;
-                        line-height: 18px;
+                        font-size: 14px;
+                        line-height: 22px;
+                         &>div {
+                            & .line-dotted {
+                                margin: 0;
+                            }
+                        }
                     }
                 }
             }

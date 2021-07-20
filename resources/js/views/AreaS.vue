@@ -109,25 +109,26 @@ export default {
             margin-left: 65px;
         }
         @media screen and (max-width: 1023px) and (min-width: 768px) {
-            font-size: 45px;
+            font-size: 49px;
             line-height: 54px;
         }
     }
     .description{
         padding: 0 150px;
         font-family: Raleway;
-        font-size: 14px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 32px;
         letter-spacing: 0.05em;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #000000;
         @media screen and (max-width:767px){
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 14px;
+            line-height: 22px;
             padding: 0 15px;
         }
         @media screen and (max-width: 1023px) and (min-width: 768px) {
-            
+            font-size: 16px;
+            line-height: 26px;
         }
     }
 
@@ -140,7 +141,7 @@ export default {
         @media screen and (max-width:767px){
             margin-left: unset;
             margin-top: 50px;
-            margin-bottom: 30px; 
+            margin-bottom: 30px;
             width: 100%;
             font-size: 12px;
             line-height: 18px;
@@ -150,7 +151,7 @@ export default {
         }
     }
 
-    
+
 
     .gallery-slider {
         position: relative;
@@ -186,8 +187,8 @@ export default {
         .open-popup-text{
             margin: 30px 0;
             font-family: Raleway;
-            font-size: 14px;
-            line-height: 28px;
+            font-size: 18px;
+            line-height: 32px;
             letter-spacing: 0.05em;
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #000000;

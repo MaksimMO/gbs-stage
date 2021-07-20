@@ -88,7 +88,7 @@ export default {
       @media screen and (max-width: 1023px) and (min-width: 768px) {
 
       }
-      
+
 
       & + .area {
         margin-top: 30px;
@@ -147,11 +147,19 @@ export default {
         .description {
           font-family: Raleway;
           text-align: left;
-          font-size: 14px;
-          line-height: 28px;
+          font-size: 18px;
+          line-height: 32px;
           letter-spacing: 0.05em;
           font-feature-settings: "pnum" on, "lnum" on;
           color: #ffffff;
+          @media screen and (max-width:767px){
+            font-size: 16px;
+            line-height: 22px;
+          }
+          @media screen and (max-width: 1023px) and (min-width: 768px) {
+            font-size: 16px;
+            line-height: 26px;
+          }
         }
 
         .link-2 {

@@ -85,7 +85,7 @@ export default {
         }
         @media screen and (max-width: 1023px) and (min-width: 768px) {
             padding: 110px 0 60px;
-        }  
+        }
 
     .title{
         font-family: Oswald;
@@ -111,18 +111,19 @@ export default {
     .description{
         padding: 0 150px;
         font-family: Raleway;
-        font-size: 14px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 32px;
         letter-spacing: 0.05em;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #000000;
         @media screen and (max-width:767px){
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 14px;
+            line-height: 22px;
             padding: 0 15px;
         }
         @media screen and (max-width: 1023px) and (min-width: 768px) {
-
+            font-size: 16px;
+            line-height: 26px;
         }
     }
 
@@ -179,8 +180,8 @@ export default {
         .open-popup-text{
             margin: 30px 0;
             font-family: Raleway;
-            font-size: 14px;
-            line-height: 28px;
+            font-size: 18px;
+            line-height: 32px;
             letter-spacing: 0.05em;
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #000000;
