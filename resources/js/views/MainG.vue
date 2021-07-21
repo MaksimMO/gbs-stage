@@ -255,7 +255,7 @@ export default {
       color: #000000;
 
        @media screen and (min-width:768px) and (max-width:1280px){
-          font-size: 45px;
+          font-size: 37px;
        }
 
       @media screen and (max-width:767px){
