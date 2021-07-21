@@ -28339,7 +28339,7 @@ var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
     handlerHighlightedPopup: function handlerHighlightedPopup() {
       var _this = this;
 
-      var isHightlightedPopupWasShown = false; // = Boolean(sessionStorage.getItem('isHightlightedPopupWasShown'));
+      var isHightlightedPopupWasShown = Boolean(sessionStorage.getItem('isHightlightedPopupWasShown'));
 
       if (!isHightlightedPopupWasShown) {
         setTimeout(function () {

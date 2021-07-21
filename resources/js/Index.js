@@ -193,8 +193,7 @@ const app = createApp({
     methods:{
         handlerHighlightedPopup(){
 
-            const isHightlightedPopupWasShown = false;
-            // = Boolean(sessionStorage.getItem('isHightlightedPopupWasShown'));
+            const isHightlightedPopupWasShown = Boolean(sessionStorage.getItem('isHightlightedPopupWasShown'));
             if(!isHightlightedPopupWasShown)
             {
                 setTimeout(()=>{
