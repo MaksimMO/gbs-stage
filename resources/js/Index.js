@@ -161,12 +161,15 @@
     }
   });
 
-let data = {
+let dataApp = {
     isLoading:false,
     isMobile,
     isMobileOnly,
     area: '',
-    scheduleJson:{}
+    scheduleJson:{},
+    highlightedPopup:{
+        isVisible:false
+    }
 }
 
 
@@ -177,10 +180,35 @@ router.beforeEach((to, from, next) => {
     next()
 })
 
+
+
+
+
+
 const app = createApp({
     template:'<root  />',
     data(){
-        return data;
+        return dataApp;
+    },
+    methods:{
+        handlerHighlightedPopup(){
+
+            const isHightlightedPopupWasShown = false;
+            // = Boolean(sessionStorage.getItem('isHightlightedPopupWasShown'));
+            if(!isHightlightedPopupWasShown)
+            {
+                setTimeout(()=>{
+                    //todo hendle different overlays
+
+                    this.highlightedPopup.isVisible=true;
+                    sessionStorage.setItem('isHightlightedPopupWasShown', true)
+                },25000)
+            }
+
+        }
+    },
+    mounted(){
+        this.handlerHighlightedPopup();
     },
     components:{
         Root
@@ -199,8 +227,3 @@ app.use(VueGoogleMaps, {
     },
 })
 window.vm=app.mount('#gbslevel-app')
-
-
-// if(isMobile){
-//     document.getElementById("gbslevel-app").style.height=`${window.innerHeight}px`;
-// }

@@ -15,9 +15,9 @@
   </section>
 
   <div class="about-us">
-        <div class="title">
-            Про нас
-            <div class="line-background"></div>
+        <div class="title-skew-line-left">
+            <span>Про нас</span>
+            <!-- <div class="line-background"></div> -->
         </div>
 
 
@@ -223,6 +223,66 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
+  .title-skew-line{
+    height: 83px;
+    background: #f8f5f4;
+    transform: skew(-18deg);
+    color: black;
+    align-items: center;
+    display:flex;
+    justify-content: flex-start;
+
+    @media screen and (min-width:768px) and (max-width:1280px){
+        height: 44px;
+    }
+
+    @media screen and (max-width:767px){
+      height: 33px;
+      // justify-content: flex-end;
+
+    }
+
+    span{
+      transform: skew(18deg);
+      display: inline-block;
+      font-family: Oswald;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 54px;
+      letter-spacing: 0.02em;
+      color: #000000;
+
+       @media screen and (min-width:768px) and (max-width:1280px){
+          font-size: 45px;
+       }
+
+      @media screen and (max-width:767px){
+       font-size: 24px;
+     }
+    }
+  }
+
+  .title-skew-line-left{
+    @extend .title-skew-line;
+        margin-left: 91px; //dynamic
+        margin-bottom: 30px; //dynamic
+        margin-right: -170px;
+        padding-left: 50px;
+
+        @media screen and (max-width:767px){
+              margin-left: unset;
+              padding-left: 20px;
+              // padding-right: 20px;
+        }
+
+        // span{
+        //   margin-left: 50px
+        // }
+  }
+
+
     .view-main-g{
         overflow: hidden;
         background: #FFFFFF;
@@ -315,10 +375,16 @@ export default {
     bottom: -27px;
     left: 100px;
 
+
+    @media screen and (min-width:768px) and (max-width:1280px){
+        width: 37px;
+        bottom: -15px;
+    }
+
     @media screen and (max-width:767px){
-      bottom: -13px;
+      bottom: -11px;
       left: 15px;
-      width: 35px;
+      width: 30px;
     }
   }
 
@@ -327,21 +393,38 @@ export default {
     font-family: Raleway;
     font-style: normal;
     font-weight: 900;
-    font-size: 7.5vw;
-    line-height: 8.802vw;
+    font-size: 144px;
+    // line-height: 8.802vw;
     text-align: right;
-    bottom: -7.5vw;
+    bottom: -140px;
     right: 7.8125vw;
     color: transparent;
-    & .top-text {
+    z-index: 1;
+
+
+     @media screen and (min-width:768px) and (max-width:1280px){
+        font-size: 77px;
+        bottom: -80px;
+     }
+
+     @media screen and (max-width:767px){
+        font-size: 36px;
+        bottom: -55px;
+     }
+
+     .top-text {
         margin: 0;
         -webkit-text-stroke-color: #fff;
         -webkit-text-stroke-width: 0.5px;
     }
-    & .down-text {
+     .down-text {
         margin: 0;
         -webkit-text-stroke-color: #916C58;
         -webkit-text-stroke-width: 1px;
+
+        @media screen and (max-width:767px){
+           margin-top: 25px;
+        }
     }
   }
   .vector1 {
@@ -375,52 +458,31 @@ export default {
 
 .about-us{
   background-color: #ffff;
-  padding: 80px 150px 60px;
+  padding: 69px 150px 60px;
   display: flex;
   flex-direction: column;
 
+
+
+
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+      padding: 45px 50px 30px;
+
+        // .columns-container{
+        //     grid-column-gap: 15px;
+        //     font-size: 16px;
+        //     line-height: 26px;
+
+        //     .col-1 > div,.col-2 > div {
+        //         margin-bottom: 15px;
+        //     }
+        // }
+    }
+
+
     @media screen and (max-width:767px){
-        padding: 30px 15px 15px;
+        padding: 36px 15px 50px;
     }
-
-  .title{
-    font-family: Oswald;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 52px;
-    line-height: 54px;
-    letter-spacing: 0.02em;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #000000;
-    position: relative;
-    margin-bottom: 30px;
-    padding-left: 96px;
-    padding-bottom: 19px;
-
-     @media screen and (max-width:767px){
-       padding-bottom:unset;
-       line-height: unset;
-       font-size: 30px;
-     }
-
-    & .line-background {
-        position: absolute;
-        bottom: 0;
-        right: -170px;
-        left:66px;
-        // width: 1545px; //74.8599vw;
-        height: 83px;
-        background: #916C58;
-        opacity: 0.07;
-        transform: skew(-18deg);
-
-        @media screen and (max-width:767px){
-          height: 33px;
-          font-size: 32px;
-          line-height: 48px;
-        }
-    }
-  }
 
   .columns-container{
     display: grid;
@@ -433,7 +495,12 @@ export default {
     font-size: 18px;
     line-height: 32px;
     letter-spacing: 0.05em;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+            grid-column-gap: 15px;
+            font-size: 16px;
+            line-height: 26px;
+    }
 
     @media screen and (max-width:767px){
         display: block;
@@ -854,7 +921,7 @@ export default {
       }
     }
 
-@media screen and (max-width: 1280px) and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and  (max-width: 1280px) {
     .techno-gym-container{
         .col-1{
             padding: 46px 0 54px 120px;
@@ -867,35 +934,10 @@ export default {
       }
 
     }
-    .about-us{
-        padding: 80px 90px 60px;
-    }
-
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-    .about-us{
-        padding: 80px 50px 50px;
-        .title{
-            font-size: 49px;
-            line-height: 54px;
-            margin-bottom: 30px;
-            // padding-left: 57px;
-            padding-bottom: 0;
-            & .line-background {
-                height: 54px;
-            }
-        }
-        .columns-container{
-            grid-column-gap: 15px;
-            font-size: 16px;
-            line-height: 26px;
+@media screen and  (min-width: 768px) and (max-width: 1280px)  {
 
-            .col-1 > div,.col-2 > div {
-                margin-bottom: 15px;
-            }
-        }
-    }
     .techno-gym-container{
         height: 354px;
         .col-1{

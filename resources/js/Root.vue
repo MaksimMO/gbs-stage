@@ -3,7 +3,7 @@
     <ChangeLevel v-show="$root.$data.area != undefined"/>
     <router-view />
     <Scroll v-show="visible"/>
-    <HighlightedPopup v-if="highlightedPopup.isVisible" @closePopup="highlightedPopup.isVisible=false"/>
+    <HighlightedPopup v-if="$root.$data.highlightedPopup.isVisible" @closePopup="$root.$data.highlightedPopup.isVisible=false"/>
 </template>
 
 <script>
@@ -18,9 +18,7 @@ export default {
     data() {
         return {
             visible: false,
-            highlightedPopup:{
-                isVisible:false
-            }
+
 
         }
     },
@@ -31,24 +29,11 @@ export default {
 
 
 
-        handlerHighlightedPopup(){
 
-            const isHightlightedPopupWasShown = Boolean(sessionStorage.getItem('isHightlightedPopupWasShown'));
-
-            if(!isHightlightedPopupWasShown)
-            {
-                setTimeout(()=>{
-                    //todo hendle different overlays
-                    this.highlightedPopup.isVisible=true;
-                    sessionStorage.setItem('isHightlightedPopupWasShown', true)
-                },25000)
-            }
-
-        }
     },
     mounted: function () {
         window.addEventListener('scroll', this.scrollListener)
-        this.handlerHighlightedPopup();
+        // this.handlerHighlightedPopup();
     },
     beforeUnmount: function () {
         window.removeEventListener('scroll', this.scrollListener)

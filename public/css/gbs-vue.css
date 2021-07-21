@@ -2504,6 +2504,57 @@ Video[data-v-6a0f304d] {
     display: none;
 }
 }
+.title-skew-line[data-v-6918511f], .title-skew-line-left[data-v-6918511f] {
+  height: 83px;
+  background: #f8f5f4;
+  transform: skew(-18deg);
+  color: black;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+.title-skew-line[data-v-6918511f], .title-skew-line-left[data-v-6918511f] {
+    height: 44px;
+}
+}
+@media screen and (max-width: 767px) {
+.title-skew-line[data-v-6918511f], .title-skew-line-left[data-v-6918511f] {
+    height: 33px;
+}
+}
+.title-skew-line span[data-v-6918511f], .title-skew-line-left span[data-v-6918511f] {
+  transform: skew(18deg);
+  display: inline-block;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+.title-skew-line span[data-v-6918511f], .title-skew-line-left span[data-v-6918511f] {
+    font-size: 45px;
+}
+}
+@media screen and (max-width: 767px) {
+.title-skew-line span[data-v-6918511f], .title-skew-line-left span[data-v-6918511f] {
+    font-size: 24px;
+}
+}
+.title-skew-line-left[data-v-6918511f] {
+  margin-left: 91px;
+  margin-bottom: 30px;
+  margin-right: -170px;
+  padding-left: 50px;
+}
+@media screen and (max-width: 767px) {
+.title-skew-line-left[data-v-6918511f] {
+    margin-left: unset;
+    padding-left: 20px;
+}
+}
 .view-main-g[data-v-6918511f] {
   overflow: hidden;
   background: #FFFFFF;
@@ -2588,11 +2639,17 @@ Video[data-v-6a0f304d] {
   bottom: -27px;
   left: 100px;
 }
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+.top-image-container .skew-image-1[data-v-6918511f] {
+    width: 37px;
+    bottom: -15px;
+}
+}
 @media screen and (max-width: 767px) {
 .top-image-container .skew-image-1[data-v-6918511f] {
-    bottom: -13px;
+    bottom: -11px;
     left: 15px;
-    width: 35px;
+    width: 30px;
 }
 }
 .top-image-container .water-text[data-v-6918511f] {
@@ -2600,12 +2657,24 @@ Video[data-v-6a0f304d] {
   font-family: Raleway;
   font-style: normal;
   font-weight: 900;
-  font-size: 7.5vw;
-  line-height: 8.802vw;
+  font-size: 144px;
   text-align: right;
-  bottom: -7.5vw;
+  bottom: -140px;
   right: 7.8125vw;
   color: transparent;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+.top-image-container .water-text[data-v-6918511f] {
+    font-size: 77px;
+    bottom: -80px;
+}
+}
+@media screen and (max-width: 767px) {
+.top-image-container .water-text[data-v-6918511f] {
+    font-size: 36px;
+    bottom: -55px;
+}
 }
 .top-image-container .water-text .top-text[data-v-6918511f] {
   margin: 0;
@@ -2616,6 +2685,11 @@ Video[data-v-6a0f304d] {
   margin: 0;
   -webkit-text-stroke-color: #916C58;
   -webkit-text-stroke-width: 1px;
+}
+@media screen and (max-width: 767px) {
+.top-image-container .water-text .down-text[data-v-6918511f] {
+    margin-top: 25px;
+}
 }
 .top-image-container .vector1[data-v-6918511f] {
   position: absolute;
@@ -2646,51 +2720,18 @@ Video[data-v-6a0f304d] {
 }
 .about-us[data-v-6918511f] {
   background-color: #ffff;
-  padding: 80px 150px 60px;
+  padding: 69px 150px 60px;
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+.about-us[data-v-6918511f] {
+    padding: 45px 50px 30px;
+}
+}
 @media screen and (max-width: 767px) {
 .about-us[data-v-6918511f] {
-    padding: 30px 15px 15px;
-}
-}
-.about-us .title[data-v-6918511f] {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 52px;
-  line-height: 54px;
-  letter-spacing: 0.02em;
-  font-feature-settings: "pnum" on, "lnum" on;
-  color: #000000;
-  position: relative;
-  margin-bottom: 30px;
-  padding-left: 96px;
-  padding-bottom: 19px;
-}
-@media screen and (max-width: 767px) {
-.about-us .title[data-v-6918511f] {
-    padding-bottom: unset;
-    line-height: unset;
-    font-size: 30px;
-}
-}
-.about-us .title .line-background[data-v-6918511f] {
-  position: absolute;
-  bottom: 0;
-  right: -170px;
-  left: 66px;
-  height: 83px;
-  background: #916C58;
-  opacity: 0.07;
-  transform: skew(-18deg);
-}
-@media screen and (max-width: 767px) {
-.about-us .title .line-background[data-v-6918511f] {
-    height: 33px;
-    font-size: 32px;
-    line-height: 48px;
+    padding: 36px 15px 50px;
 }
 }
 .about-us .columns-container[data-v-6918511f] {
@@ -2703,7 +2744,13 @@ Video[data-v-6a0f304d] {
   font-size: 18px;
   line-height: 32px;
   letter-spacing: 0.05em;
-  font-feature-settings: "pnum" on, "lnum" on;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+.about-us .columns-container[data-v-6918511f] {
+    grid-column-gap: 15px;
+    font-size: 16px;
+    line-height: 26px;
+}
 }
 @media screen and (max-width: 767px) {
 .about-us .columns-container[data-v-6918511f] {
@@ -3053,7 +3100,7 @@ Video[data-v-6a0f304d] {
     line-height: 22px;
 }
 }
-@media screen and (max-width: 1280px) and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
 .techno-gym-container .col-1[data-v-6918511f] {
     padding: 46px 0 54px 120px;
 }
@@ -3063,31 +3110,8 @@ Video[data-v-6a0f304d] {
 .also-for-you-container .orders[data-v-6918511f] {
     grid-column-gap: 25px;
 }
-.about-us[data-v-6918511f] {
-    padding: 80px 90px 60px;
 }
-}
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-.about-us[data-v-6918511f] {
-    padding: 80px 50px 50px;
-}
-.about-us .title[data-v-6918511f] {
-    font-size: 49px;
-    line-height: 54px;
-    margin-bottom: 30px;
-    padding-bottom: 0;
-}
-.about-us .title .line-background[data-v-6918511f] {
-    height: 54px;
-}
-.about-us .columns-container[data-v-6918511f] {
-    grid-column-gap: 15px;
-    font-size: 16px;
-    line-height: 26px;
-}
-.about-us .columns-container .col-1 > div[data-v-6918511f], .about-us .columns-container .col-2 > div[data-v-6918511f] {
-    margin-bottom: 15px;
-}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
 .techno-gym-container[data-v-6918511f] {
     height: 354px;
 }

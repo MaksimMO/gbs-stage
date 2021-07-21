@@ -18680,33 +18680,16 @@ const getGlobalThis = () => {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      visible: false,
-      highlightedPopup: {
-        isVisible: false
-      }
+      visible: false
     };
   },
   methods: {
     scrollListener: function scrollListener(e) {
       this.visible = window.scrollY > 500;
-    },
-    handlerHighlightedPopup: function handlerHighlightedPopup() {
-      var _this = this;
-
-      var isHightlightedPopupWasShown = Boolean(sessionStorage.getItem('isHightlightedPopupWasShown'));
-
-      if (!isHightlightedPopupWasShown) {
-        setTimeout(function () {
-          //todo hendle different overlays
-          _this.highlightedPopup.isVisible = true;
-          sessionStorage.setItem('isHightlightedPopupWasShown', true);
-        }, 25000);
-      }
     }
   },
   mounted: function mounted() {
-    window.addEventListener('scroll', this.scrollListener);
-    this.handlerHighlightedPopup();
+    window.addEventListener('scroll', this.scrollListener); // this.handlerHighlightedPopup();
   },
   beforeUnmount: function beforeUnmount() {
     window.removeEventListener('scroll', this.scrollListener);
@@ -22536,10 +22519,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* NEED_PATCH */
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, _ctx.$root.$data.area != undefined]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_view), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Scroll, null, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.visible]]), $data.highlightedPopup.isVisible ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_HighlightedPopup, {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.visible]]), _ctx.$root.$data.highlightedPopup.isVisible ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_HighlightedPopup, {
     key: 0,
     onClosePopup: _cache[1] || (_cache[1] = function ($event) {
-      return $data.highlightedPopup.isVisible = false;
+      return _ctx.$root.$data.highlightedPopup.isVisible = false;
     })
   })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 64
   /* STABLE_FRAGMENT */
@@ -26794,7 +26777,7 @@ var _hoisted_3 = {
   "class": "about-us"
 };
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"title\" data-v-6918511f> Про нас <div class=\"line-background\" data-v-6918511f></div></div><div class=\"columns-container\" data-v-6918511f><div class=\"col-1\" data-v-6918511f><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Тренажерний зал 1700 кв.м.</span> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym </div><div data-v-6918511f>Простора стилізована <span class=\"bold\" data-v-6918511f>зона єдиноборств</span> з професійним рингом</div><div data-v-6918511f>Окрема <span class=\"bold\" data-v-6918511f>студія для сайкл-тренування</span> з надсучасною світло- звуковою системою</div><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Інноваційна </span> зона функціонального тренінгу та кросфіту</div></div><div class=\"col-2\" data-v-6918511f><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Студія Barre </span>на основі балету</div><!-- &lt;div&gt;Мед кабінет, &lt;span class=&quot;bold&quot;&gt;консультація лікаря&lt;/span&gt;&lt;/div&gt; --><div data-v-6918511f>Власна <span class=\"bold\" data-v-6918511f>пральня</span></div><div data-v-6918511f>Система вентиляції та кондиціонування функцією <span class=\"bold\" data-v-6918511f>очищення повітря</span></div><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Високий</span> рівень сервісу</div></div></div>", 2);
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"title-skew-line-left\" data-v-6918511f><span data-v-6918511f>Про нас</span><!-- &lt;div class=&quot;line-background&quot;&gt;&lt;/div&gt; --></div><div class=\"columns-container\" data-v-6918511f><div class=\"col-1\" data-v-6918511f><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Тренажерний зал 1700 кв.м.</span> з найновішою преміум-лінійкою обладнання від провідного світового бренду TechnoGym </div><div data-v-6918511f>Простора стилізована <span class=\"bold\" data-v-6918511f>зона єдиноборств</span> з професійним рингом</div><div data-v-6918511f>Окрема <span class=\"bold\" data-v-6918511f>студія для сайкл-тренування</span> з надсучасною світло- звуковою системою</div><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Інноваційна </span> зона функціонального тренінгу та кросфіту</div></div><div class=\"col-2\" data-v-6918511f><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Студія Barre </span>на основі балету</div><!-- &lt;div&gt;Мед кабінет, &lt;span class=&quot;bold&quot;&gt;консультація лікаря&lt;/span&gt;&lt;/div&gt; --><div data-v-6918511f>Власна <span class=\"bold\" data-v-6918511f>пральня</span></div><div data-v-6918511f>Система вентиляції та кондиціонування функцією <span class=\"bold\" data-v-6918511f>очищення повітря</span></div><div data-v-6918511f><span class=\"bold\" data-v-6918511f>Високий</span> рівень сервісу</div></div></div>", 2);
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Детальніше");
 
@@ -28332,12 +28315,15 @@ var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_24__.createRouter)({
     document.getElementById('gbslevel-app').scrollIntoView();
   }
 });
-var _data = {
+var dataApp = {
   isLoading: false,
   isMobile: mobile_device_detect__WEBPACK_IMPORTED_MODULE_23__.isMobile,
   isMobileOnly: mobile_device_detect__WEBPACK_IMPORTED_MODULE_23__.isMobileOnly,
   area: '',
-  scheduleJson: {}
+  scheduleJson: {},
+  highlightedPopup: {
+    isVisible: false
+  }
 };
 router.beforeEach(function (to, from, next) {
   window.vm.$data.area = to.meta.area;
@@ -28347,7 +28333,25 @@ router.beforeEach(function (to, from, next) {
 var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
   template: '<root  />',
   data: function data() {
-    return _data;
+    return dataApp;
+  },
+  methods: {
+    handlerHighlightedPopup: function handlerHighlightedPopup() {
+      var _this = this;
+
+      var isHightlightedPopupWasShown = false; // = Boolean(sessionStorage.getItem('isHightlightedPopupWasShown'));
+
+      if (!isHightlightedPopupWasShown) {
+        setTimeout(function () {
+          //todo hendle different overlays
+          _this.highlightedPopup.isVisible = true;
+          sessionStorage.setItem('isHightlightedPopupWasShown', true);
+        }, 25000);
+      }
+    }
+  },
+  mounted: function mounted() {
+    this.handlerHighlightedPopup();
   },
   components: {
     Root: _Root_vue__WEBPACK_IMPORTED_MODULE_2__.default
@@ -28361,9 +28365,7 @@ app.use(_fawmi_vue_google_maps__WEBPACK_IMPORTED_MODULE_1__.default, {
 
   }
 });
-window.vm = app.mount('#gbslevel-app'); // if(isMobile){
-//     document.getElementById("gbslevel-app").style.height=`${window.innerHeight}px`;
-// }
+window.vm = app.mount('#gbslevel-app');
 
 /***/ }),
 
