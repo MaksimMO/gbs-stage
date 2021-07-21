@@ -330,6 +330,10 @@ export default {
         cursor: pointer;
         z-index: 1;
 
+        @media screen and (min-width:768px) and (max-width:1280px){
+            font-size: 16px;
+        }
+
         @media screen and (max-width:767px){
           font-size: 14px;
         }
@@ -553,10 +557,19 @@ export default {
     display: flex;
     position: relative;
 
+
+    @media screen and  (min-width: 768px) and (max-width: 1280px)  {
+      height: 460px;
+    }
+
+
     @media screen and (max-width:767px){
         background-image: url("../../assets/images/main-g-techno-gym-background-320.jpg");
-        height: initial;
+        height: 400px;
     }
+
+
+
 
     .col-1{
 
@@ -565,6 +578,10 @@ export default {
       display: flex;
       justify-content: space-between;
       color: #ffff;
+
+      @media screen and  (min-width: 768px) and (max-width: 1280px)  {
+            padding: 50px 0 50px 50px;
+      }
 
         @media screen and (max-width:767px){
             padding: 40px 15px 40px 15px;
@@ -576,6 +593,10 @@ export default {
         background-size: contain;
         height: 48px;
 
+
+          @media screen and  (min-width: 768px) and (max-width: 1280px)  {
+            height: 28px;
+          }
           @media screen and (max-width:767px){
             height: 23px;
 
@@ -591,9 +612,12 @@ export default {
           font-feature-settings: 'pnum' on, 'lnum' on;
           color: #916C58;
 
+          @media screen and  (min-width: 768px) and (max-width: 1280px)  {
+            font-size: 45px;
+          }
           @media screen and (max-width:767px){
             font-size: 36px;
-            padding: 50px 0 30px 0;
+            // padding: 50px 0 30px 0;
           }
       }
 
@@ -605,6 +629,11 @@ export default {
         letter-spacing: 0.1em;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #FFFFFF;
+
+         @media screen and  (min-width: 768px) and (max-width: 1280px)  {
+              font-size: 16px;
+              line-height: 26px;
+         }
           @media screen and (max-width:767px){
               font-size: 14px;
               line-height: 22px;
@@ -612,7 +641,12 @@ export default {
       }
 
       .link-2{
-        margin-top: 30px;
+        margin-top: 10px;
+
+
+        // @media screen and  (min-width: 768px) and (max-width: 1280px)  {
+        //   margin-top: 20px;
+        // }
 
       }
 
@@ -622,6 +656,11 @@ export default {
       height: 294px;
       align-self: flex-end;
       margin-bottom: -60px;
+
+      @media screen and  (min-width: 768px) and (max-width: 1280px)  {
+          height: 189px;
+          margin-bottom: -32px;
+      }
 
       @media screen and (max-width:767px){
         height: 105px;
@@ -921,51 +960,51 @@ export default {
       }
     }
 
-@media screen and (min-width: 1024px) and  (max-width: 1280px) {
-    .techno-gym-container{
-        .col-1{
-            padding: 46px 0 54px 120px;
-        }
-    }
-    .also-for-you-container{
-      padding: 90px 90px 60px;
-      .orders{
-        grid-column-gap:25px;
-      }
+// @media screen and (min-width: 1024px) and  (max-width: 1280px) {
+//     .techno-gym-container{
+//         .col-1{
+//             padding: 46px 0 54px 120px;
+//         }
+//     }
+//     .also-for-you-container{
+//       padding: 90px 90px 60px;
+//       .orders{
+//         grid-column-gap:25px;
+//       }
 
-    }
-}
+//     }
+// }
 
 @media screen and  (min-width: 768px) and (max-width: 1280px)  {
 
-    .techno-gym-container{
-        height: 354px;
-        .col-1{
-            padding: 30px 0 64px 50px;
-            .logo{
-                height: 28px;
-            }
-            .title{
-                font-size: 45px;
-            }
-            .text{
-                font-size: 12px;
-                line-height: 18px;
-            }
+    // .techno-gym-container{
+    //     height: 400px;
+    //     .col-1{
+    //         padding: 30px 0 30px 30px;
+    //         .logo{
+    //             height: 28px;
+    //         }
+    //         .title{
+    //             font-size: 45px;
+    //         }
+    //         .text{
+    //             font-size: 16px;
+    //             line-height: 26px;
+    //         }
 
-            .link-2{
-                margin-top: 20px;
+    //         .link-2{
+    //             margin-top: 20px;
 
-            }
+    //         }
 
-        }
+    //     }
 
-        img{
-            height: 189px;
-            margin-bottom: -32px;
-        }
+    //     img{
+    //         height: 189px;
+    //         margin-bottom: -32px;
+    //     }
 
-    }
+    // }
     .our-team-container{
         .water-text{
             margin-top: 32px;
