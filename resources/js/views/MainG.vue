@@ -170,7 +170,7 @@ import VideoBackground from 'vue-responsive-video-background-player';
                 {id: 7, link: "Olena_Semenchuk.jpg", linkVideo: "Olena_Semenchuk.MOV"},
                 {id: 8, link: "Nechko_Vasil.jpg", linkVideo: "Nechko_Vasil.MOV"},
                 {id: 9, link: "Gornushkina_Julia.jpg", linkVideo: "Gornushkina_Julia.MOV"},
-                {id: 10, link: "image-not-found.jpg"},
+                {id: 10, link: "image-not-found.jpg", linkVideo: "Elena_Dementieva.MOV"},
                 {id: 11, link: "Nina_Shevchuk.jpg", linkVideo: "Nina_Shevchuk.MOV"},
                 {id: 12, link: "image-not-found.jpg"},
                 {id: 13, link: "image-not-found.jpg"},
