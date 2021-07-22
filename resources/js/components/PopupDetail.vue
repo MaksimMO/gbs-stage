@@ -1,5 +1,6 @@
 <template>
-<div class="modal-overlay" @click="$emit('closePopup')">
+<transition name="fade" @after-leave="$emit('closePopup')" appear>
+<div class="modal-overlay" v-if="isOpened" @click="isOpened=false">
         <div class="modal">
             <div class="close" @click="$emit('closePopup')" ></div>
             <img :src="simulatorDetail.link" :alt="$i18n.t(`simulators.${simulatorDetail.id}.name`)">
@@ -9,24 +10,50 @@
             </div>
         </div>
 </div>
+  </transition>
 </template>
 
 <script>
 export default {
+    data(){
+        return{
+            isOpened:true
+        }
+
+    },
     props: ['simulatorDetail'],
     mounted() {
         document.body.classList.add('overfllow-hidden');
-        document.getElementById('gbslevel-app').style.filter = 'blur(10px)';
+        // document.getElementById('gbslevel-app').style.filter = 'blur(10px)';
     },
     unmounted(){
         document.body.classList.remove('overfllow-hidden');
-        document.getElementById('gbslevel-app').style.filter = 'unset';
+        // document.getElementById('gbslevel-app').style.filter = 'unset';
     }
 }
 </script>
 
 <style scoped lang="scss">
 
+
+// .fade-enter-from .highlighted-popup, .fade-leave-to .highlighted-popup{
+//     transform: translate(-50%, -50%) scale(1.3);
+//     filter: blur(10px);
+//     opacity: 0;
+// }
+
+
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: all .5s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  backdrop-filter: blur(0px);
+}
 
 .modal-overlay{
     position: fixed;
@@ -37,6 +64,7 @@ export default {
     background-color: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+
 }
 
 .modal{
@@ -49,9 +77,9 @@ export default {
     position: fixed;
     top:50%;
     left:50%;
-    transform: translate(-50%, -50%) scale(1.3);
+    transform: translate(-50%, -50%);
     display: flex;
-    opacity: 0;
+    // opacity: ;
     // transition: all .5s ease-in-out;
     & img {
         width: 328px;
@@ -120,11 +148,11 @@ export default {
     }
   }
 
-.modal-overlay  .modal{
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    filter: unset;
-}
+// .modal-overlay  .modal{
+//     opacity: 1;
+//     transform: translate(-50%, -50%) scale(1);
+//     filter: unset;
+// }
 
  @media screen and (max-width: 1023px) and (min-width: 768px){
     .modal{

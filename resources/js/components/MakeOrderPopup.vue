@@ -1,6 +1,8 @@
 <template>
-<div :class="`make-order-popup ${$root.$data.area}`">
-    <div class="close" @click="$emit('closePopup')" >
+
+ <transition name="fade" appear  @after-leave="$emit('closePopup')" >
+<div :class="`make-order-popup ${$root.$data.area}`" v-if="isOpened">
+    <div class="close" @click="isOpened=false" >
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.45">
                 <rect y="26.8701" width="38" height="1" transform="rotate(-45 0 26.8701)" fill="white"/>
@@ -16,6 +18,7 @@
 
 
 </div>
+ </transition>
 </template>
 
 <script>
@@ -32,7 +35,8 @@ export default {
     props: ['choiceLevel'],
     data(){
         return{
-            modalOpen:false
+            modalOpen:false,
+            isOpened:true
         }
 
     },
@@ -47,10 +51,10 @@ export default {
     },
     methods:{
         submitSuccess(){
-            this.modalOpen=true;
-            setTimeout(()=>{
-                    this.$emit('closePopup')
-            }, 2500)
+            this.modalOpen=false;
+            // setTimeout(()=>{
+            //         this.$emit('closePopup')
+            // }, 2500)
         }
 
     },
@@ -84,6 +88,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: all .5s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 
 .make-order-popup{
 

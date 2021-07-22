@@ -21,8 +21,9 @@
         <div class="description">Заповніть заявку та отримайте БЕЗКОШТОВНЕ персональне тренування при купівлі абонементу!</div>
 
         <FeedBackForm @submitSuccess="submitSuccess" :level="$root.$data.area" class="invert" :successPopup="false" />
-
-        <popup-success v-if="isSuccessPopupOpen"/>
+        <teleport to="body">
+            <popup-success v-if="isSuccessPopupOpen"/>
+        </teleport>
     </div>
 
 </div>
@@ -72,6 +73,8 @@ export default {
     width: 100%;
     top: 0;
     background-color: rgba(0,0,0,0.3);
+
+    // transition: all 0.5s ease;
     backdrop-filter: blur(10px);
 }
 
@@ -89,11 +92,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    transition: all .5s ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
-    filter:unset;
-    opacity: 1;
+    transform: translate(-50%, -50%);
 
 
     @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -112,17 +111,17 @@ export default {
 }
 
 
-.fade-enter-from .highlighted-popup, .fade-leave-to .highlighted-popup{
-    transform: translate(-50%, -50%) scale(1.3);
-    filter: blur(10px);
-    opacity: 0;
-}
+// .fade-enter-from .highlighted-popup, .fade-leave-to .highlighted-popup{
+//     // transform: translate(-50%, -50%) scale(1.3);
+//     filter: blur(0);
+//     opacity: 0;
+// }
 
 
 
 .fade-enter-active,
 .fade-leave-active {
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .fade-enter-from,

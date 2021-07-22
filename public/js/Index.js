@@ -19488,7 +19488,8 @@ var preloadedAssets = {
   props: ['choiceLevel'],
   data: function data() {
     return {
-      modalOpen: false
+      modalOpen: false,
+      isOpened: true
     };
   },
   // props:['closePopup'],
@@ -19500,12 +19501,9 @@ var preloadedAssets = {
   mounted: function mounted() {},
   methods: {
     submitSuccess: function submitSuccess() {
-      var _this = this;
-
-      this.modalOpen = true;
-      setTimeout(function () {
-        _this.$emit('closePopup');
-      }, 2500);
+      this.modalOpen = false; // setTimeout(()=>{
+      //         this.$emit('closePopup')
+      // }, 2500)
     }
   } //     beforeRouteEnter(to, from, next) {
   //         const cacheImage = (url) =>{
@@ -19750,14 +19748,17 @@ var preloadedAssets = {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      isOpened: true
+    };
+  },
   props: ['simulatorDetail'],
   mounted: function mounted() {
-    document.body.classList.add('overfllow-hidden');
-    document.getElementById('gbslevel-app').style.filter = 'blur(10px)';
+    document.body.classList.add('overfllow-hidden'); // document.getElementById('gbslevel-app').style.filter = 'blur(10px)';
   },
   unmounted: function unmounted() {
-    document.body.classList.remove('overfllow-hidden');
-    document.getElementById('gbslevel-app').style.filter = 'unset';
+    document.body.classList.remove('overfllow-hidden'); // document.getElementById('gbslevel-app').style.filter = 'unset';
   }
 });
 
@@ -23532,9 +23533,11 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
         successPopup: false
       }, null, 8
       /* PROPS */
-      , ["onSubmitSuccess", "level"]), $data.isSuccessPopupOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_popup_success, {
+      , ["onSubmitSuccess", "level"]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
+        to: "body"
+      }, [$data.isSuccessPopupOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_popup_success, {
         key: 0
-      })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
+      })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
     _: 1
     /* STABLE */
@@ -23793,24 +23796,38 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   var _component_popup_success = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("popup-success");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
-    "class": "make-order-popup ".concat(_ctx.$root.$data.area)
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-    "class": "close",
-    onClick: _cache[1] || (_cache[1] = function ($event) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+    name: "fade",
+    appear: "",
+    onAfterLeave: _cache[2] || (_cache[2] = function ($event) {
       return _ctx.$emit('closePopup');
     })
-  }, [_hoisted_1]), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FeedBackForm, {
-    onSubmitSuccess: $options.submitSuccess,
-    level: _ctx.$root.$data.area,
-    choiceLevel: $props.choiceLevel
-  }, null, 8
-  /* PROPS */
-  , ["onSubmitSuccess", "level", "choiceLevel"]), $data.modalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_popup_success, {
-    key: 0
-  })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 2
-  /* CLASS */
-  );
+  }, {
+    "default": _withId(function () {
+      return [$data.isOpened ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+        key: 0,
+        "class": "make-order-popup ".concat(_ctx.$root.$data.area)
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+        "class": "close",
+        onClick: _cache[1] || (_cache[1] = function ($event) {
+          return $data.isOpened = false;
+        })
+      }, [_hoisted_1]), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FeedBackForm, {
+        onSubmitSuccess: $options.submitSuccess,
+        level: _ctx.$root.$data.area,
+        choiceLevel: $props.choiceLevel
+      }, null, 8
+      /* PROPS */
+      , ["onSubmitSuccess", "level", "choiceLevel"]), $data.modalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_popup_success, {
+        key: 0
+      })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 2
+      /* CLASS */
+      )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
+    }),
+    _: 1
+    /* STABLE */
+
+  });
 });
 
 /***/ }),
@@ -24481,26 +24498,40 @@ var _hoisted_4 = {
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
-    "class": "modal-overlay",
-    onClick: _cache[2] || (_cache[2] = function ($event) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+    name: "fade",
+    onAfterLeave: _cache[3] || (_cache[3] = function ($event) {
       return _ctx.$emit('closePopup');
-    })
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-    "class": "close",
-    onClick: _cache[1] || (_cache[1] = function ($event) {
-      return _ctx.$emit('closePopup');
-    })
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-    src: $props.simulatorDetail.link,
-    alt: _ctx.$i18n.t("simulators.".concat($props.simulatorDetail.id, ".name"))
-  }, null, 8
-  /* PROPS */
-  , ["src", "alt"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("simulators.".concat($props.simulatorDetail.id, ".name"))), 1
-  /* TEXT */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("simulators.".concat($props.simulatorDetail.id, ".description"))), 1
-  /* TEXT */
-  )])])]);
+    }),
+    appear: ""
+  }, {
+    "default": _withId(function () {
+      return [$data.isOpened ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+        key: 0,
+        "class": "modal-overlay",
+        onClick: _cache[2] || (_cache[2] = function ($event) {
+          return $data.isOpened = false;
+        })
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+        "class": "close",
+        onClick: _cache[1] || (_cache[1] = function ($event) {
+          return _ctx.$emit('closePopup');
+        })
+      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+        src: $props.simulatorDetail.link,
+        alt: _ctx.$i18n.t("simulators.".concat($props.simulatorDetail.id, ".name"))
+      }, null, 8
+      /* PROPS */
+      , ["src", "alt"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("simulators.".concat($props.simulatorDetail.id, ".name"))), 1
+      /* TEXT */
+      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("simulators.".concat($props.simulatorDetail.id, ".description"))), 1
+      /* TEXT */
+      )])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
+    }),
+    _: 1
+    /* STABLE */
+
+  });
 });
 
 /***/ }),
@@ -27784,7 +27815,8 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   })])])]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
     to: "body"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
-    name: "popup-detail"
+    name: "popup-detail",
+    appear: ""
   }, {
     "default": _withId(function () {
       return [$data.isModalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_PopupDetail, {
@@ -28011,64 +28043,55 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   }, "Детальніше")])])]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
     to: "body"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
-    name: "popup-tickets"
+  }, [$data.isModalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_PopupTickets, {
+    key: 0,
+    onClosePopup: _cache[8] || (_cache[8] = function ($event) {
+      return $data.isModalOpen = false;
+    })
   }, {
     "default": _withId(function () {
-      return [$data.isModalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_PopupTickets, {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
+        "class": "ticket-title",
+        innerHTML: $data.ticketDetail.ticketTitle
+      }, null, 8
+      /* PROPS */
+      , ["innerHTML"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+        src: $data.ticketDetail.link,
+        alt: $data.ticketDetail.level
+      }, null, 8
+      /* PROPS */
+      , ["src", "alt"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, [$data.ticketDetail.typeClubCard ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", {
         key: 0,
-        onClosePopup: _cache[8] || (_cache[8] = function ($event) {
-          return $data.isModalOpen = false;
+        innerHTML: $data.ticketDetail.typeClubCard
+      }, null, 8
+      /* PROPS */
+      , ["innerHTML"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_12, _hoisted_13, $data.ticketDetail.period.time1 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.time1), 1
+      /* TEXT */
+      )])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.ticketDetail.period.time2 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.time2), 1
+      /* TEXT */
+      )])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [_hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.dayOff), 1
+      /* TEXT */
+      )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.price) + " грн", 1
+      /* TEXT */
+      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+        onClick: _cache[7] || (_cache[7] = function ($event) {
+          return $options.openOrder($data.ticketDetail.level);
         })
-      }, {
-        "default": _withId(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
-            "class": "ticket-title",
-            innerHTML: $data.ticketDetail.ticketTitle
-          }, null, 8
-          /* PROPS */
-          , ["innerHTML"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-            src: $data.ticketDetail.link,
-            alt: $data.ticketDetail.level
-          }, null, 8
-          /* PROPS */
-          , ["src", "alt"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, [$data.ticketDetail.typeClubCard ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", {
-            key: 0,
-            innerHTML: $data.ticketDetail.typeClubCard
-          }, null, 8
-          /* PROPS */
-          , ["innerHTML"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_12, _hoisted_13, $data.ticketDetail.period.time1 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.time1), 1
-          /* TEXT */
-          )])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.ticketDetail.period.time2 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.time2), 1
-          /* TEXT */
-          )])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [_hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.period.dayOff), 1
-          /* TEXT */
-          )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.ticketDetail.price) + " грн", 1
-          /* TEXT */
-          ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
-            onClick: _cache[7] || (_cache[7] = function ($event) {
-              return $options.openOrder($data.ticketDetail.level);
-            })
-          }, [_hoisted_18])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_19, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.ticketDetail.details, function (detail, idx) {
-            return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", {
-              key: idx,
-              innerHTML: detail
-            }, null, 8
-            /* PROPS */
-            , ["innerHTML"]);
-          }), 128
-          /* KEYED_FRAGMENT */
-          ))])];
-        }),
-        _: 1
-        /* STABLE */
-
-      })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
+      }, [_hoisted_18])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_19, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.ticketDetail.details, function (detail, idx) {
+        return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", {
+          key: idx,
+          innerHTML: detail
+        }, null, 8
+        /* PROPS */
+        , ["innerHTML"]);
+      }), 128
+      /* KEYED_FRAGMENT */
+      ))])];
     }),
     _: 1
     /* STABLE */
 
-  })])), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
+  })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
     to: "body"
   }, [$data.isModalOrderOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_MakeOrderPopup, {
     key: 0,

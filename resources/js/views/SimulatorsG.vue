@@ -35,11 +35,11 @@
     </div>
 
 
-        <teleport to="body">
-            <transition name="popup-detail">
-                <PopupDetail v-if="isModalOpen"  @closePopup="isModalOpen = false" :simulatorDetail="simulatorDetail"/>
-            </transition>
-        </teleport>
+    <teleport to="body">
+        <transition name="popup-detail" appear>
+            <PopupDetail v-if="isModalOpen"  @closePopup="isModalOpen = false" :simulatorDetail="simulatorDetail"/>
+        </transition>
+    </teleport>
 
 <Footer />
 </template>
@@ -402,7 +402,7 @@ export default {
 
     .popup-detail-enter-active,
     .popup-detail-leave-active {
-        transition: all .2s ease;
+        transition: opacity 0.5s ease;
     }
     .popup-detail-enter-from,
     .popup-detail-leave-to {

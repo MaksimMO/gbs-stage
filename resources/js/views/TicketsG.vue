@@ -38,7 +38,7 @@
       </section>
   </div>
     <teleport to="body">
-        <transition name="popup-tickets">
+
             <PopupTickets v-if="isModalOpen"  @closePopup="isModalOpen = false">
                 <h1 class="ticket-title" v-html="ticketDetail.ticketTitle"></h1>
                 <div class="ticket-discript">
@@ -60,7 +60,7 @@
                     <li v-for="(detail, idx)  in ticketDetail.details" :key="idx" v-html="detail"></li>
                 </ul>
             </PopupTickets>
-        </transition>
+
     </teleport>
     <teleport to="body">
       <MakeOrderPopup v-if="isModalOrderOpen" @closePopup="isModalOrderOpen = false" :choiceLevel="choiceLevel"/>
@@ -408,14 +408,7 @@ export default {
         padding-left: 50px;
     }
 
-    .popup-tickets-enter-active,
-    .popup-tickets-leave-active {
-        transition: all .2s ease;
-    }
-    .popup-tickets-enter-from,
-    .popup-tickets-leave-to {
-        opacity: 0;
-    }
+
     @media screen and (max-width: 1123px) and (min-width: 768px) {
         .team-g {
             padding-top: 108px;
