@@ -11,24 +11,12 @@ mix.webpackConfig({
     },
     module: {
         rules: [{
-                test: /\.MOV$/,
+                test: /\.(MOV|mp4$)$/,
                 use: [
                     {
                         loader: "file-loader",
                         options: {
-                            name: "[name].[ext]",
-                            outputPath: "video"
-                        }
-                    }
-                ]
-            },
-            {
-                test: /\.mp4$/,
-                use: [
-                    {
-                        loader: "file-loader",
-                        options: {
-                            name: "[name].[ext]",
+                            name: "[name].[ext]?[contenthash]",
                             outputPath: "video"
                         }
                     }
