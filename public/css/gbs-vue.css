@@ -2633,16 +2633,9 @@ Video[data-v-6a0f304d] {
   position: relative;
 }
 .top-image-container .top-image[data-v-6918511f] {
-  width: 100%;
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media screen and (max-width: 767px) {
-.top-image-container .top-image[data-v-6918511f] {
-    height: 80vh;
-    content: url(/images/main-g-background-768.jpg?2db9494ae41f013729ca543bd9e6fbea);
-}
+  width: 100%;
+  height: 100vh;
 }
 .top-image-container .skew-image-1[data-v-6918511f] {
   position: absolute;

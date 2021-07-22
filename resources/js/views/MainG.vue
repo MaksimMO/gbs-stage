@@ -3,7 +3,16 @@
   <div class="view-main-g">
 
   <section class="top-image-container">
-    <img class="top-image" src="../../assets/images/main-g-background.jpg" alt="">
+    <!-- <img class="top-image" src="../../assets/images/main-g-background.jpg" alt=""> -->
+
+      <video-background
+          :src="require('../../assets/video/g-level-main.mp4').default"
+          :poster="require('../../assets/images/main-g-background.jpg').default"
+          class="top-image"
+      >
+      </video-background>
+
+
     <img class="skew-image-1" src="../../assets/images/popup-corner.svg" alt="">
     <div class="water-text">
         <p class="top-text">Твій рівень</p>
@@ -138,6 +147,7 @@ import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import AreasSliderG from '../components/AreasG/AreasSliderG.vue'
 import TeamsSlider from '../components/TeamsSlider.vue';
+import VideoBackground from 'vue-responsive-video-background-player';
 
             let preloadedAssets = [
                 require('../../assets/images/main-g-background.jpg').default,
@@ -211,7 +221,8 @@ export default {
     Header,
     Footer,
     AreasSliderG,
-    TeamsSlider
+    TeamsSlider,
+    VideoBackground
   },
   methods: {
       change(e) {
@@ -362,15 +373,18 @@ export default {
   position: relative;
 
   .top-image{
-    width: 100%;
     display: block;
-    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    // width: 100%;
+    // display: block;
+    // object-fit: cover;
 
 
-    @media screen and (max-width:767px){
-      height: 80vh;
-      content: url('../../assets/images/main-g-background-768.jpg');
-    }
+    // @media screen and (max-width:767px){
+    //   height: 80vh;
+    //   content: url('../../assets/images/main-g-background-768.jpg');
+    // }
 
   }
 
