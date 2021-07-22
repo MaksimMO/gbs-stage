@@ -1,12 +1,15 @@
 <template>
 
 
-<div :class="['highlighted-popup-overlay', {'is-opened':isOpened}]">
+ <transition name="fade" appear  @after-leave="$emit('closePopup')" >
+
+<div class="highlighted-popup-overlay"   v-if="isOpened" >
+
 
     <div class="highlighted-popup">
         <svg width="26" height="26" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
         class="close"
-        @click="close"
+        @click="isOpened=false"
         >
             <g >
                 <rect y="26.8701" width="38" height="1" transform="rotate(-45 0 26.8701)" fill="black"/>
@@ -23,11 +26,14 @@
     </div>
 
 </div>
+
+ </transition>
 </template>
 
 <script>
 import FeedBackForm from './Form.vue'
 import popupSuccess from './PopupSuccess.vue'
+
 
 let preloadedAssets = {
         // g: [require('../../assets/feedBackFormView/background-g.png').default],
@@ -37,33 +43,18 @@ export default {
     data(){
         return{
             isSuccessPopupOpen:false,
-            isOpened:false
+            isOpened:true
         }
     },
-    // props:['closePopup'],
     components:{
         FeedBackForm,
         popupSuccess
     },
     mounted(){
-        setTimeout(()=>{
-            this.isOpened=true;
-        }, 500);
-
     },
     methods:{
-        close(){
-            this.isOpened=false;
-            setTimeout(()=>{
-                    this.$emit('closePopup')
-            }, 500)
-        },
         submitSuccess(){
-            this.close();
-            // this.modalOpen=true;
-            // setTimeout(()=>{
-            //         this.$emit('closePopup')
-            // }, 2500)
+            this.isOpened=false;
         }
 
     },
@@ -72,23 +63,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
 .highlighted-popup-overlay{
     z-index: 150;
     position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
-    transition: backdrop-filter .5s ease-in-out,
-        -webkit-backdrop-filter .5s ease-in-out,
-        background-color .5s ease-in-out;
-}
-
-.highlighted-popup-overlay.is-opened{
     background-color: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
-
 
 
 .highlighted-popup{
@@ -100,19 +85,20 @@ export default {
     box-sizing:border-box;
     position: fixed;
     top:50%;
-    /* top:60%; */
     left:50%;
-    transform: translate(-50%, -50%) scale(1.3);
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 0;
+
     transition: all .5s ease-in-out;
-    filter: blur(10px);
+    transform: translate(-50%, -50%) scale(1);
+    filter:unset;
+    opacity: 1;
 
-    // @media screen and (max-width: 1023px) and (min-width: 768px) {
 
-    // }
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+
+    }
 
     @media screen and (max-width: 767px){
         padding: 30px ;
@@ -126,11 +112,23 @@ export default {
 }
 
 
-.highlighted-popup-overlay.is-opened  .highlighted-popup{
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    /* top:50%; */
-    filter: unset;
+.fade-enter-from .highlighted-popup, .fade-leave-to .highlighted-popup{
+    transform: translate(-50%, -50%) scale(1.3);
+    filter: blur(10px);
+    opacity: 0;
+}
+
+
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: all .5s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  backdrop-filter: blur(0px);
 }
 
 

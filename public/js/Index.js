@@ -19247,35 +19247,17 @@ var preloadedAssets = {// g: [require('../../assets/feedBackFormView/background-
   data: function data() {
     return {
       isSuccessPopupOpen: false,
-      isOpened: false
+      isOpened: true
     };
   },
-  // props:['closePopup'],
   components: {
     FeedBackForm: _Form_vue__WEBPACK_IMPORTED_MODULE_0__.default,
     popupSuccess: _PopupSuccess_vue__WEBPACK_IMPORTED_MODULE_1__.default
   },
-  mounted: function mounted() {
-    var _this = this;
-
-    setTimeout(function () {
-      _this.isOpened = true;
-    }, 500);
-  },
+  mounted: function mounted() {},
   methods: {
-    close: function close() {
-      var _this2 = this;
-
-      this.isOpened = false;
-      setTimeout(function () {
-        _this2.$emit('closePopup');
-      }, 500);
-    },
     submitSuccess: function submitSuccess() {
-      this.close(); // this.modalOpen=true;
-      // setTimeout(()=>{
-      //         this.$emit('closePopup')
-      // }, 2500)
+      this.isOpened = false;
     }
   }
 });
@@ -23480,10 +23462,14 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-558ade04");
 
 var _hoisted_1 = {
+  key: 0,
+  "class": "highlighted-popup-overlay"
+};
+var _hoisted_2 = {
   "class": "highlighted-popup"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("g", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("g", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
   y: "26.8701",
   width: "38",
   height: "1",
@@ -23498,13 +23484,13 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 /* HOISTED */
 );
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "title"
 }, "Зацікавились?", -1
 /* HOISTED */
 );
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "description"
 }, "Заповніть заявку та отримайте БЕЗКОШТОВНЕ персональне тренування при купівлі абонементу!", -1
 /* HOISTED */
@@ -23517,32 +23503,39 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   var _component_popup_success = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("popup-success");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
-    "class": ['highlighted-popup-overlay', {
-      'is-opened': $data.isOpened
-    }]
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("svg", {
-    width: "26",
-    height: "26",
-    viewBox: "0 0 28 28",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
-    "class": "close",
-    onClick: _cache[1] || (_cache[1] = function () {
-      return $options.close && $options.close.apply($options, arguments);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+    name: "fade",
+    appear: "",
+    onAfterLeave: _cache[2] || (_cache[2] = function ($event) {
+      return _ctx.$emit('closePopup');
     })
-  }, [_hoisted_2])), _hoisted_3, _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FeedBackForm, {
-    onSubmitSuccess: $options.submitSuccess,
-    level: _ctx.$root.$data.area,
-    "class": "invert",
-    successPopup: false
-  }, null, 8
-  /* PROPS */
-  , ["onSubmitSuccess", "level"]), $data.isSuccessPopupOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_popup_success, {
-    key: 0
-  })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])], 2
-  /* CLASS */
-  );
+  }, {
+    "default": _withId(function () {
+      return [$data.isOpened ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("svg", {
+        width: "26",
+        height: "26",
+        viewBox: "0 0 28 28",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        "class": "close",
+        onClick: _cache[1] || (_cache[1] = function ($event) {
+          return $data.isOpened = false;
+        })
+      }, [_hoisted_3])), _hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FeedBackForm, {
+        onSubmitSuccess: $options.submitSuccess,
+        level: _ctx.$root.$data.area,
+        "class": "invert",
+        successPopup: false
+      }, null, 8
+      /* PROPS */
+      , ["onSubmitSuccess", "level"]), $data.isSuccessPopupOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_popup_success, {
+        key: 0
+      })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
+    }),
+    _: 1
+    /* STABLE */
+
+  });
 });
 
 /***/ }),
@@ -23833,11 +23826,9 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Ціни");
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Розклад");
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Контакти");
-
-var _hoisted_4 = {
+var _hoisted_3 = {
   "class": "navigation-mobile"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -23860,7 +23851,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     /* STABLE */
 
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/schedule-gbs"
+    to: "/contacts-b"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_2];
@@ -23868,16 +23859,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/contacts-b"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_3];
-    }),
-    _: 1
-    /* STABLE */
-
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)])]);
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavigationMobile)])]);
 }
 
 /***/ }),
