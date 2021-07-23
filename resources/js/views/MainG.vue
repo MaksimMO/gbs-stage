@@ -69,9 +69,13 @@
         <p class="down-text">своєї справи</p>
     </div>
 
-      <div class="our-team-container_header">
+      <!-- <div class="our-team-container_header">
           G LEVEL TEAM
         <div class="line-background"></div>
+    </div> -->
+    <div class="title-skew-line-right">
+            <span>G LEVEL TEAM</span>
+            <!-- <div class="line-background"></div> -->
     </div>
     <!-- <div class="our-team-container_header">
       G LEVEL TEAM
@@ -292,7 +296,22 @@ export default {
         //   margin-left: 50px
         // }
   }
+  .title-skew-line-right{
+    @extend .title-skew-line;
+    margin-left: -170px;
+    justify-content: flex-end;
+    margin-right: 120px;
+    padding-right: 30px;
 
+        @media screen and (max-width:767px){
+              margin-right: 14px;
+              padding-right: 20px;
+        }
+
+        // span{
+        //   margin-left: 50px
+        // }
+  }
 
     .view-main-g{
         overflow: hidden;
@@ -868,7 +887,7 @@ export default {
       background-color: #fff;
 
       @media screen and (max-width:767px){
-        padding: 60px 30px 0;
+        padding: 60px 30px;
       }
 
       &>.title{

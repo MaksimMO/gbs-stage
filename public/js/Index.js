@@ -20372,7 +20372,8 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
         linkVideo: "Gornushkina_Julia.MOV"
       }, {
         id: 10,
-        link: "image-not-found.jpg"
+        link: "image-not-found.jpg",
+        linkVideo: "Elena_Dementieva.MOV"
       }, {
         id: 11,
         link: "Nina_Shevchuk.jpg",
@@ -20826,7 +20827,8 @@ var trainers = [{
   linkVideo: "Gornushkina_Julia.MOV"
 }, {
   id: 10,
-  link: "image-not-found.jpg"
+  link: "image-not-found.jpg",
+  linkVideo: "Elena_Dementieva.MOV"
 }, {
   id: 11,
   link: "Nina_Shevchuk.jpg",
@@ -22300,7 +22302,8 @@ var preloadedVideo = ['Vladimir_Leskov.MOV', 'Olga_Depeshko.MOV', 'Olga_Martseny
         linkVideo: "Gornushkina_Julia.MOV"
       }, {
         id: 10,
-        link: "image-not-found.jpg"
+        link: "image-not-found.jpg",
+        linkVideo: "Elena_Dementieva.MOV"
       }, {
         id: 11,
         link: "Nina_Shevchuk.jpg",
@@ -26850,7 +26853,21 @@ var _hoisted_19 = {
   "class": "our-team-container"
 };
 
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"water-text\" data-v-6918511f><p class=\"top-text\" data-v-6918511f>Професіонали</p><p class=\"down-text\" data-v-6918511f>своєї справи</p></div><div class=\"our-team-container_header\" data-v-6918511f> G LEVEL TEAM <div class=\"line-background\" data-v-6918511f></div></div>", 2);
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "water-text"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "top-text"
+}, "Професіонали"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "down-text"
+}, "своєї справи")], -1
+/* HOISTED */
+);
+
+var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "title-skew-line-right"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "G LEVEL TEAM"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"line-background\"></div> ")], -1
+/* HOISTED */
+);
 
 var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Переглянути всіх");
 
@@ -26912,7 +26929,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     _: 1
     /* STABLE */
 
-  })]), _hoisted_18]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_19, [_hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"our-team-container_header\">\r\n      G LEVEL TEAM\r\n    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  })]), _hoisted_18]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_19, [_hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"our-team-container_header\">\r\n          G LEVEL TEAM\r\n        <div class=\"line-background\"></div>\r\n    </div> "), _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"our-team-container_header\">\r\n      G LEVEL TEAM\r\n    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "all-our-trainers-link",
     to: "/team-g"
   }, {
@@ -30319,7 +30336,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-hover.svg?87b43b62664da17195421bbf0a4be9aa");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-hover.svg?6de6297fc0175501f65ca02aea303c25");
 
 /***/ }),
 
@@ -30333,7 +30350,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1");
 
 /***/ }),
 
@@ -30347,7 +30364,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?736193b044696161e2a6e9f91539c73e");
 
 /***/ }),
 
@@ -30375,7 +30392,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?df90caa4b4466fae2999be366ce12b13");
 
 /***/ }),
 
@@ -30403,7 +30420,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?d94603bf7c6c5c4b24c3e6245db8ea26");
 
 /***/ }),
 
@@ -32073,7 +32090,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/link-button-1.svg?b56062a7fc5663f3dd176c3944eca839");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/link-button-1.svg?f0436fae4285ac841c786452e43844ba");
 
 /***/ }),
 
@@ -32835,6 +32852,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/video/Elena_Dementieva.MOV":
+/*!*****************************************************!*\
+  !*** ./resources/assets/video/Elena_Dementieva.MOV ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Elena_Dementieva.MOV");
+
+/***/ }),
+
 /***/ "./resources/assets/video/Gornushkina_Julia.MOV":
 /*!******************************************************!*\
   !*** ./resources/assets/video/Gornushkina_Julia.MOV ***!
@@ -32846,7 +32878,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Gornushkina_Julia.MOV?7276fc16c53c1ce556d0a569e046f81e");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Gornushkina_Julia.MOV");
 
 /***/ }),
 
@@ -32861,7 +32893,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Melnyk_Serhiy.MOV?8d5a6734150fa87df692c79d0cbdc455");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Melnyk_Serhiy.MOV");
 
 /***/ }),
 
@@ -32876,7 +32908,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Mikhail_Galagan.MOV?15f57ccbb1ec07ba5d18ff7aecbfb940");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Mikhail_Galagan.MOV");
 
 /***/ }),
 
@@ -32891,7 +32923,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Nechko_Vasil.MOV?edc5cf9891a3450669ef268007a93568");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Nechko_Vasil.MOV");
 
 /***/ }),
 
@@ -32906,7 +32938,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Nina_Shevchuk.MOV?74f0a88b4bb13325100c70067bf85a63");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Nina_Shevchuk.MOV");
 
 /***/ }),
 
@@ -32921,7 +32953,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olena_Semenchuk.MOV?f2fe6de8c8e968f5ba25e4561d89ed37");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olena_Semenchuk.MOV");
 
 /***/ }),
 
@@ -32936,7 +32968,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olga_Depeshko.MOV?c4a99247effe1b035e06634454e5d98c");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olga_Depeshko.MOV");
 
 /***/ }),
 
@@ -32951,7 +32983,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olga_Martsenyuk.MOV?be97cbf68a58b14d7a76c58006914683");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olga_Martsenyuk.MOV");
 
 /***/ }),
 
@@ -32966,7 +32998,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olga_Osadchuk.MOV?ee6a578b8f4073af4ad3bd3cea9bb87f");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olga_Osadchuk.MOV");
 
 /***/ }),
 
@@ -32981,112 +33013,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Vladimir_Leskov.MOV?010d2c661d5bbec3ac0f8960a09adcb1");
-
-/***/ }),
-
-/***/ "./resources/assets/video/area-video-1-C0011.mp4":
-/*!*******************************************************!*\
-  !*** ./resources/assets/video/area-video-1-C0011.mp4 ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-1-C0011.mp4?1994035a0147e0204f05b72e14492cab");
-
-/***/ }),
-
-/***/ "./resources/assets/video/area-video-2-C0043_4.mp4":
-/*!*********************************************************!*\
-  !*** ./resources/assets/video/area-video-2-C0043_4.mp4 ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-2-C0043_4.mp4?440be19ecd4c30263aa1d438e60e3d25");
-
-/***/ }),
-
-/***/ "./resources/assets/video/area-video-3-vg7mt-z1gtv.mp4":
-/*!*************************************************************!*\
-  !*** ./resources/assets/video/area-video-3-vg7mt-z1gtv.mp4 ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-3-vg7mt-z1gtv.mp4?68989d93b2cdcb461a378ea923683049");
-
-/***/ }),
-
-/***/ "./resources/assets/video/area-video-4-s-level.mp4":
-/*!*********************************************************!*\
-  !*** ./resources/assets/video/area-video-4-s-level.mp4 ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-4-s-level.mp4?3e4d937f90947148a69115901590ccaa");
-
-/***/ }),
-
-/***/ "./resources/assets/video/area-video-5-C0067.mp4":
-/*!*******************************************************!*\
-  !*** ./resources/assets/video/area-video-5-C0067.mp4 ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-5-C0067.mp4?9b08839cf84c96ed484c529eb8e50916");
-
-/***/ }),
-
-/***/ "./resources/assets/video/b-level-main.mp4":
-/*!*************************************************!*\
-  !*** ./resources/assets/video/b-level-main.mp4 ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/b-level-main.mp4?e76f6d0619db62224b62571f0aebb5b5");
-
-/***/ }),
-
-/***/ "./resources/assets/video/g-level-main.mp4":
-/*!*************************************************!*\
-  !*** ./resources/assets/video/g-level-main.mp4 ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/g-level-main.mp4?372ea22a0d601892682bee15f30ce65b");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Vladimir_Leskov.MOV");
 
 /***/ }),
 
@@ -33101,7 +33028,112 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/valentine.MOV?7ad659c7c4eb4dd5cb650ef896f84160");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/valentine.MOV");
+
+/***/ }),
+
+/***/ "./resources/assets/video/area-video-1-C0011.mp4":
+/*!*******************************************************!*\
+  !*** ./resources/assets/video/area-video-1-C0011.mp4 ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-1-C0011.mp4");
+
+/***/ }),
+
+/***/ "./resources/assets/video/area-video-2-C0043_4.mp4":
+/*!*********************************************************!*\
+  !*** ./resources/assets/video/area-video-2-C0043_4.mp4 ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-2-C0043_4.mp4");
+
+/***/ }),
+
+/***/ "./resources/assets/video/area-video-3-vg7mt-z1gtv.mp4":
+/*!*************************************************************!*\
+  !*** ./resources/assets/video/area-video-3-vg7mt-z1gtv.mp4 ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-3-vg7mt-z1gtv.mp4");
+
+/***/ }),
+
+/***/ "./resources/assets/video/area-video-4-s-level.mp4":
+/*!*********************************************************!*\
+  !*** ./resources/assets/video/area-video-4-s-level.mp4 ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-4-s-level.mp4");
+
+/***/ }),
+
+/***/ "./resources/assets/video/area-video-5-C0067.mp4":
+/*!*******************************************************!*\
+  !*** ./resources/assets/video/area-video-5-C0067.mp4 ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-5-C0067.mp4");
+
+/***/ }),
+
+/***/ "./resources/assets/video/b-level-main.mp4":
+/*!*************************************************!*\
+  !*** ./resources/assets/video/b-level-main.mp4 ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/b-level-main.mp4");
+
+/***/ }),
+
+/***/ "./resources/assets/video/g-level-main.mp4":
+/*!*************************************************!*\
+  !*** ./resources/assets/video/g-level-main.mp4 ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/g-level-main.mp4");
 
 /***/ }),
 
@@ -57499,6 +57531,7 @@ webpackContext.id = "./resources/assets/images sync recursive ^\\.\\/.*\\-level\
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
+	"./Elena_Dementieva.MOV": "./resources/assets/video/Elena_Dementieva.MOV",
 	"./Gornushkina_Julia.MOV": "./resources/assets/video/Gornushkina_Julia.MOV",
 	"./Melnyk_Serhiy.MOV": "./resources/assets/video/Melnyk_Serhiy.MOV",
 	"./Mikhail_Galagan.MOV": "./resources/assets/video/Mikhail_Galagan.MOV",

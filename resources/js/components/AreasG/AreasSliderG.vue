@@ -126,7 +126,7 @@ export default {
         left: calc(50% - 120px);
         bottom: 40px;
       }
-      @media screen and (max-width: 1023px) and (min-width: 768px) {
+      @media screen and (max-width: 1024px) and (min-width: 768px) {
         bottom: 20px;
       }
     }
@@ -149,7 +149,7 @@ export default {
         width: 100%;
         padding-bottom: 124px;
       }
-      @media screen and (max-width: 1023px) and (min-width: 768px) {
+      @media screen and (max-width: 1024px) and (min-width: 768px) {
        width: 85%;
        padding-bottom: 40px;
       }
@@ -173,7 +173,7 @@ export default {
           font-size: 36px;
           line-height: 54px;
         }
-        @media screen and (max-width: 1023px) and (min-width: 768px) {
+        @media screen and (max-width: 1280px) and (min-width: 768px) {
           font-size: 45px;
           line-height: 54px;
           margin-bottom: 20px;
@@ -193,7 +193,7 @@ export default {
           font-size: 14px;
           line-height: 22px;
         }
-        @media screen and (max-width: 1023px) and (min-width: 768px) {
+        @media screen and (max-width: 1280px) and (min-width: 768px) {
           font-size: 16px;
           line-height: 26px;
         }
@@ -215,7 +215,7 @@ export default {
         z-index: 3;
         margin-top: 30px;
 
-        @media screen and (max-width: 1023px) and (min-width: 768px) {
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
           margin-top: 20px;
         }
 
