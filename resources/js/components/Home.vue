@@ -21,6 +21,7 @@
 </template>
 
 <script>
+import { withDirectives } from '@vue/runtime-core'
 
 let preloadedAssets =
     [
@@ -109,9 +110,15 @@ export default {
     }
   },
   mounted(){
-    window.addEventListener('resize', ()=> {
+    console.log('mounted')
+
+    const resize =  ()=> {
         this.innerHeight = window.innerHeight;
-    });
+    }
+    window.addEventListener('resize', resize);
+  },
+  unmounted(){
+    window.removeEventListener('resize', resize)
   },
   computed:{
     skewOffset(){

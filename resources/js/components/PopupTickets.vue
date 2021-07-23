@@ -1,27 +1,43 @@
 <template>
-<div class="modal-overlay" @click="$emit('closePopup')">
+<transition name="fade" appear  @after-leave="$emit('closePopup')" >
+<div class="modal-overlay" @click="isOpened=false" v-if="isOpened">
         <div class="modal">
-            <div class="close" @click="$emit('closePopup')" ></div>
+            <div class="close"  @click="isOpened=false"></div>
             <slot></slot>
         </div>
 </div>
+</transition>
 </template>
 
 <script>
 export default {
+    data(){
+        return{
+            isOpened:true
+        }
+
+    },
     mounted() {
         document.body.classList.add('overfllow-hidden');
-        document.getElementById('gbslevel-app').style.filter = 'blur(10px)';
     },
     unmounted(){
         document.body.classList.remove('overfllow-hidden');
-        document.getElementById('gbslevel-app').style.filter = 'unset';
     }
 }
 </script>
 
 <style scoped lang="scss">
 
+.fade-enter-active,
+.fade-leave-active {
+    transition: all .5s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  backdrop-filter: blur(0px);
+}
 
 .modal-overlay{
     position: fixed;
@@ -49,11 +65,6 @@ export default {
     background-color: #fff;
     padding: 20px;
     box-sizing: border-box;
-    // position: fixed;
-    // top: 50%;
-    // left:50%;
-    // transform: translate(-50%, -50%) scale(1.3);
-    opacity: 0;
     position: relative;
     //trick for centering if content is bigger than screen
     margin: auto;
@@ -93,15 +104,15 @@ export default {
         // transform: unset;
 
     }
-    .modal-overlay  .modal{
-        // transform: unset !important;
-    }
+    // .modal-overlay  .modal{
+    //     // transform: unset !important;
+    // }
 }
 
-.modal-overlay  .modal{
-    opacity: 1;
-    // transform: translate(-50%, -50%) scale(1);
-    // filter: unset;
-}
+// .modal-overlay  .modal{
+//     opacity: 1;
+//     // transform: translate(-50%, -50%) scale(1);
+//     // filter: unset;
+// }
 
 </style>

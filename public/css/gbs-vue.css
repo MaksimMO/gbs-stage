@@ -37,7 +37,7 @@
   color: #916C58;
 }
 .phone-link[data-v-100dbea6]::before {
-  background: url(/images/phone-icon.svg?9db9d2eacac8d28d2f4402782aae721e) no-repeat center;
+  background: url(/images/phone-icon.svg?6606c30dc31d93744d33a398f4312050) no-repeat center;
   content: "";
   width: 21px;
   height: 21px;
@@ -1285,7 +1285,7 @@ label[data-v-8048fca2] {
   background-image: url(/images/menu-open-gold.svg?65e64eccc4460b4d0a9ee652f775717f);
 }
 .main .close-opened[data-v-79315c4c] {
-  background-image: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1);
+  background-image: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -1294,7 +1294,7 @@ label[data-v-8048fca2] {
 }
 .main .close-opened[data-v-79315c4c]:hover {
   cursor: pointer;
-  background-image: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1);
+  background-image: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f);
 }
 .menu-mobile-enter-active[data-v-79315c4c],
 .menu-mobile-leave-active[data-v-79315c4c] {
@@ -2594,7 +2594,7 @@ Video[data-v-6a0f304d] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
+  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
   margin-left: 15px;
 }
 .link-2[data-v-6918511f] {
@@ -3693,7 +3693,7 @@ Video[data-v-6a0f304d] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
+  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
   margin-left: 15px;
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -4065,7 +4065,7 @@ Video[data-v-6a0f304d] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
+  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
   margin-left: 15px;
 }
 .link-2[data-v-69c16b2b] {
@@ -6143,6 +6143,16 @@ li[data-v-bcffb62e] {
 .popup-detail-leave-to[data-v-bcffb62e] {
   opacity: 0;
 }
+.fade-enter-active[data-v-893619f4],
+.fade-leave-active[data-v-893619f4] {
+  transition: all 0.5s ease-in-out;
+}
+.fade-enter-from[data-v-893619f4],
+.fade-leave-to[data-v-893619f4] {
+  opacity: 0;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+}
 .modal-overlay[data-v-893619f4] {
   position: fixed;
   height: 100%;
@@ -6168,7 +6178,6 @@ li[data-v-bcffb62e] {
   background-color: #fff;
   padding: 20px;
   box-sizing: border-box;
-  opacity: 0;
   position: relative;
   margin: auto;
 }
@@ -6196,9 +6205,6 @@ li[data-v-bcffb62e] {
 .modal[data-v-893619f4] {
     width: 100%;
 }
-}
-.modal-overlay .modal[data-v-893619f4] {
-  opacity: 1;
 }
 @charset "UTF-8";
 .team-g[data-v-06dcca5f] {
@@ -6309,7 +6315,7 @@ li[data-v-bcffb62e] {
   content: "";
   width: 31px;
   height: 16px;
-  background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat;
+  background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat;
   margin-left: 15px;
 }
 .ticket-title[data-v-06dcca5f] {
@@ -7139,7 +7145,7 @@ li[data-v-5d9f7d78] {
   background-color: rgba(145, 108, 88, 0.15);
   border-radius: 50%;
   display: inline-block;
-  content: url(/images/phone-icon.svg?9db9d2eacac8d28d2f4402782aae721e);
+  content: url(/images/phone-icon.svg?6606c30dc31d93744d33a398f4312050);
   width: 46px;
   height: 46px;
   text-align: center;
@@ -7602,7 +7608,7 @@ div.slide img {
     line-height: 27px;
 }
 .your-level-go {
-    background: url(/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1) no-repeat right;
+    background: url(/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f) no-repeat right;
     width: 86px;
     margin-top: 40px;
     font-family: "Raleway";
@@ -7614,7 +7620,7 @@ div.slide img {
     transition: opacity .6s ease-in-out;
 }
 .your-level-go:hover {
-    background: url(/images/arrow-right-hover.svg?6de6297fc0175501f65ca02aea303c25) no-repeat right
+    background: url(/images/arrow-right-hover.svg?87b43b62664da17195421bbf0a4be9aa) no-repeat right
 }
 .your-level-go a {
     color: #FFFFFF;
