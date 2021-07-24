@@ -53,6 +53,7 @@ export default {
 .fade-leave-to {
   opacity: 0;
   backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
 }
 
 .modal-overlay{
