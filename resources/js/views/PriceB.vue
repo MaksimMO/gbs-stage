@@ -442,6 +442,7 @@ export default {
                         & .type-price {
                             margin: 0;
                             font-weight: 600;
+                            white-space:nowrap;
                         }
                     }
                 }

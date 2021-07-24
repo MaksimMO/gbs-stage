@@ -6739,6 +6739,7 @@ li[data-v-5d9f7d78] {
 .price-direction .price > .left > ul > li > div .type-price[data-v-5d9f7d78], .price-direction .price > .left > ul > .subtitle > li > div .type-price[data-v-5d9f7d78], .price-direction .price > .right > ul > li > div .type-price[data-v-5d9f7d78], .price-direction .price > .right > ul > .subtitle > li > div .type-price[data-v-5d9f7d78] {
   margin: 0;
   font-weight: 600;
+  white-space: nowrap;
 }
 @media screen and (max-width: 1142px) and (min-width: 1024px) {
 .price-direction .price[data-v-5d9f7d78] {
