@@ -107,18 +107,16 @@ export default {
       if (!this.isSelected){
         slide.isHovered=false;
       }
+    },
+    resize(){
+        this.innerHeight = window.innerHeight;
     }
   },
   mounted(){
-    console.log('mounted')
-
-    const resize =  ()=> {
-        this.innerHeight = window.innerHeight;
-    }
-    window.addEventListener('resize', resize);
+    window.addEventListener('resize', this.resize);
   },
   unmounted(){
-    window.removeEventListener('resize', resize)
+    window.removeEventListener('resize', this.resize)
   },
   computed:{
     skewOffset(){
