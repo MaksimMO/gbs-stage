@@ -54,7 +54,11 @@ Route::get('/contacts-s', function () {
 Route::get('/schedule-gbs', function () {
     return view('index');
 });
+
 Route::get('/schedule-widget', function () {
+    return view('index');
+});
+Route::get('/schedule-widget-app', function () {
     // return view('index');
     return view('schedule-widget');
 });

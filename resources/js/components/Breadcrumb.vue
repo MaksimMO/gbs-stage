@@ -53,6 +53,7 @@ let breadcrumbs = {
     PriceB: "Прайс",
     PriceS: "Прайс",
     Schedule: "Розклад",
+    ScheduleWidget: "Розклад widget",
 }
 
 export default {
