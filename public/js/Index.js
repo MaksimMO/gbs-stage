@@ -22037,7 +22037,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/main-s-backgr
     var _this = this;
 
     window.addEventListener("message", function (e) {
-      _this.$data.height = "".concat(e.data, "px");
+      _this.$data.height = e.data;
     }.bind(this), false);
   }
 });

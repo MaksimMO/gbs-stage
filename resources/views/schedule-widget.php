@@ -24,8 +24,8 @@
 <script defer>
 
     setTimeout(() => {
-        window.parent.postMessage(window.innerHeight, "*", )
-    }, 6000);
+        window.parent.postMessage(document.body.offsetHeight + 100, "*", )
+    }, 3000);
 
 </script>
 </body>

@@ -35,7 +35,7 @@ export default {
   mounted(){
     window.addEventListener("message", ((e) => {
 
-      this.$data.height = `${e.data}px`
+      this.$data.height = e.data
 
     }).bind(this), false);
   }
@@ -64,7 +64,7 @@ export default {
 }
 
 iframe{
-  height: 100vh;
+  min-height: 100vh;
   width:100%;
   border:none;
 }
