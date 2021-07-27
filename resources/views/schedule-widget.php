@@ -17,9 +17,9 @@
     <!-- <script src="https://reservi.ru/widget-fit1c.v2/js/config.js" data-fit-salon-id="0f2d1f1e-d106-4ea7-a334-71f6df993fc7"></script> -->
     <!-- <div id="gbslevel-app"></div> -->
 <!-- Start 1C Fitness BLOCK Code Insert in place for schedule. DO NOT CHANGE! -->
-    <div data-fit1c-calendar><a href="https://www.fitness1c.ru/schedule?token=axEh6u8xUnV3FnQjXMSAeyA1">Расписание работает на 1С:Фитнес клуб</a></div>
+    <!-- <div data-fit1c-calendar><a href="https://www.fitness1c.ru/schedule?token=axEh6u8xUnV3FnQjXMSAeyA1">Расписание работает на 1С:Фитнес клуб</a></div> -->
 <!-- End 1C Fitness BLOCK Code do not change! -->
-<!-- <div data-get-fit-index-lk></div> -->
+<div data-get-fit-index-lk></div>
 <script src="https://reservi.ru/widget-fit1c.v2/js/config.js" data-fit-salon-id="0f2d1f1e-d106-4ea7-a334-71f6df993fc7"></script>
 <script defer>
 
