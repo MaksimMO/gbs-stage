@@ -15,9 +15,9 @@
       <li>
           <router-link to="/tickets-g">Абонементи</router-link>
       </li>
-      <li>
+      <!-- <li>
           <router-link to="/schedule-gbs">Розклад</router-link>
-      </li>
+      </li> -->
       <li>
           <router-link to="/contacts-g">Контакти</router-link>
       </li>

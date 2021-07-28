@@ -6,9 +6,9 @@
       <li>
           <router-link to="/price-s">Ціни</router-link>
       </li>
-      <li>
+      <!-- <li>
           <router-link to="/schedule-gbs">Розклад</router-link>
-      </li>
+      </li> -->
       <li>
           <router-link to="/contacts-s">Контакти</router-link>
       </li>

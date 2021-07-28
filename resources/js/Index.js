@@ -20,7 +20,7 @@
  import PriceB from './views/PriceB.vue'
  import PriceS from './views/PriceS.vue'
  import Contacts from './views/Contacts.vue'
- import Schedule from './views/Schedule.vue'
+//  import Schedule from './views/Schedule.vue'
  import ScheduleWidget from './views/ScheduleWidget.vue'
  import Home from './components/Home'
  import MakeOrderPopup from './components/MakeOrderPopup.vue'
@@ -68,19 +68,19 @@
             name: 'AreasG',
             meta: { area: 'g' }
         },
-        {
-            path: '/schedule-gbs',
-            component: Schedule,
-            name: 'Schedule',
-            meta: { area: 'g' }
-        },
+        // {
+        //     path: '/schedule-gbs',
+        //     component: Schedule,
+        //     name: 'Schedule',
+        //     meta: { area: 'g' }
+        // },
         {
             path: '/schedule-widget',
             component: ScheduleWidget,
             name: 'ScheduleWidget',
             meta: { area: 'g' }
         },
-        
+
         {
             path: '/areas-g-old', // TODO Remove if version with video is OK.
             component: AreasGold,

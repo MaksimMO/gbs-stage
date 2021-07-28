@@ -52,7 +52,7 @@ let breadcrumbs = {
     AreaS: "Послуги",
     PriceB: "Прайс",
     PriceS: "Прайс",
-    Schedule: "Розклад",
+    // Schedule: "Розклад",
     ScheduleWidget: "Розклад widget",
 }
 
