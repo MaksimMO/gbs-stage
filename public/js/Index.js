@@ -26741,7 +26741,7 @@ var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   "class": "line-background"
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "container-text"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " SPA-зона S LEVEL – особливий рівень надзвичайно чуттєвих емоцій. Римська сольова парова, Римський Арома Грот, російська баня, фінська сауна, крижаний пілінг, душ вражень, lounge бар, зона відпочинку – комплекс найкращих технічних рішень, дизайнерських новинок, послуг для відновлення здоров'я і краси. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " SPA-зона S LEVEL – особливий рівень надзвичайно чуттєвих емоцій. Римська сольова парова, римський арома грот, російська баня, фінська сауна, крижаний пілінг, душ вражень, lounge бар, зона відпочинку – комплекс найкращих технічних рішень, дизайнерських новинок, послуг для відновлення здоров'я і краси. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "about-us-warning"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   "class": "top-image",

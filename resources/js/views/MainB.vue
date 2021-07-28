@@ -304,7 +304,7 @@ export default {
 
     .image{
         width: 100%;
-        max-height: 570px;
+        // max-height: 570px;
         display: block;
     }
 
@@ -318,7 +318,7 @@ export default {
         position: absolute;
         left: -25px;
         bottom: 20px;
-        width: 67.2vw;//67.3%
+        width: 45vw;//67.3%
         height: 5.2vw;//83px
         background: #916C58;
         transform: skew(-25deg);
@@ -442,7 +442,7 @@ export default {
 
         .image{
             width: 100%;
-            max-height: 316px;
+            // max-height: 316px;
         }
 
         .skew-image{
@@ -455,7 +455,7 @@ export default {
             position: absolute;
             left: -25px;
             bottom: 20px;
-            width: 506px;//67.3%
+            width: 400px;//67.3%
             height: 56px;//83px
             font-size: 18px;//36px
             &>p{
@@ -526,12 +526,12 @@ export default {
 
     }
     .image-container-aboutUs{
-        margin-bottom: 73px;
+        margin-bottom: 40px;
         padding: 0;
 
         .image{
             width: 100%;
-            max-height: 214px;
+            // max-height: 214px;
         }
 
         .skew-image{
@@ -542,15 +542,15 @@ export default {
         }
 
         .text-image{
-            text-align: left;
-            bottom: -35px;
+            // text-align: left;
+            bottom: -11px;
             width: 57.3%;//67.3%
             height: auto;//83px
-            font-size: 18px;//36px
+            font-size: 14px;//36px
             &>p{
                 line-height: 24px;
-                margin-left: 45px;
-                margin-right: 0;
+                // margin-left: 45px;
+                margin-right: 25px;
             }
         }
     }
