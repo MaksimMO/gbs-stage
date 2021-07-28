@@ -41,7 +41,7 @@
                 :center="center"
                 :zoom="15"
                 map-type-id="terrain"
-                style="width: 659px; height: 487px;"
+                style="width: 759px; height: 587px;"
             >
                 <GMapMarker
                     :position="markersPosition"
