@@ -73,8 +73,8 @@ export default {
                 {id: 10, link: "image-not-found.jpg", linkVideo: "Elena_Dementieva.MOV"},
                 {id: 11, link: "Nina_Shevchuk.jpg", linkVideo: "Nina_Shevchuk.MOV"},
                 {id: 12, link: "image-not-found.jpg"},
-                {id: 13, link: "image-not-found.jpg"},
-                {id: 14, link: "image-not-found.jpg"}
+                {id: 13, link: "image-not-found.jpg", linkVideo: "olga-grigoruk.MOV"},
+                {id: 14, link: "image-not-found.jpg", linkVideo:"maksym-kaschapov.MOV"}
             ],
         }
     },
