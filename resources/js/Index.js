@@ -21,7 +21,7 @@
  import PriceS from './views/PriceS.vue'
  import Contacts from './views/Contacts.vue'
 //  import Schedule from './views/Schedule.vue'
- import ScheduleWidget from './views/ScheduleWidget.vue'
+ import myAccount from './views/ScheduleWidget.vue'
  import Home from './components/Home'
  import MakeOrderPopup from './components/MakeOrderPopup.vue'
  import {i18n} from './plugins/i18n.js'
@@ -75,9 +75,9 @@
         //     meta: { area: 'g' }
         // },
         {
-            path: '/schedule-widget',
-            component: ScheduleWidget,
-            name: 'ScheduleWidget',
+            path: '/my-account',
+            component: myAccount,
+            name: 'myAccount',
             meta: { area: 'g' }
         },
 

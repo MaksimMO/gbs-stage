@@ -55,7 +55,7 @@ Route::get('/schedule-gbs', function () {
     return view('index');
 });
 
-Route::get('/schedule-widget', function () {
+Route::get('/my-account', function () {
     return view('index');
 });
 Route::get('/schedule-widget-app', function () {

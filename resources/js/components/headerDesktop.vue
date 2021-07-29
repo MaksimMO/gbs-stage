@@ -8,7 +8,14 @@
 
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink :class="{'is-open':isOpen}"/>
+     <router-link :to="`/my-account`" class="my-account-link">
+        <svg width="16" height="16" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.0778 8.9407L14.5345 10.5119C15.427 10.9176 16 11.8075 16 12.7878V13.5C16 14.8807 14.8807 16 13.5 16H2.5C1.11929 16 0 14.8807 0 13.5V12.7878C0 11.8075 0.573007 10.9176 1.46549 10.5119L4.92216 8.9407C3.75209 8.02554 3 6.6006 3 5C3 2.23858 5.23858 0 8 0C10.7614 0 13 2.23858 13 5C13 6.6006 12.2479 8.02554 11.0778 8.9407ZM5.96127 9.56684L1.8793 11.4223C1.3438 11.6657 1 12.1996 1 12.7878V13.5C1 14.3284 1.67157 15 2.5 15H13.5C14.3284 15 15 14.3284 15 13.5V12.7878C15 12.1996 14.6562 11.6657 14.1207 11.4223L10.0387 9.56684C9.41611 9.84521 8.72613 10 8 10C7.27387 10 6.58389 9.84521 5.96127 9.56684ZM8 9C10.2091 9 12 7.20914 12 5C12 2.79086 10.2091 1 8 1C5.79086 1 4 2.79086 4 5C4 7.20914 5.79086 9 8 9Z" />
+        </svg>
+        <span>Особистий кабінет</span>
+     </router-link>
     <div class="appointment" @click="modalOpen=true">Залишити заявку</div>
+
     <teleport to="body">
       <MakeOrderPopup v-if="modalOpen" @closePopup="modalOpen=false"/>
     </teleport>
@@ -187,6 +194,32 @@ export default {
     @media screen and (max-width: 767px) {
       font-size: 12px;
       line-height: 14px;
+    }
+  }
+
+  .my-account-link{
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    color: inherit;
+    transition: color 100ms ease-in;
+
+    &:hover {
+        color: #916C58;
+    }
+
+    svg{
+      margin-right: 5px;
+      fill:#916C58;
+    }
+    span{
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.1em;
+      font-feature-settings: 'pnum' on, 'lnum' on;
     }
   }
     .appointment{

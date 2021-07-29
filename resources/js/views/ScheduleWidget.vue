@@ -4,7 +4,7 @@
 
   <div class="schedule-widget-view">
     <div class="title">
-      Розклад
+      Особистий кабінет
     </div>
     <iframe src="schedule-widget-app" :height="height"></iframe>
   </div>

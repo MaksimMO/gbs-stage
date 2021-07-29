@@ -814,6 +814,29 @@ label[data-v-8048fca2] {
     line-height: 14px;
 }
 }
+.main .my-account-link[data-v-46ab9914] {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  transition: color 100ms ease-in;
+}
+.main .my-account-link[data-v-46ab9914]:hover {
+  color: #916C58;
+}
+.main .my-account-link svg[data-v-46ab9914] {
+  margin-right: 5px;
+  fill: #916C58;
+}
+.main .my-account-link span[data-v-46ab9914] {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
 .main .appointment[data-v-46ab9914] {
   font-family: Raleway;
   font-style: normal;
@@ -7209,6 +7232,11 @@ li[data-v-5d9f7d78] {
 }
 .location-map[data-v-cf61fa1c] button {
   transform: unset;
+}
+@media screen and (max-width: 1340px) and (min-width: 1123px) {
+.location-map .vue-map-container[data-v-cf61fa1c] {
+    width: 659px !important;
+}
 }
 @media screen and (max-width: 1123px) and (min-width: 768px) {
 .contacts[data-v-cf61fa1c] {
