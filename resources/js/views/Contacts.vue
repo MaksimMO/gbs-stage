@@ -41,7 +41,7 @@
                 :center="center"
                 :zoom="15"
                 map-type-id="terrain"
-                style="width: 659px; height: 487px;"
+                style="width: 859px; height: 587px;"
             >
                 <GMapMarker
                     :position="markersPosition"
@@ -222,6 +222,13 @@ export default {
         margin-bottom: 60px;
         &::v-deep(button) {
             transform: unset;
+        }
+    }
+    @media screen and (max-width: 1340px) and (min-width: 1123px) {
+        .location-map {
+            & .vue-map-container {
+                width: 659px !important;
+            }
         }
     }
     @media screen and (max-width: 1123px) and (min-width: 768px) {
