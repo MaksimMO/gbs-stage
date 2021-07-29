@@ -26287,7 +26287,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     zoom: 15,
     "map-type-id": "terrain",
     style: {
-      "width": "759px",
+      "width": "859px",
       "height": "587px"
     }
   }, {

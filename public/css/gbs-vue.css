@@ -7210,6 +7210,11 @@ li[data-v-5d9f7d78] {
 .location-map[data-v-cf61fa1c] button {
   transform: unset;
 }
+@media screen and (max-width: 1340px) and (min-width: 1123px) {
+.location-map .vue-map-container[data-v-cf61fa1c] {
+    width: 659px !important;
+}
+}
 @media screen and (max-width: 1123px) and (min-width: 768px) {
 .contacts[data-v-cf61fa1c] {
     padding-top: 108px;
