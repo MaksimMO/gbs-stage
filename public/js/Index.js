@@ -22043,7 +22043,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/simulators/ve
 
 
 
-var preloadedAssets = [__webpack_require__(/*! ../../assets/images/TeamG/Vladimir_Leskov.jpg */ "./resources/assets/images/TeamG/Vladimir_Leskov.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Depeshko.jpg */ "./resources/assets/images/TeamG/Olga_Depeshko.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Martsenyuk.jpg */ "./resources/assets/images/TeamG/Olga_Martsenyuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Mikhail_Galagan.jpg */ "./resources/assets/images/TeamG/Mikhail_Galagan.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Osadchuk.jpg */ "./resources/assets/images/TeamG/Olga_Osadchuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/valentine.jpg */ "./resources/assets/images/TeamG/valentine.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Melnyk_Serhiy.jpg */ "./resources/assets/images/TeamG/Melnyk_Serhiy.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olena_Semenchuk.jpg */ "./resources/assets/images/TeamG/Olena_Semenchuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Nechko_Vasil.jpg */ "./resources/assets/images/TeamG/Nechko_Vasil.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Gornushkina_Julia.jpg */ "./resources/assets/images/TeamG/Gornushkina_Julia.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Nina_Shevchuk.jpg */ "./resources/assets/images/TeamG/Nina_Shevchuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/image-not-found.jpg */ "./resources/assets/images/TeamG/image-not-found.jpg").default];
+var preloadedAssets = [__webpack_require__(/*! ../../assets/images/TeamG/Vladimir_Leskov.jpg */ "./resources/assets/images/TeamG/Vladimir_Leskov.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Depeshko.jpg */ "./resources/assets/images/TeamG/Olga_Depeshko.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Martsenyuk.jpg */ "./resources/assets/images/TeamG/Olga_Martsenyuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Mikhail_Galagan.jpg */ "./resources/assets/images/TeamG/Mikhail_Galagan.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Osadchuk.jpg */ "./resources/assets/images/TeamG/Olga_Osadchuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/valentine.jpg */ "./resources/assets/images/TeamG/valentine.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Melnyk_Serhiy.jpg */ "./resources/assets/images/TeamG/Melnyk_Serhiy.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olena_Semenchuk.jpg */ "./resources/assets/images/TeamG/Olena_Semenchuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Nechko_Vasil.jpg */ "./resources/assets/images/TeamG/Nechko_Vasil.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Gornushkina_Julia.jpg */ "./resources/assets/images/TeamG/Gornushkina_Julia.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Nina_Shevchuk.jpg */ "./resources/assets/images/TeamG/Nina_Shevchuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/olga-grigoruk.jpg */ "./resources/assets/images/TeamG/olga-grigoruk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/maksym-kaschapov.jpg */ "./resources/assets/images/TeamG/maksym-kaschapov.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/image-not-found.jpg */ "./resources/assets/images/TeamG/image-not-found.jpg").default];
 var preloadedVideo = ['Vladimir_Leskov.MOV', 'Olga_Depeshko.MOV', 'Olga_Martsenyuk.MOV', 'Mikhail_Galagan.MOV', 'Olga_Osadchuk.MOV', 'valentine.MOV', 'Melnyk_Serhiy.MOV', 'Olena_Semenchuk.MOV', 'Nechko_Vasil.MOV', 'Gornushkina_Julia.MOV'];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   emits: ['changeOpen'],
@@ -22098,16 +22098,14 @@ var preloadedVideo = ['Vladimir_Leskov.MOV', 'Olga_Depeshko.MOV', 'Olga_Martseny
         id: 11,
         link: "Nina_Shevchuk.jpg",
         linkVideo: "Nina_Shevchuk.MOV"
-      }, {
-        id: 12,
-        link: "image-not-found.jpg"
-      }, {
+      }, // {id: 12, link: "image-not-found.jpg"},
+      {
         id: 13,
-        link: "image-not-found.jpg",
+        link: "olga-grigoruk.jpg",
         linkVideo: "olga-grigoruk.MOV"
       }, {
         id: 14,
-        link: "image-not-found.jpg",
+        link: "maksym-kaschapov.jpg",
         linkVideo: "maksym-kaschapov.MOV"
       }]
     };
@@ -29954,7 +29952,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-hover.svg?87b43b62664da17195421bbf0a4be9aa");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-hover.svg?6de6297fc0175501f65ca02aea303c25");
 
 /***/ }),
 
@@ -29968,7 +29966,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1");
 
 /***/ }),
 
@@ -29982,7 +29980,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?736193b044696161e2a6e9f91539c73e");
 
 /***/ }),
 
@@ -30010,7 +30008,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?df90caa4b4466fae2999be366ce12b13");
 
 /***/ }),
 
@@ -30038,7 +30036,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?d94603bf7c6c5c4b24c3e6245db8ea26");
 
 /***/ }),
 
@@ -30767,6 +30765,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/image-not-found.jpg?369346ba97f249b645434c36872580a2");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/maksym-kaschapov.jpg":
+/*!************************************************************!*\
+  !*** ./resources/assets/images/TeamG/maksym-kaschapov.jpg ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/maksym-kaschapov.jpg?6613945284fa97de3a4e064688ad9e3e");
+
+/***/ }),
+
+/***/ "./resources/assets/images/TeamG/olga-grigoruk.jpg":
+/*!*********************************************************!*\
+  !*** ./resources/assets/images/TeamG/olga-grigoruk.jpg ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/olga-grigoruk.jpg?8e1a69f497a7c8c2858ef5e5a1cd8852");
 
 /***/ }),
 
@@ -31708,7 +31734,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/link-button-1.svg?b56062a7fc5663f3dd176c3944eca839");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/link-button-1.svg?f0436fae4285ac841c786452e43844ba");
 
 /***/ }),
 

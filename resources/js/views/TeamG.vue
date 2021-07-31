@@ -40,6 +40,8 @@ let preloadedAssets = [
         require('../../assets/images/TeamG/Nechko_Vasil.jpg').default,
         require('../../assets/images/TeamG/Gornushkina_Julia.jpg').default,
         require('../../assets/images/TeamG/Nina_Shevchuk.jpg').default,
+        require('../../assets/images/TeamG/olga-grigoruk.jpg').default,
+        require('../../assets/images/TeamG/maksym-kaschapov.jpg').default,
         require('../../assets/images/TeamG/image-not-found.jpg').default
     ]
 let preloadedVideo = [
@@ -72,9 +74,9 @@ export default {
                 {id: 9, link: "Gornushkina_Julia.jpg", linkVideo: "Gornushkina_Julia.MOV"},
                 {id: 10, link: "image-not-found.jpg", linkVideo: "Elena_Dementieva.MOV"},
                 {id: 11, link: "Nina_Shevchuk.jpg", linkVideo: "Nina_Shevchuk.MOV"},
-                {id: 12, link: "image-not-found.jpg"},
-                {id: 13, link: "image-not-found.jpg", linkVideo: "olga-grigoruk.MOV"},
-                {id: 14, link: "image-not-found.jpg", linkVideo:"maksym-kaschapov.MOV"}
+                // {id: 12, link: "image-not-found.jpg"},
+                {id: 13, link: "olga-grigoruk.jpg", linkVideo: "olga-grigoruk.MOV"},
+                {id: 14, link: "maksym-kaschapov.jpg", linkVideo:"maksym-kaschapov.MOV"}
             ],
         }
     },
