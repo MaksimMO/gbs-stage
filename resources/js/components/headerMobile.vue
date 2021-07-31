@@ -6,13 +6,17 @@
     </router-link>
     <!-- <LanguageSwitcher :class="{'is-open':isOpen}" v-show="isOpen"/> -->
     <PhoneLink :class="{'is-open':isOpen}"/>
-    <router-link :to="`/my-account`" class="my-account-link">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M11.0778 8.9407L14.5345 10.5119C15.427 10.9176 16 11.8075 16 12.7878V13.5C16 14.8807 14.8807 16 13.5 16H2.5C1.11929 16 0 14.8807 0 13.5V12.7878C0 11.8075 0.573007 10.9176 1.46549 10.5119L4.92216 8.9407C3.75209 8.02554 3 6.6006 3 5C3 2.23858 5.23858 0 8 0C10.7614 0 13 2.23858 13 5C13 6.6006 12.2479 8.02554 11.0778 8.9407ZM5.96127 9.56684L1.8793 11.4223C1.3438 11.6657 1 12.1996 1 12.7878V13.5C1 14.3284 1.67157 15 2.5 15H13.5C14.3284 15 15 14.3284 15 13.5V12.7878C15 12.1996 14.6562 11.6657 14.1207 11.4223L10.0387 9.56684C9.41611 9.84521 8.72613 10 8 10C7.27387 10 6.58389 9.84521 5.96127 9.56684ZM8 9C10.2091 9 12 7.20914 12 5C12 2.79086 10.2091 1 8 1C5.79086 1 4 2.79086 4 5C4 7.20914 5.79086 9 8 9Z" fill="white"/>
+    <div class="at-left">
+      <router-link :to="`/my-account`" class="my-account-link">
+      <svg width="46" height="24" viewBox="0 0 46 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26.0778 12.9407L29.5345 14.5119C30.427 14.9176 31 15.8075 31 16.7878V17.5C31 18.8807 29.8807 20 28.5 20H17.5C16.1193 20 15 18.8807 15 17.5V16.7878C15 15.8075 15.573 14.9176 16.4655 14.5119L19.9222 12.9407C18.7521 12.0255 18 10.6006 18 9C18 6.23858 20.2386 4 23 4C25.7614 4 28 6.23858 28 9C28 10.6006 27.2479 12.0255 26.0778 12.9407ZM20.9613 13.5668L16.8793 15.4223C16.3438 15.6657 16 16.1996 16 16.7878V17.5C16 18.3284 16.6716 19 17.5 19H28.5C29.3284 19 30 18.3284 30 17.5V16.7878C30 16.1996 29.6562 15.6657 29.1207 15.4223L25.0387 13.5668C24.4161 13.8452 23.7261 14 23 14C22.2739 14 21.5839 13.8452 20.9613 13.5668ZM23 13C25.2091 13 27 11.2091 27 9C27 6.79086 25.2091 5 23 5C20.7909 5 19 6.79086 19 9C19 11.2091 20.7909 13 23 13Z" />
+        <rect opacity="0.15" x="45" width="1" height="21" />
+        <rect opacity="0.15" width="1" height="21" />
       </svg>
-    </router-link>
+      </router-link>
 
-    <div :class="{'close-opened':isOpen, 'menu-open': !isOpen}" @click="isOpen = !isOpen"></div>
+      <div :class="{'close-opened':isOpen, 'menu-open': !isOpen}" @click="isOpen = !isOpen"></div>
+    </div>
   </div>
   <transition name="menu-mobile">
     <MenuGmobile @setOnCloseFalse="isOpen = false" v-show="isOpen && $root.$data.area == 'g'" />
@@ -91,17 +95,26 @@ export default {
     padding: 30px 15px;
     background-color: transparent;
     transition: all 0.6s ease-in;
+
+    .at-left{
+      display: flex;
+      column-gap: 20px;
+
+      .my-account-link{
+        fill:black;
+      }
+    }
+
 }
 
 .header-invert {
     color: #000 !important;
     & .phone-link{
-        position: relative;
+        // position: relative;
         color: #000;
     }
     & .phone-link::before {
-        position: absolute;
-        left: -25px;
+        // left: -25px;
     }
     & .buttonLang {
         color: #000 !important;

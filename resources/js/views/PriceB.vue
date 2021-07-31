@@ -19,7 +19,7 @@
                 <div class="left">
                     <ul v-for="(price)  in directionCheckLeft" :key="price.id">
                         <p v-show="price.сhapter" class="сhapter">{{price.сhapter}}</p>
-                        <p v-show="price.level" class="level">{{price.level}}</p>
+                        <p v-show="price.level" class="level"><span v-html="price.level"></span></p>
                         <div class="subtitle" v-show="price.subtiteles" v-for="(subtitel, idx)  in price.subtiteles" :key="idx">
                             <p>{{subtitel.name}}</p>
                             <li v-for="(list)  in subtitel.lists" :key="list.id">
@@ -43,7 +43,7 @@
                 <div class="right">
                     <ul v-for="(price)  in directionCheckRight" :key="price.id">
                         <p v-show="price.сhapter" class="сhapter">{{price.сhapter}}</p>
-                        <p v-show="price.level" class="level">{{price.level}}</p>
+                        <p v-show="price.level" class="level" ><span v-html="price.level"></span></p>
                         <div class="subtitle" v-show="price.subtiteles" v-for="(subtitel, idx)  in price.subtiteles" :key="idx">
                             <p>{{subtitel.name}}</p>
                             <li v-for="(list)  in subtitel.lists" :key="list.id">
@@ -143,7 +143,7 @@ export default {
                         {name: 'Очі', price: '2 500'}
                     ]},
                 ]},
-                {id: 7, direction: "nails", side: 'left', level: 'Майстер/Топ-Майстер', lists: [
+                {id: 7, direction: "nails", side: 'left', level: 'Майстер/Топ‑Майстер', lists: [
                     {name: 'Манікюр та покриття гель-лаком', price: '400/450'},
                     {name: 'Манікюр', price: '200/300'},
                     {name: 'Покриття гель-лаком', price: '250/300'},
@@ -256,7 +256,7 @@ export default {
                     {name: 'Зачіска для нареченої', price: '800'},
                     {name: 'Дитяча зачіска', price: '250'}
                 ]},
-                {id: 12, direction: "hair", side: 'right', сhapter: 'Men’s Hair', level: 'Майстер/Топ-Майстер', lists: [
+                {id: 12, direction: "hair", side: 'right', сhapter: 'Men’s Hair', level: 'Майстер/Топ‑Майстер', lists: [
                     {name: 'Стрижка класична', price: '200/300'},
                     {name: 'Стрижка модельна', price: '250/300'},
                     {name: 'Стрижка під насадку', price: '150'},
@@ -382,7 +382,7 @@ export default {
                     margin: 0;
                     margin-bottom: 24px;
                     font-family: Raleway;
-                    font-weight: 700;
+                    font-weight: bold;
                     font-size: 10px;
                     line-height: 12px;
                     letter-spacing: 0.05em;
@@ -541,8 +541,14 @@ export default {
                 text-align: left;
                 display: block;
                 width: 100%;
+
+
                 &>.left>ul,
                 &>.right>ul {
+                    .level span{
+                        width:min-content;
+                        display: inline-block;
+                    }
                     &>.сhapter{
                         font-size: 14px;
                         line-height: 22px;

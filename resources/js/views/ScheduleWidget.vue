@@ -47,6 +47,15 @@ export default {
     padding-top: 208px;
     padding-left:85px;
     padding-right: 50px;
+
+    @media screen and (min-width:768px) and (max-width:1280px){
+      padding-left:30px;
+      padding-right: 30px;
+    }
+	  @media screen and (max-width:767px){
+      padding-left:15px;
+      padding-right: 15px;
+    }
 }
 
 
@@ -55,12 +64,21 @@ export default {
     font-style: normal;
     font-family: 'Oswald';
     font-size: 52px;
+    line-height: 54px;
     margin: 0;
     margin-bottom: 30px;
-    line-height: 54px;
     letter-spacing: 0.02em;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #000000;
+
+    @media screen and (min-width:768px) and (max-width:1280px){
+        font-size: 49px;
+        line-height: 54px;
+    }
+	  @media screen and (max-width:767px){
+      font-size: 32px;
+      line-height: 48px;
+    }
 }
 
 iframe{
