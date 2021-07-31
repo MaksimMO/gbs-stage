@@ -20368,15 +20368,15 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/aboutUs-g-mai
         id: 11,
         link: "Nina_Shevchuk.jpg",
         linkVideo: "Nina_Shevchuk.MOV"
-      }, {
-        id: 12,
-        link: "image-not-found.jpg"
-      }, {
+      }, // {id: 12, link: "image-not-found.jpg"},
+      {
         id: 13,
-        link: "image-not-found.jpg"
+        link: "olga-grigoruk.jpg",
+        linkVideo: "olga-grigoruk.MOV"
       }, {
         id: 14,
-        link: "image-not-found.jpg"
+        link: "maksym-kaschapov.jpg",
+        linkVideo: "maksym-kaschapov.MOV"
       }],
       gallery: [__webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1540-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1548-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1620-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1627-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_1635-1-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4574-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg */ "./resources/assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default]
     };
@@ -20823,15 +20823,15 @@ var trainers = [{
   id: 11,
   link: "Nina_Shevchuk.jpg",
   linkVideo: "Nina_Shevchuk.MOV"
-}, {
-  id: 12,
-  link: "image-not-found.jpg"
-}, {
+}, // {id: 12, link: "image-not-found.jpg"},
+{
   id: 13,
-  link: "image-not-found.jpg"
+  link: "olga-grigoruk.jpg",
+  linkVideo: "olga-grigoruk.MOV"
 }, {
   id: 14,
-  link: "image-not-found.jpg"
+  link: "maksym-kaschapov.jpg",
+  linkVideo: "maksym-kaschapov.MOV"
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
