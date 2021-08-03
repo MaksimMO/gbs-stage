@@ -1,12 +1,12 @@
 <template>
-<div  :class="['header', {'is-open':isOpen, 'isScroll': scrollYdata != 0 && !isOpen}]" v-if="!$root.$data.isMobile">
+<div  :class="['header', {'is-open':isOpen, 'isScroll': scrollYdata != 0 && !isOpen}]">
   <div :class="['main']">
 
      <router-link :to="`/main-${$root.$data.area}`">
         <div :class="`logo ${$root.$data.area}`"></div>
      </router-link>
 
-    <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
+    <div class="address" v-if="!isTablet">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink :class="{'is-open':isOpen}"/>
      <router-link :to="`/my-account`" class="my-account-link">
         <svg width="16" height="16" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
@@ -42,6 +42,7 @@ import MenuS from "./MenuS.vue";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 import MakeOrderPopup from './MakeOrderPopup.vue'
 import { preloadLink } from '../utils.js';
+import {isTablet}  from 'mobile-device-detect';
 
 
 export default {
@@ -49,7 +50,9 @@ export default {
     return {
       isOpen: false,
       scrollYdata: 0,
-      modalOpen:false
+      modalOpen:false,
+      isTablet
+      
     };
   },
   components: {

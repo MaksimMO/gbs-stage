@@ -5,10 +5,12 @@
 <script>
 import Desktop from './headerDesktop.vue';
 import Mobile from './headerMobile.vue';
+import {isMobileOnly}  from 'mobile-device-detect'
 
 export default {
   data() {
     return {
+      isMobileOnly
     };
   },
   components: {
@@ -17,7 +19,7 @@ export default {
   },
   computed: {
       getComponent() {
-          return this.$root.$data.isMobile ? 'Mobile' : 'Desktop';
+          return this.isMobileOnly ? 'Mobile' : 'Desktop';
       }
   }
 };

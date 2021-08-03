@@ -39,6 +39,7 @@ let preloadedAssets = [
         require('../../assets/images/TeamG/Olena_Semenchuk.jpg').default,
         require('../../assets/images/TeamG/Nechko_Vasil.jpg').default,
         require('../../assets/images/TeamG/Gornushkina_Julia.jpg').default,
+        require('../../assets/images/TeamG/Elena_Dementieva.jpg').default,
         require('../../assets/images/TeamG/Nina_Shevchuk.jpg').default,
         require('../../assets/images/TeamG/olga-grigoruk.jpg').default,
         require('../../assets/images/TeamG/maksym-kaschapov.jpg').default,
@@ -54,7 +55,12 @@ let preloadedVideo = [
         'Melnyk_Serhiy.MOV',
         'Olena_Semenchuk.MOV',
         'Nechko_Vasil.MOV',
-        'Gornushkina_Julia.MOV'
+        'Gornushkina_Julia.MOV',
+        'Elena_Dementieva.MOV',
+        'Nina_Shevchuk.MOV',
+        'olga-grigoruk.MOV',
+        'maksym-kaschapov.MOV'
+
     ]
 export default {
     emits: ['changeOpen'],
@@ -72,7 +78,7 @@ export default {
                 {id: 7, link: "Olena_Semenchuk.jpg", linkVideo: "Olena_Semenchuk.MOV"},
                 {id: 8, link: "Nechko_Vasil.jpg", linkVideo: "Nechko_Vasil.MOV"},
                 {id: 9, link: "Gornushkina_Julia.jpg", linkVideo: "Gornushkina_Julia.MOV"},
-                {id: 10, link: "image-not-found.jpg", linkVideo: "Elena_Dementieva.MOV"},
+                {id: 10, link: "Elena_Dementieva.jpg", linkVideo: "Elena_Dementieva.MOV"}, 
                 {id: 11, link: "Nina_Shevchuk.jpg", linkVideo: "Nina_Shevchuk.MOV"},
                 // {id: 12, link: "image-not-found.jpg"},
                 {id: 13, link: "olga-grigoruk.jpg", linkVideo: "olga-grigoruk.MOV"},

@@ -85,7 +85,11 @@ let preloadedAssets = [
         require("../../assets/images/simulators/adjustable_bench.jpg").default,
         require("../../assets/images/simulators/lower_back_bench.jpg").default,
         require("../../assets/images/simulators/ghd_bench.jpg").default,
-        require("../../assets/images/simulators/adjustable_decline_ab_crunch.jpg").default
+        require("../../assets/images/simulators/adjustable_decline_ab_crunch.jpg").default,
+        require("../../assets/images/simulators/free_weights_CHIN_UP_DIP_LEG_RAISE.jpg").default,
+        require("../../assets/images/simulators/multifunction_simulator_multipower.jpg").default,
+        require("../../assets/images/simulators/free_weights_gantely_uritan.jpg").default,
+        require("../../assets/images/simulators/free_weights_gantely_chrome.jpg").default,
     ]
 export default {
     data() {
@@ -118,11 +122,11 @@ export default {
                 {id: 20, direction: "cardio", link: require("../../assets/images/simulators/recline_live_500.jpg").default},
                 {id: 21, direction: "cardio", link: require("../../assets/images/simulators/climb_live_500.jpg").default},
                 {id: 22, direction: "cardio", link: require("../../assets/images/simulators/group_cycle_connect.jpg").default},
-                {id: 23, direction: "multifunction_simulators", link: require("../../assets/images/simulators/simulator-default.jpg").default},
+                {id: 23, direction: "multifunction_simulators", link: require("../../assets/images/simulators/multifunction_simulator_multipower.jpg").default},
                 {id: 24, direction: "multifunction_simulators", link: require("../../assets/images/simulators/dual_adjustable_pulley.jpg").default},
                 {id: 25, direction: "multifunction_simulators", link: require("../../assets/images/simulators/kneeling_easy_chin_dip.jpg").default},
                 {id: 26, direction: "multifunction_simulators", link: require("../../assets/images/simulators/cable_stations_connector.jpg").default},
-                {id: 27, direction: "free_weights", link: require("../../assets/images/simulators/simulator-default.jpg").default},
+                {id: 27, direction: "free_weights", link: require("../../assets/images/simulators/free_weights_CHIN_UP_DIP_LEG_RAISE.jpg").default},
                 {id: 28, direction: "free_weights", link: require("../../assets/images/simulators/universal_storage.jpg").default},
                 {id: 29, direction: "free_weights", link: require("../../assets/images/simulators/pure_strength_olympic_incline_bench.jpg").default},
                 {id: 30, direction: "free_weights", link: require("../../assets/images/simulators/pure_strength_olympic_flat_bench.jpg").default},
@@ -131,8 +135,8 @@ export default {
                 {id: 33, direction: "free_weights", link: require("../../assets/images/simulators/lower_back_bench.jpg").default},
                 {id: 34, direction: "free_weights", link: require("../../assets/images/simulators/ghd_bench.jpg").default},
                 {id: 35, direction: "free_weights", link: require("../../assets/images/simulators/adjustable_decline_ab_crunch.jpg").default},
-                {id: 36, direction: "free_weights", link: require("../../assets/images/simulators/simulator-default.jpg").default},
-                {id: 37, direction: "free_weights", link: require("../../assets/images/simulators/simulator-default.jpg").default}
+                {id: 36, direction: "free_weights", link: require("../../assets/images/simulators/free_weights_gantely_uritan.jpg").default},
+                {id: 37, direction: "free_weights", link: require("../../assets/images/simulators/free_weights_gantely_chrome.jpg").default}
             ]
         }
     },
