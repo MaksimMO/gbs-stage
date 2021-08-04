@@ -17,8 +17,8 @@
 </div>
 <div v-else :class="['trainer-item-mobile', {'is-scaled': isSelected && !isSlider}]">
     <div style="position: relative; z-index: 99;">
-        <img v-if="!isSelected" :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="isSlider ? mobileOpen() : !isOpen ? isShow() : isClosed()">
-        <VideoMobile v-else :isSelected="isSelected" :linkVideo="trainer.linkVideo" :linkImage="trainer.link" @click="isSlider ? mobileOpen() : !isOpen ? isShow() : isClosed()"/>
+        <img v-if="!isSelected" :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="isOpen ?  isClosed() : isShow()">
+        <VideoMobile v-else :isSelected="isSelected" :linkVideo="trainer.linkVideo" :linkImage="trainer.link" @click="isOpen ? isClosed() : isShow() "/>
         <p class="firstName">{{$i18n.t(`trainers.${trainer.id}.firstName`)}}</p>
         <p class="lastName">{{$i18n.t(`trainers.${trainer.id}.lastName`)}}</p>
     </div>
@@ -50,7 +50,7 @@ export default {
             this.isSelected = false;
         },
         isShow(){
-            if(!this.isOpen) {
+            if(!this.isOpen && !this.isSlider) {
                 console.log('isShow')
                 this.$emit('isShow', true);
                 this.isSelected = true;

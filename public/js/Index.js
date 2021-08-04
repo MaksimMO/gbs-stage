@@ -19926,7 +19926,7 @@ swiper_core__WEBPACK_IMPORTED_MODULE_1__.default.use([swiper_core__WEBPACK_IMPOR
       this.isSelected = false;
     },
     isShow: function isShow() {
-      if (!this.isOpen) {
+      if (!this.isOpen && !this.isSlider) {
         console.log('isShow');
         this.$emit('isShow', true);
         this.isSelected = true;
@@ -22055,7 +22055,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/simulators/ve
 var preloadedAssets = [__webpack_require__(/*! ../../assets/images/TeamG/Vladimir_Leskov.jpg */ "./resources/assets/images/TeamG/Vladimir_Leskov.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Depeshko.jpg */ "./resources/assets/images/TeamG/Olga_Depeshko.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Martsenyuk.jpg */ "./resources/assets/images/TeamG/Olga_Martsenyuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Mikhail_Galagan.jpg */ "./resources/assets/images/TeamG/Mikhail_Galagan.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olga_Osadchuk.jpg */ "./resources/assets/images/TeamG/Olga_Osadchuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/valentine.jpg */ "./resources/assets/images/TeamG/valentine.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Melnyk_Serhiy.jpg */ "./resources/assets/images/TeamG/Melnyk_Serhiy.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Olena_Semenchuk.jpg */ "./resources/assets/images/TeamG/Olena_Semenchuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Nechko_Vasil.jpg */ "./resources/assets/images/TeamG/Nechko_Vasil.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Gornushkina_Julia.jpg */ "./resources/assets/images/TeamG/Gornushkina_Julia.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Elena_Dementieva.jpg */ "./resources/assets/images/TeamG/Elena_Dementieva.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/Nina_Shevchuk.jpg */ "./resources/assets/images/TeamG/Nina_Shevchuk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/olga-grigoruk.jpg */ "./resources/assets/images/TeamG/olga-grigoruk.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/maksym-kaschapov.jpg */ "./resources/assets/images/TeamG/maksym-kaschapov.jpg").default, __webpack_require__(/*! ../../assets/images/TeamG/image-not-found.jpg */ "./resources/assets/images/TeamG/image-not-found.jpg").default];
 var preloadedVideo = ['Vladimir_Leskov.MOV', 'Olga_Depeshko.MOV', 'Olga_Martsenyuk.MOV', 'Mikhail_Galagan.MOV', 'Olga_Osadchuk.MOV', 'valentine.MOV', 'Melnyk_Serhiy.MOV', 'Olena_Semenchuk.MOV', 'Nechko_Vasil.MOV', 'Gornushkina_Julia.MOV', 'Elena_Dementieva.MOV', 'Nina_Shevchuk.MOV', 'olga-grigoruk.MOV', 'maksym-kaschapov.MOV'];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  emits: ['changeOpen'],
+  // emits: ['changeOpen'],
   data: function data() {
     return {
       isOpen: false,
@@ -24630,7 +24630,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     src: "../../images/".concat($props.trainer.link),
     alt: $props.trainer.firstName,
     onClick: _cache[3] || (_cache[3] = function ($event) {
-      return $props.isSlider ? $options.mobileOpen() : !$props.isOpen ? $options.isShow() : $options.isClosed();
+      return $props.isOpen ? $options.isClosed() : $options.isShow();
     })
   }, null, 8
   /* PROPS */
@@ -24640,7 +24640,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     linkVideo: $props.trainer.linkVideo,
     linkImage: $props.trainer.link,
     onClick: _cache[4] || (_cache[4] = function ($event) {
-      return $props.isSlider ? $options.mobileOpen() : !$props.isOpen ? $options.isShow() : $options.isClosed();
+      return $props.isOpen ? $options.isClosed() : $options.isShow();
     })
   }, null, 8
   /* PROPS */
@@ -29958,7 +29958,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-hover.svg?6de6297fc0175501f65ca02aea303c25");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-hover.svg?87b43b62664da17195421bbf0a4be9aa");
 
 /***/ }),
 
@@ -29972,7 +29972,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f");
 
 /***/ }),
 
@@ -29986,7 +29986,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?736193b044696161e2a6e9f91539c73e");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
 
 /***/ }),
 
@@ -30014,7 +30014,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?df90caa4b4466fae2999be366ce12b13");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
 
 /***/ }),
 
@@ -30042,7 +30042,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?d94603bf7c6c5c4b24c3e6245db8ea26");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
 
 /***/ }),
 
@@ -31754,7 +31754,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/link-button-1.svg?f0436fae4285ac841c786452e43844ba");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/link-button-1.svg?b56062a7fc5663f3dd176c3944eca839");
 
 /***/ }),
 

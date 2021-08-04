@@ -259,7 +259,7 @@ export default {
     }
     .teams-slider {
         position: relative;
-        padding: 60px 3vw;
+        padding: 60px 3vw 230px;
     }
     .about-us-g-description {
         overflow: visible;
@@ -582,7 +582,7 @@ export default {
             }
         }
         .teams-slider {
-            padding: 37px 0 37px 15px;
+            padding: 37px 15px 37px 15px;
 
 
             ::v-deep(.swiper-button-prev){
