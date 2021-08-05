@@ -1,24 +1,24 @@
 <template>
-<div :class="['trainer-item', {'is-scaled':isHovered && isSelected}]"
+<div :class="['trainer-item', {'is-scaled': isSelected}]"
     @mouseenter="enter"
     @mouseleave="leave"
     v-if="!$root.$data.isMobile"
 >
     <div style="position: relative; z-index: 99;">
-        <img v-if="!isHovered" :src="`../../images/${trainer.link}`" :alt="trainer.firstName">
+        <img v-if="!isSelected" :src="`../../images/${trainer.link}`" :alt="trainer.firstName">
         <Video v-else :linkVideo="trainer.linkVideo" :linkImage="trainer.link"/>
         <p class="firstName">{{$i18n.t(`trainers.${trainer.id}.firstName`)}}</p>
         <p class="lastName">{{$i18n.t(`trainers.${trainer.id}.lastName`)}}</p>
     </div>
-    <div :class="['description', {'description-background': isHovered}]">
+    <div :class="['description', {'description-background': isSelected}]">
         <p class="descriptionTitle">{{$i18n.t(`trainers.${trainer.id}.direction`)}}</p>
         <p v-show="isSelected">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
     </div>
 </div>
 <div v-else :class="['trainer-item-mobile', {'is-scaled': isSelected && !isSlider}]">
     <div style="position: relative; z-index: 99;">
-        <img v-if="!isSelected" :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="isOpen ?  isClosed() : isShow()">
-        <VideoMobile v-else :isSelected="isSelected" :linkVideo="trainer.linkVideo" :linkImage="trainer.link" @click="isOpen ? isClosed() : isShow() "/>
+        <img v-if="!isSelected" :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="isSelected ?  сlose() : show()">
+        <VideoMobile v-else :isSelected="isSelected" :linkVideo="trainer.linkVideo" :linkImage="trainer.link" @click="isSelected ? сlose() : show() "/>
         <p class="firstName">{{$i18n.t(`trainers.${trainer.id}.firstName`)}}</p>
         <p class="lastName">{{$i18n.t(`trainers.${trainer.id}.lastName`)}}</p>
     </div>
@@ -37,36 +37,36 @@ export default {
     data(){
         return{
             isSelected: false,
-            isHovered:false,
+            // isHovered:false,
         }
     },
     methods:{
         enter(){
-            this.isHovered = true;
+            // this.isHovered = true;
             this.isSelected = true;
         },
         leave(){
-            this.isHovered = false;
+            // this.isHovered = false;
             this.isSelected = false;
         },
-        isShow(){
-            if(!this.isOpen && !this.isSlider) {
-                console.log('isShow')
-                this.$emit('isShow', true);
+        show(){
+            if( !this.isSlider) {
+                console.log('show')
+                // this.$emit('show', true);
                 this.isSelected = true;
             }
 
         },
-        isClosed(){
-            if(this.isOpen && this.isSelected) {
-                console.log('isClosed')
-                this.$emit('isClosed', false);
+        сlose(){
+            if(this.isSelected) {
+                console.log('сlose')
+                // this.$emit('сlose', false);
                 this.isSelected = false;
             }
 
         },
         mobileOpen(){
-            this.$emit('isClosed', !this.isOpen);
+            // this.$emit('сlose', !this.isOpen);
             this.isSelected = !this.isSelected;
         }
     },

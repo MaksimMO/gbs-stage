@@ -1,29 +1,37 @@
 <template>
     <div :class="{'trainers-container': !$root.$data.isMobile, 'trainers-container-mobile': $root.$data.isMobile}">
-        <TrainerItem
+        <!-- <TrainerItem
             v-for="(trainer)  in trainers"
             :key="trainer.id"
             :trainer="trainer"
             :isOpen="isOpen"
             :isSlider="false"
             @isShow="(e) => change(e)"
-            @isClosed="(e) => change(e)"/>
+            @isClosed="(e) => change(e)"/> -->
+
+        <TrainerItem
+            v-for="(trainer)  in trainers"
+            :key="trainer.id"
+            :trainer="trainer"
+            :isSlider="false"
+            />
     </div>
 </template>
 
 <script>
 import TrainerItem from '../components/TrainerItem.vue'
 export default {
-    emits: ['isClosed', 'isShow'],
-    props: ['trainers', 'isOpen'],
+    // emits: ['isClosed', 'isShow'],
+    // props: ['trainers', 'isOpen'],
+    props: ['trainers'],
     components:{
         TrainerItem
     },
-    methods: {
-        change(e) {
-            this.$emit('changeOpen', e);
-        }
-    },
+    // methods: {
+    //     change(e) {
+    //         this.$emit('changeOpen', e);
+    //     }
+    // },
 
 
 }

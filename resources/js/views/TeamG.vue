@@ -15,8 +15,7 @@
       <section>
           <TrainerList
             :trainers="trainers"
-            :isOpen="isOpen"
-            @changeOpen="(e) => change(e)"/>
+            />
       </section>
   </div>
 <Footer/>
