@@ -82,7 +82,7 @@ export default {
                 // {id: 12, link: "image-not-found.jpg"},
                 {id: 13, link: "olga-grigoruk.jpg", linkVideo: "olga-grigoruk.MOV"},
                 {id: 14, link: "maksym-kaschapov.jpg", linkVideo:"maksym-kaschapov.MOV"}
-            ],
+            ].map((item)=>({...item, isSelected:false})),
         }
     },
     mounted(){

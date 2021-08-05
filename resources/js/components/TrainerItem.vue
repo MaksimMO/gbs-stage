@@ -1,30 +1,30 @@
 <template>
-<div :class="['trainer-item', {'is-scaled': isSelected}]"
-    @mouseenter="enter"
-    @mouseleave="leave"
+<div :class="['trainer-item', {'is-scaled': trainer.isSelected}]"
+    @mouseenter="trainer.isSelected = true"
+    @mouseleave="trainer.isSelected = false"
     v-if="!$root.$data.isMobile"
 >
     <div style="position: relative; z-index: 99;">
-        <img v-if="!isSelected" :src="`../../images/${trainer.link}`" :alt="trainer.firstName">
+        <img v-if="!trainer.isSelected" :src="`../../images/${trainer.link}`" :alt="trainer.firstName">
         <Video v-else :linkVideo="trainer.linkVideo" :linkImage="trainer.link"/>
         <p class="firstName">{{$i18n.t(`trainers.${trainer.id}.firstName`)}}</p>
         <p class="lastName">{{$i18n.t(`trainers.${trainer.id}.lastName`)}}</p>
     </div>
-    <div :class="['description', {'description-background': isSelected}]">
+    <div :class="['description', {'description-background': trainer.isSelected}]">
         <p class="descriptionTitle">{{$i18n.t(`trainers.${trainer.id}.direction`)}}</p>
-        <p v-show="isSelected">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
+        <p v-show="trainer.isSelected">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
     </div>
 </div>
-<div v-else :class="['trainer-item-mobile', {'is-scaled': isSelected && !isSlider}]">
+<div v-else :class="['trainer-item-mobile', {'is-scaled': trainer.isSelected && !isSlider}]">
     <div style="position: relative; z-index: 99;">
-        <img v-if="!isSelected" :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="isSelected ?  сlose() : show()">
-        <VideoMobile v-else :isSelected="isSelected" :linkVideo="trainer.linkVideo" :linkImage="trainer.link" @click="isSelected ? сlose() : show() "/>
+        <img v-if="!trainer.isSelected" :src="`../../images/${trainer.link}`" :alt="trainer.firstName" @click="trainer.isSelected ?  сlose() : show()">
+        <VideoMobile v-else :isSelected="trainer.isSelected" :linkVideo="trainer.linkVideo" :linkImage="trainer.link" @click="trainer.isSelected ? сlose() : show() "/>
         <p class="firstName">{{$i18n.t(`trainers.${trainer.id}.firstName`)}}</p>
         <p class="lastName">{{$i18n.t(`trainers.${trainer.id}.lastName`)}}</p>
     </div>
-    <div :class="['description', {'description-background': isSelected}]">
+    <div :class="['description', {'description-background': trainer.isSelected}]">
         <p class="descriptionTitle">{{$i18n.t(`trainers.${trainer.id}.direction`)}}</p>
-        <p v-show="isSelected && !isSlider">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
+        <p v-show="trainer.isSelected && !isSlider">{{$i18n.t(`trainers.${trainer.id}.description`)}}</p>
     </div>
 </div>
 </template>
@@ -33,42 +33,21 @@
 import Video from '../components/Video.vue';
 import VideoMobile from '../components/VideoMobile.vue';
 export default {
-    props: ['trainer', 'isOpen', 'isSlider'],
-    data(){
-        return{
-            isSelected: false,
-            // isHovered:false,
-        }
-    },
+    props: ['trainer', 'isSlider'],
     methods:{
-        enter(){
-            // this.isHovered = true;
-            this.isSelected = true;
-        },
-        leave(){
-            // this.isHovered = false;
-            this.isSelected = false;
-        },
         show(){
             if( !this.isSlider) {
                 console.log('show')
-                // this.$emit('show', true);
-                this.isSelected = true;
+                this.$emit('selectTrainer', this.trainer);
             }
-
         },
         сlose(){
-            if(this.isSelected) {
+            if(this.trainer.isSelected) {
                 console.log('сlose')
-                // this.$emit('сlose', false);
-                this.isSelected = false;
+                this.trainer.isSelected = false;
             }
 
         },
-        mobileOpen(){
-            // this.$emit('сlose', !this.isOpen);
-            this.isSelected = !this.isSelected;
-        }
     },
     components: {
         Video,

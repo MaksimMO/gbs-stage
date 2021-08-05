@@ -1,19 +1,11 @@
 <template>
     <div :class="{'trainers-container': !$root.$data.isMobile, 'trainers-container-mobile': $root.$data.isMobile}">
-        <!-- <TrainerItem
-            v-for="(trainer)  in trainers"
-            :key="trainer.id"
-            :trainer="trainer"
-            :isOpen="isOpen"
-            :isSlider="false"
-            @isShow="(e) => change(e)"
-            @isClosed="(e) => change(e)"/> -->
-
         <TrainerItem
             v-for="(trainer)  in trainers"
             :key="trainer.id"
             :trainer="trainer"
             :isSlider="false"
+            @selectTrainer="selectTrainer"
             />
     </div>
 </template>
@@ -21,19 +13,19 @@
 <script>
 import TrainerItem from '../components/TrainerItem.vue'
 export default {
-    // emits: ['isClosed', 'isShow'],
-    // props: ['trainers', 'isOpen'],
     props: ['trainers'],
+    methods:{
+        selectTrainer(trainer){
+            this.trainers.filter(item => item.isSelected).forEach(item => {
+                item.isSelected=false;
+            });
+
+            trainer.isSelected=true;
+        }
+    },
     components:{
         TrainerItem
     },
-    // methods: {
-    //     change(e) {
-    //         this.$emit('changeOpen', e);
-    //     }
-    // },
-
-
 }
 </script>
 
