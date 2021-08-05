@@ -19909,39 +19909,19 @@ swiper_core__WEBPACK_IMPORTED_MODULE_1__.default.use([swiper_core__WEBPACK_IMPOR
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['trainer', 'isOpen', 'isSlider'],
-  data: function data() {
-    return {
-      isSelected: false,
-      isHovered: false
-    };
-  },
+  props: ['trainer', 'isSlider'],
   methods: {
-    enter: function enter() {
-      this.isHovered = true;
-      this.isSelected = true;
-    },
-    leave: function leave() {
-      this.isHovered = false;
-      this.isSelected = false;
-    },
-    isShow: function isShow() {
-      if (!this.isOpen && !this.isSlider) {
-        console.log('isShow');
-        this.$emit('isShow', true);
-        this.isSelected = true;
+    show: function show() {
+      if (!this.isSlider) {
+        console.log('show');
+        this.$emit('selectTrainer', this.trainer);
       }
     },
-    isClosed: function isClosed() {
-      if (this.isOpen && this.isSelected) {
-        console.log('isClosed');
-        this.$emit('isClosed', false);
-        this.isSelected = false;
+    сlose: function сlose() {
+      if (this.trainer.isSelected) {
+        console.log('сlose');
+        this.trainer.isSelected = false;
       }
-    },
-    mobileOpen: function mobileOpen() {
-      this.$emit('isClosed', !this.isOpen);
-      this.isSelected = !this.isSelected;
     }
   },
   components: {
@@ -19965,15 +19945,19 @@ swiper_core__WEBPACK_IMPORTED_MODULE_1__.default.use([swiper_core__WEBPACK_IMPOR
 /* harmony import */ var _components_TrainerItem_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/TrainerItem.vue */ "./resources/js/components/TrainerItem.vue");
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  emits: ['isClosed', 'isShow'],
-  props: ['trainers', 'isOpen'],
+  props: ['trainers'],
+  methods: {
+    selectTrainer: function selectTrainer(trainer) {
+      this.trainers.filter(function (item) {
+        return item.isSelected;
+      }).forEach(function (item) {
+        item.isSelected = false;
+      });
+      trainer.isSelected = true;
+    }
+  },
   components: {
     TrainerItem: _components_TrainerItem_vue__WEBPACK_IMPORTED_MODULE_0__.default
-  },
-  methods: {
-    change: function change(e) {
-      this.$emit('changeOpen', e);
-    }
   }
 });
 
@@ -22047,6 +22031,12 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/simulators/ve
 /* harmony import */ var _components_Breadcrumb_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Breadcrumb.vue */ "./resources/js/components/Breadcrumb.vue");
 /* harmony import */ var _components_Footer_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Footer.vue */ "./resources/js/components/Footer.vue");
 /* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils.js */ "./resources/js/utils.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -22116,7 +22106,11 @@ var preloadedVideo = ['Vladimir_Leskov.MOV', 'Olga_Depeshko.MOV', 'Olga_Martseny
         id: 14,
         link: "maksym-kaschapov.jpg",
         linkVideo: "maksym-kaschapov.MOV"
-      }]
+      }].map(function (item) {
+        return _objectSpread(_objectSpread({}, item), {}, {
+          isSelected: false
+        });
+      })
     };
   },
   mounted: function mounted() {
@@ -24584,15 +24578,15 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   return !_ctx.$root.$data.isMobile ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
     key: 0,
     "class": ['trainer-item', {
-      'is-scaled': $data.isHovered && $data.isSelected
+      'is-scaled': $props.trainer.isSelected
     }],
-    onMouseenter: _cache[1] || (_cache[1] = function () {
-      return $options.enter && $options.enter.apply($options, arguments);
+    onMouseenter: _cache[1] || (_cache[1] = function ($event) {
+      return $props.trainer.isSelected = true;
     }),
-    onMouseleave: _cache[2] || (_cache[2] = function () {
-      return $options.leave && $options.leave.apply($options, arguments);
+    onMouseleave: _cache[2] || (_cache[2] = function ($event) {
+      return $props.trainer.isSelected = false;
     })
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [!$data.isHovered ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("img", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [!$props.trainer.isSelected ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("img", {
     key: 0,
     src: "../../images/".concat($props.trainer.link),
     alt: $props.trainer.firstName
@@ -24610,37 +24604,37 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   /* TEXT */
   )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
     "class": ['description', {
-      'description-background': $data.isHovered
+      'description-background': $props.trainer.isSelected
     }]
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("trainers.".concat($props.trainer.id, ".direction"))), 1
   /* TEXT */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("trainers.".concat($props.trainer.id, ".description"))), 513
   /* TEXT, NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.isSelected]])], 2
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $props.trainer.isSelected]])], 2
   /* CLASS */
   )], 34
   /* CLASS, HYDRATE_EVENTS */
   )) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
     key: 1,
     "class": ['trainer-item-mobile', {
-      'is-scaled': $data.isSelected && !$props.isSlider
+      'is-scaled': $props.trainer.isSelected && !$props.isSlider
     }]
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [!$data.isSelected ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("img", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [!$props.trainer.isSelected ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("img", {
     key: 0,
     src: "../../images/".concat($props.trainer.link),
     alt: $props.trainer.firstName,
     onClick: _cache[3] || (_cache[3] = function ($event) {
-      return $props.isOpen ? $options.isClosed() : $options.isShow();
+      return $props.trainer.isSelected ? $options.сlose() : $options.show();
     })
   }, null, 8
   /* PROPS */
   , ["src", "alt"])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_VideoMobile, {
     key: 1,
-    isSelected: $data.isSelected,
+    isSelected: $props.trainer.isSelected,
     linkVideo: $props.trainer.linkVideo,
     linkImage: $props.trainer.link,
     onClick: _cache[4] || (_cache[4] = function ($event) {
-      return $props.isOpen ? $options.isClosed() : $options.isShow();
+      return $props.trainer.isSelected ? $options.сlose() : $options.show();
     })
   }, null, 8
   /* PROPS */
@@ -24650,13 +24644,13 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   /* TEXT */
   )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
     "class": ['description', {
-      'description-background': $data.isSelected
+      'description-background': $props.trainer.isSelected
     }]
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("trainers.".concat($props.trainer.id, ".direction"))), 1
   /* TEXT */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$i18n.t("trainers.".concat($props.trainer.id, ".description"))), 513
   /* TEXT, NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.isSelected && !$props.isSlider]])], 2
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $props.trainer.isSelected && !$props.isSlider]])], 2
   /* CLASS */
   )], 2
   /* CLASS */
@@ -24689,17 +24683,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_TrainerItem, {
       key: trainer.id,
       trainer: trainer,
-      isOpen: $props.isOpen,
       isSlider: false,
-      onIsShow: _cache[1] || (_cache[1] = function (e) {
-        return $options.change(e);
-      }),
-      onIsClosed: _cache[2] || (_cache[2] = function (e) {
-        return $options.change(e);
-      })
+      onSelectTrainer: $options.selectTrainer
     }, null, 8
     /* PROPS */
-    , ["trainer", "isOpen"]);
+    , ["trainer", "onSelectTrainer"]);
   }), 128
   /* KEYED_FRAGMENT */
   ))], 2
@@ -27513,14 +27501,10 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       'team-g-mobile': _ctx.$root.$data.isMobile
     }
   }, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_TrainerList, {
-    trainers: $data.trainers,
-    isOpen: $data.isOpen,
-    onChangeOpen: _cache[1] || (_cache[1] = function (e) {
-      return $options.change(e);
-    })
+    trainers: $data.trainers
   }, null, 8
   /* PROPS */
-  , ["trainers", "isOpen"])])], 2
+  , ["trainers"])])], 2
   /* CLASS */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
@@ -29958,7 +29942,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-hover.svg?87b43b62664da17195421bbf0a4be9aa");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-hover.svg?6de6297fc0175501f65ca02aea303c25");
 
 /***/ }),
 
@@ -29972,7 +29956,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1");
 
 /***/ }),
 
@@ -29986,7 +29970,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?736193b044696161e2a6e9f91539c73e");
 
 /***/ }),
 
@@ -30014,7 +29998,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?df90caa4b4466fae2999be366ce12b13");
 
 /***/ }),
 
@@ -30042,7 +30026,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?d94603bf7c6c5c4b24c3e6245db8ea26");
 
 /***/ }),
 
@@ -31754,7 +31738,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/link-button-1.svg?b56062a7fc5663f3dd176c3944eca839");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/link-button-1.svg?f0436fae4285ac841c786452e43844ba");
 
 /***/ }),
 
