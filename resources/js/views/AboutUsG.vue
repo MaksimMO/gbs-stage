@@ -257,10 +257,10 @@ export default {
         position: relative;
         padding: 0 7.81vw;
     }
-    .teams-slider {
-        position: relative;
-        padding: 60px 3vw 230px;
-    }
+    // .teams-slider {
+    //     position: relative;
+    //     padding: 60px 3vw 230px;
+    // }
     .about-us-g-description {
         overflow: visible;
         grid-template-columns: repeat(2, 1fr);
@@ -296,6 +296,8 @@ export default {
     .our-team-aboutUs-container{
         background: rgba(145, 108, 88, 0.1);
         padding-top: 60px;
+        padding-bottom: 250px;
+
         // padding-bottom: 220px;
         .our-team-container_header{
             font-family: 'Oswald';
@@ -309,6 +311,7 @@ export default {
             justify-content: space-between;
             position: relative;
             padding-right: 150px;
+            margin-bottom: 64px;
             p {
                 margin: 0;
                 @media screen and (max-width:767px){
@@ -392,7 +395,7 @@ export default {
         }
     }
 
-    @media screen and (max-width: 1023px) and (min-width: 768px) {
+    @media screen and (max-width: 1280px) and (min-width: 768px) {
         .view-about-us-g {
             padding-top: 108px;
         }
@@ -459,6 +462,7 @@ export default {
         .our-team-aboutUs-container{
             background: rgba(145, 108, 88, 0.1);
             padding-top: 30px;
+            padding-bottom: 0px;
 
 
             .our-team-container_header{
@@ -466,14 +470,15 @@ export default {
                 display: flex;
                 padding-left: 50px;
                 padding-right: 50px;
+                margin-bottom: 40px;
             }
             .trainers-container .trainer-item:nth-of-type(even) {
                 margin-top:25px;
             }
         }
-        .teams-slider {
-            padding: 40px 30px;
-        }
+        // .teams-slider {
+        //     padding: 40px 30px;
+        // }
          .certificate-title {
             padding: 0 50px;
             margin-bottom: 30px;
@@ -567,6 +572,7 @@ export default {
         .our-team-aboutUs-container{
             background: rgba(145, 108, 88, 0.1);
             padding-top: 50px;
+            padding-bottom: 0;
             .our-team-container_header{
                 font-size: 24px;
                 display: flex;
@@ -581,40 +587,7 @@ export default {
                 margin-top:25px;
             }
         }
-        .teams-slider {
-            padding: 37px 15px 37px 15px;
 
-
-            ::v-deep(.swiper-button-prev){
-                @media screen and (max-width:767px){
-                    background-image: url('../../assets/images/btn-slider-prev.svg');
-                    top: -25px;
-                    left: calc(100% - 155px) !important;
-                    display: initial;
-                    width: 66px;
-                    height: 46px;
-
-                    &::after{
-                    display: none;
-                    }
-                }
-            }
-
-            ::v-deep(.swiper-button-next){
-                @media screen and (max-width:767px){
-                background-image: url('../../assets/images/btn-slider-next.svg');
-                top: -25px;
-                display: initial;
-                width: 66px;
-                height: 46px;
-
-                    &::after{
-                    display: none;
-                    }
-                }
-            }
-
-        }
          .certificate-title {
             padding: 0 15px;
             margin-bottom: 20px;

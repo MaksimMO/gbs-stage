@@ -75,28 +75,56 @@ export default {
 @import 'swiper/components/navigation/navigation.min.css';
 
 .swiper-container {
-    width: 100%;
-    height: 100%;
-    position: unset;
-    margin-bottom: 25px;
+    // width: 100%;
+    // height: 100%;
+    // position: unset;
+    // margin-bottom: 25px;
     overflow: unset;
-    ::v-deep(.swiper-button-prev) {
+    padding:0 42px;
+
+    .swiper-slide {
+        -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+    }
+
+
+
+
+    ::v-deep(.swiper-button-prev), ::v-deep(.swiper-button-next) {
         --swiper-navigation-size: 20px;
         --swiper-navigation-color: #000;
         opacity: 1;
-        // left: 20px !important;
     }
-    ::v-deep(.swiper-button-next) {
-        --swiper-navigation-size: 20px;
-        --swiper-navigation-color: #000;
-        opacity: 1;
-        // right: 20px !important;
-    }
+
 }
 
 
+@media screen and (max-width:767px){
+            ::v-deep(.swiper-button-prev){
+                    background-image: url('../../assets/images/btn-slider-prev.svg');
+                    top: -50px;
+                    left: calc(100% - 155px) !important;
+                    display: initial;
+                    width: 66px;
+                    height: 46px;
 
+                    &::after{
+                    display: none;
+                    }
+            }
 
+            ::v-deep(.swiper-button-next){
+                background-image: url('../../assets/images/btn-slider-next.svg');
+                top: -50px;
+                display: initial;
+                width: 66px;
+                height: 46px;
+
+                    &::after{
+                    display: none;
+                    }
+            }
+
+        }
 
 .swiper-slide {
     font-size: 18px;
@@ -104,6 +132,7 @@ export default {
     justify-content: center;
     align-items: center;
     height: auto;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 
     &:nth-child(2n){
 
@@ -169,14 +198,10 @@ export default {
     object-fit: cover;
   }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
     .swiper-container {
-        ::v-deep(.swiper-button-prev) {
-            left: 10px !important;
-        }
-        ::v-deep(.swiper-button-next) {
-            right: 10px !important;
-        }
+        padding: 0 30px;
     }
 
     .swiper-slide-next + .swiper-slide + .swiper-slide{
@@ -186,14 +211,10 @@ export default {
     }
   }
 
+
   @media screen and (max-width: 767px) {
     .swiper-container {
-        ::v-deep(.swiper-button-prev) {
-            display: none;
-        }
-        ::v-deep(.swiper-button-next) {
-            display: none;
-        }
+        padding: 0;
     }
 
     // .swiper-slide-next + .swiper-slide{
@@ -201,7 +222,7 @@ export default {
     //     pointer-events: none;
     //     opacity: 0;
     // }
-  }
+   }
 
 </style>>
 

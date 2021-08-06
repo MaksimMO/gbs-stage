@@ -52,7 +52,7 @@ export default {
       scrollYdata: 0,
       modalOpen:false,
       isTablet
-      
+
     };
   },
   components: {
@@ -338,7 +338,7 @@ export default {
     }
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
+@media screen and (max-width: 1280px) and (min-width: 768px) {
     .header {
         opacity: .8;
         padding: 27px 20px;
