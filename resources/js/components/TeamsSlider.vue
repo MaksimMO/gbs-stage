@@ -101,7 +101,7 @@ export default {
 @media screen and (max-width:767px){
             ::v-deep(.swiper-button-prev){
                     background-image: url('../../assets/images/btn-slider-prev.svg');
-                    top: -50px;
+                    top: -40px;
                     left: calc(100% - 155px) !important;
                     display: initial;
                     width: 66px;
@@ -114,7 +114,7 @@ export default {
 
             ::v-deep(.swiper-button-next){
                 background-image: url('../../assets/images/btn-slider-next.svg');
-                top: -50px;
+                top: -40px;
                 display: initial;
                 width: 66px;
                 height: 46px;

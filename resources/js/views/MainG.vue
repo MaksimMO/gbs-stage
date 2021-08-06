@@ -826,45 +826,45 @@ export default {
     // }
 
     .teams-slider {
-        position: relative;
-        padding: 0 30px;
-        z-index: 2;
+
+      //   position: relative;
+      //   padding: 0 30px;
+      //   z-index: 2;
 
       @media screen and (max-width:767px){
-        padding: 20px 15px;
-        margin-top: 15px;
+        margin-top: 40px;
       }
 
 
 
-      ::v-deep(.swiper-button-prev){
-        @media screen and (max-width:767px){
-            background-image: url('../../assets/images/btn-slider-prev.svg');
-            top: -25px;
-            left: calc(100% - 155px) !important;
-            display: initial;
-            width: 66px;
-            height: 46px;
+      // ::v-deep(.swiper-button-prev){
+      //   @media screen and (max-width:767px){
+      //       background-image: url('../../assets/images/btn-slider-prev.svg');
+      //       top: -25px;
+      //       left: calc(100% - 155px) !important;
+      //       display: initial;
+      //       width: 66px;
+      //       height: 46px;
 
-            &::after{
-              display: none;
-            }
-        }
-      }
+      //       &::after{
+      //         display: none;
+      //       }
+      //   }
+      // }
 
-      ::v-deep(.swiper-button-next){
-        @media screen and (max-width:767px){
-          background-image: url('../../assets/images/btn-slider-next.svg');
-          top: -25px;
-          display: initial;
-          width: 66px;
-          height: 46px;
+      // ::v-deep(.swiper-button-next){
+      //   @media screen and (max-width:767px){
+      //     background-image: url('../../assets/images/btn-slider-next.svg');
+      //     top: -25px;
+      //     display: initial;
+      //     width: 66px;
+      //     height: 46px;
 
-            &::after{
-              display: none;
-            }
-        }
-      }
+      //       &::after{
+      //         display: none;
+      //       }
+      //   }
+      // }
 
     }
 
