@@ -2425,6 +2425,9 @@ Video[data-v-6a0f304d] {
   transform: scale(1.1);
   z-index: 101;
 }
+.trainer-item-mobile.is-scaled .description[data-v-6a0f304d] {
+  border-bottom: 2em solid #F4F0EE;
+}
 .trainer-item-mobile .info[data-v-6a0f304d] {
   transform: none;
   position: absolute;

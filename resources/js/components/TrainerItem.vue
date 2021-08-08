@@ -302,6 +302,10 @@ Video{
     &.is-scaled{
          transform:scale(1.1);
          z-index: 101;
+
+        .description{
+            border-bottom: 2em solid #F4F0EE;
+         }
     }
     .info{
         transform: none;
