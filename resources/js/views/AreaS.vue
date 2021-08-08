@@ -84,12 +84,12 @@ export default {
 <style lang='scss' scoped>
 .view-area-s{
   background-color: #fff;
-  padding: 208px 0 60px;
+  padding: 208px 0 0;
   @media screen and (max-width:767px){
-    padding: 110px 0 60px;
+    padding: 110px 0 0;
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-    padding: 110px 0 60px;
+    padding: 110px 0 0;
 }
 
     .title{
@@ -159,7 +159,9 @@ export default {
     }
 
     .open-popup-container{
-        width: max-content;
+        // width: max-content;
+        background: #f9f8f7;
+        padding: 60px 0;
         margin: 0 auto;
         display: flex;
         flex-direction: column;

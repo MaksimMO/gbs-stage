@@ -320,6 +320,7 @@ export default {
             }
         }
         .all-our-trainers-link{
+            font-family:'Raleway';
             margin: 56px 83px 76px 0;
             font-weight: bold;
             font-size: 12px;

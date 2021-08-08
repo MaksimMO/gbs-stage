@@ -96,7 +96,7 @@ export default {
       }
 
       span:nth-of-type(2){
-        font-size: 0.7em;
+        font-size: 0.6em;
       }
   }
 

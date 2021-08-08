@@ -797,6 +797,7 @@ export default {
     }
 
     .all-our-trainers-link{
+      font-family:'Raleway';
       display:block;
       margin: 24px 143px 24px 0;
       font-weight: bold;

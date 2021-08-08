@@ -2067,7 +2067,7 @@ html, body {
 }
 }
 .mySwiper[data-v-67e40df3] .swiper-pagination-fraction span:nth-of-type(2) {
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 .mySwiper .swiper-slide[data-v-67e40df3] {
   text-align: center;
@@ -2232,6 +2232,9 @@ html, body {
 .trainer-item.is-scaled[data-v-6a0f304d] {
   transform: scale(1.3);
   z-index: 101;
+}
+.trainer-item.is-scaled .description[data-v-6a0f304d] {
+  border-bottom: 2em solid #F4F0EE;
 }
 .trainer-item .info[data-v-6a0f304d] {
   transform: none;
@@ -3019,6 +3022,7 @@ Video[data-v-6a0f304d] {
   transform: skew(-18deg);
 }
 .our-team-container .all-our-trainers-link[data-v-6918511f] {
+  font-family: "Raleway";
   display: block;
   margin: 24px 143px 24px 0;
   font-weight: bold;
@@ -3305,9 +3309,6 @@ Video[data-v-6a0f304d] {
   transition: filter 0.2s ease-out;
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-.swiper-container[data-v-a1dfde10] {
-    margin-bottom: 110px;
-}
 .swiper-container[data-v-a1dfde10] .swiper-button-prev {
     left: 20px !important;
 }
@@ -3316,9 +3317,6 @@ Video[data-v-6a0f304d] {
 }
 }
 @media screen and (max-width: 767px) {
-.swiper-container[data-v-a1dfde10] {
-    margin-bottom: 110px;
-}
 .swiper-container[data-v-a1dfde10] .swiper-button-prev {
     top: unset;
     bottom: -50px;
@@ -3902,7 +3900,7 @@ Video[data-v-6a0f304d] {
 }
 }
 .mySwiperS[data-v-c1387d1a] .swiper-pagination-fraction span:nth-of-type(2) {
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 .mySwiperS .swiper-slide[data-v-c1387d1a] {
   text-align: center;
@@ -4860,6 +4858,7 @@ Video[data-v-6a0f304d] {
 }
 }
 .our-team-aboutUs-container .all-our-trainers-link[data-v-4edab8bb] {
+  font-family: "Raleway";
   margin: 56px 83px 76px 0;
   font-weight: bold;
   font-size: 12px;
@@ -5338,16 +5337,16 @@ Video[data-v-6a0f304d] {
 }
 .view-area-g[data-v-720f2acb] {
   background-color: #fff;
-  padding: 208px 0 60px;
+  padding: 208px 0 0;
 }
 @media screen and (max-width: 767px) {
 .view-area-g[data-v-720f2acb] {
-    padding: 110px 0 60px;
+    padding: 110px 0 0;
 }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
 .view-area-g[data-v-720f2acb] {
-    padding: 110px 0 60px;
+    padding: 110px 0 0;
 }
 }
 .view-area-g .title[data-v-720f2acb] {
@@ -5419,9 +5418,8 @@ Video[data-v-6a0f304d] {
   padding: 0 7.81vw;
 }
 .view-area-g .open-popup-container[data-v-720f2acb] {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  padding: 60px 0;
+  background: #f9f8f7;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -5625,16 +5623,16 @@ Video[data-v-6a0f304d] {
 }
 .view-area-s[data-v-72b844d7] {
   background-color: #fff;
-  padding: 208px 0 60px;
+  padding: 208px 0 0;
 }
 @media screen and (max-width: 767px) {
 .view-area-s[data-v-72b844d7] {
-    padding: 110px 0 60px;
+    padding: 110px 0 0;
 }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
 .view-area-s[data-v-72b844d7] {
-    padding: 110px 0 60px;
+    padding: 110px 0 0;
 }
 }
 .view-area-s .title[data-v-72b844d7] {
@@ -5706,9 +5704,8 @@ Video[data-v-6a0f304d] {
   padding: 0 7.81vw;
 }
 .view-area-s .open-popup-container[data-v-72b844d7] {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  background: #f9f8f7;
+  padding: 60px 0;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

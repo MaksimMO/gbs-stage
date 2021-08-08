@@ -154,7 +154,7 @@ export default {
 
   @media screen and (max-width: 1023px) and (min-width: 768px) {
       .swiper-container {
-        margin-bottom: 110px;
+        // margin-bottom: 110px;
         ::v-deep(.swiper-button-prev) {
             left: 20px !important;
         }
@@ -167,7 +167,7 @@ export default {
 
   @media screen and (max-width: 767px) {
       .swiper-container {
-          margin-bottom: 110px;
+          // margin-bottom: 110px;
         ::v-deep(.swiper-button-prev) {
             top: unset;
             bottom: -50px;

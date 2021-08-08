@@ -73,6 +73,12 @@ export default {
     &.is-scaled{
          transform:scale(1.3);
          z-index: 101;
+         
+         .description{
+            border-bottom: 2em solid #F4F0EE;
+         }
+
+
     }
     .info{
         transform: none;
@@ -181,6 +187,8 @@ Video{
     font-size: 14px;
     line-height: 28px;
     color: #000000;
+
+
 
 
     & p {
