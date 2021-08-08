@@ -215,7 +215,7 @@ const app = createApp({
         }
     },
     mounted(){
-        this.handlerHighlightedPopup();
+        // this.handlerHighlightedPopup();
     },
     components:{
         Root

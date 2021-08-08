@@ -27969,8 +27969,7 @@ var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
       }
     }
   },
-  mounted: function mounted() {
-    this.handlerHighlightedPopup();
+  mounted: function mounted() {// this.handlerHighlightedPopup();
   },
   components: {
     Root: _Root_vue__WEBPACK_IMPORTED_MODULE_2__.default
