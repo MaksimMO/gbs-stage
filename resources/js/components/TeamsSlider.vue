@@ -81,6 +81,7 @@ export default {
     // margin-bottom: 25px;
     overflow: unset;
     padding:0 42px;
+    z-index: 2;
 
     .swiper-slide {
         -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);

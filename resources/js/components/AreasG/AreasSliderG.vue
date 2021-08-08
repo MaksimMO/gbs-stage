@@ -92,6 +92,10 @@ export default {
       @media screen and (max-width:767px){
         left: 15px;
       }
+
+      span:nth-of-type(2){
+        font-size: 0.7em;
+      }
   }
 
   .swiper-slide {
