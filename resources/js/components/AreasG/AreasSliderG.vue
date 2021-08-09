@@ -12,7 +12,7 @@
      <button @click="$router.push(`/areas-g`)"><span>Всі напрямки</span></button>
       <div class="text-block">
         <div class="title">{{slide.title}}</div>
-        <div class="description">{{slide.description}}</div>
+        <div class="description" v-html="slide.description"></div>
         <router-link  :to="`/areas-g/${slide.id}`" class="link-2">Переглянути</router-link>
     </div>
   </swiper-slide>
