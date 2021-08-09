@@ -42,7 +42,7 @@ export default
      "imageUrl": require("../../../assets/images/areas/area-3-g.jpg").default,
     "videoUrl": require("../../../assets/video/area-video-5-C0067.mp4").default,
     "videoPoster": require("../../../assets/images/areas/area-3-g-poster.jpg").default,
-    "title":"Кардіотренування cycle", "description":`Унікальне супер емоційне кардіотренування CYCLE зі світло- звуковим супроводом на велотренажерах бренду TechnoGym в високотехнологічній кімнаті – це повноцінна вело-гонка з приголомшливими відчуттями та точним відстеженням результатів. Зона  призначена для проведення таких тренувань як: <span style="font-wight:bold">Cycle.</style>`,
+    "title":"Кардіотренування cycle", "description":`Унікальне супер емоційне кардіотренування CYCLE зі світло- звуковим супроводом на велотренажерах бренду TechnoGym в високотехнологічній кімнаті – це повноцінна вело-гонка з приголомшливими відчуттями та точним відстеженням результатів. Зона  призначена для проведення таких тренувань як: <span style="font-weight:bold">Cycle.</style>`,
     "photos":[
       require("../../../assets/images/areas/slider-area-3/slider-area-3-1.jpg").default,
       require("../../../assets/images/areas/slider-area-3/slider-area-3-2.jpg").default,
@@ -54,7 +54,7 @@ export default
     "imageUrl": require("../../../assets/images/areas/area-4-g.jpg").default,
      "videoUrl": require("../../../assets/video/area-video-1-C0011.mp4").default,
      "videoPoster": require("../../../assets/images/areas/area-4-g-poster.jpg").default,
-    "title":"Студія barre, йоги та пілатесу",  "description":`Трендовий напрям BARRE - тонке поєднання балетних вправ та силового тренування. Найбільш граційне тренування, що подарує струнке підтягнуте тіло та красиву поставу. Зона  призначена для проведення таких тренувань як: <span style="font-wight:bold">Barre, Yoga, Pilates.</span>` ,
+    "title":"Студія barre, йоги та пілатесу",  "description":`Трендовий напрям BARRE - тонке поєднання балетних вправ та силового тренування. Найбільш граційне тренування, що подарує струнке підтягнуте тіло та красиву поставу. Зона  призначена для проведення таких тренувань як: <span style="font-weight:bold">Barre, Yoga, Pilates.</span>` ,
     "photos":[
       require("../../../assets/images/areas/slider-area-4/slider-area-4-1.jpg").default,
       require("../../../assets/images/areas/slider-area-4/slider-area-4-2.jpg").default,
