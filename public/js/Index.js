@@ -26483,7 +26483,7 @@ var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   "class": "top-image-warning",
   src: _assets_images_warning_svg__WEBPACK_IMPORTED_MODULE_2__.default,
   alt: ""
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Салон відкритий як для членів клубу, так і для гостей без клубних карт. ")])], -1
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Салон відкритий як для членів клубу, так і для гостей без клубних карт. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Даний перелік послуг доступний всім відвідувачам (не лише власникам клубних карт) ")])])], -1
 /* HOISTED */
 );
 
@@ -26838,7 +26838,7 @@ var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   "class": "top-image",
   src: _assets_images_warning_svg__WEBPACK_IMPORTED_MODULE_2__.default,
   alt: ""
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Даний перелік послуг доступний для власників клубних карт. ")])], -1
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Даний перелік послуг доступний для власників клубних карт. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Даний перелік послуг доступний всім відвідувачам (не лише власникам клубних карт) ")])])], -1
 /* HOISTED */
 );
 
