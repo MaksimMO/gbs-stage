@@ -5,7 +5,7 @@
 <div :class="['view-area-g', `area-g-${area.id}`]">
 
     <div class="title">{{area.title}}</div>
-    <div class="description">{{area.description}}</div>
+    <div class="description" v-html="area.description"></div>
     <img class="big-image" :src="area.imageUrl" />
 
     <section class="gallery-slider" v-if="area.photos?.length">
