@@ -5,8 +5,8 @@
     <div class="address">ТСК “МАГІГРАНД”, вул. Келецька, 78В</div>
     <PhoneLink />
     <div class="social-networks">
-      <a href="https://www.facebook.com/gbs.level" class="facebook" target="_blank"></a>
-      <a href="https://www.instagram.com/gbs.level" class="instagram" target="_blank"></a>
+      <a  :href="`https://www.facebook.com/${($root.$data.area === 'b' ? 'blevel.gbs' : 'gbs.level')}`" class="facebook" target="_blank"></a>
+      <a :href="`https://www.instagram.com/${($root.$data.area === 'b' ? 'blevel.gbs' : 'gbs.level')}`" class="instagram" target="_blank"></a>
     </div>
   <hr>
   <div class="text-1">
