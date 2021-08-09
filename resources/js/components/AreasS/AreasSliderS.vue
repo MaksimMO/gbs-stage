@@ -6,9 +6,9 @@
   :loop="true"
   class="mySwiperS"
 >
-  <swiper-slide v-for="slide in slides" :key="slide.id">
+  <swiper-slide v-for="slide in slides" :key="slide.id" @click="$router.push(`/areas-g/${slide.id}`)">
     <img :src="slide.imageUrl" />
-    <button @click="$router.push(`/areas-s`)"><span>Всі напрямки</span></button>
+    <button @click.stop="$router.push(`/areas-s`)"><span>Всі напрямки</span></button>
       <div class="text-block">
         <div class="title">{{slide.titleBanner || slide.title }}</div>
         <div class="description">{{slide.descriptionBanner || slide.description}}</div>
@@ -84,7 +84,7 @@ export default {
       left: 120px;
       top: 25px;
       font-family: Raleway;
-      font-size: 24px;
+      font-size: 18px;
       letter-spacing: 0.05em;
       font-feature-settings: "pnum" on, "lnum" on;
       color: #ffffff;
@@ -95,12 +95,12 @@ export default {
         left: 15px;
       }
 
-      span:nth-of-type(2){
-        font-size: 0.6em;
+      span:nth-of-type(1){
+        font-size: 1.5em;
       }
   }
 
-  .swiper-slide {
+  ::v-deep(.swiper-slide) {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -108,6 +108,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor:pointer;
 
     img {
       display: block;
