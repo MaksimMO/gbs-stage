@@ -294,7 +294,7 @@ Video{
 
 
 
-.trainer-item-mobile {
+.trainer-item-mobile {  
     transition: all .2s ease-in;
     position: relative;
     margin-bottom: 60px;
