@@ -98,7 +98,9 @@ let preloadedAssets = [
         require("../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default,
         require("../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default,
         require("../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default,
-        require("../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default
+        require("../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default,
+        require("../../assets/images/TeamG/gallery/overlay/IMG_4586.jpg").default,
+        require("../../assets/images/TeamG/gallery/overlay/photo_2021-08-10_20-22-48.jpg").default
     ]
 
 export default {
@@ -133,7 +135,10 @@ export default {
                 require("../../assets/images/TeamG/gallery/overlay/IMG_4583-min.jpg").default,
                 require("../../assets/images/TeamG/gallery/overlay/IMG_4595-min.jpg").default,
                 require("../../assets/images/TeamG/gallery/overlay/IMG_4608-min.jpg").default,
-                require("../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default
+                require("../../assets/images/TeamG/gallery/overlay/IMG_4614-min.jpg").default,
+                require("../../assets/images/TeamG/gallery/overlay/IMG_4586.jpg").default,
+                require("../../assets/images/TeamG/gallery/overlay/photo_2021-08-10_20-22-48.jpg").default,
+                
             ]
         }
     },
