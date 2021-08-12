@@ -6,7 +6,7 @@
   :loop="true"
   class="mySwiperS"
 >
-  <swiper-slide v-for="slide in slides" :key="slide.id" @click="$router.push(`/areas-g/${slide.id}`)">
+  <swiper-slide v-for="slide in slides" :key="slide.id" @click="$router.push(`/areas-s/${slide.id}`)">
     <img :src="slide.imageUrl" />
     <button @click.stop="$router.push(`/areas-s`)"><span>Всі напрямки</span></button>
       <div class="text-block">

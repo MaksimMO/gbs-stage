@@ -185,7 +185,7 @@ export default {
                         {name: 'Фарбування', price: 'Від 670'},
                         {name: 'Складне фарбування ', price: 'Від 2000'}
                     ]},
-                    {name: 'Loreal', lists: [
+                    {name: "L'Orea", lists: [
                         {name: 'Фарбування', price: 'Від 550'},
                         {name: 'Складне фарбування', price: 'Від 1900'}
                     ]},

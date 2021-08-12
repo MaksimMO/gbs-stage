@@ -41,7 +41,7 @@
         <div><span class="bold">Студія Barre </span>на основі балету</div>
         <!-- <div>Мед кабінет, <span class="bold">консультація лікаря</span></div> -->
         <div>Власна <span class="bold">пральня</span></div>
-        <div>Система вентиляції та кондиціонування  функцією <span class="bold">очищення повітря</span></div>
+        <div>Система вентиляції та кондиціонування з функцією <span class="bold">очищення повітря</span></div>
         <div><span class="bold">Високий</span> рівень сервісу</div>
       </div>
     </div>

@@ -7,7 +7,7 @@
           <p>
             GBS LEVEL – це три види клубних карт.
             Естетичні, емоційні, хардкорні, стримані, релаксуючі, автентичні,  максималістичні та вдночас мінімалістичні.
-            Створені в колаборації з Нашими Клієнтами
+            Створені в колаборації з Нашими Клієнтами.
           </p>
           <b>
             ОБИРАЙ СВІЙ РІВЕНЬ!
@@ -90,7 +90,7 @@ export default {
             choiceLevel: null,
             tickets: [
                 {id: 1, level: 'level 1', link: require("../../assets/images/TeamG/tickets/level1.png").default,
-                    ticketTitle:'Тип клубної карти: <span style="font-weight:bold">LEVEL 1</span>',
+                    ticketTitle:'<span style="font-weight:bold">LEVEL 1</span>',
                     period: { time1: 'пн-пт: 07:00 - 23:00', time2: 'сб-нд: 08:00 - 23:00', dayOff: '45 днів'},
                     price: '30 000',
                     details: [
@@ -106,7 +106,7 @@ export default {
                     ]
                 },
                 {id: 2, level: 'level 2', link: require("../../assets/images/TeamG/tickets/level2.png").default,
-                    ticketTitle:'Тип клубної карти: <span style="font-weight:bold">LEVEL 2</span>',
+                    ticketTitle:'<span style="font-weight:bold">LEVEL 2</span>',
                     period: { time1: 'пн-пт: 07:00 - 23:00', time2: 'сб-нд: 08:00 - 23:00', dayOff: '30 днів'},
                     price: '20 000',
                     details: [
