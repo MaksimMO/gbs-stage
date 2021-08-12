@@ -21274,7 +21274,7 @@ var preloadedAssets = [__webpack_require__(/*! ../../assets/images/main-s-backgr
             price: 'Від 2000'
           }]
         }, {
-          name: "L'Orea",
+          name: "L'Oreal",
           lists: [{
             name: 'Фарбування',
             price: 'Від 550'
