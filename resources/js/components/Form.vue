@@ -20,12 +20,13 @@
     </form>
 
     <teleport to="body">
-            <popup v-if="modalOpen"/>
+            <popupSuccess v-if="modalOpen" @closePopup="$emit('submitSuccess');"/>
     </teleport>
 </template>
 
 <script>
-import popup from './Popup.vue'
+// import popup from './Popup.vue'
+import popupSuccess from './PopupSuccess.vue'
 
 
 export default {
@@ -59,19 +60,15 @@ export default {
             body.append('email', this.email);
             body.append('level', this.level);
             body.append('_token', this.csrf_token);
-            body.append('description', `Абонимент ${this.choiceLevel}`);
+            body.append('description', this.choiceLevel ? `Абонимент ${this.choiceLevel}` : '');
 
             fetch('/feedback-form', {method:'POST', body}).finally(()=>{
+                
                 if(this.successPopup){
                     this.modalOpen=true;
                 }
-
-                this.$emit('submitSuccess');
-
-                // if(this.level==='g'){
+                // else{
                 //     this.$emit('submitSuccess');
-                // }else{
-                //     this.modalOpen=true;
                 // }
 
             });
@@ -85,7 +82,8 @@ export default {
     computed:{
     },
     components:{
-        popup
+        // popup,
+        popupSuccess
     }
 };
 </script>

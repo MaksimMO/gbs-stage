@@ -11,10 +11,12 @@
         </svg>
     </div>
     <div class="text-1">Залиште свій телефон і ми зателефонуємо Вам</div>
-    <FeedBackForm @submitSuccess="submitSuccess" :level="$root.$data.area" :choiceLevel="choiceLevel"/>
+    <FeedBackForm @submitSuccess="isOpened=false" :level="$root.$data.area" :choiceLevel="choiceLevel"/>
 
+    <!-- <teleport to="body">
 
-    <popup-success v-if="modalOpen"/>
+        <popup-success v-if="modalOpen" @closePopup="modalOpen=false; isOpened=false"/>
+    </teleport> -->
 
 
 </div>
@@ -23,7 +25,7 @@
 
 <script>
 import FeedBackForm from './Form.vue'
-import popupSuccess from './PopupSuccess.vue'
+// import popupSuccess from './PopupSuccess.vue'
 
 let preloadedAssets = {
         g: [require('../../assets/feedBackFormView/background-g.jpg').default],
@@ -35,7 +37,7 @@ export default {
     props: ['choiceLevel'],
     data(){
         return{
-            modalOpen:false,
+            // modalOpen:false,
             isOpened:true
         }
 
@@ -44,7 +46,7 @@ export default {
     // props:['level', 'closePopup'],
     components:{
         FeedBackForm,
-        popupSuccess
+        // popupSuccess
     },
     mounted(){
 

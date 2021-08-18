@@ -1,54 +1,68 @@
 <template>
-<div :class="['modal-overlay', {'is-opened':isOpened}]">
+<transition name="fade" appear  @after-leave="$emit('closePopup')" >
+<div class="modal-overlay" v-if="isOpened">
         <div class="modal">
             <div class="title">Дякуємо,</div>
             <div class="description">Ваша заявка успішно надіслана</div>
         </div>
     </div>
+</transition>
 </template>
 
 <script>
 export default {
     data(){
         return{
-            isOpened:false
+            isOpened:true
         }
     },
     mounted(){
 
 
         setTimeout(()=>{
-            this.isOpened=true;
-        },20)
-
-        console.log('onMounted!');
+            this.isOpened=false;
+        },3000)
     },
-    unmounted(){
-        console.log('onUnmounted!');
-        this.isOpened=false;
-    }
 }
 </script>
 
 <style scoped lang="scss">
 
 
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+//   backdrop-filter: blur(0px);
+//   -webkit-backdrop-filter: blur(0px);
+    
+//     .modal{
+//         transform: translate(-50%, -50%) scale(1.3);
+//     }
+
+}
+
 .modal-overlay{
     z-index: 150;
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
-    transition: backdrop-filter .5s ease-in-out,
-        -webkit-backdrop-filter .5s ease-in-out,
-        background-color .5s ease-in-out;
-}
 
-.modal-overlay.is-opened{
-    background-color: rgba(0,0,0,0.3);
+    // opacity: 1;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
+
+// .modal-overlay.is-opened{
+//     background-color: rgba(0,0,0,0.3);
+//     backdrop-filter: blur(10px);
+//     -webkit-backdrop-filter: blur(10px);
+// }
 
 
 
@@ -60,27 +74,27 @@ export default {
     padding-top: 60px ;
     padding-bottom: 60px ;
     box-sizing:border-box;
-    position: fixed;
+    position: absolute;
     top:50%;
-    /* top:60%; */
     left:50%;
-    transform: translate(-50%, -50%) scale(1.3);
+    // transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 0;
-    transition: all .5s ease-in-out;
-    filter: blur(10px);
-
-}
-
-
-.modal-overlay.is-opened  .modal{
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    /* top:50%; */
-    filter: unset;
+    // transition: all .5s ease-in-out;
+    // filter: blur(10px);
+
 }
+
+
+// .modal-overlay.is-opened  .modal{
+//     opacity: 1;
+//     transform: translate(-50%, -50%) scale(1);
+//     /* top:50%; */
+//     filter: unset;
+// }
 
 
 .modal .title{

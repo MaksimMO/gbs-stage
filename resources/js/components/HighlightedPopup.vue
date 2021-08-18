@@ -21,9 +21,7 @@
         <div class="description">Заповніть заявку та отримайте БЕЗКОШТОВНЕ персональне тренування при купівлі абонементу!</div>
 
         <FeedBackForm @submitSuccess="submitSuccess" :level="$root.$data.area" class="invert" :successPopup="false" />
-        <teleport to="body">
-            <popup-success v-if="isSuccessPopupOpen"/>
-        </teleport>
+
     </div>
 
 </div>
@@ -33,7 +31,6 @@
 
 <script>
 import FeedBackForm from './Form.vue'
-import popupSuccess from './PopupSuccess.vue'
 
 
 let preloadedAssets = {
@@ -43,13 +40,11 @@ let preloadedAssets = {
 export default {
     data(){
         return{
-            isSuccessPopupOpen:false,
             isOpened:true
         }
     },
     components:{
         FeedBackForm,
-        popupSuccess
     },
     mounted(){
     },
