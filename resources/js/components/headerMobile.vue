@@ -5,7 +5,7 @@
     <div :class="`logo ${$root.$data.area}`"></div>
     </router-link>
     <!-- <LanguageSwitcher :class="{'is-open':isOpen}" v-show="isOpen"/> -->
-    <PhoneLink :class="{'is-open':isOpen}"/>
+    <PhoneLink/>
     <div class="at-left">
       <router-link :to="`/my-account`" class="my-account-link">
       <svg width="46" height="24" viewBox="0 0 46 24" xmlns="http://www.w3.org/2000/svg">
@@ -19,13 +19,13 @@
     </div>
   </div>
   <transition name="menu-mobile">
-    <MenuGmobile @setOnCloseFalse="isOpen = false" v-show="isOpen && $root.$data.area == 'g'" />
+    <MenuGmobile @setOnCloseFalse="isOpen = false" v-if="isOpen && $root.$data.area == 'g'" />
   </transition>
   <transition name="menu-mobile">
-    <MenuBmobile @setOnCloseFalse="isOpen = false" v-show="isOpen && $root.$data.area == 'b'" />
+    <MenuBmobile @setOnCloseFalse="isOpen = false" v-if="isOpen && $root.$data.area == 'b'" />
   </transition>
   <transition name="menu-mobile">
-    <MenuSmobile @setOnCloseFalse="isOpen = false" v-show="isOpen && $root.$data.area == 's'" />
+    <MenuSmobile @setOnCloseFalse="isOpen = false" v-if="isOpen && $root.$data.area == 's'" />
   </transition>
 </div>
 
@@ -85,6 +85,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
+
 .header{
     position: fixed;
     top: 0;
@@ -101,30 +104,37 @@ export default {
       column-gap: 20px;
 
       .my-account-link{
-        fill:black;
+        fill:rgb(255, 255, 255);
       }
     }
 
 }
 
-.header-invert {
-    color: #000 !important;
+.header.header-invert:not(.isScroll) {
+    // color: #000;
+    // fill:rgb(0, 0, 0);
+
+    // & .phone-link::before {
+    //     // left: -25px;
+    // }
+    // & .buttonLang {
+    //     color: #000 !important;
+    // }
+    // & .close-opened{
+    //     filter: brightness(0.6);
+    // }
+
     & .phone-link{
-        // position: relative;
         color: #000;
     }
-    & .phone-link::before {
-        // left: -25px;
+    .my-account-link{
+        fill:rgb(0, 0, 0);
     }
-    & .buttonLang {
-        color: #000 !important;
-    }
-    & .close-opened{
-        filter: brightness(0.6);
-    }
+
     & .menu-open{
         filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(102%) contrast(105%);
     }
+
     & .main>a>.logo.g {
       background: url("../../assets/images/g-level-darck.svg") no-repeat;
       background-size: contain;
@@ -137,22 +147,35 @@ export default {
       background: url("../../assets/images/s-level-darck.svg") no-repeat;
       background-size: contain;
     }
+
+
 }
+
+
 .is-open{
    background-color: #000 !important;
-   color: #fff !important;
+  //  color: #fff !important;
    transition: all 0.6s ease;
    height: 100%;
 
-   & .buttonLang{
-       color: #fff !important;
-   }
+  //  & .buttonLang{
+  //      color: #fff !important;
+  //  }
    & .main{
-        color: #fff;
-        &>.phone-link{
-            color: #fff;
+        .phone-link{
+            color: #fff !important;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: none;
         }
     }
+    .at-left {
+      .my-account-link{
+        display: none;
+      }
+    }
+
    & .main>a>.logo.g {
         background: url("../../assets/images/g-level.svg") no-repeat;
         background-size: contain;
@@ -235,9 +258,14 @@ export default {
             color: #916C58;
         }
     }
-    &>.selectLang>.buttonLang {
-        color: #FFFFFF;
+
+    .my-account-link{
+        fill:rgb(255, 255, 255);
     }
+
+    // &>.selectLang>.buttonLang {
+    //     color: #FFFFFF;
+    // }
     &>.menu-open{
         filter: none;
     }

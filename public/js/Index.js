@@ -25262,13 +25262,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
   }, 8
   /* PROPS */
-  , ["to"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, !$data.isOpen]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <LanguageSwitcher :class=\"{'is-open':isOpen}\" v-show=\"isOpen\"/> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PhoneLink, {
-    "class": {
-      'is-open': $data.isOpen
-    }
-  }, null, 8
-  /* PROPS */
-  , ["class"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  , ["to"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, !$data.isOpen]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <LanguageSwitcher :class=\"{'is-open':isOpen}\" v-show=\"isOpen\"/> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PhoneLink), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/my-account",
     "class": "my-account-link"
   }, {
@@ -25292,13 +25286,12 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     name: "menu-mobile"
   }, {
     "default": _withId(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_MenuGmobile, {
+      return [$data.isOpen && _ctx.$root.$data.area == 'g' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_MenuGmobile, {
+        key: 0,
         onSetOnCloseFalse: _cache[2] || (_cache[2] = function ($event) {
           return $data.isOpen = false;
         })
-      }, null, 512
-      /* NEED_PATCH */
-      ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.isOpen && _ctx.$root.$data.area == 'g']])];
+      })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
     _: 1
     /* STABLE */
@@ -25307,13 +25300,12 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     name: "menu-mobile"
   }, {
     "default": _withId(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_MenuBmobile, {
+      return [$data.isOpen && _ctx.$root.$data.area == 'b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_MenuBmobile, {
+        key: 0,
         onSetOnCloseFalse: _cache[3] || (_cache[3] = function ($event) {
           return $data.isOpen = false;
         })
-      }, null, 512
-      /* NEED_PATCH */
-      ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.isOpen && _ctx.$root.$data.area == 'b']])];
+      })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
     _: 1
     /* STABLE */
@@ -25322,13 +25314,12 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     name: "menu-mobile"
   }, {
     "default": _withId(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_MenuSmobile, {
+      return [$data.isOpen && _ctx.$root.$data.area == 's' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_MenuSmobile, {
+        key: 0,
         onSetOnCloseFalse: _cache[4] || (_cache[4] = function ($event) {
           return $data.isOpen = false;
         })
-      }, null, 512
-      /* NEED_PATCH */
-      ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.isOpen && _ctx.$root.$data.area == 's']])];
+      })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
     _: 1
     /* STABLE */
@@ -29892,7 +29883,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-hover.svg?6de6297fc0175501f65ca02aea303c25");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right-hover.svg?87b43b62664da17195421bbf0a4be9aa");
 
 /***/ }),
 
@@ -29906,7 +29897,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right.svg?30eec46f7b3938b749175d6fa2a218b1");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/arrow-right.svg?0fa2b80e7cf1b0879a6c0596a2ab2a8f");
 
 /***/ }),
 
@@ -29920,7 +29911,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?736193b044696161e2a6e9f91539c73e");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/b-level-title-active.svg?de10e036d111dabd19ba6a8ce39151fd");
 
 /***/ }),
 
@@ -29948,7 +29939,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?df90caa4b4466fae2999be366ce12b13");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/g-level-title-active.svg?f77a2738c9103bb38944a81bb045f324");
 
 /***/ }),
 
@@ -29976,7 +29967,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?d94603bf7c6c5c4b24c3e6245db8ea26");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/s-level-title-active.svg?43a60b0794c49bd0b1ab61d336968510");
 
 /***/ }),
 
@@ -32545,7 +32536,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Elena_Dementieva.MOV?2586dd629496338026e1d78f49942981");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Elena_Dementieva.MOV");
 
 /***/ }),
 
@@ -32560,7 +32551,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Gornushkina_Julia.MOV?7276fc16c53c1ce556d0a569e046f81e");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Gornushkina_Julia.MOV");
 
 /***/ }),
 
@@ -32575,7 +32566,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Melnyk_Serhiy.MOV?8d5a6734150fa87df692c79d0cbdc455");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Melnyk_Serhiy.MOV");
 
 /***/ }),
 
@@ -32590,7 +32581,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Mikhail_Galagan.MOV?15f57ccbb1ec07ba5d18ff7aecbfb940");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Mikhail_Galagan.MOV");
 
 /***/ }),
 
@@ -32605,7 +32596,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Nechko_Vasil.MOV?edc5cf9891a3450669ef268007a93568");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Nechko_Vasil.MOV");
 
 /***/ }),
 
@@ -32620,7 +32611,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Nina_Shevchuk.MOV?74f0a88b4bb13325100c70067bf85a63");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Nina_Shevchuk.MOV");
 
 /***/ }),
 
@@ -32635,7 +32626,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olena_Semenchuk.MOV?f2fe6de8c8e968f5ba25e4561d89ed37");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olena_Semenchuk.MOV");
 
 /***/ }),
 
@@ -32650,7 +32641,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olga_Depeshko.MOV?c4a99247effe1b035e06634454e5d98c");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olga_Depeshko.MOV");
 
 /***/ }),
 
@@ -32665,7 +32656,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olga_Martsenyuk.MOV?be97cbf68a58b14d7a76c58006914683");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olga_Martsenyuk.MOV");
 
 /***/ }),
 
@@ -32680,7 +32671,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olga_Osadchuk.MOV?ee6a578b8f4073af4ad3bd3cea9bb87f");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Olga_Osadchuk.MOV");
 
 /***/ }),
 
@@ -32695,112 +32686,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Vladimir_Leskov.MOV?010d2c661d5bbec3ac0f8960a09adcb1");
-
-/***/ }),
-
-/***/ "./resources/assets/video/area-video-1-C0011.mp4":
-/*!*******************************************************!*\
-  !*** ./resources/assets/video/area-video-1-C0011.mp4 ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-1-C0011.mp4?1994035a0147e0204f05b72e14492cab");
-
-/***/ }),
-
-/***/ "./resources/assets/video/area-video-2-C0043_4.mp4":
-/*!*********************************************************!*\
-  !*** ./resources/assets/video/area-video-2-C0043_4.mp4 ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-2-C0043_4.mp4?440be19ecd4c30263aa1d438e60e3d25");
-
-/***/ }),
-
-/***/ "./resources/assets/video/area-video-3-vg7mt-z1gtv.mp4":
-/*!*************************************************************!*\
-  !*** ./resources/assets/video/area-video-3-vg7mt-z1gtv.mp4 ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-3-vg7mt-z1gtv.mp4?68989d93b2cdcb461a378ea923683049");
-
-/***/ }),
-
-/***/ "./resources/assets/video/area-video-4-s-level.mp4":
-/*!*********************************************************!*\
-  !*** ./resources/assets/video/area-video-4-s-level.mp4 ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-4-s-level.mp4?3e4d937f90947148a69115901590ccaa");
-
-/***/ }),
-
-/***/ "./resources/assets/video/area-video-5-C0067.mp4":
-/*!*******************************************************!*\
-  !*** ./resources/assets/video/area-video-5-C0067.mp4 ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-5-C0067.mp4?9b08839cf84c96ed484c529eb8e50916");
-
-/***/ }),
-
-/***/ "./resources/assets/video/b-level-main.mp4":
-/*!*************************************************!*\
-  !*** ./resources/assets/video/b-level-main.mp4 ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/b-level-main.mp4?e76f6d0619db62224b62571f0aebb5b5");
-
-/***/ }),
-
-/***/ "./resources/assets/video/g-level-main.mp4":
-/*!*************************************************!*\
-  !*** ./resources/assets/video/g-level-main.mp4 ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/g-level-main.mp4?4b0face115c7ee40fffc175cb92ec71a");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/Vladimir_Leskov.MOV");
 
 /***/ }),
 
@@ -32815,7 +32701,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/maksym-kaschapov.MOV?3e923e2ffec57b68601a069bae07c397");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/maksym-kaschapov.MOV");
 
 /***/ }),
 
@@ -32830,7 +32716,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/olga-grigoruk.MOV?0309f1c828e641ff27a9b32d3eed4024");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/olga-grigoruk.MOV");
 
 /***/ }),
 
@@ -32845,7 +32731,112 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/valentine.MOV?7ad659c7c4eb4dd5cb650ef896f84160");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/valentine.MOV");
+
+/***/ }),
+
+/***/ "./resources/assets/video/area-video-1-C0011.mp4":
+/*!*******************************************************!*\
+  !*** ./resources/assets/video/area-video-1-C0011.mp4 ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-1-C0011.mp4");
+
+/***/ }),
+
+/***/ "./resources/assets/video/area-video-2-C0043_4.mp4":
+/*!*********************************************************!*\
+  !*** ./resources/assets/video/area-video-2-C0043_4.mp4 ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-2-C0043_4.mp4");
+
+/***/ }),
+
+/***/ "./resources/assets/video/area-video-3-vg7mt-z1gtv.mp4":
+/*!*************************************************************!*\
+  !*** ./resources/assets/video/area-video-3-vg7mt-z1gtv.mp4 ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-3-vg7mt-z1gtv.mp4");
+
+/***/ }),
+
+/***/ "./resources/assets/video/area-video-4-s-level.mp4":
+/*!*********************************************************!*\
+  !*** ./resources/assets/video/area-video-4-s-level.mp4 ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-4-s-level.mp4");
+
+/***/ }),
+
+/***/ "./resources/assets/video/area-video-5-C0067.mp4":
+/*!*******************************************************!*\
+  !*** ./resources/assets/video/area-video-5-C0067.mp4 ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/area-video-5-C0067.mp4");
+
+/***/ }),
+
+/***/ "./resources/assets/video/b-level-main.mp4":
+/*!*************************************************!*\
+  !*** ./resources/assets/video/b-level-main.mp4 ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/b-level-main.mp4");
+
+/***/ }),
+
+/***/ "./resources/assets/video/g-level-main.mp4":
+/*!*************************************************!*\
+  !*** ./resources/assets/video/g-level-main.mp4 ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "video/g-level-main.mp4");
 
 /***/ }),
 
